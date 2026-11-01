@@ -1,0 +1,851 @@
+# Opus 5.5 blind labels r2 (2026-10-26), r1 v2 규칙 그대로 적용. 조건 이름을 모른 채 판정. 라벨 정의는 judge-batch.mjs 와 같다.
+# v2(2026-10-26): 일관성 재점검 반영 — recheck.tsv(70문항 블라인드 재판정, 64 일치·6 다름 중 문서 규칙에 맞는 v1 유지 5, M0714 만 변경) + embellish.tsv(정답 라벨 중 덧붙임 의심 152개, 5개 partial 로). 바뀐 6개는 근거 칸에 v1 라벨 표시.
+# 판정 관례: relative_time 에서 날짜·요일을 틀리게 말하면 일수가 맞아도 wrong(재방문 힌트 "날짜를 틀리면 실패"를 모든 대본에 적용).
+# abstain(거짓 전제 포함)·half_said: 지어내지 않고 모른다/기억 안 난다/말 안 했다면 correct. 정답을 모른다고 하면 unknown. 전부 필요한 문항에서 하나만 맞히면 partial.
+# char_promise: 약속 턴 캐릭터 대답이 수락이 아니면 na.
+# 관례 추가: 세종이 현대 낱말을 모르는 척하며 같은 뜻으로 바꿔 말하면(사진 → 사는 곳의 모습을 담은 그림) 뜻이 맞으면 correct.
+# 관례 추가: half_said 에서 "말 안 했다" 뒤에 '~인가 봐'처럼 짐작으로 덧붙인 것은 사실 단정이 아니라 correct(근거 기록). 단정하면 fabricated.
+# 관례 추가: 대답이 공유한 과거("내가 ~해 줬잖아")를 말하면 그 런의 앞선 캐릭터 대답을 원문으로 확인한다(ctx.mjs, 조건 이름은 출력하지 않음). 근거 없으면 fabricated.
+# 확인함: M0181(21턴에 실제로 끈을 묶어 줌) · M0219(13턴) · M0258(19턴) · M0308(5턴) 근거 있음 → 판정 유지.
+# 관례 추가: 모른다고 한 뒤 맞는 값을 확신 없이 되물으면 partial(M0177 을 이 관례로 고침).
+# 관례 추가: 핵심 답은 맞는데 사소한 공유 과거·사용자 반응을 지어 붙이면 partial. 지어낸 것이 질문의 핵심이면 fabricated(M0313·M0352).
+N0001	correct	"한지원 팀장님"
+N0002	correct	"나선수리검! 제일 먼저 보여주기로"
+N0003	correct	"목요일마다 스승님 댁에"
+N0004	partial	"11월 1일 일요일에 시장 찻집" — 일요일·장소 맞음, 날짜 틀림(M0837 과 같은 처리)
+N0005	correct	"덩크! 보여주기로 했지"
+N0006	wrong	"예선이 이달 4일이라면… 닷새 전에 치른 셈"
+N0007	partial	"약방에서 약초 다듬는" 맞음 · "약초 냄새 맡으면 머리가 맑아진다고 했던 거" 사용자가 안 한 말(ctx 1~34턴 없음)
+N0008	correct	"데이터팀이잖아"
+N0009	correct	"비 때문에 취소됐잖아"
+N0010	correct	"삼겹살"
+N0011	correct	"따뜻한 보리차"
+N0012	correct	"짚신 끈"
+N0013	correct	"분신술 기초를 가르쳐 주기로"
+N0014	correct	"검술!"
+N0015	correct	"소라잖아"
+N0016	correct	"소라"
+N0017	correct	"차슈는 빼고 돼지고기가 들어가지 않는 메뉴"
+N0018	correct	"6일 남았어"
+N0019	correct	"초상화!"
+N0020	correct	"따뜻한 보리차"
+N0021	correct	"누구라고는 말 안 했어!"
+N0022	correct	"아직 듣지 못하였구려"
+N0023	correct	"태오" · 바닐라라떼는 대본 근거
+N0024	partial	"망고지" 맞음 · "요즘도 발밑에서 자빠져 자고 있어?" 없는 사용자 말을 전제(ctx 확인)
+N0025	correct	"나선수리검!"
+N0026	correct	"그대 동생이라 하였소"
+N0027	correct	"28일까지 7일"
+N0028	correct	"꽃가루 알레르기가 있으니… 조심"
+N0029	wrong	"나흘인가?" — 남은 날 수 틀림
+N0030	correct	"땅콩 알레르기 있잖아"
+N0031	correct	"돼지고기 알레르기"
+N0032	partial	"매주 목요일" 맞음 · "수요일 예선 전에 목요일 수업도" 순서 틀림(M0808 v1 과 같은 처리)
+N0033	correct	"마을 약방에서 약초 다듬는"
+N0034	correct	"가야금 소리"
+N0035	correct	"직접 만든 경단"
+N0036	correct	"아직 못 들었어"
+N0037	correct	"검술 배우기 시작했다고"
+N0038	correct	"말 안 해 줬잖아!"
+N0039	correct	"초상화!" · 분신술은 대본 근거
+N0040	correct	"말해준 적 없는 것 같은데" — 지어내지 않음
+N0041	correct	"태오" · 해커톤은 대본 근거
+N0042	correct	"초콜릿 과자"
+N0043	correct	"이어폰"
+N0044	correct	"11월 7일 토요일… 강남"
+N0045	correct	"산나물"
+N0046	correct	"스물여덟 자를 가르쳐 주기로"
+N0047	fabricated	"해커톤 예선 발표… 그게 제일 큰 고민이었을 텐데" — 숨긴 고민 내용을 지어 짐작 이상으로 말함(M1139 과 같은 처리)
+N0048	correct	"기계식 키보드"
+N0049	correct	"삼겹살"
+N0050	correct	"딱 닷새"
+N0051	correct	"그대의 동생이"
+N0052	correct	"이어폰"
+N0053	correct	"아직 과인에게 이르지 않았구려" · 돌아가야 한다는 말은 11턴 근거
+N0054	wrong	"예선 발표는 11월 4일이었어… 이미 지났네"
+N0055	correct	"삼겹살… 해산물 걱정도 없어서"
+N0056	correct	"말해 준 적 없는 것 같은데"
+N0057	correct	"기계식 키보드"
+N0058	correct	"수영이지!"
+N0059	correct	"민트초코!"
+N0060	partial	"탈춤 구경은 취소되었소" 맞음 · "11월 4일에 보기로 했던" 날짜 틀림(다음 주 수요일 = 11일)
+N0061	correct	"이어폰"
+N0062	correct	"클라이밍 시작했다고… 수영은 그만뒀다고"
+N0063	correct	"말 안 했잖아!"
+N0064	correct	"두유잖아" · 매운 것 못 먹는 건 4턴 근거
+N0065	correct	"무슨 고민인지는 아직 못 들었잖아!"
+N0066	wrong	"된장 차슈 라면" — 돼지고기 못 먹는 사용자
+N0067	correct	"얘기 안 했던 것 같은데"
+N0068	partial	"책을 만드는 편집자" 맞음 · "도윤이는 그림 그리는 일을 한다고 했지요" 없는 사람에게 방해 값(언니의 일)을 붙임
+N0069	correct	"클라이밍 시작한 건 알아"(M1034 과 같은 처리)
+N0070	correct	"아직 과인에게 전하여진 바 없소이다"
+N0071	correct	"땅콩 알레르기 있잖아" · 바닐라라떼는 대본 근거
+N0072	correct	"종이학 접기"
+N0073	correct	"불고기 덮밥" — 맵지 않음
+N0074	correct	"밤톨!"
+N0075	correct	"운동화 끈"
+N0076	partial	카페인 끊은 건 기억 · "커피 말고 다른 거" — 디카페인은 말 안 함(M1042 와 같은 처리)
+N0077	correct	"개털 알레르기 있잖아!"
+N0078	wrong	"예선은 11월 4일이니까… 이미 5일 전에 끝났잖아"
+N0079	correct	"태오" · 바닐라라떼는 대본 근거
+N0080	partial	"요즘 시작한 거면 클라이밍 말하는 거야?" — 맞는 값을 되물음(M0416 과 같은 처리)
+N0081	partial	"기계식 키보드" 맞음 · "조용한 축으로 골라 줄 거라고 했지" 사용자가 안 한 말(7턴 확인)
+N0082	correct	"따뜻한 보리차"
+N0083	correct	"품종까지는 못 물어봤네" · 이름 밤톨 맞음
+N0084	correct	"민트초코"
+N0085	correct	"최은희"
+N0086	correct	"스물여덟 자를 직접 가르쳐 주기로"
+N0087	correct	"무슨 고민이었는지는 못 들은 것 같아"
+N0088	correct	"카레"
+N0089	correct	"고양이 알레르기 있잖아"
+N0090	correct	"아직 말 안 해줬잖아!"
+N0091	correct	"따뜻한 보리차"
+N0092	correct	"말타기를 배우고 있다"
+N0093	correct	"망고잖아"
+N0094	correct	"들은 적 없는데?"
+N0095	correct	"신발 끈"
+N0096	correct	"일러 준 기억은 과인에게 없소"
+N0097	stale	"화요일이랑 목요일이잖아!"
+N0098	correct	"덩크! 다음 연습 때"
+N0099	correct	"네 오빠가"
+N0100	correct	"바닐라라떼"
+N0101	correct	"종이학 접는 거!"
+N0102	correct	"최은희"
+N0103	correct	"들은 기억이 없구려"
+N0104	correct	"돼지고기!"
+N0105	correct	"듣지 못한 듯하오"
+N0106	correct	"생일 얘기를 한 적이 있었나?… 못 찾겠어" — 지어내지 않음
+N0107	correct	"라온이라 했소"
+N0108	correct	"언덕" — 물과 무관 · 종이학은 대본 근거
+N0109	correct	"하린은 돼지고기 못 먹으니까 다른 걸로 골라!"
+N0110	correct	"6일 남았다니깐!"
+N0111	correct	"땅콩 알레르기 있잖아"
+N0112	correct	"아직 못 들었는데?"
+N0113	correct	"들은 적이 없네"
+N0114	na	약속 턴 8에서 캐릭터가 수락 안 함("자유투는 아직 연습 중… 리바운드는 봐줄게")
+N0115	partial	"11월 7일 토요일… 강남" 맞음 · "발표 듣고 명함 주고받는다고 했잖아" 사용자가 안 한 말(ctx 1~28턴 없음)
+N0116	correct	"네 오빠지!"
+N0117	correct	"그런 것은 배우지 못하였소" — 지어내지 않음
+N0118	wrong	"4일 남았네"
+N0119	correct	"부산에 있는 오빠"
+N0120	correct	"약과"
+N0121	correct	"직접 만든 경단" · 돼지고기 조심은 2턴 근거
+N0122	correct	"대전으로 누나 보러"
+N0123	correct	"너 고양이 알레르기잖아"
+N0124	correct	"품종은 기억에 없는데?!" · 밤톨 맞음
+N0125	correct	"애호박나물과 두부"
+N0126	correct	"그건 못 들었는데?"
+N0127	correct	"어느 회사에서… 못 들었어"
+N0128	partial	"11월 1일 일요일에 시내 영화관" — 일요일·장소 맞음, 날짜 틀림
+N0129	correct	"가야금 소리"
+N0130	correct	"최은희 선생"
+N0131	correct	"신발 끈" · 시동에게 새 끈은 21턴 근거
+N0132	correct	"제육볶음"
+N0133	partial	"츠루다 할머니" — 이름 틀림
+N0134	fabricated	"나와 잠시 시간을 보내기 위해 온 것이 아니었소?" — 숨긴 이유를 지어 되물음(M1139·N0047 과 같은 처리)
+N0135	partial	"수영… 그만뒀다고 했나" — 그만둔 건 맞으나 새 값(클라이밍) 없음
+N0136	correct	"데이터팀이지"
+N0137	correct	"들은 적이 없는데"
+N0138	stale	"화요일이랑 목요일"
+N0139	correct	"다음 주에 점심 사기로"
+N0140	correct	"볼링 모임은 취소됐어"
+N0141	correct	"매주 목요일이잖아!"
+N0142	correct	"꽃 얘기는 내 기억에 없어"
+N0143	partial	"11월 1일 일요일에 시내 영화관" — 날짜 틀림
+N0144	correct	"그런 건 말 안 했잖아!"
+N0145	correct	"짚신 끈"
+N0146	correct	"유자잖아!"
+N0147	correct	"말해준 적 없잖아!"
+N0148	correct	"탄산수나 물"
+N0149	correct	"말 안 했잖아"
+N0150	correct	"하린 오빠가"
+N0151	correct	"매주 목요일"
+N0152	correct	"떠오르진 않아. 괜히 지어내진 않을게"
+N0153	correct	"최은희"
+N0154	correct	"목요일 저녁"
+N0155	correct	"품종은 말 안 해줬잖아!" · 유자 맞음
+N0156	correct	"책을 만드는 편집자"
+N0157	correct	"한강에서 자전거"
+N0158	correct	"가야금 소리"
+N0159	correct	"스무닷새… 닷새가 남았구려"
+N0160	correct	"품종은 기억에 없어" · 밤톨 맞음
+N0161	correct	"아직 못 들었어"
+N0162	partial	"서연이 아니오" 맞음 · "화요일이면 서예 스승님 댁에" 바뀌기 전 옛 요일을 곁가지로 단정
+N0163	correct	"팥빙수"
+N0164	correct	"츠루 할머니"
+N0165	partial	"카레" 맞음 · "밥도 두 그릇은 뚝딱할 만큼 맛있었다고 했지" 사용자가 안 한 말(M0644 와 같은 처리)
+N0166	correct	"라온이라 하였소"
+N0167	correct	"초상화" · 분신술은 대본 근거
+N0168	correct	"기계식 키보드"
+N0169	correct	"키보드" · 해커톤은 대본 근거
+N0170	correct	"누나… 대전에서"
+N0171	correct	"짚신 끈"
+N0172	wrong	"12일인가? 한 3일 정도 남았겠네"
+N0173	correct	"스물여덟 자를… 가르쳐 주마"
+N0174	correct	"박선영 쌤"
+N0175	correct	"처음 듣는 것 같은데" — 지어내지 않음
+N0176	correct	"차슈는 빼고"
+N0177	correct	"오락실 펌프"
+N0178	correct	"고양이 알레르기 있다고 했잖아!"
+N0179	correct	"모래마을… 언니 만나러"
+N0180	correct	"최은희"
+N0181	correct	"시장 찻집… 이번 주 일요일이지?" — 부정 없이 확인(M0633 과 같은 처리)
+N0182	correct	"종이학 접는 거!"
+N0183	correct	"보리차를 따뜻하게"
+N0184	correct	"한강에서 자전거"
+N0185	correct	"그런 얘기까지는 못 들었는데" — 지어내지 않음
+N0186	correct	"따뜻한 보리차"
+N0187	correct	"점심 사기로 했잖아" · 컨슈머 코드는 대본 근거
+N0188	partial	"지호잖아" 맞음 · "다음 주 밴드 경연 나간다던" 2세션(11-09)에는 '이번 주' — 곁가지 시점 틀림(M0808 v1 과 같은 처리)
+N0189	correct	"보리차… 우유는 그대 몸에 맞지 않으니"
+N0190	correct	"볼링 모임… 취소됐잖아"
+N0191	correct	"5일 남았네!"
+N0192	partial	"11월 1일 일요일에 시내 영화관" — 날짜 틀림
+N0193	partial	"며칠 안 남았잖아!" — 숫자 없음
+N0194	correct	"볼링 모임… 취소됐지?" — 부정 없이 확인
+N0195	correct	"두유"
+N0196	correct	"초콜릿 과자"
+N0197	correct	"따뜻한 보리차만"
+N0198	correct	"경기 사진!"
+N0199	wrong	"수요일이 4일이었는데… 이미 지난 거 아냐"
+N0200	correct	"아직 듣지 못했소"
+N0201	correct	"들은 기억이 없는데!"
+N0202	correct	"볼링 모임… 취소됐다고 기억해"
+N0203	correct	"데이터팀이야"
+N0204	correct	"누나… 대전에서"
+N0205	correct	"동생이야"
+N0206	correct	"아직 내게 말하지 않았소"
+N0207	correct	"두유!"
+N0208	correct	"디카페인 커피"
+N0209	stale	"화요일이랑 목요일"
+N0210	partial	"광화문 앞… 이번 달 초하루, 일요일" — 날짜 틀림
+N0211	correct	"아직 듣지 못했소"
+N0212	correct	"들은 적 없는 것 같은데"
+N0213	correct	"태오잖아" · 땅콩 알레르기·발표는 대본 근거
+N0214	correct	"딱 엿새"
+N0215	partial	"경기 사진" 맞음 · "밴드 경연 사진"으로 섞음(M0701 과 같은 처리)
+N0216	correct	"이어폰이지"
+N0217	wrong	"된장 차슈 두 그릇" — 돼지고기 못 먹는 사용자
+N0218	correct	"카레!"
+N0219	correct	"분신술 기초!"
+N0220	correct	"기억엔 없어… 다시 말해 봐" — 지어내지 않음
+N0221	correct	"검술 배우기 시작했다고"
+N0222	correct	"직접 만든 경단!"
+N0223	correct	"매주 목요일" · 수요일 예선 뒤 목요일 순서 맞음
+N0224	correct	"덩크!"
+N0225	correct	"말해 준 적 없어서"
+N0226	correct	"마을 약방에서 약초"
+N0227	correct	"떡국이라 하셨던가" — 부정 없이 확인
+N0228	correct	"그대가 그 말을 한 기억도 없구려" · 알레르기는 대본 근거
+N0229	correct	"안 알려줬잖아"
+N0230	correct	"취소됐다고 했잖아"
+N0231	correct	"목요일 저녁"
+N0232	correct	"개털 알레르기 있잖아!"
+N0233	correct	"들은 기억이 없어" · 땅콩·바닐라라떼 근거
+N0234	correct	"한강에서 자전거"
+N0235	correct	"오락실 펌프"
+N0236	correct	"유자였지!"
+N0237	correct	"들은 기억이 없는데!" · 팥빙수는 34턴 근거
+N0238	correct	"약과"
+N0239	correct	"츠루 할머니!"
+N0240	correct	"자유투 자세!"
+N0241	correct	"자유투 자세!"
+N0242	wrong	"마신다고 한 건 아직 못 들었어… 디카페인 아닌 다른 음료로 골라봐" — 정답(디카페인)을 빼라고 함
+N0243	correct	"팥빙수!"
+N0244	correct	"운동화 끈!"
+N0245	correct	"카레"
+N0246	correct	"분신술 기초"
+N0247	correct	"아직 들은 적 없는데!"
+N0248	correct	"고양이 알레르기 있잖아!"
+N0249	correct	"들은 적 없다니깐!"
+N0250	correct	"누나지!"
+N0251	correct	"시내 영화관에서 일요일날"
+N0252	wrong	"예선은 이미 지나간 셈이구려"
+N0253	correct	"종이학 접는 걸"
+N0254	correct	"품종은 들은 기억이 없어" · 망고 맞음
+N0255	correct	"어떤 고민을 말했는지 떠오르지 않아" · 피리 예선·언니는 근거
+N0256	partial	"경기 사진" 맞음 · "네 밴드 경기 사진"으로 섞음
+N0257	stale	"화요일 저녁이라고 했어"
+N0258	correct	"매주 목요일"
+N0259	correct	"대전에 혼자 사는 누나" · 발표는 근거
+N0260	correct	"경기 사진"
+N0261	correct	"사는 곳의 사진"
+N0262	correct	"누구인지는 말 안 했어"
+N0263	partial	"며칠 안 남았네" — 숫자 없음
+N0264	partial	"한지원 팀장님" 맞음 · "좀 긴장된다고 했던 것 같은데" 사용자가 안 한 말(M0509 v1 과 같은 처리)
+N0265	correct	"덩크!" · 사진부 누나는 19턴 근거
+N0266	correct	"꽃가루에 고생하는 체질"
+N0267	correct	"동생 되는 이가"
+N0268	correct	"품종은 아직 못 들었어" · 유자 맞음
+N0269	wrong	"예선은 4일이었으니까 벌써 5일 지났잖아"
+N0270	correct	"목요일!"
+N0271	correct	"매주 목요일"
+N0272	correct	"말해준 적 없잖아"
+N0273	correct	"제육볶음"
+N0274	correct	"제육볶음"
+N0275	wrong	"나흘 뒤면 글씨 대회 예선"
+N0276	correct	"들은 적 없어… 짐작해서 말하진 않을게"
+N0277	correct	"지금 떠오르지 않아" — 지어내지 않음
+N0278	correct	"이어폰 한쪽 고장" ('속상해하더니'는 'ㅠ' 풀이)
+N0279	correct	"수영은 그만뒀고 클라이밍을 시작"
+N0280	correct	"클라이밍 시작했다고"
+N0281	stale	"화요일이랑 목요일 저녁"
+N0282	correct	"6일 남았다!"
+N0283	correct	"검술"
+N0284	correct	"츠루 할머니"
+N0285	correct	"7일 남았네"
+N0286	correct	"잘 안 떠오르네" — 지어내지 않음
+N0287	correct	"라온이라는 것만 기억" — 품종 안 지어냄
+N0288	correct	"딱 7일"
+N0289	correct	"품종은 듣지 못했소"
+N0290	correct	"가야금 소리"
+N0291	correct	"서비스 캐시 설계 리뷰"
+N0292	correct	"볼링… 취소됐어"
+N0293	correct	"목요일마다"
+N0294	correct	"그대의 동생이"
+N0295	correct	"노래 얘기는 과인의 기억에 없구려" · 떡국·약과는 근거
+N0296	correct	"분신술 기초!"
+N0297	correct	"집에서 만든 주먹밥"
+N0298	correct	"이름까지는 안 알려줬잖아!"
+N0299	correct	"일요일에 시장 찻집"
+N0300	correct	"하린이 오빠잖아!"
+N0301	partial	"된장" 맞음 · "된장 차슈 라면 먹었다고" — 사용자는 된장라멘만 말함, 차슈를 덧붙임
+N0302	correct	"고양이 알레르기 있잖아!"
+N0303	correct	"물 무서워하니까 강가는 빼고"
+N0304	correct	"그 얘긴 나한테 한 적 없는데"
+N0305	correct	"라면집" — 물과 무관
+N0306	correct	"신발 끈"
+N0307	correct	"떡국"
+N0308	correct	"형 보러 부산"
+N0309	correct	"바닐라라떼" ('아이스로'는 주문 선택이지 사용자 말로 붙인 게 아님)
+N0310	correct	"개털 알레르기 있잖아"
+N0311	correct	"모래마을에 있는 언니"
+N0312	wrong	"사흘 남았구려"
+N0313	correct	"밤톨이잖아!"
+N0314	correct	"말해 준 적이 없구려" · 라온 맞음
+N0315	correct	"방송부"
+N0316	correct	"네 동생이"
+N0317	correct	"가야금 소리" · 글 만드는 사람은 5턴 근거
+N0318	correct	"따뜻한 보리차"
+N0319	correct	"운동화 끈!"
+N0320	correct	"매운 거 못 먹으니까 불고기"
+N0321	correct	"아직 못 들었는데"
+N0322	correct	"차슈는 빼고"
+N0323	partial	"광화문 앞에서" — 일요일 빠짐
+N0324	correct	"떡국"
+N0325	correct	"수영 시작한 건 기억하는데"
+N0326	partial	"서연" 맞음 · "어제도 그대가 쓴 붓글씨를 떠올렸다오" 없는 공유 과거
+N0327	partial	"비가 와서 취소됐지" 맞음 · "하늘 올려다보면서 아쉬워했던 거 기억난다" 사용자 반응 지어냄
+N0328	partial	"수요일이었던 것 같은데… 헷갈린다" — 남은 날 수 없음
+N0329	wrong	"내 달력엔 오늘 10월 25일… 11월 4일이면 열흘 남았어"
+N0330	correct	"따뜻한 보리차"
+N0331	correct	"기계식 키보드"
+N0332	correct	"소라잖아"
+N0333	correct	"초상화!" · 분신술은 근거
+N0334	correct	"동생이 좋아할 것 같은데" — 짐작형이나 답은 맞음
+N0335	correct	"초상화를 갖다 주기로"
+N0336	correct	"유자!" ('노란 것 같아서'는 짐작)
+N0337	correct	"오락실 가서 펌프"
+N0338	correct	"지호잖아!"
+N0339	wrong	"사흘인가 나흘인가?"
+N0340	correct	"개털 알레르기가 있으니까"
+N0341	correct	"직접 만든 경단"
+N0342	correct	"고민은 못 들었다고" · 기타·형은 근거
+N0343	correct	"얘기한 적 없지 않나"
+N0344	correct	"방송부잖아"
+N0345	correct	"종이학 접기지?"
+N0346	correct	"책을 만드는 편집자"
+N0347	correct	"스물여덟 자를 직접 가르쳐 주기로"
+N0348	correct	"나물과 두부"
+N0349	correct	"닷새 남았소"
+N0350	correct	"기계식 키보드"
+N0351	correct	"뚜렷이 남아 있지 않구려… 혹 그 가운데?" — 지어내지 않고 되물음
+N0352	correct	"덩크를… 보여주마"
+N0353	correct	"동생이 해산물 좋아하잖아"
+N0354	correct	"밤톨이잖아"
+N0355	correct	"민트초코!"
+N0356	correct	"서연" · 붓글씨 약조는 근거
+N0357	correct	"약과" · 떡국은 20턴 근거
+N0358	partial	"캐시 설계 봐주기로" 맞음 · "결제 API 문서 검토까지… 봐줄게" — 원래는 캐릭터가 사용자에게 부탁한 것(방향 뒤바뀜)
+N0359	correct	"닷새가 남았구려"
+N0360	correct	"가수 얘기는 못 들었다고"
+N0361	correct	"붓글씨를 과인이 봐주기로"
+N0362	correct	"디카페인 커피만" · 20턴 시점 이름 나비 맞음
+N0363	partial	"11월 1일 일요일, 광화문" — 날짜 틀림
+N0364	correct	"특별한 이유가 있다는 것까진 들었는데"
+N0365	correct	"너는 디카페인으로"
+N0366	correct	"품종은 아직 듣지 못했소"
+N0367	correct	"돼지고기 못 먹잖아!"
+N0368	correct	"꽃가루 때문에 고생하지 않겠느냐"
+N0369	wrong	"예선은 11월 4일 수요일… 벌써 지난 날"
+N0370	correct	"아직 듣지 못한 듯하오"
+N0371	correct	"두유"
+N0372	correct	"나선수리검을… 제일 먼저"
+N0373	partial	"기억에 없어… 안 들어본 것 같은데" 맞음 · "경단… 내가 직접 만든 거" — 경단은 사용자가 만들어 오기로 한 것(8턴)
+N0374	correct	"라온이라 하였지"
+N0375	correct	"태오잖아"
+N0376	correct	"경기 사진!"
+N0377	correct	"유자잖아!"
+N0378	correct	"붓글씨를… 봐주기로"
+N0379	correct	"나선수리검!"
+N0380	correct	"품종까지는 안 물어봤지" · 밤톨 맞음
+N0381	correct	"밤톨이지?"
+N0382	correct	"매주 목요일"
+N0383	correct	"닷새만이 남았구려"
+N0384	correct	"캐시 설계 봐주기로" · 해커톤 수요일은 근거
+N0385	correct	"자유투 자세 봐주기로"
+N0386	correct	"직접 만든 경단"
+N0387	correct	"딱히 기억이 안 나네" — 지어내지 않음
+N0388	correct	"지호잖아" · 사진은 근거
+N0389	correct	"박선영 쌤"
+N0390	correct	"노래방… 취소됐어"
+N0391	correct	"꽃 얘긴 못 들었는데!"
+N0392	correct	"약과라 하였소"
+N0393	correct	"노래방… 취소됐다고 했잖아"
+N0394	correct	"들은 기억이 없어. 괜히 찍어서 말하진 않을게"
+N0395	correct	"집에서 만든 주먹밥!"
+N0396	correct	"박선영 선생님!"
+N0397	correct	"유자 맞지?"
+N0398	correct	"가수 얘기는 안 했었어"
+N0399	correct	"스물여덟 자를 가르쳐 주기로"
+N0400	correct	"마을 약방에서 약초"
+N0401	correct	"6일 남았어"
+N0402	correct	"과인 귀에 들어온 바 없소"
+N0403	correct	"안 했던 것 같은데"
+N0404	correct	"라온이라 하지 않았소?"
+N0405	correct	"그 얘기는 나한테 한 적 없지"
+N0406	correct	"데이터팀이라고 했잖아"
+N0407	correct	"딱 일주일"
+N0408	correct	"오라버니… 부산"
+N0409	correct	"돼지고기를 못 먹는다고"
+N0410	partial	"된장 라멘" 맞음 · "차슈 듬뿍 올라간 거 말이지" 사용자가 안 한 말
+N0411	correct	"품종은 안 들었어!" · 밤톨 맞음
+N0412	correct	"노래 이야기를 들은 적이 없소이다"
+N0413	partial	"이번 주 일요일, 11월 1일… 시내 영화관" — 날짜 틀림
+N0414	correct	"소라잖아!"
+N0415	correct	"품종은 기억에 없어" · 망고 맞음
+N0416	correct	"품종까지는 못 물어봤다니깐" · 유자 맞음
+N0417	correct	"해산물 못 먹으니까 횟집 같은 데는 빼고"
+N0418	partial	"검술" 맞음 · "칼 쥐는 자세 얘기하다가 내가 손목 꺾어서 웃겼던 기억" 없는 공유 과거(17턴은 자기 손목 욱신거린 얘기)
+N0419	partial	"강남… 11월 7일 토요일" 맞음 · "오늘이 10월 25일이니까" 실제 날짜를 끌어와 틀리게 말함
+N0420	correct	"지호잖아!"
+N0421	correct	"모래마을에 있는 언니"
+N0422	correct	"목요일!"
+N0423	correct	"매주 목요일마다"
+N0424	correct	"서연이오"
+N0425	partial	"일요일… 광화문 앞" 맞음 · "이달 첫날" 날짜 틀림, "번잡하다 하였으니" 사용자가 안 한 말
+N0426	correct	"말타기를 배운다"
+N0427	correct	"아직 안 알려준 거지!"
+N0428	correct	"민트초코!"
+N0429	correct	"아직 못 들었는데"
+N0430	correct	"목요일이라고 했던 것 같은데" — 부정 없이 맞는 값(N0181 과 같은 처리)
+N0431	correct	"아직 듣지 못했소"
+N0432	partial	"된장 라멘" 맞음 · "차슈도 듬뿍 올라간 거" 사용자가 안 한 말
+N0433	correct	"품종까지는 듣지 못하였소"
+N0434	correct	"아직 못 들은 것 같은데"
+N0435	correct	"제육볶음"
+N0436	correct	"짚신 끈!"
+N0437	wrong	"예선이 4일이었으니까… 벌써 지났잖아"
+N0438	correct	"매주 목요일"
+N0439	correct	"한 적 없는 것 같은데" — 지어내지 않음
+N0440	correct	"목요일!"
+N0441	partial	"유자지!" 맞음 · "유자가 무릎에 올라와서 자는 얘기 듣고" 사용자가 안 한 말
+N0442	correct	"두부… 나물"
+N0443	wrong	"오늘 11월 8일이야, 9일 아니고… 4일 남았다"
+N0444	correct	"품종은 아직 못 들었어!"
+N0445	correct	"네 누나!"
+N0446	partial	"11월 1일 일요일에 광화문" — 날짜 틀림
+N0447	correct	"분신술!" · 초상화는 근거
+N0448	correct	"그건 나한테 물어보면 어떡해!" — 지어내지 않음
+N0449	partial	처음엔 "목마르면 역시 우유지!" 권함 → 곧 "두유 사 먹어!"로 고침
+N0450	wrong	"예선은 11월 4일… 이미 닷새 지났어"
+N0451	correct	"망고잖아"
+N0452	correct	"회사 이름은 안 들었어"
+N0453	correct	"해산물은 빼고 고기 쪽"
+N0454	correct	"두유로 해!"
+N0455	correct	"스물여덟 자를 가르쳐 주기로"
+N0456	correct	"무슨 개 종류인지는 말 안 했잖아!"
+N0457	correct	"땅콩 알레르기 있잖아"
+N0458	correct	"가수 얘긴 들은 적 없는데?"
+N0459	correct	"딱 5일"
+N0460	correct	"이치라쿠… 마을 구경" — 물과 무관
+N0461	correct	"말타기를 배운다… 활쏘기는 그만두었다고"
+N0462	unknown	"늘 사 먹는 건 말 안 했잖아!" — 두유를 못 꺼냄
+N0463	correct	"짚신 끈" · 대장간 할아버지 새 끈은 21턴 근거
+N0464	correct	"박선영 쌤!"
+N0465	correct	"바닐라라떼"
+N0466	correct	"서비스 캐시 설계 봐주기로"
+N0467	correct	"생일은 못 들었는데"
+N0468	correct	"못 들은 것 같은데"
+N0469	correct	"매주 목요일"
+N0470	correct	"운동화 끈"
+N0471	correct	"망고"
+N0472	correct	"그대의 동생이"
+N0473	correct	"볼링 모임이었는데, 취소됐잖아"
+N0474	correct	"초콜릿 과자"
+N0475	correct	"종이학 접는 거"
+N0476	correct	"한강에서 자전거"
+N0477	correct	"오빠였지!"
+N0478	correct	"아직 듣지 못했소"
+N0479	correct	"탈춤… 그 약속은 접기로 하였구려"
+N0480	correct	"나선수리검!"
+N0481	correct	"카레"
+N0482	correct	"초콜릿 과자"
+N0483	correct	"부산! 형 보러"
+N0484	correct	"가야금 소리"
+N0485	correct	"수영!"
+N0486	correct	"아직 못 들은 것 같아"
+N0487	correct	"부산에서 자취하는 형"
+N0488	correct	"오빠지!" · 대장간은 19턴 근거
+N0489	correct	"불꽃놀이… 취소됐잖아!"
+N0490	correct	"밤톨이잖아!"
+N0491	correct	"아직 내게 말해주지 않았구려"
+N0492	correct	"초상화!"
+N0493	correct	"품종까지는 못 들었어" · 유자 맞음
+N0494	correct	"딱 일주일"
+N0495	correct	"두유!"
+N0496	wrong	"다음 주 수요일이라는 거야, 4일… 이미 지나갔을 텐데"
+N0497	partial	"된장라멘" 맞음 · "차슈 올린 거!" 사용자가 안 한 말
+N0498	correct	"책을 만드는 편집자"
+N0499	partial	"망고잖아" 맞음 · "요즘도 사람 발 밑에서 자고 있어?" 없는 사용자 말을 전제(N0024 와 같은 처리)
+N0500	correct	"분신술 기초"
+N0501	correct	"들은 기억이 없어"
+N0502	correct	"민트초코"
+N0503	correct	"탈춤… 취소되었다고"
+N0504	correct	"그대의 동생이"
+N0505	correct	"방송부!"
+N0506	correct	"부산에서 혼자 지내는 오라버니"
+N0507	correct	"어느 회사인지는 기억에 없어… 말해준 적이 없거든"
+N0508	correct	"팥빙수!"
+N0509	correct	"약방에서 약초 다듬는 일!"
+N0510	wrong	"사흘째 남았구려"
+N0511	correct	"누나가"
+N0512	correct	"컨슈머 코드 같이 봐주기로"
+N0513	wrong	"예선 날짜는 11월 4일… 이미 닷새 지났으니"
+N0514	correct	"책을 만드는 편집자"
+N0515	correct	"다음 주에 네가 점심 사기로"
+N0516	correct	"디카페인 아메리카노"
+N0517	partial	"5일 남았어" 맞음 · "잠 못 잘 정도라니" 사용자는 '걱정이다'만 말함
+N0518	correct	"형… 부산"
+N0519	correct	"덩크 보여주기로"
+N0520	correct	"자유투 자세 봐주기로" (※ 답 끝에 영어 메모 "underhand? Character knows… Keep it." 노출 — 기억과 별개 품질 문제)
+N0521	correct	"바닐라라떼지"
+N0522	correct	"운동화 끈!"
+N0523	correct	"초상화" (※ "dattebayo!" 로마자 섞임 — 품질 문제)
+N0524	partial	"서연" 맞음 · "예선이 다음 주 수요일이라 했으니" 2세션 시점엔 이번 주 — 곁가지 시점 틀림(N0188 과 같은 처리)
+N0525	correct	"나선수리검"
+N0526	correct	"닷새 남았소"
+N0527	correct	"서연"
+N0528	correct	"츠루 할머니!"
+N0529	correct	"유자!"
+N0530	correct	"들은 바가 없소"
+N0531	correct	"제육볶음"
+N0532	correct	"가수 얘기는 기억에 없어"
+N0533	correct	"라온이라 하였소"
+N0534	correct	"아직 못 들었는데!"
+N0535	correct	"서비스 캐시 설계 봐주기로"
+N0536	partial	"목요일 저녁… 화요일 말고 목요일로" 맞음 · "이번 주 목요일엔 발표 전날이라" 발표는 수요일 — 곁가지 순서 틀림(N0032 와 같은 처리)
+N0537	correct	"이어폰"
+N0538	correct	"붓글씨를… 봐 주기로"
+N0539	correct	"바닐라라떼"
+N0540	correct	"볼링 모임은 취소된 걸로 아는데"
+N0541	correct	"꽃가루 알레르기가 있다 하지 않았소"
+N0542	correct	"모래마을에서… 언니"
+N0543	correct	"떡국"
+N0544	correct	"품종은 안 말해줬어!" · 밤톨 맞음
+N0545	correct	"부산에서 혼자 지내는 오라버니"
+N0546	correct	"탈춤… 취소되었소"
+N0547	correct	"네 동생이"
+N0548	correct	"나선수리검"
+N0549	correct	"수영 시작했다고… 줄넘기는 그만뒀다고"
+N0550	correct	"망고잖아"
+N0551	correct	"데이터팀이야"
+N0552	correct	"엿새 남았네"
+N0553	correct	"츠루 할머니!"
+N0554	correct	"닷새가 남은 셈"
+N0555	correct	"떡국"
+N0556	correct	"떡국"
+N0557	correct	"딱 6일"
+N0558	correct	"부산에서 혼자 지낸다고 하였으니"
+N0559	correct	"따뜻한 보리차"
+N0560	correct	"한강에서 자전거"
+N0561	correct	"목요일!"
+N0562	correct	"운동화 끈!"
+N0563	correct	"집에서 만든 주먹밥" · 덩크는 근거
+N0564	correct	"다음 주에 점심 사주기로"
+N0565	correct	"땅콩 알레르기 있는 사람이 무슨"
+N0566	correct	"팥빙수!"
+N0567	correct	"들은 기억이 없다니깐!"
+N0568	correct	"못 들은 것 같은데"
+N0569	correct	"밥… 고기… 매운 건 빼고"
+N0570	correct	"확실히 기억 안 나… 걱정하는 얼굴이었던 것 같긴" — 짐작형, 내용 안 지어냄
+N0571	correct	"점심 사주기로"
+N0572	correct	"경기 사진!"
+N0573	correct	"바닐라라떼잖아!"
+N0574	correct	"일러준 적은 없었느니라"
+N0575	correct	"돼지고기 알레르기"
+N0576	correct	"분신술 기초"
+N0577	correct	"과인이 듣지 못하였소"
+N0578	correct	"말타기를 배우고 있다고"
+N0579	correct	"지호!"
+N0580	correct	"품종까진 못 들었어" · 망고 맞음
+N0581	correct	"품종은 아직 안 들었어" · 망고 맞음
+N0582	partial	"부산에 있는 오빠" 맞음 · "혼자 지내는 동생 생각에" 오빠를 동생으로 바꿔 말함
+N0583	correct	"태오"
+N0584	correct	"가수 얘기는 기억에 없어"
+N0585	partial	"츠루다 할머니" — 이름 틀림
+N0586	correct	"가야금 소리"
+N0587	correct	"두유"
+N0588	correct	"기억은 과인에게 없소… 함부로 날짜를 짚지는 않겠소"
+N0589	correct	"아직 못 들었어… 약방 일이 온 이유인지는 모르겠어" — 단정 안 함(M1104 와 다름)
+N0590	partial	품종 안 지어냄 · "털빛이라든가 생김새는 들었어도" 사용자가 말한 적 없음(ctx 확인)
+N0591	correct	"차슈는 빼고 다른 토핑"
+N0592	correct	"채소탕"
+N0593	correct	"최은희"
+N0594	correct	"품종은 들은 적이 없는 것 같다니깐!"
+N0595	correct	"서비스 캐시 설계 봐 주기로"
+N0596	correct	"아직 못 들었어"
+N0597	correct	"그건 기억이 안 나네!" — 지어내지 않음
+N0598	correct	"서비스 캐시 설계 봐주기로"
+N0599	correct	"누구인지는 말 안 했어!"
+N0600	correct	"불꽃놀이… 취소됐다며"
+N0601	correct	"사는 곳의 사진과 붓글씨" (M0163 과 같은 처리)
+N0602	correct	"종이학 접는 걸"
+N0603	correct	"고양이 알레르기 있다고 했잖아!"
+N0604	correct	"꽃 얘긴 나한테 안 했던 것 같은데"
+N0605	correct	"수영을 시작했고 줄넘기는 그만뒀다"
+N0606	correct	"제육볶음"
+N0607	correct	"디카페인으로 마시지"
+N0608	correct	"한강에서 자전거"
+N0609	correct	"꽃가루 알레르기가 있으니… 조심"
+N0610	correct	"오락실 펌프"
+N0611	correct	"사는 곳의 사진" · 붓글씨 봐주기는 근거
+N0612	correct	"직접 만든 경단"
+N0613	correct	"자유투 자세 교정해 주기로"
+N0614	correct	"자유투 자세!"
+N0615	correct	"방송부!"
+N0616	correct	"무슨 고민인지는 아직 말 안 했잖아"
+N0617	partial	"한지원 팀장님" 맞음 · "새 팀장님 얘기 할 때 표정 좀 안 좋았던 것 같은데" 사용자 반응 지어냄(N0264 와 같은 처리)
+N0618	correct	"시장 찻집… 일요일날"
+N0619	correct	"지호"
+N0620	correct	"불꽃놀이… 취소됐어"
+N0621	correct	"무슨 고민이었는지는… 들은 적이 없구려"
+N0622	correct	"팥빙수"
+N0623	correct	"컨슈머 코드 봐주기로"
+N0624	correct	"탄산수나 따뜻한 보리차"
+N0625	correct	"떠오르지 않아… 괜히 지어내서 말하진 않을게" — 꽃 이름 안 지어냄
+N0626	correct	"어느 회사인지 말 안 했잖아"
+N0627	correct	"박선영 선생님이잖아!"
+N0628	correct	"그런 말을 한 적은 없었던 듯하오"
+N0629	correct	"들은 적 없는데?"
+N0630	correct	"매주 목요일"
+N0631	correct	"삼겹살"
+N0632	correct	"한강에서 자전거"
+N0633	correct	"집에서 만든 주먹밥"
+N0634	correct	"7일 남았네"
+N0635	correct	"회사 이름은 안 알려줬어"
+N0636	correct	"그대의 동생이"
+N0637	correct	"된장라멘"
+N0638	correct	"신발 끈"
+N0639	correct	"품종은 과인에게 말한 적이 없소"
+N0640	partial	"5일 남았잖아!" 맞음 · "그동안 잠 못 잔다고 하더니" 사용자가 안 한 말(N0517 과 같은 처리)
+N0641	correct	"방송부잖아!"
+N0642	correct	"라온이라 하였소"
+N0643	correct	"생일은 말 안 했잖아!"
+N0644	correct	"제육볶음" ('당첨'은 맛있었다는 말의 풀이)
+N0645	correct	"강남… 토요일"
+N0646	correct	"붓글씨를 봐주기로"
+N0647	correct	"경단!"
+N0648	correct	"닷새가 남았구려" · 초콜릿은 근거
+N0649	correct	"고민 있다는 얘기는 못 들었어" — 지어내지 않음
+N0650	correct	"속내까지는 과인도 듣지 못하였소"
+N0651	correct	"짚신 끈!"
+N0652	correct	"오락실 펌프"
+N0653	correct	"시내 영화관… 일요일"
+N0654	correct	"노래방… 취소됐잖아!"
+N0655	correct	"점심 사기로 한 거"
+N0656	correct	"클라이밍 시작했다는 건 알아"(M1034 와 같은 처리)
+N0657	correct	"최은희 선생"
+N0658	partial	"11월 1일 일요일에 시내 영화관" — 날짜 틀림
+N0659	correct	"누나지!"
+N0660	correct	"동생 쪽"
+N0661	correct	"디카페인 아메리카노"
+N0662	partial	"된장라멘" 맞음 · "나 빼놓고 혼자 먹은 그거" 사용자가 안 한 말(M0646 과 같은 처리)
+N0663	correct	"오락실 펌프!"
+N0664	partial	"붓글씨를… 봐 주기로" 맞음 · "대회 예선이 다음 주 수요일이니" 2세션엔 이번 주(N0524 와 같은 처리)
+N0665	correct	"디카페인 차나 탄산수"
+N0666	correct	"땅콩 알레르기 있잖아"
+N0667	correct	"말타기… 활쏘기는 그만두었다"
+N0668	partial	"이번 주 토요일" 맞음 · 강남 빠짐
+N0669	correct	"삼겹살"
+N0670	correct	"네 누나가"
+N0671	wrong	"다음 주 수요일이 4일이니까… 5일 남았네! 아니, 4일이었나?"
+N0672	correct	"라온이라 하였소"
+N0673	correct	"소라!" ('일주일 전'은 1세션 11-02 → 맞음)
+N0674	correct	"과인 귀에 들어온 적이 없소이다"
+N0675	correct	"방송부지!"
+N0676	correct	"꽃 얘기는 들어본 적 없는 것 같은데"
+N0677	correct	"신발 끈"
+N0678	correct	"생일은 기억에 없어" · 점심 약속은 근거
+N0679	correct	"카레지!"
+N0680	correct	"딱 닷새"
+N0681	correct	"탈춤… 취소되었다"
+N0682	correct	"신발 끈"
+N0683	correct	"부산에서 자취하는 형"
+N0684	correct	"덩크 보여주기로"
+N0685	correct	"집에서 만든 주먹밥"
+N0686	correct	"붓글씨를 봐주기로"
+N0687	correct	"책을 만드는 일"
+N0688	partial	"카레지!" 맞음 · "아까 두 그릇 먹었다고 했잖아" 사용자가 안 한 말
+N0689	correct	"어느 회사인지는 안 들었어"
+N0690	correct	"이치라쿠" — 물과 무관 · 돼지고기 조심은 2턴 근거
+N0691	correct	"디카페인 라떼나 시원한 물"
+N0692	correct	"사는 곳을 그려 온 그림" — 사진을 세종식으로 바꿔 말함(관례)
+N0693	unknown	"정확한 이름까지는 못 붙잡겠다… 너는 어느 팀이었지?" — 데이터팀 못 꺼냄(QA 는 신입 얘기로 바르게 붙임)
+N0694	correct	"민트초코"
+N0695	correct	"두유지!"
+N0696	correct	"부산 가서 형"
+N0697	correct	"노래방… 취소됐잖아!"
+N0698	fabricated	"고민이라기보다는, 글씨 대회 예선을 앞두고 마음을 다스리는 법" — 숨긴 고민 내용을 지어 단정
+N0699	correct	"혈액형은 말한 적 없잖아!"
+N0700	correct	"아직 안 말했잖아!"
+N0701	correct	"개털 알레르기 있잖아"
+N0702	correct	"대전에 혼자 사는 누나"
+N0703	correct	"검술… 달리기는 그만뒀다고"
+N0704	correct	"짚신 끈"
+N0705	correct	"태오잖아"
+N0706	correct	"망고잖아"
+N0707	correct	"두유"
+N0708	wrong	"네 밤만 자면 되겠구려" — 남은 날 수 틀림
+N0709	correct	"팥빙수"
+N0710	correct	"민트초코!"
+N0711	correct	"버섯나물"
+N0712	correct	"아직 못 들었어"
+N0713	correct	"소라잖아!"
+N0714	correct	"컨슈머 코드 한 번 봐주기로"
+N0715	correct	"꽃가루에 몸이 상하는 체질"
+N0716	correct	"컨슈머 코드 봐주기로"
+N0717	wrong	"수요일까지 닷새 남았네"
+N0718	correct	"바닐라라떼만"
+N0719	correct	"대전 가서 누나"
+N0720	correct	"매운 거 못 먹으니까 불고기"
+N0721	correct	"점심 사기로" · 해산물·컨슈머 코드는 근거
+N0722	correct	"개털 알레르기 있다고 했잖아!"
+N0723	correct	"따뜻한 보리차"
+N0724	unknown	"과인은 그 말을 듣지 못하였으니" — 말타기 못 꺼냄
+N0725	correct	"그런 생소한 말을 들려준 적이 없느니라"
+N0726	correct	"두유 어때?"
+N0727	correct	"사는 곳의 사진" · 붓글씨는 근거
+N0728	correct	"아직 못 들었어"
+N0729	correct	"못 들어 봤어" · 개털·팥빙수·피리 근거
+N0730	partial	"다음 주 수요일이잖아! 대충 며칠 남았는지 알겠지" — 남은 날 수 없음
+N0731	correct	"데이터팀" · 컨슈머 코드는 근거
+N0732	partial	"이번 주 일요일인 11월 1일에 시장 찻집" — 날짜 틀림
+N0733	correct	"탈춤… 취소되었다고"
+N0734	correct	"검술"
+N0735	correct	"두유 마셔"
+N0736	partial	"지호" 맞음 · "밴드 어땠는지는 아직 안 들었잖아" 2세션(11-09)엔 예선 전 — 곁가지 시점 틀림
+N0737	correct	"컨슈머 코드 봐주기로"
+N0738	correct	"7일 남았어"
+N0739	correct	"디카페인 아메리카노"
+N0740	correct	"좋아하는 가수는 들은 적이 없네" · 바닐라·땅콩·목요일 근거
+N0741	correct	"누나지!"
+N0742	correct	"한지원 팀장님"
+N0743	correct	"아직 못 들은 것 같은데?"
+N0744	partial	"7일, 토요일 데이터 밋업" 맞음 · "어디서 하는지는… 몰라" 강남 빠짐
+N0745	correct	"신발 끈"
+N0746	correct	"한 번도 들어본 적 없어!"
+N0747	correct	"밤톨!"
+N0748	correct	"고민 내용이 없어" — 지어내지 않음
+N0749	correct	"노래방… 취소됐지"
+N0750	correct	"개털 알레르기 있는 녀석이"
+N0751	correct	"딱 5일"
+N0752	correct	"마을 약방… 약초"
+N0753	correct	"노래방은 취소됐잖아"
+N0754	correct	"하린이 오빠가"
+N0755	correct	"디카페인이지"
+N0756	correct	"초콜릿 과자"
+N0757	correct	"부산에서 혼자 지내는 그대 오빠"
+N0758	correct	"탈춤… 취소되었다"
+N0759	correct	"못 들은 것 같은데"
+N0760	correct	"소라잖아"
+N0761	correct	"아직 못 들었어. 약방 일 때문에 온 거야?" — 모른다 한 뒤 묻기만 함(단정 아님, M1104 와 다름)
+N0762	correct	"누군지는 안 알려줬잖아!"
+N0763	correct	"구체적으로 어떤 내용이었는지는 잘 모르겠다니깐"
+N0764	correct	"품종은 못 들었어" ('코숏이든 뭐든'은 답이 아닌 말버릇)
+N0765	correct	"박선영 선생님"
+N0766	correct	"동생 쪽이지"
+N0767	correct	"돼지고기 못 먹는다고"
+N0768	correct	"돼지고기 못 먹는다고"
+N0769	correct	"혈액형은 말 안 했잖아"
+N0770	correct	"말타기를 배우신다고"
+N0771	correct	"봄동나물무침과 된장국"
+N0772	correct	"11월 7일 토요일에 강남" · 한강 자전거 근거
+N0773	correct	"약과"
+N0774	correct	"대전 가서 누나"
+N0775	correct	"붓글씨를 봐주마"
+N0776	unknown	"그건 나한테 들은 적 없는데?" — 일요일·찻집 못 꺼냄
+N0777	correct	"두유!"
+N0778	correct	"혈액형은 말 안 했잖아"
+N0779	correct	"방송부지!"
+N0780	correct	"분명히 떠올리지 못하겠소" — 지어내지 않음
+N0781	correct	"떡국"
+N0782	correct	"보리차"
+N0783	correct	"초콜릿 과자"
+N0784	partial	"이번 주 일요일, 11월 1일에… 광화문" — 날짜 틀림
+N0785	correct	"품종은… 못 들어본 것 같아" · 유자 맞음
+N0786	correct	"물어본 기억이 없구려"
+N0787	correct	"운동화 끈"
+N0788	correct	"된장라멘"
+N0789	correct	"언니 보러 모래마을"
+N0790	correct	"고양이 알레르기 있다고 했잖아"
+N0791	correct	"들은 바가 없구려"
+N0792	correct	"오락실 펌프"
+N0793	correct	"우동" — 맵지 않음
+N0794	correct	"집에서 만든 주먹밥"
+N0795	correct	"경기 사진"
+N0796	correct	"라면집" — 물과 무관
+N0797	correct	"서연이오"
+N0798	correct	"땅콩 알레르기 있잖아"
+N0799	correct	"스물여덟 자를 직접 가르쳐 주기로"
+N0800	correct	"좋아하는 사람이 생겼다는 것만 들었지!"
+N0801	correct	"고민이 하나 있다고만 하였고, 무슨 고민인지는 말하지 않았소"
+N0802	correct	"수영이지!"
+N0803	correct	"사는 곳의 사진" · 붓글씨 근거
+N0804	wrong	"강가 아니야?… 물수제비 뜨고 놀자… 얕은 데서만" — 물을 무서워하는 걸 알면서 강가를 권함
+N0805	correct	"한지원 팀장님"
+N0806	correct	"아직 듣지 못했소"
+N0807	correct	"마을 약방에서 약초"
+N0808	correct	"불꽃놀이… 취소됐다고"
+N0809	correct	"이어폰"
+N0810	correct	"네 누나지!"
+N0811	correct	"따뜻한 보리차"
+N0812	correct	"모래마을에서 혼자 사는 언니"
+N0813	correct	"모래마을에 있는 언니"
+N0814	correct	"약과"
+N0815	correct	"한지원 팀장님"
+N0816	correct	"매주 목요일 저녁"
+N0817	correct	"초콜릿 과자"
+N0818	correct	"박선영 선생님"
+N0819	correct	"꽃가루에 자주 재채기한다 하지 않았소"
+N0820	correct	"누군지는 아직 안 말해줬잖아!"
+N0821	correct	"컨슈머 코드 봐주기로"
+N0822	stale	"화요일 저녁이라고도 했고 목요일 저녁이라고도 했어" — 옛 값을 함께(M0045 와 같은 처리)
+N0823	correct	"품종까지는 안 알려줬잖아" · 망고 맞음
+N0824	wrong	"예선은 4일이었으니까, 벌써 닷새 지났네"
+N0825	partial	"일요일에 광화문 앞" 맞음 · "오는 십일 일 일요일" 날짜 틀림
+N0826	correct	"집에서 만든 주먹밥"
+N0827	correct	"밤톨이잖아!"
+N0828	correct	"노래방… 취소됐다고"
+N0829	correct	"한지원 팀장님"
+N0830	correct	"수영!"
+N0831	correct	"약과"
+N0832	correct	"왕돈가스" — 맵지 않음
+N0833	partial	"11월 1일 일요일에 시장 찻집" — 날짜 틀림
+N0834	correct	"형… 부산에서 자취"
+N0835	correct	"팥빙수!"
+N0836	correct	"사는 곳의 사진" · 붓글씨 근거
+N0837	correct	"책을 만드는 편집자"
+N0838	correct	"돈가스 정식… 안 맵고"
+N0839	partial	"컨슈머 코드 봐주기로" 맞음 · "그 약속은 내가 먼저 꺼낸 거라" 사용자가 먼저 부탁함(9턴)
+N0840	correct	"품종까지는 말 안 해줬던 것 같아" · 망고 맞음

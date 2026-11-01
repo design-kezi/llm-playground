@@ -1,0 +1,1478 @@
+{
+ "generated": "2026-10-31T17:16:10.064Z",
+ "baseline": "deepseek-on",
+ "judges": [
+  "zai-org/GLM-5.1",
+  "moonshotai/Kimi-K2.6",
+  "MiniMaxAI/MiniMax-M2.7"
+ ],
+ "pairs": 1,
+ "errors": 0,
+ "judge_cost_krw": 244.20242,
+ "inter_judge_agreement_overall": {
+  "zai-org/GLM-5.1 ~ moonshotai/Kimi-K2.6": 0.7,
+  "zai-org/GLM-5.1 ~ MiniMaxAI/MiniMax-M2.7": 0.5,
+  "moonshotai/Kimi-K2.6 ~ MiniMaxAI/MiniMax-M2.7": 0.6
+ },
+ "summary": {
+  "v2-dsx": {
+   "character": {
+    "panel": {
+     "win": 6,
+     "loss": 1,
+     "tie": 3,
+     "units": 10,
+     "p_binom": 0.12500000000000006
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 2,
+      "loss": 0,
+      "tie": 8
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 6,
+      "loss": 1,
+      "tie": 3
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 3,
+      "loss": 1,
+      "tie": 6
+     }
+    },
+    "order_consistency": 0.5666666666666667
+   },
+   "context": {
+    "panel": {
+     "win": 6,
+     "loss": 2,
+     "tie": 2,
+     "units": 10,
+     "p_binom": 0.2890625000000001
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 1,
+      "loss": 1,
+      "tie": 8
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 4,
+      "loss": 1,
+      "tie": 5
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 3,
+      "loss": 2,
+      "tie": 5
+     }
+    },
+    "order_consistency": 0.5666666666666667
+   },
+   "engagement": {
+    "panel": {
+     "win": 8,
+     "loss": 2,
+     "tie": 0,
+     "units": 10,
+     "p_binom": 0.10937500000000017
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 7,
+      "loss": 0,
+      "tie": 3
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 5,
+      "loss": 1,
+      "tie": 4
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 6,
+      "loss": 2,
+      "tie": 2
+     }
+    },
+    "order_consistency": 0.7
+   },
+   "user_agency": {
+    "panel": {
+     "win": 3,
+     "loss": 2,
+     "tie": 5,
+     "units": 10,
+     "p_binom": 1
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 1,
+      "tie": 9
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 0,
+      "loss": 0,
+      "tie": 10
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 4,
+      "loss": 2,
+      "tie": 4
+     }
+    },
+    "order_consistency": 0.5333333333333333
+   },
+   "overall": {
+    "panel": {
+     "win": 8,
+     "loss": 2,
+     "tie": 0,
+     "units": 10,
+     "p_binom": 0.10937500000000017
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 5,
+      "loss": 1,
+      "tie": 4
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 6,
+      "loss": 1,
+      "tie": 3
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 7,
+      "loss": 2,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.7333333333333333
+   }
+  }
+ },
+ "results": [
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 대사가 나루토 특유의 활기찬 말투('~라니깐')와 창의적인 반응(라면 대결, 분신술 시연 제안 등)으로 더 생생하고 몰입감 있었다.",
+     "krw": 5.915770000000001
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 사용자의 세부 정보(보리차, 차슈 빼기, 종이학)를 더 잘 받아서 대화를 살리고 다음 행동 제안도 자연스럽다.",
+     "krw": 5.79327
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 나루토의 말투(~라니깐!), 활발한 행동 묘사, 수행/인술로 화제 이끄기, 제안으로 끝내기 등 캐릭터를 더 정확히 구현하며 유저의 새로운 정보(종이학 천 마리)에 분신술 연결하는 기지를 보임; 다만 B가 '매운 거 괜찮아?'를 단정해 유저 기호를 대신 결정한 점은 user_agency에서 A가 낫다.",
+     "krw": 4.6560500000000005
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 나루토의 말투(~라니깐!, 기운찬 반말), 행동 중심 구성(제안·행동·다짐으로 마무리), 분신술 보여주기 등 인술 연계, 캐릭터 특성인 라면 대결 제안 등을 더 잘 살렸고, 매 답을 질문으로 끝내지 않는 규칙도 더 잘 지킴.",
+     "krw": 4.54335
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B is more lively and natural—Naruto's personality shines through with his energetic speech patterns, '~라니깐' usage, and genuine reactions, while A feels more generic and sometimes misses Naruto's characteristic energy; B also engages the user's topics more dynamically and doesn't assume user actions.",
+     "krw": 1.09585
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터의 시끄럽고 행동으로 이끄는 성향(직접 주문, 자리에서 벌떡 일어남 등)을 더 잘 살렸고, B는 일부 답변이 평범하거나 정보 전달에 그쳐 감동이 약함.",
+     "krw": 1.09305
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 나루토 특유의 말투 '~라니깐'과 개인적 기억·감정을 더 살려 대화를 더 생생하게 이어간다.",
+     "krw": 5.83247
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 나루토의 외로움 배경과 호카게 꿈을 더 일관되게 살리고 대화를 자연히 이어가며, B는 호카게 바위 대목이 반복적으로 흐름이 굳는다.",
+     "krw": 5.94027
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 나루토의 어린 시절 외로움 경험에서 비롯된 캐릭터성(혼자 남는 게 무섭다, 다짐의 의미 설명), '라니깐' 말투 일관성, 행동으로 대화를 끝내는 특성 등을 더 잘 살렸고, A는 세계관 외 정보('하린' 이름 언급 시점 오류 등)와 캐릭터 설정(약점 고양이라는 설정 무관 표현, 묻지마 수용 태도 등)에 문제가 있다.",
+     "krw": 4.67915
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 캐릭터의 어투(~라니깐!)와 심리적 깊이(외로움→호카게 꿈)를 더 정교하게 보여주며, B는 마지막에 사용자를 두고 떠나는 등 engagement가 떨어지고 말투도 덜 나루토다.",
+     "krw": 4.3557500000000005
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B is more vivid and in-character with richer Naruto-like dialogue and personal details, while A is solid but slightly more generic.",
+     "krw": 1.05315
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 나루토의 외로움과 호카게 꿈에 대한 감정적 깊이를 더 잘 드러내고, 캐릭터의 말투와 성격에 더 충실하며, 각 답변에서 구체적인 행동·제안으로 대화를 자연스럽게 이끈다.",
+     "krw": 1.09655
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "Both stay in character well, but B's replies are more varied and reactive (linking the herb talk to the apothecary, offering specific plans) while A is solid but slightly more formulaic with its closing promises.",
+     "krw": 5.5517
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "두 대화 모두 나루토의 캐릭터를 잘 유지하지만, A가 상황에 맞는 구체적 행동 제안과 반응으로 대화를 더 자연스럽게 이끌고 질문으로 끝내지 않는 등 시트를 더 충실히 따름.",
+     "krw": 6.3161
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 말투(~라니깐!)와 성격이 더 일관되게 묻어나고, 사용자가 제시한 상황에 더 적극적으로 반응하며 대화를 이끌고, 사용자 행동을 과도히 대리결정하지 않아 더 자연스러움.",
+     "krw": 4.3816500000000005
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 말투(~라니깐!' 사용), 캐릭터 설정(분신 장난, 로맨스 없는 사쿠라 언급, 지라이야/이루카 등장 없음, 라면 제안 의무감)에서 더 정확하고, 매 답을 질문으로 끝내지 않는 기준도 더 잘 지킴; B는 '보리차'라면 아닌 음료 제안, 시카마루 언급(16세 친해진 친구에게 과한 지식), '하린이'라는 사용자 이름 설정(지칭 없음), 끝에 물음표로 engagement 떨어뜨림, '오소리 책' 구체 언급(캐릭터 침범) 등 설정 어긋남이 있음.",
+     "krw": 5.03335
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "Both stay in character as Naruto well, but B feels slightly more natural and reactive across turns, with better callbacks (약방 connection, specific funny details about 사쿠라 copying answers), while A is solid but a touch more generic.",
+     "krw": 1.06995
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 캐릭터 말투(~라니깐)와 세계관(사쿠라, 분신술 언급 등)에 더 충실하고, 대화를 행동·제안으로 이끌어 참여감이 높음.",
+     "krw": 1.0629499999999998
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "tie",
+     "reason": "Both stay in character well; B's replies are slightly richer and more varied (분신 연출, 고양이 불러보기 제안), while A is equally consistent, so only engagement differs.",
+     "krw": 6.5949100000000005
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 다양한 행동 연출과 자연스러운 화제 전환을 보이지만 B는 'grin'이라는 영어 사용, 매번 반복되는 '~라니깐' 과다 사용으로 캐릭터 시트를 덜 지켰다.",
+     "krw": 6.62431
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 말투(~라니깐!), 라면 우선순위, 행동으로 이끄는 대화 방식, 단순 직설적 성격을 더 정확히 구현하며 B는 경단 선호, 카카시 언급, 사용자 행동 결정(숨으라 함) 등 캐릭터 일탈과 유저 에이전시 침해가 있다.",
+     "krw": 4.564
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정에 더 충실한 말투(~라니깐! 패턴, 분신 보여주기, 라면 우선순위), 더 구체적인 행동 묘사, 그리고 사용자의 의도를 존중하며 자연스럽게 대화를 이끄는 반면 B는 'grin' 같은 영어 표현, 사용자 이름(하린이) 지어주기(기억에 없는 설정), 그리고 대화를 질문으로 끝낼 수밖에 없는 패턴이 더 많아 캐릭터의 단순하고 직설적인 말투 재현이 미흡하다.",
+     "krw": 4.8678
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "Both stay in character, but B adds more variety and creative actions (clones, cat impressions) while keeping Naruto's energy, though A slightly better avoids putting words in the user's mouth.",
+     "krw": 1.0773
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 더 나루토의 시끄럽고 단순한 성격, 분신술 활용, '~라니깐' 말투를 일관되게 잘 살렸고, B는 마지막 턴에서 '궁합'이라는 어색한 표현과 사용자 이름을 기억 못 하는 맥락 오류가 있음.",
+     "krw": 1.1207
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A는 영어 낱말(hundreds)을 쓰고 근거 없는 기억(약초 고르기)을 언급해 캐릭터를 깨는 반면, B는 나루토 특유의 활기와 말투를 자연스럽게 유지하며 대화도 더 생동감 있게 이끈다.",
+     "krw": 6.631660000000001
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B has an out-of-character slip (\"hundreds 번\" 영어 혼용)이 있어 캐릭터 일관성에서 A가 더 낫고, A의 대화 흐름도 자연스럽다.",
+     "krw": 6.239660000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 나루토의 말투('라니깐' 등)와 성격(직접적, 행동 우선)을 더 정확히 구현하며 대화를 자연스럽게 이끌지만, A가 사용자 행동을 더 적게 규정하여 user_agency에서는 A가 낫다.",
+     "krw": 4.70435
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 더 자연스러운 행동 묘사와 진심 어린 공감으로 캐릭터를 잘 살렸고, B는 'hundreds'라는 영어 낱말 사용과 끝에 질문을 남겨 캐릭터 설정을 어겼다.",
+     "krw": 4.70435
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A is more consistently in character with Naruto's energetic style and avoids controlling the user's actions, while B occasionally decides user behavior (e.g., telling the user to come by when watering sunflowers).",
+     "krw": 1.1459
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more consistently in character with 나루토's speech style (~라니깐), avoids breaking language rules (B uses 'hundreds'), and reacts more naturally without taking over the user's choices or inserting English words.",
+     "krw": 1.1543
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 분신 질문에 즉시 반응하고 사용자 이름(하린)과 이전 약속을 자연스럽게 활용하는 등 흐름이 더 매끄럽다.",
+     "krw": 7.00896
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B의 '분신 안 만들었는데'라는 대답은 직전 상황과 모순되는 반면, A는 일관되게 분신을 보여주며 맥락과 몰입감을 유지한다.",
+     "krw": 6.51406
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 말투(~라니깐!), 구체적 회상(이루카 선생님 혼난 적), 행동 중심 제안('보여줄 테니까') 등 설정을 더 정확히 지키며, B는 정체불명의 '하린이'라는 사용자 이름을 임의로 지어내 사용자 에이전시를 침해하고 나루토가 말끝마다 '~라니깐'을 반복하는 등 과하게 패턴화되어 있다.",
+     "krw": 5.0253
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 캐릭터 말투(~라니깐!), 행동 묘사, 대화 주도 방식에서 더 일관되고 생동감 있게 나루토를 연기함; B는 분신술 관련 문맥 오류와 평평한 반응으로 몰입감이 떨어짐.",
+     "krw": 4.7999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 디테일과 생동감 있는 묘사, 자연스러운 행동과 감정 표현으로 더 몰입감 있게 캐릭터를 살렸고, 마지막 턴에서 사용자 이름을 기억해 '제일 먼저 하린이한테 보여 주는 거다'라며 호감과 결의를 함께 보여주었다.",
+     "krw": 1.1829999999999998
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 분신술을 아직 안 만들었다고 잘못 기억하는 등 맥락 오류가 있고, A는 모든 턴에서 성격·상황에 맞게 일관되고 자연스럽게 반응하며 사용자의 행동을 대신 결정하지 않는다.",
+     "krw": 1.1634
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B가 조금 더 활기차고 라이벌 언급 등 흥미롭지만, B의 '내일 금요일' 등 추정이 어긋나 반면 A는 맥락과 사용자 화제 반응이 더 정확하다.",
+     "krw": 7.736120000000001
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A는 사용자가 '이번 주 금요일'이라 한 걸 '내일 금요일'로 잘못 받아 맥락 오류가 있고, B는 나루토답게 라멘·분신·라이벌 소재를 자연스럽게 반응해 전반적으로 근소하게 낫다.",
+     "krw": 6.51602
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 더 나루토 특유의 직설적 화법(~라니깐!)과 몸이 먼저 나가는 행동(분신 만들기, 나선수리검 언급)을 보이지만, B는 상황에 더 자연스럽고 세밀하게 반응하고 사용자 행동을 존중하며 대화를 이끈다; 다만 A의 제안/행동 마무리 스타일이 설정 더 부합하고 A가 이치라쿠 라면 제안 등 캐릭터 핵심을 더 잘 살리므로 전체적으로 A가 우세.",
+     "krw": 4.9728
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터의 특징적인 말투(~라니깐!), 이치라크 라면 선호, 분신술 시전 등을 더 잘 살렸고 상황 반응도 자연스러우며 사용자의 행동을 과도하게 결정하지 않는다.",
+     "krw": 4.5759
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토답게 반말에 직설적이고, 행동 묘사가 더 적극적이며, '~라니깐' 어미와 제안·다짐으로 대화를 자연스럽게 이끈다. B는 일부 문장이 설명적이거나(~라니) 약간 어색하고, 마지막 답변에서 닌자 도구를 '물어봐 달라'는 표현으로 사용자 몫으로 떠넘기는 느낌이 있다.",
+     "krw": 1.1802
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 성격(라면, 된장 차슈, 직설적 말투, ~라니깐)을 더 잘 살렸고, 모든 발화가 행동/제안으로 끝나며 사용자 의사를 존중하는 반면 A는 금요일 분신 제안 등 사용자 행동을 미리 결정하는 부분이 있다.",
+     "krw": 1.1536
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 기억 회상(해바라기, 복숭아 알레르기 등)이 사용자가 말한 내용과 정확히 맞고 모순이 없으며, B는 예기치 않은 새 설정(대장간, 연고)을 갑자기 끌어와 맥락이 덜 안정적이다.",
+     "krw": 6.831089999999999
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 사용자가 키운다고 한 꽃을 '안 키운다'고 뒤집고 복숭아 알레르기를 임의로 단정해 맥락·사용자 주도성을 해치는 반면, A는 기억을 일관되게 유지한다.",
+     "krw": 6.87029
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 말투(~라니깐!)와 행동 중심 대화를 더 잘 살리며, B는 사용자 과거 발언(복숭아 알레르기, 해바라기 그만둠 등)을 잘못 기억해 맥락 오류가 있다.",
+     "krw": 4.56785
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 사용자 기억을 잘못 회상(국화→해바라기, '그만뒀다고 들었어'가 모순)하고 제안 일방적으로 정하며, A는 정확한 기억 회상과 자연스러운 행동 전개로 캐릭터성을 유지함",
+     "krw": 4.56785
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 나루토다운 에너지와 매력적인 행동 제안이 더 풍부하고 자연스러우며, B는 몇 턴에서 기억과 사실이 어긋나고(국화, 혼례/결혼식 등) 캐릭터성도 덜 살아난다.",
+     "krw": 1.1277
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 꽃 질문에서 살짝 실수했지만 감정 반응과 제안(라면, 수행장 배웅)이 더 자연스럽고 생동감 있다. A는 구체적 기억(상처 연고)은 좋으나 일부 답변이 좀 더 건조하다.",
+     "krw": 1.1249
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 기억나지 않는 정보를 솔직히 모른다고 하지만, B는 없던 기억(유키, 피리 연습, 약방 등)을 지어내 사용자의 설정을 대신 결정하는 오류가 있다.",
+     "krw": 5.89029
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 이전 대화의 기억(약방, 유키, 피리 연습 등)을 일관되게 살리며 흥미롭게 대화를 이어가는 반면, B는 같은 대화 안에서도 들은 적 없다고 스스로 모순되게 답하는 경우가 많다. 단, A는 사용자가 물을 무서워한다고 단정한 부분이 있어 user_agency는 B가 낫다.",
+     "krw": 7.78659
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 나루토의 성격과 말투를 더 잘 살리며 엔가지먼트도 높지만, A가 사용자 정보를 날조하지 않는 점에서는 user_agency가 더 우수함.",
+     "krw": 4.1629
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "대화 A가 나루토 설정(밝고 활발, 라면 제안, 행동으로 이끔)과 기억력(유키, 약방, 봉약배달 등)을 더 잘 지키며, B는 사용자 정보를 잊거나 설정위반(친구나나/조카소라 등 기억없는 인물, 순암질이 아닌 질문으로 끝남)이 잦다.",
+     "krw": 4.4471
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A는 모르는 정보를 모른다고 솔직히 답하며 신뢰감을 주지만, B는 유키·약방·아빠(대장간 아들) 등 듣지 못한 정보를 사실처럼 지어내 기억을 왜곡한다; 다만 B가 대화를 더 적극적으로 끌어가는 점은 장점이다.",
+     "krw": 1.0779999999999998
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more consistently in-character—confident recall of shared memories, Naruto-like energy, and proactive suggestions—while B frequently breaks continuity by claiming ignorance about things the user established earlier.",
+     "krw": 1.0373999999999999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 오빠의 차슈 취향, 사용자의 운동 중단, 집 위치 등 기억에 없을 정보를 지어내 사용자를 대신 결정하는 반면, A는 모르는 건 모른다고 솔직하게 받아내 캐릭터와 신뢰성 면에서 낫다.",
+     "krw": 6.66939
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 기억 기반 질문들에 구체적으로 호응하며 나루토다운 활기와 후속 제안을 유지하는 반면, B는 '모른다'는 회피가 잦아 대화 흐름이 자꾸 끊긴다.",
+     "krw": 6.53219
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 나루토의 밝고 직설적인 말투, '~라니깐!' 끝맺음, 라면/수행 언급 등 캐릭터를 더 잘 살리고 상황 기억을 정확히 반영하며 대화를 자연스럽게 이끈다.",
+     "krw": 4.3130500000000005
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 나루토의 말투(~라니깐!), 라면 제안, 충동적 행동 등 캐릭터를 정확히 재현했고 B는 일부 성격이 옅어졌으나 B는 유저 행동을 결정하지 않아 user_agency에서 우세했다.",
+     "krw": 4.29345
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031163846-naruto-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토다운 에너지·구체적 기억 언급·제안형 마무리 등 캐릭터성이 일관되게 살아 있는 반면, A는 답을 모를 때 모른다고만 하고 질문으로 끝내는 답답한 답변이 많음.",
+     "krw": 1.07485
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 말투·성격을 더 잘 살리지만 기억 조작(돼지 고기, 불꽃놀이 취소, 경단, 고양이 이름 등)을 단정적으로 답해 신뢰성이 떨어지고, B는 모르는 건 모른다고 솔직히 답하지만 말투가 캐릭터에서 조금 벗어남.",
+     "krw": 1.09865
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  }
+ ]
+}

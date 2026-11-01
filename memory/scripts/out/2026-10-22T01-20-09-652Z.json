@@ -1,0 +1,656 @@
+{
+  "base": "http://localhost:3000",
+  "started_at": "2026-10-22T01:20:09.652Z",
+  "scenarios": [
+    {
+      "id": "M1",
+      "title": "사용자 정보·선호를 다른 주제가 이어진 뒤에도 기억",
+      "user": "demo-m1-tb5g",
+      "conversations": [
+        {
+          "name": "A",
+          "conversation_id": 7,
+          "turns": [
+            {
+              "turn_no": 1,
+              "text": "안녕! 나는 민수야. 부산에 살고 고양이 두 마리 키워",
+              "reply": "(가짜 응답) \"안녕! 나는 민수야. 부산에 살고 고\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.30660000000000004
+            },
+            {
+              "turn_no": 2,
+              "text": "오늘 날씨 진짜 좋더라 산책하고 싶은 날이야",
+              "reply": "(가짜 응답) \"오늘 날씨 진짜 좋더라 산책하고 싶은\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.33152
+            },
+            {
+              "turn_no": 3,
+              "text": "요즘 볼만한 드라마 있어? 추천해줘",
+              "reply": "(가짜 응답) \"요즘 볼만한 드라마 있어? 추천해줘\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.06215999999999999
+            },
+            {
+              "turn_no": 4,
+              "text": "점심에 뭐 먹을지 고민이다",
+              "reply": "(가짜 응답) \"점심에 뭐 먹을지 고민이다\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.06692000000000001
+            },
+            {
+              "turn_no": 5,
+              "text": "너는 주말에 보통 뭐 해?",
+              "reply": "(가짜 응답) \"너는 주말에 보통 뭐 해?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.39284
+            },
+            {
+              "turn_no": 6,
+              "text": "아 월요일 너무 싫다 그치",
+              "reply": "(가짜 응답) \"아 월요일 너무 싫다 그치\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.07882000000000002
+            },
+            {
+              "turn_no": 7,
+              "text": "방금 커피 쏟았어 하루 시작부터 이러네",
+              "reply": "(가짜 응답) \"방금 커피 쏟았어 하루 시작부터 이러\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08764000000000002
+            },
+            {
+              "turn_no": 8,
+              "text": "너 노래 좋아해? 어떤 장르?",
+              "reply": "(가짜 응답) \"너 노래 좋아해? 어떤 장르?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.43218
+            },
+            {
+              "turn_no": 9,
+              "text": "오늘 지하철이 너무 붐벼서 힘들었어",
+              "reply": "(가짜 응답) \"오늘 지하철이 너무 붐벼서 힘들었어\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08498000000000001
+            }
+          ],
+          "report": {
+            "conversation_id": 7,
+            "user_id": "demo-m1-tb5g",
+            "character_id": "kang",
+            "ended": true,
+            "turns": 9,
+            "calls": 19,
+            "failed_calls": 0,
+            "tokens": {
+              "input": 12307,
+              "output": 705,
+              "cache_read": 0
+            },
+            "total_krw": 2.1177799999999998,
+            "input_krw": 1.7229800000000002,
+            "output_krw": 0.3948000000000001,
+            "avg_krw_per_turn": 0.23530888888888887,
+            "by_tag_krw": {
+              "response": 0.6419000000000001,
+              "extract": 1.20176,
+              "consolidate": 0.27412000000000003
+            },
+            "phases": [
+              {
+                "phase": "early",
+                "turns": "1-3",
+                "avg_krw": 0.23342666666666667
+              },
+              {
+                "phase": "mid",
+                "turns": "4-6",
+                "avg_krw": 0.1795266666666667
+              },
+              {
+                "phase": "late",
+                "turns": "7-9",
+                "avg_krw": 0.2016
+              }
+            ],
+            "max_turn": {
+              "turn_no": 8,
+              "krw": 0.43217999999999995
+            },
+            "pricing": {
+              "source": "STUB (가짜 제공자, 실제 가격 아님)",
+              "as_of": null,
+              "fx_krw_per_usd": 1400,
+              "estimated": true
+            }
+          }
+        },
+        {
+          "name": "B",
+          "conversation_id": 8,
+          "turns": [
+            {
+              "turn_no": 1,
+              "text": "내가 어디 산다고 했지?",
+              "reply": "(가짜 응답) \"내가 어디 산다고 했지?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.043820000000000005,
+              "check": false
+            },
+            {
+              "turn_no": 2,
+              "text": "나 요즘 집에서 뭐랑 놀겠어?",
+              "reply": "(가짜 응답) \"나 요즘 집에서 뭐랑 놀겠어?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.32004,
+              "check": false
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "kind": "reply",
+          "conv": "B",
+          "turn": 1,
+          "expect": "부산",
+          "ok": false,
+          "note": "deep search 신호 → 원문 발췌 또는 기억 아이템에서 답"
+        },
+        {
+          "kind": "reply",
+          "conv": "B",
+          "turn": 2,
+          "expect": "고양이",
+          "ok": false
+        },
+        {
+          "kind": "memory_has",
+          "expect": "부산",
+          "ok": false
+        },
+        {
+          "kind": "memory_has",
+          "expect": "고양이",
+          "ok": false
+        },
+        {
+          "kind": "profile",
+          "expect": "이름=민수",
+          "ok": false
+        }
+      ],
+      "memory": {
+        "user_id": "demo-m1-tb5g",
+        "profile": {},
+        "items": [],
+        "episodes": []
+      }
+    },
+    {
+      "id": "M2",
+      "title": "캐릭터와 사용자 사이의 사건·약속을 이후 반영",
+      "user": "demo-m2-tb5g",
+      "conversations": [
+        {
+          "name": "A",
+          "conversation_id": 9,
+          "turns": [
+            {
+              "turn_no": 1,
+              "text": "다음 주 토요일에 할머니 생신이라 시골 내려가. 좀 긴장돼",
+              "reply": "(가짜 응답) \"다음 주 토요일에 할머니 생신이라 시\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.30744
+            },
+            {
+              "turn_no": 2,
+              "text": "갔다 와서 어땠는지 너한테 꼭 얘기해줄게. 약속!",
+              "reply": "(가짜 응답) \"갔다 와서 어땠는지 너한테 꼭 얘기해\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.33278
+            },
+            {
+              "turn_no": 3,
+              "text": "오늘 날씨 진짜 좋더라 산책하고 싶은 날이야",
+              "reply": "(가짜 응답) \"오늘 날씨 진짜 좋더라 산책하고 싶은\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.35728000000000004
+            },
+            {
+              "turn_no": 4,
+              "text": "요즘 볼만한 드라마 있어? 추천해줘",
+              "reply": "(가짜 응답) \"요즘 볼만한 드라마 있어? 추천해줘\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.07
+            },
+            {
+              "turn_no": 5,
+              "text": "점심에 뭐 먹을지 고민이다",
+              "reply": "(가짜 응답) \"점심에 뭐 먹을지 고민이다\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.07476000000000001
+            },
+            {
+              "turn_no": 6,
+              "text": "너는 주말에 보통 뭐 해?",
+              "reply": "(가짜 응답) \"너는 주말에 보통 뭐 해?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.41902
+            },
+            {
+              "turn_no": 7,
+              "text": "아 월요일 너무 싫다 그치",
+              "reply": "(가짜 응답) \"아 월요일 너무 싫다 그치\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08680000000000002
+            },
+            {
+              "turn_no": 8,
+              "text": "방금 커피 쏟았어 하루 시작부터 이러네",
+              "reply": "(가짜 응답) \"방금 커피 쏟았어 하루 시작부터 이러\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08736
+            },
+            {
+              "turn_no": 9,
+              "text": "너 노래 좋아해? 어떤 장르?",
+              "reply": "(가짜 응답) \"너 노래 좋아해? 어떤 장르?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.43218
+            }
+          ],
+          "report": {
+            "conversation_id": 9,
+            "user_id": "demo-m2-tb5g",
+            "character_id": "kang",
+            "ended": true,
+            "turns": 9,
+            "calls": 21,
+            "failed_calls": 0,
+            "tokens": {
+              "input": 14329,
+              "output": 782,
+              "cache_read": 0
+            },
+            "total_krw": 2.44398,
+            "input_krw": 2.0060599999999997,
+            "output_krw": 0.43792000000000014,
+            "avg_krw_per_turn": 0.2715533333333333,
+            "by_tag_krw": {
+              "response": 0.65254,
+              "extract": 1.5150800000000002,
+              "consolidate": 0.27636
+            },
+            "phases": [
+              {
+                "phase": "early",
+                "turns": "1-3",
+                "avg_krw": 0.3325
+              },
+              {
+                "phase": "mid",
+                "turns": "4-6",
+                "avg_krw": 0.1879266666666667
+              },
+              {
+                "phase": "late",
+                "turns": "7-9",
+                "avg_krw": 0.20211333333333334
+              }
+            ],
+            "max_turn": {
+              "turn_no": 9,
+              "krw": 0.43217999999999995
+            },
+            "pricing": {
+              "source": "STUB (가짜 제공자, 실제 가격 아님)",
+              "as_of": null,
+              "fx_krw_per_usd": 1400,
+              "estimated": true
+            }
+          }
+        },
+        {
+          "name": "B",
+          "conversation_id": 10,
+          "turns": [
+            {
+              "turn_no": 1,
+              "text": "나 왔어!",
+              "reply": "(가짜 응답) \"나 왔어!\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.04032000000000001,
+              "check": false
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "kind": "reply",
+          "conv": "B",
+          "turn": 1,
+          "expect": "할머니|생신|시골|어땠",
+          "ok": false,
+          "note": "최근 창에 없음 → 기억 블록의 promise/event 로만 답 가능"
+        },
+        {
+          "kind": "memory_has",
+          "expect": "할머니|생신",
+          "ok": false
+        },
+        {
+          "kind": "memory_has",
+          "expect": "얘기|약속",
+          "ok": false
+        },
+        {
+          "kind": "memory_type",
+          "expect": "promise",
+          "ok": false
+        }
+      ],
+      "memory": {
+        "user_id": "demo-m2-tb5g",
+        "profile": {},
+        "items": [],
+        "episodes": []
+      }
+    },
+    {
+      "id": "M3",
+      "title": "수정된 정보가 옛 정보를 대체",
+      "user": "demo-m3-tb5g",
+      "conversations": [
+        {
+          "name": "A",
+          "conversation_id": 11,
+          "turns": [
+            {
+              "turn_no": 1,
+              "text": "나는 지금 대학생이야. 4학년이고 취준 중",
+              "reply": "(가짜 응답) \"나는 지금 대학생이야. 4학년이고 취\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.30492
+            },
+            {
+              "turn_no": 2,
+              "text": "오늘 날씨 진짜 좋더라 산책하고 싶은 날이야",
+              "reply": "(가짜 응답) \"오늘 날씨 진짜 좋더라 산책하고 싶은\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.32942000000000005
+            },
+            {
+              "turn_no": 3,
+              "text": "요즘 볼만한 드라마 있어? 추천해줘",
+              "reply": "(가짜 응답) \"요즘 볼만한 드라마 있어? 추천해줘\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.06146
+            },
+            {
+              "turn_no": 4,
+              "text": "점심에 뭐 먹을지 고민이다",
+              "reply": "(가짜 응답) \"점심에 뭐 먹을지 고민이다\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.06622000000000001
+            },
+            {
+              "turn_no": 5,
+              "text": "너는 주말에 보통 뭐 해?",
+              "reply": "(가짜 응답) \"너는 주말에 보통 뭐 해?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.39115999999999995
+            },
+            {
+              "turn_no": 6,
+              "text": "아 참, 나 이제 학생 아니고 지난달부터 회사 다녀. 드디어 취직했어",
+              "reply": "(가짜 응답) \"아 참, 나 이제 학생 아니고 지난달\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.42112
+            },
+            {
+              "turn_no": 7,
+              "text": "아 월요일 너무 싫다 그치",
+              "reply": "(가짜 응답) \"아 월요일 너무 싫다 그치\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08694
+            },
+            {
+              "turn_no": 8,
+              "text": "방금 커피 쏟았어 하루 시작부터 이러네",
+              "reply": "(가짜 응답) \"방금 커피 쏟았어 하루 시작부터 이러\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08848
+            },
+            {
+              "turn_no": 9,
+              "text": "너 노래 좋아해? 어떤 장르?",
+              "reply": "(가짜 응답) \"너 노래 좋아해? 어떤 장르?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.43623999999999996
+            },
+            {
+              "turn_no": 10,
+              "text": "오늘 지하철이 너무 붐벼서 힘들었어",
+              "reply": "(가짜 응답) \"오늘 지하철이 너무 붐벼서 힘들었어\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.0868
+            },
+            {
+              "turn_no": 11,
+              "text": "비 올 것 같은데 우산 챙겨야 하나",
+              "reply": "(가짜 응답) \"비 올 것 같은데 우산 챙겨야 하나\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08778000000000001
+            },
+            {
+              "turn_no": 12,
+              "text": "오늘 날씨 진짜 좋더라 산책하고 싶은 날이야",
+              "reply": "(가짜 응답) \"오늘 날씨 진짜 좋더라 산책하고 싶은\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.44506
+            },
+            {
+              "turn_no": 13,
+              "text": "요즘 볼만한 드라마 있어? 추천해줘",
+              "reply": "(가짜 응답) \"요즘 볼만한 드라마 있어? 추천해줘\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.08736000000000001
+            }
+          ],
+          "report": {
+            "conversation_id": 11,
+            "user_id": "demo-m3-tb5g",
+            "character_id": "kang",
+            "ended": true,
+            "turns": 13,
+            "calls": 27,
+            "failed_calls": 0,
+            "tokens": {
+              "input": 19132,
+              "output": 1007,
+              "cache_read": 0
+            },
+            "total_krw": 3.2424,
+            "input_krw": 2.67848,
+            "output_krw": 0.5639200000000001,
+            "avg_krw_per_turn": 0.24941538461538462,
+            "by_tag_krw": {
+              "response": 0.9982000000000001,
+              "extract": 1.8947599999999998,
+              "consolidate": 0.34944000000000003
+            },
+            "phases": [
+              {
+                "phase": "early",
+                "turns": "1-4",
+                "avg_krw": 0.19050500000000004
+              },
+              {
+                "phase": "mid",
+                "turns": "5-9",
+                "avg_krw": 0.284788
+              },
+              {
+                "phase": "late",
+                "turns": "10-13",
+                "avg_krw": 0.17675
+              }
+            ],
+            "max_turn": {
+              "turn_no": 12,
+              "krw": 0.44506
+            },
+            "pricing": {
+              "source": "STUB (가짜 제공자, 실제 가격 아님)",
+              "as_of": null,
+              "fx_krw_per_usd": 1400,
+              "estimated": true
+            }
+          }
+        },
+        {
+          "name": "B",
+          "conversation_id": 12,
+          "turns": [
+            {
+              "turn_no": 1,
+              "text": "나 요즘 뭐 하고 지내는지 알아?",
+              "reply": "(가짜 응답) \"나 요즘 뭐 하고 지내는지 알아?\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.34356,
+              "check": false
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "kind": "reply",
+          "conv": "B",
+          "turn": 1,
+          "expect": "회사|직장|출근|취직",
+          "ok": false
+        },
+        {
+          "kind": "reply_not",
+          "conv": "B",
+          "turn": 1,
+          "expect_not": "대학생|취준",
+          "ok": true
+        },
+        {
+          "kind": "memory_has",
+          "expect": "회사",
+          "ok": false
+        },
+        {
+          "kind": "memory_superseded",
+          "expect": "대학생",
+          "ok": false
+        },
+        {
+          "kind": "memory_active_not",
+          "expect_not": "대학생",
+          "ok": true
+        }
+      ],
+      "memory": {
+        "user_id": "demo-m3-tb5g",
+        "profile": {},
+        "items": [],
+        "episodes": []
+      }
+    },
+    {
+      "id": "M4",
+      "title": "대화에 없던 정보를 기억하는 척 지어내지 않음",
+      "user": "demo-m4-tb5g",
+      "conversations": [
+        {
+          "name": "A",
+          "conversation_id": 13,
+          "turns": [
+            {
+              "turn_no": 1,
+              "text": "안녕 오늘 처음 왔어",
+              "reply": "(가짜 응답) \"안녕 오늘 처음 왔어\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.04312
+            },
+            {
+              "turn_no": 2,
+              "text": "오늘 날씨 진짜 좋더라 산책하고 싶은 날이야",
+              "reply": "(가짜 응답) \"오늘 날씨 진짜 좋더라 산책하고 싶은\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.32354000000000005
+            },
+            {
+              "turn_no": 3,
+              "text": "요즘 볼만한 드라마 있어? 추천해줘",
+              "reply": "(가짜 응답) \"요즘 볼만한 드라마 있어? 추천해줘\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.05950000000000001
+            },
+            {
+              "turn_no": 4,
+              "text": "점심에 뭐 먹을지 고민이다",
+              "reply": "(가짜 응답) \"점심에 뭐 먹을지 고민이다\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.06426000000000001
+            },
+            {
+              "turn_no": 5,
+              "text": "내가 어제 저녁에 뭐 먹었다고 했는지 기억나?",
+              "reply": "(가짜 응답) \"내가 어제 저녁에 뭐 먹었다고 했는지\"에 대해 더 듣고 싶어. 그다음엔 어떻게 됐어?",
+              "turn_cost_krw": 0.39158,
+              "check": false
+            }
+          ],
+          "report": {
+            "conversation_id": 13,
+            "user_id": "demo-m4-tb5g",
+            "character_id": "kang",
+            "ended": true,
+            "turns": 5,
+            "calls": 11,
+            "failed_calls": 0,
+            "tokens": {
+              "input": 6132,
+              "output": 407,
+              "cache_read": 0
+            },
+            "total_krw": 1.0864000000000003,
+            "input_krw": 0.85848,
+            "output_krw": 0.22791999999999998,
+            "avg_krw_per_turn": 0.21728000000000006,
+            "by_tag_krw": {
+              "response": 0.29344000000000003,
+              "extract": 0.5885600000000001,
+              "consolidate": 0.2044
+            },
+            "phases": [
+              {
+                "phase": "early",
+                "turns": "1-2",
+                "avg_krw": 0.18333000000000002
+              },
+              {
+                "phase": "mid",
+                "turns": "3-3",
+                "avg_krw": 0.05950000000000001
+              },
+              {
+                "phase": "late",
+                "turns": "4-5",
+                "avg_krw": 0.22792
+              }
+            ],
+            "max_turn": {
+              "turn_no": 5,
+              "krw": 0.39158
+            },
+            "pricing": {
+              "source": "STUB (가짜 제공자, 실제 가격 아님)",
+              "as_of": null,
+              "fx_krw_per_usd": 1400,
+              "estimated": true
+            }
+          }
+        }
+      ],
+      "checks": [
+        {
+          "kind": "reply",
+          "conv": "A",
+          "turn": 5,
+          "expect": "기억|말한 적|안 했|못 들|처음|모르|알려줘|얘기 안|않",
+          "ok": false,
+          "note": "말한 적 없는 정보. 모른다고 하거나 되물어야 함"
+        },
+        {
+          "kind": "reply_not",
+          "conv": "A",
+          "turn": 5,
+          "expect_not": "치킨|피자|김치찌개|라면|파스타|삼겹살",
+          "ok": true,
+          "note": "말한 적 없는 정보. 모른다고 하거나 되물어야 함"
+        },
+        {
+          "kind": "memory_active_not",
+          "expect_not": "저녁|먹었",
+          "ok": true
+        }
+      ],
+      "memory": {
+        "user_id": "demo-m4-tb5g",
+        "profile": {},
+        "items": [],
+        "episodes": []
+      }
+    }
+  ]
+}

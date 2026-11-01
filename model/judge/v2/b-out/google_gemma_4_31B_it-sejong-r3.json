@@ -1,0 +1,957 @@
+{
+ "model_id": "google/gemma-4-31B-it",
+ "scenario": "sejong",
+ "rep": 3,
+ "source_run": "20261023152119-sejong-40-nc8-mem-1",
+ "started_at": "2026-10-23T17:16:26.499Z",
+ "wall_ms": 86065,
+ "env": {
+  "MODEL_EXTRACT": "google/gemma-4-31B-it",
+  "MODEL_EMBED": "off",
+  "MODEL_REASONING": "off"
+ },
+ "cost_krw": 8.063160000000002,
+ "cost_by_tag": {
+  "extract": 7.540400000000002,
+  "consolidate": 0.52276
+ },
+ "steps": [
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 12,
+   "range": [
+    1,
+    6
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 8,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1698,
+     "output_tokens": 140,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.55384,
+     "latency_ms": 7087,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1863,
+     "output_tokens": 133,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.59612,
+     "latency_ms": 5337,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 18,
+   "range": [
+    7,
+    12
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 6,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1890,
+     "output_tokens": 152,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6143200000000001,
+     "latency_ms": 10131,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2116,
+     "output_tokens": 150,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6764800000000001,
+     "latency_ms": 11055,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 24,
+   "range": [
+    13,
+    18
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 6,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2126,
+     "output_tokens": 98,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6501600000000001,
+     "latency_ms": 6561,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2243,
+     "output_tokens": 219,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.75068,
+     "latency_ms": 13716,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 30,
+   "range": [
+    19,
+    24
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 2,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2070,
+     "output_tokens": 46,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.60536,
+     "latency_ms": 2719,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2264,
+     "output_tokens": 57,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.66584,
+     "latency_ms": 3923,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 36,
+   "range": [
+    25,
+    30
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 0,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2188,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.61544,
+     "latency_ms": 788,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2199,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.61852,
+     "latency_ms": 522,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "end_flush",
+   "turn_no": 40,
+   "range": [
+    31,
+    40
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 0,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2161,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6078800000000001,
+     "latency_ms": 525,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2082,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.5857600000000001,
+     "latency_ms": 529,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "consolidate",
+   "reason": null,
+   "turn_no": 0,
+   "range": null,
+   "parsed_ok": true,
+   "chunks": null,
+   "ops": 1,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "consolidate",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1713,
+     "output_tokens": 77,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.52276,
+     "latency_ms": 23143,
+     "finish_reason": "stop"
+    }
+   ]
+  }
+ ],
+ "memory": {
+  "user_id": "b-google_gemma_4_31B_it-sejong-3",
+  "profile": {
+   "job": "편집자",
+   "name": "지수"
+  },
+  "items": [
+   {
+    "id": 1,
+    "type": "fact",
+    "text": "사용자는 우유를 마시면 배가 아프다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "user.allergy",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 2
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:16:33.586Z"
+   },
+   {
+    "id": 2,
+    "type": "preference",
+    "text": "사용자는 따뜻한 보리차를 마신다",
+    "when": null,
+    "importance": 2,
+    "status": "active",
+    "slot": "user.like",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 2
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:16:33.586Z"
+   },
+   {
+    "id": 3,
+    "type": "fact",
+    "text": "사용자의 고양이 이름은 모모다",
+    "when": null,
+    "importance": 4,
+    "status": "superseded",
+    "slot": "pet.name",
+    "entity": "pet#1",
+    "depends_on": null,
+    "value": "모모",
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 3
+    },
+    "superseded_by": 14,
+    "invalidated_at": "2026-10-23T17:17:06.682Z",
+    "created_at": "2026-10-23T17:16:33.586Z"
+   },
+   {
+    "id": 4,
+    "type": "preference",
+    "text": "사용자는 채식주의자다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "user.diet",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 4
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:16:38.926Z"
+   },
+   {
+    "id": 5,
+    "type": "fact",
+    "text": "사용자는 책을 만드는 편집자다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "user.job",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 5
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:16:38.926Z"
+   },
+   {
+    "id": 6,
+    "type": "event",
+    "text": "사용자는 친구와 광화문 앞에서 만난다",
+    "when": "2026-10-24 (이번 주 토요일)",
+    "importance": 3,
+    "status": "superseded",
+    "slot": "event.plan",
+    "entity": "event#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 6
+    },
+    "superseded_by": 15,
+    "invalidated_at": "2026-10-23T17:17:20.400Z",
+    "created_at": "2026-10-23T17:16:38.927Z"
+   },
+   {
+    "id": 7,
+    "type": "preference",
+    "text": "사용자는 가야금 소리 듣는 것을 좋아한다",
+    "when": null,
+    "importance": 2,
+    "status": "active",
+    "slot": "user.like",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 7
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:16:49.060Z"
+   },
+   {
+    "id": 8,
+    "type": "promise",
+    "text": "사용자는 캐릭터에게 초콜릿 과자를 가져다 주기로 했다",
+    "when": "다음에 올 때",
+    "importance": 3,
+    "status": "active",
+    "slot": "promise.promise",
+    "entity": "promise#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 8
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:16:49.060Z"
+   },
+   {
+    "id": 9,
+    "type": "promise",
+    "text": "캐릭터는 사용자에게 새 글자 스물여덟 자를 가르쳐 주기로 했다",
+    "when": "다음에",
+    "importance": 4,
+    "status": "active",
+    "slot": "promise.promise",
+    "entity": "promise#2",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 9
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:16:49.060Z"
+   },
+   {
+    "id": 10,
+    "type": "event",
+    "text": "사용자는 친구들과 저잣거리에 탈춤 구경을 간다",
+    "when": "2026-10-28 (다음 주 수요일 저녁)",
+    "importance": 3,
+    "status": "superseded",
+    "slot": "event.plan",
+    "entity": "event#2",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 10
+    },
+    "superseded_by": 18,
+    "invalidated_at": "2026-10-23T17:17:20.401Z",
+    "created_at": "2026-10-23T17:17:00.117Z"
+   },
+   {
+    "id": 11,
+    "type": "event",
+    "text": "사용자는 자신이 사는 곳으로 돌아간다",
+    "when": "2026-10-25 (이번 달 25일)",
+    "importance": 4,
+    "status": "active",
+    "slot": "event.plan",
+    "entity": "event#3",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 11
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:00.118Z"
+   },
+   {
+    "id": 12,
+    "type": "fact",
+    "text": "사용자는 아침마다 활쏘기를 배운다",
+    "when": null,
+    "importance": 3,
+    "status": "superseded",
+    "slot": "user.routine",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 12
+    },
+    "superseded_by": 16,
+    "invalidated_at": "2026-10-23T17:17:20.400Z",
+    "created_at": "2026-10-23T17:17:00.118Z"
+   },
+   {
+    "id": 13,
+    "type": "preference",
+    "text": "사용자의 동생은 고기를 매우 좋아한다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "family.like",
+    "entity": "family#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 13
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:06.681Z"
+   },
+   {
+    "id": 14,
+    "type": "fact",
+    "text": "사용자의 고양이 이름은 까미다",
+    "when": null,
+    "importance": 4,
+    "status": "superseded",
+    "slot": "pet.name",
+    "entity": "pet#1",
+    "depends_on": null,
+    "value": "까미",
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 15
+    },
+    "superseded_by": 20,
+    "invalidated_at": "2026-10-23T17:17:27.048Z",
+    "created_at": "2026-10-23T17:17:06.682Z"
+   },
+   {
+    "id": 15,
+    "type": "event",
+    "text": "사용자는 친구와 광화문 앞에서 만난다",
+    "when": "2026-10-25 (일요일)",
+    "importance": 3,
+    "status": "active",
+    "slot": "event.plan",
+    "entity": "event#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 16
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:20.400Z"
+   },
+   {
+    "id": 16,
+    "type": "fact",
+    "text": "사용자는 활쏘기를 그만뒀다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "user.routine",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 17
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:20.400Z"
+   },
+   {
+    "id": 17,
+    "type": "fact",
+    "text": "사용자는 말타기를 배운다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "user.routine",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 17
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:20.401Z"
+   },
+   {
+    "id": 18,
+    "type": "fact",
+    "text": "수요일 탈춤 구경은 취소됐다",
+    "when": "2026-10-28 (다음 주 수요일 저녁)",
+    "importance": 3,
+    "status": "active",
+    "slot": "event.plan",
+    "entity": "event#2",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 18
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:20.401Z"
+   },
+   {
+    "id": 19,
+    "type": "fact",
+    "text": "사용자의 언니는 그림 그리는 일을 한다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "family.job",
+    "entity": "family#2",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 19
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:23.122Z"
+   },
+   {
+    "id": 20,
+    "type": "fact",
+    "text": "사용자의 고양이 이름은 라온이다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "pet.name",
+    "entity": "pet#1",
+    "depends_on": null,
+    "value": "라온",
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 22
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:17:27.048Z"
+   }
+  ],
+  "episodes": [
+   {
+    "id": 1,
+    "conversation_id": 1,
+    "summary": "사용자는 편집자이며 채식주의자이고, 고양이 라온을 키운다. 캐릭터에게 초콜릿을 가져다주기로 했으며 새 글자를 배우기로 약속했다. 일요일에 광화문에서 친구를 만나기로 했고, 말타기를 배우고 있으며 25일에 돌아갈 예정이다.",
+    "created_at": "2026-10-23T17:17:52.564Z"
+   }
+  ],
+  "ops_log": [
+   {
+    "id": 28,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 0,
+    "op": "EPISODE",
+    "item_id": null,
+    "detail": "사용자는 편집자이며 채식주의자이고, 고양이 라온을 키운다. 캐릭터에게 초콜릿을 가져다주기로 했으며 새 글자를 배우기로 약속했다. 일요일에 광화문에서 친구를 만나기로 했고, 말타기를 배우고 있으며 25일에 돌아갈 예정이다.",
+    "created_at": "2026-10-23T17:17:52.564Z"
+   },
+   {
+    "id": 27,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 22,
+    "op": "SUPERSEDE",
+    "item_id": 14,
+    "detail": "-> 20",
+    "created_at": "2026-10-23T17:17:27.048Z"
+   },
+   {
+    "id": 26,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 22,
+    "op": "UPDATE",
+    "item_id": 20,
+    "detail": "사용자의 고양이 이름은 라온이다",
+    "created_at": "2026-10-23T17:17:27.048Z"
+   },
+   {
+    "id": 25,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 19,
+    "op": "ADD",
+    "item_id": 19,
+    "detail": "사용자의 언니는 그림 그리는 일을 한다",
+    "created_at": "2026-10-23T17:17:23.123Z"
+   },
+   {
+    "id": 24,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 18,
+    "op": "SUPERSEDE",
+    "item_id": 10,
+    "detail": "-> 18",
+    "created_at": "2026-10-23T17:17:20.401Z"
+   },
+   {
+    "id": 23,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 18,
+    "op": "UPDATE",
+    "item_id": 18,
+    "detail": "수요일 탈춤 구경은 취소됐다",
+    "created_at": "2026-10-23T17:17:20.401Z"
+   },
+   {
+    "id": 22,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 17,
+    "op": "ADD",
+    "item_id": 17,
+    "detail": "사용자는 말타기를 배운다",
+    "created_at": "2026-10-23T17:17:20.401Z"
+   },
+   {
+    "id": 21,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 17,
+    "op": "SUPERSEDE",
+    "item_id": 12,
+    "detail": "-> 16",
+    "created_at": "2026-10-23T17:17:20.400Z"
+   },
+   {
+    "id": 20,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 17,
+    "op": "UPDATE",
+    "item_id": 16,
+    "detail": "사용자는 활쏘기를 그만뒀다",
+    "created_at": "2026-10-23T17:17:20.400Z"
+   },
+   {
+    "id": 19,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 16,
+    "op": "SUPERSEDE",
+    "item_id": 6,
+    "detail": "-> 15",
+    "created_at": "2026-10-23T17:17:20.400Z"
+   },
+   {
+    "id": 18,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 16,
+    "op": "UPDATE",
+    "item_id": 15,
+    "detail": "사용자는 친구와 광화문 앞에서 만난다",
+    "created_at": "2026-10-23T17:17:20.400Z"
+   },
+   {
+    "id": 17,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 15,
+    "op": "SUPERSEDE",
+    "item_id": 3,
+    "detail": "-> 14",
+    "created_at": "2026-10-23T17:17:06.682Z"
+   },
+   {
+    "id": 16,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 15,
+    "op": "UPDATE",
+    "item_id": 14,
+    "detail": "사용자의 고양이 이름은 까미다",
+    "created_at": "2026-10-23T17:17:06.682Z"
+   },
+   {
+    "id": 15,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 13,
+    "op": "ADD",
+    "item_id": 13,
+    "detail": "사용자의 동생은 고기를 매우 좋아한다",
+    "created_at": "2026-10-23T17:17:06.681Z"
+   },
+   {
+    "id": 14,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 12,
+    "op": "ADD",
+    "item_id": 12,
+    "detail": "사용자는 아침마다 활쏘기를 배운다",
+    "created_at": "2026-10-23T17:17:00.119Z"
+   },
+   {
+    "id": 13,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 11,
+    "op": "ADD",
+    "item_id": 11,
+    "detail": "사용자는 자신이 사는 곳으로 돌아간다",
+    "created_at": "2026-10-23T17:17:00.118Z"
+   },
+   {
+    "id": 12,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 10,
+    "op": "ADD",
+    "item_id": 10,
+    "detail": "사용자는 친구들과 저잣거리에 탈춤 구경을 간다",
+    "created_at": "2026-10-23T17:17:00.117Z"
+   },
+   {
+    "id": 11,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 9,
+    "op": "ADD",
+    "item_id": 9,
+    "detail": "캐릭터는 사용자에게 새 글자 스물여덟 자를 가르쳐 주기로 했다",
+    "created_at": "2026-10-23T17:16:49.060Z"
+   },
+   {
+    "id": 10,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 8,
+    "op": "ADD",
+    "item_id": 8,
+    "detail": "사용자는 캐릭터에게 초콜릿 과자를 가져다 주기로 했다",
+    "created_at": "2026-10-23T17:16:49.060Z"
+   },
+   {
+    "id": 9,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 7,
+    "op": "ADD",
+    "item_id": 7,
+    "detail": "사용자는 가야금 소리 듣는 것을 좋아한다",
+    "created_at": "2026-10-23T17:16:49.060Z"
+   },
+   {
+    "id": 8,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 6,
+    "op": "ADD",
+    "item_id": 6,
+    "detail": "사용자는 친구와 광화문 앞에서 만난다",
+    "created_at": "2026-10-23T17:16:38.927Z"
+   },
+   {
+    "id": 7,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 5,
+    "op": "ADD",
+    "item_id": 5,
+    "detail": "사용자는 책을 만드는 편집자다",
+    "created_at": "2026-10-23T17:16:38.926Z"
+   },
+   {
+    "id": 6,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 4,
+    "op": "ADD",
+    "item_id": 4,
+    "detail": "사용자는 채식주의자다",
+    "created_at": "2026-10-23T17:16:38.926Z"
+   },
+   {
+    "id": 5,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 6,
+    "op": "PROFILE_SET",
+    "item_id": null,
+    "detail": "{\"slot\":\"job\",\"from\":null,\"to\":\"편집자\"}",
+    "created_at": "2026-10-23T17:16:38.925Z"
+   },
+   {
+    "id": 4,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 3,
+    "op": "ADD",
+    "item_id": 3,
+    "detail": "사용자의 고양이 이름은 모모다",
+    "created_at": "2026-10-23T17:16:33.586Z"
+   },
+   {
+    "id": 3,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 2,
+    "op": "ADD",
+    "item_id": 2,
+    "detail": "사용자는 따뜻한 보리차를 마신다",
+    "created_at": "2026-10-23T17:16:33.586Z"
+   },
+   {
+    "id": 2,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 2,
+    "op": "ADD",
+    "item_id": 1,
+    "detail": "사용자는 우유를 마시면 배가 아프다",
+    "created_at": "2026-10-23T17:16:33.586Z"
+   },
+   {
+    "id": 1,
+    "user_id": "b-google_gemma_4_31B_it-sejong-3",
+    "conversation_id": 1,
+    "turn_no": 3,
+    "op": "PROFILE_SET",
+    "item_id": null,
+    "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"지수\"}",
+    "created_at": "2026-10-23T17:16:33.586Z"
+   }
+  ]
+ }
+}

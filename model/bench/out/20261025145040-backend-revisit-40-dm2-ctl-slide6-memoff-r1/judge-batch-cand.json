@@ -1,0 +1,769 @@
+{
+  "summary": {
+    "points": 11,
+    "max_points": 26,
+    "probes": 13,
+    "na": 1,
+    "scored": 11,
+    "counts": {
+      "correct": 6,
+      "unknown": 4,
+      "na": 1,
+      "none": 2,
+      "wrong": 1
+    },
+    "unanimous_rate": 0.35714285714285715,
+    "needs_human": [
+      18,
+      28,
+      29,
+      33
+    ],
+    "fail_cause": {
+      "memory": [
+        27,
+        30,
+        31,
+        34,
+        35
+      ],
+      "response": []
+    },
+    "judge_cost_krw": 32.82188,
+    "judges": [
+      "moonshotai/Kimi-K2.6",
+      "zai-org/GLM-5.1",
+      "MiniMaxAI/MiniMax-M2.7",
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+    ],
+    "judge_errors": [],
+    "usage": [
+      {
+        "judge": "moonshotai/Kimi-K2.6",
+        "input_tokens": 2773,
+        "output_tokens": 882,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 12812,
+        "extra_checks": 0,
+        "krw": 8.71185
+      },
+      {
+        "judge": "zai-org/GLM-5.1",
+        "input_tokens": 3647,
+        "output_tokens": 1120,
+        "reasoning_tokens": 326,
+        "finish_reason": "stop",
+        "latency_ms": 9763,
+        "extra_checks": 0,
+        "krw": 11.413570000000002
+      },
+      {
+        "judge": "MiniMaxAI/MiniMax-M2.7",
+        "input_tokens": 2840,
+        "output_tokens": 631,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 22453,
+        "extra_checks": 0,
+        "krw": 2.0566
+      },
+      {
+        "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "input_tokens": 3167,
+        "output_tokens": 794,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 3557,
+        "extra_checks": 0,
+        "krw": 9.9918
+      },
+      {
+        "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "input_tokens": 3317,
+        "output_tokens": 410,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 32798,
+        "extra_checks": 0,
+        "krw": 0.6480600000000001
+      }
+    ]
+  },
+  "prompt_chars": 5415,
+  "results": [
+    {
+      "turn": 18,
+      "type": "pref",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": true,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "솔직히 말하면 아직 못 들은 것 같아 — 이름 듣지 못했다고 솔직히 인정"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 18,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "이름을 못 들었다고 답함: '아직 못 들은 것 같아' — 하지만 사용자가 태오라고 말했으므로 miss."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "\"아직 못 들은 것 같아\"라고 정직하게 모른다고 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '아직 못 들은 것 같아' and '이름 알려주면 그때부터 제대로 기억할게', correctly indicating the name was never provided before this turn."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 18,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "名稱不知道"
+        }
+      ]
+    },
+    {
+      "turn": 23,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "제육볶음이라고 했잖아 — 직전 20턴 내용 정확히 기억"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'제육볶음이라고 했잖아' — 정확한 최근 정보 제공."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "\"제육볶음이라고 했잖아\" 정확히 기억."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply states '제육볶음이라고 했잖아', matching the user's turn 20 mention of 제육볶음."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "제육볶음이라고 했잖아"
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "이어폰이지. 한쪽만 들린다고 했잖아 — 직전 21턴 내용 정확히 기억"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'이어폰이지. 한쪽만 들린다고 했잖아' — 정확."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "\"이어폰이지. 한쪽만 들린다고 했잖아\" 정확히 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '이어폰이지. 한쪽만 들린다고 했잖아', matching the user's turn 21 mention of 이어폰 고장."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "이어폰이지"
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "user_promise",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 27,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "그건 내가 기억 못 하는 것 같은데 — 1세션 7턴의 '기계식 키보드' 약속 기억하지 못함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 27,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'기억 못 하는 것 같은데' — 키보드를 말하지 않아 miss."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 27,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "키보드 빌려준다는 약속을 모른다고 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '내가 기억 못 하는 것 같은데' and asks what it was, correctly reflecting that the user never told the character about lending a keyboard (turn 7 was user-to-character)."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 27,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "무슨 얘기였인지 말해 줄래"
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "char_promise",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "na",
+      "points": null,
+      "unanimous": false,
+      "needs_human": true,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 28,
+          "label": "na",
+          "memory_had_answer": false,
+          "reason": "나는 그런 약속 한 기억이 없는데 — 8턴에서 캐시 설계 '봐줄 수 있어?'에 대해 단순히 의견 제시, 명시적 약속/agreement 없음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 28,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'그런 약속 한 기억이 없는데' — 턴 8에서 캐시 설계를 같이 보자고 약속했으므로 na 아님, miss."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 28,
+          "label": "na",
+          "memory_had_answer": false,
+          "reason": "캐시 설계 도움을 '다음에 같이 보자'고 수락했지만 모호함. 그러나 reply이 기억 못 한다고 했으므로 na 가능. 다만 캐릭터가 turn8에서 '같이 보면 도움 될 거야'라며 사실상 수락했으므로 na가 아니라 unknown/stale 가능. 캐릭터의 8턴 답변이 명확한 약속은 아니므로 na."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 28,
+          "label": "na",
+          "memory_had_answer": false,
+          "reason": "Character's reply at turn 8 did not agree or promise; they only said they'd look if design docs are shared, so the check does not apply."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 28,
+          "label": "na",
+          "memory_had_answer": true,
+          "reason": "라는 약속 한 기억이 없는데"
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "relative_time",
+      "scope": "revisit",
+      "keyword": "needs_judge",
+      "final": null,
+      "points": null,
+      "unanimous": false,
+      "needs_human": true,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "오늘이 9일 맞아. 예선이 며칠 후인지는 네가 일정 공지를 알려 주면 — 날짜 계산 회피하며 추가 정보 요청, 틀린 정보 없음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'예선이 며칠 후인지는 네가 알려 주면' — 이틀 남은 것을 계산하지 못함."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "며칠 남았는지 모르겠다고 답함 (이틀 남은 것이 정답)."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '오늘이 9일 맞아. 예선이 며칠 후인지는 네가 일정 공지를 알려 주면 내가 정확히 세 줄게', correctly refusing to guess and asking for the schedule."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 29,
+          "label": "stale",
+          "memory_had_answer": false,
+          "reason": "예선이 며칠 후인지는 네가 일정 공지를 알려 주면 내가 정확히 세 줄게"
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "아, 그건 나도 모르겠어 — 22턴의 새 팀장님 이름 '한지원' 기억하지 못함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'그건 나도 모르겠어' — 한지원이라고 답하지 못함."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "한지원이라는 이름을 모르겠다고 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 30,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "Reply says '아, 그건 나도 모르겠어' despite the user stating the new team lead's name as 한지원 at turn 22 earlier in this session."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "아 그건 나도 모르겠어"
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "type": "implicit",
+      "scope": "revisit",
+      "keyword": "needs_judge",
+      "final": "wrong",
+      "points": -1,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 31,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "나 땅콩 알레르기 있는 거 알지? 너는 먹어도 되는데 — 사용자 알레르기 정확히 인지하고 자신은 조심함, 사용자에게는 먹어도 된다고 허용"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 31,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "'너는 먹어도 되는데' — 사용자의 땅콩 알레르기 제약을 무시하고 괜찮다고 함."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 31,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "사용자에게 땅콩 알레르기가 있는데 \"먹어도 되는데\"라고 했으므로 사용자 알레르기를 간과."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 31,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '나 땅콩 알레르기 있는 거 알지?', correctly recalling the user's peanut allergy from turn 2 and warning the user."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 31,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "너는 먹어도 되는데, 나 몫은 빼놔 줘"
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "update",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": null,
+      "points": null,
+      "unanimous": false,
+      "needs_human": true,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 33,
+          "label": "stale",
+          "memory_had_answer": false,
+          "reason": "그건 나한테 말한 적 없는 것 같아 — 19턴에서 화요일→목요일 변경 있었으나 '말한 적 없다'고 부정, 업데이트 반영 실패"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 33,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'나한테 말한 적 없는 것 같아' — 화요일(→목요일) 정보를 말하지 못함."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "\"말한 적 없는 것 같아\"라고 답해 목요일 변경을 모른다고 함. outdated 화요일/업데이트된 목요일 어느 것도 지어내지 않음. 정답은 목요일이라고 답해야 하지만 모른다고 하는 건 stale이 아닌 unknown. expected 값은 '목요일'이라 correct가 아니지만 outdated value 화요일도 안 말함. abstain 체크는 아니므로 unknown."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 33,
+          "label": "stale",
+          "memory_had_answer": false,
+          "reason": "Reply claims '나한테 말한 적 없는 것 같아' and '어느 요일에 가는데?', ignoring the user's turn 19 update that the class moved to Thursday."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 33,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "그건 나한테 말한 적 없는 것 같아"
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "pref",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 34,
+          "label": "fabricated",
+          "memory_had_answer": false,
+          "reason": "아아 사 준다는 거지? — 사용자가 '바닐라라떼'라고 했으나 '아아'로 잘못 지정, 사용자 음료 왜곡"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'너가 뭐 마시는지는 나도 기억에 없어' — 바닐라라떼를 말하지 못함."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "바닐라라떼라고 답해야 하는데 모르겠다고 함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 34,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "Reply says '너가 뭐 마시는지는 나도 기억에 없어서 정확히 모르겠다' and guesses 아메리카노, ignoring the user's stated preference for 바닐라라떼 at turn 5."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "아아 사 준다는 거지"
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "combine",
+      "scope": "recent+revisit",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "아니, 그건 나한테 들은 기억이 없어 — 4턴, 24턴 정보 모두 기억하지 못함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'들은 기억이 없어' — 대전/누나 모두 말하지 못함."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "대전과 누나를 둘 다 모르겠다고 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '그건 나한테 들은 기억이 없어' and '어디 간다는 거야?', failing to recall the user's turn 24 statement about visiting sister and turn 4 info that sister lives in Daejeon."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "아니, 그건 나한테 들은 기억이 없어"
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "half_said",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "그건 기억에 없어. 너가 고민 얘기 꺼낸 적이 있었어? — 고민 내용 지어내지 않고 모른다고 솔직히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'그건 기억에 없어. 너가 고민 얘기 꺼낸 적이 있었어?' — 고민 내용을 지어내지 않음."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "\"기억에 없어\" 고민 내용을 지어내지 않음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '기억에 없어' and '고민 얘기 꺼낸 적이 있었어?', correctly not inventing the worry content the user never disclosed (turn 11)."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "그건 기억에 없어"
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "그건 나한테 말해 준 적 없는 것 같아 — 혈액형 언급 없었으므로 모른다고 정상 abstain"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'말해 준 적 없는 것 같아... 모르겠다' — 혈액형을 지어내지 않음."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "혈액형을 말한 적 없다고 정직하게 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '나한테 말해 준 적 없는 것 같아' and '혈액형 얘기는 처음 듣는 거라 모르겠다', correctly stating the user never mentioned blood type."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 37,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "그건 나한테 말해 준 적 없는 것 같아"
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "그건 나한테 말한 기억이 없어. 가수 얘기는 처음이야 — 가수 언급 없었으므로 모른다고 정상 abstain"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'가수 얘기는 처음이야. 누군데?' — 거짓 전제를 받아들이지 않고 지어내지 않음."
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "가수 이름을 지어내지 않고 \"말한 기억이 없어\"라고 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '나한테 말한 기억이 없어' and '가수 얘기는 처음이야', correctly rejecting the false premise that the user mentioned a favorite singer."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "그건 나한테 말한 기억이 없어"
+        }
+      ]
+    }
+  ]
+}

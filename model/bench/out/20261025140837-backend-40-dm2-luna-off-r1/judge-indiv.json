@@ -1,0 +1,732 @@
+{
+  "summary": {
+    "points": 31,
+    "max_points": 32,
+    "probes": 16,
+    "counts": {
+      "correct": 15,
+      "partial": 1
+    },
+    "needs_human": [
+      27,
+      32
+    ],
+    "fail_cause": {
+      "memory": [],
+      "response": [
+        29
+      ]
+    },
+    "judge_cost_krw": 171.50692999999995,
+    "judges": [
+      "zai-org/GLM-5.1",
+      "moonshotai/Kimi-K2.6"
+    ],
+    "samples": 2,
+    "tiebreak": "MiniMaxAI/MiniMax-M2.7"
+  },
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "user": "커피 사러 가는데, 내가 뭐 마신다고 했는지 기억나?",
+      "reply": "*컵을 들었다가 슬쩍 내려놓는다.* 너는 디카페인만 마셔. 커피 마시면 심장 뛴다고 했잖아.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자의 고양이 이름은 쿠키다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-05 (이번 주 목요일))\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 동기들과 볼링을 친다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [promise] 캐릭터는 사용자에게 볼링 모임에 가기로 했다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자는 출근 전 7시 반에 수영을 다닌다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states '너는 디카페인만 마셔' with the correct reason about the heart racing, matching the memory note.",
+          "krw": 2.42844
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly says the user only drinks decaf due to heart racing.",
+          "krw": 2.33534
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "정확히 '디카페인만 마셔'라고 현재 정보를 말하며, 커피 마시면 심장이 뛴다는 이유도 함께 언급했다.",
+          "krw": 1.9257
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "정확히 '디카페인만 마셔'라고 현재 정보를 맞추어 답함.",
+          "krw": 1.8032000000000001
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "user": "오늘 날씨 좋다. 내가 퇴근하고 뭐 하는 거 제일 좋아한다고 했지?",
+      "reply": "*창밖을 한번 바라본다.* 퇴근하고 한강에서 자전거 타는 거 좋아한다고 했어. 오늘 날씨면 딱 타기 좋겠다.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자의 고양이 이름은 쿠키다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-05 (이번 주 목요일))\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 동기들과 볼링을 친다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [promise] 캐릭터는 사용자에게 볼링 모임에 가기로 했다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자는 출근 전 7시 반에 수영을 다닌다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '퇴근하고 한강에서 자전거 타는 거 좋아한다고 했어', matching turn 7 exactly.",
+          "krw": 2.50047
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '퇴근하고 한강에서 자전거 타는 거 좋아한다고 했어', matching turn 7; note that turn 17 only changed swimming to climbing, not the cycling preference.",
+          "krw": 2.53967
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "퇴근하고 한강에서 자전거 타는 거 좋아한다고 했어",
+          "krw": 1.8056500000000002
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "퇴근하고 한강에서 자전거 타는 거 좋아한다고 했어 — correctly states current preference from turn 7",
+          "krw": 1.84975
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "user": "아 맞다, 내가 너한테 뭐 해주기로 했었지?",
+      "reply": "*점심 메뉴를 고르다 말고 웃는다.* 다음 주에 네가 점심 사주기로 했잖아 ㅋㅋ 내가 국밥 쪽으로 슬쩍 기대 중이야.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [fact] 사용자의 고양이 이름은 나비다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly says '다음 주에 네가 점심 사주기로 했잖아', matching the user's promise.",
+          "krw": 2.7591900000000003
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '다음 주에 네가 점심 사주기로 했잖아', matching the promise from turn 8.",
+          "krw": 2.79349
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "다음 주에 네가 점심 사주기로 했잖아 ㅋㅋ",
+          "krw": 2.0247499999999996
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "다음 주에 네가 점심 사주기로 했잖아 ㅋㅎ",
+          "krw": 2.0247499999999996
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "user": "그러고 보니 너도 나한테 뭐 해주기로 한 거 있지 않았어?",
+      "reply": "*슬랙 창을 닫고 고개를 끄덕인다.* 네 팀 컨슈머 코드 다음에 봐주기로 했어. 필요할 때 가져와, 같이 볼게.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [fact] 사용자의 고양이 이름은 나비다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly recalls the promise: \"네 팀 컨슈머 코드 다음에 봐주기로 했어.\"",
+          "krw": 2.8170100000000002
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly states the character's promise: \"네 팀 컨슈머 코드 다음에 봐주기로 했어\" matching turn 9.",
+          "krw": 2.84641
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "참치는 '네 팀 컨슈머 코드 다음에 봐주기로 했어'라고 정확히 기억해내며 사용자의 질문에 맞는 캐릭터 자신의 약속을 답했다.",
+          "krw": 2.2582
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "메모리에 사용자가 캐릭터에게 코드를 봐주기로 했다는 약속([promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다)이 있으나, 체크 질문은 '너도 나한테 뭐 해주기로 한 거'(=사용자가 캐릭터에게 해줄 것)인데 캐릭터는 자신이 사용자에게 해줄 것(코드 봐주기)으로 답함; 사용자가 점심 산다는 약속([promise] 사용자는 캐릭터에게 점심을 사기로 했다)은 언급하지 않음",
+          "krw": 2.8118999999999996
+        },
+        {
+          "model": "MiniMaxAI/MiniMax-M2.7",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"네 팀 컨슈머 코드 다음에 봐주기로 했어\" correctly recalls the promise from turn 9.",
+          "krw": 0.59045
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "user": "팀 회식 메뉴 내가 정해야 하는데, 하나만 골라줘.",
+      "reply": "*메뉴판을 훑고는 바로 손가락으로 짚는다.* 삼겹살로 가자. 고기 굽다 보면 어색한 얘기도 좀 풀리고, 메뉴 취향 갈릴 일도 적어 ㅋㅋ",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [fact] 사용자의 고양이 이름은 나비다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "추천한 메뉴가 삼겹살로 해산물 알레르기 제약을 피했음",
+          "krw": 2.9257899999999997
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "삼겹살 추천은 해산물 알레르기 제약을 위반하지 않음",
+          "krw": 2.94539
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "삼겹살을 선택하여 해산물 메뉴를 완전히 피함, 사용자의 해산물 알레르기 제약을 정상적으로반영함",
+          "krw": 2.25225
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "삼겹살(고기)을 추천하여 해산물 알레르기 제약을 완전히 회피함",
+          "krw": 2.20325
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "user": "내가 밋업 언제 어디서 간다고 했는지 기억나?",
+      "reply": "*달력을 확인하듯 잠깐 생각한다.* 11월 7일 토요일 데이터 밋업이라고 했어. 장소는 네가 말 안 해줘서 모르겠어.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [fact] 사용자의 고양이 이름은 나비다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))",
+      "keyword": "partial",
+      "final": "partial",
+      "points": 1,
+      "cause": "response",
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "Reply gives correct new day ('11월 7일 토요일') but says '장소는 네가 말 안 해줘서 모르겠어', missing 강남 which the user did state.",
+          "krw": 3.2423300000000004
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "Reply correctly says '11월 7일 토요일 데이터 밋업' but wrongly claims '장소는 네가 말 안 해줘서 모르겠어' when the user said Gangnam; the memory notes lacked the location.",
+          "krw": 3.36973
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "날짜(11월 7일 토요일)는 맞지만 장소(강남)를 '말 안 해줘서 모르겠어'라고 답해, 강남이라고 이미 말한 것(turn 16)을 기억하지 못함",
+          "krw": 2.3352
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "\"11월 7일 토요일 데이터 밋업\"은 맞지만 \"장소는 네가 말 안 해줘서 모르겠어\"라며 강남은 모른다고 함",
+          "krw": 2.2225
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "user": "오늘 21일인데, 내 시험까지 며칠 남았지?",
+      "reply": "*달력을 보며 날짜를 짚어본다.* 시험이 11월 28일이니까 7일 남았어. 실기 막판 정리 잘하고, 오늘은 너무 무리하지 마 ㅋㅋ",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '시험이 11월 28일이니까 7일 남았어' which matches the expected 7일 from the 28th exam date.",
+          "krw": 2.9654800000000003
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "시험이 11월 28일이니까 7일 남았어 correctly computes the 7 days remaining.",
+          "krw": 2.9115800000000003
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"시험이 11월 28일이니까 7일 남았어\" — correctly calculates 7 days remaining from November 21 to the exam date mentioned in turn 11.",
+          "krw": 2.2393
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "시험이 11월 28일이니까 7일 남았어 — correctly calculates remaining days from turn 11's information (28일에 정보처리기사 실기 봐) given today is the 21st.",
+          "krw": 2.2981
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "user": "나 요즘 출근 전에 무슨 운동 한다고 했지?",
+      "reply": "*잠깐 눈을 굴리며 생각한다.* 출근 전에 하는 운동 얘기는 못 들은 것 같은데. 내가 아는 건 수영은 그만뒀고 클라이밍 시작했다는 거야.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply states the current fact: \"수영은 그만두고 클라이밍 시작했다는 거야\" — climbing is the correct current exercise.",
+          "krw": 3.78182
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states '수영은 그만뒀고 클라이밍 시작했다' — gives the current answer (클라이밍) and correctly notes swimming is outdated.",
+          "krw": 3.44862
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터는 \"수영은 그만뒀고 클라이밍 시작했다는 거야\"라고 현재 운동인 클라이밍을 정확히 언급하며, 출근 전에 운동한다는 말을 못 들었다고 한 것은 사용자가 출근 전 시간대를 언급하지 않았기 때문이어서 메모 내용과 일치함.",
+          "krw": 2.5721499999999997
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "현재 운동인 클라이밍을 언급했으나 '출근 전에'라는 시점 정보를 누락하고, '못 들은 것 같은데'라며 불확실성을 표현함",
+          "krw": 2.35655
+        },
+        {
+          "model": "MiniMaxAI/MiniMax-M2.7",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "클라이밍을 한다고 정확히 답하고, 수영은 그만뒀다고 명시함.",
+          "krw": 0.6216
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "user": "오후 네 시인데 너무 졸리다. 뭐 마실까?",
+      "reply": "*모니터에서 눈을 떼고 커피 머신 쪽을 가리킨다.* 너 커피 마시면 심장 뛴다 했으니까 커피는 말고, 디카페인 차나 탄산수 어때? 진짜 졸리면 물 한 잔 마시고 잠깐 걸어도 좀 낫더라.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply respects the caffeine constraint: \"너 커피 마시면 심장 뛴다 했으니까 커피는 말고, 디카페인 차나 탄산수 어때?\"",
+          "krw": 3.3349399999999996
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply respects the caffeine constraint, saying \"너 커피 마시면 심장 뛴다 했으니까 커피는 말고, 디카페인 차나 탄산수 어때?\"",
+          "krw": 3.3104400000000003
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 \"너 커피 마시면 심장 뛴다 했으니까 커피는 말고, 디카페인 차나 탄산수 어때?\"라며 사용자의 카페인 제약을 정확히 기억하고 디카페인이나 카페인 없는 음료를 권함",
+          "krw": 2.6677
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "카페인 대신 '디카페인 차나 탄산수'를 제안하며 사용자의 카페인 제약(심장이 뜀, 디카페인만)을 정확히 반영함",
+          "krw": 2.4913
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "user": "다음 주 수요일 저녁에 우리 뭐 하기로 했었지?",
+      "reply": "*캘린더를 확인하고 고개를 젓는다.* 동기들이랑 볼링 가기로 했던 건 취소됐어. 그러니까 다음 주 수요일 저녁엔 따로 잡힌 약속 없어.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "볼링이 취소됐다고 정확히 답함: '볼링 가기로 했던 건 취소됐어'",
+          "krw": 3.1056200000000005
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '볼링 가기로 했던 건 취소됐어' correctly reflecting the cancellation at turn 18.",
+          "krw": 3.06642
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "동기들이랑 볼링 가기로 했던 건 취소됐어. 그러니까 다음 주 수요일 저녁엔 따로 잡힌 약속 없어.",
+          "krw": 2.3877
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"볼링 가기로 했던 건 취소됐어\" - 정확히 취소 사실을 언급하고 \"따로 잡힌 약속 없어\"로 현재 상태를 말함",
+          "krw": 2.422
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "user": "내가 지금 무슨 팀이라고 했었지?",
+      "reply": "*슬랙 프로필을 힐끗 보며 답한다.* 지금은 데이터팀이야. 팀 옮겼다고 했잖아.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '지금은 데이터팀이야', matching the user's current team.",
+          "krw": 2.9772399999999997
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '지금은 데이터팀이야', matching the current team.",
+          "krw": 2.9674400000000003
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "현재 팀인 '데이터팀'으로 정확히 답변했으며, '팀 옮겼다고 했잖아'라며 기억해 냄",
+          "krw": 2.33205
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "딱히 움직이지 않아... 너 업무는 참 중요하지. 업무나 신경 써!",
+          "krw": 2.2683500000000003
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "user": "근데 우리 고양이 이름 기억나?",
+      "reply": "*잠깐 웃으며 고개를 끄덕인다.* 망고잖아. 이름 귀엽더라 ㅋㅋ",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '망고잖아', the current cat name after two updates.",
+          "krw": 3.00027
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says \"망고잖아\" which matches the current cat name.",
+          "krw": 2.99537
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '망고잖아'라고 정확히 현재 고양이 이름을 말했으며, '귀엽더라'라고 부연했다.",
+          "krw": 2.36005
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "망고잖아. 이름 귀엽더라 ㅋㅋ",
+          "krw": 2.2326499999999996
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "user": "나랑 내 동생 중에 누가 해산물 좋아한다고 했지?",
+      "reply": "*턱을 괴고 잠깐 생각한다.* 네 동생이 해산물 좋아한다고 했어. 횟집에서 알바도 한다고 했고. 너는 해산물 알레르기 있다고 했지.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '네 동생이 해산물 좋아한다고 했어' matching the expected answer, with notes containing both sibling facts and the allergy.",
+          "krw": 3.11787
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly says '네 동생이 해산물 좋아한다고 했어' while noting the user has a seafood allergy, matching turns 4 and 13.",
+          "krw": 3.14237
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "정확히 '네 동생이 해산물 좋아한다고 했어'라고 말하고 사용자는 알레르기가 있다고 덧붙임",
+          "krw": 2.35935
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '네 동생이 해산물 좋아한다고 했어'라고 정확히 답했고, '너는 해산물 알레르기 있다고 했지'로 사용자의 제약사항도 함께 언급했음.",
+          "krw": 2.51125
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "내 생일이 언제라고 했었지?",
+      "reply": "*잠깐 기억을 더듬는다.* 생일은 아직 못 들었어. 생일 얘기는 안 했던 것 같은데.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '생일은 아직 못 들었어. 생일 얘기는 안 했던 것 같은데', correctly abstaining since the user never mentioned a birthday.",
+          "krw": 3.11346
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says it never heard the user's birthday: '생일은 아직 못 들었어. 생일 얘기는 안 했던 것 같은데.'",
+          "krw": 3.0987600000000004
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "생일은 아직 못 들었어. 생일 얘기는 안 했던 것 같은데.",
+          "krw": 2.26065
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "생일은 아직 못 들었어. 생일 얘기는 안 했던 것 같은데 — correctly states the user never said when their birthday is",
+          "krw": 2.30965
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "user": "우리 고양이 품종이 뭐라고 했더라?",
+      "reply": "*고개를 살짝 갸웃한다.* 망고라는 이름은 기억하는데 품종은 못 들었어. 이름만으로는 품종을 알 수 없지 ㅋㅋ",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "사용자가 품종을 말한 적이 없으므로 \"품종은 못 들었어\"라고 답해 발명하지 않았습니다.",
+          "krw": 3.28202
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "abstain check — the reply correctly says it only remembers the name '망고' and that it never heard the breed, without inventing one.",
+          "krw": 3.25262
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "품종은 못 들었어 - explicitly states the user never said the breed, without inventing it",
+          "krw": 2.3771999999999998
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "품종은 못 들었어. 이름만으로는 품종을 알 수 없지 ㅋㅋ — explicitly states they don't know the breed and doesn't invent one",
+          "krw": 2.4703
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "user": "내가 어느 회사에서 제안 받았다고 했지?",
+      "reply": "*슬랙 창을 닫으며 어깨를 으쓱한다.* 이직 제안 받았다는 건 아는데, 어느 회사인지는 말 안 해줬어.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 커피를 마시면 심장이 뛴다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 데이터팀으로 옮겼다\n- [preference] 사용자는 퇴근 후 한강에서 자전거 타는 것을 좋아한다\n- [promise] 사용자는 캐릭터에게 점심을 사기로 했다 (when: 다음 주)\n- [promise] 캐릭터는 사용자에게 사용자 팀의 컨슈머 코드를 봐주기로 했다 (when: 다음에)\n- [event] 사용자는 정보처리기사 실기 시험을 본다 (when: 2026-11-28 (이번 달 28일))\n- [fact] 사용자의 동생은 해산물을 좋아한다\n- [fact] 사용자의 동생은 횟집에서 알바한다\n- [event] 사용자는 이직 제안을 받았다\n- [event] 사용자는 데이터 밋업에 간다 (when: 2026-11-07 (토요일 세션))\n- [fact] 사용자는 수영을 그만뒀다\n- [fact] 사용자는 클라이밍을 시작했다\n- [fact] 동기들과의 볼링 모임은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 볼링 모임에 가기로 한 약속은 취소됐다 (when: 2026-11-11 (다음 주 수요일 저녁))\n- [fact] 사용자 팀 신입은 QA팀 출신이다\n- [fact] 사용자의 고양이 이름은 망고다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터는 \"어느 회사인지는 말 안 해줬어\"라고 정확히 말하며 지어내지 않았다.",
+          "krw": 3.2736900000000007
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '어느 회사인지는 말 안 해줬어', correctly abstaining from inventing the company name.",
+          "krw": 3.21979
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"어느 회사인지는 말 안 해줬어\" — 정확히 사용자가 말하지 않은 사실을 지어내지 않고 모른다고 답함.",
+          "krw": 2.49375
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"어느 회사인지는 말 안 해줬어\" — 정확히 사용자가 회사명은 말하지 않았음을 기억하고 지어내지 않았다.",
+          "krw": 2.4986500000000005
+        }
+      ]
+    }
+  ]
+}

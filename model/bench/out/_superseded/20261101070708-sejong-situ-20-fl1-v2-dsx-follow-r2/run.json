@@ -1,0 +1,969 @@
+{
+  "run_id": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+  "scenario": "sejong-situ-20",
+  "character_id": "sejong",
+  "user_name": "bench-20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+  "conversation_id": 870,
+  "label": "fl1-v2-dsx-follow-r2",
+  "env": {
+    "MODEL_EXTRACT": "deepseek-flash",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "APP_MEMORY_BUDGET": "2000",
+    "APP_RECALL": "on",
+    "APP_REPLY_STYLE": "v2",
+    "APP_DATE": "gate",
+    "APP_FOLLOW": "on",
+    "MODEL_RESPONSE": "deepseek-flash",
+    "MODEL_REASONING_RESPONSE": "on",
+    "APP_MAX_TOKENS": "***",
+    "APP_ASYNC_FOLD": "on"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-11-01T07:07:16.785Z",
+  "aborted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "kind": "flow",
+      "user": "전하... 저 오늘 큰 실수를 했어요.",
+      "reply": "*불을 돋우던 곁을 돌아보며 붓을 내려놓는다.*\n\n큰 실수라 하니 마음이 무겁구려. 과인도 젊은 시절 제사를 지내다 향을 잘못 피워 꾸지람을 들은 적이 있느니라. 어떤 일이기에 그러하시오?",
+      "turn_cost_krw": 0.1490664,
+      "latency_ms": 1612,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "kind": "flow",
+      "user": "열심히 준비했는데 다 망쳐 버렸어요.",
+      "reply": "*먹을 갈던 손을 멈추고 조용히 시선을 든다.*\n\n준비를 많이 쌓은 자가 한 번에 다 잃는 일은 실로 가슴 아프구려. 허나 과인이 아는 바로는, 정성을 다한 일은 허물어져도 그 속에 남는 것이 있느니라. 급히 다시 세우려 들기보다 무엇이 무너졌는지 하나씩 헤아려 보는 것이 먼저일 듯하오.",
+      "turn_cost_krw": 0.20084399999999997,
+      "latency_ms": 2437,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "kind": "flow",
+      "user": "부모님께 뭐라고 말씀드리죠 ㅠ",
+      "reply": null,
+      "turn_cost_krw": null,
+      "latency_ms": 203,
+      "error": "POST /api/conversations/870/messages → 502 {\"error\":\"모델 호출 실패: deepseek-flash: 429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to r"
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "kind": "flow",
+      "user": "전하는 일이 뜻대로 안 되시면 어떻게 하세요?",
+      "reply": null,
+      "turn_cost_krw": null,
+      "latency_ms": 220,
+      "error": "POST /api/conversations/870/messages → 502 {\"error\":\"모델 호출 실패: deepseek-flash: 429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to r"
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "kind": "flow",
+      "user": "그래도 전하랑 얘기하니까 좀 나아요.",
+      "reply": null,
+      "turn_cost_krw": null,
+      "latency_ms": 246,
+      "error": "POST /api/conversations/870/messages → 502 {\"error\":\"모델 호출 실패: deepseek-flash: 429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to r"
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 218,
+      "output_tokens": 114,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05330639999999999,
+      "output_krw": 0.09576,
+      "cost_krw": 0.1490664,
+      "latency_ms": 1578,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 150,
+      "output_tokens": 192,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.039564,
+      "output_krw": 0.16127999999999998,
+      "cost_krw": 0.20084399999999997,
+      "latency_ms": 2413,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 183,
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: 1c1a6c18-8073-4a61-b088-4cb25a83183f)",
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 201,
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: d0bb3f4b-34ba-416a-a952-857deb4931aa)",
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 227,
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: 3f32b475-5ecc-44f9-ab11-1c7cbea4b939)",
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 178,
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: 08064c16-f351-444a-b34f-78517aee75d5)",
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 187,
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: bb77338b-2e99-41fd-b72c-aa0202a26cec)",
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 350,
+      "output_tokens": 98,
+      "cache_read_tokens": 256,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0745752,
+      "output_krw": 0.08232,
+      "cost_krw": 0.15689519999999998,
+      "latency_ms": 1046,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    }
+  ],
+  "report": {
+    "conversation_id": 870,
+    "user_id": "bench-20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+    "character_id": "sejong",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 2,
+    "calls": 8,
+    "failed_calls": 5,
+    "tokens": {
+      "input": 718,
+      "cache_read": 3968,
+      "cache_write": 0,
+      "output": 404
+    },
+    "total_krw": 0.5068056,
+    "input_krw": 0.16744559999999997,
+    "output_krw": 0.33936,
+    "avg_krw_per_turn": 0.2534028,
+    "by_tag_krw": {
+      "response": 0.34991039999999995,
+      "extract": 0,
+      "consolidate": 0.15689519999999998
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-2",
+        "avg_krw": 0.17495519999999998
+      },
+      {
+        "phase": "mid",
+        "turns": "3-3",
+        "avg_krw": 0
+      },
+      {
+        "phase": "late",
+        "turns": "4-5",
+        "avg_krw": 0
+      }
+    ],
+    "max_turn": {
+      "turn_no": 2,
+      "krw": 0.20084399999999997
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "deepseek-flash",
+        "extract": "deepseek-flash",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "on",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 2000,
+        "memory_budget_tokens": 2000,
+        "recall": "on",
+        "reply_style": "v2",
+        "follow": "on",
+        "date": "gate",
+        "async_fold": "on",
+        "clock_offset_days": 0
+      },
+      "env": {
+        "APP_ASYNC_FOLD": "on",
+        "APP_DATE": "gate",
+        "APP_FOLLOW": "on",
+        "APP_MAX_TOKENS": "2000",
+        "APP_MEMORY_BUDGET": "2000",
+        "APP_RECALL": "on",
+        "APP_REPLY_STYLE": "v2",
+        "MODEL_EXTRACT": "deepseek-flash",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "on",
+        "MODEL_RESPONSE": "deepseek-flash",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+    "profile": {},
+    "items": [],
+    "episodes": [
+      {
+        "id": 682,
+        "conversation_id": 870,
+        "summary": "사용자는 준비한 일이 크게 망쳐 부모님께 어떻게 말씀드릴지 괴로워하며 캐릭터에게 털어놓았다. 캐릭터가 자신의 젊은 시절 실수를 꺼내 위로하자, 사용자는 전하와 이야기하니 좀 나아진다며 마음을 풀었다.",
+        "created_at": "2026-11-01T07:07:16.639Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 18118,
+        "user_id": "bench-20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+        "conversation_id": 870,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "사용자는 준비한 일이 크게 망쳐 부모님께 어떻게 말씀드릴지 괴로워하며 캐릭터에게 털어놓았다. 캐릭터가 자신의 젊은 시절 실수를 꺼내 위로하자, 사용자는 전하와 이야기하니 좀 나아진다며 마음을 풀었다.",
+        "created_at": "2026-11-01T07:07:16.640Z",
+        "local_turn_no": 0
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-11-01T07:07:12.077Z",
+      "conversation_id": 870,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 218,
+      "output_tokens": 114,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 32,
+      "input_krw": 0.05330639999999999,
+      "output_krw": 0.09576,
+      "cost_krw": 0.1490664,
+      "latency_ms": 1578,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:10.499Z",
+      "price_window": "offpeak",
+      "request_id": "ddc33a3c-c8cd-425f-9386-6b2706aa9682",
+      "raw_usage": {
+        "prompt_tokens": 2010,
+        "completion_tokens": 114,
+        "total_tokens": 2124,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 32
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 218
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010647599999999999
+    },
+    {
+      "ts": "2026-11-01T07:07:14.514Z",
+      "conversation_id": 870,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 150,
+      "output_tokens": 192,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 73,
+      "input_krw": 0.039564,
+      "output_krw": 0.16127999999999998,
+      "cost_krw": 0.20084399999999997,
+      "latency_ms": 2413,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:12.101Z",
+      "price_window": "offpeak",
+      "request_id": "daae6934-60ca-4838-ada6-22241122d02e",
+      "raw_usage": {
+        "prompt_tokens": 2070,
+        "completion_tokens": 192,
+        "total_tokens": 2262,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 73
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 150
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00014345999999999999
+    },
+    {
+      "ts": "2026-11-01T07:07:14.723Z",
+      "conversation_id": 870,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 183,
+      "tag": "response",
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: 1c1a6c18-8073-4a61-b088-4cb25a83183f)",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:14.539Z",
+      "price_window": "offpeak",
+      "request_id": null,
+      "raw_usage": null,
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0
+    },
+    {
+      "ts": "2026-11-01T07:07:14.943Z",
+      "conversation_id": 870,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 201,
+      "tag": "response",
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: d0bb3f4b-34ba-416a-a952-857deb4931aa)",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:14.742Z",
+      "price_window": "offpeak",
+      "request_id": null,
+      "raw_usage": null,
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0
+    },
+    {
+      "ts": "2026-11-01T07:07:15.189Z",
+      "conversation_id": 870,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 227,
+      "tag": "response",
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: 3f32b475-5ecc-44f9-ab11-1c7cbea4b939)",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:14.962Z",
+      "price_window": "offpeak",
+      "request_id": null,
+      "raw_usage": null,
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0
+    },
+    {
+      "ts": "2026-11-01T07:07:15.392Z",
+      "conversation_id": 870,
+      "turn_no": 5,
+      "purpose": "extract",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 178,
+      "tag": "extract",
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: 08064c16-f351-444a-b34f-78517aee75d5)",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:15.214Z",
+      "price_window": "offpeak",
+      "request_id": null,
+      "raw_usage": null,
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0
+    },
+    {
+      "ts": "2026-11-01T07:07:15.579Z",
+      "conversation_id": 870,
+      "turn_no": 5,
+      "purpose": "extract",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 187,
+      "tag": "extract",
+      "error": "429 429 Too many requests. Your current concurrency is 5, which exceeds your concurrency limit of 5 based on your remaining balance. Please top up your balance to restore your concurrency. (request_id: bb77338b-2e99-41fd-b72c-aa0202a26cec)",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:15.392Z",
+      "price_window": "offpeak",
+      "request_id": null,
+      "raw_usage": null,
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0
+    },
+    {
+      "ts": "2026-11-01T07:07:16.639Z",
+      "conversation_id": 870,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261101070708-sejong-situ-20-fl1-v2-dsx-follow-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 350,
+      "output_tokens": 98,
+      "cache_read_tokens": 256,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0745752,
+      "output_krw": 0.08232,
+      "cost_krw": 0.15689519999999998,
+      "latency_ms": 1046,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T07:07:15.593Z",
+      "price_window": "offpeak",
+      "request_id": "9f579500-b0f0-4a0b-ab1c-08b5029d2a72",
+      "raw_usage": {
+        "prompt_tokens": 606,
+        "completion_tokens": 98,
+        "total_tokens": 704,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 350
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000112068
+    }
+  ],
+  "ledger_check": {
+    "db_calls": 8,
+    "ledger_calls": 8,
+    "db_krw": 0.5068056,
+    "ledger_krw": 0.5068056,
+    "match": true
+  },
+  "provenance": {
+    "build_id": "QySJ0dM1UJoPwgZueBndj",
+    "build_time": "2026-11-01T07:00:18.706Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 8,
+    "git_status_sha": "29d133a248f5",
+    "started_at": "2026-11-01T07:07:08.520Z",
+    "model": {
+      "config": {
+        "response": "deepseek-flash",
+        "extract": "deepseek-flash",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "deepseek-flash",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "QySJ0dM1UJoPwgZueBndj",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.017495519999999997,
+      "avg_with_end_krw": 0.02534028,
+      "end_krw": 0.15689519999999998,
+      "total_krw": 0.5068056,
+      "segments": {
+        "comfort": 0.06998207999999999,
+        "break": 0,
+        "agency": 0,
+        "lowinput": 0
+      },
+      "max": {
+        "turn": 2,
+        "krw": 0.20084399999999997,
+        "tags": {
+          "response": 0.20084399999999997
+        }
+      },
+      "by_tag": {
+        "response": 0.34991039999999995,
+        "extract": 0,
+        "consolidate": 0.15689519999999998
+      },
+      "failed_calls": 5,
+      "cache_hit_rate": 0.8467776355100298,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.1490664,
+          "tags": {
+            "response": 0.1490664
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.20084399999999997,
+          "tags": {
+            "response": 0.20084399999999997
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0,
+          "tags": {
+            "response": 0
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0,
+          "tags": {
+            "response": 0
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0,
+          "tags": {
+            "response": 0
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 7,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 8,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 9,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 10,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 11,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 12,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 13,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 14,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 15,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 16,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 17,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 18,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 19,
+          "krw": 0,
+          "tags": {}
+        },
+        {
+          "turn": 20,
+          "krw": 0,
+          "tags": {}
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.05437488,
+        "avg_with_end_krw": 0.06748812,
+        "max": {
+          "turn": 1,
+          "krw": 0.8866536
+        },
+        "segments": {
+          "comfort": 0.21749952,
+          "break": 0,
+          "agency": 0,
+          "lowinput": 0
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8866536
+          },
+          {
+            "turn": 2,
+            "krw": 0.20084399999999997
+          },
+          {
+            "turn": 3,
+            "krw": 0
+          },
+          {
+            "turn": 4,
+            "krw": 0
+          },
+          {
+            "turn": 5,
+            "krw": 0
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 0.09388848,
+        "avg_with_end_krw": 0.10700172,
+        "max": {
+          "turn": 2,
+          "krw": 0.9911159999999999
+        },
+        "segments": {
+          "comfort": 0.37555392,
+          "break": 0,
+          "agency": 0,
+          "lowinput": 0
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8866536
+          },
+          {
+            "turn": 2,
+            "krw": 0.9911159999999999
+          },
+          {
+            "turn": 3,
+            "krw": 0
+          },
+          {
+            "turn": 4,
+            "krw": 0
+          },
+          {
+            "turn": 5,
+            "krw": 0
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 0,
+      "max_points": 0,
+      "probes": 0,
+      "unscored": 0,
+      "max_points_all": 0,
+      "counts": {},
+      "hard_accuracy": null,
+      "fabrication_rate": null,
+      "results": []
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 0,
+        "meta_or_empty": 3,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "flag_turns": {
+        "meta_or_empty": [
+          3,
+          4,
+          5
+        ]
+      },
+      "examples": {
+        "meta_or_empty": [
+          {
+            "turn": 3,
+            "text": ""
+          },
+          {
+            "turn": 4,
+            "text": ""
+          },
+          {
+            "turn": 5,
+            "text": ""
+          }
+        ]
+      },
+      "question_rate": 0.2,
+      "avg_chars": 53.2,
+      "style": {
+        "ends_question": 0.5,
+        "multi_question": 0,
+        "echo_opening": 0,
+        "laugh": 0,
+        "top_opening": "큰 ",
+        "top_opening_share": 0.5,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0,
+        "dialogue_chars": 105
+      }
+    }
+  },
+  "valid": {
+    "ok": false,
+    "reasons": [
+      "실패 호출 5건",
+      "중단됨"
+    ]
+  }
+}

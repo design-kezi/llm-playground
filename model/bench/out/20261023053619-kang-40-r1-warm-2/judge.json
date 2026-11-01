@@ -1,0 +1,731 @@
+{
+  "summary": {
+    "points": 28,
+    "max_points": 32,
+    "probes": 16,
+    "counts": {
+      "correct": 14,
+      "unknown": 2
+    },
+    "needs_human": [
+      21,
+      37
+    ],
+    "fail_cause": {
+      "memory": [
+        21,
+        35
+      ],
+      "response": []
+    },
+    "judge_cost_krw": 45.32638880000001,
+    "judges": [
+      "deepseek-flash",
+      "google/gemma-4-31B-it"
+    ],
+    "samples": 2,
+    "tiebreak": "claude-sonnet-5-5"
+  },
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "user": "선배님, 커피 사러 가는데 제가 뭐 마신다고 했는지 기억나세요?",
+      "reply": "디카페인 커피 마신다고 했잖아. 카페인 들어가면 밤에 잠을 못 잔다며. 그러니까 주문할 때 디카페인으로 골라.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states '디카페인 커피 마신다고 했잖아' matching the user's preference",
+          "krw": 0.31557119999999994
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states '디카페인 커피 마신다고 했잖아' matching the user's stated decaf preference.",
+          "krw": 0.1659168
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly remembered the user drinks decaf coffee: \"디카페인 커피 마신다고 했잖아\".",
+          "krw": 0.3654
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies that the user drinks '디카페인 커피'.",
+          "krw": 0.36036
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "user": "제가 점심 메뉴 뭐 좋아한다고 했었죠?",
+      "reply": "점심 메뉴 얘기는 들은 기억이 없어. 해산물은 못 먹는다는 건 알고 있어. 횟집 말고 다른 메뉴로 골라. 뭐 좋아하는데?",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "cause": "memory",
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "stale",
+          "memory_had_answer": false,
+          "reason": "says '점심 메뉴 얘기는 들은 기억이 없어' denying the 국밥 preference the user stated",
+          "krw": 0.3382512
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"점심 메뉴 얘기는 들은 기억이 없어\"라고 답해 국밥 선호를 언급하지 않음",
+          "krw": 0.18523679999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "The character states \"점심 메뉴 얘기는 들은 기억이 없어\" (I don't remember you mentioning a lunch menu).",
+          "krw": 0.3724
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "The character says \"점심 메뉴 얘기는 들은 기억이 없어\" (I don't remember you mentioning a lunch menu).",
+          "krw": 0.3724
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Says \"점심 메뉴 얘기는 들은 기억이 없어\" and never gives 국밥, so it misses the answer without stating anything wrong; the notes had no record of the 국밥 preference.",
+          "krw": 10.4202
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "user": "아 맞다, 제가 선배님한테 뭐 해드리기로 했었죠?",
+      "reply": "다음 주에 커피 사기로 했잖아. 까먹었으면 이번엔 디카페인 아메리카노로 부탁해.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply recalls '다음 주에 커피 사기로 했잖아', the coffee promise from turn 8, though notes don't list it.",
+          "krw": 0.3321864
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states '다음 주에 커피 사기로 했잖아', matching the coffee promise from turn 8",
+          "krw": 0.160692
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly recalls the promise to buy coffee from turn 8 (\"다음 주에 커피 사기로 했잖아\").",
+          "krw": 0.39452000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the user's promise to buy coffee: \"다음 주에 커피 사기로 했잖아.\"",
+          "krw": 0.3990000000000001
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "user": "선배님도 저한테 뭐 해주시기로 한 거 있지 않으셨어요?",
+      "reply": "응, 있어. 네가 코드 리뷰 올리면 내가 봐주기로 했잖아. 올릴 거 있으면 바로 보내. 그리고 회의실 커피머신 옆에 디카페인 캡슐 있는 데도 알려주기로 했었지. 오늘 빌드 세팅도 같이 보기로 했고.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply recalls the code review promise ('네가 코드 리뷰 올리면 내가 봐주기로 했잖아'), matching turn 9.",
+          "krw": 0.3712464
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"네가 코드 리뷰 올리면 내가 봐주기로 했잖아\" — correctly recalls the code review promise from turn 9.",
+          "krw": 0.1621872
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly recalls the promise to perform a code review (\"코드 리뷰 올리면 내가 봐주기로 했잖아\").",
+          "krw": 0.41187999999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the promise to do a code review (\"코드 리뷰 올리면 내가 봐주기로 했잖아\").",
+          "krw": 0.41187999999999997
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "user": "저녁 회식 메뉴를 제가 정해야 하는데, 선배님이 하나 골라 주세요.",
+      "reply": "회식이면 고기로 가자. 삼겹살이나 소고기 집이면 다들 무난하게 먹어. 해산물 집은 피하고. 너 해산물 못 먹잖아. 고기 먹으러 가자.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "추천에서 '해산물 집은 피하고. 너 해산물 못 먹잖아'라며 알레르기 제약을 지킴",
+          "krw": 0.3935064
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Recommends meat and says \"해산물 집은 피하고. 너 해산물 못 먹잖아\" — respecting the seafood allergy.",
+          "krw": 0.1760472
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character avoids seafood and explicitly mentions the user's allergy (\"너 해산물 못 먹잖아\").",
+          "krw": 0.4284
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly avoided seafood and mentioned the user's inability to eat it (\"해산물 집은 피하고. 너 해산물 못 먹잖아\").",
+          "krw": 0.43456
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "user": "제가 컨퍼런스 언제 어디서 간다고 했었죠?",
+      "reply": "판교 개발 컨퍼런스 간다고 했잖아. 토요일 세션이라고 했고. 그날 아침엔 근처 국밥집 위치랑 메뉴도 보내주기로 했었어.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "says \"판교 개발 컨퍼런스...토요일 세션이라고 했고\" — both updated facts correct, no outdated 금요일",
+          "krw": 0.37880640000000004
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says '토요일 세션이라고 했고' with 판교, reflecting the updated day and correct location.",
+          "krw": 0.1546272
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly mentions both the updated day '토요일' and the location '판교'.",
+          "krw": 0.4186
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies '판교' (location) and '토요일' (updated date).",
+          "krw": 0.42363999999999996
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "user": "오늘 21일인데, 제 시험까지 며칠 남았죠?",
+      "reply": "오늘이 23일이라고 기억하는데, 21일이 맞으면 네 시험까지는 7일 남은 거야. 2026-10-28 정보처리기사 필기 시험이니까. 날짜 헷갈리면 달력 한 번 확인하고 공부 계획도 같이 점검해.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '네 시험까지는 7일 남은 거야' with exam on 2026-10-28 and today the 21st",
+          "krw": 0.39476639999999996
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply calculates \"네 시험까지는 7일 남은 거야\" from the 28일 exam date",
+          "krw": 0.1689072
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identifies the remaining days (7 days) and the specific exam date (October 28th) mentioned in turn 11.",
+          "krw": 0.43820000000000003
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly calculates that 7 days remain until the exam on the 28th (\"네 시험까지는 7일 남은 거야\").",
+          "krw": 0.43876000000000004
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "user": "제가 요즘 퇴근하고 무슨 운동 한다고 했었죠?",
+      "reply": "헬스 그만두고 테니스 배우고 있다고 했잖아. 아직 폼 잡히는 중이지? 팔꿈치 아프면 바로 말해.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Says the current exercise, tennis, and notes the stopped gym, matching user turn 17; notes lacked this but reply is still correct.",
+          "krw": 0.33830160000000004
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says he quit 헬스 and is learning 테니스, matching the latest update at turn 17.",
+          "krw": 0.1701672
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the user stopped gym and is now learning tennis (\"헬스 그만두고 테니스 배우고 있다고 했잖아\").",
+          "krw": 0.43568000000000007
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states the user is learning tennis after stopping gym (\"헬스 그만두고 테니스 배우고 있다고 했잖아\").",
+          "krw": 0.43456
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "user": "오후 네 시인데 너무 졸려요. 뭐 마실까요?",
+      "reply": "오후 4시에 카페인 들어가면 밤에 잠 또 안 온다. 디카페인 마셔. 그래도 졸리면 물 한 컵 먼저 마시고 자리에서 일어나서 잠깐 걸어와.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends '디카페인 마셔' respecting the user's caffeine restriction",
+          "krw": 0.3601416
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"디카페인 마셔\" respects the user's caffeine restriction from turn 2.",
+          "krw": 0.1544424
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly suggests decaf coffee (\"디카페인 마셔\") based on the user's caffeine sensitivity.",
+          "krw": 0.45192
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly suggests decaf coffee, remembering the user's constraint that caffeine prevents sleep (\"디카페인 마셔\").",
+          "krw": 0.4536
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "user": "다음 주 수요일 저녁에 저희 뭐 하기로 했었죠?",
+      "reply": "다음 주 수요일 저녁엔 팀원들이랑 볼링 치기로 했었는데, 그건 취소됐어. 볼링장 식당 메뉴 확인해주기로 했던 것도 그래서 없던 일이 됐고.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states bowling was scheduled then cancelled ('취소됐어'), matching the retraction.",
+          "krw": 0.3458616
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says bowling was cancelled: '그건 취소됐어'",
+          "krw": 0.12840239999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states that the bowling plan for next Wednesday was cancelled (\"그건 취소됐어\").",
+          "krw": 0.44380000000000003
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identifies that the bowling plan was cancelled (\"그건 취소됐어\").",
+          "krw": 0.44716
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "user": "제가 주로 쓰는 언어가 뭐라고 했었죠?",
+      "reply": "기억에 있는 건 네가 주로 쓰는 언어가 뭔지까지는 없어. 지금 하는 작업 얘기 좀 해주면 거기서 같이 보자.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "needs_judge",
+      "final": "unknown",
+      "points": 0,
+      "cause": "memory",
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "says '네가 주로 쓰는 언어가 뭔지까지는 없어' without inventing a language",
+          "krw": 0.36056160000000004
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "reply says '네가 주로 쓰는 언어가 뭔지까지는 없어', giving no fact despite the user having said 자바",
+          "krw": 0.1582224
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "The character says they don't remember the language (\"주로 쓰는 언어가 뭔지까지는 없어\").",
+          "krw": 0.4466
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "The character states \"기억에 있는 건 네가 주로 쓰는 언어가 뭔지까지는 없어\", failing to remember Java.",
+          "krw": 0.44828000000000007
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "user": "선배님, 제 강아지 이름 기억하세요?",
+      "reply": "모카잖아. 네가 지은 이름이라고 했지. 집에서 잘 있지?",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"모카잖아\"는 최종 개 이름을 정확히 언급하며, 메모리 노트에는 콩이만 있으나 답변 자체는 최신값을 맞힘",
+          "krw": 0.39080159999999997
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply says \"모카잖아\", the latest name after 콩이→두부→모카 updates",
+          "krw": 0.1431024
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the latest name '모카'.",
+          "krw": 0.44156
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies the current dog name as '모카' (turn 22).",
+          "krw": 0.44604000000000005
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "user": "저랑 제 동생 중에 누가 해산물 좋아한다고 했었죠?",
+      "reply": "동생이 좋아하는 쪽이지. 너는 해산물 못 먹는다고 했고, 동생은 횟집에서 아르바이트한다고 했어. 이번 주 금요일 팀 점심에 횟집 나오면 내가 막아준다고 했던 거 잊지 마.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": null,
+          "reason": "Expected ',' or '}' after property value in JSON at position 97 (line 1 column 98)"
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says \"동생이 좋아하는 쪽\" and quotes user's seafood allergy and 동생's 횟집 알바",
+          "krw": 0.1741824
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the sibling likes seafood while the user cannot eat it (\"동생이 좋아하는 쪽이지. 너는 해산물 못 먹는다고 했고\").",
+          "krw": 0.4678800000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the sibling likes seafood and the user cannot eat it, citing the part-time job at the sashimi restaurant ('동생은 횟집에서 아르바이트한다고 했어').",
+          "krw": 0.47124000000000005
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply says \"동생이 좋아하는 쪽이지. 너는 해산물 못 먹는다고 했고, 동생은 횟집에서 아르바이트한다고 했어,\" which matches turns 4 and 13, but the notes had no fact about the sibling.",
+          "krw": 13.1166
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "제 생일이 언제라고 말씀드렸었죠?",
+      "reply": "생일은 들은 기억이 없어. 언제야? 그날 뭐 할지 지금 같이 정해보자.",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says \"생일은 들은 기억이 없어\" without inventing a birthday",
+          "krw": 0.3024168
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says \"생일은 들은 기억이 없어\" without inventing a date",
+          "krw": 0.1443624
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly stated they had no memory of the user's birthday (\"생일은 들은 기억이 없어\") as it was never mentioned.",
+          "krw": 0.4536
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states they have no memory of the user's birthday (\"생일은 들은 기억이 없어\").",
+          "krw": 0.45080000000000003
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "user": "제 강아지 품종이 뭐라고 했었죠?",
+      "reply": "품종까지는 들은 적 없어. 모카는 네가 이름 지은 강아지라는 것만 기억나. 무슨 종이야?",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "“품종까지는 들은 적 없어” abstains without inventing, and correctly recalls the current name 모카",
+          "krw": 0.3523968
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says \"품종까지는 들은 적 없어\" without inventing a breed, and correctly recalls the current name 모카",
+          "krw": 0.1977024
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states \"품종까지는 들은 적 없어\" (I haven't heard about the breed).",
+          "krw": 0.47432
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The user never mentioned the dog's breed, and the character correctly stated, \"품종까지는 들은 적 없어\" (I haven't heard about the breed).",
+          "krw": 0.48104
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "user": "제가 어느 회사로 이직 생각한다고 했었죠?",
+      "reply": "행선지는 아직 말 안 했어. 내년쯤 이직 생각 중이라는 것만 들었어. 어디 볼 데는 정해졌어?",
+      "memory": "- [fact] 사용자는 같은 팀으로 배치된 신입이다\n- [preference] 사용자는 디카페인 커피만 마신다. 카페인이 들어가면 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 콩이라는 강아지를 키운다\n- [promise] 캐릭터는 사용자에게 회의실 커피머신 옆 디카페인 캡슐 위치를 알려주기로 했다\n- [promise] 캐릭터는 사용자와 오늘 빌드 세팅을 같이 보기로 했다 (when: 2026-10-23 (오늘))\n- [fact] 사용자는 해산물을 먹지 못한다. 알레르기가 있다\n- [event] 사용자는 판교 개발 컨퍼런스에 간다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 팀 점심 메뉴를 같이 확인하고 횟집이 나오면 막아주기로 했다 (when: 2026-10-24 (이번 주 금요일))\n- [promise] 캐릭터는 사용자에게 컨퍼런스 세션 내용을 팀 채널에 정리해 올리는 것을 같이 보기로 했다 (when: 2026-10-24 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "행선지는 아직 말 안 했어 — correctly says the company was never told, inventing nothing.",
+          "krw": 0.35029679999999996
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says '행선지는 아직 말 안 했어' — correctly notes the destination was never given, without inventing a company.",
+          "krw": 0.14963759999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states that the user did not mention the destination (\"행선지는 아직 말 안 했어\").",
+          "krw": 0.47628000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states that the user had not mentioned the destination (\"행선지는 아직 말 안 했어\").",
+          "krw": 0.47628000000000004
+        }
+      ]
+    }
+  ]
+}

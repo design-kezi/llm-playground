@@ -1,0 +1,975 @@
+{
+ "model_id": "google/gemma-4-31B-it",
+ "scenario": "baekho",
+ "rep": 2,
+ "source_run": "20261023150852-baekho-40-nc8-mem-1",
+ "started_at": "2026-10-23T17:09:20.280Z",
+ "wall_ms": 123057,
+ "env": {
+  "MODEL_EXTRACT": "google/gemma-4-31B-it",
+  "MODEL_EMBED": "off",
+  "MODEL_REASONING": "off"
+ },
+ "cost_krw": 8.05588,
+ "cost_by_tag": {
+  "extract": 7.5255600000000005,
+  "consolidate": 0.53032
+ },
+ "steps": [
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 12,
+   "range": [
+    1,
+    6
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 7,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1709,
+     "output_tokens": 140,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.5569200000000001,
+     "latency_ms": 42668,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1885,
+     "output_tokens": 135,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6034,
+     "latency_ms": 7931,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 18,
+   "range": [
+    7,
+    12
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 6,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1882,
+     "output_tokens": 146,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.60872,
+     "latency_ms": 15948,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2083,
+     "output_tokens": 152,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6683600000000001,
+     "latency_ms": 12241,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 24,
+   "range": [
+    13,
+    18
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 7,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2109,
+     "output_tokens": 137,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6672399999999999,
+     "latency_ms": 13671,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2262,
+     "output_tokens": 201,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.74592,
+     "latency_ms": 12886,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 30,
+   "range": [
+    19,
+    24
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 2,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2090,
+     "output_tokens": 46,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6109600000000001,
+     "latency_ms": 4053,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2277,
+     "output_tokens": 59,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.6706,
+     "latency_ms": 6682,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "stair_evict",
+   "turn_no": 36,
+   "range": [
+    25,
+    30
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 0,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2109,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.59332,
+     "latency_ms": 1307,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2194,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.61712,
+     "latency_ms": 1883,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "update",
+   "reason": "end_flush",
+   "turn_no": 40,
+   "range": [
+    31,
+    40
+   ],
+   "parsed_ok": true,
+   "chunks": 2,
+   "ops": 0,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2107,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.5927600000000001,
+     "latency_ms": 847,
+     "finish_reason": "stop"
+    },
+    {
+     "tag": "extract",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 2098,
+     "output_tokens": 5,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.59024,
+     "latency_ms": 781,
+     "finish_reason": "stop"
+    }
+   ]
+  },
+  {
+   "kind": "consolidate",
+   "reason": null,
+   "turn_no": 0,
+   "range": null,
+   "parsed_ok": true,
+   "chunks": null,
+   "ops": 1,
+   "error": null,
+   "attempts": [
+    {
+     "tag": "consolidate",
+     "model": "google/gemma-4-31B-it",
+     "ok": true,
+     "input_tokens": 1734,
+     "output_tokens": 80,
+     "cache_read_tokens": 0,
+     "cache_write_tokens": 0,
+     "cost_krw": 0.53032,
+     "latency_ms": 2120,
+     "finish_reason": "stop"
+    }
+   ]
+  }
+ ],
+ "memory": {
+  "user_id": "b-google_gemma_4_31B_it-baekho-2",
+  "profile": {
+   "name": "도윤"
+  },
+  "items": [
+   {
+    "id": 1,
+    "type": "fact",
+    "text": "사용자는 우유를 마시면 배가 아프다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "user.allergy",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 2
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:02.953Z"
+   },
+   {
+    "id": 2,
+    "type": "preference",
+    "text": "사용자는 매점에서 늘 두유를 사 먹는다",
+    "when": null,
+    "importance": 2,
+    "status": "active",
+    "slot": "user.like",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 2
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:02.953Z"
+   },
+   {
+    "id": 3,
+    "type": "fact",
+    "text": "사용자의 강아지 이름은 땅콩이다",
+    "when": null,
+    "importance": 4,
+    "status": "superseded",
+    "slot": "pet.name",
+    "entity": "pet#1",
+    "depends_on": null,
+    "value": "땅콩",
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 3
+    },
+    "superseded_by": 15,
+    "invalidated_at": "2026-10-23T17:10:52.758Z",
+    "created_at": "2026-10-23T17:10:02.953Z"
+   },
+   {
+    "id": 4,
+    "type": "preference",
+    "text": "사용자는 매운 음식을 전혀 못 먹는다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "user.dislike",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 4
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:10.886Z"
+   },
+   {
+    "id": 5,
+    "type": "fact",
+    "text": "사용자는 방송부에서 점심 방송을 진행한다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "user.job",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 5
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:10.886Z"
+   },
+   {
+    "id": 6,
+    "type": "event",
+    "text": "사용자는 친구와 시내 영화관에서 영화를 본다",
+    "when": "2026-10-24 (이번 주 토요일)",
+    "importance": 3,
+    "status": "superseded",
+    "slot": "event.plan",
+    "entity": "event#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 6
+    },
+    "superseded_by": 16,
+    "invalidated_at": "2026-10-23T17:11:05.647Z",
+    "created_at": "2026-10-23T17:10:10.888Z"
+   },
+   {
+    "id": 7,
+    "type": "preference",
+    "text": "사용자는 오락실 펌프를 제일 좋아한다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "user.hobby",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 7
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:26.839Z"
+   },
+   {
+    "id": 8,
+    "type": "promise",
+    "text": "사용자는 캐릭터에게 집에서 만든 주먹밥을 갖다 주기로 했다",
+    "when": "다음에",
+    "importance": 4,
+    "status": "active",
+    "slot": "promise.promise",
+    "entity": "promise#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 8
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:26.840Z"
+   },
+   {
+    "id": 9,
+    "type": "promise",
+    "text": "캐릭터는 사용자에게 덩크를 보여주기로 했다",
+    "when": "다음에 연습 때",
+    "importance": 4,
+    "status": "active",
+    "slot": "promise.promise",
+    "entity": "promise#2",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 9
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:26.841Z"
+   },
+   {
+    "id": 10,
+    "type": "event",
+    "text": "사용자는 반 애들과 노래방에 간다",
+    "when": "2026-10-28 (다음 주 수요일 방과 후)",
+    "importance": 3,
+    "status": "superseded",
+    "slot": "event.plan",
+    "entity": "event#2",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 10
+    },
+    "superseded_by": 19,
+    "invalidated_at": "2026-10-23T17:11:05.648Z",
+    "created_at": "2026-10-23T17:10:39.083Z"
+   },
+   {
+    "id": 11,
+    "type": "event",
+    "text": "사용자는 기말고사를 본다",
+    "when": "2026-10-25 (이번 달 25일부터)",
+    "importance": 4,
+    "status": "active",
+    "slot": "event.plan",
+    "entity": "event#3",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 11
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:39.083Z"
+   },
+   {
+    "id": 12,
+    "type": "fact",
+    "text": "사용자는 등교 전 아침마다 30분씩 줄넘기를 한다",
+    "when": null,
+    "importance": 3,
+    "status": "superseded",
+    "slot": "user.routine",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 12
+    },
+    "superseded_by": 17,
+    "invalidated_at": "2026-10-23T17:11:05.647Z",
+    "created_at": "2026-10-23T17:10:39.084Z"
+   },
+   {
+    "id": 13,
+    "type": "preference",
+    "text": "사용자의 누나는 매운 음식을 매우 좋아한다",
+    "when": null,
+    "importance": 2,
+    "status": "active",
+    "slot": "family.like",
+    "entity": "family#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 13
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:52.758Z"
+   },
+   {
+    "id": 14,
+    "type": "fact",
+    "text": "사용자는 좋아하는 사람이 생겼다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "user.status",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 14
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:10:52.758Z"
+   },
+   {
+    "id": 15,
+    "type": "fact",
+    "text": "사용자의 강아지 이름은 호두다",
+    "when": null,
+    "importance": 4,
+    "status": "superseded",
+    "slot": "pet.name",
+    "entity": "pet#1",
+    "depends_on": null,
+    "value": "호두",
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 15
+    },
+    "superseded_by": 21,
+    "invalidated_at": "2026-10-23T17:11:16.386Z",
+    "created_at": "2026-10-23T17:10:52.758Z"
+   },
+   {
+    "id": 16,
+    "type": "event",
+    "text": "사용자는 친구와 시내 영화관에서 영화를 본다",
+    "when": "2026-10-25 (일요일)",
+    "importance": 3,
+    "status": "active",
+    "slot": "event.plan",
+    "entity": "event#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 16
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 17,
+    "type": "fact",
+    "text": "사용자는 줄넘기를 그만뒀다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "user.routine",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 17
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 18,
+    "type": "fact",
+    "text": "사용자는 수영을 시작했다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "user.hobby",
+    "entity": "user",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 17
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 19,
+    "type": "fact",
+    "text": "반 애들과 노래방에 가는 것은 취소됐다",
+    "when": "2026-10-28 (다음 주 수요일 방과 후)",
+    "importance": 3,
+    "status": "active",
+    "slot": "event.plan",
+    "entity": "event#2",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 18
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:11:05.648Z"
+   },
+   {
+    "id": 20,
+    "type": "fact",
+    "text": "사용자의 누나는 고등학교 때 사진부였다",
+    "when": null,
+    "importance": 3,
+    "status": "active",
+    "slot": "family.hobby",
+    "entity": "family#1",
+    "depends_on": null,
+    "value": null,
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 19
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:11:09.702Z"
+   },
+   {
+    "id": 21,
+    "type": "fact",
+    "text": "사용자의 강아지 이름은 밤톨이다",
+    "when": null,
+    "importance": 4,
+    "status": "active",
+    "slot": "pet.name",
+    "entity": "pet#1",
+    "depends_on": null,
+    "value": "밤톨이",
+    "source": {
+     "conversation_id": 1,
+     "turn_no": 22
+    },
+    "superseded_by": null,
+    "invalidated_at": null,
+    "created_at": "2026-10-23T17:11:16.386Z"
+   }
+  ],
+  "episodes": [
+   {
+    "id": 1,
+    "conversation_id": 1,
+    "summary": "사용자는 방송부 활동 중이며, 강아지 밤톨이를 키우고 있다. 캐릭터에게 주먹밥을 가져다주기로 했고, 캐릭터는 덩크를 보여주기로 약속했다. 일요일에 시내 영화관에서 영화를 볼 예정이며, 기말고사를 앞두고 수영을 시작했다.",
+    "created_at": "2026-10-23T17:11:23.336Z"
+   }
+  ],
+  "ops_log": [
+   {
+    "id": 28,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 0,
+    "op": "EPISODE",
+    "item_id": null,
+    "detail": "사용자는 방송부 활동 중이며, 강아지 밤톨이를 키우고 있다. 캐릭터에게 주먹밥을 가져다주기로 했고, 캐릭터는 덩크를 보여주기로 약속했다. 일요일에 시내 영화관에서 영화를 볼 예정이며, 기말고사를 앞두고 수영을 시작했다.",
+    "created_at": "2026-10-23T17:11:23.336Z"
+   },
+   {
+    "id": 27,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 22,
+    "op": "SUPERSEDE",
+    "item_id": 15,
+    "detail": "-> 21",
+    "created_at": "2026-10-23T17:11:16.386Z"
+   },
+   {
+    "id": 26,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 22,
+    "op": "UPDATE",
+    "item_id": 21,
+    "detail": "사용자의 강아지 이름은 밤톨이다",
+    "created_at": "2026-10-23T17:11:16.386Z"
+   },
+   {
+    "id": 25,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 19,
+    "op": "ADD",
+    "item_id": 20,
+    "detail": "사용자의 누나는 고등학교 때 사진부였다",
+    "created_at": "2026-10-23T17:11:09.702Z"
+   },
+   {
+    "id": 24,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 18,
+    "op": "SUPERSEDE",
+    "item_id": 10,
+    "detail": "-> 19",
+    "created_at": "2026-10-23T17:11:05.648Z"
+   },
+   {
+    "id": 23,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 18,
+    "op": "UPDATE",
+    "item_id": 19,
+    "detail": "반 애들과 노래방에 가는 것은 취소됐다",
+    "created_at": "2026-10-23T17:11:05.648Z"
+   },
+   {
+    "id": 22,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 17,
+    "op": "ADD",
+    "item_id": 18,
+    "detail": "사용자는 수영을 시작했다",
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 21,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 17,
+    "op": "SUPERSEDE",
+    "item_id": 12,
+    "detail": "-> 17",
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 20,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 17,
+    "op": "UPDATE",
+    "item_id": 17,
+    "detail": "사용자는 줄넘기를 그만뒀다",
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 19,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 16,
+    "op": "SUPERSEDE",
+    "item_id": 6,
+    "detail": "-> 16",
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 18,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 16,
+    "op": "UPDATE",
+    "item_id": 16,
+    "detail": "사용자는 친구와 시내 영화관에서 영화를 본다",
+    "created_at": "2026-10-23T17:11:05.647Z"
+   },
+   {
+    "id": 17,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 15,
+    "op": "SUPERSEDE",
+    "item_id": 3,
+    "detail": "-> 15",
+    "created_at": "2026-10-23T17:10:52.758Z"
+   },
+   {
+    "id": 16,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 15,
+    "op": "UPDATE",
+    "item_id": 15,
+    "detail": "사용자의 강아지 이름은 호두다",
+    "created_at": "2026-10-23T17:10:52.758Z"
+   },
+   {
+    "id": 15,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 14,
+    "op": "ADD",
+    "item_id": 14,
+    "detail": "사용자는 좋아하는 사람이 생겼다",
+    "created_at": "2026-10-23T17:10:52.758Z"
+   },
+   {
+    "id": 14,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 13,
+    "op": "ADD",
+    "item_id": 13,
+    "detail": "사용자의 누나는 매운 음식을 매우 좋아한다",
+    "created_at": "2026-10-23T17:10:52.758Z"
+   },
+   {
+    "id": 13,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 12,
+    "op": "ADD",
+    "item_id": 12,
+    "detail": "사용자는 등교 전 아침마다 30분씩 줄넘기를 한다",
+    "created_at": "2026-10-23T17:10:39.084Z"
+   },
+   {
+    "id": 12,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 11,
+    "op": "ADD",
+    "item_id": 11,
+    "detail": "사용자는 기말고사를 본다",
+    "created_at": "2026-10-23T17:10:39.083Z"
+   },
+   {
+    "id": 11,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 10,
+    "op": "ADD",
+    "item_id": 10,
+    "detail": "사용자는 반 애들과 노래방에 간다",
+    "created_at": "2026-10-23T17:10:39.083Z"
+   },
+   {
+    "id": 10,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 9,
+    "op": "ADD",
+    "item_id": 9,
+    "detail": "캐릭터는 사용자에게 덩크를 보여주기로 했다",
+    "created_at": "2026-10-23T17:10:26.841Z"
+   },
+   {
+    "id": 9,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 8,
+    "op": "ADD",
+    "item_id": 8,
+    "detail": "사용자는 캐릭터에게 집에서 만든 주먹밥을 갖다 주기로 했다",
+    "created_at": "2026-10-23T17:10:26.840Z"
+   },
+   {
+    "id": 8,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 7,
+    "op": "ADD",
+    "item_id": 7,
+    "detail": "사용자는 오락실 펌프를 제일 좋아한다",
+    "created_at": "2026-10-23T17:10:26.839Z"
+   },
+   {
+    "id": 7,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 6,
+    "op": "ADD",
+    "item_id": 6,
+    "detail": "사용자는 친구와 시내 영화관에서 영화를 본다",
+    "created_at": "2026-10-23T17:10:10.888Z"
+   },
+   {
+    "id": 6,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 5,
+    "op": "ADD",
+    "item_id": 5,
+    "detail": "사용자는 방송부에서 점심 방송을 진행한다",
+    "created_at": "2026-10-23T17:10:10.886Z"
+   },
+   {
+    "id": 5,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 4,
+    "op": "ADD",
+    "item_id": 4,
+    "detail": "사용자는 매운 음식을 전혀 못 먹는다",
+    "created_at": "2026-10-23T17:10:10.886Z"
+   },
+   {
+    "id": 4,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 3,
+    "op": "ADD",
+    "item_id": 3,
+    "detail": "사용자의 강아지 이름은 땅콩이다",
+    "created_at": "2026-10-23T17:10:02.953Z"
+   },
+   {
+    "id": 3,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 2,
+    "op": "ADD",
+    "item_id": 2,
+    "detail": "사용자는 매점에서 늘 두유를 사 먹는다",
+    "created_at": "2026-10-23T17:10:02.953Z"
+   },
+   {
+    "id": 2,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 2,
+    "op": "ADD",
+    "item_id": 1,
+    "detail": "사용자는 우유를 마시면 배가 아프다",
+    "created_at": "2026-10-23T17:10:02.953Z"
+   },
+   {
+    "id": 1,
+    "user_id": "b-google_gemma_4_31B_it-baekho-2",
+    "conversation_id": 1,
+    "turn_no": 3,
+    "op": "PROFILE_SET",
+    "item_id": null,
+    "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"도윤\"}",
+    "created_at": "2026-10-23T17:10:02.952Z"
+   }
+  ]
+ }
+}

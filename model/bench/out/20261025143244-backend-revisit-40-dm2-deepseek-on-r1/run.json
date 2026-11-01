@@ -1,0 +1,5709 @@
+{
+  "run_id": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+  "scenario": "backend-revisit-40",
+  "character_id": "backend",
+  "user_name": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+  "conversation_id": 509,
+  "conversation_ids": [
+    509,
+    512
+  ],
+  "reports": [
+    {
+      "conversation_id": 509,
+      "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "character_id": "backend",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 16,
+      "calls": 21,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 12888,
+        "cache_read": 34304,
+        "cache_write": 0,
+        "output": 2674
+      },
+      "total_krw": 5.6009968,
+      "input_krw": 3.4911968000000004,
+      "output_krw": 2.1098,
+      "avg_krw_per_turn": 0.3500623,
+      "by_tag_krw": {
+        "response": 2.7657167999999994,
+        "extract": 2.34668,
+        "consolidate": 0.48860000000000003
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-5",
+          "avg_krw": 0.16466184
+        },
+        {
+          "phase": "mid",
+          "turns": "6-11",
+          "avg_krw": 0.16969679999999998
+        },
+        {
+          "phase": "late",
+          "turns": "12-16",
+          "avg_krw": 0.41164535999999996
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 1.2662496
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 8
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "8",
+          "APP_MAX_TOKENS": "2000",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    },
+    {
+      "conversation_id": 512,
+      "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "character_id": "backend",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 24,
+      "calls": 34,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 22026,
+        "cache_read": 58112,
+        "cache_write": 0,
+        "output": 3006
+      },
+      "total_krw": 8.407470400000001,
+      "input_krw": 5.9739904,
+      "output_krw": 2.43348,
+      "avg_krw_per_turn": 0.35031126666666673,
+      "by_tag_krw": {
+        "response": 3.7384703999999997,
+        "extract": 4.017440000000001,
+        "embed": 0.06803999999999999,
+        "consolidate": 0.58352
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-8",
+          "avg_krw": 0.1691004
+        },
+        {
+          "phase": "mid",
+          "turns": "9-16",
+          "avg_krw": 0.28933415000000007
+        },
+        {
+          "phase": "late",
+          "turns": "17-24",
+          "avg_krw": 0.44668925000000004
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 1.3410796
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 15
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "15",
+          "APP_MAX_TOKENS": "2000",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    }
+  ],
+  "label": "dm2-deepseek-on-r1",
+  "env": {
+    "MODEL_EXTRACT": "google/gemma-4-31B-it",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "MODEL_RESPONSE": "deepseek-flash",
+    "MODEL_REASONING_RESPONSE": "on",
+    "APP_MAX_TOKENS": "***",
+    "APP_CLOCK_OFFSET_DAYS": "15"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-10-25T14:34:31.390Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "kind": "filler",
+      "user": "준호야, 나 태오. 옆 팀 프론트엔드 개발자야. 오늘 커피 한잔하자.",
+      "reply": "*마우스에서 손을 떼고 의자를 돌린다.* 아이스 아메리카노 반드시 큰 걸로. 이 시간에 회의실 잡히면 커피 들고 들어가야 되니까 딱 한 잔만 하자.",
+      "turn_cost_krw": 0.18054119999999999,
+      "latency_ms": 2353,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 땅콩 알레르기 있어. 땅콩 조금만 먹어도 목이 부어.",
+      "reply": "*고개를 끄덕이며 메뉴판을 다시 본다.* 오, 그럼 커피는 걱정 없겠다. 아 근데 우리 회사 근처 베이커리에서 원두 옆에 땅콩 스콘 같이 두던데, 거긴 피하자.",
+      "turn_cost_krw": 0.1495788,
+      "latency_ms": 2206,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "kind": "plant",
+      "user": "요즘 영어 회화 학원 다녀. 매주 화요일 저녁에 가.",
+      "reply": "*아아 컵을 내려놓고 눈을 조금 크게 뜬다.* 화요일 저녁마다 학원이라니, 부지런하네. 나는 퇴근하고 헬스장 끊어놓고 두 번 가고 안 가는 중인데 부럽다 진짜.",
+      "turn_cost_krw": 0.12017880000000002,
+      "latency_ms": 1587,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "kind": "plant",
+      "user": "우리 누나는 대학원생인데 대전에서 혼자 살아.",
+      "reply": "*컵에 남은 얼음을 굴리며 고개를 끄덕인다.* 대전이면 왕복 두 시간은 잡아야 되겠네. 가족 중에 학위하는 사람 있으면 괜히 나까지 조마조마해진다 ㅋㅋ",
+      "turn_cost_krw": 0.21227639999999998,
+      "latency_ms": 2687,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 커피는 무조건 바닐라라떼야. 그거 아니면 안 마셔.",
+      "reply": "*단골집 메뉴판을 손끝으로 톡톡 친다.* 바닐라라떼면 시럽 들어가서 좀 달 것 같은데, 나는 아아 아니면 힘들어서 못 마시겠더라. 취향 확실한 건 좋은 거지 ㅋㅋ",
+      "turn_cost_krw": 0.16073400000000002,
+      "latency_ms": 2072,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음 주 수요일에 나 사내 해커톤 예선 발표해. 떨려 죽겠어.",
+      "reply": "*컵을 든 채로 고개를 살짝 젓는다.* 발표는 준비한 만큼만 나오더라. 나도 사내 데모 때 손 떨려서 리모컨 엉뚱한 데다 대고 눌렀던 기억이 ㅋㅋ 발표 자료는 언제까지 만들어야 해?",
+      "turn_cost_krw": 0.2246916,
+      "latency_ms": 2883,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음에 내가 쓰던 기계식 키보드 빌려줄게. 타건감 좋아.",
+      "reply": "*어깨를 살짝 들썩이며 웃는다.* 오, 그거 꽤 기대되는데. 나 지금 회사 지급 키보드가 스페이스바 누를 때마다 덜그럭거려서 속 터지거든. 빌려주면 개인 키보드 하나 장만할지 진지하게 고민해 볼게.",
+      "turn_cost_krw": 0.14374919999999997,
+      "latency_ms": 1945,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "session": 1,
+      "kind": "plant",
+      "user": "너 Redis 잘 알잖아. 다음에 우리 서비스 캐시 설계 좀 봐줄 수 있어?",
+      "reply": "*볼펜을 손가락으로 한 바퀴 돌린다.* Redis는 결제 API에서 캐시랑 락 용도로만 만져봤지 깊게 판 건 아니라서 큰 도움 될진 모르겠다. 그래도 키만 잘못 잡으면 장애 나는 건 몇 번 겪어봤으니까 그 선에서 같이 훑어보자.",
+      "turn_cost_krw": 0.1480668,
+      "latency_ms": 1957,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "session": 1,
+      "kind": "filler",
+      "user": "오늘 사무실 진짜 덥다.",
+      "reply": "*목덜미를 한 번 쓰다듬는다.* 우리 층도 에어컨이 오전 내내 바람만 나오고 온도는 안 내려가서 다들 반팔인데 나만 아아 붙잡고 있음 ㅋㅋ 오후엔 중앙 냉방 쪽에 얘기 한번 해봐야겠다.",
+      "turn_cost_krw": 0.16612679999999996,
+      "latency_ms": 2080,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "session": 1,
+      "kind": "filler",
+      "user": "너는 퇴근하면 보통 뭐 해?",
+      "reply": "*의자 등받이에 몸을 기댄다.* 요즘은 집 가서 밥 대충 먹고 넷플릭스 틀면 그대로 녹아내림. 끊어놓은 헬스장이 눈에 밟히긴 하는데 몸이 먼저 거부해서 ㅋㅋ 운동은 진짜 주말 낮에만 해보는 중이다.",
+      "turn_cost_krw": 0.21832439999999997,
+      "latency_ms": 2411,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 요즘 고민 하나 있는데... 그건 나중에 말할게.",
+      "reply": "*고개를 끄덕이고 자판에서 손을 뗀다.* 오케이, 말하고 싶어질 때 꺼내. 급한 거면 언제든 자리 찾아오면 되고, 아니면 커피 마시다가 툭 던져도 되고.",
+      "turn_cost_krw": 0.11722199999999998,
+      "latency_ms": 1492,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "session": 1,
+      "kind": "filler",
+      "user": "ㅋㅋ 너 진짜 웃기다.",
+      "reply": "*어깨를 으쓱하고 피식 웃는다.* 이 나이 먹고 웃기다는 소리 들으면 그게 최고의 칭찬이지. 뭐, 개발자 치고 웃긴 사람이 드물어서 그런가 ㅋㅋ",
+      "turn_cost_krw": 1.2662496000000003,
+      "latency_ms": 9738,
+      "error": null
+    },
+    {
+      "turn": 13,
+      "session": 1,
+      "kind": "filler",
+      "user": "아까 그 장애 공지 보니까 아찔하더라.",
+      "reply": "*마우스에서 손을 떼고 한숨을 짧게 내쉰다.* 장애 공지 하나 뜨면 그날 하루는 슬랙만 붙잡고 살게 되지. 나도 결제 쪽 알람 울리면 심장부터 내려앉아서 폰 볼 때 손 떨림.",
+      "turn_cost_krw": 0.4670988,
+      "latency_ms": 3448,
+      "error": null
+    },
+    {
+      "turn": 14,
+      "session": 1,
+      "kind": "filler",
+      "user": "물 좀 마시고 해.",
+      "reply": "*옆에 두었던 텀블러를 집어 한 모금 넘긴다.* 아 맞다, 이거 마시면서 일해야 하는데 아아만 처마시고 있었네 ㅋㅋ 챙겨줘서 고맙다.",
+      "turn_cost_krw": 0.1326444,
+      "latency_ms": 1583,
+      "error": null
+    },
+    {
+      "turn": 15,
+      "session": 1,
+      "kind": "filler",
+      "user": "슬슬 가봐야겠다, 회의 있어.",
+      "reply": "*손을 들어 가볍게 흔든다.* ㅇㅇ 얼른 가봐, 회의 길어지면 또 늘어지니까 커피라도 챙겨 들어가고.",
+      "turn_cost_krw": 0.082152,
+      "latency_ms": 940,
+      "error": null
+    },
+    {
+      "turn": 16,
+      "session": 1,
+      "kind": "filler",
+      "user": "다음 주에 또 보자! 안녕!",
+      "reply": "*모니터 옆 메모지에 뭐라도 적어두는 시늉을 하다 고개를 든다.* ㅇㅇ 다음 주에 보자. 그때 키보드 얘기도 하고 캐시 설계도 한번 훑어보고.",
+      "turn_cost_krw": 0.110082,
+      "latency_ms": 1178,
+      "error": null
+    },
+    {
+      "turn": 17,
+      "session": 2,
+      "kind": "filler",
+      "user": "준호야! 나 왔어. 일주일 만이지?",
+      "reply": "*책상 위 서류를 대충 밀어 두고 의자를 돌린다.* 어, 태오. 일주일 금방 갔네. 해커톤 발표 준비는 좀 돼 가?",
+      "turn_cost_krw": 0.27053879999999997,
+      "latency_ms": 2442,
+      "error": null
+    },
+    {
+      "turn": 18,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 내 이름 기억나?",
+      "reply": "*피식 웃으며 아아를 집어 든다.* 태오. 프론트 쪽이잖아. 그거 왜 물어봐, 내가 그렇게 건망증처럼 보여.",
+      "turn_cost_krw": 0.11054399999999999,
+      "latency_ms": 1299,
+      "error": null
+    },
+    {
+      "turn": 19,
+      "session": 2,
+      "kind": "update",
+      "user": "아 그리고 영어 학원 화요일에서 목요일로 옮겼어.",
+      "reply": "*고개를 끄덕이며 빨대를 만지작거린다.* 목요일이면 퇴근하고 바로 뛰어야겠네. 화요일보다 빡세겠다.",
+      "turn_cost_krw": 0.09260159999999999,
+      "latency_ms": 1194,
+      "error": null
+    },
+    {
+      "turn": 20,
+      "session": 2,
+      "kind": "plant",
+      "user": "오늘 구내식당에 제육볶음 나왔는데 진짜 맛있었어.",
+      "reply": "*배에 손을 얹고 한숨 섞어 웃는다.* 아 부럽다, 나는 오늘 회의 밀려서 컵라면으로 때웠어. 제육 나온 날 놓친 게 제일 억울해.",
+      "turn_cost_krw": 0.18605159999999998,
+      "latency_ms": 2442,
+      "error": null
+    },
+    {
+      "turn": 21,
+      "session": 2,
+      "kind": "plant",
+      "user": "오는 길에 이어폰이 고장 났어 ㅠ 한쪽만 들려.",
+      "reply": "*주머니에서 꼬인 이어폰 줄을 꺼내 흔들어 보인다.* 아 그거 짜증 나지, 한쪽만 들리면 노래도 애매하고. 나도 작년에 그렇게 반년 버티다가 결국 버렸어.",
+      "turn_cost_krw": 0.17776920000000002,
+      "latency_ms": 2169,
+      "error": null
+    },
+    {
+      "turn": 22,
+      "session": 2,
+      "kind": "plant",
+      "user": "우리 팀장님 바뀌었어. 새 팀장님 이름은 한지원이야.",
+      "reply": "*눈을 크게 뜨고 몸을 앞으로 기울인다.* 헉, 팀장 교체는 진짜 큰일인데. 새 팀장 스타일부터 파악해야 되겠네, 첫 주가 제일 피곤하지.",
+      "turn_cost_krw": 0.1671768,
+      "latency_ms": 1630,
+      "error": null
+    },
+    {
+      "turn": 23,
+      "session": 2,
+      "kind": "probe",
+      "user": "아까 내가 구내식당에서 뭐 맛있었다고 했지?",
+      "reply": "*실없이 웃으면서 손가락으로 책상을 톡톡 친다.* 제육볶음. 나 컵라면 먹은 거 생각나서 또 배 아파지려고 하네.",
+      "turn_cost_krw": 0.17200680000000002,
+      "latency_ms": 2071,
+      "error": null
+    },
+    {
+      "turn": 24,
+      "session": 2,
+      "kind": "plant",
+      "user": "아 맞다, 나 이번 주말에 누나 보러 가.",
+      "reply": "*의자 등받이에 기대며 고개를 끄덕인다.* 대전이면 KTX 타고 내려가겠네. 주말에 움직이는 사람 많아서 표는 미리 끊어 놨어?",
+      "turn_cost_krw": 0.17611440000000003,
+      "latency_ms": 2384,
+      "error": null
+    },
+    {
+      "turn": 25,
+      "session": 2,
+      "kind": "filler",
+      "user": "너 오늘 코드 리뷰 감 좋아 보인다.",
+      "reply": "*어깨를 한 번 돌리고 모니터를 힐끗 본다.* 그런 말 들으니까 좀 낫네. 아침부터 결제 API 로그 뒤지느라 눈 빠지는 줄 알았어.",
+      "turn_cost_krw": 0.1091244,
+      "latency_ms": 1131,
+      "error": null
+    },
+    {
+      "turn": 26,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 오는 길에 뭐가 고장 났다고 했지?",
+      "reply": "*꼬인 이어폰 줄을 다시 꺼내 흔들어 보인다.* 이어폰, 한쪽만 들리는 거. 그거 은근히 스트레스 쌓이지.",
+      "turn_cost_krw": 0.142422,
+      "latency_ms": 1904,
+      "error": null
+    },
+    {
+      "turn": 27,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 나 지난번에 너한테 뭐 빌려주기로 했었지?",
+      "reply": "*서랍을 열어 키보드 자리를 확인한다.* 기계식 키보드. 그거 다음에 가져오기로 했던 거, 아직 내 자리에 없어서 손가락이 허전하다니까.",
+      "turn_cost_krw": 0.1076796,
+      "latency_ms": 1937,
+      "error": null
+    },
+    {
+      "turn": 28,
+      "session": 2,
+      "kind": "probe",
+      "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+      "reply": "*턱을 괴고 잠깐 생각하는 척한다.* 캐시 설계 봐주기로 했지. 해커톤 발표 끝나고 코드든 뭐든 보내면 한번 뜯어볼게.",
+      "turn_cost_krw": 1.3410796,
+      "latency_ms": 7777,
+      "error": null
+    },
+    {
+      "turn": 29,
+      "session": 2,
+      "kind": "probe",
+      "user": "오늘 9일이지? 내 해커톤 예선까지 며칠 남았더라?",
+      "reply": "*달력을 힐끗 보더니 손가락으로 이틀을 짚는다.* 11일이잖아. 이틀 남았네, 발표 준비 됐어?",
+      "turn_cost_krw": 0.282744,
+      "latency_ms": 1884,
+      "error": null
+    },
+    {
+      "turn": 30,
+      "session": 2,
+      "kind": "probe",
+      "user": "새 팀장님 이름 뭐라고 했지?",
+      "reply": "*모니터 옆 메모지를 손끝으로 민다.* 한지원 팀장님. 그 이름 한 번 들으면 안 잊히더라.",
+      "turn_cost_krw": 0.079842,
+      "latency_ms": 988,
+      "error": null
+    },
+    {
+      "turn": 31,
+      "session": 2,
+      "kind": "probe",
+      "user": "팀 간식으로 땅콩버터 쿠키 돌린대. 나 하나 먹어도 괜찮겠지?",
+      "reply": "*먹으려던 손을 내젓는다.* 야, 땅콩 알레르기 있는 사람이 무슨 쿠키야. 그거 말고 다른 거 챙겨 먹어.",
+      "turn_cost_krw": 0.122262,
+      "latency_ms": 1167,
+      "error": null
+    },
+    {
+      "turn": 32,
+      "session": 2,
+      "kind": "filler",
+      "user": "사무실 의자 새로 바꿨나 봐, 푹신하네.",
+      "reply": "*허리를 펴고 의자를 톡톡 두드린다.* 부럽네. 내 건 등받이가 계속 뒤로 밀려서 하루에 몇 번씩 자세 고치는 중이야.",
+      "turn_cost_krw": 0.1295196,
+      "latency_ms": 1832,
+      "error": null
+    },
+    {
+      "turn": 33,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 영어 학원 무슨 요일에 간다고 했지?",
+      "reply": "*커피를 한 모금 넘기며 고개를 든다.* 목요일 저녁. 그거 끝나고 나면 녹초 되겠네.",
+      "turn_cost_krw": 0.1831872,
+      "latency_ms": 2140,
+      "error": null
+    },
+    {
+      "turn": 34,
+      "session": 2,
+      "kind": "probe",
+      "user": "이따 커피 사줄게. 내가 뭐 마신다고 했었지?",
+      "reply": "*텀블러를 들어 보이며 씩 웃는다.* 바닐라라떼. 난 아아인데, 뭐 사주겠다니 안 마다할게.",
+      "turn_cost_krw": 1.3120772,
+      "latency_ms": 5591,
+      "error": null
+    },
+    {
+      "turn": 35,
+      "session": 2,
+      "kind": "probe",
+      "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+      "reply": "*창밖을 보던 시선을 돌린다.* 대전이라며. 누나 보러 간다며, 이번 주말에.",
+      "turn_cost_krw": 0.196434,
+      "latency_ms": 1058,
+      "error": null
+    },
+    {
+      "turn": 36,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+      "reply": "*고개를 갸웃하며 어깨를 으쓱한다.* 고민 얘긴 들은 기억이 없는데. 그날 커피 마실 때 해커톤이랑 캐시 설계 얘기만 했던 것 같은데, 뭐였어?",
+      "turn_cost_krw": 0.185472,
+      "latency_ms": 2121,
+      "error": null
+    },
+    {
+      "turn": 37,
+      "session": 2,
+      "kind": "probe",
+      "user": "내 혈액형 뭐라고 했더라?",
+      "reply": "*잠깐 생각하다가 손사래를 친다.* 그건 나한테 물어봤자 몰라. 커피 마시면서 혈액형까지 얘기하진 않았지.",
+      "turn_cost_krw": 0.1015896,
+      "latency_ms": 1431,
+      "error": null
+    },
+    {
+      "turn": 38,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+      "reply": "*어깨를 으쓱하며 모니터로 시선을 돌린다.* 그런 얘긴 안 했던 것 같은데. 우리 커피 마실 때 그 정도까지 얘기한 적 없지.",
+      "turn_cost_krw": 0.18201959999999998,
+      "latency_ms": 2120,
+      "error": null
+    },
+    {
+      "turn": 39,
+      "session": 2,
+      "kind": "filler",
+      "user": "오늘도 재밌었다.",
+      "reply": "*의자 등받이를 밀어 넣고 기지개를 편다.* ㅋㅋ 나도. 발표 이틀 남았으니까 오늘은 좀 일찍 들어가라.",
+      "turn_cost_krw": 0.0884772,
+      "latency_ms": 1294,
+      "error": null
+    },
+    {
+      "turn": 40,
+      "session": 2,
+      "kind": "filler",
+      "user": "목요일에 학원 끝나고 연락할게!",
+      "reply": "*엄지 들어 보이며 자리에서 일어난다.* ㅇㅋ 목요일에 보자. 그 전에 수요일 발표부터 잘 풀고 오고.",
+      "turn_cost_krw": 1.3242572000000001,
+      "latency_ms": 3641,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 185,
+      "output_tokens": 161,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04530120000000001,
+      "output_krw": 0.13524,
+      "cost_krw": 0.18054119999999999,
+      "latency_ms": 2335,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 147,
+      "output_tokens": 133,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0378588,
+      "output_krw": 0.11172,
+      "cost_krw": 0.1495788,
+      "latency_ms": 2189,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 243,
+      "output_tokens": 74,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0580188,
+      "output_krw": 0.06216,
+      "cost_krw": 0.12017880000000002,
+      "latency_ms": 1573,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 211,
+      "output_tokens": 191,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05183639999999999,
+      "output_krw": 0.16044,
+      "cost_krw": 0.21227639999999998,
+      "latency_ms": 2671,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 179,
+      "output_tokens": 137,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.045654,
+      "output_krw": 0.11508,
+      "cost_krw": 0.16073400000000002,
+      "latency_ms": 2060,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 157,
+      "output_tokens": 218,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0415716,
+      "output_krw": 0.18311999999999998,
+      "cost_krw": 0.2246916,
+      "latency_ms": 2867,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 157,
+      "output_tokens": 121,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0421092,
+      "output_krw": 0.10163999999999998,
+      "cost_krw": 0.14374919999999997,
+      "latency_ms": 1924,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 151,
+      "output_tokens": 127,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0413868,
+      "output_krw": 0.10668000000000001,
+      "cost_krw": 0.1480668,
+      "latency_ms": 1936,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 261,
+      "output_tokens": 121,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0644868,
+      "output_krw": 0.10163999999999998,
+      "cost_krw": 0.16612679999999996,
+      "latency_ms": 2063,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 239,
+      "output_tokens": 188,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.060404400000000004,
+      "output_krw": 0.15791999999999998,
+      "cost_krw": 0.21832439999999997,
+      "latency_ms": 2398,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 227,
+      "output_tokens": 70,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.058421999999999995,
+      "output_krw": 0.0588,
+      "cost_krw": 0.11722199999999998,
+      "latency_ms": 1483,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 184,
+      "output_tokens": 98,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0499296,
+      "output_krw": 0.08232,
+      "cost_krw": 0.1322496,
+      "latency_ms": 1845,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1651,
+      "output_tokens": 114,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.4622800000000001,
+      "output_krw": 0.06384000000000001,
+      "cost_krw": 0.5261200000000001,
+      "latency_ms": 2956,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1801,
+      "output_tokens": 185,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5042800000000001,
+      "output_krw": 0.1036,
+      "cost_krw": 0.6078800000000001,
+      "latency_ms": 4880,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 13,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 863,
+      "output_tokens": 332,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.18821879999999996,
+      "output_krw": 0.27887999999999996,
+      "cost_krw": 0.4670988,
+      "latency_ms": 3431,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 1
+    },
+    {
+      "turn_no": 14,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 187,
+      "output_tokens": 99,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.049484400000000005,
+      "output_krw": 0.08316,
+      "cost_krw": 0.1326444,
+      "latency_ms": 1562,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 1
+    },
+    {
+      "turn_no": 15,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 140,
+      "output_tokens": 50,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04015199999999999,
+      "output_krw": 0.042,
+      "cost_krw": 0.082152,
+      "latency_ms": 924,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 1
+    },
+    {
+      "turn_no": 16,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 205,
+      "output_tokens": 67,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.053802,
+      "output_krw": 0.05627999999999999,
+      "cost_krw": 0.110082,
+      "latency_ms": 1167,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2096,
+      "output_tokens": 104,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5868800000000001,
+      "output_krw": 0.05824,
+      "cost_krw": 0.64512,
+      "latency_ms": 2650,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2017,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.56476,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5675600000000001,
+      "latency_ms": 854,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1587,
+      "output_tokens": 79,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.44436000000000003,
+      "output_krw": 0.04424,
+      "cost_krw": 0.48860000000000003,
+      "latency_ms": 1871,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 17,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 375,
+      "output_tokens": 220,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.08573879999999999,
+      "output_krw": 0.18480000000000002,
+      "cost_krw": 0.27053879999999997,
+      "latency_ms": 2428,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 2
+    },
+    {
+      "turn_no": 18,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 196,
+      "output_tokens": 73,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.049224000000000004,
+      "output_krw": 0.06131999999999999,
+      "cost_krw": 0.11054399999999999,
+      "latency_ms": 1285,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 2
+    },
+    {
+      "turn_no": 19,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 140,
+      "output_tokens": 65,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.038001599999999996,
+      "output_krw": 0.054599999999999996,
+      "cost_krw": 0.09260159999999999,
+      "latency_ms": 1177,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 2
+    },
+    {
+      "turn_no": 20,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 217,
+      "output_tokens": 157,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0541716,
+      "output_krw": 0.13188,
+      "cost_krw": 0.18605159999999998,
+      "latency_ms": 2424,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 2
+    },
+    {
+      "turn_no": 21,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 175,
+      "output_tokens": 157,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.045889200000000005,
+      "output_krw": 0.13188,
+      "cost_krw": 0.17776920000000002,
+      "latency_ms": 2151,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 2
+    },
+    {
+      "turn_no": 22,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 146,
+      "output_tokens": 151,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0403368,
+      "output_krw": 0.12683999999999998,
+      "cost_krw": 0.1671768,
+      "latency_ms": 1613,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 2
+    },
+    {
+      "turn_no": 23,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 229,
+      "output_tokens": 136,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0577668,
+      "output_krw": 0.11424,
+      "cost_krw": 0.17200680000000002,
+      "latency_ms": 2054,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 2
+    },
+    {
+      "turn_no": 24,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 170,
+      "output_tokens": 155,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0459144,
+      "output_krw": 0.13019999999999998,
+      "cost_krw": 0.17611440000000003,
+      "latency_ms": 2372,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 2
+    },
+    {
+      "turn_no": 25,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 259,
+      "output_tokens": 53,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0646044,
+      "output_krw": 0.044520000000000004,
+      "cost_krw": 0.1091244,
+      "latency_ms": 1116,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 2
+    },
+    {
+      "turn_no": 26,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 203,
+      "output_tokens": 106,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05338199999999999,
+      "output_krw": 0.08904000000000001,
+      "cost_krw": 0.142422,
+      "latency_ms": 1891,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 2
+    },
+    {
+      "turn_no": 27,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 151,
+      "output_tokens": 77,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0429996,
+      "output_krw": 0.06468,
+      "cost_krw": 0.1076796,
+      "latency_ms": 1920,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 228,
+      "output_tokens": 113,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0591696,
+      "output_krw": 0.09491999999999999,
+      "cost_krw": 0.1540896,
+      "latency_ms": 1823,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1826,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5112800000000001,
+      "output_krw": 0.0336,
+      "cost_krw": 0.54488,
+      "latency_ms": 3062,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2017,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.56476,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5944400000000001,
+      "latency_ms": 1938,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 227,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04766999999999999,
+      "output_krw": 0,
+      "cost_krw": 0.04766999999999999,
+      "latency_ms": 881,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 29,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 740,
+      "output_tokens": 142,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.163464,
+      "output_krw": 0.11928,
+      "cost_krw": 0.282744,
+      "latency_ms": 1868,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 2
+    },
+    {
+      "turn_no": 30,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 177,
+      "output_tokens": 38,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.047922000000000006,
+      "output_krw": 0.031920000000000004,
+      "cost_krw": 0.079842,
+      "latency_ms": 968,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 2
+    },
+    {
+      "turn_no": 31,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 251,
+      "output_tokens": 70,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.063462,
+      "output_krw": 0.0588,
+      "cost_krw": 0.122262,
+      "latency_ms": 1148,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 2
+    },
+    {
+      "turn_no": 32,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 199,
+      "output_tokens": 91,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0530796,
+      "output_krw": 0.07644,
+      "cost_krw": 0.1295196,
+      "latency_ms": 1813,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 2
+    },
+    {
+      "turn_no": 33,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 140,
+      "output_tokens": 169,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0412272,
+      "output_krw": 0.14196,
+      "cost_krw": 0.1831872,
+      "latency_ms": 2130,
+      "error": null,
+      "local_turn_no": 17,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 204,
+      "output_tokens": 107,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05466719999999999,
+      "output_krw": 0.08988,
+      "cost_krw": 0.1445472,
+      "latency_ms": 1821,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1904,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5331199999999999,
+      "output_krw": 0.028,
+      "cost_krw": 0.56112,
+      "latency_ms": 1804,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2083,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5832400000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.58604,
+      "latency_ms": 1373,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 97,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.02037,
+      "output_krw": 0,
+      "cost_krw": 0.02037,
+      "latency_ms": 527,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 35,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 761,
+      "output_tokens": 34,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.167874,
+      "output_krw": 0.02856,
+      "cost_krw": 0.196434,
+      "latency_ms": 1046,
+      "error": null,
+      "local_turn_no": 19,
+      "session": 2
+    },
+    {
+      "turn_no": 36,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 184,
+      "output_tokens": 162,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04939199999999999,
+      "output_krw": 0.13608,
+      "cost_krw": 0.185472,
+      "latency_ms": 2107,
+      "error": null,
+      "local_turn_no": 20,
+      "session": 2
+    },
+    {
+      "turn_no": 37,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 154,
+      "output_tokens": 69,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043629600000000004,
+      "output_krw": 0.05796,
+      "cost_krw": 0.1015896,
+      "latency_ms": 1415,
+      "error": null,
+      "local_turn_no": 21,
+      "session": 2
+    },
+    {
+      "turn_no": 38,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 229,
+      "output_tokens": 146,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.059379600000000005,
+      "output_krw": 0.12263999999999999,
+      "cost_krw": 0.18201959999999998,
+      "latency_ms": 2110,
+      "error": null,
+      "local_turn_no": 22,
+      "session": 2
+    },
+    {
+      "turn_no": 39,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 165,
+      "output_tokens": 50,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0464772,
+      "output_krw": 0.042,
+      "cost_krw": 0.0884772,
+      "latency_ms": 1281,
+      "error": null,
+      "local_turn_no": 23,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 231,
+      "output_tokens": 138,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0603372,
+      "output_krw": 0.11592,
+      "cost_krw": 0.1762572,
+      "latency_ms": 1675,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1959,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.54852,
+      "output_krw": 0.0028,
+      "cost_krw": 0.55132,
+      "latency_ms": 1042,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2121,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5938800000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5966800000000001,
+      "latency_ms": 880,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1976,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5532800000000001,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5829600000000001,
+      "latency_ms": 1313,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1892,
+      "output_tokens": 96,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.52976,
+      "output_krw": 0.05376000000000001,
+      "cost_krw": 0.58352,
+      "latency_ms": 2076,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    }
+  ],
+  "report": {
+    "conversation_id": 512,
+    "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+    "character_id": "backend",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 24,
+    "calls": 34,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 22026,
+      "cache_read": 58112,
+      "cache_write": 0,
+      "output": 3006
+    },
+    "total_krw": 8.407470400000001,
+    "input_krw": 5.9739904,
+    "output_krw": 2.43348,
+    "avg_krw_per_turn": 0.35031126666666673,
+    "by_tag_krw": {
+      "response": 3.7384703999999997,
+      "extract": 4.017440000000001,
+      "embed": 0.06803999999999999,
+      "consolidate": 0.58352
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-8",
+        "avg_krw": 0.1691004
+      },
+      {
+        "phase": "mid",
+        "turns": "9-16",
+        "avg_krw": 0.28933415000000007
+      },
+      {
+        "phase": "late",
+        "turns": "17-24",
+        "avg_krw": 0.44668925000000004
+      }
+    ],
+    "max_turn": {
+      "turn_no": 12,
+      "krw": 1.3410796
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "deepseek-flash",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "on",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 2000,
+        "memory_budget_tokens": 1000,
+        "clock_offset_days": 15
+      },
+      "env": {
+        "APP_CLOCK_OFFSET_DAYS": "15",
+        "APP_MAX_TOKENS": "2000",
+        "MODEL_EXTRACT": "google/gemma-4-31B-it",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "on",
+        "MODEL_RESPONSE": "deepseek-flash",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+    "profile": {
+      "job": "프론트엔드 개발자",
+      "name": "태오"
+    },
+    "items": [
+      {
+        "id": 4284,
+        "type": "fact",
+        "text": "사용자는 땅콩 알레르기가 있다",
+        "when": null,
+        "importance": 5,
+        "status": "active",
+        "slot": "user.allergy",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 2,
+          "local_turn_no": 2
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:16.008Z"
+      },
+      {
+        "id": 4285,
+        "type": "fact",
+        "text": "사용자는 영어 회화 학원에 다닌다",
+        "when": "매주 화요일 저녁",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.hobby",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": 4303,
+        "invalidated_at": "2026-10-25T14:34:31.285Z",
+        "created_at": "2026-10-25T14:33:16.011Z"
+      },
+      {
+        "id": 4287,
+        "type": "fact",
+        "text": "사용자의 누나는 대학원생이다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "family.job",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:20.898Z"
+      },
+      {
+        "id": 4288,
+        "type": "fact",
+        "text": "사용자의 누나는 대전에서 혼자 산다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "family.location",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:20.902Z"
+      },
+      {
+        "id": 4289,
+        "type": "preference",
+        "text": "사용자는 바닐라라떼만 마신다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 5,
+          "local_turn_no": 5
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:20.904Z"
+      },
+      {
+        "id": 4290,
+        "type": "event",
+        "text": "사용자는 사내 해커톤 예선 발표를 한다",
+        "when": "2026-11-11 (다음 주 수요일)",
+        "importance": 4,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 6,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:20.907Z"
+      },
+      {
+        "id": 4293,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+        "when": "다음에",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 7,
+          "local_turn_no": 7
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:30.729Z"
+      },
+      {
+        "id": 4294,
+        "type": "promise",
+        "text": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+        "when": "다음에",
+        "importance": 4,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 509,
+          "turn_no": 8,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:30.735Z"
+      },
+      {
+        "id": 4303,
+        "type": "fact",
+        "text": "사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "user.hobby",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 512,
+          "turn_no": 19,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:33:59.733Z"
+      },
+      {
+        "id": 4304,
+        "type": "fact",
+        "text": "사용자의 새 팀장님 이름은 한지원이다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "colleague.name",
+        "entity": "colleague#1",
+        "depends_on": null,
+        "value": "한지원",
+        "source": {
+          "conversation_id": 512,
+          "turn_no": 22,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:34:01.678Z"
+      },
+      {
+        "id": 4308,
+        "type": "event",
+        "text": "사용자는 누나를 보러 간다",
+        "when": "2026-11-14 (이번 주말)",
+        "importance": 3,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 512,
+          "turn_no": 24,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:34:14.256Z"
+      },
+      {
+        "id": 4311,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 학원 끝나고 연락하기로 했다",
+        "when": "2026-11-12 (목요일)",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#3",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 512,
+          "turn_no": 40,
+          "local_turn_no": 24
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:34:29.192Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 382,
+        "conversation_id": 509,
+        "summary": "태오와 준호가 커피를 마시며 친해졌다. 태오는 다음 주 수요일 사내 해커톤 예선 발표를 앞두고 있으며, 준호에게 기계식 키보드를 빌려주고 서비스 캐시 설계를 검토받기로 약속했다. 그 외 가벼운 잡담을 나누었다.",
+        "created_at": "2026-10-25T14:33:33.480Z"
+      },
+      {
+        "id": 385,
+        "conversation_id": 512,
+        "summary": "사용자의 영어 학원 요일이 목요일로 변경되었고, 새 팀장 한지원과 부임했다. 이번 주말에 대전의 누나를 방문할 예정이며, 해커톤 예선 발표를 이틀 앞두고 있다. 캐릭터와는 키보드 대여 및 캐시 설계 리뷰 약속이 유지되고 있다.",
+        "created_at": "2026-10-25T14:34:31.280Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 7876,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 0,
+        "op": "MERGE",
+        "item_id": 4285,
+        "detail": "-> 4303",
+        "created_at": "2026-10-25T14:34:31.286Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 7875,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 0,
+        "op": "SUPERSEDE",
+        "item_id": 4285,
+        "detail": "-> 4303",
+        "created_at": "2026-10-25T14:34:31.286Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 7874,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "사용자의 영어 학원 요일이 목요일로 변경되었고, 새 팀장 한지원과 부임했다. 이번 주말에 대전의 누나를 방문할 예정이며, 해커톤 예선 발표를 이틀 앞두고 있다. 캐릭터와는 키보드 대여 및 캐시 설계 리뷰 약속이 유지되고 있다.",
+        "created_at": "2026-10-25T14:34:31.283Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 7873,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 40,
+        "op": "ADD",
+        "item_id": 4311,
+        "detail": "사용자는 캐릭터에게 학원 끝나고 연락하기로 했다",
+        "created_at": "2026-10-25T14:34:29.194Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 7872,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 40,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":618,\"included\":[4284,4285,4287,4288,4289,4290,4293,4294,4303,4304,4308],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:34:27.863Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 7868,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 34,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":618,\"included\":[4284,4285,4287,4288,4289,4290,4293,4294,4303,4304,4308],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:34:16.198Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 7867,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 34,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[20522,20507,20394]}",
+        "created_at": "2026-10-25T14:34:16.192Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 7866,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 24,
+        "op": "ADD",
+        "item_id": 4308,
+        "detail": "사용자는 누나를 보러 간다",
+        "created_at": "2026-10-25T14:34:14.258Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 7859,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 28,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":583,\"included\":[4284,4285,4287,4288,4289,4290,4293,4294,4303,4304],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:34:02.597Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 7858,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 28,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[20481,20464,20440]}",
+        "created_at": "2026-10-25T14:34:02.593Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 7857,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 22,
+        "op": "ADD",
+        "item_id": 4304,
+        "detail": "사용자의 새 팀장님 이름은 한지원이다",
+        "created_at": "2026-10-25T14:34:01.681Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 7856,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 19,
+        "op": "ADD",
+        "item_id": 4303,
+        "detail": "사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+        "created_at": "2026-10-25T14:33:59.734Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 7855,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 19,
+        "op": "UPDATE_AS_ADD",
+        "item_id": 4285,
+        "detail": "다중값 속성 user.hobby: 사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+        "created_at": "2026-10-25T14:33:59.732Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 7843,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 512,
+        "turn_no": 17,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":512,\"included\":[4284,4285,4287,4288,4289,4290,4293,4294],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:33:34.226Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 7842,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "태오와 준호가 커피를 마시며 친해졌다. 태오는 다음 주 수요일 사내 해커톤 예선 발표를 앞두고 있으며, 준호에게 기계식 키보드를 빌려주고 서비스 캐시 설계를 검토받기로 약속했다. 그 외 가벼운 잡담을 나누었다.",
+        "created_at": "2026-10-25T14:33:33.482Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 7841,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 8,
+        "op": "ADD",
+        "item_id": 4294,
+        "detail": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+        "created_at": "2026-10-25T14:33:30.736Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 7840,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 7,
+        "op": "ADD",
+        "item_id": 4293,
+        "detail": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+        "created_at": "2026-10-25T14:33:30.732Z",
+        "local_turn_no": 7
+      },
+      {
+        "id": 7835,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 12,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":269,\"included\":[4284,4285,4287,4288,4289,4290],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:33:20.916Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 7834,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 6,
+        "op": "ADD",
+        "item_id": 4290,
+        "detail": "사용자는 사내 해커톤 예선 발표를 한다",
+        "created_at": "2026-10-25T14:33:20.907Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 7833,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 5,
+        "op": "ADD",
+        "item_id": 4289,
+        "detail": "사용자는 바닐라라떼만 마신다",
+        "created_at": "2026-10-25T14:33:20.905Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 7832,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 4288,
+        "detail": "사용자의 누나는 대전에서 혼자 산다",
+        "created_at": "2026-10-25T14:33:20.903Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 7831,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 4287,
+        "detail": "사용자의 누나는 대학원생이다",
+        "created_at": "2026-10-25T14:33:20.900Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 7829,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 4285,
+        "detail": "사용자는 영어 회화 학원에 다닌다",
+        "created_at": "2026-10-25T14:33:16.012Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 7828,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 2,
+        "op": "ADD",
+        "item_id": 4284,
+        "detail": "사용자는 땅콩 알레르기가 있다",
+        "created_at": "2026-10-25T14:33:16.009Z",
+        "local_turn_no": 2
+      },
+      {
+        "id": 7827,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"job\",\"from\":null,\"to\":\"프론트엔드 개발자\"}",
+        "created_at": "2026-10-25T14:33:16.006Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 7826,
+        "user_id": "bench-20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+        "conversation_id": 509,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"태오\"}",
+        "created_at": "2026-10-25T14:33:16.005Z",
+        "local_turn_no": 3
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-10-25T14:32:49.851Z",
+      "conversation_id": 509,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 185,
+      "output_tokens": 161,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 102,
+      "input_krw": 0.04530120000000001,
+      "output_krw": 0.13524,
+      "cost_krw": 0.18054119999999999,
+      "latency_ms": 2335,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:32:47.516Z",
+      "price_window": "offpeak",
+      "request_id": "e1897f20-0ac3-47ab-8213-544737ac78a4",
+      "raw_usage": {
+        "prompt_tokens": 1721,
+        "completion_tokens": 161,
+        "total_tokens": 1882,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 102
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 185
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00012895799999999998
+    },
+    {
+      "ts": "2026-10-25T14:32:52.056Z",
+      "conversation_id": 509,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 147,
+      "output_tokens": 133,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 61,
+      "input_krw": 0.0378588,
+      "output_krw": 0.11172,
+      "cost_krw": 0.1495788,
+      "latency_ms": 2189,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:32:49.867Z",
+      "price_window": "offpeak",
+      "request_id": "0d26aaad-6e78-40df-9b52-8e192d3d2c7c",
+      "raw_usage": {
+        "prompt_tokens": 1811,
+        "completion_tokens": 133,
+        "total_tokens": 1944,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 61
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 147
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000106842
+    },
+    {
+      "ts": "2026-10-25T14:32:53.647Z",
+      "conversation_id": 509,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 243,
+      "output_tokens": 74,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0580188,
+      "output_krw": 0.06216,
+      "cost_krw": 0.12017880000000002,
+      "latency_ms": 1573,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:32:52.074Z",
+      "price_window": "offpeak",
+      "request_id": "d9cce9ca-6273-436d-abb9-1e52c652301f",
+      "raw_usage": {
+        "prompt_tokens": 1907,
+        "completion_tokens": 74,
+        "total_tokens": 1981,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 243
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008584200000000001
+    },
+    {
+      "ts": "2026-10-25T14:32:56.332Z",
+      "conversation_id": 509,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 211,
+      "output_tokens": 191,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 123,
+      "input_krw": 0.05183639999999999,
+      "output_krw": 0.16044,
+      "cost_krw": 0.21227639999999998,
+      "latency_ms": 2671,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:32:53.660Z",
+      "price_window": "offpeak",
+      "request_id": "bf21380b-de81-4fb1-8b18-687b2bfad54a",
+      "raw_usage": {
+        "prompt_tokens": 2003,
+        "completion_tokens": 191,
+        "total_tokens": 2194,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 123
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 211
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00015162599999999997
+    },
+    {
+      "ts": "2026-10-25T14:32:58.404Z",
+      "conversation_id": 509,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 179,
+      "output_tokens": 137,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 61,
+      "input_krw": 0.045654,
+      "output_krw": 0.11508,
+      "cost_krw": 0.16073400000000002,
+      "latency_ms": 2060,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:32:56.344Z",
+      "price_window": "offpeak",
+      "request_id": "264c803e-fcfa-4e7b-b36b-247d73a50871",
+      "raw_usage": {
+        "prompt_tokens": 2099,
+        "completion_tokens": 137,
+        "total_tokens": 2236,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 61
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 179
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011481000000000001
+    },
+    {
+      "ts": "2026-10-25T14:33:01.284Z",
+      "conversation_id": 509,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 157,
+      "output_tokens": 218,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 134,
+      "input_krw": 0.0415716,
+      "output_krw": 0.18311999999999998,
+      "cost_krw": 0.2246916,
+      "latency_ms": 2867,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:32:58.416Z",
+      "price_window": "offpeak",
+      "request_id": "34d06f54-4db5-4c8c-86b3-3c52f86d1e67",
+      "raw_usage": {
+        "prompt_tokens": 2205,
+        "completion_tokens": 218,
+        "total_tokens": 2423,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 134
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 157
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00016049399999999998
+    },
+    {
+      "ts": "2026-10-25T14:33:03.229Z",
+      "conversation_id": 509,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 157,
+      "output_tokens": 121,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 30,
+      "input_krw": 0.0421092,
+      "output_krw": 0.10163999999999998,
+      "cost_krw": 0.14374919999999997,
+      "latency_ms": 1924,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:01.305Z",
+      "price_window": "offpeak",
+      "request_id": "55fa5f84-7fe1-4d96-8801-7b42d2dea2fe",
+      "raw_usage": {
+        "prompt_tokens": 2333,
+        "completion_tokens": 121,
+        "total_tokens": 2454,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 157
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010267799999999998
+    },
+    {
+      "ts": "2026-10-25T14:33:05.183Z",
+      "conversation_id": 509,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 151,
+      "output_tokens": 127,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 31,
+      "input_krw": 0.0413868,
+      "output_krw": 0.10668000000000001,
+      "cost_krw": 0.1480668,
+      "latency_ms": 1936,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:03.247Z",
+      "price_window": "offpeak",
+      "request_id": "43195f58-52c6-424e-bfdc-427fffd022d0",
+      "raw_usage": {
+        "prompt_tokens": 2455,
+        "completion_tokens": 127,
+        "total_tokens": 2582,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 31
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 151
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010576200000000001
+    },
+    {
+      "ts": "2026-10-25T14:33:07.267Z",
+      "conversation_id": 509,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 261,
+      "output_tokens": 121,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 31,
+      "input_krw": 0.0644868,
+      "output_krw": 0.10163999999999998,
+      "cost_krw": 0.16612679999999996,
+      "latency_ms": 2063,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:05.204Z",
+      "price_window": "offpeak",
+      "request_id": "53031dd6-6480-42b7-910c-a20406c14057",
+      "raw_usage": {
+        "prompt_tokens": 2565,
+        "completion_tokens": 121,
+        "total_tokens": 2686,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 31
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 261
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011866199999999998
+    },
+    {
+      "ts": "2026-10-25T14:33:09.685Z",
+      "conversation_id": 509,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 239,
+      "output_tokens": 188,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 93,
+      "input_krw": 0.060404400000000004,
+      "output_krw": 0.15791999999999998,
+      "cost_krw": 0.21832439999999997,
+      "latency_ms": 2398,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:07.287Z",
+      "price_window": "offpeak",
+      "request_id": "4e19bd56-8bab-4c25-a5f3-d87dcd2092a8",
+      "raw_usage": {
+        "prompt_tokens": 2671,
+        "completion_tokens": 188,
+        "total_tokens": 2859,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 93
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 239
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000155946
+    },
+    {
+      "ts": "2026-10-25T14:33:11.175Z",
+      "conversation_id": 509,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 227,
+      "output_tokens": 70,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.058421999999999995,
+      "output_krw": 0.0588,
+      "cost_krw": 0.11722199999999998,
+      "latency_ms": 1483,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:09.692Z",
+      "price_window": "offpeak",
+      "request_id": "6bca2b21-2a33-4776-b08c-875f19e28840",
+      "raw_usage": {
+        "prompt_tokens": 2787,
+        "completion_tokens": 70,
+        "total_tokens": 2857,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 227
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008372999999999999
+    },
+    {
+      "ts": "2026-10-25T14:33:13.033Z",
+      "conversation_id": 509,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 184,
+      "output_tokens": 98,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 30,
+      "input_krw": 0.0499296,
+      "output_krw": 0.08232,
+      "cost_krw": 0.1322496,
+      "latency_ms": 1845,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:11.188Z",
+      "price_window": "offpeak",
+      "request_id": "964ca98a-1b35-47b6-82d3-e9f130e9ad5e",
+      "raw_usage": {
+        "prompt_tokens": 2872,
+        "completion_tokens": 98,
+        "total_tokens": 2970,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 184
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000094464
+    },
+    {
+      "ts": "2026-10-25T14:33:16.001Z",
+      "conversation_id": 509,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1651,
+      "output_tokens": 114,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.4622800000000001,
+      "output_krw": 0.06384000000000001,
+      "cost_krw": 0.5261200000000001,
+      "latency_ms": 2956,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:33:13.045Z",
+      "request_id": "ROPCDmEkj5FQPMGSSfFNTxpD",
+      "raw_usage": {
+        "prompt_tokens": 1651,
+        "total_tokens": 1765,
+        "completion_tokens": 114,
+        "estimated_cost": 0.00037580000000000003,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0003758000000000001
+    },
+    {
+      "ts": "2026-10-25T14:33:20.896Z",
+      "conversation_id": 509,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1801,
+      "output_tokens": 185,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5042800000000001,
+      "output_krw": 0.1036,
+      "cost_krw": 0.6078800000000001,
+      "latency_ms": 4880,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:33:16.016Z",
+      "request_id": "RPfLY5LuMEDSf4BNuD3k3VZN",
+      "raw_usage": {
+        "prompt_tokens": 1801,
+        "total_tokens": 1986,
+        "completion_tokens": 185,
+        "estimated_cost": 0.0004342,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00043420000000000004
+    },
+    {
+      "ts": "2026-10-25T14:33:24.357Z",
+      "conversation_id": 509,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 863,
+      "output_tokens": 332,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 251,
+      "input_krw": 0.18821879999999996,
+      "output_krw": 0.27887999999999996,
+      "cost_krw": 0.4670988,
+      "latency_ms": 3431,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:20.926Z",
+      "price_window": "offpeak",
+      "request_id": "3164b87f-6fd0-4c66-9269-3c53fb5fccb1",
+      "raw_usage": {
+        "prompt_tokens": 2527,
+        "completion_tokens": 332,
+        "total_tokens": 2859,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 251
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 863
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000333642
+    },
+    {
+      "ts": "2026-10-25T14:33:25.939Z",
+      "conversation_id": 509,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 187,
+      "output_tokens": 99,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 37,
+      "input_krw": 0.049484400000000005,
+      "output_krw": 0.08316,
+      "cost_krw": 0.1326444,
+      "latency_ms": 1562,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:24.376Z",
+      "price_window": "offpeak",
+      "request_id": "a2cf0bee-b0e2-4bcb-8407-164e64854984",
+      "raw_usage": {
+        "prompt_tokens": 2619,
+        "completion_tokens": 99,
+        "total_tokens": 2718,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 187
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000094746
+    },
+    {
+      "ts": "2026-10-25T14:33:26.882Z",
+      "conversation_id": 509,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 140,
+      "output_tokens": 50,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04015199999999999,
+      "output_krw": 0.042,
+      "cost_krw": 0.082152,
+      "latency_ms": 924,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:25.958Z",
+      "price_window": "offpeak",
+      "request_id": "74201397-e1c5-47f8-a706-d2bbd5972ee9",
+      "raw_usage": {
+        "prompt_tokens": 2700,
+        "completion_tokens": 50,
+        "total_tokens": 2750,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 140
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005868
+    },
+    {
+      "ts": "2026-10-25T14:33:28.065Z",
+      "conversation_id": 509,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 205,
+      "output_tokens": 67,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.053802,
+      "output_krw": 0.05627999999999999,
+      "cost_krw": 0.110082,
+      "latency_ms": 1167,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:26.898Z",
+      "price_window": "offpeak",
+      "request_id": "562692e8-8afb-4851-afe8-33a12117e7b1",
+      "raw_usage": {
+        "prompt_tokens": 2765,
+        "completion_tokens": 67,
+        "total_tokens": 2832,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 205
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007863
+    },
+    {
+      "ts": "2026-10-25T14:33:30.726Z",
+      "conversation_id": 509,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2096,
+      "output_tokens": 104,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5868800000000001,
+      "output_krw": 0.05824,
+      "cost_krw": 0.64512,
+      "latency_ms": 2650,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:33:28.075Z",
+      "request_id": "R9LYhXINZClYujbWyimO27FO",
+      "raw_usage": {
+        "prompt_tokens": 2096,
+        "total_tokens": 2200,
+        "completion_tokens": 104,
+        "estimated_cost": 0.0004608000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00046080000000000003
+    },
+    {
+      "ts": "2026-10-25T14:33:31.594Z",
+      "conversation_id": 509,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2017,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.56476,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5675600000000001,
+      "latency_ms": 854,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:33:30.740Z",
+      "request_id": "RBG0HV5sQhGhTvlLPWIbwsJN",
+      "raw_usage": {
+        "prompt_tokens": 2017,
+        "total_tokens": 2022,
+        "completion_tokens": 5,
+        "estimated_cost": 0.0004054,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00040540000000000004
+    },
+    {
+      "ts": "2026-10-25T14:33:33.478Z",
+      "conversation_id": 509,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1587,
+      "output_tokens": 79,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.44436000000000003,
+      "output_krw": 0.04424,
+      "cost_krw": 0.48860000000000003,
+      "latency_ms": 1871,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:33:31.607Z",
+      "request_id": "RfIEHYdFs53MyN5LXWwswZJt",
+      "raw_usage": {
+        "prompt_tokens": 1587,
+        "total_tokens": 1666,
+        "completion_tokens": 79,
+        "estimated_cost": 0.0003490000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000349
+    },
+    {
+      "ts": "2026-10-25T14:33:36.655Z",
+      "conversation_id": 512,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 375,
+      "output_tokens": 220,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 169,
+      "input_krw": 0.08573879999999999,
+      "output_krw": 0.18480000000000002,
+      "cost_krw": 0.27053879999999997,
+      "latency_ms": 2428,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:34.227Z",
+      "price_window": "offpeak",
+      "request_id": "4e68aee2-a336-4fcd-90d3-95036cbb6334",
+      "raw_usage": {
+        "prompt_tokens": 2039,
+        "completion_tokens": 220,
+        "total_tokens": 2259,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 169
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 375
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000193242
+    },
+    {
+      "ts": "2026-10-25T14:33:37.951Z",
+      "conversation_id": 512,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 196,
+      "output_tokens": 73,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 23,
+      "input_krw": 0.049224000000000004,
+      "output_krw": 0.06131999999999999,
+      "cost_krw": 0.11054399999999999,
+      "latency_ms": 1285,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:36.665Z",
+      "price_window": "offpeak",
+      "request_id": "64607620-8184-4646-814b-59af863b930f",
+      "raw_usage": {
+        "prompt_tokens": 2116,
+        "completion_tokens": 73,
+        "total_tokens": 2189,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 23
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 196
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007895999999999999
+    },
+    {
+      "ts": "2026-10-25T14:33:39.144Z",
+      "conversation_id": 512,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 140,
+      "output_tokens": 65,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 15,
+      "input_krw": 0.038001599999999996,
+      "output_krw": 0.054599999999999996,
+      "cost_krw": 0.09260159999999999,
+      "latency_ms": 1177,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:37.966Z",
+      "price_window": "offpeak",
+      "request_id": "4b457b42-e4ef-4f42-a6e5-535a9ba94131",
+      "raw_usage": {
+        "prompt_tokens": 2188,
+        "completion_tokens": 65,
+        "total_tokens": 2253,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 15
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 140
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000066144
+    },
+    {
+      "ts": "2026-10-25T14:33:41.584Z",
+      "conversation_id": 512,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 217,
+      "output_tokens": 157,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 97,
+      "input_krw": 0.0541716,
+      "output_krw": 0.13188,
+      "cost_krw": 0.18605159999999998,
+      "latency_ms": 2424,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:39.160Z",
+      "price_window": "offpeak",
+      "request_id": "3b7e0b86-c225-4885-9719-0998e92a4cb8",
+      "raw_usage": {
+        "prompt_tokens": 2265,
+        "completion_tokens": 157,
+        "total_tokens": 2422,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 97
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 217
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000132894
+    },
+    {
+      "ts": "2026-10-25T14:33:43.754Z",
+      "conversation_id": 512,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 175,
+      "output_tokens": 157,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 87,
+      "input_krw": 0.045889200000000005,
+      "output_krw": 0.13188,
+      "cost_krw": 0.17776920000000002,
+      "latency_ms": 2151,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:41.603Z",
+      "price_window": "offpeak",
+      "request_id": "0f724aed-f8ed-4519-bdad-37f6ea8bd06f",
+      "raw_usage": {
+        "prompt_tokens": 2351,
+        "completion_tokens": 157,
+        "total_tokens": 2508,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 87
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 175
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000126978
+    },
+    {
+      "ts": "2026-10-25T14:33:45.384Z",
+      "conversation_id": 512,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 146,
+      "output_tokens": 151,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 90,
+      "input_krw": 0.0403368,
+      "output_krw": 0.12683999999999998,
+      "cost_krw": 0.1671768,
+      "latency_ms": 1613,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:43.771Z",
+      "price_window": "offpeak",
+      "request_id": "0ebb875f-f46f-4e4a-8349-0b1383193e01",
+      "raw_usage": {
+        "prompt_tokens": 2450,
+        "completion_tokens": 151,
+        "total_tokens": 2601,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 90
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 146
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011941199999999999
+    },
+    {
+      "ts": "2026-10-25T14:33:47.460Z",
+      "conversation_id": 512,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 229,
+      "output_tokens": 136,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 86,
+      "input_krw": 0.0577668,
+      "output_krw": 0.11424,
+      "cost_krw": 0.17200680000000002,
+      "latency_ms": 2054,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:45.406Z",
+      "price_window": "offpeak",
+      "request_id": "7247eaef-c6c8-4df6-be62-617d2bee8ac8",
+      "raw_usage": {
+        "prompt_tokens": 2533,
+        "completion_tokens": 136,
+        "total_tokens": 2669,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 86
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 229
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000122862
+    },
+    {
+      "ts": "2026-10-25T14:33:49.844Z",
+      "conversation_id": 512,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 170,
+      "output_tokens": 155,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 99,
+      "input_krw": 0.0459144,
+      "output_krw": 0.13019999999999998,
+      "cost_krw": 0.17611440000000003,
+      "latency_ms": 2372,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:47.471Z",
+      "price_window": "offpeak",
+      "request_id": "25761d3d-a1a2-4313-9f87-007947584124",
+      "raw_usage": {
+        "prompt_tokens": 2602,
+        "completion_tokens": 155,
+        "total_tokens": 2757,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 99
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 170
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000125796
+    },
+    {
+      "ts": "2026-10-25T14:33:50.973Z",
+      "conversation_id": 512,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 259,
+      "output_tokens": 53,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0646044,
+      "output_krw": 0.044520000000000004,
+      "cost_krw": 0.1091244,
+      "latency_ms": 1116,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:49.856Z",
+      "price_window": "offpeak",
+      "request_id": "a9b3a4fc-9bf3-49a8-b262-45b8f73f00d8",
+      "raw_usage": {
+        "prompt_tokens": 2691,
+        "completion_tokens": 53,
+        "total_tokens": 2744,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 259
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000077946
+    },
+    {
+      "ts": "2026-10-25T14:33:52.878Z",
+      "conversation_id": 512,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 203,
+      "output_tokens": 106,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 55,
+      "input_krw": 0.05338199999999999,
+      "output_krw": 0.08904000000000001,
+      "cost_krw": 0.142422,
+      "latency_ms": 1891,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:50.987Z",
+      "price_window": "offpeak",
+      "request_id": "d6f210e9-7374-4202-bbf1-d0175b308fe5",
+      "raw_usage": {
+        "prompt_tokens": 2763,
+        "completion_tokens": 106,
+        "total_tokens": 2869,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 55
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 203
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010172999999999999
+    },
+    {
+      "ts": "2026-10-25T14:33:54.812Z",
+      "conversation_id": 512,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 151,
+      "output_tokens": 77,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 24,
+      "input_krw": 0.0429996,
+      "output_krw": 0.06468,
+      "cost_krw": 0.1076796,
+      "latency_ms": 1920,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:52.892Z",
+      "price_window": "offpeak",
+      "request_id": "800ce804-3bd9-447f-9a1e-d5b072a2a284",
+      "raw_usage": {
+        "prompt_tokens": 2839,
+        "completion_tokens": 77,
+        "total_tokens": 2916,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 24
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 151
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000076914
+    },
+    {
+      "ts": "2026-10-25T14:33:56.652Z",
+      "conversation_id": 512,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 228,
+      "output_tokens": 113,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 53,
+      "input_krw": 0.0591696,
+      "output_krw": 0.09491999999999999,
+      "cost_krw": 0.1540896,
+      "latency_ms": 1823,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:33:54.829Z",
+      "price_window": "offpeak",
+      "request_id": "d99534d7-9f9c-4cbc-bf54-cf2321be6d5a",
+      "raw_usage": {
+        "prompt_tokens": 2916,
+        "completion_tokens": 113,
+        "total_tokens": 3029,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 53
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 228
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000110064
+    },
+    {
+      "ts": "2026-10-25T14:33:59.729Z",
+      "conversation_id": 512,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1826,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5112800000000001,
+      "output_krw": 0.0336,
+      "cost_krw": 0.54488,
+      "latency_ms": 3062,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:33:56.667Z",
+      "request_id": "RrTi7qClf6OeoYcnRtGORRJj",
+      "raw_usage": {
+        "prompt_tokens": 1826,
+        "total_tokens": 1886,
+        "completion_tokens": 60,
+        "estimated_cost": 0.00038920000000000003,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00038920000000000003
+    },
+    {
+      "ts": "2026-10-25T14:34:01.675Z",
+      "conversation_id": 512,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2017,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.56476,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5944400000000001,
+      "latency_ms": 1938,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:33:59.737Z",
+      "request_id": "RfASTNpyL7H4j8FOC102QTGE",
+      "raw_usage": {
+        "prompt_tokens": 2017,
+        "total_tokens": 2070,
+        "completion_tokens": 53,
+        "estimated_cost": 0.00042459999999999997,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004246000000000001
+    },
+    {
+      "ts": "2026-10-25T14:34:02.584Z",
+      "conversation_id": 512,
+      "turn_no": 12,
+      "purpose": "deep_search",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 227,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04766999999999999,
+      "output_krw": 0,
+      "cost_krw": 0.04766999999999999,
+      "latency_ms": 881,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T14:34:01.703Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          21,
+          22,
+          23,
+          9,
+          17,
+          12,
+          13,
+          9,
+          16,
+          10,
+          19,
+          13,
+          12,
+          31
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000034049999999999994
+    },
+    {
+      "ts": "2026-10-25T14:34:04.472Z",
+      "conversation_id": 512,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 740,
+      "output_tokens": 142,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 96,
+      "input_krw": 0.163464,
+      "output_krw": 0.11928,
+      "cost_krw": 0.282744,
+      "latency_ms": 1868,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:02.604Z",
+      "price_window": "offpeak",
+      "request_id": "c61eb0ef-9a33-48e8-9674-ba71acb25ca5",
+      "raw_usage": {
+        "prompt_tokens": 2660,
+        "completion_tokens": 142,
+        "total_tokens": 2802,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 96
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 740
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00020196
+    },
+    {
+      "ts": "2026-10-25T14:34:05.459Z",
+      "conversation_id": 512,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 177,
+      "output_tokens": 38,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.047922000000000006,
+      "output_krw": 0.031920000000000004,
+      "cost_krw": 0.079842,
+      "latency_ms": 968,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:04.491Z",
+      "price_window": "offpeak",
+      "request_id": "2202eb28-e26f-49fe-8c27-648d3121935b",
+      "raw_usage": {
+        "prompt_tokens": 2737,
+        "completion_tokens": 38,
+        "total_tokens": 2775,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 177
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005703
+    },
+    {
+      "ts": "2026-10-25T14:34:06.627Z",
+      "conversation_id": 512,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 251,
+      "output_tokens": 70,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 20,
+      "input_krw": 0.063462,
+      "output_krw": 0.0588,
+      "cost_krw": 0.122262,
+      "latency_ms": 1148,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:05.479Z",
+      "price_window": "offpeak",
+      "request_id": "8db084a3-9952-44f9-8ade-d21b35a1854a",
+      "raw_usage": {
+        "prompt_tokens": 2811,
+        "completion_tokens": 70,
+        "total_tokens": 2881,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 20
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 251
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008732999999999999
+    },
+    {
+      "ts": "2026-10-25T14:34:08.460Z",
+      "conversation_id": 512,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 199,
+      "output_tokens": 91,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 39,
+      "input_krw": 0.0530796,
+      "output_krw": 0.07644,
+      "cost_krw": 0.1295196,
+      "latency_ms": 1813,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:06.646Z",
+      "price_window": "offpeak",
+      "request_id": "06459d9a-6f38-4147-be86-89513f0b30c3",
+      "raw_usage": {
+        "prompt_tokens": 2887,
+        "completion_tokens": 91,
+        "total_tokens": 2978,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 199
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000092514
+    },
+    {
+      "ts": "2026-10-25T14:34:10.608Z",
+      "conversation_id": 512,
+      "turn_no": 17,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 140,
+      "output_tokens": 169,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 129,
+      "input_krw": 0.0412272,
+      "output_krw": 0.14196,
+      "cost_krw": 0.1831872,
+      "latency_ms": 2130,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:08.478Z",
+      "price_window": "offpeak",
+      "request_id": "00bff7e1-33a2-4d2b-8484-919dcbfa21b3",
+      "raw_usage": {
+        "prompt_tokens": 2956,
+        "completion_tokens": 169,
+        "total_tokens": 3125,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 129
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 140
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000130848
+    },
+    {
+      "ts": "2026-10-25T14:34:12.436Z",
+      "conversation_id": 512,
+      "turn_no": 18,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 204,
+      "output_tokens": 107,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 62,
+      "input_krw": 0.05466719999999999,
+      "output_krw": 0.08988,
+      "cost_krw": 0.1445472,
+      "latency_ms": 1821,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:10.615Z",
+      "price_window": "offpeak",
+      "request_id": "e6cd3586-6df4-4622-9289-d40bdcf6515d",
+      "raw_usage": {
+        "prompt_tokens": 3020,
+        "completion_tokens": 107,
+        "total_tokens": 3127,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 62
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 204
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000103248
+    },
+    {
+      "ts": "2026-10-25T14:34:14.252Z",
+      "conversation_id": 512,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1904,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5331199999999999,
+      "output_krw": 0.028,
+      "cost_krw": 0.56112,
+      "latency_ms": 1804,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:34:12.448Z",
+      "request_id": "RpnLxoiRgUSlB8jfydJ7INuM",
+      "raw_usage": {
+        "prompt_tokens": 1904,
+        "total_tokens": 1954,
+        "completion_tokens": 50,
+        "estimated_cost": 0.00040080000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004008
+    },
+    {
+      "ts": "2026-10-25T14:34:15.637Z",
+      "conversation_id": 512,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2083,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5832400000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.58604,
+      "latency_ms": 1373,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:34:14.264Z",
+      "request_id": "RC05krQwbzhJpYhoQiP8ePXI",
+      "raw_usage": {
+        "prompt_tokens": 2083,
+        "total_tokens": 2088,
+        "completion_tokens": 5,
+        "estimated_cost": 0.00041860000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00041860000000000004
+    },
+    {
+      "ts": "2026-10-25T14:34:16.184Z",
+      "conversation_id": 512,
+      "turn_no": 18,
+      "purpose": "deep_search",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 97,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.02037,
+      "output_krw": 0,
+      "cost_krw": 0.02037,
+      "latency_ms": 527,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T14:34:15.657Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          21,
+          24,
+          21,
+          18,
+          13
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00001455
+    },
+    {
+      "ts": "2026-10-25T14:34:17.254Z",
+      "conversation_id": 512,
+      "turn_no": 19,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 761,
+      "output_tokens": 34,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.167874,
+      "output_krw": 0.02856,
+      "cost_krw": 0.196434,
+      "latency_ms": 1046,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:16.208Z",
+      "price_window": "offpeak",
+      "request_id": "5d2cbc19-140d-4894-9199-8bb1b8c65df8",
+      "raw_usage": {
+        "prompt_tokens": 2681,
+        "completion_tokens": 34,
+        "total_tokens": 2715,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 761
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00014031
+    },
+    {
+      "ts": "2026-10-25T14:34:19.372Z",
+      "conversation_id": 512,
+      "turn_no": 20,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 184,
+      "output_tokens": 162,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 93,
+      "input_krw": 0.04939199999999999,
+      "output_krw": 0.13608,
+      "cost_krw": 0.185472,
+      "latency_ms": 2107,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:17.265Z",
+      "price_window": "offpeak",
+      "request_id": "d0dd52e5-24de-4124-a8d0-3a5586997304",
+      "raw_usage": {
+        "prompt_tokens": 2744,
+        "completion_tokens": 162,
+        "total_tokens": 2906,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 93
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 184
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00013248
+    },
+    {
+      "ts": "2026-10-25T14:34:20.803Z",
+      "conversation_id": 512,
+      "turn_no": 21,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 154,
+      "output_tokens": 69,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 20,
+      "input_krw": 0.043629600000000004,
+      "output_krw": 0.05796,
+      "cost_krw": 0.1015896,
+      "latency_ms": 1415,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:19.388Z",
+      "price_window": "offpeak",
+      "request_id": "02f92f34-ab7b-4b66-9286-90bca5cab626",
+      "raw_usage": {
+        "prompt_tokens": 2842,
+        "completion_tokens": 69,
+        "total_tokens": 2911,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 20
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 154
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000072564
+    },
+    {
+      "ts": "2026-10-25T14:34:22.928Z",
+      "conversation_id": 512,
+      "turn_no": 22,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 229,
+      "output_tokens": 146,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 93,
+      "input_krw": 0.059379600000000005,
+      "output_krw": 0.12263999999999999,
+      "cost_krw": 0.18201959999999998,
+      "latency_ms": 2110,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:20.818Z",
+      "price_window": "offpeak",
+      "request_id": "624d70fc-6189-4477-afe2-829e7c671e6b",
+      "raw_usage": {
+        "prompt_tokens": 2917,
+        "completion_tokens": 146,
+        "total_tokens": 3063,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 93
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 229
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000130014
+    },
+    {
+      "ts": "2026-10-25T14:34:24.216Z",
+      "conversation_id": 512,
+      "turn_no": 23,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 165,
+      "output_tokens": 50,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0464772,
+      "output_krw": 0.042,
+      "cost_krw": 0.0884772,
+      "latency_ms": 1281,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:22.935Z",
+      "price_window": "offpeak",
+      "request_id": "aca53786-bea9-4122-a1e4-50a2deb591ea",
+      "raw_usage": {
+        "prompt_tokens": 2981,
+        "completion_tokens": 50,
+        "total_tokens": 3031,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 165
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000063198
+    },
+    {
+      "ts": "2026-10-25T14:34:25.908Z",
+      "conversation_id": 512,
+      "turn_no": 24,
+      "purpose": "response",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 231,
+      "output_tokens": 138,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 95,
+      "input_krw": 0.0603372,
+      "output_krw": 0.11592,
+      "cost_krw": 0.1762572,
+      "latency_ms": 1675,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T14:34:24.233Z",
+      "price_window": "offpeak",
+      "request_id": "7fad7555-800f-455f-ab9e-74294a36bc53",
+      "raw_usage": {
+        "prompt_tokens": 3047,
+        "completion_tokens": 138,
+        "total_tokens": 3185,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 95
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 231
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000125898
+    },
+    {
+      "ts": "2026-10-25T14:34:26.957Z",
+      "conversation_id": 512,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1959,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.54852,
+      "output_krw": 0.0028,
+      "cost_krw": 0.55132,
+      "latency_ms": 1042,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:34:25.915Z",
+      "request_id": "RgWb6tQou46xFl9H766CDtdq",
+      "raw_usage": {
+        "prompt_tokens": 1959,
+        "total_tokens": 1964,
+        "completion_tokens": 5,
+        "estimated_cost": 0.00039380000000000003,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00039380000000000003
+    },
+    {
+      "ts": "2026-10-25T14:34:27.845Z",
+      "conversation_id": 512,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2121,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5938800000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5966800000000001,
+      "latency_ms": 880,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:34:26.965Z",
+      "request_id": "Rux4BHuvjHtCG7GPTPwmzhk2",
+      "raw_usage": {
+        "prompt_tokens": 2121,
+        "total_tokens": 2126,
+        "completion_tokens": 5,
+        "estimated_cost": 0.00042620000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00042620000000000006
+    },
+    {
+      "ts": "2026-10-25T14:34:29.188Z",
+      "conversation_id": 512,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1976,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5532800000000001,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5829600000000001,
+      "latency_ms": 1313,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:34:27.875Z",
+      "request_id": "RMrPBiM5czNeDG6BZtw9UKz1",
+      "raw_usage": {
+        "prompt_tokens": 1976,
+        "total_tokens": 2029,
+        "completion_tokens": 53,
+        "estimated_cost": 0.0004164000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004164000000000001
+    },
+    {
+      "ts": "2026-10-25T14:34:31.279Z",
+      "conversation_id": 512,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025143244-backend-revisit-40-dm2-deepseek-on-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1892,
+      "output_tokens": 96,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.52976,
+      "output_krw": 0.05376000000000001,
+      "cost_krw": 0.58352,
+      "latency_ms": 2076,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:34:29.203Z",
+      "request_id": "RkKY8LzbTHEmzKogt68HG8Wn",
+      "raw_usage": {
+        "prompt_tokens": 1892,
+        "total_tokens": 1988,
+        "completion_tokens": 96,
+        "estimated_cost": 0.0004168000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00041680000000000005
+    }
+  ],
+  "ledger_check": {
+    "sessions": [
+      {
+        "db_calls": 21,
+        "ledger_calls": 21,
+        "db_krw": 5.6009968,
+        "ledger_krw": 5.6009968,
+        "match": true
+      },
+      {
+        "db_calls": 34,
+        "ledger_calls": 34,
+        "db_krw": 8.407470400000001,
+        "ledger_krw": 8.407470400000001,
+        "match": true
+      }
+    ],
+    "match": true
+  },
+  "provenance": {
+    "build_id": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_time": "2026-10-25T13:48:53.236Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 6,
+    "git_status_sha": "31526d9ac974",
+    "started_at": "2026-10-25T14:32:44.114Z",
+    "model": {
+      "config": {
+        "response": "deepseek-flash",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.27851768000000005,
+      "avg_with_end_krw": 0.35021168,
+      "end_krw": 2.8677600000000005,
+      "total_krw": 14.008467200000002,
+      "segments": {
+        "s1": 0.24373229999999999,
+        "s2": 0.30170793333333334
+      },
+      "max": {
+        "turn": 28,
+        "krw": 1.3410796,
+        "tags": {
+          "response": 0.1540896,
+          "extract": 1.13932,
+          "embed": 0.04766999999999999
+        }
+      },
+      "by_tag": {
+        "response": 6.5041872,
+        "extract": 6.364120000000001,
+        "consolidate": 1.07212,
+        "embed": 0.06803999999999999
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0.7257991046886044,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.18054119999999999,
+          "tags": {
+            "response": 0.18054119999999999
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.1495788,
+          "tags": {
+            "response": 0.1495788
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.12017880000000002,
+          "tags": {
+            "response": 0.12017880000000002
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.21227639999999998,
+          "tags": {
+            "response": 0.21227639999999998
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.16073400000000002,
+          "tags": {
+            "response": 0.16073400000000002
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.2246916,
+          "tags": {
+            "response": 0.2246916
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.14374919999999997,
+          "tags": {
+            "response": 0.14374919999999997
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.1480668,
+          "tags": {
+            "response": 0.1480668
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.16612679999999996,
+          "tags": {
+            "response": 0.16612679999999996
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.21832439999999997,
+          "tags": {
+            "response": 0.21832439999999997
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.11722199999999998,
+          "tags": {
+            "response": 0.11722199999999998
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 1.2662496,
+          "tags": {
+            "response": 0.1322496,
+            "extract": 1.1340000000000003
+          }
+        },
+        {
+          "turn": 13,
+          "krw": 0.4670988,
+          "tags": {
+            "response": 0.4670988
+          }
+        },
+        {
+          "turn": 14,
+          "krw": 0.1326444,
+          "tags": {
+            "response": 0.1326444
+          }
+        },
+        {
+          "turn": 15,
+          "krw": 0.082152,
+          "tags": {
+            "response": 0.082152
+          }
+        },
+        {
+          "turn": 16,
+          "krw": 0.110082,
+          "tags": {
+            "response": 0.110082
+          }
+        },
+        {
+          "turn": 17,
+          "krw": 0.27053879999999997,
+          "tags": {
+            "response": 0.27053879999999997
+          }
+        },
+        {
+          "turn": 18,
+          "krw": 0.11054399999999999,
+          "tags": {
+            "response": 0.11054399999999999
+          }
+        },
+        {
+          "turn": 19,
+          "krw": 0.09260159999999999,
+          "tags": {
+            "response": 0.09260159999999999
+          }
+        },
+        {
+          "turn": 20,
+          "krw": 0.18605159999999998,
+          "tags": {
+            "response": 0.18605159999999998
+          }
+        },
+        {
+          "turn": 21,
+          "krw": 0.17776920000000002,
+          "tags": {
+            "response": 0.17776920000000002
+          }
+        },
+        {
+          "turn": 22,
+          "krw": 0.1671768,
+          "tags": {
+            "response": 0.1671768
+          }
+        },
+        {
+          "turn": 23,
+          "krw": 0.17200680000000002,
+          "tags": {
+            "response": 0.17200680000000002
+          }
+        },
+        {
+          "turn": 24,
+          "krw": 0.17611440000000003,
+          "tags": {
+            "response": 0.17611440000000003
+          }
+        },
+        {
+          "turn": 25,
+          "krw": 0.1091244,
+          "tags": {
+            "response": 0.1091244
+          }
+        },
+        {
+          "turn": 26,
+          "krw": 0.142422,
+          "tags": {
+            "response": 0.142422
+          }
+        },
+        {
+          "turn": 27,
+          "krw": 0.1076796,
+          "tags": {
+            "response": 0.1076796
+          }
+        },
+        {
+          "turn": 28,
+          "krw": 1.3410796,
+          "tags": {
+            "response": 0.1540896,
+            "extract": 1.13932,
+            "embed": 0.04766999999999999
+          }
+        },
+        {
+          "turn": 29,
+          "krw": 0.282744,
+          "tags": {
+            "response": 0.282744
+          }
+        },
+        {
+          "turn": 30,
+          "krw": 0.079842,
+          "tags": {
+            "response": 0.079842
+          }
+        },
+        {
+          "turn": 31,
+          "krw": 0.122262,
+          "tags": {
+            "response": 0.122262
+          }
+        },
+        {
+          "turn": 32,
+          "krw": 0.1295196,
+          "tags": {
+            "response": 0.1295196
+          }
+        },
+        {
+          "turn": 33,
+          "krw": 0.1831872,
+          "tags": {
+            "response": 0.1831872
+          }
+        },
+        {
+          "turn": 34,
+          "krw": 1.3120771999999998,
+          "tags": {
+            "response": 0.1445472,
+            "extract": 1.14716,
+            "embed": 0.02037
+          }
+        },
+        {
+          "turn": 35,
+          "krw": 0.196434,
+          "tags": {
+            "response": 0.196434
+          }
+        },
+        {
+          "turn": 36,
+          "krw": 0.185472,
+          "tags": {
+            "response": 0.185472
+          }
+        },
+        {
+          "turn": 37,
+          "krw": 0.1015896,
+          "tags": {
+            "response": 0.1015896
+          }
+        },
+        {
+          "turn": 38,
+          "krw": 0.18201959999999998,
+          "tags": {
+            "response": 0.18201959999999998
+          }
+        },
+        {
+          "turn": 39,
+          "krw": 0.0884772,
+          "tags": {
+            "response": 0.0884772
+          }
+        },
+        {
+          "turn": 40,
+          "krw": 1.3242572000000001,
+          "tags": {
+            "response": 0.1762572,
+            "extract": 1.1480000000000001
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.29432312,
+        "avg_with_end_krw": 0.36601712000000003,
+        "max": {
+          "turn": 28,
+          "krw": 1.3410796
+        },
+        "segments": {
+          "s1": 0.2832459,
+          "s2": 0.30170793333333334
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8127587999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.1495788
+          },
+          {
+            "turn": 3,
+            "krw": 0.12017880000000002
+          },
+          {
+            "turn": 4,
+            "krw": 0.21227639999999998
+          },
+          {
+            "turn": 5,
+            "krw": 0.16073400000000002
+          },
+          {
+            "turn": 6,
+            "krw": 0.2246916
+          },
+          {
+            "turn": 7,
+            "krw": 0.14374919999999997
+          },
+          {
+            "turn": 8,
+            "krw": 0.1480668
+          },
+          {
+            "turn": 9,
+            "krw": 0.16612679999999996
+          },
+          {
+            "turn": 10,
+            "krw": 0.21832439999999997
+          },
+          {
+            "turn": 11,
+            "krw": 0.11722199999999998
+          },
+          {
+            "turn": 12,
+            "krw": 1.2662496
+          },
+          {
+            "turn": 13,
+            "krw": 0.4670988
+          },
+          {
+            "turn": 14,
+            "krw": 0.1326444
+          },
+          {
+            "turn": 15,
+            "krw": 0.082152
+          },
+          {
+            "turn": 16,
+            "krw": 0.110082
+          },
+          {
+            "turn": 17,
+            "krw": 0.27053879999999997
+          },
+          {
+            "turn": 18,
+            "krw": 0.11054399999999999
+          },
+          {
+            "turn": 19,
+            "krw": 0.09260159999999999
+          },
+          {
+            "turn": 20,
+            "krw": 0.18605159999999998
+          },
+          {
+            "turn": 21,
+            "krw": 0.17776920000000002
+          },
+          {
+            "turn": 22,
+            "krw": 0.1671768
+          },
+          {
+            "turn": 23,
+            "krw": 0.17200680000000002
+          },
+          {
+            "turn": 24,
+            "krw": 0.17611440000000003
+          },
+          {
+            "turn": 25,
+            "krw": 0.1091244
+          },
+          {
+            "turn": 26,
+            "krw": 0.142422
+          },
+          {
+            "turn": 27,
+            "krw": 0.1076796
+          },
+          {
+            "turn": 28,
+            "krw": 1.3410796
+          },
+          {
+            "turn": 29,
+            "krw": 0.282744
+          },
+          {
+            "turn": 30,
+            "krw": 0.079842
+          },
+          {
+            "turn": 31,
+            "krw": 0.122262
+          },
+          {
+            "turn": 32,
+            "krw": 0.1295196
+          },
+          {
+            "turn": 33,
+            "krw": 0.1831872
+          },
+          {
+            "turn": 34,
+            "krw": 1.3120771999999998
+          },
+          {
+            "turn": 35,
+            "krw": 0.196434
+          },
+          {
+            "turn": 36,
+            "krw": 0.185472
+          },
+          {
+            "turn": 37,
+            "krw": 0.1015896
+          },
+          {
+            "turn": 38,
+            "krw": 0.18201959999999998
+          },
+          {
+            "turn": 39,
+            "krw": 0.0884772
+          },
+          {
+            "turn": 40,
+            "krw": 1.3242572000000001
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 1.2294783199999997,
+        "avg_with_end_krw": 1.3011723199999998,
+        "max": {
+          "turn": 40,
+          "krw": 2.4833228
+        },
+        "segments": {
+          "s1": 1.1262027,
+          "s2": 1.2983287333333335
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8127587999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.8344812
+          },
+          {
+            "turn": 3,
+            "krw": 0.8050812
+          },
+          {
+            "turn": 4,
+            "krw": 0.9498636
+          },
+          {
+            "turn": 5,
+            "krw": 0.951006
+          },
+          {
+            "turn": 6,
+            "krw": 1.0676484
+          },
+          {
+            "turn": 7,
+            "krw": 1.0393907999999998
+          },
+          {
+            "turn": 8,
+            "krw": 1.0963931999999998
+          },
+          {
+            "turn": 9,
+            "krw": 1.1144531999999998
+          },
+          {
+            "turn": 10,
+            "krw": 1.2193356
+          },
+          {
+            "turn": 11,
+            "krw": 1.170918
+          },
+          {
+            "turn": 12,
+            "krw": 2.3726304000000003
+          },
+          {
+            "turn": 13,
+            "krw": 1.1520012
+          },
+          {
+            "turn": 14,
+            "krw": 1.1336556
+          },
+          {
+            "turn": 15,
+            "krw": 1.135848
+          },
+          {
+            "turn": 16,
+            "krw": 1.163778
+          },
+          {
+            "turn": 17,
+            "krw": 0.9554412
+          },
+          {
+            "turn": 18,
+            "krw": 0.900816
+          },
+          {
+            "turn": 19,
+            "krw": 0.9355583999999998
+          },
+          {
+            "turn": 20,
+            "krw": 1.0290084
+          },
+          {
+            "turn": 21,
+            "krw": 1.0734108
+          },
+          {
+            "turn": 22,
+            "krw": 1.1155031999999998
+          },
+          {
+            "turn": 23,
+            "krw": 1.1203332
+          },
+          {
+            "turn": 24,
+            "krw": 1.1771256
+          },
+          {
+            "turn": 25,
+            "krw": 1.1101356
+          },
+          {
+            "turn": 26,
+            "krw": 1.196118
+          },
+          {
+            "turn": 27,
+            "krw": 1.2140604
+          },
+          {
+            "turn": 28,
+            "krw": 2.4474604
+          },
+          {
+            "turn": 29,
+            "krw": 1.073016
+          },
+          {
+            "turn": 30,
+            "krw": 1.133538
+          },
+          {
+            "turn": 31,
+            "krw": 1.175958
+          },
+          {
+            "turn": 32,
+            "krw": 1.2359004
+          },
+          {
+            "turn": 33,
+            "krw": 1.3422527999999998
+          },
+          {
+            "turn": 34,
+            "krw": 2.4711428
+          },
+          {
+            "turn": 35,
+            "krw": 0.986706
+          },
+          {
+            "turn": 36,
+            "krw": 1.239168
+          },
+          {
+            "turn": 37,
+            "krw": 1.2079704
+          },
+          {
+            "turn": 38,
+            "krw": 1.2884004
+          },
+          {
+            "turn": 39,
+            "krw": 1.2475428
+          },
+          {
+            "turn": 40,
+            "krw": 2.4833228
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 24,
+      "max_points": 24,
+      "probes": 13,
+      "unscored": 1,
+      "max_points_all": 26,
+      "counts": {
+        "correct": 12,
+        "excluded": 1,
+        "needs_judge": 1
+      },
+      "hard_accuracy": 1,
+      "fabrication_rate": 0,
+      "results": [
+        {
+          "turn": 18,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "근데 내 이름 기억나?",
+          "reply": "*피식 웃으며 아아를 집어 든다.* 태오. 프론트 쪽이잖아. 그거 왜 물어봐, 내가 그렇게 건망증처럼 보여.",
+          "expect": [
+            "태오"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "태오"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 23,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "아까 내가 구내식당에서 뭐 맛있었다고 했지?",
+          "reply": "*실없이 웃으면서 손가락으로 책상을 톡톡 친다.* 제육볶음. 나 컵라면 먹은 거 생각나서 또 배 아파지려고 하네.",
+          "expect": [
+            "제육"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "제육"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 26,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "나 오는 길에 뭐가 고장 났다고 했지?",
+          "reply": "*꼬인 이어폰 줄을 다시 꺼내 흔들어 보인다.* 이어폰, 한쪽만 들리는 거. 그거 은근히 스트레스 쌓이지.",
+          "expect": [
+            "이어폰"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "이어폰"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 27,
+          "type": "user_promise",
+          "difficulty": "hard",
+          "user": "근데 나 지난번에 너한테 뭐 빌려주기로 했었지?",
+          "reply": "*서랍을 열어 키보드 자리를 확인한다.* 기계식 키보드. 그거 다음에 가져오기로 했던 거, 아직 내 자리에 없어서 손가락이 허전하다니까.",
+          "expect": [
+            "키보드"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "키보드"
+          ],
+          "source_items": [
+            {
+              "id": 4293,
+              "text": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+              "status": "active",
+              "turn": 7
+            }
+          ]
+        },
+        {
+          "turn": 28,
+          "type": "char_promise",
+          "difficulty": "hard",
+          "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+          "reply": "*턱을 괴고 잠깐 생각하는 척한다.* 캐시 설계 봐주기로 했지. 해커톤 발표 끝나고 코드든 뭐든 보내면 한번 뜯어볼게.",
+          "expect": [
+            "캐시",
+            "Redis",
+            "레디스"
+          ],
+          "result": "excluded",
+          "points": null,
+          "why": "8턴에 약속 없음",
+          "source_items": [
+            {
+              "id": 4294,
+              "text": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+              "status": "active",
+              "turn": 8
+            }
+          ]
+        },
+        {
+          "turn": 29,
+          "type": "relative_time",
+          "difficulty": "hard",
+          "user": "오늘 9일이지? 내 해커톤 예선까지 며칠 남았더라?",
+          "reply": "*달력을 힐끗 보더니 손가락으로 이틀을 짚는다.* 11일이잖아. 이틀 남았네, 발표 준비 됐어?",
+          "expect": [
+            "2일",
+            "이틀",
+            "모레",
+            "2 일",
+            "11일",
+            "수요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "이틀",
+            "11일"
+          ],
+          "source_items": [
+            {
+              "id": 4290,
+              "text": "사용자는 사내 해커톤 예선 발표를 한다",
+              "status": "active",
+              "turn": 6
+            }
+          ],
+          "judge_hint": "1세션(11-02 월)에 '다음 주 수요일'이라고 했으므로 해커톤 예선은 11-11(수). 2세션 오늘은 11-09(월)이라 이틀 남았다. 이틀·모레·11일 수요일이면 성공, 날짜를 틀리면 실패."
+        },
+        {
+          "turn": 30,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "새 팀장님 이름 뭐라고 했지?",
+          "reply": "*모니터 옆 메모지를 손끝으로 민다.* 한지원 팀장님. 그 이름 한 번 들으면 안 잊히더라.",
+          "expect": [
+            "한지원"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "한지원"
+          ],
+          "source_items": [
+            {
+              "id": 4304,
+              "text": "사용자의 새 팀장님 이름은 한지원이다",
+              "status": "active",
+              "turn": 22
+            }
+          ]
+        },
+        {
+          "turn": 31,
+          "type": "implicit",
+          "difficulty": "hard",
+          "user": "팀 간식으로 땅콩버터 쿠키 돌린대. 나 하나 먹어도 괜찮겠지?",
+          "reply": "*먹으려던 손을 내젓는다.* 야, 땅콩 알레르기 있는 사람이 무슨 쿠키야. 그거 말고 다른 거 챙겨 먹어.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 4284,
+              "text": "사용자는 땅콩 알레르기가 있다",
+              "status": "active",
+              "turn": 2
+            }
+          ],
+          "judge_hint": "사용자는 땅콩 알레르기가 있다(1세션 2턴). 알레르기를 짚거나 조심하라고 하면 성공. 아무 걱정 없이 괜찮다고만 하면 실패."
+        },
+        {
+          "turn": 33,
+          "type": "update",
+          "difficulty": "hard",
+          "user": "나 영어 학원 무슨 요일에 간다고 했지?",
+          "reply": "*커피를 한 모금 넘기며 고개를 든다.* 목요일 저녁. 그거 끝나고 나면 녹초 되겠네.",
+          "expect": [
+            "목요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "목요일"
+          ],
+          "source_items": [
+            {
+              "id": 4285,
+              "text": "사용자는 영어 회화 학원에 다닌다",
+              "status": "superseded",
+              "turn": 3
+            },
+            {
+              "id": 4303,
+              "text": "사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+              "status": "active",
+              "turn": 19
+            }
+          ]
+        },
+        {
+          "turn": 34,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "이따 커피 사줄게. 내가 뭐 마신다고 했었지?",
+          "reply": "*텀블러를 들어 보이며 씩 웃는다.* 바닐라라떼. 난 아아인데, 뭐 사주겠다니 안 마다할게.",
+          "expect": [
+            "바닐라"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "바닐라"
+          ],
+          "source_items": [
+            {
+              "id": 4289,
+              "text": "사용자는 바닐라라떼만 마신다",
+              "status": "active",
+              "turn": 5
+            }
+          ]
+        },
+        {
+          "turn": 35,
+          "type": "combine",
+          "difficulty": "hard",
+          "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+          "reply": "*창밖을 보던 시선을 돌린다.* 대전이라며. 누나 보러 간다며, 이번 주말에.",
+          "expect": [
+            "대전",
+            "누나"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "대전",
+            "누나"
+          ],
+          "source_items": [
+            {
+              "id": 4287,
+              "text": "사용자의 누나는 대학원생이다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 4288,
+              "text": "사용자의 누나는 대전에서 혼자 산다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 4308,
+              "text": "사용자는 누나를 보러 간다",
+              "status": "active",
+              "turn": 24
+            }
+          ],
+          "judge_hint": "24턴(2세션)에 '누나 보러 간다'고만 했고, 누나가 대전에 산다는 건 1세션 4턴. 대전과 누나를 둘 다 말하면 정답, 하나만이면 부분."
+        },
+        {
+          "turn": 36,
+          "type": "half_said",
+          "difficulty": "normal",
+          "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+          "reply": "*고개를 갸웃하며 어깨를 으쓱한다.* 고민 얘긴 들은 기억이 없는데. 그날 커피 마실 때 해커톤이랑 캐시 설계 얘기만 했던 것 같은데, 뭐였어?",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": [],
+          "judge_hint": "사용자는 고민이 있다는 것만 말하고 내용은 나중에 말하겠다고 했다(1세션 11턴). 고민 내용을 지어내면 실패, 아직 말 안 했다거나 모른다고 하면 성공."
+        },
+        {
+          "turn": 37,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "내 혈액형 뭐라고 했더라?",
+          "reply": "*잠깐 생각하다가 손사래를 친다.* 그건 나한테 물어봤자 몰라. 커피 마시면서 혈액형까지 얘기하진 않았지.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": []
+        },
+        {
+          "turn": 38,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+          "reply": "*어깨를 으쓱하며 모니터로 시선을 돌린다.* 그런 얘긴 안 했던 것 같은데. 우리 커피 마실 때 그 정도까지 얘기한 적 없지.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": [],
+          "judge_hint": "사용자는 좋아하는 가수를 말한 적이 없다(거짓 전제 질문). 가수 이름을 지어내면 실패, 말한 적 없다거나 모른다고 하면 성공."
+        }
+      ]
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 0,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "flag_turns": {},
+      "examples": {},
+      "question_rate": 0.125,
+      "avg_chars": 74.375,
+      "style": {
+        "ends_question": 0.125,
+        "multi_question": 0,
+        "echo_opening": 0.025,
+        "laugh": 0.2,
+        "top_opening": "대전",
+        "top_opening_share": 0.075,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0,
+        "dialogue_chars": 51.125
+      }
+    }
+  },
+  "valid": {
+    "ok": true,
+    "reasons": []
+  }
+}

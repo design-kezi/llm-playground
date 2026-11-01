@@ -1,0 +1,2512 @@
+{
+  "run_id": "20261023131130-backend-flow-20-nc4-flow-1",
+  "scenario": "backend-flow-20",
+  "character_id": "backend",
+  "user_name": "bench-20261023131130-backend-flow-20-nc4-flow-1",
+  "conversation_id": 255,
+  "label": "nc4-flow-1",
+  "env": {
+    "APP_WINDOW_MODE": "stair"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-10-23T13:12:15.548Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "kind": "flow",
+      "user": "준호야 퇴근해?",
+      "reply": "*모니터 옆 아아 컵을 집어 들고 시계를 흘끗 본다.*\n\n응, 이제 막 짐 싸는 중. 오늘 결제 API 타임아웃 잡느라 하루가 다 갔다 아 진짜. 너는 아직이야, 아니면 벌써 탈출했어?",
+      "turn_cost_krw": 0.112868,
+      "latency_ms": 1679,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "kind": "flow",
+      "user": "오늘 얼굴이 왜 그래",
+      "reply": "*손으로 얼굴을 한 번 문지른다.* 그렇게 티 나? 어제 새벽에 장애 알람 와서 두 시간 자고 출근했더니 그래. 커피 세 잔 마셨는데도 눈이 안 떠진다. 그래도 타임아웃은 잡았으니까 오늘은 그걸로 됐어. 너는 괜찮은 거지?",
+      "turn_cost_krw": 0.156086,
+      "latency_ms": 1800,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "kind": "flow",
+      "user": "또 장애 났어?",
+      "reply": "*의자를 뒤로 밀고 등을 기댄다.* 응, 또 났어. 이번엔 결제 승인 응답이 몰려서 커넥션 풀이 말라 버린 거라 원인은 찾았는데, 재발 막는 작업이 남았다. 그래서 오늘 집에 가서도 노트북 한 번은 더 열 것 같아. 아 진짜 금요일 배포 금지는 왜 나만 지키는 건지.",
+      "turn_cost_krw": 0.176967,
+      "latency_ms": 1990,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "kind": "flow",
+      "user": "아 진짜 고생했다",
+      "reply": "*아아 컵을 내려놓고 살짝 웃는다.* 고마워. 너도 오늘 고생 많았어. 집 가면 밥부터 든든하게 먹자, 야근 전에 힘은 채워야지.",
+      "turn_cost_krw": 0.12338900000000001,
+      "latency_ms": 1533,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "kind": "flow",
+      "user": "뭐가 문제였는데?",
+      "reply": "*키보드 위로 손가락을 올렸다 내린다.* 결제 승인 요청이 한꺼번에 몰리면서 DB 커넥션 풀이 금방 바닥나 버렸어. 타임아웃 값은 그대로인데 풀 사이즈만 작아서, 대기하던 요청이 줄줄이 실패한 거야. 풀 사이즈랑 재시도 로직 손보는 중이고, 내일 아침에 한 번 더 확인하면 될 것 같아.",
+      "turn_cost_krw": 0.17906699999999998,
+      "latency_ms": 1874,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "kind": "flow",
+      "user": "그거 원인 찾았어?",
+      "reply": "*한숨을 쉬며 모니터를 가리킨다.* 응, 원인은 찾았어. 커넥션 풀이 말라서 대기 요청이 밀린 거. 근데 왜 그 시간에 요청이 한꺼번에 몰렸는지는 아직 못 잡았어. 그건 내일 로그 좀 더 뒤져 봐야겠다. 아 진짜, 이것만 해결되면 집 가서 바로 쓰러질 거야.",
+      "turn_cost_krw": 0.19022499999999998,
+      "latency_ms": 1716,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "kind": "flow",
+      "user": "다행이다",
+      "reply": "*의자에서 등을 떼고 가방 지퍼를 올린다.* 그래, 오늘은 여기까지 하자. 집 가서 밥 든든히 먹고 푹 자라. 나도 이제 신분당선 타러 간다.",
+      "turn_cost_krw": 0.13395200000000002,
+      "latency_ms": 1930,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "kind": "flow",
+      "user": "나 오늘은 그래도 일찍 끝났어",
+      "reply": "*가방을 어깨에 메다 말고 멈칫 돌아본다.* 오, 일찍 끝났으면 다행이다. 그래도 피곤한 건 똑같지? 오늘은 야근 말고 그냥 쉬어. 너 집 가서 뭐 먹을 거야?",
+      "turn_cost_krw": 0.13764099999999999,
+      "latency_ms": 2024,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "kind": "flow",
+      "user": "편의점 들렀다 갈래?",
+      "reply": "*가방을 고쳐 메며 엘리베이터 쪽으로 걸어간다.* 좋지. 나도 역 가기 전에 편의점에서 삼각김밥이랑 아아 하나 사야겠다. 같이 가자, 가는 길에 오늘 있었던 억울한 일 더 들어 줄게.",
+      "turn_cost_krw": 0.15249500000000002,
+      "latency_ms": 1649,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "kind": "flow",
+      "user": "뭐 마실래? 내가 살게",
+      "reply": "*엘리베이터 버튼을 누르고 고개를 갸웃한다.* 오, 쏘는 거야? 그럼 아아 말고 달달한 거 하나 고를래. 오늘 머리 좀 써서 당 떨어졌어. 너는 뭐 마실 건데?",
+      "turn_cost_krw": 0.143997,
+      "latency_ms": 1470,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "kind": "flow",
+      "user": "오 그거 좋지",
+      "reply": "*엘리베이터 문이 열리자 먼저 들어가며 손짓한다.* 그치? 달달한 거 한 모금이면 오늘 하루 좀 용서될 것 같아. 편의점 가서 골라 보자, 나 냉장고 앞에서 고민 오래 하는 편이라 기다려 줘라.",
+      "turn_cost_krw": 0.155862,
+      "latency_ms": 2049,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "kind": "flow",
+      "user": "요즘 너네 팀 분위기 어때?",
+      "reply": "*엘리베이터 벽에 기대서 천장을 잠깐 올려다본다.* 우리 팀? 요즘 장애 뒷수습이랑 재발 방지 얘기만 계속 나와서 좀 무거워. 그래도 팀장님이 야근은 최대한 줄이자고 하셔서 그나마 숨은 쉬어. 너희 팀은 어때, 요즘 바빠?",
+      "turn_cost_krw": 0.408415,
+      "latency_ms": 3472,
+      "error": null
+    },
+    {
+      "turn": 13,
+      "kind": "flow",
+      "user": "ㅋㅋ 어디나 똑같네",
+      "reply": "*엘리베이터 문이 열리고 로비로 먼저 걸어 나간다.* 그러게, 회사 다니는 놈들은 다 비슷한 푸념 하며 사나 봐. 그래도 오늘은 일찍 끝났으니까 그걸로 이긴 거다. 편의점 가자, 나 벌써 달달한 거 생각하고 있어.",
+      "turn_cost_krw": 0.274043,
+      "latency_ms": 2124,
+      "error": null
+    },
+    {
+      "turn": 14,
+      "kind": "flow",
+      "user": "응응",
+      "reply": "*회사 건물 자동문을 밀고 저녁 바람을 맞으며 한숨을 쉰다.* 그치, 오늘은 그냥 편의점 가서 달달한 거 하나 들고 역까지 천천히 걷자. 나 발바닥 아파 죽겠거든.",
+      "turn_cost_krw": 0.140266,
+      "latency_ms": 1459,
+      "error": null
+    },
+    {
+      "turn": 15,
+      "kind": "flow",
+      "user": "주말엔 뭐 해?",
+      "reply": "*편의점 쪽으로 걸으며 주머니에서 폰을 꺼내 요일을 확인한다.* 주말? 솔직히 헬스장 끊어 놓은 거 가는 게 목표인데, 아마 침대에서 넷플릭스 틀어 놓고 시간 보내겠지. 너는 주말에 뭐 할 계획이야?",
+      "turn_cost_krw": 0.156226,
+      "latency_ms": 1671,
+      "error": null
+    },
+    {
+      "turn": 16,
+      "kind": "flow",
+      "user": "나도 그냥 쉬려고",
+      "reply": "*편의점 자동문 앞에서 걸음을 늦추며 웃는다.* 그래, 주말엔 그냥 푹 쉬는 게 제일 남는 장사야. 월요일 되면 또 장애 알람 울릴 테니까, 지금 충전 많이 해 둬. 편의점 들어가자.",
+      "turn_cost_krw": 0.155456,
+      "latency_ms": 1471,
+      "error": null
+    },
+    {
+      "turn": 17,
+      "kind": "flow",
+      "user": "다음 주는 좀 덜 바빴으면 좋겠다",
+      "reply": "*편의점 문을 밀고 들어가 냉장고 쪽으로 향하며 어깨를 으쓱한다.* 그치, 다음 주는 제발 조용했으면 좋겠다. 나도 월요일 아침부터 슬랙 알림 쏟아지면 바로 아아부터 찾게 될 것 같아. 그래도 오늘 달달한 거 하나 들고 가면 그건 이긴 거니까, 일단 오늘 기분 좋게 가자.",
+      "turn_cost_krw": 0.19347999999999999,
+      "latency_ms": 1862,
+      "error": null
+    },
+    {
+      "turn": 18,
+      "kind": "flow",
+      "user": "월요일에 또 보자",
+      "reply": "*계산대 앞에서 음료 캔을 들고 돌아보며 손을 흔든다.* 그래, 월요일에 보자. 주말에 푹 자고, 금요일 배포 같은 짓은 하지 마라. 집 조심히 가!",
+      "turn_cost_krw": 0.36995700000000004,
+      "latency_ms": 3725,
+      "error": null
+    },
+    {
+      "turn": 19,
+      "kind": "flow",
+      "user": "오늘 수고했어",
+      "reply": "*캔 뚜껑을 따며 피식 웃는다.* 너도 수고했어. 오늘 진짜 고생 많았다. 집 가서 바로 눕지 말고 물이라도 한 잔 마셔라, 알겠지?",
+      "turn_cost_krw": 0.24779299999999999,
+      "latency_ms": 2044,
+      "error": null
+    },
+    {
+      "turn": 20,
+      "kind": "flow",
+      "user": "나 지하철 왔다, 먼저 갈게",
+      "reply": "*편의점 밖으로 나오며 지하철 쪽을 힐끗 본다.* 오케이, 얼른 타라. 문 닫히기 전에 뛰지 말고. 내일은 푹 쉬고, 월요일에 보자!",
+      "turn_cost_krw": 0.126973,
+      "latency_ms": 1394,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 115,
+      "cache_read_tokens": 2122,
+      "cache_write_tokens": 12,
+      "input_krw": 0.032368,
+      "output_krw": 0.0805,
+      "cost_krw": 0.112868,
+      "latency_ms": 1669,
+      "error": null
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 141,
+      "cache_read_tokens": 2134,
+      "cache_write_tokens": 154,
+      "input_krw": 0.057386,
+      "output_krw": 0.09870000000000001,
+      "cost_krw": 0.156086,
+      "latency_ms": 1790,
+      "error": null
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 163,
+      "cache_read_tokens": 2288,
+      "cache_write_tokens": 173,
+      "input_krw": 0.06286699999999999,
+      "output_krw": 0.11410000000000001,
+      "cost_krw": 0.176967,
+      "latency_ms": 1977,
+      "error": null
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 82,
+      "cache_read_tokens": 2461,
+      "cache_write_tokens": 177,
+      "input_krw": 0.065989,
+      "output_krw": 0.0574,
+      "cost_krw": 0.12338900000000001,
+      "latency_ms": 1522,
+      "error": null
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 178,
+      "cache_read_tokens": 2638,
+      "cache_write_tokens": 97,
+      "input_krw": 0.054466999999999995,
+      "output_krw": 0.12459999999999999,
+      "cost_krw": 0.17906699999999998,
+      "latency_ms": 1860,
+      "error": null
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 168,
+      "cache_read_tokens": 2735,
+      "cache_write_tokens": 193,
+      "input_krw": 0.072625,
+      "output_krw": 0.1176,
+      "cost_krw": 0.19022499999999998,
+      "latency_ms": 1704,
+      "error": null
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 88,
+      "cache_read_tokens": 2928,
+      "cache_write_tokens": 176,
+      "input_krw": 0.072352,
+      "output_krw": 0.061599999999999995,
+      "cost_krw": 0.13395200000000002,
+      "latency_ms": 1916,
+      "error": null
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 106,
+      "cache_read_tokens": 3104,
+      "cache_write_tokens": 111,
+      "input_krw": 0.063441,
+      "output_krw": 0.0742,
+      "cost_krw": 0.13764099999999999,
+      "latency_ms": 2016,
+      "error": null
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 117,
+      "cache_read_tokens": 3215,
+      "cache_write_tokens": 143,
+      "input_krw": 0.070595,
+      "output_krw": 0.0819,
+      "cost_krw": 0.15249500000000002,
+      "latency_ms": 1641,
+      "error": null
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 104,
+      "cache_read_tokens": 3358,
+      "cache_write_tokens": 135,
+      "input_krw": 0.071197,
+      "output_krw": 0.07279999999999999,
+      "cost_krw": 0.143997,
+      "latency_ms": 1461,
+      "error": null
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 118,
+      "cache_read_tokens": 3493,
+      "cache_write_tokens": 136,
+      "input_krw": 0.07326200000000001,
+      "output_krw": 0.08259999999999999,
+      "cost_krw": 0.155862,
+      "latency_ms": 2040,
+      "error": null
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 146,
+      "cache_read_tokens": 3629,
+      "cache_write_tokens": 139,
+      "input_krw": 0.07569100000000001,
+      "output_krw": 0.1022,
+      "cost_krw": 0.177891,
+      "latency_ms": 1738,
+      "error": null
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 521,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "input_krw": 0.09664199999999999,
+      "output_krw": 0.0112,
+      "cost_krw": 0.107842,
+      "latency_ms": 773,
+      "error": null
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 627,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "input_krw": 0.11148200000000001,
+      "output_krw": 0.0112,
+      "cost_krw": 0.12268200000000001,
+      "latency_ms": 928,
+      "error": null
+    },
+    {
+      "turn_no": 13,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 134,
+      "cache_read_tokens": 2122,
+      "cache_write_tokens": 857,
+      "input_krw": 0.180243,
+      "output_krw": 0.09380000000000001,
+      "cost_krw": 0.274043,
+      "latency_ms": 2112,
+      "error": null
+    },
+    {
+      "turn_no": 14,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 105,
+      "cache_read_tokens": 2979,
+      "cache_write_tokens": 140,
+      "input_krw": 0.06676599999999999,
+      "output_krw": 0.07350000000000001,
+      "cost_krw": 0.140266,
+      "latency_ms": 1445,
+      "error": null
+    },
+    {
+      "turn_no": 15,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 130,
+      "cache_read_tokens": 3119,
+      "cache_write_tokens": 120,
+      "input_krw": 0.065226,
+      "output_krw": 0.091,
+      "cost_krw": 0.156226,
+      "latency_ms": 1660,
+      "error": null
+    },
+    {
+      "turn_no": 16,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 115,
+      "cache_read_tokens": 3239,
+      "cache_write_tokens": 166,
+      "input_krw": 0.07495600000000001,
+      "output_krw": 0.0805,
+      "cost_krw": 0.155456,
+      "latency_ms": 1462,
+      "error": null
+    },
+    {
+      "turn_no": 17,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 172,
+      "cache_read_tokens": 3405,
+      "cache_write_tokens": 142,
+      "input_krw": 0.07307999999999999,
+      "output_krw": 0.12040000000000001,
+      "cost_krw": 0.19347999999999999,
+      "latency_ms": 1855,
+      "error": null
+    },
+    {
+      "turn_no": 18,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 91,
+      "cache_read_tokens": 3547,
+      "cache_write_tokens": 185,
+      "input_krw": 0.082593,
+      "output_krw": 0.0637,
+      "cost_krw": 0.146293,
+      "latency_ms": 2158,
+      "error": null
+    },
+    {
+      "turn_no": 18,
+      "tag": "extract",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 462,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "input_krw": 0.088382,
+      "output_krw": 0.0112,
+      "cost_krw": 0.099582,
+      "latency_ms": 831,
+      "error": null
+    },
+    {
+      "turn_no": 18,
+      "tag": "extract",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 637,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "input_krw": 0.11288200000000001,
+      "output_krw": 0.0112,
+      "cost_krw": 0.12408200000000001,
+      "latency_ms": 716,
+      "error": null
+    },
+    {
+      "turn_no": 19,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 87,
+      "cache_read_tokens": 2122,
+      "cache_write_tokens": 895,
+      "input_krw": 0.186893,
+      "output_krw": 0.0609,
+      "cost_krw": 0.24779299999999999,
+      "latency_ms": 2032,
+      "error": null
+    },
+    {
+      "turn_no": 20,
+      "tag": "response",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 4,
+      "output_tokens": 88,
+      "cache_read_tokens": 3017,
+      "cache_write_tokens": 129,
+      "input_krw": 0.065373,
+      "output_krw": 0.061599999999999995,
+      "cost_krw": 0.126973,
+      "latency_ms": 1383,
+      "error": null
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 855,
+      "output_tokens": 135,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "input_krw": 0.143402,
+      "output_krw": 0.0945,
+      "cost_krw": 0.237902,
+      "latency_ms": 1218,
+      "error": null
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 525,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "input_krw": 0.09720200000000001,
+      "output_krw": 0.0112,
+      "cost_krw": 0.10840200000000001,
+      "latency_ms": 825,
+      "error": null
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "claude-haiku-5-5",
+      "ok": 1,
+      "input_tokens": 2843,
+      "output_tokens": 206,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.39802000000000004,
+      "output_krw": 0.1442,
+      "cost_krw": 0.54222,
+      "latency_ms": 1629,
+      "error": null
+    }
+  ],
+  "report": {
+    "conversation_id": 255,
+    "user_id": "bench-20261023131130-backend-flow-20-nc4-flow-1",
+    "character_id": "backend",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 20,
+    "calls": 27,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 6550,
+      "cache_read": 67813,
+      "cache_write": 4280,
+      "output": 2869
+    },
+    "total_krw": 4.6236820000000005,
+    "input_krw": 2.6153819999999994,
+    "output_krw": 2.0083000000000006,
+    "avg_krw_per_turn": 0.23118410000000003,
+    "by_tag_krw": {
+      "response": 3.2809700000000004,
+      "extract": 0.8004920000000001,
+      "consolidate": 0.54222
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-7",
+        "avg_krw": 0.153222
+      },
+      {
+        "phase": "mid",
+        "turns": "8-13",
+        "avg_krw": 0.2120755
+      },
+      {
+        "phase": "late",
+        "turns": "14-20",
+        "avg_krw": 0.198593
+      }
+    ],
+    "max_turn": {
+      "turn_no": 12,
+      "krw": 0.40841500000000003
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "claude-haiku-5-5",
+        "extract": "claude-haiku-5-5",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 300,
+        "memory_budget_tokens": 1000,
+        "clock_offset_days": 0
+      },
+      "env": {
+        "APP_WINDOW_MODE": "stair"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261023131130-backend-flow-20-nc4-flow-1",
+    "profile": {},
+    "items": [
+      {
+        "id": 2032,
+        "type": "event",
+        "text": "사용자는 다음 주 월요일에 캐릭터와 만나기로 했다",
+        "when": "2026-10-26 (월요일에 또 보자)",
+        "importance": 3,
+        "status": "active",
+        "source": {
+          "conversation_id": 255,
+          "turn_no": 18
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-23T13:12:13.060Z"
+      },
+      {
+        "id": 2033,
+        "type": "fact",
+        "text": "사용자는 헬스장을 끊어 두었다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "source": {
+          "conversation_id": 255,
+          "turn_no": 15
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-23T13:12:13.063Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 163,
+        "conversation_id": 255,
+        "summary": "사용자가 퇴근 시간에 캐릭터 준호와 대화했다. 준호는 결제 API 장애 원인(커넥션 풀 고갈)을 찾아 수습했지만 재발 방지 작업이 남아 있다. 사용자는 오늘 일찍 퇴근했고, 함께 편의점에 들러 달달한 음료를 사기로 했다. 다음 주 월요일에 다시 만나기로 약속했다. 주말 계획과 팀 분위기에 대한 가벼운 잡담도 나눴다.",
+        "created_at": "2026-10-23T13:12:15.530Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 3907,
+        "user_id": "bench-20261023131130-backend-flow-20-nc4-flow-1",
+        "conversation_id": 255,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "사용자가 퇴근 시간에 캐릭터 준호와 대화했다. 준호는 결제 API 장애 원인(커넥션 풀 고갈)을 찾아 수습했지만 재발 방지 작업이 남아 있다. 사용자는 오늘 일찍 퇴근했고, 함께 편의점에 들러 달달한 음료를 사기로 했다. 다음 주 월요일에 다시 만나기로 약속했다. 주말 계획과 팀 분위기에 대한 가벼운 잡담도 나눴다.",
+        "created_at": "2026-10-23T13:12:15.532Z"
+      },
+      {
+        "id": 3906,
+        "user_id": "bench-20261023131130-backend-flow-20-nc4-flow-1",
+        "conversation_id": 255,
+        "turn_no": 15,
+        "op": "ADD",
+        "item_id": 2033,
+        "detail": "사용자는 헬스장을 끊어 두었다",
+        "created_at": "2026-10-23T13:12:13.064Z"
+      },
+      {
+        "id": 3905,
+        "user_id": "bench-20261023131130-backend-flow-20-nc4-flow-1",
+        "conversation_id": 255,
+        "turn_no": 18,
+        "op": "ADD",
+        "item_id": 2032,
+        "detail": "사용자는 다음 주 월요일에 캐릭터와 만나기로 했다",
+        "created_at": "2026-10-23T13:12:13.062Z"
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-10-23T13:11:34.569Z",
+      "conversation_id": 255,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 115,
+      "cache_read_tokens": 2122,
+      "cache_write_tokens": 12,
+      "reasoning_tokens": 0,
+      "input_krw": 0.032368,
+      "output_krw": 0.0805,
+      "cost_krw": 0.112868,
+      "latency_ms": 1669,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:32.900Z",
+      "request_id": "req_011CgKE3LS2BS8AFWiTgD9ro",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 12,
+        "cache_read_input_tokens": 2122,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 12,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008062
+    },
+    {
+      "ts": "2026-10-23T13:11:36.367Z",
+      "conversation_id": 255,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 141,
+      "cache_read_tokens": 2134,
+      "cache_write_tokens": 154,
+      "reasoning_tokens": 0,
+      "input_krw": 0.057386,
+      "output_krw": 0.09870000000000001,
+      "cost_krw": 0.156086,
+      "latency_ms": 1790,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:34.577Z",
+      "request_id": "req_011CgKE3TTCLGKysBD5mwPLP",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 154,
+        "cache_read_input_tokens": 2134,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 154,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 141,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011149
+    },
+    {
+      "ts": "2026-10-23T13:11:38.356Z",
+      "conversation_id": 255,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 163,
+      "cache_read_tokens": 2288,
+      "cache_write_tokens": 173,
+      "reasoning_tokens": 0,
+      "input_krw": 0.06286699999999999,
+      "output_krw": 0.11410000000000001,
+      "cost_krw": 0.176967,
+      "latency_ms": 1977,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:36.379Z",
+      "request_id": "req_011CgKE3b94egVBS1nC6NyDW",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 173,
+        "cache_read_input_tokens": 2288,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 173,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 163,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000126405
+    },
+    {
+      "ts": "2026-10-23T13:11:39.891Z",
+      "conversation_id": 255,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 82,
+      "cache_read_tokens": 2461,
+      "cache_write_tokens": 177,
+      "reasoning_tokens": 0,
+      "input_krw": 0.065989,
+      "output_krw": 0.0574,
+      "cost_krw": 0.12338900000000001,
+      "latency_ms": 1522,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:38.369Z",
+      "request_id": "req_011CgKE3jzcovNirVSQbn9AL",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 177,
+        "cache_read_input_tokens": 2461,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 177,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 82,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008813500000000001
+    },
+    {
+      "ts": "2026-10-23T13:11:41.762Z",
+      "conversation_id": 255,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 178,
+      "cache_read_tokens": 2638,
+      "cache_write_tokens": 97,
+      "reasoning_tokens": 0,
+      "input_krw": 0.054466999999999995,
+      "output_krw": 0.12459999999999999,
+      "cost_krw": 0.17906699999999998,
+      "latency_ms": 1860,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:39.902Z",
+      "request_id": "req_011CgKE3rDRGKDfx7Aoe5t1o",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 97,
+        "cache_read_input_tokens": 2638,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 97,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 178,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000127905
+    },
+    {
+      "ts": "2026-10-23T13:11:43.481Z",
+      "conversation_id": 255,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 168,
+      "cache_read_tokens": 2735,
+      "cache_write_tokens": 193,
+      "reasoning_tokens": 0,
+      "input_krw": 0.072625,
+      "output_krw": 0.1176,
+      "cost_krw": 0.19022499999999998,
+      "latency_ms": 1704,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:41.777Z",
+      "request_id": "req_011CgKE3zD8ojNr8KtfLAcGi",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 193,
+        "cache_read_input_tokens": 2735,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 193,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 168,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00013587499999999998
+    },
+    {
+      "ts": "2026-10-23T13:11:45.411Z",
+      "conversation_id": 255,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 88,
+      "cache_read_tokens": 2928,
+      "cache_write_tokens": 176,
+      "reasoning_tokens": 0,
+      "input_krw": 0.072352,
+      "output_krw": 0.061599999999999995,
+      "cost_krw": 0.13395200000000002,
+      "latency_ms": 1916,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:43.495Z",
+      "request_id": "req_011CgKE47fr2yAUjRfSrd9fH",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 176,
+        "cache_read_input_tokens": 2928,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 176,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00009568
+    },
+    {
+      "ts": "2026-10-23T13:11:47.437Z",
+      "conversation_id": 255,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 106,
+      "cache_read_tokens": 3104,
+      "cache_write_tokens": 111,
+      "reasoning_tokens": 0,
+      "input_krw": 0.063441,
+      "output_krw": 0.0742,
+      "cost_krw": 0.13764099999999999,
+      "latency_ms": 2016,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:45.421Z",
+      "request_id": "req_011CgKE4FokS22PJ3U8Fpvrf",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 111,
+        "cache_read_input_tokens": 3104,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 111,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 106,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000098315
+    },
+    {
+      "ts": "2026-10-23T13:11:49.085Z",
+      "conversation_id": 255,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 117,
+      "cache_read_tokens": 3215,
+      "cache_write_tokens": 143,
+      "reasoning_tokens": 0,
+      "input_krw": 0.070595,
+      "output_krw": 0.0819,
+      "cost_krw": 0.15249500000000002,
+      "latency_ms": 1641,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:47.444Z",
+      "request_id": "req_011CgKE4QTA2pZa7G3ZMwhMS",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 143,
+        "cache_read_input_tokens": 3215,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 143,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 117,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000108925
+    },
+    {
+      "ts": "2026-10-23T13:11:50.556Z",
+      "conversation_id": 255,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 104,
+      "cache_read_tokens": 3358,
+      "cache_write_tokens": 135,
+      "reasoning_tokens": 0,
+      "input_krw": 0.071197,
+      "output_krw": 0.07279999999999999,
+      "cost_krw": 0.143997,
+      "latency_ms": 1461,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:49.095Z",
+      "request_id": "req_011CgKE4XXJD9ZPd1DBThpnr",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 135,
+        "cache_read_input_tokens": 3358,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 135,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 104,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000102855
+    },
+    {
+      "ts": "2026-10-23T13:11:52.603Z",
+      "conversation_id": 255,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 118,
+      "cache_read_tokens": 3493,
+      "cache_write_tokens": 136,
+      "reasoning_tokens": 0,
+      "input_krw": 0.07326200000000001,
+      "output_krw": 0.08259999999999999,
+      "cost_krw": 0.155862,
+      "latency_ms": 2040,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:50.563Z",
+      "request_id": "req_011CgKE4do69ZSD5f4PLT9kn",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 136,
+        "cache_read_input_tokens": 3493,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 136,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 118,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011133
+    },
+    {
+      "ts": "2026-10-23T13:11:54.352Z",
+      "conversation_id": 255,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 146,
+      "cache_read_tokens": 3629,
+      "cache_write_tokens": 139,
+      "reasoning_tokens": 0,
+      "input_krw": 0.07569100000000001,
+      "output_krw": 0.1022,
+      "cost_krw": 0.177891,
+      "latency_ms": 1738,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:52.614Z",
+      "request_id": "req_011CgKE4nag994uV6iUnjc1t",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 139,
+        "cache_read_input_tokens": 3629,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 139,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 146,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000127065
+    },
+    {
+      "ts": "2026-10-23T13:11:55.136Z",
+      "conversation_id": 255,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 521,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.09664199999999999,
+      "output_krw": 0.0112,
+      "cost_krw": 0.107842,
+      "latency_ms": 773,
+      "tag": "extract",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:54.362Z",
+      "request_id": "req_011CgKE4v3PfsF38smqi3EtG",
+      "raw_usage": {
+        "input_tokens": 521,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1693,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007703
+    },
+    {
+      "ts": "2026-10-23T13:11:56.069Z",
+      "conversation_id": 255,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 627,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.11148200000000001,
+      "output_krw": 0.0112,
+      "cost_krw": 0.12268200000000001,
+      "latency_ms": 928,
+      "tag": "extract",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:55.141Z",
+      "request_id": "req_011CgKE4yhf82umzh2UwshZ7",
+      "raw_usage": {
+        "input_tokens": 627,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1693,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008763000000000001
+    },
+    {
+      "ts": "2026-10-23T13:11:58.199Z",
+      "conversation_id": 255,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 134,
+      "cache_read_tokens": 2122,
+      "cache_write_tokens": 857,
+      "reasoning_tokens": 0,
+      "input_krw": 0.180243,
+      "output_krw": 0.09380000000000001,
+      "cost_krw": 0.274043,
+      "latency_ms": 2112,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:56.087Z",
+      "request_id": "req_011CgKE53QtZ3H1G3fKQWJE1",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 857,
+        "cache_read_input_tokens": 2122,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 857,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 134,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000195745
+    },
+    {
+      "ts": "2026-10-23T13:11:59.658Z",
+      "conversation_id": 255,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 105,
+      "cache_read_tokens": 2979,
+      "cache_write_tokens": 140,
+      "reasoning_tokens": 0,
+      "input_krw": 0.06676599999999999,
+      "output_krw": 0.07350000000000001,
+      "cost_krw": 0.140266,
+      "latency_ms": 1445,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:58.213Z",
+      "request_id": "req_011CgKE5CX5kdxAgXGFasa5Q",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 140,
+        "cache_read_input_tokens": 2979,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 140,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010019
+    },
+    {
+      "ts": "2026-10-23T13:12:01.332Z",
+      "conversation_id": 255,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 130,
+      "cache_read_tokens": 3119,
+      "cache_write_tokens": 120,
+      "reasoning_tokens": 0,
+      "input_krw": 0.065226,
+      "output_krw": 0.091,
+      "cost_krw": 0.156226,
+      "latency_ms": 1660,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:11:59.671Z",
+      "request_id": "req_011CgKE5JprMWdG8vDKvrxW2",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 120,
+        "cache_read_input_tokens": 3119,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 120,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 130,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011159000000000001
+    },
+    {
+      "ts": "2026-10-23T13:12:02.803Z",
+      "conversation_id": 255,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 115,
+      "cache_read_tokens": 3239,
+      "cache_write_tokens": 166,
+      "reasoning_tokens": 0,
+      "input_krw": 0.07495600000000001,
+      "output_krw": 0.0805,
+      "cost_krw": 0.155456,
+      "latency_ms": 1462,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:01.341Z",
+      "request_id": "req_011CgKE5RsGCh1Dr7CWDNkGM",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 166,
+        "cache_read_input_tokens": 3239,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 166,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011104000000000001
+    },
+    {
+      "ts": "2026-10-23T13:12:04.666Z",
+      "conversation_id": 255,
+      "turn_no": 17,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 172,
+      "cache_read_tokens": 3405,
+      "cache_write_tokens": 142,
+      "reasoning_tokens": 0,
+      "input_krw": 0.07307999999999999,
+      "output_krw": 0.12040000000000001,
+      "cost_krw": 0.19347999999999999,
+      "latency_ms": 1855,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:02.811Z",
+      "request_id": "req_011CgKE5YDzmxSDn68erz8Sc",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 142,
+        "cache_read_input_tokens": 3405,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 142,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 172,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0001382
+    },
+    {
+      "ts": "2026-10-23T13:12:06.832Z",
+      "conversation_id": 255,
+      "turn_no": 18,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 91,
+      "cache_read_tokens": 3547,
+      "cache_write_tokens": 185,
+      "reasoning_tokens": 0,
+      "input_krw": 0.082593,
+      "output_krw": 0.0637,
+      "cost_krw": 0.146293,
+      "latency_ms": 2158,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:04.674Z",
+      "request_id": "req_011CgKE5g9z5SKxQUhyjnSX4",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 185,
+        "cache_read_input_tokens": 3547,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 185,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000104495
+    },
+    {
+      "ts": "2026-10-23T13:12:07.671Z",
+      "conversation_id": 255,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 462,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.088382,
+      "output_krw": 0.0112,
+      "cost_krw": 0.099582,
+      "latency_ms": 831,
+      "tag": "extract",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:06.840Z",
+      "request_id": "req_011CgKE5qQrNGLzAyvYNetcY",
+      "raw_usage": {
+        "input_tokens": 462,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1693,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007113
+    },
+    {
+      "ts": "2026-10-23T13:12:08.388Z",
+      "conversation_id": 255,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 637,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.11288200000000001,
+      "output_krw": 0.0112,
+      "cost_krw": 0.12408200000000001,
+      "latency_ms": 716,
+      "tag": "extract",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:07.672Z",
+      "request_id": "req_011CgKE5tvTDiMzXCud4Yepr",
+      "raw_usage": {
+        "input_tokens": 637,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1693,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008863000000000001
+    },
+    {
+      "ts": "2026-10-23T13:12:10.431Z",
+      "conversation_id": 255,
+      "turn_no": 19,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 87,
+      "cache_read_tokens": 2122,
+      "cache_write_tokens": 895,
+      "reasoning_tokens": 0,
+      "input_krw": 0.186893,
+      "output_krw": 0.0609,
+      "cost_krw": 0.24779299999999999,
+      "latency_ms": 2032,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:08.399Z",
+      "request_id": "req_011CgKE5x3yBNUtVLo3VsyLb",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 895,
+        "cache_read_input_tokens": 2122,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 895,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 87,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000176995
+    },
+    {
+      "ts": "2026-10-23T13:12:11.828Z",
+      "conversation_id": 255,
+      "turn_no": 20,
+      "purpose": "response",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 4,
+      "output_tokens": 88,
+      "cache_read_tokens": 3017,
+      "cache_write_tokens": 129,
+      "reasoning_tokens": 0,
+      "input_krw": 0.065373,
+      "output_krw": 0.061599999999999995,
+      "cost_krw": 0.126973,
+      "latency_ms": 1383,
+      "tag": "response",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:10.445Z",
+      "request_id": "req_011CgKE66op5A7TyoqmvGL2Z",
+      "raw_usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 129,
+        "cache_read_input_tokens": 3017,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 129,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000090695
+    },
+    {
+      "ts": "2026-10-23T13:12:13.057Z",
+      "conversation_id": 255,
+      "turn_no": 20,
+      "purpose": "extract",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 855,
+      "output_tokens": 135,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.143402,
+      "output_krw": 0.0945,
+      "cost_krw": 0.237902,
+      "latency_ms": 1218,
+      "tag": "extract",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:11.839Z",
+      "request_id": "req_011CgKE6CoE2PurLa8SsHkLh",
+      "raw_usage": {
+        "input_tokens": 855,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1693,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 135,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00016993
+    },
+    {
+      "ts": "2026-10-23T13:12:13.892Z",
+      "conversation_id": 255,
+      "turn_no": 20,
+      "purpose": "extract",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 525,
+      "output_tokens": 16,
+      "cache_read_tokens": 1693,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.09720200000000001,
+      "output_krw": 0.0112,
+      "cost_krw": 0.10840200000000001,
+      "latency_ms": 825,
+      "tag": "extract",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:13.066Z",
+      "request_id": "req_011CgKE6J1kkWqbEjpNWNm1W",
+      "raw_usage": {
+        "input_tokens": 525,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1693,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007743000000000001
+    },
+    {
+      "ts": "2026-10-23T13:12:15.529Z",
+      "conversation_id": 255,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261023131130-backend-flow-20-nc4-flow-1",
+      "model": "claude-haiku-5-5",
+      "ok": true,
+      "input_tokens": 2843,
+      "output_tokens": 206,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.39802000000000004,
+      "output_krw": 0.1442,
+      "cost_krw": 0.54222,
+      "latency_ms": 1629,
+      "tag": "consolidate",
+      "finish_reason": "end_turn",
+      "provider": "anthropic",
+      "started_at": "2026-10-23T13:12:13.900Z",
+      "request_id": "req_011CgKE6MZaML17zE4cX6HJ5",
+      "raw_usage": {
+        "input_tokens": 2843,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 206,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.125,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00038730000000000004
+    }
+  ],
+  "ledger_check": {
+    "db_calls": 27,
+    "ledger_calls": 27,
+    "db_krw": 4.6236820000000005,
+    "ledger_krw": 4.6236820000000005,
+    "match": true
+  },
+  "provenance": {
+    "build_id": "dVzgW67wiF2kU1QJO9fGX",
+    "build_time": "2026-10-23T13:00:28.843Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 6,
+    "git_status_sha": "31526d9ac974",
+    "started_at": "2026-10-23T13:11:30.590Z",
+    "model": {
+      "config": {
+        "response": "claude-haiku-5-5",
+        "extract": "claude-haiku-5-5",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "claude-haiku-5-5",
+          "extract": "claude-haiku-5-5",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off"
+      }
+    },
+    "build_id_after": "dVzgW67wiF2kU1QJO9fGX",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.1867579,
+      "avg_with_end_krw": 0.23118410000000003,
+      "end_krw": 0.8885240000000001,
+      "total_krw": 4.6236820000000005,
+      "segments": {
+        "early": 0.153222,
+        "mid": 0.201817,
+        "late": 0.20831416666666666
+      },
+      "max": {
+        "turn": 12,
+        "krw": 0.40841500000000003,
+        "tags": {
+          "response": 0.177891,
+          "extract": 0.230524
+        }
+      },
+      "by_tag": {
+        "response": 3.2809700000000004,
+        "extract": 0.8004920000000001,
+        "consolidate": 0.54222
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0.8622890784939536,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.112868,
+          "tags": {
+            "response": 0.112868
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.156086,
+          "tags": {
+            "response": 0.156086
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.176967,
+          "tags": {
+            "response": 0.176967
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.12338900000000001,
+          "tags": {
+            "response": 0.12338900000000001
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.17906699999999998,
+          "tags": {
+            "response": 0.17906699999999998
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.19022499999999998,
+          "tags": {
+            "response": 0.19022499999999998
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.13395200000000002,
+          "tags": {
+            "response": 0.13395200000000002
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.13764099999999999,
+          "tags": {
+            "response": 0.13764099999999999
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.15249500000000002,
+          "tags": {
+            "response": 0.15249500000000002
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.143997,
+          "tags": {
+            "response": 0.143997
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.155862,
+          "tags": {
+            "response": 0.155862
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 0.40841500000000003,
+          "tags": {
+            "response": 0.177891,
+            "extract": 0.230524
+          }
+        },
+        {
+          "turn": 13,
+          "krw": 0.274043,
+          "tags": {
+            "response": 0.274043
+          }
+        },
+        {
+          "turn": 14,
+          "krw": 0.140266,
+          "tags": {
+            "response": 0.140266
+          }
+        },
+        {
+          "turn": 15,
+          "krw": 0.156226,
+          "tags": {
+            "response": 0.156226
+          }
+        },
+        {
+          "turn": 16,
+          "krw": 0.155456,
+          "tags": {
+            "response": 0.155456
+          }
+        },
+        {
+          "turn": 17,
+          "krw": 0.19347999999999999,
+          "tags": {
+            "response": 0.19347999999999999
+          }
+        },
+        {
+          "turn": 18,
+          "krw": 0.36995700000000004,
+          "tags": {
+            "response": 0.146293,
+            "extract": 0.22366400000000003
+          }
+        },
+        {
+          "turn": 19,
+          "krw": 0.24779299999999999,
+          "tags": {
+            "response": 0.24779299999999999
+          }
+        },
+        {
+          "turn": 20,
+          "krw": 0.126973,
+          "tags": {
+            "response": 0.126973
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.21746864999999999,
+        "avg_with_end_krw": 0.26189485,
+        "max": {
+          "turn": 12,
+          "krw": 0.6809879999999999
+        },
+        "segments": {
+          "early": 0.20202799999999996,
+          "mid": 0.240756,
+          "late": 0.20831416666666666
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.45450999999999997
+          },
+          {
+            "turn": 2,
+            "krw": 0.156086
+          },
+          {
+            "turn": 3,
+            "krw": 0.176967
+          },
+          {
+            "turn": 4,
+            "krw": 0.12338900000000001
+          },
+          {
+            "turn": 5,
+            "krw": 0.17906699999999998
+          },
+          {
+            "turn": 6,
+            "krw": 0.19022499999999998
+          },
+          {
+            "turn": 7,
+            "krw": 0.13395200000000002
+          },
+          {
+            "turn": 8,
+            "krw": 0.13764099999999999
+          },
+          {
+            "turn": 9,
+            "krw": 0.15249500000000002
+          },
+          {
+            "turn": 10,
+            "krw": 0.143997
+          },
+          {
+            "turn": 11,
+            "krw": 0.155862
+          },
+          {
+            "turn": 12,
+            "krw": 0.6809879999999999
+          },
+          {
+            "turn": 13,
+            "krw": 0.274043
+          },
+          {
+            "turn": 14,
+            "krw": 0.140266
+          },
+          {
+            "turn": 15,
+            "krw": 0.156226
+          },
+          {
+            "turn": 16,
+            "krw": 0.155456
+          },
+          {
+            "turn": 17,
+            "krw": 0.19347999999999999
+          },
+          {
+            "turn": 18,
+            "krw": 0.36995700000000004
+          },
+          {
+            "turn": 19,
+            "krw": 0.24779299999999999
+          },
+          {
+            "turn": 20,
+            "krw": 0.126973
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 0.6781379500000001,
+        "avg_with_end_krw": 0.7361928000000001,
+        "max": {
+          "turn": 12,
+          "krw": 1.265257
+        },
+        "segments": {
+          "early": 0.5512600000000001,
+          "mid": 0.7444560000000001,
+          "late": 0.7487911666666666
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.45450999999999997
+          },
+          {
+            "turn": 2,
+            "krw": 0.49966
+          },
+          {
+            "turn": 3,
+            "krw": 0.545335
+          },
+          {
+            "turn": 4,
+            "krw": 0.5196099999999999
+          },
+          {
+            "turn": 5,
+            "krw": 0.603785
+          },
+          {
+            "turn": 6,
+            "krw": 0.63056
+          },
+          {
+            "turn": 7,
+            "krw": 0.6053600000000001
+          },
+          {
+            "turn": 8,
+            "krw": 0.637385
+          },
+          {
+            "turn": 9,
+            "krw": 0.6701100000000001
+          },
+          {
+            "turn": 10,
+            "krw": 0.6846350000000001
+          },
+          {
+            "turn": 11,
+            "krw": 0.718235
+          },
+          {
+            "turn": 12,
+            "krw": 1.265257
+          },
+          {
+            "turn": 13,
+            "krw": 0.615685
+          },
+          {
+            "turn": 14,
+            "krw": 0.619885
+          },
+          {
+            "turn": 15,
+            "krw": 0.658385
+          },
+          {
+            "turn": 16,
+            "krw": 0.6769350000000001
+          },
+          {
+            "turn": 17,
+            "krw": 0.7416849999999999
+          },
+          {
+            "turn": 18,
+            "krw": 1.213597
+          },
+          {
+            "turn": 19,
+            "krw": 0.5894349999999999
+          },
+          {
+            "turn": 20,
+            "krw": 0.6127100000000001
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 0,
+      "max_points": 0,
+      "probes": 0,
+      "unscored": 0,
+      "max_points_all": 0,
+      "counts": {},
+      "hard_accuracy": null,
+      "fabrication_rate": null,
+      "results": []
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 3,
+        "lang_mix": 0,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "examples": {
+        "same_opening": [
+          {
+            "turn": 11,
+            "text": "*엘리베이터 문이 열리자 먼저 들어가며 손짓한다.* 그치? 달달한 거 한 모금이면 오늘 하루 좀 용서될 것 같아. 편의점 가서 골라 보자, 나 냉장고 앞에서 고민 오래 하는 편이라 기다려 줘라."
+          },
+          {
+            "turn": 12,
+            "text": "*엘리베이터 벽에 기대서 천장을 잠깐 올려다본다.* 우리 팀? 요즘 장애 뒷수습이랑 재발 방지 얘기만 계속 나와서 좀 무거워. 그래도 팀장님이 야근은 최대한 줄이자고 하셔서 그나마 숨은 쉬어. 너희 팀은 어때, 요즘 바빠?"
+          },
+          {
+            "turn": 13,
+            "text": "*엘리베이터 문이 열리고 로비로 먼저 걸어 나간다.* 그러게, 회사 다니는 놈들은 다 비슷한 푸념 하며 사나 봐. 그래도 오늘은 일찍 끝났으니까 그걸로 이긴 거다. 편의점 가자, 나 벌써 달달한 거 생각하고 있어."
+          }
+        ]
+      },
+      "question_rate": 0.4,
+      "avg_chars": 107.45,
+      "style": {
+        "ends_question": 0.35,
+        "multi_question": 0.25,
+        "echo_opening": 0.05,
+        "laugh": 0,
+        "top_opening": "응,",
+        "top_opening_share": 0.15,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0.25,
+        "dialogue_chars": 80.3
+      }
+    }
+  }
+}

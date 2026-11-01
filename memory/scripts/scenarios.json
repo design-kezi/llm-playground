@@ -1,0 +1,75 @@
+{
+  "_doc": "과제 §4 장기 기억 검증 4종. 모두 '바로 앞 메시지만 읽으면 통과 못 하는' 구조: 정보 제공 뒤 filler 턴을 최근 창(6턴) 이상 넣고, 대부분 새 대화(B)에서 묻는다. reply 기대는 실제 모델에서만 의미 있음(가짜 모델이면 memory 기대만 본다).",
+  "filler": [
+    "오늘 날씨 진짜 좋더라 산책하고 싶은 날이야",
+    "요즘 볼만한 드라마 있어? 추천해줘",
+    "점심에 뭐 먹을지 고민이다",
+    "너는 주말에 보통 뭐 해?",
+    "아 월요일 너무 싫다 그치",
+    "방금 커피 쏟았어 하루 시작부터 이러네",
+    "너 노래 좋아해? 어떤 장르?",
+    "오늘 지하철이 너무 붐벼서 힘들었어",
+    "비 올 것 같은데 우산 챙겨야 하나"
+  ],
+  "scenarios": [
+    {
+      "id": "M1",
+      "title": "사용자 정보·선호를 다른 주제가 이어진 뒤에도 기억",
+      "user": "demo-m1",
+      "conversations": [
+        { "name": "A", "turns": ["안녕! 나는 민수야. 부산에 살고 고양이 두 마리 키워", "@filler:8"], "end": true },
+        { "name": "B", "turns": [
+          { "text": "내가 어디 산다고 했지?", "expect_reply": "부산", "note": "deep search 신호 → 원문 발췌 또는 기억 아이템에서 답" },
+          { "text": "나 요즘 집에서 뭐랑 놀겠어?", "expect_reply": "고양이" }
+        ] }
+      ],
+      "expect_memory": { "items_match": ["고양이"], "profile": { "name": "민수", "location": "부산" } }
+    },
+    {
+      "id": "M2",
+      "title": "캐릭터와 사용자 사이의 사건·약속을 이후 반영",
+      "user": "demo-m2",
+      "conversations": [
+        { "name": "A", "turns": [
+          "다음 주 토요일에 할머니 생신이라 시골 내려가. 좀 긴장돼",
+          "갔다 와서 어땠는지 너한테 꼭 얘기해줄게. 약속!",
+          "@filler:7"
+        ], "end": true },
+        { "name": "B", "turns": [
+          { "text": "나 왔어!", "expect_reply": "할머니|생신|시골|어땠", "note": "최근 창에 없음 → 기억 블록의 promise/event 로만 답 가능" }
+        ] }
+      ],
+      "expect_memory": { "items_match": ["할머니|생신", "얘기|약속"], "types_include": ["promise"] }
+    },
+    {
+      "id": "M3",
+      "title": "수정된 정보가 옛 정보를 대체",
+      "user": "demo-m3",
+      "conversations": [
+        { "name": "A", "turns": [
+          "나는 지금 대학생이야. 4학년이고 취준 중",
+          "@filler:4",
+          "아 참, 나 이제 학생 아니고 지난달부터 회사 다녀. 드디어 취직했어",
+          "@filler:7"
+        ], "end": true },
+        { "name": "B", "turns": [
+          { "text": "나 요즘 뭐 하고 지내는지 알아?", "expect_reply": "회사|직장|출근|취직", "expect_not_reply": "대학생|취준" }
+        ] }
+      ],
+      "expect_memory": { "items_match": ["회사|취직|취업"], "superseded_match": ["대학생|4학년|취준|취업 준비"], "active_not_match": ["대학생|4학년|취준|취업 준비 중"] }
+    },
+    {
+      "id": "M4",
+      "title": "대화에 없던 정보를 기억하는 척 지어내지 않음",
+      "user": "demo-m4",
+      "conversations": [
+        { "name": "A", "turns": [
+          "안녕 오늘 처음 왔어",
+          "@filler:3",
+          { "text": "내가 어제 저녁에 뭐 먹었다고 했는지 기억나?", "expect_reply": "기억|말한 적|안 했|못 들|처음|모르|몰라|알려줘|얘기 안|않", "expect_not_reply": "치킨|피자|김치찌개|라면|파스타|삼겹살", "note": "말한 적 없는 정보. 모른다고 하거나 되물어야 함" }
+        ], "end": true }
+      ],
+      "expect_memory": { "active_not_match": ["저녁|먹었"] }
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "summary": {
+    "points": 14,
+    "max_points": 26,
+    "probes": 13,
+    "na": 1,
+    "scored": 13,
+    "counts": {
+      "unknown": 4,
+      "correct": 7,
+      "na": 1,
+      "wrong": 1,
+      "partial": 1
+    },
+    "unanimous_rate": 0.6428571428571429,
+    "needs_human": [],
+    "fail_cause": {
+      "memory": [
+        18,
+        27,
+        29,
+        31,
+        34,
+        35
+      ],
+      "response": []
+    },
+    "judge_cost_krw": 30.86265,
+    "judges": [
+      "moonshotai/Kimi-K2.6",
+      "zai-org/GLM-5.1",
+      "MiniMaxAI/MiniMax-M2.7",
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+    ],
+    "judge_errors": [
+      {
+        "judge": "MiniMaxAI/MiniMax-M2.7",
+        "error": "문항 29,30,31,33,34,35,36,37,38 답 없음 (5개 답함)"
+      }
+    ],
+    "usage": [
+      {
+        "judge": "moonshotai/Kimi-K2.6",
+        "input_tokens": 2828,
+        "output_tokens": 1043,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 29528,
+        "extra_checks": 0,
+        "krw": 9.5585
+      },
+      {
+        "judge": "zai-org/GLM-5.1",
+        "input_tokens": 3671,
+        "output_tokens": 1131,
+        "reasoning_tokens": 361,
+        "finish_reason": "stop",
+        "latency_ms": 8165,
+        "extra_checks": 0,
+        "krw": 11.502750000000002
+      },
+      {
+        "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "input_tokens": 3194,
+        "output_tokens": 620,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 4357,
+        "extra_checks": 0,
+        "krw": 8.811599999999999
+      },
+      {
+        "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "input_tokens": 3374,
+        "output_tokens": 1155,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 69120,
+        "extra_checks": 0,
+        "krw": 0.9898000000000001
+      }
+    ]
+  },
+  "prompt_chars": 5446,
+  "results": [
+    {
+      "turn": 18,
+      "type": "pref",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 18,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "\"미안, 그건... 아직 못 들은 것 같은데!\" — 사용자가 1세션 1턴에 '나 소라야'라고 자기소개했는데, 못 들었다고 거짓말함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 18,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "이름(소라)을 1턴에서 들었지만 '아직 못 들은 것 같은데'라고 모른다고 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 18,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "아직 못 들은 것 같은데!"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 18,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "ANGUAGE: 가단 을 수 었결 있다."
+        }
+      ]
+    },
+    {
+      "turn": 23,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"된장라멘! 방금 그랬잖아\" — 방금 전 20턴에서 사용자가 이치라쿠에서 된장라멘 먹었다고 말한 것을 정확히 기억함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'된장라멘! 방금 그랬잖아'라며 최근 발언을 정확히 인용"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "된장라멘! 방금 그랬잖아"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 다는 일원린 있다."
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"짚신 끈! 오는 길에 끊어져서 대충 묶고 왔다고 했잖아\" — 21턴의 최근 정보를 정확히 회상함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'짚신 끈! 오는 길에 끊어져서 대충 묶고 왔다고 했잖아' 정확"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "짚신 끈! 오는 길에 끊어져서 대충 묶고 왔다고 했잖아"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 직해 증더 연세는 인가 이더."
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "user_promise",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"어... 그거는 내 기억에 없는데!\" — 사용자가 초상화를 갖다주기로 한 적이 있으나(7턴), 못 들었다고 하며 지어내지 않음."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 27,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "초상화 약속을 잊고 '내 기억에 없는데'라고 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 27,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "그거는 내 기억에 없는데"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 27,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 어구 사람 을 수 었결 있다."
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "char_promise",
+      "scope": "revisit",
+      "keyword": "excluded",
+      "final": "na",
+      "points": null,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 28,
+          "label": "na",
+          "memory_had_answer": false,
+          "reason": "\"음... 그런 약속한 기억은 없는데!\" — 8턴에서 캐릭터가 명시적으로 약속하지 않았고, 단수 교육 제안만 했으므로 'requires a promise' 조건 불충족."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 28,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "turn 8에 분신술 약속을 했으나 '그런 약속한 기억은 없는데'라고 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 28,
+          "label": "na",
+          "memory_had_answer": false,
+          "reason": "그런 약속한 기억은 없는데"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 28,
+          "label": "na",
+          "memory_had_answer": true,
+          "reason": "LANGUAGE: 다가 소스 신가를 추가 있습니다."
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "relative_time",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"날짜는 잘 모르겠어\" — 사용자가 '다음 주 수요일'이라고 했으나(6턴), 캐릭터가 날짜 계산을 못 하거나 모르겠다고 함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'날짜는 잘 모르겠어'라며 이틀 남은 예선을 계산하지 못함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "날짜는 잘 모르겠어"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 나 일 사용 연세는 인가 이더."
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"츠루 할머니! 네가 방금 알려 줬잖아\" — 22턴의 최근 정보를 정확히 회상함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'츠루 할머니! 네가 방금 알려 줬잖아' 정확"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "츠루 할머니! 네가 방금 알려 줬잖아"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 체레 앰른드 어구 사람 을 수 었결 있다."
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "type": "implicit",
+      "scope": "revisit",
+      "keyword": "needs_judge",
+      "final": "wrong",
+      "points": -1,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 31,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "\"난 개 자체는 싫진 않아\" — 사용자가 개털 알레르기가 있음을 밝혔으나(2턴), 이를 완전히 간과하고 알레르기 우려 없이 잡담함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 31,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "개털 알레르기 제약을 전혀 언급하지 않고 '네가 편한지가 먼저'라고만 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 31,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "난 개 자체는 싫진 않아"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 31,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 어구 사용되 못들신 있다 알고 었꼴가 나 더려어 수 있으체 야 없는 와 수 었다."
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "update",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"목요일! 화요일에서 목요일로 옮겼다고 네가 말했잖아\" — 3턴의 낡은 값(화요일) 무시하고 19턴의 변경사항(목요일)을 정확히 적용함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'목요일! 화요일에서 목요일로 옮겼다고' 업데이트된 값 정확"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "목요일! 화요일에서 목요일로 옮겼다고 네가 말했잖아"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 모해 총의 일 연세는 인가 이더."
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "pref",
+      "scope": "revisit",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"네가 뭘 좋아한다고 한 적은 기억에 없는데\" — 사용자가 5턴에 팥빙수 언급했으나 모른다고 함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "팥빙수를 잊고 '뭘 좋아한다고 한 적은 기억에 없는데'라고 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "네가 뭘 좋아한다고 한 적은 기억에 없는데"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 어구 사용 완료 어구 사용되 었꼴가 수 있으체."
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "combine",
+      "scope": "recent+revisit",
+      "keyword": "partial",
+      "final": "partial",
+      "points": 1,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 35,
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "\"아까 언니 보러 간다고 했던 거\" — '언니'는 맞으나 '모래마을'을 언급하지 않아 1세션 4턴+2세션 24턴의 결합 정보 불완전."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 35,
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "'언니 보러 간다고 했던 거'는 맞지만 모래마을은 언급 안 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 35,
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "아까 언니 보러 간다고 했던 거 말하는 거야?"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 35,
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 어구 사용되 었꼴가 사람 어구 사용 수가 있다."
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "half_said",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"고민 얘기는 내 기억에 없어\" — 11턴에서 고민 내용은 '나중에 말할게'라고 했으므로, 아직 안 들었다고 정확히 abstain."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "고민 내용을 지어내지 않고 '고민 얘기는 내 기억에 없어'라고 답해 지어내지 않음"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "고민 얘기는 내 기억에 없어"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "LANGUAGE: 어구 사용되 었꼴가 신가를 추가 있습니다."
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"그건 네가 말한 적 없는 것 같은데!\" — 사용자가 혈액형을 언급한 적 없으므로 abstain 정확함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'네가 말한 적 없는 것 같은데'라며 혈액형을 지어내지 않음"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "네가 말한 적 없는 것 같은데"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 37,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "LANGUAGE: 어구 사용 완료 어구 사용되 었꼴가 수 있으체."
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"꽃 얘기는 기억에 없어... 혹시 나한테 말 안 했던 거 아니야?\" — 사용자가 좋아하는 꽃을 말한 적 없으므로 abstain 정확함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'꽃 얘기는 기억에 없어... 나한테 말 안 했던 거 아니야?'라며 지어내지 않음"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "꽃 얘기는 기억에 없어"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 38,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "LANGUAGE: 어구 사용 완료 어구 사용되 었꼴가 수 있으체."
+        }
+      ]
+    }
+  ]
+}

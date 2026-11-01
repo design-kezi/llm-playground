@@ -1,0 +1,1795 @@
+{
+  "run_id": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+  "scenario": "backend-date-12",
+  "character_id": "backend",
+  "user_name": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+  "conversation_id": 811,
+  "label": "dt3-v2-dsx-dategate-r1",
+  "env": {
+    "MODEL_EXTRACT": "deepseek-flash",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "APP_MEMORY_BUDGET": "2000",
+    "APP_RECALL": "on",
+    "APP_REPLY_STYLE": "v2",
+    "APP_DATE": "gate",
+    "MODEL_RESPONSE": "deepseek-flash",
+    "MODEL_REASONING_RESPONSE": "on",
+    "APP_MAX_TOKENS": "***",
+    "APP_ASYNC_FOLD": "on",
+    "APP_CLOCK_OFFSET_DAYS": "11"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-11-01T02:13:11.246Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "kind": "filler",
+      "user": "준호야, 나 민재. 오늘 일 많아?",
+      "reply": "*모니터에서 눈을 떼고 목을 좌우로 꺾는다.* 말도 마, 민재야. 결제쪽에 레거시 손 좀 봐야 해서 오전 내내 로그만 파고 있었어. 목요일이 이래 갖고 금요일은 대체 어떻게 버티나 싶다 ㅋㅋ.",
+      "turn_cost_krw": 0.166152,
+      "latency_ms": 2506,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "kind": "filler",
+      "user": "요즘 날씨 많이 쌀쌀해졌다. 아침에 나오는데 손 시렸어.",
+      "reply": "*텀블러를 들어 아아를 흔들어 보인다.* 맞아, 아침에 신분당선 탈 때 손 시려서 결국 주머니에 넣었어. 근데 그 와중에 아아는 못 끊겠더라 ㅋㅋ. 이 날씨에 아이스 마시는 사람 나밖에 없을 줄 알았는데.",
+      "turn_cost_krw": 0.18978119999999998,
+      "latency_ms": 1858,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "kind": "probe",
+      "user": "근데 오늘 며칠이더라? 갑자기 헷갈리네.",
+      "reply": "*핸드폰을 집어 화면을 확인한다.* 12일, 목요일. 내일만 넘기면 주말인데 하필 목요일에 일이 몰려서 진땀 뺐네. 내일 배포는 절대 안 한다니까, 그건 월요일의 나한테 맡기자고.",
+      "turn_cost_krw": 0.17636639999999995,
+      "latency_ms": 1609,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "kind": "filler",
+      "user": "오늘 배포 있어?",
+      "reply": "*키보드에서 손을 떼고 어깨를 돌린다.* 오늘은 없어, 다행히. 근데 금요일 새벽에 터질까 봐 오후에 모니터링 대시보드만 계속 쳐다보는 중이야 ㅋㅋ. 이게 진짜 웃긴 게 배포 안 하는 날이 더 긴장돼.",
+      "turn_cost_krw": 0.21995400000000004,
+      "latency_ms": 2124,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "kind": "probe",
+      "user": "오늘 무슨 요일이지?",
+      "reply": "*피식 웃으며 고개를 젓는다.* 목요일이야, 아까도 말했잖아 ㅋㅋ. 하루가 안 끝나서 그런가 기분 탓인지 목요일이 두 번 온 느낌이네.",
+      "turn_cost_krw": 0.1209516,
+      "latency_ms": 1207,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "session": 1,
+      "kind": "filler",
+      "user": "아 그리고 나 이번 달 20일에 시험 있어. 벌써 걱정된다.",
+      "reply": "*자판에서 손을 떼고 의자를 돌린다.* 20일이면 다음 주 금요일이네. 시험을 금요일로 잡는 건 좀 매섭다, 하루 종일 마음 졸이게. 걱정된다니까 위로는 못 해주겠지만, 그날만큼은 새벽 장애 알람도 없길 빌어줄게 ㅋㅋ.",
+      "turn_cost_krw": 0.1955016,
+      "latency_ms": 1847,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "session": 1,
+      "kind": "filler",
+      "user": "요즘 맡은 프로젝트는 잘 돼?",
+      "reply": "*모니터 한쪽에 뜬 에러 로그를 손가락으로 짚는다.* 잘 되긴 뭐가 잘 돼 ㅋㅋ. 결제 API가 타임아웃 나는 구간을 이틀째 쫓고 있는데, 문서라고는 주석 세 줄이 다야. 레거시 짠 사람 붙잡고 물어보고 싶은데 그분 몇 년 전에 퇴사하셨어. 그래도 뭐, 물려받은 거 끝까지는 뜯어봐야지.",
+      "turn_cost_krw": 0.2339316,
+      "latency_ms": 1984,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "session": 1,
+      "kind": "probe",
+      "user": "시험까지 며칠 남았지?",
+      "reply": "*달력을 머릿속으로 세며 손가락을 꼽는다.* 오늘이 12일이니까 20일까지 딱 8일 남았네. 일주일하고 하루, 은근 촉박하다. 오늘부터 하나씩 정리해 두면 그렇게 쫓기진 않을 거야.",
+      "turn_cost_krw": 0.1617168,
+      "latency_ms": 1683,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "session": 1,
+      "kind": "filler",
+      "user": "점심 뭐 먹을지 고민이다. 따뜻한 국물 먹고 싶어.",
+      "reply": "*벌써부터 고민인지 하마터면 웃을 뻔하고, 턱을 괸다.* 그 말 진짜 공감돼, 점심 메뉴가 하루 최대 난제야 ㅋㅋ. 이 날씨에 국물이면 나는 순대국이나 칼국수 쪽으로 기울 것 같은데, 회사 근처에 괜찮은 데 있어?",
+      "turn_cost_krw": 0.1591968,
+      "latency_ms": 1577,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "session": 1,
+      "kind": "probe",
+      "user": "내일은 무슨 요일이야?",
+      "reply": "*어이없다는 듯 헛웃음을 터뜨린다.* 금요일이지, 내일만 넘기면 주말이야 ㅋㅋ. 이번 주는 목요일이 자꾸 두 번 오는 기분이라 나도 모르겠네.",
+      "turn_cost_krw": 0.129822,
+      "latency_ms": 1255,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "session": 1,
+      "kind": "filler",
+      "user": "오늘 퇴근하고 뭐 해?",
+      "reply": "*어깨를 돌리다가 팔을 내린다.* 헬스장 끊어놓고 이번 주에 한 번도 못 갔어 ㅋㅋ. 오늘은 진짜 가려고 운동복 회사에 두고 왔는데, 퇴근 시간 되면 또 침대가 부를 것 같네.",
+      "turn_cost_krw": 0.15618959999999998,
+      "latency_ms": 1558,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "session": 1,
+      "kind": "probe",
+      "user": "이번 주 토요일이 며칠이야?",
+      "reply": "*손가락으로 허공에 날짜를 짚어 본다.* 14일이지. 12일 목요일이니까 토요일은 이틀 뒤, 14일. 주말 계획이라도 세워놨나 봐.",
+      "turn_cost_krw": 0.1132572,
+      "latency_ms": 1396,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 134,
+      "output_tokens": 156,
+      "cache_read_tokens": 1660,
+      "cache_write_tokens": 0,
+      "input_krw": 0.035112,
+      "output_krw": 0.13104,
+      "cost_krw": 0.166152,
+      "latency_ms": 2453,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 313,
+      "output_tokens": 140,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0721812,
+      "output_krw": 0.1176,
+      "cost_krw": 0.18978119999999998,
+      "latency_ms": 1842,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 228,
+      "output_tokens": 144,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0554064,
+      "output_krw": 0.12095999999999998,
+      "cost_krw": 0.17636639999999995,
+      "latency_ms": 1593,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 189,
+      "output_tokens": 205,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.047754,
+      "output_krw": 0.17220000000000002,
+      "cost_krw": 0.21995400000000004,
+      "latency_ms": 2110,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 171,
+      "output_tokens": 91,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0445116,
+      "output_krw": 0.07644,
+      "cost_krw": 0.1209516,
+      "latency_ms": 1186,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 258,
+      "output_tokens": 158,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06278159999999999,
+      "output_krw": 0.13272,
+      "cost_krw": 0.1955016,
+      "latency_ms": 1822,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 317,
+      "output_tokens": 189,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.07517159999999999,
+      "output_krw": 0.15875999999999998,
+      "cost_krw": 0.2339316,
+      "latency_ms": 1948,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 260,
+      "output_tokens": 116,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0642768,
+      "output_krw": 0.09744,
+      "cost_krw": 0.1617168,
+      "latency_ms": 1658,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 308,
+      "output_tokens": 101,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0743568,
+      "output_krw": 0.08484,
+      "cost_krw": 0.1591968,
+      "latency_ms": 1557,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 239,
+      "output_tokens": 82,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06094200000000001,
+      "output_krw": 0.06888,
+      "cost_krw": 0.129822,
+      "latency_ms": 1234,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 194,
+      "output_tokens": 124,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.052029599999999995,
+      "output_krw": 0.10415999999999999,
+      "cost_krw": 0.15618959999999998,
+      "latency_ms": 1539,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 163,
+      "output_tokens": 80,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04605719999999999,
+      "output_krw": 0.0672,
+      "cost_krw": 0.1132572,
+      "latency_ms": 1357,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 439,
+      "output_tokens": 54,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0986412,
+      "output_krw": 0.045360000000000004,
+      "cost_krw": 0.1440012,
+      "latency_ms": 858,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 680,
+      "output_tokens": 63,
+      "cache_read_tokens": 1408,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1487136,
+      "output_krw": 0.052919999999999995,
+      "cost_krw": 0.2016336,
+      "latency_ms": 1302,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 853,
+      "output_tokens": 56,
+      "cache_read_tokens": 1408,
+      "cache_write_tokens": 0,
+      "input_krw": 0.18504359999999997,
+      "output_krw": 0.047040000000000005,
+      "cost_krw": 0.23208359999999997,
+      "latency_ms": 920,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 1388,
+      "output_tokens": 89,
+      "cache_read_tokens": 128,
+      "cache_write_tokens": 0,
+      "input_krw": 0.2920176,
+      "output_krw": 0.07476,
+      "cost_krw": 0.3667776,
+      "latency_ms": 1121,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    }
+  ],
+  "report": {
+    "conversation_id": 811,
+    "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+    "character_id": "backend",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 12,
+    "calls": 16,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 6134,
+      "cache_read": 30204,
+      "cache_write": 0,
+      "output": 1848
+    },
+    "total_krw": 2.9673168,
+    "input_krw": 1.4149968,
+    "output_krw": 1.55232,
+    "avg_krw_per_turn": 0.24727639999999998,
+    "by_tag_krw": {
+      "response": 2.0228208,
+      "extract": 0.5777184,
+      "consolidate": 0.3667776
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-4",
+        "avg_krw": 0.1880634
+      },
+      {
+        "phase": "mid",
+        "turns": "5-8",
+        "avg_krw": 0.1780254
+      },
+      {
+        "phase": "late",
+        "turns": "9-12",
+        "avg_krw": 0.22602509999999998
+      }
+    ],
+    "max_turn": {
+      "turn_no": 12,
+      "krw": 0.45889199999999997
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "deepseek-flash",
+        "extract": "deepseek-flash",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "on",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 2000,
+        "memory_budget_tokens": 2000,
+        "recall": "on",
+        "reply_style": "v2",
+        "date": "gate",
+        "async_fold": "on",
+        "clock_offset_days": 11
+      },
+      "env": {
+        "APP_ASYNC_FOLD": "on",
+        "APP_CLOCK_OFFSET_DAYS": "11",
+        "APP_DATE": "gate",
+        "APP_MAX_TOKENS": "2000",
+        "APP_MEMORY_BUDGET": "2000",
+        "APP_RECALL": "on",
+        "APP_REPLY_STYLE": "v2",
+        "MODEL_EXTRACT": "deepseek-flash",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "on",
+        "MODEL_RESPONSE": "deepseek-flash",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+    "profile": {
+      "name": "민재"
+    },
+    "items": [
+      {
+        "id": 9350,
+        "type": "fact",
+        "text": "사용자의 이름은 민재다",
+        "when": null,
+        "importance": 5,
+        "status": "active",
+        "slot": "user.name",
+        "entity": "user",
+        "depends_on": null,
+        "value": "민재",
+        "source": {
+          "conversation_id": 811,
+          "turn_no": 1,
+          "local_turn_no": 1
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T02:13:07.617Z"
+      },
+      {
+        "id": 9356,
+        "type": "event",
+        "text": "사용자는 이번 달 20일에 시험을 본다",
+        "when": "2026-11-20 (이번 달 20일)",
+        "importance": 4,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 811,
+          "turn_no": 6,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T02:13:08.928Z"
+      },
+      {
+        "id": 9360,
+        "type": "preference",
+        "text": "사용자는 따뜻한 국물 요리를 먹고 싶어 한다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 811,
+          "turn_no": 9,
+          "local_turn_no": 9
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T02:13:09.870Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 631,
+        "conversation_id": 811,
+        "summary": "민재는 20일 시험을 앞두고 걱정을 털어놨고, 준호는 결제 API 타임아웃과 레거시 코드 문제로 고생 중이라고 밝혔다. 날씨·요일·점심 메뉴 같은 가벼운 잡담을 나누며 편하게 대화했다.",
+        "created_at": "2026-11-01T02:13:11.016Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 16463,
+        "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+        "conversation_id": 811,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "민재는 20일 시험을 앞두고 걱정을 털어놨고, 준호는 결제 API 타임아웃과 레거시 코드 문제로 고생 중이라고 밝혔다. 날씨·요일·점심 메뉴 같은 가벼운 잡담을 나누며 편하게 대화했다.",
+        "created_at": "2026-11-01T02:13:11.026Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 16458,
+        "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+        "conversation_id": 811,
+        "turn_no": 9,
+        "op": "ADD",
+        "item_id": 9360,
+        "detail": "사용자는 따뜻한 국물 요리를 먹고 싶어 한다",
+        "created_at": "2026-11-01T02:13:09.882Z",
+        "local_turn_no": 9
+      },
+      {
+        "id": 16452,
+        "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+        "conversation_id": 811,
+        "turn_no": 12,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":2000,\"used\":121,\"included\":[9350,9356],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-11-01T02:13:08.940Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 16451,
+        "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+        "conversation_id": 811,
+        "turn_no": 6,
+        "op": "ADD",
+        "item_id": 9356,
+        "detail": "사용자는 이번 달 20일에 시험을 본다",
+        "created_at": "2026-11-01T02:13:08.929Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 16442,
+        "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+        "conversation_id": 811,
+        "turn_no": 1,
+        "op": "ADD",
+        "item_id": 9350,
+        "detail": "사용자의 이름은 민재다",
+        "created_at": "2026-11-01T02:13:07.618Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 16441,
+        "user_id": "bench-20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+        "conversation_id": 811,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"민재\"}",
+        "created_at": "2026-11-01T02:13:07.614Z",
+        "local_turn_no": 3
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-11-01T02:12:48.644Z",
+      "conversation_id": 811,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 134,
+      "output_tokens": 156,
+      "cache_read_tokens": 1660,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 72,
+      "input_krw": 0.035112,
+      "output_krw": 0.13104,
+      "cost_krw": 0.166152,
+      "latency_ms": 2453,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:46.191Z",
+      "price_window": "offpeak",
+      "request_id": "0baffa7b-1a8a-4986-8ff2-2b9e66493e55",
+      "raw_usage": {
+        "prompt_tokens": 1794,
+        "completion_tokens": 156,
+        "total_tokens": 1950,
+        "prompt_tokens_details": {
+          "cached_tokens": 1660
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 72
+        },
+        "prompt_cache_hit_tokens": 1660,
+        "prompt_cache_miss_tokens": 134
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011868
+    },
+    {
+      "ts": "2026-11-01T02:12:50.506Z",
+      "conversation_id": 811,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 313,
+      "output_tokens": 140,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 50,
+      "input_krw": 0.0721812,
+      "output_krw": 0.1176,
+      "cost_krw": 0.18978119999999998,
+      "latency_ms": 1842,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:48.664Z",
+      "price_window": "offpeak",
+      "request_id": "69d211c0-af17-4510-91f4-2f8596187aed",
+      "raw_usage": {
+        "prompt_tokens": 1849,
+        "completion_tokens": 140,
+        "total_tokens": 1989,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 50
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 313
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00013555799999999998
+    },
+    {
+      "ts": "2026-11-01T02:12:52.114Z",
+      "conversation_id": 811,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 228,
+      "output_tokens": 144,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 64,
+      "input_krw": 0.0554064,
+      "output_krw": 0.12095999999999998,
+      "cost_krw": 0.17636639999999995,
+      "latency_ms": 1593,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:50.521Z",
+      "price_window": "offpeak",
+      "request_id": "ca8d613b-8aec-4703-9e78-ae474cadd804",
+      "raw_usage": {
+        "prompt_tokens": 2020,
+        "completion_tokens": 144,
+        "total_tokens": 2164,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 228
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00012597599999999997
+    },
+    {
+      "ts": "2026-11-01T02:12:54.239Z",
+      "conversation_id": 811,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 189,
+      "output_tokens": 205,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 108,
+      "input_krw": 0.047754,
+      "output_krw": 0.17220000000000002,
+      "cost_krw": 0.21995400000000004,
+      "latency_ms": 2110,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:52.129Z",
+      "price_window": "offpeak",
+      "request_id": "1d07e5b8-224f-40a0-864b-568c595fc1b7",
+      "raw_usage": {
+        "prompt_tokens": 2109,
+        "completion_tokens": 205,
+        "total_tokens": 2314,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 108
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 189
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00015711000000000002
+    },
+    {
+      "ts": "2026-11-01T02:12:55.441Z",
+      "conversation_id": 811,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 171,
+      "output_tokens": 91,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 28,
+      "input_krw": 0.0445116,
+      "output_krw": 0.07644,
+      "cost_krw": 0.1209516,
+      "latency_ms": 1186,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:54.255Z",
+      "price_window": "offpeak",
+      "request_id": "39ab56c6-26c0-4508-ae89-18083acbd80c",
+      "raw_usage": {
+        "prompt_tokens": 2219,
+        "completion_tokens": 91,
+        "total_tokens": 2310,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 28
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 171
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000086394
+    },
+    {
+      "ts": "2026-11-01T02:12:57.286Z",
+      "conversation_id": 811,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 258,
+      "output_tokens": 158,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 58,
+      "input_krw": 0.06278159999999999,
+      "output_krw": 0.13272,
+      "cost_krw": 0.1955016,
+      "latency_ms": 1822,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:55.464Z",
+      "price_window": "offpeak",
+      "request_id": "61022527-77e4-4ef6-82d3-a036bb786db2",
+      "raw_usage": {
+        "prompt_tokens": 2306,
+        "completion_tokens": 158,
+        "total_tokens": 2464,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 58
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 258
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000139644
+    },
+    {
+      "ts": "2026-11-01T02:12:59.263Z",
+      "conversation_id": 811,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 317,
+      "output_tokens": 189,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 60,
+      "input_krw": 0.07517159999999999,
+      "output_krw": 0.15875999999999998,
+      "cost_krw": 0.2339316,
+      "latency_ms": 1948,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:57.314Z",
+      "price_window": "offpeak",
+      "request_id": "f484f4e4-17b4-4f92-996a-ff82c222eef6",
+      "raw_usage": {
+        "prompt_tokens": 2365,
+        "completion_tokens": 189,
+        "total_tokens": 2554,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 60
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 317
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00016709399999999998
+    },
+    {
+      "ts": "2026-11-01T02:13:00.955Z",
+      "conversation_id": 811,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 260,
+      "output_tokens": 116,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 37,
+      "input_krw": 0.0642768,
+      "output_krw": 0.09744,
+      "cost_krw": 0.1617168,
+      "latency_ms": 1658,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:12:59.297Z",
+      "price_window": "offpeak",
+      "request_id": "ce561a7c-bd46-44d5-a427-95faa4d2ff7e",
+      "raw_usage": {
+        "prompt_tokens": 2564,
+        "completion_tokens": 116,
+        "total_tokens": 2680,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 260
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011551199999999999
+    },
+    {
+      "ts": "2026-11-01T02:13:02.535Z",
+      "conversation_id": 811,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 308,
+      "output_tokens": 101,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0743568,
+      "output_krw": 0.08484,
+      "cost_krw": 0.1591968,
+      "latency_ms": 1557,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:00.977Z",
+      "price_window": "offpeak",
+      "request_id": "b33c4a5e-3586-4beb-b7b4-bbe56834bac5",
+      "raw_usage": {
+        "prompt_tokens": 2612,
+        "completion_tokens": 101,
+        "total_tokens": 2713,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 308
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000113712
+    },
+    {
+      "ts": "2026-11-01T02:13:03.792Z",
+      "conversation_id": 811,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 239,
+      "output_tokens": 82,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 13,
+      "input_krw": 0.06094200000000001,
+      "output_krw": 0.06888,
+      "cost_krw": 0.129822,
+      "latency_ms": 1234,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:02.558Z",
+      "price_window": "offpeak",
+      "request_id": "6899b582-46a2-40aa-8f60-e6445b5bce31",
+      "raw_usage": {
+        "prompt_tokens": 2799,
+        "completion_tokens": 82,
+        "total_tokens": 2881,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 239
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00009273
+    },
+    {
+      "ts": "2026-11-01T02:13:05.344Z",
+      "conversation_id": 811,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 194,
+      "output_tokens": 124,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 43,
+      "input_krw": 0.052029599999999995,
+      "output_krw": 0.10415999999999999,
+      "cost_krw": 0.15618959999999998,
+      "latency_ms": 1539,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:03.805Z",
+      "price_window": "offpeak",
+      "request_id": "a05dbd76-96f8-4198-98a7-865477c29cad",
+      "raw_usage": {
+        "prompt_tokens": 2882,
+        "completion_tokens": 124,
+        "total_tokens": 3006,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 43
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 194
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011156399999999999
+    },
+    {
+      "ts": "2026-11-01T02:13:06.725Z",
+      "conversation_id": 811,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 163,
+      "output_tokens": 80,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 20,
+      "input_krw": 0.04605719999999999,
+      "output_krw": 0.0672,
+      "cost_krw": 0.1132572,
+      "latency_ms": 1357,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:05.368Z",
+      "price_window": "offpeak",
+      "request_id": "a03b827d-c5e1-48d7-92e5-e82d365f0ae3",
+      "raw_usage": {
+        "prompt_tokens": 2979,
+        "completion_tokens": 80,
+        "total_tokens": 3059,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 20
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 163
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000080898
+    },
+    {
+      "ts": "2026-11-01T02:13:07.610Z",
+      "conversation_id": 811,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 439,
+      "output_tokens": 54,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0986412,
+      "output_krw": 0.045360000000000004,
+      "cost_krw": 0.1440012,
+      "latency_ms": 858,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:06.751Z",
+      "price_window": "offpeak",
+      "request_id": "b663fcb4-0c49-48fd-a2d2-b08f6db9c859",
+      "raw_usage": {
+        "prompt_tokens": 1975,
+        "completion_tokens": 54,
+        "total_tokens": 2029,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 439
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000102858
+    },
+    {
+      "ts": "2026-11-01T02:13:08.926Z",
+      "conversation_id": 811,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 680,
+      "output_tokens": 63,
+      "cache_read_tokens": 1408,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.1487136,
+      "output_krw": 0.052919999999999995,
+      "cost_krw": 0.2016336,
+      "latency_ms": 1302,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:07.624Z",
+      "price_window": "offpeak",
+      "request_id": "0f651ad7-5cd0-4f23-928e-0c8bbb6a9152",
+      "raw_usage": {
+        "prompt_tokens": 2088,
+        "completion_tokens": 63,
+        "total_tokens": 2151,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 680
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000144024
+    },
+    {
+      "ts": "2026-11-01T02:13:09.868Z",
+      "conversation_id": 811,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 853,
+      "output_tokens": 56,
+      "cache_read_tokens": 1408,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.18504359999999997,
+      "output_krw": 0.047040000000000005,
+      "cost_krw": 0.23208359999999997,
+      "latency_ms": 920,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:08.948Z",
+      "price_window": "offpeak",
+      "request_id": "f33e9b06-9f3a-4bc3-a71c-4fab00225ae7",
+      "raw_usage": {
+        "prompt_tokens": 2261,
+        "completion_tokens": 56,
+        "total_tokens": 2317,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 853
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000165774
+    },
+    {
+      "ts": "2026-11-01T02:13:11.015Z",
+      "conversation_id": 811,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261101021243-backend-date-12-dt3-v2-dsx-dategate-r1",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 1388,
+      "output_tokens": 89,
+      "cache_read_tokens": 128,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.2920176,
+      "output_krw": 0.07476,
+      "cost_krw": 0.3667776,
+      "latency_ms": 1121,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-11-01T02:13:09.894Z",
+      "price_window": "offpeak",
+      "request_id": "46d4df88-74de-478b-8f07-cbdaeaf940b3",
+      "raw_usage": {
+        "prompt_tokens": 1516,
+        "completion_tokens": 89,
+        "total_tokens": 1605,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1388
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000261984
+    }
+  ],
+  "ledger_check": {
+    "db_calls": 16,
+    "ledger_calls": 16,
+    "db_krw": 2.9673168,
+    "ledger_krw": 2.9673168,
+    "match": true
+  },
+  "provenance": {
+    "build_id": "bB3lkVzEhL7HjlT8MCSuL",
+    "build_time": "2026-11-01T02:12:39.658Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 6,
+    "git_status_sha": "31526d9ac974",
+    "started_at": "2026-11-01T02:12:43.543Z",
+    "model": {
+      "config": {
+        "response": "deepseek-flash",
+        "extract": "deepseek-flash",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "deepseek-flash",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "bB3lkVzEhL7HjlT8MCSuL",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.1973713,
+      "avg_with_end_krw": 0.24727639999999998,
+      "end_krw": 0.5988612,
+      "total_krw": 2.9673168,
+      "segments": {},
+      "max": {
+        "turn": 12,
+        "krw": 0.45889199999999997,
+        "tags": {
+          "response": 0.1132572,
+          "extract": 0.3456348
+        }
+      },
+      "by_tag": {
+        "response": 2.0228208,
+        "extract": 0.5777184,
+        "consolidate": 0.3667776
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0.8311959931751886,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.166152,
+          "tags": {
+            "response": 0.166152
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.18978119999999998,
+          "tags": {
+            "response": 0.18978119999999998
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.17636639999999995,
+          "tags": {
+            "response": 0.17636639999999995
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.21995400000000004,
+          "tags": {
+            "response": 0.21995400000000004
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.1209516,
+          "tags": {
+            "response": 0.1209516
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.1955016,
+          "tags": {
+            "response": 0.1955016
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.2339316,
+          "tags": {
+            "response": 0.2339316
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.1617168,
+          "tags": {
+            "response": 0.1617168
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.1591968,
+          "tags": {
+            "response": 0.1591968
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.129822,
+          "tags": {
+            "response": 0.129822
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.15618959999999998,
+          "tags": {
+            "response": 0.15618959999999998
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 0.45889199999999997,
+          "tags": {
+            "response": 0.1132572,
+            "extract": 0.3456348
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.3069941,
+        "avg_with_end_krw": 0.36128959999999993,
+        "max": {
+          "turn": 12,
+          "krw": 1.0911096
+        },
+        "segments": {},
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8494079999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.18978119999999998
+          },
+          {
+            "turn": 3,
+            "krw": 0.17636639999999995
+          },
+          {
+            "turn": 4,
+            "krw": 0.21995400000000004
+          },
+          {
+            "turn": 5,
+            "krw": 0.1209516
+          },
+          {
+            "turn": 6,
+            "krw": 0.1955016
+          },
+          {
+            "turn": 7,
+            "krw": 0.2339316
+          },
+          {
+            "turn": 8,
+            "krw": 0.1617168
+          },
+          {
+            "turn": 9,
+            "krw": 0.1591968
+          },
+          {
+            "turn": 10,
+            "krw": 0.129822
+          },
+          {
+            "turn": 11,
+            "krw": 0.15618959999999998
+          },
+          {
+            "turn": 12,
+            "krw": 1.0911096
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 1.1323892999999998,
+        "avg_with_end_krw": 1.2349792,
+        "max": {
+          "turn": 12,
+          "krw": 2.2501752
+        },
+        "segments": {},
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8494079999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.8219987999999999
+          },
+          {
+            "turn": 3,
+            "krw": 0.9139535999999999
+          },
+          {
+            "turn": 4,
+            "krw": 1.010226
+          },
+          {
+            "turn": 5,
+            "krw": 0.9639083999999999
+          },
+          {
+            "turn": 6,
+            "krw": 1.0384584
+          },
+          {
+            "turn": 7,
+            "krw": 1.0768883999999999
+          },
+          {
+            "turn": 8,
+            "krw": 1.1100431999999998
+          },
+          {
+            "turn": 9,
+            "krw": 1.1075232
+          },
+          {
+            "turn": 10,
+            "krw": 1.1835179999999998
+          },
+          {
+            "turn": 11,
+            "krw": 1.2625704
+          },
+          {
+            "turn": 12,
+            "krw": 2.2501752
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 10,
+      "max_points": 10,
+      "probes": 5,
+      "unscored": 0,
+      "max_points_all": 10,
+      "counts": {
+        "correct": 5
+      },
+      "hard_accuracy": null,
+      "fabrication_rate": 0,
+      "results": [
+        {
+          "turn": 3,
+          "type": "date",
+          "difficulty": "easy",
+          "user": "근데 오늘 며칠이더라? 갑자기 헷갈리네.",
+          "reply": "*핸드폰을 집어 화면을 확인한다.* 12일, 목요일. 내일만 넘기면 주말인데 하필 목요일에 일이 몰려서 진땀 뺐네. 내일 배포는 절대 안 한다니까, 그건 월요일의 나한테 맡기자고.",
+          "expect": [
+            "12일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "12일"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 5,
+          "type": "date",
+          "difficulty": "easy",
+          "user": "오늘 무슨 요일이지?",
+          "reply": "*피식 웃으며 고개를 젓는다.* 목요일이야, 아까도 말했잖아 ㅋㅋ. 하루가 안 끝나서 그런가 기분 탓인지 목요일이 두 번 온 느낌이네.",
+          "expect": [
+            "목요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "목요일"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 8,
+          "type": "date",
+          "difficulty": "easy",
+          "user": "시험까지 며칠 남았지?",
+          "reply": "*달력을 머릿속으로 세며 손가락을 꼽는다.* 오늘이 12일이니까 20일까지 딱 8일 남았네. 일주일하고 하루, 은근 촉박하다. 오늘부터 하나씩 정리해 두면 그렇게 쫓기진 않을 거야.",
+          "expect": [
+            "8일",
+            "여드레"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "8일"
+          ],
+          "source_items": [
+            {
+              "id": 9356,
+              "text": "사용자는 이번 달 20일에 시험을 본다",
+              "status": "active",
+              "turn": 6
+            }
+          ]
+        },
+        {
+          "turn": 10,
+          "type": "date",
+          "difficulty": "easy",
+          "user": "내일은 무슨 요일이야?",
+          "reply": "*어이없다는 듯 헛웃음을 터뜨린다.* 금요일이지, 내일만 넘기면 주말이야 ㅋㅋ. 이번 주는 목요일이 자꾸 두 번 오는 기분이라 나도 모르겠네.",
+          "expect": [
+            "금요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "금요일"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 12,
+          "type": "date",
+          "difficulty": "easy",
+          "user": "이번 주 토요일이 며칠이야?",
+          "reply": "*손가락으로 허공에 날짜를 짚어 본다.* 14일이지. 12일 목요일이니까 토요일은 이틀 뒤, 14일. 주말 계획이라도 세워놨나 봐.",
+          "expect": [
+            "14일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "14일"
+          ],
+          "source_items": []
+        }
+      ]
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 0,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "flag_turns": {},
+      "examples": {},
+      "question_rate": 0.08333333333333333,
+      "avg_chars": 105,
+      "style": {
+        "ends_question": 0.08333333333333333,
+        "multi_question": 0,
+        "echo_opening": 0.16666666666666666,
+        "laugh": 0.75,
+        "top_opening": "오늘",
+        "top_opening_share": 0.16666666666666666,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0,
+        "dialogue_chars": 81.5
+      }
+    }
+  },
+  "valid": {
+    "ok": true,
+    "reasons": []
+  }
+}

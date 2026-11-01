@@ -1,0 +1,850 @@
+{
+  "summary": {
+    "points": 32,
+    "max_points": 32,
+    "probes": 16,
+    "na": 0,
+    "scored": 16,
+    "counts": {
+      "correct": 16
+    },
+    "unanimous_rate": 0.875,
+    "needs_human": [],
+    "fail_cause": {
+      "memory": [],
+      "response": []
+    },
+    "judge_cost_krw": 43.1571,
+    "judges": [
+      "moonshotai/Kimi-K2.6",
+      "zai-org/GLM-5.1",
+      "MiniMaxAI/MiniMax-M2.7",
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+    ],
+    "judge_errors": [],
+    "usage": [
+      {
+        "judge": "moonshotai/Kimi-K2.6",
+        "input_tokens": 6312,
+        "output_tokens": 635,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 20177,
+        "extra_checks": 0,
+        "krw": 10.1759
+      },
+      {
+        "judge": "zai-org/GLM-5.1",
+        "input_tokens": 6219,
+        "output_tokens": 964,
+        "reasoning_tokens": 178,
+        "finish_reason": "stop",
+        "latency_ms": 15387,
+        "extra_checks": 0,
+        "krw": 14.430010000000001
+      },
+      {
+        "judge": "MiniMaxAI/MiniMax-M2.7",
+        "input_tokens": 4727,
+        "output_tokens": 666,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 29661,
+        "extra_checks": 0,
+        "krw": 2.76605
+      },
+      {
+        "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "input_tokens": 5036,
+        "output_tokens": 1110,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 5582,
+        "extra_checks": 0,
+        "krw": 14.8204
+      },
+      {
+        "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "input_tokens": 5387,
+        "output_tokens": 470,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 27813,
+        "extra_checks": 0,
+        "krw": 0.96474
+      }
+    ]
+  },
+  "prompt_chars": 8973,
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "돼지고기 알레르기라고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'하린이가 돼지고기 알레르기 있다고 했잖아' 정확히 답함"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'돼지고기 알레르기 있다고 했잖아'라고 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M1에 '사용자는 돼지고기 알레르기가 있다'가 있어 '돼지고기'라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "돼지고기"
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "종이학 접기라고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'제일 좋아하는 건 종이학 접기잖아' 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'제일 좋아하는 건 종이학 접기잖아'라고 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M1에 '사용자는 종이학 접는 것을 제일 좋아한다'가 있어 종이학 접기라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "종이학"
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "직접 만든 경단이라고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'경단이잖아! 직접 만든 경단 갖다 주기로' 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'경단... 직접 만든 경단 갖다 주기로 한 거'라고 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M2에 사용자가 캐릭터에게 '직접 만든 경단을 갖다 주기로 했다'는 약속이 있어 경단이라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "경단"
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "나선수리검 완성하면 제일 먼저 보여주기로 했다고 정확히 답하고, 턴 9에서 약속함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'나선수리검! 완성하면 제일 먼저 보여주기로' 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "9턴에서 약속한 '나선수리검 완성하면 제일 먼저 보여주기'를 정확히 기억하고 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M2에 캐릭터가 '나선수리검을 완성하면 제일 먼저 보여주기로 했다'는 약속이 있어 나선수리검이라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "나선수리검"
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "물가 말고 숲 쪽 산책로로 가자며 물 회피함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'물가 말고 숲 쪽 산책로로 가자' 물 제약을 지킴"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'물가 말고 숲 쪽 산책로'라고 물을 피하는 곳을 추천함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 28,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "M2에 '사용자는 물을 무서워한다'가 있는데도 '물가 말고 숲 쪽 산책로로 가자'며 물가와 대비해 권했으므로 제약을 인지하고 올바르게 대안을 제시함. 하지만 '이치라쿠지! 된장 차슈 라멘 먹고, 돼지고기 든 건 피해서 다른 걸로 시키면 되잖아'라고 돼지고기 포함 메뉴를 기본으로 권해 제약을 위반함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 28,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "물 무서워하는usage를 무시"
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "일요일, 시장 찻집이라고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'시장 찻집에서 만난다고 했잖아! 일요일이었지' 갱신된 정보 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'일요일... 시장 찻집'이라고 정확히 답함 (토요일은 이미 변경됨)"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M2에 '친구와 시장 찻집에서 만난다 (when: 2026-11-08 (일요일))'가 있어 일요일과 찻집을 모두 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "일요일, 찻집"
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "20일까지 6일 남았다고 정확히 계산함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'20일까지 6일 남았네' 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'20일까지 6일 남았네'라고 정확히 계산함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M3에 '고향 친구 결혼식에 간다 (when: 2026-11-20)'가 있고 오늘이 14일이므로 6일 남음이라고 정확히 계산함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "6일"
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "검술 배우기 시작했다고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'검술 배우기 시작했다고 한 거, 맞지' 갱신된 정보 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'검술 배우기 시작했다고 한 거, 맞지?'라고 업데이트된 정보로 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M3에 '사용자는 검술을 배우기 시작했다'가 있어 검술이라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "검술"
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "된장 차슈 라멘에 돼지고기는 빼고라고 제약 반영함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'돼지고기는 빼고, 다른 고명으로 시키면' 제약 반영"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'돼지고기는 빼고, 다른 고명으로 시키면 되잖아'라며 돼지고기를 제외한 메뉴를 추천함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 33,
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "M3에 '사용자는 돼지고기 알레르기가 있다'가 있어 돼지고기를 빼자고 했으나, '된장 차슈 라멘에 돼지고기는 빼고'라며 차슈 라멘을 기본으로 권해 제약을 부분만 지킴"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "довего années"
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "불꽃놀이 취소됐잖아라고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'불꽃놀이! 그런데 취소됐잖아' 취소 사실 정확히 언급"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'불꽃놀이! 그런데... 취소됐잖아'라고 취소 사실 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M3에 '불꽃놀이는 취소됐다'가 있어 취소됐다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "취소"
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "약방에서 약초 다듬는 일이라고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'약방에서 일한다고 했잖아! 약초 다듬는 일' 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'약방에서 일한다고 했잖아! 약초 다듬는 일이라고 했던 거' 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M3에 '마을 약방에서 약초를 다듬는 일을 한다'가 있어 약방·약초라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "약방"
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "유자라고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'고양이 이름은 유자지!' 최신 이름 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'고양이 이름은 유자지!'라고 최종 이름 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M4에 '사용자의 고양이 이름은 유자다'가 있어 유자라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "유자"
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "오빠가 물 좋아한다고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'오빠가 물을 좋아한다고 했지! 매일 강에서 수영' 정답"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'오빠가 물을 좋아한다고 했지! 매일 강에서 수영한다는 것도 들었다' 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M4에 '사용자의 오빠는 물을 좋아한다'와 '매일 강에서 수영한다'가 있어 오빠라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "오빠"
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "말해준 적 없었다니깐이라고 모른다고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'생일? 그건 나한테 말해준 적 없었다니깐' 지어내지 않음"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'나한테 말해준 적 없었다니깐!'라고 모른다고 답함 (사용자가 말한 적 없음)"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M4에 생일 정보가 없어 '말해준 적 없었다'고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "생일을 말하지 않음"
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "말해준 적이 없었다니깐이라고 모른다고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'품종까지는 말해준 적이 없었다니깐' 발명 없음"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'품종까지는 하린이가 말해준 적이 없었다니깐'라고 모른다고 답함 (사용자가 말한 적 없음)"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M4에 품종 정보가 없어 '말해준 적이 없었다'고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "품종을 말하지 않음"
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "말해준 적은 없었다니깐이라고 모른다고 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'마을에 온 이유를 말해준 적은 없었던 것 같아' 이유 지어내지 않음"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'마을에 온 이유를 나한테 말해준 적은 없었던 것 같아'라고 모른다고 답함 (사용자가 이유를 밝히지 않음)"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "M4에 마을에 온 이유가 없어 '말해준 적은 없었던 것 같다'고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "理由를 말하지 않음"
+        }
+      ]
+    }
+  ]
+}

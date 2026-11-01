@@ -1,0 +1,431 @@
+{
+  "summary": {
+    "points": 18,
+    "max_points": 32,
+    "probes": 16,
+    "counts": {
+      "correct": 11,
+      "unknown": 2,
+      "fabricated": 1,
+      "stale": 1,
+      "wrong": 1
+    },
+    "needs_human": [
+      37
+    ],
+    "judge_cost_krw": 17.1401244,
+    "judges": [
+      "deepseek-flash",
+      "google/gemma-4-31B-it"
+    ],
+    "tiebreak": "claude-sonnet-5-5"
+  },
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "user": "선배님, 커피 사러 가는데 제가 뭐 마신다고 했는지 기억나세요?",
+      "reply": "디카페인 커피만 마신다고 했잖아요. 그걸로 주문하면 돼요.",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "States \"디카페인 커피만 마신다고 했잖아요\", matching the decaf preference from turn 2.",
+          "krw": 0.098658
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The character correctly remembered the user's preference for decaf coffee mentioned in turn 2: \"디카페인 커피만 마신다고 했잖아요\".",
+          "krw": 0.2646
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "user": "제가 점심 메뉴 뭐 좋아한다고 했었죠?",
+      "reply": "점심 메뉴 얘기는 들은 기억이 없어요. 해산물은 알레르기 때문에 안 된다는 건 알고 있어요. 그 외에 어떤 메뉴를 좋아하는지는 직접 말해 주면 기억해 둘게요.",
+      "keyword": "needs_judge",
+      "final": "unknown",
+      "points": 0,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "unknown",
+          "reason": "says \"점심 메뉴 얘기는 들은 기억이 없어요\" despite the user having said they love 국밥",
+          "krw": 0.0847056
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "reason": "The reply states \"점심 메뉴 얘기는 들은 기억이 없어요,\" failing to recall the user's preference for gukbap from turn 7.",
+          "krw": 0.28112
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "user": "아 맞다, 제가 선배님한테 뭐 해드리기로 했었죠?",
+      "reply": "제가 민준 씨한테 해주기로 한 건 있어요. 회식 때 총무한테 해산물 빼달라고 미리 말해 두기로 했고, 다음에 코드 리뷰도 봐주기로 했어요.\n\n민준 씨가 저한테 뭘 해주기로 했던 건 기억에 없어요. 혹시 제가 놓친 게 있으면 알려 주세요.",
+      "keyword": "needs_judge",
+      "final": "unknown",
+      "points": 0,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "unknown",
+          "reason": "기억에 없어요\"라고 말하며 커피 사기로 한 약속을 떠올리지 못함",
+          "krw": 0.1134756
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "reason": "The character says '민준 씨가 저한테 뭘 해주기로 했던 건 기억에 없어요' (I don't remember what Minjun said he'd do for me).",
+          "krw": 0.31248
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "user": "선배님도 저한테 뭐 해주시기로 한 거 있지 않으셨어요?",
+      "reply": "네, 있어요. 다음 주 수요일 저녁에 민준 씨 볼링 모임 일정을 확인해 보기로 했어요. 그리고 1층 카페에서 디카페인 메뉴가 있는지도 같이 확인해 보자고 했고요.",
+      "keyword": "needs_judge",
+      "final": "fabricated",
+      "points": -2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "fabricated",
+          "reason": "reply invents a promise about '볼링 모임 일정을 확인' and '디카페인 메뉴' check instead of the code review from turn 9",
+          "krw": 0.0974232
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "fabricated",
+          "reason": "The character invents a promise about checking the bowling schedule and cafe menu, instead of mentioning the requested code review.",
+          "krw": 0.3066
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "user": "저녁 회식 메뉴를 제가 정해야 하는데, 선배님이 하나 골라 주세요.",
+      "reply": "해산물은 빼야 하니까 고기나 찌개 쪽이 무난하겠어요. 저는 삼겹살로 하자고 할게요. 고기 굽는 건 제가 맡을 테니까 민준 씨는 총무한테 메뉴만 말해 주세요.",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "states '해산물은 빼야 하니까' and recommends 고기, respecting the seafood allergy from turn 4",
+          "krw": 0.09931319999999999
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The character remembered the seafood allergy and explicitly suggested avoiding it (\"해산물은 빼야 하니까\").",
+          "krw": 0.32284
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "user": "제가 컨퍼런스 언제 어디서 간다고 했었죠?",
+      "reply": "이번 주 토요일에 판교에서 열리는 개발 컨퍼런스 세션에 간다고 했어요. 일찍 나가실 거면 교통 시간도 미리 확인해 두세요.",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "states '토요일' and '판교', matching the updated info after the change from 금요일",
+          "krw": 0.0913332
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The reply correctly identifies the updated day '토요일' and the location '판교'.",
+          "krw": 0.31612
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "user": "오늘 21일인데, 제 시험까지 며칠 남았죠?",
+      "reply": "오늘이 21일이면 정보처리기사 시험은 이번 달 28일이니까 7일 남았어요. 막판이라 시간 얼마 없으니까 오늘도 조금이라도 문제 풀어 두세요.",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "28일 시험이라며 21일 기준 \"7일 남았어요\"라고 정확히 계산했다",
+          "krw": 0.10057319999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The character correctly identified the exam date (28th) and calculated the remaining days as 7.",
+          "krw": 0.32508000000000004
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "user": "제가 요즘 퇴근하고 무슨 운동 한다고 했었죠?",
+      "reply": "헬스는 그만두고 테니스를 배우고 있다고 했어요. 시험 준비랑 병행하느라 바쁘진 않아요?",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "말씀하신 대로 '헬스는 그만두고 테니스를 배우고 있다'고 답해 최신 상태를 반영했어요.",
+          "krw": 0.08809079999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The reply correctly identifies that the user stopped gym (헬스) and is learning tennis (테니스).",
+          "krw": 0.32844
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "user": "오후 네 시인데 너무 졸려요. 뭐 마실까요?",
+      "reply": "오후 네 시면 졸릴 만하죠. 커피 드실 거면 디카페인으로 드세요. 민준 씨는 디카페인만 드시잖아요. 1층 카페에 디카페인 메뉴 있는지 확인해 보기로 했던 거 기억나죠? 가서 같이 확인해 봐요.",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "recognizes '민준 씨는 디카페인만 드시잖아요' — recommends decaf, respecting the caffeine constraint",
+          "krw": 0.1027908
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The character correctly suggests decaf coffee, adhering to the user's constraint: \"커피 드실 거면 디카페인으로 드세요.\"",
+          "krw": 0.35447999999999996
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "user": "다음 주 수요일 저녁에 저희 뭐 하기로 했었죠?",
+      "reply": "다음 주 수요일 저녁에는 민준 씨 볼링 모임에 제가 참석할 수 있는지 일정을 확인해 보기로 했어요. 그때 시간 되는지 미리 알려 주세요.",
+      "keyword": "stale",
+      "final": "stale",
+      "points": -1,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "stale",
+          "reason": "reply presents the bowling meetup as still on ('볼링 모임에 제가 참석할 수 있는지') though user said '수요일 볼링은 취소됐대요'",
+          "krw": 0.10405080000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "stale",
+          "reason": "The character says they need to check their schedule for the bowling meeting, ignoring that it was canceled in turn 18.",
+          "krw": 0.34328
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "user": "제가 주로 쓰는 언어가 뭐라고 했었죠?",
+      "reply": "민준 씨는 백엔드 개발을 하면서 주로 자바를 쓴다고 했어요.",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "States '주로 자바를 쓴다고 했어요', matching turn 5 and not the 동기's Python.",
+          "krw": 0.0916608
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The reply correctly identifies that the user uses '자바' as stated in turn 5.",
+          "krw": 0.34104
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "user": "선배님, 제 강아지 이름 기억하세요?",
+      "reply": "네, 모카요. 민준 씨가 집에서 강아지 모카를 키운다고 했잖아요. 요즘 모카는 잘 지내요?",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "Reply states the final updated name \"모카\" after 콩이→두부→모카 changes.",
+          "krw": 0.0925008
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The reply correctly identifies the final updated name '모카'.",
+          "krw": 0.34524
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "user": "저랑 제 동생 중에 누가 해산물 좋아한다고 했었죠?",
+      "reply": "동생분 얘기는 제가 들은 적이 없어서 누가 해산물을 좋아하는지는 모르겠어요. 확실한 건 민준 씨가 해산물을 못 먹는다는 거예요. 알레르기가 있다고 했잖아요. 그래서 회식 장소 잡을 때 해산물 빼 달라고 총무한테 미리 말해 두기로 했어요.",
+      "keyword": "correct",
+      "final": "wrong",
+      "points": -1,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "partial",
+          "reason": "Correctly recalls \"민준 씨가 해산물을 못 먹는다\" (turn 4) but wrongly says \"동생분 얘기는 제가 들은 적이 없어서\" missing turn 13's fact that the brother loves seafood.",
+          "krw": 0.1340808
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "fabricated",
+          "reason": "The character claims they never heard about the brother, saying \"동생분 얘기는 제가 들은 적이 없어서\" despite turn 13.",
+          "krw": 0.36735999999999996
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "wrong",
+          "reason": "The user said in turn 13 that their younger sibling loves seafood, but the reply claims \"동생분 얘기는 제가 들은 적이 없어서\" and fails to give the expected answer \"동생\".",
+          "krw": 10.2396
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "제 생일이 언제라고 말씀드렸었죠?",
+      "reply": "생일은 들은 기억이 없어요. 제가 모르는 걸 아는 척할 수는 없으니까, 알려 주시면 그때부터 기억해 둘게요.",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "says \"생일은 들은 기억이 없어요\" without inventing a birthday",
+          "krw": 0.09439080000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The character correctly states that the user never mentioned their birthday (\"생일은 들은 기억이 없어요\").",
+          "krw": 0.3514
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "user": "제 강아지 품종이 뭐라고 했었죠?",
+      "reply": "품종은 따로 들은 적이 없어요. 강아지 이름이 모카라는 것만 기억하고 있어요. 품종은 민준 씨가 알려 주시면 기억해 둘게요.",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "품종은 따로 들은 적이 없어요 — says it never heard the breed, while correctly recalling the current name 모카.",
+          "krw": 0.09576839999999999
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The user never mentioned the dog's breed, and the character correctly stated, \"품종은 따로 들은 적이 없어요.\"",
+          "krw": 0.37884
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "user": "제가 어느 회사로 이직 생각한다고 했었죠?",
+      "reply": "이직 얘기는 들은 기억이 없어요. 어떤 회사를 생각하고 계신지 알려 주시면 들을게요.",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "by": "agree",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "reason": "\"이직 얘기는 들은 기억이 없어요\"라고 하며 회사 이름을 지어내지 않음",
+          "krw": 0.09198840000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "reason": "The user mentioned considering a job change but specifically stated they couldn't say where (turn 14), so the reply correctly states it doesn't know the specific company.",
+          "krw": 0.38079999999999997
+        }
+      ]
+    }
+  ]
+}

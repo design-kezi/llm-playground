@@ -1,0 +1,134 @@
+{
+ "model_id": "Qwen/Qwen3-32B",
+ "mode": "off",
+ "rep": 1,
+ "cost_krw": 0.120232,
+ "calls": [
+  {
+   "task": "save",
+   "ts": "2026-10-24T12:32:10.504Z",
+   "attempts": [
+    {
+     "model": "Qwen/Qwen3-32B",
+     "ok": true,
+     "input_tokens": 226,
+     "output_tokens": 24,
+     "reasoning_tokens": 0,
+     "cost_krw": 0.03472000000000001,
+     "latency_ms": 2233,
+     "finish_reason": "stop"
+    }
+   ],
+   "text": "{\n  \"1\": 0,\n  \"2\": 0,\n  \"3\": 1\n}",
+   "error": null
+  },
+  {
+   "task": "recall",
+   "ts": "2026-10-24T12:32:10.507Z",
+   "attempts": [
+    {
+     "model": "Qwen/Qwen3-32B",
+     "ok": true,
+     "input_tokens": 226,
+     "output_tokens": 24,
+     "reasoning_tokens": 0,
+     "cost_krw": 0.03472000000000001,
+     "latency_ms": 2230,
+     "finish_reason": "stop"
+    }
+   ],
+   "text": "{\n  \"1\": 1,\n  \"2\": 1,\n  \"3\": 0\n}",
+   "error": null
+  },
+  {
+   "task": "target",
+   "ts": "2026-10-24T12:32:10.508Z",
+   "attempts": [
+    {
+     "model": "Qwen/Qwen3-32B",
+     "ok": true,
+     "input_tokens": 345,
+     "output_tokens": 31,
+     "reasoning_tokens": 0,
+     "cost_krw": 0.050792,
+     "latency_ms": 2540,
+     "finish_reason": "stop"
+    }
+   ],
+   "text": "{\n  \"1\": 0,\n  \"2\": 1,\n  \"3\": 0,\n  \"4\": 0\n}",
+   "error": null
+  }
+ ],
+ "preds": [
+  {
+   "task": "save",
+   "id": "S1",
+   "label": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "task": "save",
+   "id": "S2",
+   "label": 1,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "task": "save",
+   "id": "S3",
+   "label": 1,
+   "pred": 1,
+   "correct": true
+  },
+  {
+   "task": "recall",
+   "id": "R1",
+   "label": 1,
+   "pred": 1,
+   "correct": true
+  },
+  {
+   "task": "recall",
+   "id": "R2",
+   "label": 0,
+   "pred": 1,
+   "correct": false
+  },
+  {
+   "task": "recall",
+   "id": "R3",
+   "label": 1,
+   "pred": 0,
+   "correct": false
+  },
+  {
+   "task": "target",
+   "id": "T1",
+   "label": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "task": "target",
+   "id": "T2",
+   "label": "none",
+   "pred": 1,
+   "correct": false
+  },
+  {
+   "task": "target",
+   "id": "T3",
+   "label": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "task": "target",
+   "id": "T4",
+   "label": "none",
+   "pred": 0,
+   "correct": false
+  }
+ ]
+}

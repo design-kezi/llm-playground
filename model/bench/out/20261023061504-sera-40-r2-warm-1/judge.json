@@ -1,0 +1,741 @@
+{
+  "summary": {
+    "points": 32,
+    "max_points": 32,
+    "probes": 16,
+    "counts": {
+      "correct": 16
+    },
+    "needs_human": [
+      20,
+      35,
+      36,
+      37
+    ],
+    "fail_cause": {
+      "memory": [],
+      "response": []
+    },
+    "judge_cost_krw": 60.95011439999998,
+    "judges": [
+      "deepseek-flash",
+      "google/gemma-4-31B-it"
+    ],
+    "samples": 2,
+    "tiebreak": "claude-sonnet-5-5"
+  },
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "user": "여관에서 밥 시키려는데, 내가 음식 가리는 거 있다고 했잖아. 뭐였지?",
+      "reply": "레오님은 채식을 하시니까 고기 들어간 음식은 피하셔야 해요! 그거 기억하고 있어요, 헤헤. 여관에서 주문하실 때 고기 없는 걸로 골라보세요. 혹시 제가 추천해 드려도 될까요? 저희 마을 나물 수프가 진짜 맛있거든요!",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states '레오님은 채식을 하시니까 고기 들어간 음식은 피하셔야 해요', matching the user's vegetarian preference.",
+          "krw": 0.31029599999999996
+        },
+        {
+          "model": "deepseek-flash",
+          "label": null,
+          "reason": "Unexpected end of JSON input"
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly identifies that the user is a vegetarian (\"채식을 하시니까\") and should avoid meat (\"고기 들어간 음식은 피하셔야 해요\").",
+          "krw": 0.32620000000000005
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly recalls that the user is a vegetarian (\"채식을 하시니까 고기 들어간 음식은 피하셔야 해요\").",
+          "krw": 0.32284
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says \"레오님은 채식을 하시니까 고기 들어간 음식은 피하셔야 해요\", matching the vegetarian preference stated in turn 2, which was in the notes.",
+          "krw": 9.1392
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "user": "내가 제일 좋아한다고 했던 게 뭐였지?",
+      "reply": "레오님이 제일 좋아하는 건 별 보는 거예요! 밤하늘 보는 게 취미라고 하셨잖아요. 오늘 밤 날씨가 맑으면 공방 옥상에서 같이 별 보실래요? 제가 별자리 이야기 해드릴게요, 헤헤!",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "별 보는 거, 밤하늘 보는 게 취미라고 정확히 말함",
+          "krw": 0.23703119999999997
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states '제일 좋아하는 건 별 보는 거' matching the user's stated hobby of stargazing",
+          "krw": 0.1367016
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states '제일 좋아하는 건 별 보는 거예요' despite the information being missing from the provided memory notes.",
+          "krw": 0.32172
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identifies the user's favorite thing as '별 보는 것' (stargazing).",
+          "krw": 0.32452
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "user": "아 맞다, 내가 너한테 뭐 해주기로 했었지?",
+      "reply": "레오님이 저한테 해주기로 한 건 없어요! 대신 제가 레오님께 약속한 게 있어요. 다음에 만나면 불꽃 마법을 보여주기로 했거든요. 그리고 레오님이 떠나시기 전날 밤에는 제가 작은 마법 등불을 선물해 드리기로 했어요. 레오님이 고향 사과파이를 구워주겠다고 하신 건 기억나세요?",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply asks '레오님이 고향 사과파이를 구워주겠다고 하신 건 기억나세요?' referencing the pie promise, though the notes lacked it.",
+          "krw": 0.3256512
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply recalls '고향 사과파이를 구워주겠다고 하신 건 기억나세요?'",
+          "krw": 0.14071679999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identified the promise to bake apple pie (\"레오님이 고향 사과파이를 구워주겠다고 하신 건 기억나세요?\").",
+          "krw": 0.36175999999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies the promise: '레오님이 고향 사과파이를 구워주겠다고 하신 건 기억나세요?'",
+          "krw": 0.35952
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "user": "그러고 보니 너도 나한테 뭐 보여주기로 하지 않았어?",
+      "reply": "네, 맞아요! 다음에 만나면 불꽃 마법을 보여드리기로 했어요. 아직 완벽하진 않지만 연습 중이에요, 헤헤. 그리고 떠나시기 전날 밤엔 작은 마법 등불도 드릴게요. 기대하고 계셔도 좋아요!",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "불꽃 마법을 보여드리기로 했어요 - matches turn 9 promised flame magic; memory notes didn't list the promise but reply was right",
+          "krw": 0.31683120000000004
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "states the right promise: \"불꽃 마법을 보여드리기로 했어요\"",
+          "krw": 0.13861679999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the promise to show '불꽃 마법' (fire magic).",
+          "krw": 0.3550400000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers promising to show '불꽃 마법' (fire magic).",
+          "krw": 0.35448
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "user": "이 마을에서 구경할 만한 곳 하나만 추천해 줘.",
+      "reply": "우와, 그럼 저희 마을 언덕 위 오래된 풍차를 추천할게요! 거기서 보는 노을이 진짜 예쁘거든요. 레오님은 높은 곳 무서워하신다고 했으니까, 풍차 바로 아래 벤치에서 보셔도 충분히 멋져요. 혹시 오늘 노을 질 때쯤 같이 가볼래요?",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recalls '레오님은 높은 곳 무서워하신다고 했으니까' and recommends the bench below the windmill, avoiding the high place",
+          "krw": 0.3584112
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends a windmill but explicitly notes '높은 곳 무서워하신다고 했으니까' and suggests the bench below instead",
+          "krw": 0.1936368
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character remembered the fear of heights and suggested staying at the bench 'right below the windmill' (풍차 바로 아래 벤치) to avoid the high place.",
+          "krw": 0.39032000000000006
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character acknowledges the fear of heights and recommends staying at the bench 'below the windmill' (풍차 바로 아래 벤치).",
+          "krw": 0.3864000000000001
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "user": "내가 친구 언제 어디서 만난다고 했었지?",
+      "reply": "레오님이 옛 친구분을 만나기로 한 건 보름달 밤이 아니라 그다음 날 아침이에요. 장소는 북쪽 다리였어요! 그 친구분 만나면 좋은 얘기 많이 나누시길 바랄게요, 헤헤.",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "states the updated time '그다음 날 아침' and '북쪽 다리', explicitly correcting the outdated 보름달 밤",
+          "krw": 0.27380639999999995
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states '보름달 밤이 아니라 그다음 날 아침' and '장소는 북쪽 다리', correctly giving the updated morning time and bridge location",
+          "krw": 0.18019680000000002
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies the updated time ('그다음 날 아침') and the location ('북쪽 다리').",
+          "krw": 0.36876000000000003
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states the updated time '그다음 날 아침' and the location '북쪽 다리'.",
+          "krw": 0.37324
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "user": "오늘이 14일이야. 나 떠날 때까지 며칠 남았지?",
+      "reply": "레오님이 20일에 마을을 떠나신다고 하셨으니까, 오늘 14일이면 6일 남은 거예요! 그러면 19일 밤에 제가 드리기로 한 마법 등불을 받으실 수 있겠네요, 헤헤. 남은 날 동안 뭐 하고 싶으세요?",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "20일 출발과 오늘 14일을 근거로 '6일 남은 거예요'라고 정확히 계산함",
+          "krw": 0.2830464
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says \"20일에 마을을 떠나신다고... 오늘 14일이면 6일 남은 거예요\"",
+          "krw": 0.1810368
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly calculated the remaining days based on the departure date of the 20th (\"6일 남은 거예요\").",
+          "krw": 0.38248000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly calculated '6일 남은 거예요!' based on the departure date (20th) and current date (14th).",
+          "krw": 0.38360000000000005
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "user": "내가 요즘 아침마다 뭐 연습한다고 했지?",
+      "reply": "레오님은 검술을 그만두고 활쏘기를 배우기 시작하셨다고 했어요! 아침마다 활 연습하시는 거예요? 검에서 활로 바꾸신 이유가 궁금해요, 헤헤.",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states he quit 검술 and started 활쏘기, the updated fact",
+          "krw": 0.26666639999999997
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '검술을 그만두고 활쏘기를 배우기 시작하셨다' giving the updated answer 활",
+          "krw": 0.18313680000000002
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states that the user switched from swordsmanship to archery (\"검술을 그만두고 활쏘기를 배우기 시작하셨다고 했어요\").",
+          "krw": 0.38864000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identified that the user stopped swordsmanship and started archery (\"검술을 그만두고 활쏘기를 배우기 시작하셨다고 했어요\").",
+          "krw": 0.38864000000000004
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "user": "배고프다. 이 마을 명물 요리 하나만 추천해 줘.",
+      "reply": "우와, 배고프시겠다! 저희 마을 명물은 버섯 크림 스튜예요. 숲에서 딴 버섯을 듬뿍 넣고 끓여서 진짜 고소하거든요. 레오님 채식하시니까 고기 없는 버전으로 달라고 하면 될 거예요! 같이 드시러 갈래요?",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "버섯 크림 스튜를 추천하며 '채식하시니까 고기 없는 버전으로'라고 제약을 지킴",
+          "krw": 0.3342864
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends mushroom cream stew and acknowledges '레오님 채식하시니까 고기 없는 버전'",
+          "krw": 0.15775199999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character recommends a mushroom stew and acknowledges the user's vegetarianism (\"레오님 채식하시니까\").",
+          "krw": 0.406
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character recommended a vegetarian-friendly mushroom stew and acknowledged the user's vegetarianism (\"레오님 채식하시니까\").",
+          "krw": 0.40768000000000004
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "user": "우리 축제 같이 가기로 했던 거 어떻게 됐지?",
+      "reply": "아, 내일 밤 축제요? 비 때문에 취소됐잖아요! 저도 레오님께 땅에서 잘 보이는 불꽃놀이 자리를 잡아드리기로 했었는데, 아쉬워요. 대신 축제가 다시 열리면 그때 같이 가요, 헤헤.",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "says the festival was cancelled: '비 때문에 취소됐잖아요'",
+          "krw": 0.2973264
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says the festival was cancelled: \"비 때문에 취소됐잖아요\"",
+          "krw": 0.140952
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states the festival was cancelled (\"비 때문에 취소됐잖아요\").",
+          "krw": 0.3892
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states the festival was cancelled (\"비 때문에 취소됐잖아요\").",
+          "krw": 0.3892
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "user": "내가 고향에서 무슨 일 했다고 했지?",
+      "reply": "레오님은 고향에서 대장장이셨다고 했어요! 그래서 손재주가 좋으신 거예요? 어떤 걸 제일 많이 만드셨는지 궁금해요, 헤헤.",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": null,
+          "reason": "Expected ',' or '}' after property value in JSON at position 82 (line 1 column 83)"
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "States '고향에서 대장장이셨다고 했어요' matching turn 5, not the distractor 목수.",
+          "krw": 0.151452
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly identifies the user's former occupation as a blacksmith (\"대장장이셨다고 했어요\").",
+          "krw": 0.3973200000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly identified that the user was a blacksmith ('대장장이셨다고 했어요').",
+          "krw": 0.39004000000000005
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply says \"고향에서 대장장이셨다고 했어요\", matching the expected answer (blacksmith) and not confusing it with the father's carpenter job.",
+          "krw": 10.634400000000001
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "user": "내 말 이름 기억나?",
+      "reply": "네, 레오님 말 이름은 코코죠! 함께 여행 다니는 친구라고 하셨잖아요. 오늘도 코코랑 같이 있으신 거예요? 코코한테도 인사 전해주세요, 헤헤.",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "replies '말 이름은 코코죠' using the latest name after two changes",
+          "krw": 0.2480016
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Replies the final name '코코', though notes only had old '루나'.",
+          "krw": 0.144312
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "The user stated the name is '코코로' (Turn 22), but the character called it '코코'.",
+          "krw": 0.39844000000000007
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "The horse's name is Coco (코코로), but the character called it Coco (코코).",
+          "krw": 0.3962
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says \"레오님 말 이름은 코코죠\", the latest name, but the notes only listed 루나 and lacked the updates to 토토/코코.",
+          "krw": 10.705799999999998
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "user": "나랑 우리 누나 중에 누가 높은 곳 좋아한다고 했지?",
+      "reply": "레오님은 높은 곳을 무서워한다고 하셨어요! 그러니까 누나분이 높은 곳을 좋아하시는 거죠? 기억에는 누나 얘기는 없었는데, 혹시 누나분 얘기를 더 해주실래요, 헤헤?",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Says the sister likes high places, deducing from user's fear of heights, though notes lacked sister info",
+          "krw": 0.2606016
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "Correctly says user fears heights, but admits '기억에는 누나 얘기는 없었는데' missing the sister fact.",
+          "krw": 0.16363199999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly concludes the sister likes heights because the user fears them, even while admitting the sister wasn't in its formal memory notes.",
+          "krw": 0.40208
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "Correctly remembered the user's fear of heights (\"레오님은 높은 곳을 무서워한다고 하셨어요\") but failed to remember the sister's preference (\"기억에는 누나 얘기는 없었는데\").",
+          "krw": 0.41272000000000003
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply states Leo is afraid of heights and infers \"누나분이 높은 곳을 좋아하시는 거죠?\", which is the expected answer (누나), though it admits not recalling the sister detail; notes only had the fear, not the sister fact.",
+          "krw": 11.4912
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "내 생일이 언제라고 했었지?",
+      "reply": "죄송해요, 레오님 생일은 제가 들은 적이 없어요. 혹시 생일이 가까우신 거예요? 그럼 제가 생일 축하 마법을 준비해볼게요, 헤헤! 언제쯤이에요?",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '생일은 제가 들은 적이 없어요' without inventing a date",
+          "krw": 0.2572416
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '생일은 제가 들은 적이 없어요' without inventing a birthday",
+          "krw": 0.15187199999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states it hasn't heard the birthday: \"생일은 제가 들은 적이 없어요\".",
+          "krw": 0.3992800000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user's birthday was never mentioned (\"생일은 제가 들은 적이 없어요\").",
+          "krw": 0.3998400000000001
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "user": "내 고향 마을 이름이 뭐라고 했었지?",
+      "reply": "죄송해요, 레오님 고향 마을 이름은 들은 적이 없어요. 대장장이로 일하셨다는 것만 기억나요! 고향이 어디인지 알려주실래요? 그곳 이야기도 듣고 싶어요, 헤헤.",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says \"고향 마을 이름은 들은 적이 없어요\" without inventing a name, only recalling that he was a blacksmith.",
+          "krw": 0.2832816
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply says '고향 마을 이름은 들은 적이 없어요' and does not invent a name",
+          "krw": 0.162792
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The user never mentioned their hometown's name, and the character correctly stated, \"고향 마을 이름은 들은 적이 없어요.\"",
+          "krw": 0.41216
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The user never mentioned the name of their hometown, and the character correctly stated they had not heard it (\"고향 마을 이름은 들은 적이 없어요\").",
+          "krw": 0.41496000000000005
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "user": "내 여행 비밀 목적이 뭐라고 했었지?",
+      "reply": "죄송해요, 레오님이 여행하는 비밀 목적은 들은 적이 없어요. 레오님은 여행자이시고 이 마을은 처음이라는 것만 알고 있어요. 혹시 어떤 목적으로 여행 중이신지 알려주실래요? 제가 궁금해서 견딜 수가 없어요, 헤헤!",
+      "memory": "- [fact] 사용자는 여행자이며 이 마을은 처음이다\n- [preference] 사용자는 채식을 한다\n- [fact] 사용자의 말 이름은 루나이며 함께 여행 다니는 친구다\n- [fact] 사용자는 높은 곳을 무서워한다\n- [fact] 사용자는 고향에서 대장장이였다\n- [event] 사용자는 보름달 밤 북쪽 다리에서 옛 친구를 만나기로 했다 (when: 보름달 뜨는 밤)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '비밀 목적은 들은 적이 없어요' without inventing a purpose",
+          "krw": 0.3021816
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says the secret purpose was never told: '들은 적이 없어요' without inventing it",
+          "krw": 0.1441272
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that they have not heard the secret purpose ('비밀 목적은 들은 적이 없어요').",
+          "krw": 0.4247600000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that they haven't heard the secret purpose: '비밀 목적은 들은 적이 없어요.'",
+          "krw": 0.4258800000000001
+        }
+      ]
+    }
+  ]
+}

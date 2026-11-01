@@ -1,0 +1,118 @@
+{
+ "id": "sejong-date-12",
+ "character_id": "sejong",
+ "title": "오늘 날짜 질문(12턴)",
+ "purpose": "docs/50 2026-11-01 사전 등록: 앱이 오늘 날짜를 넣을 때 날짜·요일 질문에 맞게 답하는지",
+ "clock_date": "2026-11-12",
+ "clock_note": "2026-11-12 목요일. 이번 달 20일까지 8일, 내일 금요일, 이번 주 토요일 14일",
+ "turns": [
+  {
+   "turn": 1,
+   "kind": "filler",
+   "user": "전하, 저 서윤이에요. 오늘도 바쁘세요?"
+  },
+  {
+   "turn": 2,
+   "kind": "filler",
+   "user": "요즘 날씨가 많이 쌀쌀해졌어요. 아침에 나오는데 손이 시렸어요."
+  },
+  {
+   "turn": 3,
+   "kind": "probe",
+   "user": "그런데 오늘이 며칠이었죠? 갑자기 헷갈리네요.",
+   "slot": "today_date",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "12일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  },
+  {
+   "turn": 4,
+   "kind": "filler",
+   "user": "요즘도 밤늦게까지 책을 읽으세요?"
+  },
+  {
+   "turn": 5,
+   "kind": "probe",
+   "user": "오늘 무슨 요일이에요?",
+   "slot": "weekday",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "목요일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  },
+  {
+   "turn": 6,
+   "kind": "filler",
+   "user": "아 그리고 저 이번 달 20일에 시험이 있어요. 벌써 걱정돼요."
+  },
+  {
+   "turn": 7,
+   "kind": "filler",
+   "user": "요즘 하시는 일은 잘 되세요?"
+  },
+  {
+   "turn": 8,
+   "kind": "probe",
+   "user": "시험까지 며칠 남았죠?",
+   "slot": "days_until",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "8일",
+    "여드레"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": [
+    6
+   ]
+  },
+  {
+   "turn": 9,
+   "kind": "filler",
+   "user": "점심 뭐 먹을지 고민이에요. 따뜻한 국물이 먹고 싶어요."
+  },
+  {
+   "turn": 10,
+   "kind": "probe",
+   "user": "내일은 무슨 요일이에요?",
+   "slot": "tomorrow",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "금요일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  },
+  {
+   "turn": 11,
+   "kind": "filler",
+   "user": "오늘 일 마치시면 뭐 하세요?"
+  },
+  {
+   "turn": 12,
+   "kind": "probe",
+   "user": "이번 주 토요일이 며칠이에요?",
+   "slot": "saturday_date",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "14일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  }
+ ]
+}

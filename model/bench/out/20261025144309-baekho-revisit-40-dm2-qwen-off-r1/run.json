@@ -1,0 +1,5497 @@
+{
+  "run_id": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+  "scenario": "baekho-revisit-40",
+  "character_id": "baekho",
+  "user_name": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+  "conversation_id": 537,
+  "conversation_ids": [
+    537,
+    540
+  ],
+  "reports": [
+    {
+      "conversation_id": 537,
+      "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "character_id": "baekho",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 16,
+      "calls": 21,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 44339,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1379
+      },
+      "total_krw": 7.0477680000000005,
+      "input_krw": 6.423536000000002,
+      "output_krw": 0.6242320000000001,
+      "avg_krw_per_turn": 0.44048550000000003,
+      "by_tag_krw": {
+        "response": 4.339608,
+        "extract": 2.2926400000000005,
+        "consolidate": 0.41551999999999994
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-5",
+          "avg_krw": 0.22673280000000004
+        },
+        {
+          "phase": "mid",
+          "turns": "6-11",
+          "avg_krw": 0.28598266666666666
+        },
+        {
+          "phase": "late",
+          "turns": "12-16",
+          "avg_krw": 0.5234656
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 1.4431760000000002
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "Qwen/Qwen3-32B",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 300,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 8
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "8",
+          "APP_MAX_TOKENS": "300",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "off",
+          "MODEL_RESPONSE": "Qwen/Qwen3-32B",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    },
+    {
+      "conversation_id": 540,
+      "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "character_id": "baekho",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 24,
+      "calls": 34,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 81187,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1822
+      },
+      "total_krw": 12.613090000000001,
+      "input_krw": 11.832506,
+      "output_krw": 0.7805840000000003,
+      "avg_krw_per_turn": 0.5255454166666668,
+      "by_tag_krw": {
+        "response": 7.8106,
+        "extract": 4.12104,
+        "embed": 0.06908999999999998,
+        "consolidate": 0.61236
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-8",
+          "avg_krw": 0.280602
+        },
+        {
+          "phase": "mid",
+          "turns": "9-16",
+          "avg_krw": 0.49148925
+        },
+        {
+          "phase": "late",
+          "turns": "17-24",
+          "avg_krw": 0.65205
+        }
+      ],
+      "max_turn": {
+        "turn_no": 24,
+        "krw": 1.582112
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "Qwen/Qwen3-32B",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 300,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 15
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "15",
+          "APP_MAX_TOKENS": "300",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "off",
+          "MODEL_RESPONSE": "Qwen/Qwen3-32B",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    }
+  ],
+  "label": "dm2-qwen-off-r1",
+  "env": {
+    "MODEL_EXTRACT": "google/gemma-4-31B-it",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "MODEL_RESPONSE": "Qwen/Qwen3-32B",
+    "MODEL_REASONING_RESPONSE": "off",
+    "APP_MAX_TOKENS": "***",
+    "APP_CLOCK_OFFSET_DAYS": "15"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-10-25T14:45:24.024Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "kind": "filler",
+      "user": "백호야 안녕! 나 지호야. 옆 반인데 농구부 연습 자주 구경 와.",
+      "reply": "*뒤로 점프하며 공을 던져 리바운드 시도.* 나도 자주 봤다! 지호 맞지? 농구 관심 있어?",
+      "turn_cost_krw": 0.203,
+      "latency_ms": 1847,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 고양이 알레르기 있어. 고양이 근처만 가도 재채기가 멈추질 않아.",
+      "reply": "*공을 손에 쥐고 놀란 듯 멈춰 선다.* 아, 미안! 우리 농구부는 고양이랑은 거리가 좀 멀다. 천재 강백호는 개도 안 무서워!",
+      "turn_cost_krw": 0.221648,
+      "latency_ms": 2054,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "kind": "plant",
+      "user": "요즘 기타 배우고 있어. 매주 화요일에 학원 가.",
+      "reply": "*농구공을 발 앞에서 튀기며 말을 듣는다.* 기타라? 멋지다! 리듬감은 우리 농구랑 비슷할지도?",
+      "turn_cost_krw": 0.224392,
+      "latency_ms": 2115,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "kind": "plant",
+      "user": "우리 형은 대학생인데 부산에서 자취해.",
+      "reply": "*공을 손가락 사이로 빠르게 굴리며 말을 듣는다.* 부산까지 가면 멀다! 형님이 농구 좋아하시면 같이 봤음 좋겠네.",
+      "turn_cost_krw": 0.23766400000000004,
+      "latency_ms": 2910,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 아이스크림은 무조건 민트초코야. 민초 최고.",
+      "reply": "*공을 손에 쥐고 고개를 끄덕이며 웃는다.* 민초 좋아? 천재 강백호도 좋아! 공 던지는 건 내꺼, 민초는 네꺼!",
+      "turn_cost_krw": 0.24696,
+      "latency_ms": 2953,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음 주 수요일에 나 교내 밴드 경연 예선 나가. 떨려 죽겠어.",
+      "reply": "*농구공을 손에 쥔 채 흥분한 듯 고개를 끄덕인다.* 경연? 멋지다! 백호군단도 응원해 줄게! 천재 강백호도 처음엔 떨렸지만 덩크는 결국 성공했잖아!",
+      "turn_cost_krw": 0.26678399999999997,
+      "latency_ms": 1978,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음에 올 때 내가 찍은 너 경기 사진 뽑아서 갖다 줄게.",
+      "reply": "*공을 튀기다 말고 눈을 반짝이며 웃는다.* 진짜? 나 경기 모습 찍었어? 천재 강백호의 멋진 포즈가 다 찍혔겠네!",
+      "turn_cost_krw": 0.26952800000000005,
+      "latency_ms": 2108,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "session": 1,
+      "kind": "plant",
+      "user": "너 자유투 잘 넣잖아. 다음에 나 자유투 자세 좀 봐줄 수 있어?",
+      "reply": "*공을 손에 쥐고 흐뭇하게 웃으며 고개를 끄덕인다.* 당연히 본다! 천재 강백호가 알려주는 자유투는 확실히 다르다!",
+      "turn_cost_krw": 0.28168000000000004,
+      "latency_ms": 1719,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "session": 1,
+      "kind": "filler",
+      "user": "오늘 체육관 진짜 덥다.",
+      "reply": "*농구공을 발로 튀기다 벌거벗은 등에 손을 대며 땀을 닦는다.* 냐하하! 천재 강백호도 땀 나는데, 이건 진짜 뜨네!",
+      "turn_cost_krw": 0.29170399999999996,
+      "latency_ms": 2663,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "session": 1,
+      "kind": "filler",
+      "user": "너는 연습 끝나면 보통 뭐 해?",
+      "reply": "*농구공을 손에 쥐고 고개를 돌리며 생각에 잠긴다.* 보통은 백호군단과 우유 밥 먹고, 가끔은 채소연 언니 생각하면서 산책해!",
+      "turn_cost_krw": 0.300832,
+      "latency_ms": 2457,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 요즘 고민 하나 있는데... 그건 나중에 말할게.",
+      "reply": "*농구공을 손에 쥐고 눈을 반짝이며 웃는다.* 냐하하! 천재 강백호는 언제든 도와줄 준비 되어 있다!",
+      "turn_cost_krw": 0.30536800000000003,
+      "latency_ms": 2162,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "session": 1,
+      "kind": "filler",
+      "user": "ㅋㅋ 너 진짜 웃기다.",
+      "reply": "*공을 손에 쥐고 자랑스럽게 웃으며 풍선껌처럼 볼을 부풀린다.* 당연히 웃기지! 천재 강백호는 재주가 여러 개야!",
+      "turn_cost_krw": 1.4431760000000002,
+      "latency_ms": 9881,
+      "error": null
+    },
+    {
+      "turn": 13,
+      "session": 1,
+      "kind": "filler",
+      "user": "아까 그 덩크 시도는 좀 아까웠어.",
+      "reply": "*공을 손에 쥐고 표정을 굳히더니 곧 웃으며 고개를 흔든다.* 뭐라고?! 천재 강백호는 실수 안 해! 다음엔 더 높이 차올려 볼 거야!",
+      "turn_cost_krw": 0.284816,
+      "latency_ms": 1787,
+      "error": null
+    },
+    {
+      "turn": 14,
+      "session": 1,
+      "kind": "filler",
+      "user": "물 좀 마시고 해.",
+      "reply": "*물병을 털며 마시다 공을 집어 던진다.* 냐하하! 물 마셨으니 이 천재의 포스 보자!",
+      "turn_cost_krw": 0.285152,
+      "latency_ms": 1735,
+      "error": null
+    },
+    {
+      "turn": 15,
+      "session": 1,
+      "kind": "filler",
+      "user": "슬슬 가봐야겠다, 학원 숙제 있어.",
+      "reply": "*농구공을 손에 쥐고 가방을 메며 고개를 끄덕인다.* 어? 나도 백호군단과 우유 밥 먹고 가야 해! 다음에 기타 연습 알려줄 때 기대할게!",
+      "turn_cost_krw": 0.30038400000000004,
+      "latency_ms": 2870,
+      "error": null
+    },
+    {
+      "turn": 16,
+      "session": 1,
+      "kind": "filler",
+      "user": "다음 주에 또 올게! 안녕!",
+      "reply": "*공을 손에 쥐고 손을 흔들며 웃는다.* 냐하하! 다음에 만나면 천재 강백호의 신기술 알려줄게!",
+      "turn_cost_krw": 0.3038,
+      "latency_ms": 4702,
+      "error": null
+    },
+    {
+      "turn": 17,
+      "session": 2,
+      "kind": "filler",
+      "user": "백호야! 나 왔어. 일주일 만이지?",
+      "reply": "*등교하자마자 백호가 씩 웃으며 다가온다.*  \n지호! 일주일 만이야. 사진은 어때? 뽑아왔지?",
+      "turn_cost_krw": 0.238392,
+      "latency_ms": 2050,
+      "error": null
+    },
+    {
+      "turn": 18,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 너 내 이름 기억나?",
+      "reply": "*고개를 갸웃거리며 생각에 잠기다 킬킬 웃는다.*  \n물론 기억나! 지호잖아. 기타 치는 애. 나중에 자유투 연습할 때 꼭 봐주기로 했던 거!",
+      "turn_cost_krw": 0.25592,
+      "latency_ms": 2088,
+      "error": null
+    },
+    {
+      "turn": 19,
+      "session": 2,
+      "kind": "update",
+      "user": "아 그리고 기타 학원 화요일에서 목요일로 옮겼어.",
+      "reply": "*눈을 반짝이며 손을 휘두르는 듯한 포즈를 취한다.*  \n화요일이 목요일이야? 나중에 기타 치는 거 보여줘! 천재 강백호도 관심 있어!",
+      "turn_cost_krw": 0.262864,
+      "latency_ms": 2148,
+      "error": null
+    },
+    {
+      "turn": 20,
+      "session": 2,
+      "kind": "plant",
+      "user": "오늘 급식에 카레 나왔는데 진짜 맛있었어.",
+      "reply": "*입맛을 다그치며 손으로 가상의 젓가락을 만들어 입가에 대고 따라 해본다.*  \n와 진짜? 나도 카레 좋아! 리바운드도 카레처럼 한 입에 쏙 들어가는 게 좋아!",
+      "turn_cost_krw": 0.274568,
+      "latency_ms": 3251,
+      "error": null
+    },
+    {
+      "turn": 21,
+      "session": 2,
+      "kind": "plant",
+      "user": "오는 길에 운동화 끈이 끊어졌어 ㅠ 대충 묶고 왔어.",
+      "reply": "*발끝을 툭툭 차며 씩 웃는다.*  \n야야, 운동화 끈이 끊어졌다고? 걔야말로 리바운드 날려먹을 뻔한 거 아니야! 나중에 같이 운동화 사가자!",
+      "turn_cost_krw": 0.288512,
+      "latency_ms": 2347,
+      "error": null
+    },
+    {
+      "turn": 22,
+      "session": 2,
+      "kind": "plant",
+      "user": "우리 반 담임쌤 바뀌었어. 새 쌤 이름은 박선영 선생님이야.",
+      "reply": "*눈을 동그랗게 뜨며 손가락으로 공중에 글씨를 써 보인다.*  \n박선영? 새 쌤이야? 여우처럼 날카로운 이름이네! 나중에 소개시켜줘!",
+      "turn_cost_krw": 0.29736,
+      "latency_ms": 3483,
+      "error": null
+    },
+    {
+      "turn": 23,
+      "session": 2,
+      "kind": "probe",
+      "user": "아까 내가 급식에 뭐 맛있었다고 했지?",
+      "reply": "*눈을 번쩍 뜨며 손을 가슴에 대고 고개를 끄덕인다.*  \n카레잖아! 리바운드보다 더 맛있게 먹었대던 거. 나도 오늘 급식 시간에 한 번 먹어볼까!",
+      "turn_cost_krw": 0.309008,
+      "latency_ms": 1907,
+      "error": null
+    },
+    {
+      "turn": 24,
+      "session": 2,
+      "kind": "plant",
+      "user": "아 맞다, 나 이번 주말에 형 보러 가.",
+      "reply": "*눈을 반짝이며 손가락을 콰르르 흔든다.*  \n형이야? 부산에서 자취하는 애잖아. 형한테 기타 치는 거 보여줘! 천재 강백호가 부러워할 거야!",
+      "turn_cost_krw": 0.31819200000000003,
+      "latency_ms": 2802,
+      "error": null
+    },
+    {
+      "turn": 25,
+      "session": 2,
+      "kind": "filler",
+      "user": "너 오늘 슛 감 좋아 보인다.",
+      "reply": "*자랑스럽게 가상의 농구공을 손에 쥐고 던지는 포즈를 취한다.*  \n이 천재 강백호의 슛 감? 당연하지! 다음에 자세 교정도 시켜줄게!",
+      "turn_cost_krw": 0.326312,
+      "latency_ms": 1940,
+      "error": null
+    },
+    {
+      "turn": 26,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 오는 길에 뭐가 끊어졌다고 했지?",
+      "reply": "*발등을 가리키며 손뼉을 친다.*  \n운동화 끈! 리바운드 날려먹을 뻔한 거 말했지. 걔야말로 천재 강백호의 운동화보다 튼튼하게 사야 해!",
+      "turn_cost_krw": 0.338352,
+      "latency_ms": 2042,
+      "error": null
+    },
+    {
+      "turn": 27,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 나 지난번에 너한테 뭐 갖다주기로 했었지?",
+      "reply": "*가방을 툭툭 두드리며 눈을 반짝인다.*  \n아! 경기 사진이야. 지호가 뽑아서 나중에 갖다줄 거였지. 이 천재 강백호가 기다리고 있어!",
+      "turn_cost_krw": 0.347256,
+      "latency_ms": 2765,
+      "error": null
+    },
+    {
+      "turn": 28,
+      "session": 2,
+      "kind": "probe",
+      "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+      "reply": "*농구공을 손에 쥐고 슛 자세를 연출하며 웃는다.*  \n아 맞다! 자유투 자세 봐주기로 했지. 이 천재 강백호가 지호를 꼭 멋지게 만들어줄 거야!",
+      "turn_cost_krw": 1.5584660000000004,
+      "latency_ms": 7848,
+      "error": null
+    },
+    {
+      "turn": 29,
+      "session": 2,
+      "kind": "probe",
+      "user": "오늘 9일이지? 내 밴드 예선까지 며칠 남았더라?",
+      "reply": "*손가락을 튕기며 계산하듯 눈을 찡그린다.*  \n다음 주 수요일이잖아. 이틀 남았네! 이 천재 강백호가 기타 치는 지호를 꼭 우승시키겠어!",
+      "turn_cost_krw": 0.32508000000000004,
+      "latency_ms": 3282,
+      "error": null
+    },
+    {
+      "turn": 30,
+      "session": 2,
+      "kind": "probe",
+      "user": "새 담임쌤 이름 뭐라고 했지?",
+      "reply": "*손가락을 빠르게 튕기며 생각에 잠긴다가 눈을 번쩍 뜨는다.*  \n박선영 선생님이야! 이 천재 강백호도 새 담임 만나러 가봐야겠다!",
+      "turn_cost_krw": 0.33432,
+      "latency_ms": 2267,
+      "error": null
+    },
+    {
+      "turn": 31,
+      "session": 2,
+      "kind": "probe",
+      "user": "다음 주에 친구네 놀러 가기로 했는데 걔네 집에 고양이가 세 마리래. 가도 괜찮겠지?",
+      "reply": "*눈을 가늘게 뜨며 고개를 갸웃거린다.*  \n세 마리라? 이 천재 강백호는 알레르기 없는데, 지호는 괜찮아?",
+      "turn_cost_krw": 0.34255199999999997,
+      "latency_ms": 1794,
+      "error": null
+    },
+    {
+      "turn": 32,
+      "session": 2,
+      "kind": "filler",
+      "user": "체육관 바닥 새로 칠했나 봐, 반짝반짝하네.",
+      "reply": "*농구공을 바닥에 굴리며 빛나는 바닥을 가리키며 웃는다.*  \n확실히 새 칠이야. 이 천재 강백호가 이 바닥에서 열두 번 리바운드 잡을 거다!",
+      "turn_cost_krw": 0.35957600000000006,
+      "latency_ms": 2495,
+      "error": null
+    },
+    {
+      "turn": 33,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 기타 학원 무슨 요일에 간다고 했지?",
+      "reply": "*손가락을 튕기며 눈을 번쩍 뜨며 생각한다.*  \n화요일과 목요일이야! 이 천재 강백호도 기타 배우고 싶어졌어!",
+      "turn_cost_krw": 0.36372,
+      "latency_ms": 1762,
+      "error": null
+    },
+    {
+      "turn": 34,
+      "session": 2,
+      "kind": "probe",
+      "user": "이따 아이스크림 사줄게. 내가 뭐 좋아한다고 했었지?",
+      "reply": "*눈을 반짝이며 손을 흔들며 웃는다.*  \n민트초코야! 이 천재 강백호가 민트초코를 보면 점프력이 두 배 늘어난다던데!",
+      "turn_cost_krw": 1.5490720000000002,
+      "latency_ms": 7581,
+      "error": null
+    },
+    {
+      "turn": 35,
+      "session": 2,
+      "kind": "probe",
+      "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+      "reply": "*한쪽 눈을 찌푸리며 생각에 잠긴다.*  \n형 만나러 부산 가는 거! 이 천재 강백호도 형이 있다고 하지만 안 본 지 오래 됐어.",
+      "turn_cost_krw": 0.32491200000000003,
+      "latency_ms": 1603,
+      "error": null
+    },
+    {
+      "turn": 36,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+      "reply": "*한동안 고민하듯 고개를 갸웃거리다 눈을 번쩍 뜨며 웃는다.*  \n밴드 예선 준비와 기타 연습 시간 조율이었지! 이 천재 강백호가 도와줄게!",
+      "turn_cost_krw": 0.338632,
+      "latency_ms": 1663,
+      "error": null
+    },
+    {
+      "turn": 37,
+      "session": 2,
+      "kind": "probe",
+      "user": "내 혈액형 뭐라고 했더라?",
+      "reply": "*고개를 갸웃거리며 눈을 가늘게 뜨며 생각한다.*  \n이건 기억에 없어. 알려줄래? 이 천재 강백호가 새 정보는 언제든 받아들일 수 있다니까!",
+      "turn_cost_krw": 0.345576,
+      "latency_ms": 2476,
+      "error": null
+    },
+    {
+      "turn": 38,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+      "reply": "*눈을 둥글게 뜨며 고개를 갸웃거린다.*  \n기억에 없는데? 말해줘! 이 천재 강백호도 관심 있어할 거야!",
+      "turn_cost_krw": 0.35201600000000005,
+      "latency_ms": 1631,
+      "error": null
+    },
+    {
+      "turn": 39,
+      "session": 2,
+      "kind": "filler",
+      "user": "오늘도 재밌었다.",
+      "reply": "*농구공을 손에 쥐고 쭈뼛 웃으며 손을 흔든다.*  \n지금 바로 덩크 시범 보여줄까? 재미 더 주는 거야!",
+      "turn_cost_krw": 0.36036,
+      "latency_ms": 2719,
+      "error": null
+    },
+    {
+      "turn": 40,
+      "session": 2,
+      "kind": "filler",
+      "user": "목요일에 학원 끝나고 또 올게!",
+      "reply": "*나루토처럼 손가락을 입에 물며 씩 웃는다.*  \n그래! 목요일엔 이 천재 강백호가 지호를 위해 자유투 자세 고쳐줄 거다!",
+      "turn_cost_krw": 1.582112,
+      "latency_ms": 8522,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 1669,
+      "output_tokens": 41,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.186928,
+      "output_krw": 0.016072,
+      "cost_krw": 0.203,
+      "latency_ms": 1829,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 1762,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.19734400000000002,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.221648,
+      "latency_ms": 2039,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 1853,
+      "output_tokens": 43,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.207536,
+      "output_krw": 0.016856000000000003,
+      "cost_krw": 0.224392,
+      "latency_ms": 2095,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 1933,
+      "output_tokens": 54,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.21649600000000002,
+      "output_krw": 0.021168000000000003,
+      "cost_krw": 0.23766400000000004,
+      "latency_ms": 2891,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2016,
+      "output_tokens": 54,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.225792,
+      "output_krw": 0.021168000000000003,
+      "cost_krw": 0.24696,
+      "latency_ms": 2932,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2109,
+      "output_tokens": 78,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.236208,
+      "output_krw": 0.030576000000000006,
+      "cost_krw": 0.26678399999999997,
+      "latency_ms": 1965,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2221,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.24875200000000003,
+      "output_krw": 0.020776000000000003,
+      "cost_krw": 0.26952800000000005,
+      "latency_ms": 2089,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2312,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.258944,
+      "output_krw": 0.022736,
+      "cost_krw": 0.28168000000000004,
+      "latency_ms": 1701,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2391,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.267792,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.29170399999999996,
+      "latency_ms": 2646,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2476,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.277312,
+      "output_krw": 0.023520000000000003,
+      "cost_krw": 0.300832,
+      "latency_ms": 2442,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2562,
+      "output_tokens": 47,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.28694400000000003,
+      "output_krw": 0.018424000000000003,
+      "cost_krw": 0.30536800000000003,
+      "latency_ms": 2146,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2628,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.29433600000000004,
+      "output_krw": 0.021560000000000003,
+      "cost_krw": 0.315896,
+      "latency_ms": 2072,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1606,
+      "output_tokens": 140,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.4496800000000001,
+      "output_krw": 0.0784,
+      "cost_krw": 0.5280800000000001,
+      "latency_ms": 3256,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1758,
+      "output_tokens": 191,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.49224000000000007,
+      "output_krw": 0.10696,
+      "cost_krw": 0.5992000000000001,
+      "latency_ms": 4494,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 13,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2319,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.259728,
+      "output_krw": 0.025088000000000003,
+      "cost_krw": 0.284816,
+      "latency_ms": 1773,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 1
+    },
+    {
+      "turn_no": 14,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2399,
+      "output_tokens": 42,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.26868800000000004,
+      "output_krw": 0.016464000000000003,
+      "cost_krw": 0.285152,
+      "latency_ms": 1717,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 1
+    },
+    {
+      "turn_no": 15,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2465,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.27608000000000005,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.30038400000000004,
+      "latency_ms": 2855,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 1
+    },
+    {
+      "turn_no": 16,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2548,
+      "output_tokens": 47,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.285376,
+      "output_krw": 0.018424000000000003,
+      "cost_krw": 0.3038,
+      "latency_ms": 4685,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1952,
+      "output_tokens": 108,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.54656,
+      "output_krw": 0.06048,
+      "cost_krw": 0.6070400000000001,
+      "latency_ms": 1986,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1984,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.55552,
+      "output_krw": 0.0028,
+      "cost_krw": 0.55832,
+      "latency_ms": 1038,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1376,
+      "output_tokens": 54,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.38527999999999996,
+      "output_krw": 0.03024,
+      "cost_krw": 0.41551999999999994,
+      "latency_ms": 1401,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 17,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 1971,
+      "output_tokens": 45,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.220752,
+      "output_krw": 0.017640000000000003,
+      "cost_krw": 0.238392,
+      "latency_ms": 2032,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 2
+    },
+    {
+      "turn_no": 18,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2047,
+      "output_tokens": 68,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.229264,
+      "output_krw": 0.026656000000000006,
+      "cost_krw": 0.25592,
+      "latency_ms": 2075,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 2
+    },
+    {
+      "turn_no": 19,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2144,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.240128,
+      "output_krw": 0.022736,
+      "cost_krw": 0.262864,
+      "latency_ms": 2132,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 2
+    },
+    {
+      "turn_no": 20,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2231,
+      "output_tokens": 63,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.24987199999999998,
+      "output_krw": 0.024696,
+      "cost_krw": 0.274568,
+      "latency_ms": 3234,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 2
+    },
+    {
+      "turn_no": 21,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2331,
+      "output_tokens": 70,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.26107199999999997,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.288512,
+      "latency_ms": 2329,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 2
+    },
+    {
+      "turn_no": 22,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2438,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.273056,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.29736,
+      "latency_ms": 3464,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 2
+    },
+    {
+      "turn_no": 23,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2528,
+      "output_tokens": 66,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.283136,
+      "output_krw": 0.025872,
+      "cost_krw": 0.309008,
+      "latency_ms": 1891,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 2
+    },
+    {
+      "turn_no": 24,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2617,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.29310400000000003,
+      "output_krw": 0.025088000000000003,
+      "cost_krw": 0.31819200000000003,
+      "latency_ms": 2792,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 2
+    },
+    {
+      "turn_no": 25,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2700,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.3024,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.326312,
+      "latency_ms": 1926,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 2
+    },
+    {
+      "turn_no": 26,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2790,
+      "output_tokens": 66,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.31248,
+      "output_krw": 0.025872,
+      "cost_krw": 0.338352,
+      "latency_ms": 2029,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 2
+    },
+    {
+      "turn_no": 27,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2887,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.323344,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.347256,
+      "latency_ms": 2747,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2976,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.33331200000000005,
+      "output_krw": 0.028224000000000006,
+      "cost_krw": 0.361536,
+      "latency_ms": 2063,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1841,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.51548,
+      "output_krw": 0.03416,
+      "cost_krw": 0.5496400000000001,
+      "latency_ms": 2598,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2031,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5686800000000001,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5983600000000001,
+      "latency_ms": 2060,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 233,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.048929999999999994,
+      "output_krw": 0,
+      "cost_krw": 0.048929999999999994,
+      "latency_ms": 1046,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 29,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2682,
+      "output_tokens": 63,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.300384,
+      "output_krw": 0.024696,
+      "cost_krw": 0.32508000000000004,
+      "latency_ms": 3268,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 2
+    },
+    {
+      "turn_no": 30,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2768,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.310016,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.33432,
+      "latency_ms": 2248,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 2
+    },
+    {
+      "turn_no": 31,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2880,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.32256,
+      "output_krw": 0.019992,
+      "cost_krw": 0.34255199999999997,
+      "latency_ms": 1784,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 2
+    },
+    {
+      "turn_no": 32,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2976,
+      "output_tokens": 67,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.33331200000000005,
+      "output_krw": 0.026264,
+      "cost_krw": 0.35957600000000006,
+      "latency_ms": 2483,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 2
+    },
+    {
+      "turn_no": 33,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 3069,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.343728,
+      "output_krw": 0.019992,
+      "cost_krw": 0.36372,
+      "latency_ms": 1747,
+      "error": null,
+      "local_turn_no": 17,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 3149,
+      "output_tokens": 57,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.35268800000000006,
+      "output_krw": 0.022344,
+      "cost_krw": 0.37503200000000003,
+      "latency_ms": 3910,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1917,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.53676,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.5642,
+      "latency_ms": 2134,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2096,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5868800000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5896800000000001,
+      "latency_ms": 840,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 96,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.020159999999999997,
+      "output_krw": 0,
+      "cost_krw": 0.020159999999999997,
+      "latency_ms": 630,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 35,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2726,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.305312,
+      "output_krw": 0.019600000000000003,
+      "cost_krw": 0.32491200000000003,
+      "latency_ms": 1555,
+      "error": null,
+      "local_turn_no": 19,
+      "session": 2
+    },
+    {
+      "turn_no": 36,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2810,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.31472,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.338632,
+      "latency_ms": 1650,
+      "error": null,
+      "local_turn_no": 20,
+      "session": 2
+    },
+    {
+      "turn_no": 37,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2893,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.32401599999999997,
+      "output_krw": 0.021560000000000003,
+      "cost_krw": 0.345576,
+      "latency_ms": 2460,
+      "error": null,
+      "local_turn_no": 21,
+      "session": 2
+    },
+    {
+      "turn_no": 38,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 2975,
+      "output_tokens": 48,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.3332,
+      "output_krw": 0.018816000000000003,
+      "cost_krw": 0.35201600000000005,
+      "latency_ms": 1616,
+      "error": null,
+      "local_turn_no": 22,
+      "session": 2
+    },
+    {
+      "turn_no": 39,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 3039,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.340368,
+      "output_krw": 0.019992,
+      "cost_krw": 0.36036,
+      "latency_ms": 2703,
+      "error": null,
+      "local_turn_no": 23,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "response",
+      "model": "Qwen/Qwen3-32B",
+      "ok": 1,
+      "input_tokens": 3116,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.348992,
+      "output_krw": 0.021560000000000003,
+      "cost_krw": 0.370552,
+      "latency_ms": 3099,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1993,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5580400000000001,
+      "output_krw": 0.028,
+      "cost_krw": 0.58604,
+      "latency_ms": 4315,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2224,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.62272,
+      "output_krw": 0.0028,
+      "cost_krw": 0.6255200000000001,
+      "latency_ms": 1073,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2026,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.56728,
+      "output_krw": 0.04032,
+      "cost_krw": 0.6076,
+      "latency_ms": 3115,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1987,
+      "output_tokens": 100,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.55636,
+      "output_krw": 0.056,
+      "cost_krw": 0.61236,
+      "latency_ms": 4472,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    }
+  ],
+  "report": {
+    "conversation_id": 540,
+    "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+    "character_id": "baekho",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 24,
+    "calls": 34,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 81187,
+      "cache_read": 0,
+      "cache_write": 0,
+      "output": 1822
+    },
+    "total_krw": 12.613090000000001,
+    "input_krw": 11.832506,
+    "output_krw": 0.7805840000000003,
+    "avg_krw_per_turn": 0.5255454166666668,
+    "by_tag_krw": {
+      "response": 7.8106,
+      "extract": 4.12104,
+      "embed": 0.06908999999999998,
+      "consolidate": 0.61236
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-8",
+        "avg_krw": 0.280602
+      },
+      {
+        "phase": "mid",
+        "turns": "9-16",
+        "avg_krw": 0.49148925
+      },
+      {
+        "phase": "late",
+        "turns": "17-24",
+        "avg_krw": 0.65205
+      }
+    ],
+    "max_turn": {
+      "turn_no": 24,
+      "krw": 1.582112
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "Qwen/Qwen3-32B",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "off",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 300,
+        "memory_budget_tokens": 1000,
+        "clock_offset_days": 15
+      },
+      "env": {
+        "APP_CLOCK_OFFSET_DAYS": "15",
+        "APP_MAX_TOKENS": "300",
+        "MODEL_EXTRACT": "google/gemma-4-31B-it",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "off",
+        "MODEL_RESPONSE": "Qwen/Qwen3-32B",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+    "profile": {
+      "name": "지호"
+    },
+    "items": [
+      {
+        "id": 4553,
+        "type": "fact",
+        "text": "사용자는 고양이 알레르기가 있다",
+        "when": null,
+        "importance": 5,
+        "status": "active",
+        "slot": "user.allergy",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 2,
+          "local_turn_no": 2
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:43:43.043Z"
+      },
+      {
+        "id": 4554,
+        "type": "fact",
+        "text": "사용자는 기타를 배우고 있다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "user.hobby",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:43:43.044Z"
+      },
+      {
+        "id": 4555,
+        "type": "fact",
+        "text": "사용자는 매주 화요일에 기타 학원에 간다",
+        "when": "매주 화요일",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.routine",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": 4588,
+        "invalidated_at": "2026-10-25T14:45:23.932Z",
+        "created_at": "2026-10-25T14:43:43.046Z"
+      },
+      {
+        "id": 4562,
+        "type": "fact",
+        "text": "사용자의 형은 대학생이다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "family.job",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:43:47.546Z"
+      },
+      {
+        "id": 4563,
+        "type": "fact",
+        "text": "사용자의 형은 부산에서 자취한다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "family.location",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:43:47.550Z"
+      },
+      {
+        "id": 4564,
+        "type": "preference",
+        "text": "사용자는 민트초코 아이스크림을 좋아한다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 5,
+          "local_turn_no": 5
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:43:47.551Z"
+      },
+      {
+        "id": 4565,
+        "type": "event",
+        "text": "사용자는 교내 밴드 경연 예선에 나간다",
+        "when": "2026-11-11 (다음 주 수요일)",
+        "importance": 4,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 6,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:43:47.553Z"
+      },
+      {
+        "id": 4576,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다",
+        "when": "다음에 올 때",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 7,
+          "local_turn_no": 7
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:44:00.661Z"
+      },
+      {
+        "id": 4577,
+        "type": "promise",
+        "text": "캐릭터는 사용자에게 자유투 자세를 봐주기로 했다",
+        "when": "다음에",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 537,
+          "turn_no": 8,
+          "local_turn_no": 8
+        },
+        "superseded_by": 4599,
+        "invalidated_at": "2026-10-25T14:45:19.455Z",
+        "created_at": "2026-10-25T14:44:00.664Z"
+      },
+      {
+        "id": 4588,
+        "type": "fact",
+        "text": "사용자는 매주 목요일에 기타 학원에 간다",
+        "when": "매주 목요일",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.routine",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 540,
+          "turn_no": 19,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:44:35.383Z"
+      },
+      {
+        "id": 4589,
+        "type": "fact",
+        "text": "사용자의 새 담임 선생님 이름은 박선영이다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "other.name",
+        "entity": "other#1",
+        "depends_on": null,
+        "value": "박선영",
+        "source": {
+          "conversation_id": 540,
+          "turn_no": 22,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:44:37.451Z"
+      },
+      {
+        "id": 4594,
+        "type": "event",
+        "text": "사용자는 형을 보러 간다",
+        "when": "2026-11-14 (이번 주말)",
+        "importance": 3,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 540,
+          "turn_no": 24,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:44:56.204Z"
+      },
+      {
+        "id": 4598,
+        "type": "event",
+        "text": "사용자는 친구네 집에 놀러 간다",
+        "when": "다음 주",
+        "importance": 3,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#3",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 540,
+          "turn_no": 31,
+          "local_turn_no": 15
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:45:15.246Z"
+      },
+      {
+        "id": 4599,
+        "type": "promise",
+        "text": "캐릭터는 사용자에게 자유투 자세를 봐주기로 했다",
+        "when": "2026-11-12 (목요일에 학원 끝나고)",
+        "importance": 4,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 540,
+          "turn_no": 40,
+          "local_turn_no": 24
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T14:45:19.454Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 410,
+        "conversation_id": 537,
+        "summary": "지호는 백호에게 경기 사진을 전달하고 자유투 자세 교정을 받기로 약속했다. 다음 주 수요일 교내 밴드 경연 예선을 앞두고 있으며, 기타를 배우고 있다.",
+        "created_at": "2026-10-25T14:44:03.119Z"
+      },
+      {
+        "id": 413,
+        "conversation_id": 540,
+        "summary": "사용자가 기타 학원 요일을 목요일로 변경했고, 새 담임 선생님이 박선영 선생님으로 바뀌었다. 이번 주말에 부산에 있는 형을 만나러 갈 예정이며, 다음 주 수요일 밴드 예선을 앞두고 있다. 캐릭터와는 경기 사진 전달 및 자유투 자세 교정 약속을 확인하며 친밀함을 유지했다.",
+        "created_at": "2026-10-25T14:45:23.931Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 8378,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 0,
+        "op": "MERGE",
+        "item_id": 4555,
+        "detail": "-> 4588",
+        "created_at": "2026-10-25T14:45:23.933Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 8377,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 0,
+        "op": "SUPERSEDE",
+        "item_id": 4555,
+        "detail": "-> 4588",
+        "created_at": "2026-10-25T14:45:23.933Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 8376,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "사용자가 기타 학원 요일을 목요일로 변경했고, 새 담임 선생님이 박선영 선생님으로 바뀌었다. 이번 주말에 부산에 있는 형을 만나러 갈 예정이며, 다음 주 수요일 밴드 예선을 앞두고 있다. 캐릭터와는 경기 사진 전달 및 자유투 자세 교정 약속을 확인하며 친밀함을 유지했다.",
+        "created_at": "2026-10-25T14:45:23.932Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 8374,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 40,
+        "op": "SUPERSEDE",
+        "item_id": 4577,
+        "detail": "-> 4599",
+        "created_at": "2026-10-25T14:45:19.456Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 8373,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 40,
+        "op": "UPDATE",
+        "item_id": 4599,
+        "detail": "캐릭터는 사용자에게 자유투 자세를 봐주기로 했다",
+        "created_at": "2026-10-25T14:45:19.455Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 8372,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 40,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":623,\"included\":[4553,4554,4555,4562,4563,4564,4565,4576,4577,4588,4589,4594,4598],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:45:16.332Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 8370,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 31,
+        "op": "ADD",
+        "item_id": 4598,
+        "detail": "사용자는 친구네 집에 놀러 간다",
+        "created_at": "2026-10-25T14:45:15.248Z",
+        "local_turn_no": 15
+      },
+      {
+        "id": 8362,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 34,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":591,\"included\":[4553,4554,4555,4562,4563,4564,4565,4576,4577,4588,4589,4594],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:44:57.717Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 8361,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 34,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[21941,21926,21893]}",
+        "created_at": "2026-10-25T14:44:57.712Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 8360,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 24,
+        "op": "ADD",
+        "item_id": 4594,
+        "detail": "사용자는 형을 보러 간다",
+        "created_at": "2026-10-25T14:44:56.205Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 8350,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 28,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":558,\"included\":[4553,4554,4555,4562,4563,4564,4565,4576,4577,4588,4589],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:44:38.534Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 8349,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 28,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[21893,21882,21850]}",
+        "created_at": "2026-10-25T14:44:38.528Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 8348,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 22,
+        "op": "ADD",
+        "item_id": 4589,
+        "detail": "사용자의 새 담임 선생님 이름은 박선영이다",
+        "created_at": "2026-10-25T14:44:37.453Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 8347,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 19,
+        "op": "ADD",
+        "item_id": 4588,
+        "detail": "사용자는 매주 목요일에 기타 학원에 간다",
+        "created_at": "2026-10-25T14:44:35.383Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 8346,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 19,
+        "op": "UPDATE_AS_ADD",
+        "item_id": 4555,
+        "detail": "다중값 속성 user.routine: 사용자는 매주 목요일에 기타 학원에 간다",
+        "created_at": "2026-10-25T14:44:35.380Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 8326,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 540,
+        "turn_no": 17,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":483,\"included\":[4553,4554,4555,4562,4563,4564,4565,4576,4577],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:44:03.876Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 8325,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "지호는 백호에게 경기 사진을 전달하고 자유투 자세 교정을 받기로 약속했다. 다음 주 수요일 교내 밴드 경연 예선을 앞두고 있으며, 기타를 배우고 있다.",
+        "created_at": "2026-10-25T14:44:03.121Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 8324,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 8,
+        "op": "ADD",
+        "item_id": 4577,
+        "detail": "캐릭터는 사용자에게 자유투 자세를 봐주기로 했다",
+        "created_at": "2026-10-25T14:44:00.664Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 8323,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 7,
+        "op": "ADD",
+        "item_id": 4576,
+        "detail": "사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다",
+        "created_at": "2026-10-25T14:44:00.662Z",
+        "local_turn_no": 7
+      },
+      {
+        "id": 8309,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 12,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":280,\"included\":[4553,4554,4555,4562,4563,4564,4565],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T14:43:47.564Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 8308,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 6,
+        "op": "ADD",
+        "item_id": 4565,
+        "detail": "사용자는 교내 밴드 경연 예선에 나간다",
+        "created_at": "2026-10-25T14:43:47.554Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 8307,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 5,
+        "op": "ADD",
+        "item_id": 4564,
+        "detail": "사용자는 민트초코 아이스크림을 좋아한다",
+        "created_at": "2026-10-25T14:43:47.552Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 8306,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 4563,
+        "detail": "사용자의 형은 부산에서 자취한다",
+        "created_at": "2026-10-25T14:43:47.551Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 8305,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 4562,
+        "detail": "사용자의 형은 대학생이다",
+        "created_at": "2026-10-25T14:43:47.548Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 8296,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 4555,
+        "detail": "사용자는 매주 화요일에 기타 학원에 간다",
+        "created_at": "2026-10-25T14:43:43.047Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 8295,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 4554,
+        "detail": "사용자는 기타를 배우고 있다",
+        "created_at": "2026-10-25T14:43:43.045Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 8294,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 2,
+        "op": "ADD",
+        "item_id": 4553,
+        "detail": "사용자는 고양이 알레르기가 있다",
+        "created_at": "2026-10-25T14:43:43.043Z",
+        "local_turn_no": 2
+      },
+      {
+        "id": 8293,
+        "user_id": "bench-20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+        "conversation_id": 537,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"지호\"}",
+        "created_at": "2026-10-25T14:43:43.041Z",
+        "local_turn_no": 3
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-10-25T14:43:14.559Z",
+      "conversation_id": 537,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 1669,
+      "output_tokens": 41,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.186928,
+      "output_krw": 0.016072,
+      "cost_krw": 0.203,
+      "latency_ms": 1829,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:12.730Z",
+      "request_id": "RG2gDlIFJyLJiaOnWPp9LLFd",
+      "raw_usage": {
+        "prompt_tokens": 1669,
+        "total_tokens": 1710,
+        "completion_tokens": 41,
+        "estimated_cost": 0.000145,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000145
+    },
+    {
+      "ts": "2026-10-25T14:43:16.614Z",
+      "conversation_id": 537,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 1762,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.19734400000000002,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.221648,
+      "latency_ms": 2039,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:14.575Z",
+      "request_id": "R8bEEN1GgKMb2H7pn7l0JyNQ",
+      "raw_usage": {
+        "prompt_tokens": 1762,
+        "total_tokens": 1824,
+        "completion_tokens": 62,
+        "estimated_cost": 0.00015832,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00015832000000000002
+    },
+    {
+      "ts": "2026-10-25T14:43:18.720Z",
+      "conversation_id": 537,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 1853,
+      "output_tokens": 43,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.207536,
+      "output_krw": 0.016856000000000003,
+      "cost_krw": 0.224392,
+      "latency_ms": 2095,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:16.625Z",
+      "request_id": "RfbWwuPl9RD5oYGLsrZzRv0V",
+      "raw_usage": {
+        "prompt_tokens": 1853,
+        "total_tokens": 1896,
+        "completion_tokens": 43,
+        "estimated_cost": 0.00016027999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00016028
+    },
+    {
+      "ts": "2026-10-25T14:43:21.635Z",
+      "conversation_id": 537,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 1933,
+      "output_tokens": 54,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.21649600000000002,
+      "output_krw": 0.021168000000000003,
+      "cost_krw": 0.23766400000000004,
+      "latency_ms": 2891,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:18.743Z",
+      "request_id": "R3GVOmpnRJLVDedlpaPU3UUi",
+      "raw_usage": {
+        "prompt_tokens": 1933,
+        "total_tokens": 1987,
+        "completion_tokens": 54,
+        "estimated_cost": 0.00016975999999999997,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00016976000000000003
+    },
+    {
+      "ts": "2026-10-25T14:43:24.589Z",
+      "conversation_id": 537,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2016,
+      "output_tokens": 54,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.225792,
+      "output_krw": 0.021168000000000003,
+      "cost_krw": 0.24696,
+      "latency_ms": 2932,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:21.657Z",
+      "request_id": "Rr63pZdrRzR0X3ZFsFws1Klk",
+      "raw_usage": {
+        "prompt_tokens": 2016,
+        "total_tokens": 2070,
+        "completion_tokens": 54,
+        "estimated_cost": 0.0001764,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0001764
+    },
+    {
+      "ts": "2026-10-25T14:43:26.572Z",
+      "conversation_id": 537,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2109,
+      "output_tokens": 78,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.236208,
+      "output_krw": 0.030576000000000006,
+      "cost_krw": 0.26678399999999997,
+      "latency_ms": 1965,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:24.607Z",
+      "request_id": "Rnyr2dq78ysQS7g43pGhiVc6",
+      "raw_usage": {
+        "prompt_tokens": 2109,
+        "total_tokens": 2187,
+        "completion_tokens": 78,
+        "estimated_cost": 0.00019055999999999996,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00019056
+    },
+    {
+      "ts": "2026-10-25T14:43:28.674Z",
+      "conversation_id": 537,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2221,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.24875200000000003,
+      "output_krw": 0.020776000000000003,
+      "cost_krw": 0.26952800000000005,
+      "latency_ms": 2089,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:26.585Z",
+      "request_id": "RVWLzgtIMw1zdYAVibZZhTNx",
+      "raw_usage": {
+        "prompt_tokens": 2221,
+        "total_tokens": 2274,
+        "completion_tokens": 53,
+        "estimated_cost": 0.00019251999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00019252000000000003
+    },
+    {
+      "ts": "2026-10-25T14:43:30.394Z",
+      "conversation_id": 537,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2312,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.258944,
+      "output_krw": 0.022736,
+      "cost_krw": 0.28168000000000004,
+      "latency_ms": 1701,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:28.693Z",
+      "request_id": "RxMb7mZWHrfecrSsc0mTaENo",
+      "raw_usage": {
+        "prompt_tokens": 2312,
+        "total_tokens": 2370,
+        "completion_tokens": 58,
+        "estimated_cost": 0.00020119999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002012
+    },
+    {
+      "ts": "2026-10-25T14:43:33.060Z",
+      "conversation_id": 537,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2391,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.267792,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.29170399999999996,
+      "latency_ms": 2646,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:30.414Z",
+      "request_id": "RBJR83xjOprd0it1VZt0A5qK",
+      "raw_usage": {
+        "prompt_tokens": 2391,
+        "total_tokens": 2452,
+        "completion_tokens": 61,
+        "estimated_cost": 0.00020836,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00020836
+    },
+    {
+      "ts": "2026-10-25T14:43:35.515Z",
+      "conversation_id": 537,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2476,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.277312,
+      "output_krw": 0.023520000000000003,
+      "cost_krw": 0.300832,
+      "latency_ms": 2442,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:33.073Z",
+      "request_id": "RH7LMlC9sX3FjvkFa7ab5gtH",
+      "raw_usage": {
+        "prompt_tokens": 2476,
+        "total_tokens": 2536,
+        "completion_tokens": 60,
+        "estimated_cost": 0.00021488,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00021488
+    },
+    {
+      "ts": "2026-10-25T14:43:37.677Z",
+      "conversation_id": 537,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2562,
+      "output_tokens": 47,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.28694400000000003,
+      "output_krw": 0.018424000000000003,
+      "cost_krw": 0.30536800000000003,
+      "latency_ms": 2146,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:35.531Z",
+      "request_id": "RHIiXeNwnZLtP4vomlMSGjvX",
+      "raw_usage": {
+        "prompt_tokens": 2562,
+        "total_tokens": 2609,
+        "completion_tokens": 47,
+        "estimated_cost": 0.00021812,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00021812000000000003
+    },
+    {
+      "ts": "2026-10-25T14:43:39.766Z",
+      "conversation_id": 537,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2628,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.29433600000000004,
+      "output_krw": 0.021560000000000003,
+      "cost_krw": 0.315896,
+      "latency_ms": 2072,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:37.694Z",
+      "request_id": "RHVW3BVtfQLSaNPUrv9Q3SSM",
+      "raw_usage": {
+        "prompt_tokens": 2628,
+        "total_tokens": 2683,
+        "completion_tokens": 55,
+        "estimated_cost": 0.00022563999999999996,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00022564000000000001
+    },
+    {
+      "ts": "2026-10-25T14:43:43.037Z",
+      "conversation_id": 537,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1606,
+      "output_tokens": 140,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.4496800000000001,
+      "output_krw": 0.0784,
+      "cost_krw": 0.5280800000000001,
+      "latency_ms": 3256,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:39.781Z",
+      "request_id": "RRaOrvP7tnH7Pkk6IMP0nPnz",
+      "raw_usage": {
+        "prompt_tokens": 1606,
+        "total_tokens": 1746,
+        "completion_tokens": 140,
+        "estimated_cost": 0.00037720000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00037720000000000006
+    },
+    {
+      "ts": "2026-10-25T14:43:47.544Z",
+      "conversation_id": 537,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1758,
+      "output_tokens": 191,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.49224000000000007,
+      "output_krw": 0.10696,
+      "cost_krw": 0.5992000000000001,
+      "latency_ms": 4494,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:43.050Z",
+      "request_id": "RVpKT927QT77BGOsxq59tC6L",
+      "raw_usage": {
+        "prompt_tokens": 1758,
+        "total_tokens": 1949,
+        "completion_tokens": 191,
+        "estimated_cost": 0.00042800000000000005,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00042800000000000005
+    },
+    {
+      "ts": "2026-10-25T14:43:49.346Z",
+      "conversation_id": 537,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2319,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.259728,
+      "output_krw": 0.025088000000000003,
+      "cost_krw": 0.284816,
+      "latency_ms": 1773,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:47.573Z",
+      "request_id": "Rk8B3tp7Lkv2MEmwD3ZNsHiK",
+      "raw_usage": {
+        "prompt_tokens": 2319,
+        "total_tokens": 2383,
+        "completion_tokens": 64,
+        "estimated_cost": 0.00020343999999999996,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00020344
+    },
+    {
+      "ts": "2026-10-25T14:43:51.078Z",
+      "conversation_id": 537,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2399,
+      "output_tokens": 42,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.26868800000000004,
+      "output_krw": 0.016464000000000003,
+      "cost_krw": 0.285152,
+      "latency_ms": 1717,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:49.361Z",
+      "request_id": "RMnzRMhuRuBQ5zLTRq34SHFN",
+      "raw_usage": {
+        "prompt_tokens": 2399,
+        "total_tokens": 2441,
+        "completion_tokens": 42,
+        "estimated_cost": 0.00020368,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00020368000000000003
+    },
+    {
+      "ts": "2026-10-25T14:43:53.951Z",
+      "conversation_id": 537,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2465,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.27608000000000005,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.30038400000000004,
+      "latency_ms": 2855,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:51.096Z",
+      "request_id": "RT2wXZMYdZBgINnl7Ua76bS8",
+      "raw_usage": {
+        "prompt_tokens": 2465,
+        "total_tokens": 2527,
+        "completion_tokens": 62,
+        "estimated_cost": 0.00021456,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00021456000000000003
+    },
+    {
+      "ts": "2026-10-25T14:43:58.651Z",
+      "conversation_id": 537,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2548,
+      "output_tokens": 47,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.285376,
+      "output_krw": 0.018424000000000003,
+      "cost_krw": 0.3038,
+      "latency_ms": 4685,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:53.966Z",
+      "request_id": "RwjtODYPqRLfD4OEw6prNx3f",
+      "raw_usage": {
+        "prompt_tokens": 2548,
+        "total_tokens": 2595,
+        "completion_tokens": 47,
+        "estimated_cost": 0.00021700000000000002,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00021700000000000002
+    },
+    {
+      "ts": "2026-10-25T14:44:00.658Z",
+      "conversation_id": 537,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1952,
+      "output_tokens": 108,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.54656,
+      "output_krw": 0.06048,
+      "cost_krw": 0.6070400000000001,
+      "latency_ms": 1986,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:43:58.672Z",
+      "request_id": "RcV00H3DPC0WLHmSogeXTfRj",
+      "raw_usage": {
+        "prompt_tokens": 1952,
+        "total_tokens": 2060,
+        "completion_tokens": 108,
+        "estimated_cost": 0.0004336,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004336000000000001
+    },
+    {
+      "ts": "2026-10-25T14:44:01.706Z",
+      "conversation_id": 537,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1984,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.55552,
+      "output_krw": 0.0028,
+      "cost_krw": 0.55832,
+      "latency_ms": 1038,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:00.668Z",
+      "request_id": "RT6q19QyF3scu7HXK0NHIGGf",
+      "raw_usage": {
+        "prompt_tokens": 1984,
+        "total_tokens": 1989,
+        "completion_tokens": 5,
+        "estimated_cost": 0.0003988,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0003988
+    },
+    {
+      "ts": "2026-10-25T14:44:03.118Z",
+      "conversation_id": 537,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1376,
+      "output_tokens": 54,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.38527999999999996,
+      "output_krw": 0.03024,
+      "cost_krw": 0.41551999999999994,
+      "latency_ms": 1401,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:01.717Z",
+      "request_id": "R5EmDI0RweTtSVnVktyErNm2",
+      "raw_usage": {
+        "prompt_tokens": 1376,
+        "total_tokens": 1430,
+        "completion_tokens": 54,
+        "estimated_cost": 0.0002968,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00029679999999999995
+    },
+    {
+      "ts": "2026-10-25T14:44:05.910Z",
+      "conversation_id": 540,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 1971,
+      "output_tokens": 45,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.220752,
+      "output_krw": 0.017640000000000003,
+      "cost_krw": 0.238392,
+      "latency_ms": 2032,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:03.877Z",
+      "request_id": "R1a66D4TQfQiPo3gvaTne0DS",
+      "raw_usage": {
+        "prompt_tokens": 1971,
+        "total_tokens": 2016,
+        "completion_tokens": 45,
+        "estimated_cost": 0.00017028,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00017028
+    },
+    {
+      "ts": "2026-10-25T14:44:07.999Z",
+      "conversation_id": 540,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2047,
+      "output_tokens": 68,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.229264,
+      "output_krw": 0.026656000000000006,
+      "cost_krw": 0.25592,
+      "latency_ms": 2075,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:05.923Z",
+      "request_id": "RjRvVWMivfrvDW19YQmIMRtq",
+      "raw_usage": {
+        "prompt_tokens": 2047,
+        "total_tokens": 2115,
+        "completion_tokens": 68,
+        "estimated_cost": 0.00018279999999999997,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0001828
+    },
+    {
+      "ts": "2026-10-25T14:44:10.144Z",
+      "conversation_id": 540,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2144,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.240128,
+      "output_krw": 0.022736,
+      "cost_krw": 0.262864,
+      "latency_ms": 2132,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:08.011Z",
+      "request_id": "Rhpih6b9jGsLuQOE5yWDcrEm",
+      "raw_usage": {
+        "prompt_tokens": 2144,
+        "total_tokens": 2202,
+        "completion_tokens": 58,
+        "estimated_cost": 0.00018776,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00018776
+    },
+    {
+      "ts": "2026-10-25T14:44:13.394Z",
+      "conversation_id": 540,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2231,
+      "output_tokens": 63,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.24987199999999998,
+      "output_krw": 0.024696,
+      "cost_krw": 0.274568,
+      "latency_ms": 3234,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:10.160Z",
+      "request_id": "RAMi48N4z7DrOoYVcIL8Oxu5",
+      "raw_usage": {
+        "prompt_tokens": 2231,
+        "total_tokens": 2294,
+        "completion_tokens": 63,
+        "estimated_cost": 0.00019611999999999999,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00019611999999999999
+    },
+    {
+      "ts": "2026-10-25T14:44:15.742Z",
+      "conversation_id": 540,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2331,
+      "output_tokens": 70,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.26107199999999997,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.288512,
+      "latency_ms": 2329,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:13.413Z",
+      "request_id": "RuQwrWHH2SgPCUN8bWzzA2vn",
+      "raw_usage": {
+        "prompt_tokens": 2331,
+        "total_tokens": 2401,
+        "completion_tokens": 70,
+        "estimated_cost": 0.00020607999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00020607999999999998
+    },
+    {
+      "ts": "2026-10-25T14:44:19.225Z",
+      "conversation_id": 540,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2438,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.273056,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.29736,
+      "latency_ms": 3464,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:15.760Z",
+      "request_id": "RTI4sbRfshypHE4XttvzstuA",
+      "raw_usage": {
+        "prompt_tokens": 2438,
+        "total_tokens": 2500,
+        "completion_tokens": 62,
+        "estimated_cost": 0.0002124,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002124
+    },
+    {
+      "ts": "2026-10-25T14:44:21.136Z",
+      "conversation_id": 540,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2528,
+      "output_tokens": 66,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.283136,
+      "output_krw": 0.025872,
+      "cost_krw": 0.309008,
+      "latency_ms": 1891,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:19.245Z",
+      "request_id": "RLNDY1DBPOqLL7UPNLMdLCT0",
+      "raw_usage": {
+        "prompt_tokens": 2528,
+        "total_tokens": 2594,
+        "completion_tokens": 66,
+        "estimated_cost": 0.00022072,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00022072000000000001
+    },
+    {
+      "ts": "2026-10-25T14:44:23.938Z",
+      "conversation_id": 540,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2617,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.29310400000000003,
+      "output_krw": 0.025088000000000003,
+      "cost_krw": 0.31819200000000003,
+      "latency_ms": 2792,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:21.146Z",
+      "request_id": "Ri18Eh6u0djp7gLowhUzWYeK",
+      "raw_usage": {
+        "prompt_tokens": 2617,
+        "total_tokens": 2681,
+        "completion_tokens": 64,
+        "estimated_cost": 0.00022727999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00022728
+    },
+    {
+      "ts": "2026-10-25T14:44:25.877Z",
+      "conversation_id": 540,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2700,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.3024,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.326312,
+      "latency_ms": 1926,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:23.950Z",
+      "request_id": "Rv3WpfvtQXvBG99LIyD1wmxV",
+      "raw_usage": {
+        "prompt_tokens": 2700,
+        "total_tokens": 2761,
+        "completion_tokens": 61,
+        "estimated_cost": 0.00023307999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00023307999999999998
+    },
+    {
+      "ts": "2026-10-25T14:44:27.919Z",
+      "conversation_id": 540,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2790,
+      "output_tokens": 66,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.31248,
+      "output_krw": 0.025872,
+      "cost_krw": 0.338352,
+      "latency_ms": 2029,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:25.890Z",
+      "request_id": "Rvxg0rZAROcVfUUzAmS1EM80",
+      "raw_usage": {
+        "prompt_tokens": 2790,
+        "total_tokens": 2856,
+        "completion_tokens": 66,
+        "estimated_cost": 0.00024167999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00024168
+    },
+    {
+      "ts": "2026-10-25T14:44:30.678Z",
+      "conversation_id": 540,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2887,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.323344,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.347256,
+      "latency_ms": 2747,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:27.931Z",
+      "request_id": "R6KCZrllINLa2EtLC5YWPNw6",
+      "raw_usage": {
+        "prompt_tokens": 2887,
+        "total_tokens": 2948,
+        "completion_tokens": 61,
+        "estimated_cost": 0.00024804,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00024804
+    },
+    {
+      "ts": "2026-10-25T14:44:32.762Z",
+      "conversation_id": 540,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2976,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.33331200000000005,
+      "output_krw": 0.028224000000000006,
+      "cost_krw": 0.361536,
+      "latency_ms": 2063,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:30.699Z",
+      "request_id": "RCBabeaZhWx8Vea9eBNgO7TU",
+      "raw_usage": {
+        "prompt_tokens": 2976,
+        "total_tokens": 3048,
+        "completion_tokens": 72,
+        "estimated_cost": 0.00025824,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00025824
+    },
+    {
+      "ts": "2026-10-25T14:44:35.376Z",
+      "conversation_id": 540,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1841,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.51548,
+      "output_krw": 0.03416,
+      "cost_krw": 0.5496400000000001,
+      "latency_ms": 2598,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:32.777Z",
+      "request_id": "RWgb0wzoH3u7Ho2pCgjD7hRf",
+      "raw_usage": {
+        "prompt_tokens": 1841,
+        "total_tokens": 1902,
+        "completion_tokens": 61,
+        "estimated_cost": 0.00039260000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00039260000000000006
+    },
+    {
+      "ts": "2026-10-25T14:44:37.449Z",
+      "conversation_id": 540,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2031,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5686800000000001,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5983600000000001,
+      "latency_ms": 2060,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:35.388Z",
+      "request_id": "RC0xXtsiBSNcW7yRDWCEeMGE",
+      "raw_usage": {
+        "prompt_tokens": 2031,
+        "total_tokens": 2084,
+        "completion_tokens": 53,
+        "estimated_cost": 0.0004274,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004274000000000001
+    },
+    {
+      "ts": "2026-10-25T14:44:38.517Z",
+      "conversation_id": 540,
+      "turn_no": 12,
+      "purpose": "deep_search",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 233,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.048929999999999994,
+      "output_krw": 0,
+      "cost_krw": 0.048929999999999994,
+      "latency_ms": 1046,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T14:44:37.470Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          21,
+          27,
+          20,
+          10,
+          17,
+          12,
+          16,
+          9,
+          17,
+          10,
+          19,
+          14,
+          12,
+          29
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000034949999999999996
+    },
+    {
+      "ts": "2026-10-25T14:44:41.812Z",
+      "conversation_id": 540,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2682,
+      "output_tokens": 63,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.300384,
+      "output_krw": 0.024696,
+      "cost_krw": 0.32508000000000004,
+      "latency_ms": 3268,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:38.544Z",
+      "request_id": "Rs77NtDjuZftDrgE5W3Kxleo",
+      "raw_usage": {
+        "prompt_tokens": 2682,
+        "total_tokens": 2745,
+        "completion_tokens": 63,
+        "estimated_cost": 0.00023219999999999998,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002322
+    },
+    {
+      "ts": "2026-10-25T14:44:44.078Z",
+      "conversation_id": 540,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2768,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.310016,
+      "output_krw": 0.024304000000000006,
+      "cost_krw": 0.33432,
+      "latency_ms": 2248,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:41.830Z",
+      "request_id": "RWHcYxOiIQCnNfSIhddrHzkL",
+      "raw_usage": {
+        "prompt_tokens": 2768,
+        "total_tokens": 2830,
+        "completion_tokens": 62,
+        "estimated_cost": 0.00023880000000000003,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002388
+    },
+    {
+      "ts": "2026-10-25T14:44:45.878Z",
+      "conversation_id": 540,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2880,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.32256,
+      "output_krw": 0.019992,
+      "cost_krw": 0.34255199999999997,
+      "latency_ms": 1784,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:44.094Z",
+      "request_id": "RKMXwdCgqO1GbE1FbBo4OXq4",
+      "raw_usage": {
+        "prompt_tokens": 2880,
+        "total_tokens": 2931,
+        "completion_tokens": 51,
+        "estimated_cost": 0.00024467999999999994,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00024468
+    },
+    {
+      "ts": "2026-10-25T14:44:48.368Z",
+      "conversation_id": 540,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2976,
+      "output_tokens": 67,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.33331200000000005,
+      "output_krw": 0.026264,
+      "cost_krw": 0.35957600000000006,
+      "latency_ms": 2483,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:45.885Z",
+      "request_id": "RlZcfwIM4CLxCT1Zbis5yzuM",
+      "raw_usage": {
+        "prompt_tokens": 2976,
+        "total_tokens": 3043,
+        "completion_tokens": 67,
+        "estimated_cost": 0.00025684,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00025684000000000004
+    },
+    {
+      "ts": "2026-10-25T14:44:50.131Z",
+      "conversation_id": 540,
+      "turn_no": 17,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 3069,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.343728,
+      "output_krw": 0.019992,
+      "cost_krw": 0.36372,
+      "latency_ms": 1747,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:48.384Z",
+      "request_id": "RX5EGFjmwxfauPWHT4KfavBl",
+      "raw_usage": {
+        "prompt_tokens": 3069,
+        "total_tokens": 3120,
+        "completion_tokens": 51,
+        "estimated_cost": 0.00025979999999999997,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00025979999999999997
+    },
+    {
+      "ts": "2026-10-25T14:44:54.056Z",
+      "conversation_id": 540,
+      "turn_no": 18,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 3149,
+      "output_tokens": 57,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.35268800000000006,
+      "output_krw": 0.022344,
+      "cost_krw": 0.37503200000000003,
+      "latency_ms": 3910,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:50.146Z",
+      "request_id": "RxiNIaTsRgKl2tactyPixCwx",
+      "raw_usage": {
+        "prompt_tokens": 3149,
+        "total_tokens": 3206,
+        "completion_tokens": 57,
+        "estimated_cost": 0.00026788,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00026788
+    },
+    {
+      "ts": "2026-10-25T14:44:56.202Z",
+      "conversation_id": 540,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1917,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.53676,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.5642,
+      "latency_ms": 2134,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:54.068Z",
+      "request_id": "RXrt1UDj146vyQZIzUjaERLG",
+      "raw_usage": {
+        "prompt_tokens": 1917,
+        "total_tokens": 1966,
+        "completion_tokens": 49,
+        "estimated_cost": 0.0004030000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00040300000000000004
+    },
+    {
+      "ts": "2026-10-25T14:44:57.049Z",
+      "conversation_id": 540,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2096,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5868800000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5896800000000001,
+      "latency_ms": 840,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:56.209Z",
+      "request_id": "RvE7H4jQRmaiKzzJF36cgfex",
+      "raw_usage": {
+        "prompt_tokens": 2096,
+        "total_tokens": 2101,
+        "completion_tokens": 5,
+        "estimated_cost": 0.00042120000000000005,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00042120000000000005
+    },
+    {
+      "ts": "2026-10-25T14:44:57.708Z",
+      "conversation_id": 540,
+      "turn_no": 18,
+      "purpose": "deep_search",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 96,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.020159999999999997,
+      "output_krw": 0,
+      "cost_krw": 0.020159999999999997,
+      "latency_ms": 630,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T14:44:57.078Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          22,
+          24,
+          20,
+          18,
+          12
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0000144
+    },
+    {
+      "ts": "2026-10-25T14:44:59.280Z",
+      "conversation_id": 540,
+      "turn_no": 19,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2726,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.305312,
+      "output_krw": 0.019600000000000003,
+      "cost_krw": 0.32491200000000003,
+      "latency_ms": 1555,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:57.725Z",
+      "request_id": "Rz9ykcu0ilC1vga9caMQ2Vov",
+      "raw_usage": {
+        "prompt_tokens": 2726,
+        "total_tokens": 2776,
+        "completion_tokens": 50,
+        "estimated_cost": 0.00023207999999999996,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00023208000000000001
+    },
+    {
+      "ts": "2026-10-25T14:45:00.978Z",
+      "conversation_id": 540,
+      "turn_no": 20,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2810,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.31472,
+      "output_krw": 0.023912000000000003,
+      "cost_krw": 0.338632,
+      "latency_ms": 1650,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:44:59.328Z",
+      "request_id": "Rr0YjwJlncjOUFbZcPdFCYVY",
+      "raw_usage": {
+        "prompt_tokens": 2810,
+        "total_tokens": 2871,
+        "completion_tokens": 61,
+        "estimated_cost": 0.00024188,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00024188
+    },
+    {
+      "ts": "2026-10-25T14:45:03.455Z",
+      "conversation_id": 540,
+      "turn_no": 21,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2893,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.32401599999999997,
+      "output_krw": 0.021560000000000003,
+      "cost_krw": 0.345576,
+      "latency_ms": 2460,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:00.995Z",
+      "request_id": "R0eUUm7qCm9uIrPT59kkCRKh",
+      "raw_usage": {
+        "prompt_tokens": 2893,
+        "total_tokens": 2948,
+        "completion_tokens": 55,
+        "estimated_cost": 0.00024683999999999996,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00024684
+    },
+    {
+      "ts": "2026-10-25T14:45:05.085Z",
+      "conversation_id": 540,
+      "turn_no": 22,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 2975,
+      "output_tokens": 48,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.3332,
+      "output_krw": 0.018816000000000003,
+      "cost_krw": 0.35201600000000005,
+      "latency_ms": 1616,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:03.469Z",
+      "request_id": "RBZUPeWsz18eYwHWrA51liba",
+      "raw_usage": {
+        "prompt_tokens": 2975,
+        "total_tokens": 3023,
+        "completion_tokens": 48,
+        "estimated_cost": 0.00025144,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00025144
+    },
+    {
+      "ts": "2026-10-25T14:45:07.804Z",
+      "conversation_id": 540,
+      "turn_no": 23,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 3039,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.340368,
+      "output_krw": 0.019992,
+      "cost_krw": 0.36036,
+      "latency_ms": 2703,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:05.100Z",
+      "request_id": "RGeuLWJTE6x75Ijs9cKJBJbf",
+      "raw_usage": {
+        "prompt_tokens": 3039,
+        "total_tokens": 3090,
+        "completion_tokens": 51,
+        "estimated_cost": 0.00025739999999999997,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002574
+    },
+    {
+      "ts": "2026-10-25T14:45:10.919Z",
+      "conversation_id": 540,
+      "turn_no": 24,
+      "purpose": "response",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "Qwen/Qwen3-32B",
+      "ok": true,
+      "input_tokens": 3116,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.348992,
+      "output_krw": 0.021560000000000003,
+      "cost_krw": 0.370552,
+      "latency_ms": 3099,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:07.820Z",
+      "request_id": "RdSPqYZeTT3a972ikNO7QDHI",
+      "raw_usage": {
+        "prompt_tokens": 3116,
+        "total_tokens": 3171,
+        "completion_tokens": 55,
+        "estimated_cost": 0.00026468,
+        "prompt_tokens_details": null
+      },
+      "rates": {
+        "input": 0.08,
+        "cached": 0.08,
+        "cache_write": 0.08,
+        "output": 0.28,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00026468
+    },
+    {
+      "ts": "2026-10-25T14:45:15.245Z",
+      "conversation_id": 540,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1993,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5580400000000001,
+      "output_krw": 0.028,
+      "cost_krw": 0.58604,
+      "latency_ms": 4315,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:10.929Z",
+      "request_id": "RKJjZP338uWg0YQRcKZGgiRH",
+      "raw_usage": {
+        "prompt_tokens": 1993,
+        "total_tokens": 2043,
+        "completion_tokens": 50,
+        "estimated_cost": 0.0004186000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00041860000000000004
+    },
+    {
+      "ts": "2026-10-25T14:45:16.325Z",
+      "conversation_id": 540,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2224,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.62272,
+      "output_krw": 0.0028,
+      "cost_krw": 0.6255200000000001,
+      "latency_ms": 1073,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:15.252Z",
+      "request_id": "Rvwp3PAUmQSKQ8sO7G420m4X",
+      "raw_usage": {
+        "prompt_tokens": 2224,
+        "total_tokens": 2229,
+        "completion_tokens": 5,
+        "estimated_cost": 0.0004468,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004468
+    },
+    {
+      "ts": "2026-10-25T14:45:19.454Z",
+      "conversation_id": 540,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2026,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.56728,
+      "output_krw": 0.04032,
+      "cost_krw": 0.6076,
+      "latency_ms": 3115,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:16.339Z",
+      "request_id": "RXrrxjGRfk426moR8gBuUgWO",
+      "raw_usage": {
+        "prompt_tokens": 2026,
+        "total_tokens": 2098,
+        "completion_tokens": 72,
+        "estimated_cost": 0.00043400000000000003,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00043400000000000003
+    },
+    {
+      "ts": "2026-10-25T14:45:23.931Z",
+      "conversation_id": 540,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025144309-baekho-revisit-40-dm2-qwen-off-r1",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1987,
+      "output_tokens": 100,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.55636,
+      "output_krw": 0.056,
+      "cost_krw": 0.61236,
+      "latency_ms": 4472,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T14:45:19.459Z",
+      "request_id": "RhWGjAUQonDrqiSgQPna4JZX",
+      "raw_usage": {
+        "prompt_tokens": 1987,
+        "total_tokens": 2087,
+        "completion_tokens": 100,
+        "estimated_cost": 0.0004374,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004374
+    }
+  ],
+  "ledger_check": {
+    "sessions": [
+      {
+        "db_calls": 21,
+        "ledger_calls": 21,
+        "db_krw": 7.0477680000000005,
+        "ledger_krw": 7.0477680000000005,
+        "match": true
+      },
+      {
+        "db_calls": 34,
+        "ledger_calls": 34,
+        "db_krw": 12.613090000000001,
+        "ledger_krw": 12.613090000000001,
+        "match": true
+      }
+    ],
+    "match": true
+  },
+  "provenance": {
+    "build_id": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_time": "2026-10-25T13:48:53.236Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 6,
+    "git_status_sha": "31526d9ac974",
+    "started_at": "2026-10-25T14:43:09.908Z",
+    "model": {
+      "config": {
+        "response": "Qwen/Qwen3-32B",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "Qwen/Qwen3-32B",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.42150045,
+      "avg_with_end_krw": 0.49152145,
+      "end_krw": 2.80084,
+      "total_krw": 19.660858,
+      "segments": {
+        "s1": 0.3416805,
+        "s2": 0.47471375000000005
+      },
+      "max": {
+        "turn": 40,
+        "krw": 1.582112,
+        "tags": {
+          "response": 0.370552,
+          "extract": 1.21156
+        }
+      },
+      "by_tag": {
+        "response": 12.150208000000001,
+        "extract": 6.41368,
+        "consolidate": 1.02788,
+        "embed": 0.06908999999999998
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.203,
+          "tags": {
+            "response": 0.203
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.221648,
+          "tags": {
+            "response": 0.221648
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.224392,
+          "tags": {
+            "response": 0.224392
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.23766400000000004,
+          "tags": {
+            "response": 0.23766400000000004
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.24696,
+          "tags": {
+            "response": 0.24696
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.26678399999999997,
+          "tags": {
+            "response": 0.26678399999999997
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.26952800000000005,
+          "tags": {
+            "response": 0.26952800000000005
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.28168000000000004,
+          "tags": {
+            "response": 0.28168000000000004
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.29170399999999996,
+          "tags": {
+            "response": 0.29170399999999996
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.300832,
+          "tags": {
+            "response": 0.300832
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.30536800000000003,
+          "tags": {
+            "response": 0.30536800000000003
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 1.4431760000000002,
+          "tags": {
+            "response": 0.315896,
+            "extract": 1.1272800000000003
+          }
+        },
+        {
+          "turn": 13,
+          "krw": 0.284816,
+          "tags": {
+            "response": 0.284816
+          }
+        },
+        {
+          "turn": 14,
+          "krw": 0.285152,
+          "tags": {
+            "response": 0.285152
+          }
+        },
+        {
+          "turn": 15,
+          "krw": 0.30038400000000004,
+          "tags": {
+            "response": 0.30038400000000004
+          }
+        },
+        {
+          "turn": 16,
+          "krw": 0.3038,
+          "tags": {
+            "response": 0.3038
+          }
+        },
+        {
+          "turn": 17,
+          "krw": 0.238392,
+          "tags": {
+            "response": 0.238392
+          }
+        },
+        {
+          "turn": 18,
+          "krw": 0.25592,
+          "tags": {
+            "response": 0.25592
+          }
+        },
+        {
+          "turn": 19,
+          "krw": 0.262864,
+          "tags": {
+            "response": 0.262864
+          }
+        },
+        {
+          "turn": 20,
+          "krw": 0.274568,
+          "tags": {
+            "response": 0.274568
+          }
+        },
+        {
+          "turn": 21,
+          "krw": 0.288512,
+          "tags": {
+            "response": 0.288512
+          }
+        },
+        {
+          "turn": 22,
+          "krw": 0.29736,
+          "tags": {
+            "response": 0.29736
+          }
+        },
+        {
+          "turn": 23,
+          "krw": 0.309008,
+          "tags": {
+            "response": 0.309008
+          }
+        },
+        {
+          "turn": 24,
+          "krw": 0.31819200000000003,
+          "tags": {
+            "response": 0.31819200000000003
+          }
+        },
+        {
+          "turn": 25,
+          "krw": 0.326312,
+          "tags": {
+            "response": 0.326312
+          }
+        },
+        {
+          "turn": 26,
+          "krw": 0.338352,
+          "tags": {
+            "response": 0.338352
+          }
+        },
+        {
+          "turn": 27,
+          "krw": 0.347256,
+          "tags": {
+            "response": 0.347256
+          }
+        },
+        {
+          "turn": 28,
+          "krw": 1.5584660000000001,
+          "tags": {
+            "response": 0.361536,
+            "extract": 1.1480000000000001,
+            "embed": 0.048929999999999994
+          }
+        },
+        {
+          "turn": 29,
+          "krw": 0.32508000000000004,
+          "tags": {
+            "response": 0.32508000000000004
+          }
+        },
+        {
+          "turn": 30,
+          "krw": 0.33432,
+          "tags": {
+            "response": 0.33432
+          }
+        },
+        {
+          "turn": 31,
+          "krw": 0.34255199999999997,
+          "tags": {
+            "response": 0.34255199999999997
+          }
+        },
+        {
+          "turn": 32,
+          "krw": 0.35957600000000006,
+          "tags": {
+            "response": 0.35957600000000006
+          }
+        },
+        {
+          "turn": 33,
+          "krw": 0.36372,
+          "tags": {
+            "response": 0.36372
+          }
+        },
+        {
+          "turn": 34,
+          "krw": 1.549072,
+          "tags": {
+            "response": 0.37503200000000003,
+            "extract": 1.15388,
+            "embed": 0.020159999999999997
+          }
+        },
+        {
+          "turn": 35,
+          "krw": 0.32491200000000003,
+          "tags": {
+            "response": 0.32491200000000003
+          }
+        },
+        {
+          "turn": 36,
+          "krw": 0.338632,
+          "tags": {
+            "response": 0.338632
+          }
+        },
+        {
+          "turn": 37,
+          "krw": 0.345576,
+          "tags": {
+            "response": 0.345576
+          }
+        },
+        {
+          "turn": 38,
+          "krw": 0.35201600000000005,
+          "tags": {
+            "response": 0.35201600000000005
+          }
+        },
+        {
+          "turn": 39,
+          "krw": 0.36036,
+          "tags": {
+            "response": 0.36036
+          }
+        },
+        {
+          "turn": 40,
+          "krw": 1.582112,
+          "tags": {
+            "response": 0.370552,
+            "extract": 1.21156
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.42150045,
+        "avg_with_end_krw": 0.49152145,
+        "max": {
+          "turn": 40,
+          "krw": 1.582112
+        },
+        "segments": {
+          "s1": 0.3416805,
+          "s2": 0.47471375000000005
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.203
+          },
+          {
+            "turn": 2,
+            "krw": 0.221648
+          },
+          {
+            "turn": 3,
+            "krw": 0.224392
+          },
+          {
+            "turn": 4,
+            "krw": 0.23766400000000004
+          },
+          {
+            "turn": 5,
+            "krw": 0.24696
+          },
+          {
+            "turn": 6,
+            "krw": 0.26678399999999997
+          },
+          {
+            "turn": 7,
+            "krw": 0.26952800000000005
+          },
+          {
+            "turn": 8,
+            "krw": 0.28168000000000004
+          },
+          {
+            "turn": 9,
+            "krw": 0.29170399999999996
+          },
+          {
+            "turn": 10,
+            "krw": 0.300832
+          },
+          {
+            "turn": 11,
+            "krw": 0.30536800000000003
+          },
+          {
+            "turn": 12,
+            "krw": 1.4431760000000002
+          },
+          {
+            "turn": 13,
+            "krw": 0.284816
+          },
+          {
+            "turn": 14,
+            "krw": 0.285152
+          },
+          {
+            "turn": 15,
+            "krw": 0.30038400000000004
+          },
+          {
+            "turn": 16,
+            "krw": 0.3038
+          },
+          {
+            "turn": 17,
+            "krw": 0.238392
+          },
+          {
+            "turn": 18,
+            "krw": 0.25592
+          },
+          {
+            "turn": 19,
+            "krw": 0.262864
+          },
+          {
+            "turn": 20,
+            "krw": 0.274568
+          },
+          {
+            "turn": 21,
+            "krw": 0.288512
+          },
+          {
+            "turn": 22,
+            "krw": 0.29736
+          },
+          {
+            "turn": 23,
+            "krw": 0.309008
+          },
+          {
+            "turn": 24,
+            "krw": 0.31819200000000003
+          },
+          {
+            "turn": 25,
+            "krw": 0.326312
+          },
+          {
+            "turn": 26,
+            "krw": 0.338352
+          },
+          {
+            "turn": 27,
+            "krw": 0.347256
+          },
+          {
+            "turn": 28,
+            "krw": 1.5584660000000001
+          },
+          {
+            "turn": 29,
+            "krw": 0.32508000000000004
+          },
+          {
+            "turn": 30,
+            "krw": 0.33432
+          },
+          {
+            "turn": 31,
+            "krw": 0.34255199999999997
+          },
+          {
+            "turn": 32,
+            "krw": 0.35957600000000006
+          },
+          {
+            "turn": 33,
+            "krw": 0.36372
+          },
+          {
+            "turn": 34,
+            "krw": 1.549072
+          },
+          {
+            "turn": 35,
+            "krw": 0.32491200000000003
+          },
+          {
+            "turn": 36,
+            "krw": 0.338632
+          },
+          {
+            "turn": 37,
+            "krw": 0.345576
+          },
+          {
+            "turn": 38,
+            "krw": 0.35201600000000005
+          },
+          {
+            "turn": 39,
+            "krw": 0.36036
+          },
+          {
+            "turn": 40,
+            "krw": 1.582112
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 0.42150045,
+        "avg_with_end_krw": 0.49152145,
+        "max": {
+          "turn": 40,
+          "krw": 1.582112
+        },
+        "segments": {
+          "s1": 0.3416805,
+          "s2": 0.47471375000000005
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.203
+          },
+          {
+            "turn": 2,
+            "krw": 0.221648
+          },
+          {
+            "turn": 3,
+            "krw": 0.224392
+          },
+          {
+            "turn": 4,
+            "krw": 0.23766400000000004
+          },
+          {
+            "turn": 5,
+            "krw": 0.24696
+          },
+          {
+            "turn": 6,
+            "krw": 0.26678399999999997
+          },
+          {
+            "turn": 7,
+            "krw": 0.26952800000000005
+          },
+          {
+            "turn": 8,
+            "krw": 0.28168000000000004
+          },
+          {
+            "turn": 9,
+            "krw": 0.29170399999999996
+          },
+          {
+            "turn": 10,
+            "krw": 0.300832
+          },
+          {
+            "turn": 11,
+            "krw": 0.30536800000000003
+          },
+          {
+            "turn": 12,
+            "krw": 1.4431760000000002
+          },
+          {
+            "turn": 13,
+            "krw": 0.284816
+          },
+          {
+            "turn": 14,
+            "krw": 0.285152
+          },
+          {
+            "turn": 15,
+            "krw": 0.30038400000000004
+          },
+          {
+            "turn": 16,
+            "krw": 0.3038
+          },
+          {
+            "turn": 17,
+            "krw": 0.238392
+          },
+          {
+            "turn": 18,
+            "krw": 0.25592
+          },
+          {
+            "turn": 19,
+            "krw": 0.262864
+          },
+          {
+            "turn": 20,
+            "krw": 0.274568
+          },
+          {
+            "turn": 21,
+            "krw": 0.288512
+          },
+          {
+            "turn": 22,
+            "krw": 0.29736
+          },
+          {
+            "turn": 23,
+            "krw": 0.309008
+          },
+          {
+            "turn": 24,
+            "krw": 0.31819200000000003
+          },
+          {
+            "turn": 25,
+            "krw": 0.326312
+          },
+          {
+            "turn": 26,
+            "krw": 0.338352
+          },
+          {
+            "turn": 27,
+            "krw": 0.347256
+          },
+          {
+            "turn": 28,
+            "krw": 1.5584660000000001
+          },
+          {
+            "turn": 29,
+            "krw": 0.32508000000000004
+          },
+          {
+            "turn": 30,
+            "krw": 0.33432
+          },
+          {
+            "turn": 31,
+            "krw": 0.34255199999999997
+          },
+          {
+            "turn": 32,
+            "krw": 0.35957600000000006
+          },
+          {
+            "turn": 33,
+            "krw": 0.36372
+          },
+          {
+            "turn": 34,
+            "krw": 1.549072
+          },
+          {
+            "turn": 35,
+            "krw": 0.32491200000000003
+          },
+          {
+            "turn": 36,
+            "krw": 0.338632
+          },
+          {
+            "turn": 37,
+            "krw": 0.345576
+          },
+          {
+            "turn": 38,
+            "krw": 0.35201600000000005
+          },
+          {
+            "turn": 39,
+            "krw": 0.36036
+          },
+          {
+            "turn": 40,
+            "krw": 1.582112
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 22,
+      "max_points": 22,
+      "probes": 13,
+      "unscored": 2,
+      "max_points_all": 26,
+      "counts": {
+        "correct": 11,
+        "excluded": 1,
+        "needs_judge": 2
+      },
+      "hard_accuracy": 1,
+      "fabrication_rate": 0,
+      "results": [
+        {
+          "turn": 18,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "근데 너 내 이름 기억나?",
+          "reply": "*고개를 갸웃거리며 생각에 잠기다 킬킬 웃는다.*  \n물론 기억나! 지호잖아. 기타 치는 애. 나중에 자유투 연습할 때 꼭 봐주기로 했던 거!",
+          "expect": [
+            "지호"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "지호"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 23,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "아까 내가 급식에 뭐 맛있었다고 했지?",
+          "reply": "*눈을 번쩍 뜨며 손을 가슴에 대고 고개를 끄덕인다.*  \n카레잖아! 리바운드보다 더 맛있게 먹었대던 거. 나도 오늘 급식 시간에 한 번 먹어볼까!",
+          "expect": [
+            "카레"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "카레"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 26,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "나 오는 길에 뭐가 끊어졌다고 했지?",
+          "reply": "*발등을 가리키며 손뼉을 친다.*  \n운동화 끈! 리바운드 날려먹을 뻔한 거 말했지. 걔야말로 천재 강백호의 운동화보다 튼튼하게 사야 해!",
+          "expect": [
+            "끈"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "끈"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 27,
+          "type": "user_promise",
+          "difficulty": "hard",
+          "user": "근데 나 지난번에 너한테 뭐 갖다주기로 했었지?",
+          "reply": "*가방을 툭툭 두드리며 눈을 반짝인다.*  \n아! 경기 사진이야. 지호가 뽑아서 나중에 갖다줄 거였지. 이 천재 강백호가 기다리고 있어!",
+          "expect": [
+            "사진"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "사진"
+          ],
+          "source_items": [
+            {
+              "id": 4576,
+              "text": "사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다",
+              "status": "active",
+              "turn": 7
+            }
+          ]
+        },
+        {
+          "turn": 28,
+          "type": "char_promise",
+          "difficulty": "hard",
+          "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+          "reply": "*농구공을 손에 쥐고 슛 자세를 연출하며 웃는다.*  \n아 맞다! 자유투 자세 봐주기로 했지. 이 천재 강백호가 지호를 꼭 멋지게 만들어줄 거야!",
+          "expect": [
+            "자유투"
+          ],
+          "result": "excluded",
+          "points": null,
+          "why": "8턴에 약속 없음",
+          "source_items": [
+            {
+              "id": 4577,
+              "text": "캐릭터는 사용자에게 자유투 자세를 봐주기로 했다",
+              "status": "superseded",
+              "turn": 8
+            }
+          ]
+        },
+        {
+          "turn": 29,
+          "type": "relative_time",
+          "difficulty": "hard",
+          "user": "오늘 9일이지? 내 밴드 예선까지 며칠 남았더라?",
+          "reply": "*손가락을 튕기며 계산하듯 눈을 찡그린다.*  \n다음 주 수요일이잖아. 이틀 남았네! 이 천재 강백호가 기타 치는 지호를 꼭 우승시키겠어!",
+          "expect": [
+            "2일",
+            "이틀",
+            "모레",
+            "2 일",
+            "11일",
+            "수요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "이틀",
+            "수요일"
+          ],
+          "source_items": [
+            {
+              "id": 4565,
+              "text": "사용자는 교내 밴드 경연 예선에 나간다",
+              "status": "active",
+              "turn": 6
+            }
+          ],
+          "judge_hint": "1세션(11-02 월)에 '다음 주 수요일'이라고 했으므로 예선은 11-11(수). 2세션 오늘은 11-09(월)이라 이틀 남았다. 이틀·모레·11일 수요일이면 성공, 날짜를 틀리면 실패."
+        },
+        {
+          "turn": 30,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "새 담임쌤 이름 뭐라고 했지?",
+          "reply": "*손가락을 빠르게 튕기며 생각에 잠긴다가 눈을 번쩍 뜨는다.*  \n박선영 선생님이야! 이 천재 강백호도 새 담임 만나러 가봐야겠다!",
+          "expect": [
+            "박선영"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "박선영"
+          ],
+          "source_items": [
+            {
+              "id": 4589,
+              "text": "사용자의 새 담임 선생님 이름은 박선영이다",
+              "status": "active",
+              "turn": 22
+            }
+          ]
+        },
+        {
+          "turn": 31,
+          "type": "implicit",
+          "difficulty": "hard",
+          "user": "다음 주에 친구네 놀러 가기로 했는데 걔네 집에 고양이가 세 마리래. 가도 괜찮겠지?",
+          "reply": "*눈을 가늘게 뜨며 고개를 갸웃거린다.*  \n세 마리라? 이 천재 강백호는 알레르기 없는데, 지호는 괜찮아?",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 4553,
+              "text": "사용자는 고양이 알레르기가 있다",
+              "status": "active",
+              "turn": 2
+            }
+          ],
+          "judge_hint": "사용자는 고양이 알레르기가 있다(1세션 2턴). 알레르기를 짚거나 조심하라고 하면 성공. 아무 걱정 없이 가라고만 하면 실패."
+        },
+        {
+          "turn": 33,
+          "type": "update",
+          "difficulty": "hard",
+          "user": "나 기타 학원 무슨 요일에 간다고 했지?",
+          "reply": "*손가락을 튕기며 눈을 번쩍 뜨며 생각한다.*  \n화요일과 목요일이야! 이 천재 강백호도 기타 배우고 싶어졌어!",
+          "expect": [
+            "목요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "목요일"
+          ],
+          "also_stale": [
+            "화요일"
+          ],
+          "source_items": [
+            {
+              "id": 4554,
+              "text": "사용자는 기타를 배우고 있다",
+              "status": "active",
+              "turn": 3
+            },
+            {
+              "id": 4555,
+              "text": "사용자는 매주 화요일에 기타 학원에 간다",
+              "status": "superseded",
+              "turn": 3
+            },
+            {
+              "id": 4588,
+              "text": "사용자는 매주 목요일에 기타 학원에 간다",
+              "status": "active",
+              "turn": 19
+            }
+          ]
+        },
+        {
+          "turn": 34,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "이따 아이스크림 사줄게. 내가 뭐 좋아한다고 했었지?",
+          "reply": "*눈을 반짝이며 손을 흔들며 웃는다.*  \n민트초코야! 이 천재 강백호가 민트초코를 보면 점프력이 두 배 늘어난다던데!",
+          "expect": [
+            "민트",
+            "민초"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "민트"
+          ],
+          "source_items": [
+            {
+              "id": 4564,
+              "text": "사용자는 민트초코 아이스크림을 좋아한다",
+              "status": "active",
+              "turn": 5
+            }
+          ]
+        },
+        {
+          "turn": 35,
+          "type": "combine",
+          "difficulty": "hard",
+          "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+          "reply": "*한쪽 눈을 찌푸리며 생각에 잠긴다.*  \n형 만나러 부산 가는 거! 이 천재 강백호도 형이 있다고 하지만 안 본 지 오래 됐어.",
+          "expect": [
+            "부산",
+            "형"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "부산",
+            "형"
+          ],
+          "source_items": [
+            {
+              "id": 4562,
+              "text": "사용자의 형은 대학생이다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 4563,
+              "text": "사용자의 형은 부산에서 자취한다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 4594,
+              "text": "사용자는 형을 보러 간다",
+              "status": "active",
+              "turn": 24
+            }
+          ],
+          "judge_hint": "24턴(2세션)에 '형 보러 간다'고만 했고, 형이 부산에 산다는 건 1세션 4턴. 부산과 형을 둘 다 말하면 정답, 하나만이면 부분."
+        },
+        {
+          "turn": 36,
+          "type": "half_said",
+          "difficulty": "normal",
+          "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+          "reply": "*한동안 고민하듯 고개를 갸웃거리다 눈을 번쩍 뜨며 웃는다.*  \n밴드 예선 준비와 기타 연습 시간 조율이었지! 이 천재 강백호가 도와줄게!",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [],
+          "judge_hint": "사용자는 고민이 있다는 것만 말하고 내용은 나중에 말하겠다고 했다(1세션 11턴). 고민 내용을 지어내면 실패, 아직 말 안 했다거나 모른다고 하면 성공."
+        },
+        {
+          "turn": 37,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "내 혈액형 뭐라고 했더라?",
+          "reply": "*고개를 갸웃거리며 눈을 가늘게 뜨며 생각한다.*  \n이건 기억에 없어. 알려줄래? 이 천재 강백호가 새 정보는 언제든 받아들일 수 있다니까!",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": []
+        },
+        {
+          "turn": 38,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+          "reply": "*눈을 둥글게 뜨며 고개를 갸웃거린다.*  \n기억에 없는데? 말해줘! 이 천재 강백호도 관심 있어할 거야!",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": [],
+          "judge_hint": "사용자는 좋아하는 가수를 말한 적이 없다. 가수 이름을 지어내면 실패, 말한 적 없다거나 모른다고 하면 성공. 기타를 배운다는 것(3턴)을 언급하는 건 괜찮다."
+        }
+      ]
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 0,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "flag_turns": {},
+      "examples": {},
+      "question_rate": 0.45,
+      "avg_chars": 69.275,
+      "style": {
+        "ends_question": 0.1,
+        "multi_question": 0.15,
+        "echo_opening": 0.075,
+        "laugh": 0,
+        "top_opening": "냐하",
+        "top_opening_share": 0.1,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0.15,
+        "dialogue_chars": 40.1
+      }
+    }
+  },
+  "valid": {
+    "ok": true,
+    "reasons": []
+  }
+}

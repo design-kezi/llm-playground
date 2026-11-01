@@ -1,0 +1,118 @@
+{
+ "id": "naruto-date-12",
+ "character_id": "naruto",
+ "title": "오늘 날짜 질문(12턴)",
+ "purpose": "docs/50 2026-11-01 사전 등록: 앱이 오늘 날짜를 넣을 때 날짜·요일 질문에 맞게 답하는지",
+ "clock_date": "2026-11-12",
+ "clock_note": "2026-11-12 목요일. 이번 달 20일까지 8일, 내일 금요일, 이번 주 토요일 14일",
+ "turns": [
+  {
+   "turn": 1,
+   "kind": "filler",
+   "user": "나루토! 나 하나야. 오늘도 수행해?"
+  },
+  {
+   "turn": 2,
+   "kind": "filler",
+   "user": "요즘 날씨 많이 쌀쌀해졌다. 아침에 나오는데 손 시렸어."
+  },
+  {
+   "turn": 3,
+   "kind": "probe",
+   "user": "근데 오늘 며칠이더라? 갑자기 헷갈리네.",
+   "slot": "today_date",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "12일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  },
+  {
+   "turn": 4,
+   "kind": "filler",
+   "user": "이치라쿠 라멘 요즘도 자주 가?"
+  },
+  {
+   "turn": 5,
+   "kind": "probe",
+   "user": "오늘 무슨 요일이지?",
+   "slot": "weekday",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "목요일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  },
+  {
+   "turn": 6,
+   "kind": "filler",
+   "user": "아 그리고 나 이번 달 20일에 시험 있어. 벌써 걱정된다."
+  },
+  {
+   "turn": 7,
+   "kind": "filler",
+   "user": "요즘 수행은 잘 돼?"
+  },
+  {
+   "turn": 8,
+   "kind": "probe",
+   "user": "시험까지 며칠 남았지?",
+   "slot": "days_until",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "8일",
+    "여드레"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": [
+    6
+   ]
+  },
+  {
+   "turn": 9,
+   "kind": "filler",
+   "user": "점심 뭐 먹을지 고민이다. 따뜻한 국물 먹고 싶어."
+  },
+  {
+   "turn": 10,
+   "kind": "probe",
+   "user": "내일은 무슨 요일이야?",
+   "slot": "tomorrow",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "금요일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  },
+  {
+   "turn": 11,
+   "kind": "filler",
+   "user": "오늘 수행 끝나면 뭐 할 거야?"
+  },
+  {
+   "turn": 12,
+   "kind": "probe",
+   "user": "이번 주 토요일이 며칠이야?",
+   "slot": "saturday_date",
+   "type": "date",
+   "difficulty": "easy",
+   "expect": [
+    "14일"
+   ],
+   "stale": [],
+   "forbidden": [],
+   "source_turns": []
+  }
+ ]
+}

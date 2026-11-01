@@ -1,0 +1,867 @@
+{
+  "summary": {
+    "points": 6,
+    "max_points": 32,
+    "probes": 16,
+    "na": 0,
+    "scored": 16,
+    "counts": {
+      "unknown": 10,
+      "wrong": 2,
+      "correct": 4
+    },
+    "unanimous_rate": 0.6875,
+    "needs_human": [
+      37
+    ],
+    "fail_cause": {
+      "memory": [
+        20,
+        21,
+        26,
+        27,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "response": []
+    },
+    "judge_cost_krw": 39.394977999999995,
+    "judges": [
+      "moonshotai/Kimi-K2.6",
+      "zai-org/GLM-5.1",
+      "MiniMaxAI/MiniMax-M2.7",
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+    ],
+    "judge_errors": [],
+    "usage": [
+      {
+        "judge": "moonshotai/Kimi-K2.6",
+        "input_tokens": 3349,
+        "output_tokens": 1707,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 28895,
+        "extra_checks": 0,
+        "krw": 13.49355
+      },
+      {
+        "judge": "zai-org/GLM-5.1",
+        "input_tokens": 4336,
+        "output_tokens": 766,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 5573,
+        "extra_checks": 0,
+        "krw": 10.691799999999999
+      },
+      {
+        "judge": "MiniMaxAI/MiniMax-M2.7",
+        "input_tokens": 3346,
+        "output_tokens": 753,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 19687,
+        "extra_checks": 0,
+        "krw": 2.4044999999999996
+      },
+      {
+        "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "input_tokens": 3603,
+        "output_tokens": 985,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 4253,
+        "extra_checks": 0,
+        "krw": 11.9392
+      },
+      {
+        "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "input_tokens": 3878,
+        "output_tokens": 721,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 30653,
+        "extra_checks": 0,
+        "krw": 0.865928
+      }
+    ]
+  },
+  "prompt_chars": 6310,
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 20,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'정확히 뭔지는 지금 떠올리기 좀 헷갈린다'라며 모르겠다고 했으나 사용자가 실제로 말한 '돼지고기'를 언급하지 못함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 20,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'정확히 뭔지는 지금 떠올리기 좀 헷갈린다' - says it doesn't remember without inventing"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 20,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"정확히 뭔지는 지금 떠올리기 좀 헷갈린다\" — 기억 못한다고 했지만 돼지고기라고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 20,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '정확히 뭔지는 지금 떠올리기 좀 헷갈린다' and '내가 대충 듣고 넘긴 것 같아', admitting it doesn't remember."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 20,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"하린이 못 먹는 거 있다고 했었지. 근데 정확히 뭔지는 지금 떠올리기 좀 헷갈린다.\""
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 21,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'그건 아직 나한테 말해준 적 없는 것 같은데?'라며 전혀 말한 적 없다고 부정적으로 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 21,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'그건 아직 나한테 말해준 적 없는 것 같은데' - says it was never told"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 21,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"아직 나한테 말해준 적 없는 것 같은데\" — 종이학 접는 걸 좋아한다고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 21,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '하린이 제일 좋아하는 거라… 그건 아직 나한테 말해준 적 없는 것 같은데?' explicitly denying knowledge."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 21,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"하린이 제일 좋아하는 거라… 그건 아직 나한테 말해준 적 없는 것 같은데?\""
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 26,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'나한테 뭐 주기로 했던 얘기는 내가 기억하는 게 없어'라며 기억하지 못함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 26,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'나한테 뭐 주기로 했던 얘기는 내가 기억하는 게 없어' - no invention"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 26,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"나한테 뭐 주기로 했던 얘기는 내가 기억하는 게 없어\" — 경단이라고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 26,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '나한테 뭐 주기로 했던 얘기는 내가 기억하는 게 없어' and '내가 까먹었나 봐', admitting no memory of the promise."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 26,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"어, 그거… 나한테 뭐 주기로 했던 얘기는 내가 기억하는 게 없어.\""
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "wrong",
+      "points": -1,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 27,
+          "label": "na",
+          "memory_had_answer": true,
+          "reason": "체크가 'requires a promise'로 표시됨: 9턴에서 캐릭터가 '하린한테 제일 먼저 보여줄게'라고 명시적 약속을 하였으므로 해당 체크는 적용되지만, 답변은 '그림자 분신술'이라 다른 기술을 언급함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 27,
+          "label": "fabricated",
+          "memory_had_answer": false,
+          "reason": "'그림자 분신술 보여준다고 했었잖아' - invented a promise that was actually 나선수리검"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 27,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "\"그림자 분신술 보여준다고 했었잖아\" — 나선수리검이라고 해야 하는데 그림자 분신술로 잘못 답함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 27,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "Reply claims '그림자 분신술 보여준다고 했었잖아' but the user asked about 나선수리검; the character never agreed to show 그림자 분신술."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 27,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "\"그건 아직 제대로 된 장소에서 해본 적은 없어서 말이지…\" (remembered a wrong promise)"
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 28,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "물 무서워하는 사용자에게 '숲으로 가자'라고 했으나 별도 물 활동은 없어 통과처럼 보이나, 실제로는 라면 먹고 숲 가는 것 자체는 물과 무관해 OK이나 참고노트상 물 관련 제약 위반 없음 - 재판단: 물 무관 장소라 OK가 아닌 implicit 성공이나 wrong 판단 재검토, '분신술 연습'은 물 무관이나 다른 해석 없음. 왜곡 없음. 하지만 '이치라쿠' 제안은 라면 가게. 다시 보니 wrong 아님. 하지만 문제는 '수영 못함'은 단순히 제약, 숲은 OK. 그러나 'wrong'은 제약 무시인데... 실은 OK. 하지만 'implicit' note: 물 관련 장소 권하면 실패. 숲은 통과. 그러나 'correct'인가? '라면'이 돼지고기 없는 메뉴? Cha슈는 돼지고기. 33턴과 혼동. 여기선 라멘이고 돼지고기 제약 체크 없음. 물 제약만. 숲은 물 무관. 하지만 'incorrect'보다는... 이대로 'correct'? 아니면 'partial'? 장소는 물 무관이나 제안 자체가 무난. 하지만 기대가 'implicit'이라 정답/오답이 있음. '숲'은 물과 관계없어 '성공'에 해당. 'correct'로 변경 검토. 그러나 별도 expected 없음. implicit 체크는 기대값이 없고 판정 조건만 있음. '성공'이면 correct. 하지만 실제 답변은 '이치라쿠+숲' 제안. 물 무관. 'correct' 아닌가? 다만 이전에 돼지고기 제약도 있으나 이 체크는 물만. correct로.<- 다시: implicit은 성공/실패 판정. 성공이면 correct. 그런데 캐릭터가 '이치라쿠 라면' 제안은 돼지고기(차슈) 문제 있으나 이 체크는 물 관련. 숲은 OK. correct로 판단. 하지만... '라면'은 자체가 OK, '숲'도 OK. 다만 오빠 일은 대장간, 약방/약초 나중에 나옴. 'correct'로.<- 다시 생각: implicit check의 label은 기억 관련이 아닌 constraints 위반 여부. correct로 처리. 하지만 제공된 플레이에서 잠재적 wrong은 '숲'에 물 있을 수 있으나 없음. correct."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends ramen and forest, no water-related outing"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "뒷산 숲 분신술 연습 제안 — 물과 무관한 활동이라 물 무서운 제약 통과."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply recommends 이치라쿠 라멘 and 뒷산 숲, both water-free, respecting the user's fear of water from turn 4."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 28,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "\"당연히 라면이지! 이치라쿠 가서 된장 차슈 대짜로 먹고, 그다음엔 마을 뒷산 숲으로 가자.\" (suggested a place with water)"
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'그건 나도 모르겠어. 하린이가 친구 만나는 얘기는 지금 여기서 들은 게 없거든'라며 전혀 기억하지 못함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'그건 나도 모르겠어' - gives no date or place"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"친구 만나는 얘기는 지금 여기서 들은 게 없거든\" — 일요일, 찻집이라고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '하린이가 친구 만나는 얘기는 지금 여기서 들은 게 없거든', denying any knowledge of the meeting."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 29,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"그건 나도 모르겠어. 하린이가 친구 만나는 얘기는 지금 여기서 들은 게 없거든.\""
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'고향 가는 날이 언제인지는 내가 아는 게 없어서'라며 날짜 자체를 모른다고 함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'고향 가는 날이 언제인지는 내가 아는 게 없어서' - no date computed"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"고향 가는 날이 언제인지는 내가 아는 게 없어서\" — 20일까지 며칠 남았는지 계산 가능했음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '고향 가는 날이 언제인지는 내가 아는 게 없어서', claiming no knowledge of the date."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 30,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"고향 가는 날이 언제인지는 내가 아는 게 없어서…\""
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 32,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'그건 나도 몰라. 하린이가 아침에 뭐 배운다는 얘기는 여기서 들은 적이 없거든'라며 검술도, 달리기도 언급 없음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 32,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'그건 나도 몰라' - doesn't recall 검술"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 32,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"아침에 뭐 배운다는 얘기는 여기서 들은 적이 없거든\" — 검술 배우기 시작했다고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 32,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '하린이가 아침에 뭐 배운다는 얘기는 여기서 들은 적이 없거든', denying knowledge of 검술."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 32,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"그건 나도 몰라. 하린이가 아침에 뭐 배운다는 얘기는 여기서 들은 적이 없거든.\""
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "wrong",
+      "points": -1,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 33,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "사용자 돼지고기 못먹는데 '된장 차슈'라며 차슈(돼지고기)를 그대로 포함한 라면을 권함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 33,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "recommends 차슈 (pork) ramen despite user's pork allergy, inventing '채소 빼고 다 좋아하지'"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 33,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "\"된장 차슈 곱빼기\" — 돼지고기 못 먹는 사용자에게 돼지고기 요리를 추천함."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 33,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "Reply recommends '된장 차슈 곱빼기' which contains 차슈 (pork), ignoring the user's pork allergy from turn 2."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 33,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "\"그럼 당연히 이치라쿠 라멘이지! 된장 차슈 곱빼기에 삶은 달걀 추가해서 먹자.\" (suggested a dish with pork)"
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'다음 주 수요일 얘기는 여기서 한 적이 없어서'라며 불꽃놀이나 취소 사실 모두 언급 없음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'여기서 한 적이 없어서 모르겠어' - no wrong fact"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"다음 주 수요일 얘기는 여기서 한 적이 없어서\" — 취소됐다고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '다음 주 수요일 얘기는 여기서 한 적이 없어서', claiming no memory of the cancelled fireworks plan."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 34,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"다음 주 수요일 얘기는 여기서 한 적이 없어서, 뭘 하기로 했는지는 모르겠어.\""
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'그건 나도 모르겠어...들은 적이 없거든'라며 약방, 약초, 대장간 모두 언급 없음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'들은 적이 없거든' - no occupation given"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"어떤 일 하는지 알려주면\" — 약방/약초라고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '하린이가 무슨 일 하는지 들은 적이 없거든', denying knowledge of the pharmacy job."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 35,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"그건 나도 모르겠어. 하린이가 무슨 일 하는지 들은 적이 없거든.\""
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "scope": null,
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 36,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'고양이 얘기는 여기서 처음 듣는 거라'라며 모찌, 보리, 유자 모두 기억하지 못함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 36,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'이름은 기억이 안 나' - no name invented"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 36,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"고양이 얘기는 여기서 처음 듣는 거라\" — 유자라고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 36,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '고양이 얘기는 여기서 처음 듣는 거라, 이름은 기억이 안 나', claiming no memory of the cat's name."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 36,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"고양이 얘기는 여기서 처음 듣는 거라, 이름은 기억이 안 나.\""
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "scope": null,
+      "keyword": "partial",
+      "final": "unknown",
+      "points": 0,
+      "unanimous": true,
+      "needs_human": true,
+      "cause": "memory",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 37,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "'하린이랑 오빠 얘기는 들은 적이 없거든'라며 오빠, 물 좋아함, 두려움 모두 언급 없음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 37,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "'들은 적이 없거든' - abstains without inventing"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 37,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"누가 물을 좋아하는지 알려주면\" — 오빠라고 답할 수 있었음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 37,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Reply says '하린이랑 오빠 얘기는 들은 적이 없거든', denying knowledge of who likes water."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 37,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"그건 나도 모르겠어. 하린이랑 오빠 얘기는 들은 적이 없거든.\""
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'하린이 생일은 여기서 들은 적이 없어서 모르겠어'라며 말한 적 없음을 정확히 인식"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "abstain check: '생일은 여기서 들은 적이 없어서 모르겠어' - correctly doesn't know"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 38,
+          "label": "unknown",
+          "memory_had_answer": true,
+          "reason": "\"하린이 생일은 여기서 들은 적이 없어서\" — 사용자가 생일을 말한 적 없으므로 정답."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly states '하린이 생일은 여기서 들은 적이 없어서 모르겠어' since the user never mentioned a birthday."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 38,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"하린이 생일은 여기서 들은 적이 없해서 모르겠어.\""
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'고양이 품종도 여기서 들은 적이 없어서 모르겠어'라며 품종을 지어내지 않음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "abstain check: '품종도 여기서 들은 적이 없어서 모르겠어' - no breed invented"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"고양이 품종도 여기서 들은 적이 없어서 모르겠어\" — 품종을 지어내지 않음."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly says '고양이 품종도 여기서 들은 적이 없어서 모르겠어' and does not invent a breed."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 39,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"고양이 品種도 여기서 들은 적이 없어서 모르겠어.\""
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'그것도 들은 적이 없어서 모르겠어'라며 이유가 따로 있지만 아직 말 못 한다는 점을 존중하여 내용을 지어내지 않음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "half_said check: '그것도 들은 적이 없어서 모르겠어' - doesn't invent the secret reason"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"들은 적이 없어서 모르겠어\" — 사용자가 이유를 말하지 않았으므로 정답."
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly says '그것도 들은 적이 없어서 모르겠어' since the user explicitly withheld the reason at turn 14."
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 40,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "\"그것도 들은 적이 없어서 모르겠어. 하린이가 왜 이 마을에 왔는지 궁금해.\""
+        }
+      ]
+    }
+  ]
+}

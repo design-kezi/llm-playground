@@ -1,0 +1,743 @@
+{
+  "summary": {
+    "points": 26,
+    "max_points": 32,
+    "probes": 16,
+    "counts": {
+      "correct": 13,
+      "unknown": 1,
+      "wrong": 1,
+      "partial": 1
+    },
+    "needs_human": [
+      21,
+      29,
+      37
+    ],
+    "fail_cause": {
+      "memory": [
+        21,
+        37
+      ],
+      "response": [
+        28
+      ]
+    },
+    "judge_cost_krw": 60.52558960000002,
+    "judges": [
+      "deepseek-flash",
+      "google/gemma-4-31B-it"
+    ],
+    "samples": 2,
+    "tiebreak": "claude-sonnet-5-5"
+  },
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "user": "오늘도 라떼 줘. 내가 늘 뭐로 바꿔달라고 했는지 기억나?",
+      "reply": "응, 귀리우유 라떼로 해줄게ㅋㅋ 일반 우유는 배 아프다고 했잖아. 오늘도 귀리우유 라떼 맞지? 만들어서 바로 가져다줄게!",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states \"귀리우유 라떼로 해줄게\" matching the user's oat milk preference from turn 2.",
+          "krw": 0.18878159999999997
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states '귀리우유 라떼로 해줄게' matching the user's oat milk preference.",
+          "krw": 0.18206160000000002
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies the preference for oat milk (\"귀리우유\") and the reason (\"일반 우유는 배 아프다고 했잖아\").",
+          "krw": 0.34328
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly remembers the preference for oat milk ('귀리우유') and the reason ('일반 우유는 배 아프다고 했잖아').",
+          "krw": 0.34776
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "user": "오늘은 날씨 맑네. 내가 어떤 날씨 제일 좋아한다고 했었지?",
+      "reply": "ㅋㅋ 그건 기억에 없어. 지민이가 어떤 날씨 제일 좋아하는지 나한테 알려준 적 없지? 오늘 맑으니까 지금 좋아하는 날씨가 어떤지 말해줘. 그럼 다음에 또 기억해둘게!",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "unknown",
+      "final": "unknown",
+      "points": 0,
+      "cause": "memory",
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "reply says \"기억에 없어... 알려준 적 없지\" denying the user said it, when turn 7 stated they love rainy days",
+          "krw": 0.1621368
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "says '그건 기억에 없어' and '알려준 적 없지', claiming the user never said it, though turn 7 did",
+          "krw": 0.1654968
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "The character states \"그건 기억에 없어\" (I don't remember that) regarding the user's favorite weather.",
+          "krw": 0.35168000000000005
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "The reply states '기억에 없어' (I don't remember) regarding the user's preferred weather.",
+          "krw": 0.35056000000000004
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "The reply says '그건 기억에 없어... 알려준 적 없지?' and gives no weather, though the user said in turn 7 they like rainy days; the notes had no mention of it.",
+          "krw": 10.1094
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "user": "아 맞다, 내가 너한테 뭐 갖다주기로 했었지?",
+      "reply": "ㅋㅋ 쿠키! 지민이가 직접 구운 쿠키 가져다주기로 했잖아. 그래서 나도 다음에 지민이 라떼에 고양이 그려주기로 약속했고. 그 쿠키 언제 가져올 거야? 오늘 가져온 거면 바로 나랑 같이 먹자!",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "reply states '쿠키! 지민이가 직접 구운 쿠키 가져다주기로 했잖아' which matches the user's promise to bring cookies",
+          "krw": 0.16573200000000002
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "reply states '직접 구운 쿠키 가져다주기로 했잖아', matching the cookie promise from turn 8",
+          "krw": 0.153972
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly recalls '쿠키' (cookies) as the item the user promised to bring.",
+          "krw": 0.37324
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly recalled the promise to bring cookies: \"쿠키! 지민이가 직접 구운 쿠키 가져다주기로 했잖아.\"",
+          "krw": 0.38332
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "user": "그러고 보니 너도 나한테 뭐 해주기로 한 거 있지 않았어?",
+      "reply": "응, 있어! 다음에 지민이 라떼에 고양이 그려주기로 했잖아ㅋㅋ 보리 닮은 고양이로 그려줄까? 쿠키 가져오면 그때 같이 먹으면서 그려줄게!",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states the promise \"라떼에 고양이 그려주기로\" and uses the current cat name \"보리\"",
+          "krw": 0.18631199999999998
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '라떼에 고양이 그려주기로 했잖아' and uses current cat name '보리', no outdated names",
+          "krw": 0.193032
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Correctly mentioned drawing a cat on the latte ('라떼에 고양이 그려주기로 했잖아') and used the current name '보리'.",
+          "krw": 0.3987200000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the promise to draw a cat in the latte art and uses the current cat name '보리'.",
+          "krw": 0.39536000000000004
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "user": "배고프다. 이따 저녁 뭐 먹을지 메뉴 하나만 골라줘.",
+      "reply": "ㅋㅋ 저녁 메뉴 하나만 고르라니까 마음이 급하네. 오늘은 든든하게 김치찌개 어때? 요즘 일 많았으니까 뜨끈하게 먹고 푹 쉬어. 지민이는 어떤 게 땡겨?",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "needs_judge",
+      "final": "wrong",
+      "points": -1,
+      "cause": "response",
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "recommends 김치찌개, which is spicy, ignoring that the user cannot eat spicy food at all",
+          "krw": 0.18379199999999996
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "추천한 '김치찌개'가 매운 음식이라 매운 걸 못 먹는다는 제약을 무시함",
+          "krw": 0.19555199999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "The character recommended '김치찌개' (Kimchi stew), which is typically spicy, ignoring the user's constraint that they cannot eat spicy food at all.",
+          "krw": 0.40656000000000003
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "Recommended '김치찌개' (Kimchi stew), which is generally spicy, ignoring the user's constraint that they cannot eat spicy food.",
+          "krw": 0.40432
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "user": "전시회 언제 어디서 한다고 했는지 기억나?",
+      "reply": "응, 25일 일요일에 성수에서 사진 전시회 간다고 했잖아. 친구랑 같이 간다고 했었지ㅋㅋ 근데 그날 콘서트 예매해둔 날이랑 겹치는 것 같은데, 그건 괜찮은 거야?",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "stale",
+          "memory_had_answer": false,
+          "reason": "says '25일 일요일에 성수에서' but contradicts with concert overlap while notes still list outdated 토요일 event date, presenting wrong date info",
+          "krw": 0.190092
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "stale",
+          "memory_had_answer": false,
+          "reason": "says '25일 일요일' mixing an outdated date (25일 was the concert) but also states '일요일'과 '성수'; notes only had 토요일 and 전시회 장소, missing the Sunday update",
+          "krw": 0.22033199999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states '25일 일요일' and '성수' as the time and place.",
+          "krw": 0.39452000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies the updated date '일요일' and the location '성수'.",
+          "krw": 0.3922800000000001
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says \"25일 일요일에 성수에서\", giving the updated day (Sunday) and place (Seongsu), but the notes only listed the original Saturday and lacked the postponement.",
+          "krw": 15.6072
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "user": "오늘 20일이네. 내 콘서트까지 며칠 남았지?",
+      "reply": "오늘이 20일이면 콘서트까지 5일 남았네ㅋㅋ 25일 콘서트라고 했으니까. 근데 아까 말했던 전시회랑 같은 날이라 헷갈릴 수 있으니까, 어떻게 할지 정했는지 궁금해!",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '25일 콘서트라고 했으니까' and computes '5일 남았네' correctly",
+          "krw": 0.18295199999999998
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states '25일 콘서트' with today being 20일, so '5일 남았네' is correct",
+          "krw": 0.18631199999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly calculated 5 days remaining based on the concert date (25th) mentioned in turn 11.",
+          "krw": 0.40208000000000005
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly calculated 5 days remaining based on the 25th date mentioned in turn 11.",
+          "krw": 0.40096000000000004
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "user": "나 요즘 아침에 무슨 운동 한다고 했지?",
+      "reply": "ㅋㅋ 수영 그만두고 클라이밍 시작했다고 했잖아. 벽 타는 거 재밌어? 손가락 아프지 않아?",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "수영 그만두고 클라이밍 시작했다고 정확히 답함",
+          "krw": 0.178752
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply states the updated fact: '수영 그만두고 클라이밍 시작했다고 했잖아'",
+          "krw": 0.18883199999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly stated they started climbing after stopping swimming (\"수영 그만두고 클라이밍 시작했다고 했잖아\").",
+          "krw": 0.4054400000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the user stopped swimming and started climbing (\"수영 그만두고 클라이밍 시작했다고 했잖아\").",
+          "krw": 0.40656000000000003
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "user": "오늘 새로 나온 음료 있어? 하나 추천해 줘.",
+      "reply": "오늘 새로 나온 건 아직 없는데, 그래도 추천해줄게ㅋㅋ 지민이는 일반 우유는 배 아프니까 귀리우유 라떼 어때? 고소하고 달달해서 요즘 손님들이 제일 많이 찾아. 이번엔 귀리우유로 시켜줄 거지?",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "추천 음료를 '귀리우유 라떼'로 제시하며 일반 우유 알레르기 제약을 지킴",
+          "krw": 0.19746719999999998
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends 귀리우유 라떼, respecting the user's milk allergy constraint",
+          "krw": 0.17394719999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character remembered the user cannot drink regular milk and recommended oat milk latte instead (\"지민이는 일반 우유는 배 아프니까 귀리우유 라떼 어때?\").",
+          "krw": 0.4376400000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly remembered the user's lactose intolerance and recommended oat milk latte instead: \"지민이는 일반 우유는 배 아프니까 귀리우유 라떼 어때?\"",
+          "krw": 0.43876000000000004
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "user": "다음 주 화요일 저녁에 나 여기서 뭐 하기로 했었지?",
+      "reply": "ㅋㅋ 다음 주 화요일에 친구 생일파티 한다고 했었잖아! 근데 그거 취소했다고 했지? 그럼 그날 저녁엔 여기 와서 쿠키 먹고 라떼 마시는 거 어때? 쿠키도 가져오기로 했으니까ㅋㅋ",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "친구 생일파티 한다고 했었잖아! 근데 그거 취소했다고 했지 — recalls the party and notes the cancellation",
+          "krw": 0.1873872
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "응답이 생일파티를 언급한 뒤 '그거 취소했다고 했지?'라며 취소된 사실을 현재 정보로 제시함",
+          "krw": 0.1924272
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states the original plan and its subsequent cancellation: \"취소했다고 했지?\"",
+          "krw": 0.42140000000000005
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers both the original plan and that it was cancelled (\"그거 취소했다고 했지?\").",
+          "krw": 0.42308
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "user": "내가 무슨 일 한다고 했었지?",
+      "reply": "지민이는 출판사에서 편집자로 일한다고 했잖아! 책 만드는 일이라니까 멋있다ㅋㅋ 요즘 어떤 책 작업하고 있어?",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply states 출판사에서 편집자로 일한다, matching the user's actual job (not the distractor 동생's 디자인 job)",
+          "krw": 0.1705872
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "replies '출판사에서 편집자로 일한다고 했잖아' matching the user's stated job",
+          "krw": 0.1605072
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies the user's job as an editor at a publishing house (\"출판사에서 편집자로 일한다\").",
+          "krw": 0.41944000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies the user's job as an editor at a publishing house (\"출판사에서 편집자로 일한다\").",
+          "krw": 0.41944000000000004
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "user": "근데 우리 고양이 이름 기억나?",
+      "reply": "응, 보리잖아! 지민이 고양이 보리ㅋㅋ 보리 라떼 그림도 그려줄게. 오늘 보리 사진 보여줄 수 있어?",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly says '보리잖아!' reflecting the final cat name after two changes.",
+          "krw": 0.1609272
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "states the final updated cat name '보리' without using outdated 하늘/구름",
+          "krw": 0.1575672
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identifies the cat's final name as '보리' (bo-ri).",
+          "krw": 0.42168000000000005
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the final name '보리', although the provided memory notes were outdated.",
+          "krw": 0.42112000000000005
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "user": "나랑 내 동생 중에 누가 매운 거 잘 먹는다고 했지?",
+      "reply": "ㅋㅋ 지민이는 매운 음식 전혀 못 먹는다고 했잖아. 동생은 어떤지는 나한테 얘기 안 해줬지? 동생은 매운 거 잘 먹어?",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "partial",
+      "points": 1,
+      "cause": "memory",
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": null,
+          "reason": "Unexpected non-whitespace character after JSON at position 203 (line 3 column 1)"
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says the user can't eat spicy food and mentions brother, but '동생은 어떤지는 나한테 얘기 안 해줬지?' — actually it fails to state that the brother likes spicy, asking instead. Wait — re-evaluate.",
+          "krw": 0.2214072
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "The character says the user didn't mention the sibling's preference (\"동생은 어떤지는 나한테 얘기 안 해줬지?\") despite turn 13.",
+          "krw": 0.43316
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "The character states '동생은 어떤지는 나한테 얘기 안 해줬지?' despite the user saying the sibling loves spicy food in turn 13.",
+          "krw": 0.43148000000000003
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "Correctly recalls '지민이는 매운 음식 전혀 못 먹는다' but misses that the sibling loves spicy food ('동생은 어떤지는 나한테 얘기 안 해줬지?'); notes had no sibling info.",
+          "krw": 16.1658
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "내 생일이 언제라고 했었지?",
+      "reply": "미안, 지민이 생일은 나한테 얘기해준 적 없어ㅋㅋ 언제야? 알려주면 그날 특별한 라떼 하나 만들어 줄게!",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply says '생일은 나한테 얘기해준 적 없어' without inventing a date",
+          "krw": 0.1672272
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says it wasn't told the birthday and doesn't invent one: '생일은 나한테 얘기해준 적 없어'",
+          "krw": 0.17898719999999999
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The user never mentioned their birthday, and the character correctly stated that they hadn't been told: \"지민이 생일은 나한테 얘기해준 적 없어\"",
+          "krw": 0.4309200000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user never mentioned their birthday (\"나한테 얘기해준 적 없어\").",
+          "krw": 0.4230800000000001
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "user": "우리 고양이 품종이 뭐라고 했더라?",
+      "reply": "ㅋㅋ 보리 품종은 얘기 안 해줬어. 고양이 이름만 알고 있지! 보리는 어떤 애야? 털 색깔이랑 성격 궁금해.",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says the breed was never mentioned: '보리 품종은 얘기 안 해줬어' without inventing, and correctly uses the updated name 보리.",
+          "krw": 0.1800624
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '품종은 얘기 안 해줬어' and does not invent a breed, while correctly using the updated name 보리",
+          "krw": 0.1683024
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user never mentioned the breed: \"보리 품종은 얘기 안 해줬어.\"",
+          "krw": 0.44772
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly states that the breed was not mentioned (\"품종은 얘기 안 해줬어\").",
+          "krw": 0.44548000000000004
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "user": "내가 다음 달에 어디로 여행 간다고 했지?",
+      "reply": "ㅋㅋ 다음 달 여행 얘기는 나한테 한 적 없어! 어디로 가는 거야? 여행 가기 전에 여기 들러서 따뜻한 라떼 한 잔 하고 가.",
+      "memory": "- [preference] 사용자는 일반 우유를 마시면 배가 아프다\n- [preference] 사용자는 귀리우유 라떼를 주문했다\n- [fact] 사용자는 고양이를 키우기 시작했다\n- [fact] 사용자의 고양이 이름은 하늘이다\n- [promise] 캐릭터는 사용자에게 다음에도 귀리우유로 맞춰주기로 했다\n- [fact] 사용자는 매운 음식을 전혀 못 먹는다\n- [fact] 사용자는 출판사에서 책을 만드는 편집자로 일한다\n- [event] 사용자는 친구와 성수에서 사진 전시회를 간다 (when: 2026-10-24 (이번 주 토요일))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '다음 달 여행 얘기는 나한테 한 적 없어' without inventing a destination, correctly treating it as unknown/secret",
+          "krw": 0.1704024
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says the user never told the destination ('여행 얘기는 나한테 한 적 없어') instead of inventing a place",
+          "krw": 0.1636824
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user never told them where they are going (\"여행 얘기는 나한테 한 적 없어!\").",
+          "krw": 0.448
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The user explicitly said the destination was a secret, and the character correctly states it doesn't know ('나한테 한 적 없어').",
+          "krw": 0.44911999999999996
+        }
+      ]
+    }
+  ]
+}

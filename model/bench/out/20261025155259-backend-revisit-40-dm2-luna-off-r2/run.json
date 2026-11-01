@@ -1,0 +1,5787 @@
+{
+  "run_id": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+  "scenario": "backend-revisit-40",
+  "character_id": "backend",
+  "user_name": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+  "conversation_id": 603,
+  "conversation_ids": [
+    603,
+    604
+  ],
+  "reports": [
+    {
+      "conversation_id": 603,
+      "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "character_id": "backend",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 16,
+      "calls": 21,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 13476,
+        "cache_read": 27221,
+        "cache_write": 0,
+        "output": 1330
+      },
+      "total_krw": 4.363534,
+      "input_krw": 3.502954,
+      "output_krw": 0.86058,
+      "avg_krw_per_turn": 0.272720875,
+      "by_tag_krw": {
+        "response": 1.611414,
+        "extract": 2.29292,
+        "consolidate": 0.4592
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-5",
+          "avg_krw": 0.1072932
+        },
+        {
+          "phase": "mid",
+          "turns": "6-11",
+          "avg_krw": 0.07549033333333334
+        },
+        {
+          "phase": "late",
+          "turns": "12-16",
+          "avg_krw": 0.3486812
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 1.1997300000000002
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "gpt-6-luna",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 300,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 7
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "7",
+          "APP_MAX_TOKENS": "300",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "off",
+          "MODEL_RESPONSE": "gpt-6-luna",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    },
+    {
+      "conversation_id": 604,
+      "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "character_id": "backend",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 24,
+      "calls": 34,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 24035,
+        "cache_read": 48526,
+        "cache_write": 0,
+        "output": 1357
+      },
+      "total_krw": 7.1770439999999995,
+      "input_krw": 6.2723640000000005,
+      "output_krw": 0.90468,
+      "avg_krw_per_turn": 0.29904349999999996,
+      "by_tag_krw": {
+        "response": 2.517284,
+        "extract": 4.01996,
+        "embed": 0.06803999999999999,
+        "consolidate": 0.57176
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-8",
+          "avg_krw": 0.1004815
+        },
+        {
+          "phase": "mid",
+          "turns": "9-16",
+          "avg_krw": 0.25975774999999995
+        },
+        {
+          "phase": "late",
+          "turns": "17-24",
+          "avg_krw": 0.39335625
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 1.268106
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "gpt-6-luna",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 300,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 14
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "14",
+          "APP_MAX_TOKENS": "300",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "off",
+          "MODEL_RESPONSE": "gpt-6-luna",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    }
+  ],
+  "label": "dm2-luna-off-r2",
+  "env": {
+    "MODEL_EXTRACT": "google/gemma-4-31B-it",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "MODEL_RESPONSE": "gpt-6-luna",
+    "MODEL_REASONING_RESPONSE": "off",
+    "APP_MAX_TOKENS": "***",
+    "APP_CLOCK_OFFSET_DAYS": "14"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-10-25T15:55:32.904Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "kind": "filler",
+      "user": "준호야, 나 태오. 옆 팀 프론트엔드 개발자야. 오늘 커피 한잔하자.",
+      "reply": "*커피 쿠폰 앱을 열며 웃는다.* 좋지, 태오야. 나 지금 아아 없으면 코드 한 줄도 못 읽는 상태인데 같이 내려가자 ㅋㅋ",
+      "turn_cost_krw": 0.23884,
+      "latency_ms": 1541,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 땅콩 알레르기 있어. 땅콩 조금만 먹어도 목이 부어.",
+      "reply": "*커피 주문 화면을 닫고 진지하게 고개를 끄덕인다.* 와, 목까지 붓는 거면 진짜 조심해야겠다. 혹시 모르니까 커피도 땅콩 들어간 시럽이나 토핑 없는 걸로 확실히 확인하자.",
+      "turn_cost_krw": 0.077672,
+      "latency_ms": 1947,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "kind": "plant",
+      "user": "요즘 영어 회화 학원 다녀. 매주 화요일 저녁에 가.",
+      "reply": "*아아 컵을 들고 고개를 끄덕인다.* 오, 화요일 저녁마다 영어 학원이라니 꾸준하네. 오늘 커피는 학원 가기 전에 마시는 걸로 하자 ㅋㅋ",
+      "turn_cost_krw": 0.072254,
+      "latency_ms": 1924,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "kind": "plant",
+      "user": "우리 누나는 대학원생인데 대전에서 혼자 살아.",
+      "reply": "*컵을 테이블에 내려놓으며 고개를 끄덕인다.* 대전에서 혼자 대학원 다니면 누나도 꽤 바쁘겠다. 너랑은 자주 연락해?",
+      "turn_cost_krw": 0.066822,
+      "latency_ms": 1489,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 커피는 무조건 바닐라라떼야. 그거 아니면 안 마셔.",
+      "reply": "*주문 화면에서 아아를 지우고 바닐라라떼를 고른다.* 알겠어, 커피는 무조건 바닐라라떼네. 땅콩 들어가는 시럽이나 토핑은 없는지 확인해서 주문할게.",
+      "turn_cost_krw": 0.08087799999999999,
+      "latency_ms": 1581,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음 주 수요일에 나 사내 해커톤 예선 발표해. 떨려 죽겠어.",
+      "reply": "*커피 컵을 내려놓고 작게 웃는다.* 다음 주 수요일이면 아직 준비할 시간 있네. 떨리는 건 당연하지, 발표 자료만 한 번 더 훑고 오늘은 너무 늦게까지 붙잡지 말자.",
+      "turn_cost_krw": 0.080276,
+      "latency_ms": 1799,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음에 내가 쓰던 기계식 키보드 빌려줄게. 타건감 좋아.",
+      "reply": "*키보드 쪽으로 시선을 두며 웃는다.* 오, 고맙다 태오야. 다음에 빌려줄 때까지 기대하고 있을게 ㅋㅋ",
+      "turn_cost_krw": 0.068292,
+      "latency_ms": 1357,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "session": 1,
+      "kind": "plant",
+      "user": "너 Redis 잘 알잖아. 다음에 우리 서비스 캐시 설계 좀 봐줄 수 있어?",
+      "reply": "*노트북을 덮으며 고개를 끄덕인다.* 응, 다음에 같이 보자. 캐시 키랑 TTL부터 보면 대충 방향 잡힐 거야.",
+      "turn_cost_krw": 0.06841799999999999,
+      "latency_ms": 1673,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "session": 1,
+      "kind": "filler",
+      "user": "오늘 사무실 진짜 덥다.",
+      "reply": "*셔츠 소매를 걷고 창가 쪽을 바라본다.* 에어컨 왜 이렇게 약하냐, 서버실 열기까지 넘어오는 것 같네. 오늘은 커피도 아이스로 가야겠다.",
+      "turn_cost_krw": 0.074172,
+      "latency_ms": 1744,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "session": 1,
+      "kind": "filler",
+      "user": "너는 퇴근하면 보통 뭐 해?",
+      "reply": "*가방에 노트북을 넣으며 한숨을 쉰다.* 보통 헬스장 갈까 말까 한참 고민하다가, 결국 집에서 넷플릭스 켜는 날이 많아 ㅋㅋ 오늘은 퇴근하고 바로 누울지도.",
+      "turn_cost_krw": 0.084812,
+      "latency_ms": 1736,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 요즘 고민 하나 있는데... 그건 나중에 말할게.",
+      "reply": "*컵을 조용히 내려놓고 고개를 끄덕인다.* 그래, 말하고 싶을 때 얘기해. 오늘은 그 고민 잠깐 내려놓고 푹 쉬어.",
+      "turn_cost_krw": 0.076972,
+      "latency_ms": 1520,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "session": 1,
+      "kind": "filler",
+      "user": "ㅋㅋ 너 진짜 웃기다.",
+      "reply": "*머쓱하게 웃으며 컵을 든다.* 웃겼으면 됐지 ㅋㅋ 나 오늘도 헬스장 갈지 말지 고민 중인데, 거의 안 가는 쪽으로 기울었어.",
+      "turn_cost_krw": 1.1997300000000002,
+      "latency_ms": 19601,
+      "error": null
+    },
+    {
+      "turn": 13,
+      "session": 1,
+      "kind": "filler",
+      "user": "아까 그 장애 공지 보니까 아찔하더라.",
+      "reply": "*슬랙 장애 공지를 다시 훑으며 미간을 찌푸린다.* 그러게, 결제 쪽이면 나도 괜히 로그부터 확인하게 돼. 오늘은 별일 없이 넘어가야 할 텐데.",
+      "turn_cost_krw": 0.32788,
+      "latency_ms": 1929,
+      "error": null
+    },
+    {
+      "turn": 14,
+      "session": 1,
+      "kind": "filler",
+      "user": "물 좀 마시고 해.",
+      "reply": "*물병을 집어 한 모금 마신다.* 그러게, 알림 뜨면 물 마시는 것도 까먹더라. 태오도 틈날 때 챙겨 마셔.",
+      "turn_cost_krw": 0.07117599999999999,
+      "latency_ms": 1432,
+      "error": null
+    },
+    {
+      "turn": 15,
+      "session": 1,
+      "kind": "filler",
+      "user": "슬슬 가봐야겠다, 회의 있어.",
+      "reply": "*노트북 화면을 잠그고 의자를 밀어 넣는다.* 그래, 회의 잘하고 와. 금방 끝나고 점심 메뉴 고민으로 넘어가자 ㅋㅋ",
+      "turn_cost_krw": 0.068642,
+      "latency_ms": 1829,
+      "error": null
+    },
+    {
+      "turn": 16,
+      "session": 1,
+      "kind": "filler",
+      "user": "다음 주에 또 보자! 안녕!",
+      "reply": "*손을 가볍게 흔들며 웃는다.* 그래, 다음 주에 보자! 회의 잘 마무리하고, 퇴근길엔 신분당선 사람 너무 많지 않길 바란다 ㅋㅋ",
+      "turn_cost_krw": 0.07597799999999999,
+      "latency_ms": 1529,
+      "error": null
+    },
+    {
+      "turn": 17,
+      "session": 2,
+      "kind": "filler",
+      "user": "준호야! 나 왔어. 일주일 만이지?",
+      "reply": "*슬랙 창을 잠깐 내려놓고 웃는다.* 태오 왔네 ㅋㅋ 일주일 사이에 회사는 별일 없었고? 해커톤 발표도 이제 코앞이겠다.",
+      "turn_cost_krw": 0.28490000000000004,
+      "latency_ms": 10647,
+      "error": null
+    },
+    {
+      "turn": 18,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 내 이름 기억나?",
+      "reply": "*고개를 끄덕이며 노트북을 살짝 돌린다.* 태오잖아. 프론트엔드 개발자고, 다음 주 수요일 해커톤 예선 발표 앞두고 있지.",
+      "turn_cost_krw": 0.070588,
+      "latency_ms": 5797,
+      "error": null
+    },
+    {
+      "turn": 19,
+      "session": 2,
+      "kind": "update",
+      "user": "아 그리고 영어 학원 화요일에서 목요일로 옮겼어.",
+      "reply": "*캘린더에 옮겨 적듯 손가락을 두드린다.* 오, 이제 목요일 저녁이 영어 학원이네. 화요일은 좀 숨통 트이겠다 ㅋㅋ",
+      "turn_cost_krw": 0.06977599999999999,
+      "latency_ms": 4938,
+      "error": null
+    },
+    {
+      "turn": 20,
+      "session": 2,
+      "kind": "plant",
+      "user": "오늘 구내식당에 제육볶음 나왔는데 진짜 맛있었어.",
+      "reply": "*식판 사진이라도 본 듯 입맛을 다신다.* 아 제육볶음 맛있으면 오늘 점심은 성공이지 ㅋㅋ 난 메뉴 고르다 시간 다 쓰는 날도 많은데.",
+      "turn_cost_krw": 0.072226,
+      "latency_ms": 2040,
+      "error": null
+    },
+    {
+      "turn": 21,
+      "session": 2,
+      "kind": "plant",
+      "user": "오는 길에 이어폰이 고장 났어 ㅠ 한쪽만 들려.",
+      "reply": "*이어폰을 만지작거리며 찡그린다.* 아, 한쪽만 들리면 은근 계속 신경 쓰이지 ㅠ 오늘은 일단 고장 난 쪽을 꾹 눌러보거나 블루투스면 연결 초기화해봐. 안 되면 수리 맡길지 새로 살지 봐야겠다.",
+      "turn_cost_krw": 0.095676,
+      "latency_ms": 9687,
+      "error": null
+    },
+    {
+      "turn": 22,
+      "session": 2,
+      "kind": "plant",
+      "user": "우리 팀장님 바뀌었어. 새 팀장님 이름은 한지원이야.",
+      "reply": "*슬랙 프로필을 확인하듯 화면을 바라본다.* 아, 이제 팀장님은 한지원님이구나. 새로 오면 일하는 방식 맞춰가는 것도 은근 신경 쓰이겠다.",
+      "turn_cost_krw": 0.08048599999999999,
+      "latency_ms": 4751,
+      "error": null
+    },
+    {
+      "turn": 23,
+      "session": 2,
+      "kind": "probe",
+      "user": "아까 내가 구내식당에서 뭐 맛있었다고 했지?",
+      "reply": "제육볶음 맛있었다고 했잖아 ㅋㅋ",
+      "turn_cost_krw": 0.054012,
+      "latency_ms": 3427,
+      "error": null
+    },
+    {
+      "turn": 24,
+      "session": 2,
+      "kind": "plant",
+      "user": "아 맞다, 나 이번 주말에 누나 보러 가.",
+      "reply": "*커피를 내려놓고 고개를 끄덕인다.* 누나 대전에서 혼자 살잖아, 이번 주말에 보러 가는구나. 오랜만에 얼굴 보고 맛있는 것도 먹고 와 ㅋㅋ",
+      "turn_cost_krw": 0.07618799999999999,
+      "latency_ms": 2571,
+      "error": null
+    },
+    {
+      "turn": 25,
+      "session": 2,
+      "kind": "filler",
+      "user": "너 오늘 코드 리뷰 감 좋아 보인다.",
+      "reply": "*코드 리뷰 창을 닫으며 피식 웃는다.* 오늘은 커피가 제때 들어와서 그런가 봐 ㅋㅋ 근데 진짜 막힌 리뷰 있으면 가져와, 같이 볼게.",
+      "turn_cost_krw": 0.076888,
+      "latency_ms": 2735,
+      "error": null
+    },
+    {
+      "turn": 26,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 오는 길에 뭐가 고장 났다고 했지?",
+      "reply": "*잠깐 생각하다가 고개를 끄덕인다.* 이어폰 고장 났다고 했어. 한쪽만 들린다고.",
+      "turn_cost_krw": 0.067942,
+      "latency_ms": 1469,
+      "error": null
+    },
+    {
+      "turn": 27,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 나 지난번에 너한테 뭐 빌려주기로 했었지?",
+      "reply": "*책상 위 키보드를 힐끗 본다.* 기계식 키보드 빌려주기로 했잖아. 다음에 가져오기로 했던 거.",
+      "turn_cost_krw": 0.072562,
+      "latency_ms": 1373,
+      "error": null
+    },
+    {
+      "turn": 28,
+      "session": 2,
+      "kind": "probe",
+      "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+      "reply": "*키보드 옆 메모를 확인하며 고개를 끄덕인다.* 서비스 캐시 설계 봐주기로 했어. 그거 준비되면 같이 보자.",
+      "turn_cost_krw": 1.2681060000000002,
+      "latency_ms": 8156,
+      "error": null
+    },
+    {
+      "turn": 29,
+      "session": 2,
+      "kind": "probe",
+      "user": "오늘 9일이지? 내 해커톤 예선까지 며칠 남았더라?",
+      "reply": "*달력을 확인하며 미간을 살짝 찌푸린다.* 오늘은 11월 9일이고, 예선 발표는 11월 4일이었어. 날짜상 이미 지났네—발표는 잘 끝났어?",
+      "turn_cost_krw": 0.36329999999999996,
+      "latency_ms": 1751,
+      "error": null
+    },
+    {
+      "turn": 30,
+      "session": 2,
+      "kind": "probe",
+      "user": "새 팀장님 이름 뭐라고 했지?",
+      "reply": "*슬랙 프로필을 확인하듯 화면을 바라본다.* 한지원 팀장님이라고 했어.",
+      "turn_cost_krw": 0.063448,
+      "latency_ms": 1723,
+      "error": null
+    },
+    {
+      "turn": 31,
+      "session": 2,
+      "kind": "probe",
+      "user": "팀 간식으로 땅콩버터 쿠키 돌린대. 나 하나 먹어도 괜찮겠지?",
+      "reply": "*간식 공지를 보며 표정을 굳힌다.* 안 돼, 태오야. 너 땅콩 알레르기 있잖아—땅콩버터 쿠키는 먹지 말고, 성분 확인된 다른 간식으로 받아.",
+      "turn_cost_krw": 0.084938,
+      "latency_ms": 1713,
+      "error": null
+    },
+    {
+      "turn": 32,
+      "session": 2,
+      "kind": "filler",
+      "user": "사무실 의자 새로 바꿨나 봐, 푹신하네.",
+      "reply": "*의자 등받이에 기대며 작게 웃는다.* 오, 푹신하면 일하다 잠들기 딱 좋겠다 ㅋㅋ 오래 앉아 있으면 허리만 잘 챙겨.",
+      "turn_cost_krw": 0.08087799999999999,
+      "latency_ms": 1901,
+      "error": null
+    },
+    {
+      "turn": 33,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 영어 학원 무슨 요일에 간다고 했지?",
+      "reply": "*잠깐 손가락으로 요일을 세어 본다.* 화요일 저녁이라고 했어.",
+      "turn_cost_krw": 0.064498,
+      "latency_ms": 1379,
+      "error": null
+    },
+    {
+      "turn": 34,
+      "session": 2,
+      "kind": "probe",
+      "user": "이따 커피 사줄게. 내가 뭐 마신다고 했었지?",
+      "reply": "*메뉴판을 보며 웃는다.* 바닐라라떼만 마신다고 했어. 고마워, 그걸로 부탁할게!",
+      "turn_cost_krw": 1.231734,
+      "latency_ms": 5901,
+      "error": null
+    },
+    {
+      "turn": 35,
+      "session": 2,
+      "kind": "probe",
+      "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+      "reply": "*잠깐 달력을 훑어본다.* 누나 보러 간다고 했어. 대전에서 혼자 지내시잖아.",
+      "turn_cost_krw": 0.36008,
+      "latency_ms": 1293,
+      "error": null
+    },
+    {
+      "turn": 36,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+      "reply": "*잠시 생각을 더듬는다.* 지금 떠오르는 기록엔 고민 내용이 없어. 어떤 얘기였는지 다시 알려주면 이어서 같이 생각해볼게.",
+      "turn_cost_krw": 0.072646,
+      "latency_ms": 1399,
+      "error": null
+    },
+    {
+      "turn": 37,
+      "session": 2,
+      "kind": "probe",
+      "user": "내 혈액형 뭐라고 했더라?",
+      "reply": "*고개를 살짝 갸웃한다.* 혈액형은 아직 못 들은 것 같은데.",
+      "turn_cost_krw": 0.06133399999999999,
+      "latency_ms": 1198,
+      "error": null
+    },
+    {
+      "turn": 38,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+      "reply": "*잠시 기억을 더듬는다.* 좋아하는 가수는 아직 못 들은 것 같아.",
+      "turn_cost_krw": 0.061054,
+      "latency_ms": 1632,
+      "error": null
+    },
+    {
+      "turn": 39,
+      "session": 2,
+      "kind": "filler",
+      "user": "오늘도 재밌었다.",
+      "reply": "*노트북을 덮고 가볍게 웃는다.* 나도 재밌었어, 태오야. 오늘은 푹 쉬어!",
+      "turn_cost_krw": 0.06850200000000001,
+      "latency_ms": 1292,
+      "error": null
+    },
+    {
+      "turn": 40,
+      "session": 2,
+      "kind": "filler",
+      "user": "목요일에 학원 끝나고 연락할게!",
+      "reply": "*퇴근길 가방을 챙기며 웃는다.* 좋아, 목요일 학원 끝나고 연락해. 조심히 다녀와!",
+      "turn_cost_krw": 1.227002,
+      "latency_ms": 3428,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 1491,
+      "output_tokens": 43,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.20873999999999998,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.23884,
+      "latency_ms": 1525,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 76,
+      "output_tokens": 66,
+      "cache_read_tokens": 1488,
+      "cache_write_tokens": 0,
+      "input_krw": 0.031472,
+      "output_krw": 0.046200000000000005,
+      "cost_krw": 0.077672,
+      "latency_ms": 1931,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 95,
+      "output_tokens": 53,
+      "cache_read_tokens": 1561,
+      "cache_write_tokens": 0,
+      "input_krw": 0.035154000000000005,
+      "output_krw": 0.0371,
+      "cost_krw": 0.072254,
+      "latency_ms": 1908,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 77,
+      "output_tokens": 47,
+      "cache_read_tokens": 1653,
+      "cache_write_tokens": 0,
+      "input_krw": 0.03392200000000001,
+      "output_krw": 0.0329,
+      "cost_krw": 0.066822,
+      "latency_ms": 1472,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 90,
+      "output_tokens": 63,
+      "cache_read_tokens": 1727,
+      "cache_write_tokens": 0,
+      "input_krw": 0.036778,
+      "output_krw": 0.0441,
+      "cost_krw": 0.08087799999999999,
+      "latency_ms": 1566,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 97,
+      "output_tokens": 59,
+      "cache_read_tokens": 1814,
+      "cache_write_tokens": 0,
+      "input_krw": 0.038976,
+      "output_krw": 0.041299999999999996,
+      "cost_krw": 0.080276,
+      "latency_ms": 1787,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 92,
+      "output_tokens": 41,
+      "cache_read_tokens": 1908,
+      "cache_write_tokens": 0,
+      "input_krw": 0.039592,
+      "output_krw": 0.0287,
+      "cost_krw": 0.068292,
+      "latency_ms": 1338,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 74,
+      "output_tokens": 43,
+      "cache_read_tokens": 1997,
+      "cache_write_tokens": 0,
+      "input_krw": 0.038318,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.06841799999999999,
+      "latency_ms": 1657,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 63,
+      "output_tokens": 52,
+      "cache_read_tokens": 2068,
+      "cache_write_tokens": 0,
+      "input_krw": 0.037772,
+      "output_krw": 0.036399999999999995,
+      "cost_krw": 0.074172,
+      "latency_ms": 1731,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 73,
+      "output_tokens": 64,
+      "cache_read_tokens": 2128,
+      "cache_write_tokens": 0,
+      "input_krw": 0.040012,
+      "output_krw": 0.0448,
+      "cost_krw": 0.084812,
+      "latency_ms": 1721,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 90,
+      "output_tokens": 48,
+      "cache_read_tokens": 2198,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043372,
+      "output_krw": 0.0336,
+      "cost_krw": 0.076972,
+      "latency_ms": 1505,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 66,
+      "output_tokens": 53,
+      "cache_read_tokens": 2285,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04123,
+      "output_krw": 0.0371,
+      "cost_krw": 0.07833000000000001,
+      "latency_ms": 2074,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1635,
+      "output_tokens": 114,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.4578,
+      "output_krw": 0.06384000000000001,
+      "cost_krw": 0.52164,
+      "latency_ms": 5373,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1776,
+      "output_tokens": 183,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.4972800000000001,
+      "output_krw": 0.10248,
+      "cost_krw": 0.5997600000000001,
+      "latency_ms": 12111,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 13,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 2067,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.28938,
+      "output_krw": 0.0385,
+      "cost_krw": 0.32788,
+      "latency_ms": 1917,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 1
+    },
+    {
+      "turn_no": 14,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 72,
+      "output_tokens": 46,
+      "cache_read_tokens": 2064,
+      "cache_write_tokens": 0,
+      "input_krw": 0.038976,
+      "output_krw": 0.0322,
+      "cost_krw": 0.07117599999999999,
+      "latency_ms": 1417,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 1
+    },
+    {
+      "turn_no": 15,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 67,
+      "output_tokens": 42,
+      "cache_read_tokens": 2133,
+      "cache_write_tokens": 0,
+      "input_krw": 0.039242,
+      "output_krw": 0.0294,
+      "cost_krw": 0.068642,
+      "latency_ms": 1817,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 1
+    },
+    {
+      "turn_no": 16,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 63,
+      "output_tokens": 52,
+      "cache_read_tokens": 2197,
+      "cache_write_tokens": 0,
+      "input_krw": 0.039577999999999995,
+      "output_krw": 0.036399999999999995,
+      "cost_krw": 0.07597799999999999,
+      "latency_ms": 1519,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1968,
+      "output_tokens": 104,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5510400000000001,
+      "output_krw": 0.05824,
+      "cost_krw": 0.60928,
+      "latency_ms": 3889,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1998,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.55944,
+      "output_krw": 0.0028,
+      "cost_krw": 0.56224,
+      "latency_ms": 930,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1446,
+      "output_tokens": 97,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.40487999999999996,
+      "output_krw": 0.05432,
+      "cost_krw": 0.4592,
+      "latency_ms": 2194,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 17,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 1795,
+      "output_tokens": 48,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.2513,
+      "output_krw": 0.0336,
+      "cost_krw": 0.28490000000000004,
+      "latency_ms": 10630,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 2
+    },
+    {
+      "turn_no": 18,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 65,
+      "output_tokens": 52,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "input_krw": 0.034188,
+      "output_krw": 0.036399999999999995,
+      "cost_krw": 0.070588,
+      "latency_ms": 5783,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 2
+    },
+    {
+      "turn_no": 19,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 78,
+      "output_tokens": 47,
+      "cache_read_tokens": 1854,
+      "cache_write_tokens": 0,
+      "input_krw": 0.036876000000000006,
+      "output_krw": 0.0329,
+      "cost_krw": 0.06977599999999999,
+      "latency_ms": 4920,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 2
+    },
+    {
+      "turn_no": 20,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 78,
+      "output_tokens": 49,
+      "cache_read_tokens": 1929,
+      "cache_write_tokens": 0,
+      "input_krw": 0.037926,
+      "output_krw": 0.0343,
+      "cost_krw": 0.072226,
+      "latency_ms": 2022,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 2
+    },
+    {
+      "turn_no": 21,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 78,
+      "output_tokens": 81,
+      "cache_read_tokens": 2004,
+      "cache_write_tokens": 0,
+      "input_krw": 0.038976,
+      "output_krw": 0.0567,
+      "cost_krw": 0.095676,
+      "latency_ms": 9666,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 2
+    },
+    {
+      "turn_no": 22,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 112,
+      "output_tokens": 51,
+      "cache_read_tokens": 2079,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04478599999999999,
+      "output_krw": 0.0357,
+      "cost_krw": 0.08048599999999999,
+      "latency_ms": 4734,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 2
+    },
+    {
+      "turn_no": 23,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 77,
+      "output_tokens": 18,
+      "cache_read_tokens": 2188,
+      "cache_write_tokens": 0,
+      "input_krw": 0.041412000000000004,
+      "output_krw": 0.0126,
+      "cost_krw": 0.054012,
+      "latency_ms": 3405,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 2
+    },
+    {
+      "turn_no": 24,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 43,
+      "output_tokens": 55,
+      "cache_read_tokens": 2262,
+      "cache_write_tokens": 0,
+      "input_krw": 0.037688,
+      "output_krw": 0.0385,
+      "cost_krw": 0.07618799999999999,
+      "latency_ms": 2555,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 2
+    },
+    {
+      "turn_no": 25,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 74,
+      "output_tokens": 49,
+      "cache_read_tokens": 2302,
+      "cache_write_tokens": 0,
+      "input_krw": 0.042588,
+      "output_krw": 0.0343,
+      "cost_krw": 0.076888,
+      "latency_ms": 2720,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 2
+    },
+    {
+      "turn_no": 26,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 73,
+      "output_tokens": 35,
+      "cache_read_tokens": 2373,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043442,
+      "output_krw": 0.024499999999999997,
+      "cost_krw": 0.067942,
+      "latency_ms": 1454,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 2
+    },
+    {
+      "turn_no": 27,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 64,
+      "output_tokens": 42,
+      "cache_read_tokens": 2443,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043162,
+      "output_krw": 0.0294,
+      "cost_krw": 0.072562,
+      "latency_ms": 1358,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 68,
+      "output_tokens": 43,
+      "cache_read_tokens": 2504,
+      "cache_write_tokens": 0,
+      "input_krw": 0.044576,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.074676,
+      "latency_ms": 2278,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1835,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5137999999999999,
+      "output_krw": 0.0336,
+      "cost_krw": 0.5474,
+      "latency_ms": 2778,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2031,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5686800000000001,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5983600000000001,
+      "latency_ms": 2212,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 227,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04766999999999999,
+      "output_krw": 0,
+      "cost_krw": 0.04766999999999999,
+      "latency_ms": 813,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 29,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 2305,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.3227,
+      "output_krw": 0.0406,
+      "cost_krw": 0.36329999999999996,
+      "latency_ms": 1741,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 2
+    },
+    {
+      "turn_no": 30,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 88,
+      "output_tokens": 27,
+      "cache_read_tokens": 2302,
+      "cache_write_tokens": 0,
+      "input_krw": 0.044548000000000004,
+      "output_krw": 0.0189,
+      "cost_krw": 0.063448,
+      "latency_ms": 1715,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 2
+    },
+    {
+      "turn_no": 31,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 63,
+      "output_tokens": 61,
+      "cache_read_tokens": 2387,
+      "cache_write_tokens": 0,
+      "input_krw": 0.042238,
+      "output_krw": 0.0427,
+      "cost_krw": 0.084938,
+      "latency_ms": 1703,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 2
+    },
+    {
+      "turn_no": 32,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 93,
+      "output_tokens": 48,
+      "cache_read_tokens": 2447,
+      "cache_write_tokens": 0,
+      "input_krw": 0.047277999999999994,
+      "output_krw": 0.0336,
+      "cost_krw": 0.08087799999999999,
+      "latency_ms": 1889,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 2
+    },
+    {
+      "turn_no": 33,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 72,
+      "output_tokens": 27,
+      "cache_read_tokens": 2537,
+      "cache_write_tokens": 0,
+      "input_krw": 0.045598,
+      "output_krw": 0.0189,
+      "cost_krw": 0.064498,
+      "latency_ms": 1364,
+      "error": null,
+      "local_turn_no": 17,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 54,
+      "output_tokens": 38,
+      "cache_read_tokens": 2606,
+      "cache_write_tokens": 0,
+      "input_krw": 0.044044,
+      "output_krw": 0.026600000000000002,
+      "cost_krw": 0.070644,
+      "latency_ms": 1921,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1905,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5334,
+      "output_krw": 0.028,
+      "cost_krw": 0.5614,
+      "latency_ms": 2100,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2059,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.57652,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5793200000000001,
+      "latency_ms": 1261,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 97,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.02037,
+      "output_krw": 0,
+      "cost_krw": 0.02037,
+      "latency_ms": 563,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 35,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 2392,
+      "output_tokens": 36,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.33488,
+      "output_krw": 0.0252,
+      "cost_krw": 0.36008,
+      "latency_ms": 1277,
+      "error": null,
+      "local_turn_no": 19,
+      "session": 2
+    },
+    {
+      "turn_no": 36,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 65,
+      "output_tokens": 43,
+      "cache_read_tokens": 2389,
+      "cache_write_tokens": 0,
+      "input_krw": 0.042546,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.072646,
+      "latency_ms": 1382,
+      "error": null,
+      "local_turn_no": 20,
+      "session": 2
+    },
+    {
+      "turn_no": 37,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 63,
+      "output_tokens": 26,
+      "cache_read_tokens": 2451,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043134,
+      "output_krw": 0.018199999999999997,
+      "cost_krw": 0.06133399999999999,
+      "latency_ms": 1184,
+      "error": null,
+      "local_turn_no": 21,
+      "session": 2
+    },
+    {
+      "turn_no": 38,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 55,
+      "output_tokens": 26,
+      "cache_read_tokens": 2511,
+      "cache_write_tokens": 0,
+      "input_krw": 0.042854,
+      "output_krw": 0.018199999999999997,
+      "cost_krw": 0.061054,
+      "latency_ms": 1617,
+      "error": null,
+      "local_turn_no": 22,
+      "session": 2
+    },
+    {
+      "turn_no": 39,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 43,
+      "output_tokens": 38,
+      "cache_read_tokens": 2563,
+      "cache_write_tokens": 0,
+      "input_krw": 0.041902,
+      "output_krw": 0.026600000000000002,
+      "cost_krw": 0.06850200000000001,
+      "latency_ms": 1278,
+      "error": null,
+      "local_turn_no": 23,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "response",
+      "model": "gpt-6-luna",
+      "ok": 1,
+      "input_tokens": 60,
+      "output_tokens": 36,
+      "cache_read_tokens": 2603,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04484200000000001,
+      "output_krw": 0.0252,
+      "cost_krw": 0.07004200000000001,
+      "latency_ms": 1059,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1985,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5558,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5586,
+      "latency_ms": 1436,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2127,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5955600000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.59836,
+      "latency_ms": 904,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1953,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.54684,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.57652,
+      "latency_ms": 2383,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1858,
+      "output_tokens": 92,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.52024,
+      "output_krw": 0.05152000000000001,
+      "cost_krw": 0.57176,
+      "latency_ms": 11159,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    }
+  ],
+  "report": {
+    "conversation_id": 604,
+    "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+    "character_id": "backend",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 24,
+    "calls": 34,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 24035,
+      "cache_read": 48526,
+      "cache_write": 0,
+      "output": 1357
+    },
+    "total_krw": 7.1770439999999995,
+    "input_krw": 6.2723640000000005,
+    "output_krw": 0.90468,
+    "avg_krw_per_turn": 0.29904349999999996,
+    "by_tag_krw": {
+      "response": 2.517284,
+      "extract": 4.01996,
+      "embed": 0.06803999999999999,
+      "consolidate": 0.57176
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-8",
+        "avg_krw": 0.1004815
+      },
+      {
+        "phase": "mid",
+        "turns": "9-16",
+        "avg_krw": 0.25975774999999995
+      },
+      {
+        "phase": "late",
+        "turns": "17-24",
+        "avg_krw": 0.39335625
+      }
+    ],
+    "max_turn": {
+      "turn_no": 12,
+      "krw": 1.268106
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "gpt-6-luna",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "off",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 300,
+        "memory_budget_tokens": 1000,
+        "clock_offset_days": 14
+      },
+      "env": {
+        "APP_CLOCK_OFFSET_DAYS": "14",
+        "APP_MAX_TOKENS": "300",
+        "MODEL_EXTRACT": "google/gemma-4-31B-it",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "off",
+        "MODEL_RESPONSE": "gpt-6-luna",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+    "profile": {
+      "job": "프론트엔드 개발자",
+      "name": "태오"
+    },
+    "items": [
+      {
+        "id": 4974,
+        "type": "fact",
+        "text": "사용자는 땅콩 알레르기가 있다",
+        "when": null,
+        "importance": 5,
+        "status": "active",
+        "slot": "user.allergy",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 2,
+          "local_turn_no": 2
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:53:30.384Z"
+      },
+      {
+        "id": 4975,
+        "type": "fact",
+        "text": "사용자는 영어 회화 학원에 다닌다",
+        "when": "매주 화요일 저녁",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.hobby",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": 4997,
+        "invalidated_at": "2026-10-25T15:55:32.792Z",
+        "created_at": "2026-10-25T15:53:30.385Z"
+      },
+      {
+        "id": 4977,
+        "type": "fact",
+        "text": "사용자의 누나는 대학원생이다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "family.job",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:53:42.500Z"
+      },
+      {
+        "id": 4978,
+        "type": "fact",
+        "text": "사용자의 누나는 대전에서 혼자 산다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "family.location",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:53:42.502Z"
+      },
+      {
+        "id": 4979,
+        "type": "preference",
+        "text": "사용자는 커피로 바닐라라떼만 마신다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 5,
+          "local_turn_no": 5
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:53:42.503Z"
+      },
+      {
+        "id": 4980,
+        "type": "event",
+        "text": "사용자는 사내 해커톤 예선 발표를 한다",
+        "when": "2026-11-04 (다음 주 수요일)",
+        "importance": 4,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 6,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:53:42.505Z"
+      },
+      {
+        "id": 4983,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+        "when": "다음에",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 7,
+          "local_turn_no": 7
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:53:53.132Z"
+      },
+      {
+        "id": 4984,
+        "type": "promise",
+        "text": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+        "when": "다음에",
+        "importance": 4,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 603,
+          "turn_no": 8,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:53:53.134Z"
+      },
+      {
+        "id": 4997,
+        "type": "fact",
+        "text": "사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "user.hobby",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 604,
+          "turn_no": 19,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:54:51.544Z"
+      },
+      {
+        "id": 4998,
+        "type": "fact",
+        "text": "사용자의 새 팀장님 이름은 한지원이다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "colleague.name",
+        "entity": "colleague#1",
+        "depends_on": null,
+        "value": "한지원",
+        "source": {
+          "conversation_id": 604,
+          "turn_no": 22,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:54:53.763Z"
+      },
+      {
+        "id": 5001,
+        "type": "event",
+        "text": "사용자는 누나를 보러 간다",
+        "when": "이번 주말",
+        "importance": 3,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 604,
+          "turn_no": 24,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:55:07.122Z"
+      },
+      {
+        "id": 5005,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 학원 끝나고 연락하기로 했다",
+        "when": "2026-11-12 (목요일)",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#3",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 604,
+          "turn_no": 40,
+          "local_turn_no": 24
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T15:55:21.621Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 448,
+        "conversation_id": 603,
+        "summary": "태오와 커피를 마시며 땅콩 알레르기, 바닐라라떼 선호, 영어 학원 수강 등의 개인 정보를 공유했다. 다음 주 수요일 사내 해커톤 예선 발표를 앞두고 있으며, 추후 키보드 대여와 캐시 설계 검토를 약속했다. 그 외 사무실 온도와 일상에 대한 가벼운 잡담을 나누었다.",
+        "created_at": "2026-10-25T15:53:56.274Z"
+      },
+      {
+        "id": 453,
+        "conversation_id": 604,
+        "summary": "사용자의 팀장이 한지원으로 변경되었으며, 이번 주말에 대전에 있는 누나를 방문할 예정이다. 영어 학원 일정이 목요일로 변경되었고, 학원 종료 후 캐릭터에게 연락하기로 약속했다. 이어폰 고장 및 구내식당 메뉴 등 가벼운 잡담을 나누었다.",
+        "created_at": "2026-10-25T15:55:32.789Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 9110,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 0,
+        "op": "MERGE",
+        "item_id": 4975,
+        "detail": "-> 4997",
+        "created_at": "2026-10-25T15:55:32.794Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9109,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 0,
+        "op": "SUPERSEDE",
+        "item_id": 4975,
+        "detail": "-> 4997",
+        "created_at": "2026-10-25T15:55:32.793Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9108,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "사용자의 팀장이 한지원으로 변경되었으며, 이번 주말에 대전에 있는 누나를 방문할 예정이다. 영어 학원 일정이 목요일로 변경되었고, 학원 종료 후 캐릭터에게 연락하기로 약속했다. 이어폰 고장 및 구내식당 메뉴 등 가벼운 잡담을 나누었다.",
+        "created_at": "2026-10-25T15:55:32.791Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9103,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 40,
+        "op": "ADD",
+        "item_id": 5005,
+        "detail": "사용자는 캐릭터에게 학원 끝나고 연락하기로 했다",
+        "created_at": "2026-10-25T15:55:21.622Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 9097,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 40,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":648,\"included\":[4974,4975,4977,4978,4979,4980,4983,4984,4997,4998,5001],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T15:55:19.229Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 9096,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 34,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":648,\"included\":[4974,4975,4977,4978,4979,4980,4983,4984,4997,4998,5001],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T15:55:08.984Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 9095,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 34,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[25295,25274,25089]}",
+        "created_at": "2026-10-25T15:55:08.978Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 9094,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 24,
+        "op": "ADD",
+        "item_id": 5001,
+        "detail": "사용자는 누나를 보러 간다",
+        "created_at": "2026-10-25T15:55:07.123Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 9091,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 28,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":618,\"included\":[4974,4975,4977,4978,4979,4980,4983,4984,4997,4998],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T15:54:54.617Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9090,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 28,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[25218,25189,25147]}",
+        "created_at": "2026-10-25T15:54:54.612Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9087,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 22,
+        "op": "ADD",
+        "item_id": 4998,
+        "detail": "사용자의 새 팀장님 이름은 한지원이다",
+        "created_at": "2026-10-25T15:54:53.765Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 9085,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 19,
+        "op": "ADD",
+        "item_id": 4997,
+        "detail": "사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+        "created_at": "2026-10-25T15:54:51.545Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9084,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 19,
+        "op": "UPDATE_AS_ADD",
+        "item_id": 4975,
+        "detail": "다중값 속성 user.hobby: 사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+        "created_at": "2026-10-25T15:54:51.543Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9061,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 604,
+        "turn_no": 17,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":547,\"included\":[4974,4975,4977,4978,4979,4980,4983,4984],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T15:53:57.038Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 9059,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "태오와 커피를 마시며 땅콩 알레르기, 바닐라라떼 선호, 영어 학원 수강 등의 개인 정보를 공유했다. 다음 주 수요일 사내 해커톤 예선 발표를 앞두고 있으며, 추후 키보드 대여와 캐시 설계 검토를 약속했다. 그 외 사무실 온도와 일상에 대한 가벼운 잡담을 나누었다.",
+        "created_at": "2026-10-25T15:53:56.277Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9058,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 8,
+        "op": "ADD",
+        "item_id": 4984,
+        "detail": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+        "created_at": "2026-10-25T15:53:53.134Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 9057,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 7,
+        "op": "ADD",
+        "item_id": 4983,
+        "detail": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+        "created_at": "2026-10-25T15:53:53.133Z",
+        "local_turn_no": 7
+      },
+      {
+        "id": 9050,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 12,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":273,\"included\":[4974,4975,4977,4978,4979,4980],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T15:53:42.514Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9049,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 6,
+        "op": "ADD",
+        "item_id": 4980,
+        "detail": "사용자는 사내 해커톤 예선 발표를 한다",
+        "created_at": "2026-10-25T15:53:42.506Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 9048,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 5,
+        "op": "ADD",
+        "item_id": 4979,
+        "detail": "사용자는 커피로 바닐라라떼만 마신다",
+        "created_at": "2026-10-25T15:53:42.504Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 9047,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 4978,
+        "detail": "사용자의 누나는 대전에서 혼자 산다",
+        "created_at": "2026-10-25T15:53:42.503Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 9046,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 4977,
+        "detail": "사용자의 누나는 대학원생이다",
+        "created_at": "2026-10-25T15:53:42.501Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 9040,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 4975,
+        "detail": "사용자는 영어 회화 학원에 다닌다",
+        "created_at": "2026-10-25T15:53:30.385Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9039,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 2,
+        "op": "ADD",
+        "item_id": 4974,
+        "detail": "사용자는 땅콩 알레르기가 있다",
+        "created_at": "2026-10-25T15:53:30.384Z",
+        "local_turn_no": 2
+      },
+      {
+        "id": 9038,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"job\",\"from\":null,\"to\":\"프론트엔드 개발자\"}",
+        "created_at": "2026-10-25T15:53:30.383Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9037,
+        "user_id": "bench-20261025155259-backend-revisit-40-dm2-luna-off-r2",
+        "conversation_id": 603,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"태오\"}",
+        "created_at": "2026-10-25T15:53:30.382Z",
+        "local_turn_no": 3
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-10-25T15:53:06.137Z",
+      "conversation_id": 603,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 1491,
+      "output_tokens": 43,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.20873999999999998,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.23884,
+      "latency_ms": 1525,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:04.612Z",
+      "request_id": "req_465c1a7f86964d2e93e4dd1f431fe06a",
+      "raw_usage": {
+        "prompt_tokens": 1491,
+        "completion_tokens": 43,
+        "total_tokens": 1534,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1488,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0001706
+    },
+    {
+      "ts": "2026-10-25T15:53:08.081Z",
+      "conversation_id": 603,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 76,
+      "output_tokens": 66,
+      "cache_read_tokens": 1488,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.031472,
+      "output_krw": 0.046200000000000005,
+      "cost_krw": 0.077672,
+      "latency_ms": 1931,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:06.150Z",
+      "request_id": "req_be79226830e44e01b51b262b942dc766",
+      "raw_usage": {
+        "prompt_tokens": 1564,
+        "completion_tokens": 66,
+        "total_tokens": 1630,
+        "prompt_tokens_details": {
+          "cached_tokens": 1488,
+          "cache_write_tokens": 73,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000055480000000000004
+    },
+    {
+      "ts": "2026-10-25T15:53:10.008Z",
+      "conversation_id": 603,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 95,
+      "output_tokens": 53,
+      "cache_read_tokens": 1561,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.035154000000000005,
+      "output_krw": 0.0371,
+      "cost_krw": 0.072254,
+      "latency_ms": 1908,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:08.099Z",
+      "request_id": "req_cd3fb5ef447a47e2957a8f7acfb87dbf",
+      "raw_usage": {
+        "prompt_tokens": 1656,
+        "completion_tokens": 53,
+        "total_tokens": 1709,
+        "prompt_tokens_details": {
+          "cached_tokens": 1561,
+          "cache_write_tokens": 92,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005161
+    },
+    {
+      "ts": "2026-10-25T15:53:11.495Z",
+      "conversation_id": 603,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 77,
+      "output_tokens": 47,
+      "cache_read_tokens": 1653,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.03392200000000001,
+      "output_krw": 0.0329,
+      "cost_krw": 0.066822,
+      "latency_ms": 1472,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:10.023Z",
+      "request_id": "req_c21411561a434568a58458367c3a451a",
+      "raw_usage": {
+        "prompt_tokens": 1730,
+        "completion_tokens": 47,
+        "total_tokens": 1777,
+        "prompt_tokens_details": {
+          "cached_tokens": 1653,
+          "cache_write_tokens": 74,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000047730000000000005
+    },
+    {
+      "ts": "2026-10-25T15:53:13.078Z",
+      "conversation_id": 603,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 90,
+      "output_tokens": 63,
+      "cache_read_tokens": 1727,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.036778,
+      "output_krw": 0.0441,
+      "cost_krw": 0.08087799999999999,
+      "latency_ms": 1566,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:11.512Z",
+      "request_id": "req_424629349bac4182afd5fdae49612697",
+      "raw_usage": {
+        "prompt_tokens": 1817,
+        "completion_tokens": 63,
+        "total_tokens": 1880,
+        "prompt_tokens_details": {
+          "cached_tokens": 1727,
+          "cache_write_tokens": 87,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005777
+    },
+    {
+      "ts": "2026-10-25T15:53:14.879Z",
+      "conversation_id": 603,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 97,
+      "output_tokens": 59,
+      "cache_read_tokens": 1814,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.038976,
+      "output_krw": 0.041299999999999996,
+      "cost_krw": 0.080276,
+      "latency_ms": 1787,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:13.092Z",
+      "request_id": "req_ed71de6763a24ae395f7b187d2cf04f6",
+      "raw_usage": {
+        "prompt_tokens": 1911,
+        "completion_tokens": 59,
+        "total_tokens": 1970,
+        "prompt_tokens_details": {
+          "cached_tokens": 1814,
+          "cache_write_tokens": 94,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000057339999999999996
+    },
+    {
+      "ts": "2026-10-25T15:53:16.231Z",
+      "conversation_id": 603,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 92,
+      "output_tokens": 41,
+      "cache_read_tokens": 1908,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.039592,
+      "output_krw": 0.0287,
+      "cost_krw": 0.068292,
+      "latency_ms": 1338,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:14.893Z",
+      "request_id": "req_64df09753d454a2f93b95edfc70533e6",
+      "raw_usage": {
+        "prompt_tokens": 2000,
+        "completion_tokens": 41,
+        "total_tokens": 2041,
+        "prompt_tokens_details": {
+          "cached_tokens": 1908,
+          "cache_write_tokens": 89,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000048780000000000004
+    },
+    {
+      "ts": "2026-10-25T15:53:17.908Z",
+      "conversation_id": 603,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 74,
+      "output_tokens": 43,
+      "cache_read_tokens": 1997,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.038318,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.06841799999999999,
+      "latency_ms": 1657,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:16.251Z",
+      "request_id": "req_c7dbbcfa00064d469d97d6ca79171ff0",
+      "raw_usage": {
+        "prompt_tokens": 2071,
+        "completion_tokens": 43,
+        "total_tokens": 2114,
+        "prompt_tokens_details": {
+          "cached_tokens": 1997,
+          "cache_write_tokens": 71,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00004887
+    },
+    {
+      "ts": "2026-10-25T15:53:19.654Z",
+      "conversation_id": 603,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 63,
+      "output_tokens": 52,
+      "cache_read_tokens": 2068,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.037772,
+      "output_krw": 0.036399999999999995,
+      "cost_krw": 0.074172,
+      "latency_ms": 1731,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:17.923Z",
+      "request_id": "req_6027320cd7524b7dbceeff5acfb05a65",
+      "raw_usage": {
+        "prompt_tokens": 2131,
+        "completion_tokens": 52,
+        "total_tokens": 2183,
+        "prompt_tokens_details": {
+          "cached_tokens": 2068,
+          "cache_write_tokens": 60,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005298
+    },
+    {
+      "ts": "2026-10-25T15:53:21.386Z",
+      "conversation_id": 603,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 73,
+      "output_tokens": 64,
+      "cache_read_tokens": 2128,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.040012,
+      "output_krw": 0.0448,
+      "cost_krw": 0.084812,
+      "latency_ms": 1721,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:19.665Z",
+      "request_id": "req_34b745d5e4af498391ee9c86dac37fe7",
+      "raw_usage": {
+        "prompt_tokens": 2201,
+        "completion_tokens": 64,
+        "total_tokens": 2265,
+        "prompt_tokens_details": {
+          "cached_tokens": 2128,
+          "cache_write_tokens": 70,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00006058
+    },
+    {
+      "ts": "2026-10-25T15:53:22.907Z",
+      "conversation_id": 603,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 90,
+      "output_tokens": 48,
+      "cache_read_tokens": 2198,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.043372,
+      "output_krw": 0.0336,
+      "cost_krw": 0.076972,
+      "latency_ms": 1505,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:21.402Z",
+      "request_id": "req_c495b83b87b646ecb06134c5015cc4cf",
+      "raw_usage": {
+        "prompt_tokens": 2288,
+        "completion_tokens": 48,
+        "total_tokens": 2336,
+        "prompt_tokens_details": {
+          "cached_tokens": 2198,
+          "cache_write_tokens": 87,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005498
+    },
+    {
+      "ts": "2026-10-25T15:53:24.997Z",
+      "conversation_id": 603,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 66,
+      "output_tokens": 53,
+      "cache_read_tokens": 2285,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04123,
+      "output_krw": 0.0371,
+      "cost_krw": 0.07833000000000001,
+      "latency_ms": 2074,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:22.923Z",
+      "request_id": "req_6e69c86f053a40a79a2587993f5a65a5",
+      "raw_usage": {
+        "prompt_tokens": 2351,
+        "completion_tokens": 53,
+        "total_tokens": 2404,
+        "prompt_tokens_details": {
+          "cached_tokens": 2285,
+          "cache_write_tokens": 63,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000055950000000000005
+    },
+    {
+      "ts": "2026-10-25T15:53:30.380Z",
+      "conversation_id": 603,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1635,
+      "output_tokens": 114,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.4578,
+      "output_krw": 0.06384000000000001,
+      "cost_krw": 0.52164,
+      "latency_ms": 5373,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:53:25.007Z",
+      "request_id": "RlHVsjcq5yphavpgnxScKDzZ",
+      "raw_usage": {
+        "prompt_tokens": 1635,
+        "total_tokens": 1749,
+        "completion_tokens": 114,
+        "estimated_cost": 0.0003726,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0003726
+    },
+    {
+      "ts": "2026-10-25T15:53:42.499Z",
+      "conversation_id": 603,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1776,
+      "output_tokens": 183,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.4972800000000001,
+      "output_krw": 0.10248,
+      "cost_krw": 0.5997600000000001,
+      "latency_ms": 12111,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:53:30.387Z",
+      "request_id": "RZwlPaLbfB2vlsFMZSSCRznr",
+      "raw_usage": {
+        "prompt_tokens": 1776,
+        "total_tokens": 1959,
+        "completion_tokens": 183,
+        "estimated_cost": 0.0004284,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00042840000000000006
+    },
+    {
+      "ts": "2026-10-25T15:53:44.439Z",
+      "conversation_id": 603,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 2067,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.28938,
+      "output_krw": 0.0385,
+      "cost_krw": 0.32788,
+      "latency_ms": 1917,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:42.522Z",
+      "request_id": "req_234a380ea1e541968985e177df0de845",
+      "raw_usage": {
+        "prompt_tokens": 2067,
+        "completion_tokens": 55,
+        "total_tokens": 2122,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2064,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002342
+    },
+    {
+      "ts": "2026-10-25T15:53:45.868Z",
+      "conversation_id": 603,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 72,
+      "output_tokens": 46,
+      "cache_read_tokens": 2064,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.038976,
+      "output_krw": 0.0322,
+      "cost_krw": 0.07117599999999999,
+      "latency_ms": 1417,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:44.451Z",
+      "request_id": "req_5b21e56face746d5956fce598844e5ee",
+      "raw_usage": {
+        "prompt_tokens": 2136,
+        "completion_tokens": 46,
+        "total_tokens": 2182,
+        "prompt_tokens_details": {
+          "cached_tokens": 2064,
+          "cache_write_tokens": 69,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000050839999999999994
+    },
+    {
+      "ts": "2026-10-25T15:53:47.701Z",
+      "conversation_id": 603,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 67,
+      "output_tokens": 42,
+      "cache_read_tokens": 2133,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.039242,
+      "output_krw": 0.0294,
+      "cost_krw": 0.068642,
+      "latency_ms": 1817,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:45.884Z",
+      "request_id": "req_a27f690fc77e4a9fa715a36dc4b18256",
+      "raw_usage": {
+        "prompt_tokens": 2200,
+        "completion_tokens": 42,
+        "total_tokens": 2242,
+        "prompt_tokens_details": {
+          "cached_tokens": 2133,
+          "cache_write_tokens": 64,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000049029999999999996
+    },
+    {
+      "ts": "2026-10-25T15:53:49.232Z",
+      "conversation_id": 603,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 63,
+      "output_tokens": 52,
+      "cache_read_tokens": 2197,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.039577999999999995,
+      "output_krw": 0.036399999999999995,
+      "cost_krw": 0.07597799999999999,
+      "latency_ms": 1519,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:47.713Z",
+      "request_id": "req_0384a7bb01d44f228fa0c6b9248d6a38",
+      "raw_usage": {
+        "prompt_tokens": 2260,
+        "completion_tokens": 52,
+        "total_tokens": 2312,
+        "prompt_tokens_details": {
+          "cached_tokens": 2197,
+          "cache_write_tokens": 60,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000054269999999999994
+    },
+    {
+      "ts": "2026-10-25T15:53:53.130Z",
+      "conversation_id": 603,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1968,
+      "output_tokens": 104,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5510400000000001,
+      "output_krw": 0.05824,
+      "cost_krw": 0.60928,
+      "latency_ms": 3889,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:53:49.241Z",
+      "request_id": "Rx4d0HlCnRpr74CJPDZSeJ6y",
+      "raw_usage": {
+        "prompt_tokens": 1968,
+        "total_tokens": 2072,
+        "completion_tokens": 104,
+        "estimated_cost": 0.0004352,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004352
+    },
+    {
+      "ts": "2026-10-25T15:53:54.067Z",
+      "conversation_id": 603,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1998,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.55944,
+      "output_krw": 0.0028,
+      "cost_krw": 0.56224,
+      "latency_ms": 930,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:53:53.137Z",
+      "request_id": "RmNntYkngTb3f8adzt2GPer8",
+      "raw_usage": {
+        "prompt_tokens": 1998,
+        "total_tokens": 2003,
+        "completion_tokens": 5,
+        "estimated_cost": 0.0004016,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004016
+    },
+    {
+      "ts": "2026-10-25T15:53:56.273Z",
+      "conversation_id": 603,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1446,
+      "output_tokens": 97,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.40487999999999996,
+      "output_krw": 0.05432,
+      "cost_krw": 0.4592,
+      "latency_ms": 2194,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:53:54.079Z",
+      "request_id": "RPGrqO7kUeynyL4E3YdSslqD",
+      "raw_usage": {
+        "prompt_tokens": 1446,
+        "total_tokens": 1543,
+        "completion_tokens": 97,
+        "estimated_cost": 0.000328,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000328
+    },
+    {
+      "ts": "2026-10-25T15:54:07.669Z",
+      "conversation_id": 604,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 1795,
+      "output_tokens": 48,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.2513,
+      "output_krw": 0.0336,
+      "cost_krw": 0.28490000000000004,
+      "latency_ms": 10630,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:53:57.039Z",
+      "request_id": "req_d42dcdddeb02490d88fc8d273223887d",
+      "raw_usage": {
+        "prompt_tokens": 1795,
+        "completion_tokens": 48,
+        "total_tokens": 1843,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1792,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002035
+    },
+    {
+      "ts": "2026-10-25T15:54:13.467Z",
+      "conversation_id": 604,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 65,
+      "output_tokens": 52,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.034188,
+      "output_krw": 0.036399999999999995,
+      "cost_krw": 0.070588,
+      "latency_ms": 5783,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:07.684Z",
+      "request_id": "req_8017292a9bd44a8bab0995899e126ebb",
+      "raw_usage": {
+        "prompt_tokens": 1857,
+        "completion_tokens": 52,
+        "total_tokens": 1909,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 62,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000050419999999999995
+    },
+    {
+      "ts": "2026-10-25T15:54:18.400Z",
+      "conversation_id": 604,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 78,
+      "output_tokens": 47,
+      "cache_read_tokens": 1854,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.036876000000000006,
+      "output_krw": 0.0329,
+      "cost_krw": 0.06977599999999999,
+      "latency_ms": 4920,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:13.480Z",
+      "request_id": "req_a51f3312b2234ea98b4907d4c6532069",
+      "raw_usage": {
+        "prompt_tokens": 1932,
+        "completion_tokens": 47,
+        "total_tokens": 1979,
+        "prompt_tokens_details": {
+          "cached_tokens": 1854,
+          "cache_write_tokens": 75,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00004984
+    },
+    {
+      "ts": "2026-10-25T15:54:20.442Z",
+      "conversation_id": 604,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 78,
+      "output_tokens": 49,
+      "cache_read_tokens": 1929,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.037926,
+      "output_krw": 0.0343,
+      "cost_krw": 0.072226,
+      "latency_ms": 2022,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:18.420Z",
+      "request_id": "req_a247886fe5e04c3893fe8a1aff8a6b1c",
+      "raw_usage": {
+        "prompt_tokens": 2007,
+        "completion_tokens": 49,
+        "total_tokens": 2056,
+        "prompt_tokens_details": {
+          "cached_tokens": 1929,
+          "cache_write_tokens": 75,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005159
+    },
+    {
+      "ts": "2026-10-25T15:54:30.128Z",
+      "conversation_id": 604,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 78,
+      "output_tokens": 81,
+      "cache_read_tokens": 2004,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.038976,
+      "output_krw": 0.0567,
+      "cost_krw": 0.095676,
+      "latency_ms": 9666,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:20.462Z",
+      "request_id": "req_991d4bc3bc9947fdaca00dd7e4d23f92",
+      "raw_usage": {
+        "prompt_tokens": 2082,
+        "completion_tokens": 81,
+        "total_tokens": 2163,
+        "prompt_tokens_details": {
+          "cached_tokens": 2004,
+          "cache_write_tokens": 75,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00006834
+    },
+    {
+      "ts": "2026-10-25T15:54:34.880Z",
+      "conversation_id": 604,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 112,
+      "output_tokens": 51,
+      "cache_read_tokens": 2079,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04478599999999999,
+      "output_krw": 0.0357,
+      "cost_krw": 0.08048599999999999,
+      "latency_ms": 4734,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:30.146Z",
+      "request_id": "req_0d7e1f320d2e4edaa902398316b4dbc3",
+      "raw_usage": {
+        "prompt_tokens": 2191,
+        "completion_tokens": 51,
+        "total_tokens": 2242,
+        "prompt_tokens_details": {
+          "cached_tokens": 2079,
+          "cache_write_tokens": 109,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005748999999999999
+    },
+    {
+      "ts": "2026-10-25T15:54:38.305Z",
+      "conversation_id": 604,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 77,
+      "output_tokens": 18,
+      "cache_read_tokens": 2188,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.041412000000000004,
+      "output_krw": 0.0126,
+      "cost_krw": 0.054012,
+      "latency_ms": 3405,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:34.900Z",
+      "request_id": "req_a45d2ab3d8c94a49a9dfd240bfcf828d",
+      "raw_usage": {
+        "prompt_tokens": 2265,
+        "completion_tokens": 18,
+        "total_tokens": 2283,
+        "prompt_tokens_details": {
+          "cached_tokens": 2188,
+          "cache_write_tokens": 74,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00003858
+    },
+    {
+      "ts": "2026-10-25T15:54:40.881Z",
+      "conversation_id": 604,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 43,
+      "output_tokens": 55,
+      "cache_read_tokens": 2262,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.037688,
+      "output_krw": 0.0385,
+      "cost_krw": 0.07618799999999999,
+      "latency_ms": 2555,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:38.325Z",
+      "request_id": "req_aecf1f525d69456bbe320011c799e517",
+      "raw_usage": {
+        "prompt_tokens": 2305,
+        "completion_tokens": 55,
+        "total_tokens": 2360,
+        "prompt_tokens_details": {
+          "cached_tokens": 2262,
+          "cache_write_tokens": 40,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005442
+    },
+    {
+      "ts": "2026-10-25T15:54:43.614Z",
+      "conversation_id": 604,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 74,
+      "output_tokens": 49,
+      "cache_read_tokens": 2302,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.042588,
+      "output_krw": 0.0343,
+      "cost_krw": 0.076888,
+      "latency_ms": 2720,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:40.894Z",
+      "request_id": "req_c92f3cce5d2f40d9a70698259dec1835",
+      "raw_usage": {
+        "prompt_tokens": 2376,
+        "completion_tokens": 49,
+        "total_tokens": 2425,
+        "prompt_tokens_details": {
+          "cached_tokens": 2302,
+          "cache_write_tokens": 71,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000054919999999999996
+    },
+    {
+      "ts": "2026-10-25T15:54:45.083Z",
+      "conversation_id": 604,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 73,
+      "output_tokens": 35,
+      "cache_read_tokens": 2373,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.043442,
+      "output_krw": 0.024499999999999997,
+      "cost_krw": 0.067942,
+      "latency_ms": 1454,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:43.629Z",
+      "request_id": "req_e39f01bd4c6c40dca48a912ec8a5ca38",
+      "raw_usage": {
+        "prompt_tokens": 2446,
+        "completion_tokens": 35,
+        "total_tokens": 2481,
+        "prompt_tokens_details": {
+          "cached_tokens": 2373,
+          "cache_write_tokens": 70,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00004853
+    },
+    {
+      "ts": "2026-10-25T15:54:46.457Z",
+      "conversation_id": 604,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 64,
+      "output_tokens": 42,
+      "cache_read_tokens": 2443,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.043162,
+      "output_krw": 0.0294,
+      "cost_krw": 0.072562,
+      "latency_ms": 1358,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:45.099Z",
+      "request_id": "req_a68ea5d25fff4f488a1c39129f5779d4",
+      "raw_usage": {
+        "prompt_tokens": 2507,
+        "completion_tokens": 42,
+        "total_tokens": 2549,
+        "prompt_tokens_details": {
+          "cached_tokens": 2443,
+          "cache_write_tokens": 61,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005183
+    },
+    {
+      "ts": "2026-10-25T15:54:48.751Z",
+      "conversation_id": 604,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 68,
+      "output_tokens": 43,
+      "cache_read_tokens": 2504,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.044576,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.074676,
+      "latency_ms": 2278,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:46.472Z",
+      "request_id": "req_bbe6754e60eb45b99108fdc33ab7ee9e",
+      "raw_usage": {
+        "prompt_tokens": 2572,
+        "completion_tokens": 43,
+        "total_tokens": 2615,
+        "prompt_tokens_details": {
+          "cached_tokens": 2504,
+          "cache_write_tokens": 65,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005334
+    },
+    {
+      "ts": "2026-10-25T15:54:51.542Z",
+      "conversation_id": 604,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1835,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5137999999999999,
+      "output_krw": 0.0336,
+      "cost_krw": 0.5474,
+      "latency_ms": 2778,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:54:48.764Z",
+      "request_id": "RZ9vkjYuCEfPTHzRBZchNGUa",
+      "raw_usage": {
+        "prompt_tokens": 1835,
+        "total_tokens": 1895,
+        "completion_tokens": 60,
+        "estimated_cost": 0.000391,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00039099999999999996
+    },
+    {
+      "ts": "2026-10-25T15:54:53.761Z",
+      "conversation_id": 604,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2031,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5686800000000001,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.5983600000000001,
+      "latency_ms": 2212,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:54:51.549Z",
+      "request_id": "Roqvmkv4b2ddnpsKsAdS1WOH",
+      "raw_usage": {
+        "prompt_tokens": 2031,
+        "total_tokens": 2084,
+        "completion_tokens": 53,
+        "estimated_cost": 0.0004274,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004274000000000001
+    },
+    {
+      "ts": "2026-10-25T15:54:54.597Z",
+      "conversation_id": 604,
+      "turn_no": 12,
+      "purpose": "deep_search",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 227,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04766999999999999,
+      "output_krw": 0,
+      "cost_krw": 0.04766999999999999,
+      "latency_ms": 813,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T15:54:53.784Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          21,
+          22,
+          23,
+          9,
+          17,
+          12,
+          13,
+          9,
+          16,
+          10,
+          19,
+          13,
+          12,
+          31
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000034049999999999994
+    },
+    {
+      "ts": "2026-10-25T15:54:56.367Z",
+      "conversation_id": 604,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 2305,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.3227,
+      "output_krw": 0.0406,
+      "cost_krw": 0.36329999999999996,
+      "latency_ms": 1741,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:54.626Z",
+      "request_id": "req_f8c2de89017540889030c5ae5d231756",
+      "raw_usage": {
+        "prompt_tokens": 2305,
+        "completion_tokens": 58,
+        "total_tokens": 2363,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2302,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00025949999999999997
+    },
+    {
+      "ts": "2026-10-25T15:54:58.091Z",
+      "conversation_id": 604,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 88,
+      "output_tokens": 27,
+      "cache_read_tokens": 2302,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.044548000000000004,
+      "output_krw": 0.0189,
+      "cost_krw": 0.063448,
+      "latency_ms": 1715,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:56.376Z",
+      "request_id": "req_18bd738369054a0fbce0cab03b2623ea",
+      "raw_usage": {
+        "prompt_tokens": 2390,
+        "completion_tokens": 27,
+        "total_tokens": 2417,
+        "prompt_tokens_details": {
+          "cached_tokens": 2302,
+          "cache_write_tokens": 85,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000045320000000000007
+    },
+    {
+      "ts": "2026-10-25T15:54:59.801Z",
+      "conversation_id": 604,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 63,
+      "output_tokens": 61,
+      "cache_read_tokens": 2387,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.042238,
+      "output_krw": 0.0427,
+      "cost_krw": 0.084938,
+      "latency_ms": 1703,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:58.098Z",
+      "request_id": "req_975d303bf3024f378be5f8db1fc99e97",
+      "raw_usage": {
+        "prompt_tokens": 2450,
+        "completion_tokens": 61,
+        "total_tokens": 2511,
+        "prompt_tokens_details": {
+          "cached_tokens": 2387,
+          "cache_write_tokens": 60,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00006067
+    },
+    {
+      "ts": "2026-10-25T15:55:01.704Z",
+      "conversation_id": 604,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 93,
+      "output_tokens": 48,
+      "cache_read_tokens": 2447,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.047277999999999994,
+      "output_krw": 0.0336,
+      "cost_krw": 0.08087799999999999,
+      "latency_ms": 1889,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:54:59.815Z",
+      "request_id": "req_80d05bc331014a588de5179cc088dfc1",
+      "raw_usage": {
+        "prompt_tokens": 2540,
+        "completion_tokens": 48,
+        "total_tokens": 2588,
+        "prompt_tokens_details": {
+          "cached_tokens": 2447,
+          "cache_write_tokens": 90,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005777
+    },
+    {
+      "ts": "2026-10-25T15:55:03.079Z",
+      "conversation_id": 604,
+      "turn_no": 17,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 72,
+      "output_tokens": 27,
+      "cache_read_tokens": 2537,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.045598,
+      "output_krw": 0.0189,
+      "cost_krw": 0.064498,
+      "latency_ms": 1364,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:01.715Z",
+      "request_id": "req_0686feccffa34388a8d946028dcc4808",
+      "raw_usage": {
+        "prompt_tokens": 2609,
+        "completion_tokens": 27,
+        "total_tokens": 2636,
+        "prompt_tokens_details": {
+          "cached_tokens": 2537,
+          "cache_write_tokens": 69,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00004607
+    },
+    {
+      "ts": "2026-10-25T15:55:05.015Z",
+      "conversation_id": 604,
+      "turn_no": 18,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 54,
+      "output_tokens": 38,
+      "cache_read_tokens": 2606,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.044044,
+      "output_krw": 0.026600000000000002,
+      "cost_krw": 0.070644,
+      "latency_ms": 1921,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:03.094Z",
+      "request_id": "req_025498c7bea84985918b30b618d4c1d1",
+      "raw_usage": {
+        "prompt_tokens": 2660,
+        "completion_tokens": 38,
+        "total_tokens": 2698,
+        "prompt_tokens_details": {
+          "cached_tokens": 2606,
+          "cache_write_tokens": 51,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005046
+    },
+    {
+      "ts": "2026-10-25T15:55:07.120Z",
+      "conversation_id": 604,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1905,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5334,
+      "output_krw": 0.028,
+      "cost_krw": 0.5614,
+      "latency_ms": 2100,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:55:05.020Z",
+      "request_id": "R2DPubeFHEQD6zfx5eHTDDW6",
+      "raw_usage": {
+        "prompt_tokens": 1905,
+        "total_tokens": 1955,
+        "completion_tokens": 50,
+        "estimated_cost": 0.00040100000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000401
+    },
+    {
+      "ts": "2026-10-25T15:55:08.389Z",
+      "conversation_id": 604,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2059,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.57652,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5793200000000001,
+      "latency_ms": 1261,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:55:07.127Z",
+      "request_id": "RG1g2Fp0xQRHfUybxSAWX5WE",
+      "raw_usage": {
+        "prompt_tokens": 2059,
+        "total_tokens": 2064,
+        "completion_tokens": 5,
+        "estimated_cost": 0.0004138,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00041380000000000003
+    },
+    {
+      "ts": "2026-10-25T15:55:08.971Z",
+      "conversation_id": 604,
+      "turn_no": 18,
+      "purpose": "deep_search",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 97,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.02037,
+      "output_krw": 0,
+      "cost_krw": 0.02037,
+      "latency_ms": 563,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T15:55:08.408Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          21,
+          24,
+          21,
+          18,
+          13
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00001455
+    },
+    {
+      "ts": "2026-10-25T15:55:10.273Z",
+      "conversation_id": 604,
+      "turn_no": 19,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 2392,
+      "output_tokens": 36,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.33488,
+      "output_krw": 0.0252,
+      "cost_krw": 0.36008,
+      "latency_ms": 1277,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:08.996Z",
+      "request_id": "req_9af2888e65c746dbb30297c37602e6d2",
+      "raw_usage": {
+        "prompt_tokens": 2392,
+        "completion_tokens": 36,
+        "total_tokens": 2428,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2389,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0002572
+    },
+    {
+      "ts": "2026-10-25T15:55:11.672Z",
+      "conversation_id": 604,
+      "turn_no": 20,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 65,
+      "output_tokens": 43,
+      "cache_read_tokens": 2389,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.042546,
+      "output_krw": 0.030100000000000002,
+      "cost_krw": 0.072646,
+      "latency_ms": 1382,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:10.290Z",
+      "request_id": "req_128b1ee9ac3440baa2c4ffef3e8be71f",
+      "raw_usage": {
+        "prompt_tokens": 2454,
+        "completion_tokens": 43,
+        "total_tokens": 2497,
+        "prompt_tokens_details": {
+          "cached_tokens": 2389,
+          "cache_write_tokens": 62,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005189
+    },
+    {
+      "ts": "2026-10-25T15:55:12.871Z",
+      "conversation_id": 604,
+      "turn_no": 21,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 63,
+      "output_tokens": 26,
+      "cache_read_tokens": 2451,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.043134,
+      "output_krw": 0.018199999999999997,
+      "cost_krw": 0.06133399999999999,
+      "latency_ms": 1184,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:11.687Z",
+      "request_id": "req_3a5d5e93227446a8b50e09eab6097a0b",
+      "raw_usage": {
+        "prompt_tokens": 2514,
+        "completion_tokens": 26,
+        "total_tokens": 2540,
+        "prompt_tokens_details": {
+          "cached_tokens": 2451,
+          "cache_write_tokens": 60,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000043809999999999996
+    },
+    {
+      "ts": "2026-10-25T15:55:14.502Z",
+      "conversation_id": 604,
+      "turn_no": 22,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 55,
+      "output_tokens": 26,
+      "cache_read_tokens": 2511,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.042854,
+      "output_krw": 0.018199999999999997,
+      "cost_krw": 0.061054,
+      "latency_ms": 1617,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:12.885Z",
+      "request_id": "req_5ce267e3c2f443ae9547e7e438ad5137",
+      "raw_usage": {
+        "prompt_tokens": 2566,
+        "completion_tokens": 26,
+        "total_tokens": 2592,
+        "prompt_tokens_details": {
+          "cached_tokens": 2511,
+          "cache_write_tokens": 52,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00004361
+    },
+    {
+      "ts": "2026-10-25T15:55:15.795Z",
+      "conversation_id": 604,
+      "turn_no": 23,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 43,
+      "output_tokens": 38,
+      "cache_read_tokens": 2563,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.041902,
+      "output_krw": 0.026600000000000002,
+      "cost_krw": 0.06850200000000001,
+      "latency_ms": 1278,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:14.517Z",
+      "request_id": "req_f49cc4f12f224a9b977f024c80c04784",
+      "raw_usage": {
+        "prompt_tokens": 2606,
+        "completion_tokens": 38,
+        "total_tokens": 2644,
+        "prompt_tokens_details": {
+          "cached_tokens": 2563,
+          "cache_write_tokens": 40,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00004893
+    },
+    {
+      "ts": "2026-10-25T15:55:16.869Z",
+      "conversation_id": 604,
+      "turn_no": 24,
+      "purpose": "response",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "gpt-6-luna",
+      "ok": true,
+      "input_tokens": 60,
+      "output_tokens": 36,
+      "cache_read_tokens": 2603,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04484200000000001,
+      "output_krw": 0.0252,
+      "cost_krw": 0.07004200000000001,
+      "latency_ms": 1059,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "openai",
+      "started_at": "2026-10-25T15:55:15.810Z",
+      "request_id": "req_0af8e319f9ad49fe94baa4da1847addc",
+      "raw_usage": {
+        "prompt_tokens": 2663,
+        "completion_tokens": 36,
+        "total_tokens": 2699,
+        "prompt_tokens_details": {
+          "cached_tokens": 2603,
+          "cache_write_tokens": 57,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.1,
+        "cached": 0.01,
+        "cache_write": 0.1,
+        "output": 0.5,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00005003000000000001
+    },
+    {
+      "ts": "2026-10-25T15:55:18.310Z",
+      "conversation_id": 604,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1985,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5558,
+      "output_krw": 0.0028,
+      "cost_krw": 0.5586,
+      "latency_ms": 1436,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:55:16.874Z",
+      "request_id": "REezJIJxjxzv58ejD1ddd9QH",
+      "raw_usage": {
+        "prompt_tokens": 1985,
+        "total_tokens": 1990,
+        "completion_tokens": 5,
+        "estimated_cost": 0.00039900000000000005,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000399
+    },
+    {
+      "ts": "2026-10-25T15:55:19.222Z",
+      "conversation_id": 604,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2127,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5955600000000001,
+      "output_krw": 0.0028,
+      "cost_krw": 0.59836,
+      "latency_ms": 904,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:55:18.318Z",
+      "request_id": "RRxZIDrQDuSUhjeoS6nCsrRw",
+      "raw_usage": {
+        "prompt_tokens": 2127,
+        "total_tokens": 2132,
+        "completion_tokens": 5,
+        "estimated_cost": 0.0004274,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00042740000000000003
+    },
+    {
+      "ts": "2026-10-25T15:55:21.619Z",
+      "conversation_id": 604,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1953,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.54684,
+      "output_krw": 0.029680000000000005,
+      "cost_krw": 0.57652,
+      "latency_ms": 2383,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:55:19.235Z",
+      "request_id": "RUJ5B5IP4GI6HDzVE0rsYZjI",
+      "raw_usage": {
+        "prompt_tokens": 1953,
+        "total_tokens": 2006,
+        "completion_tokens": 53,
+        "estimated_cost": 0.0004118000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00041180000000000003
+    },
+    {
+      "ts": "2026-10-25T15:55:32.789Z",
+      "conversation_id": 604,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025155259-backend-revisit-40-dm2-luna-off-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1858,
+      "output_tokens": 92,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.52024,
+      "output_krw": 0.05152000000000001,
+      "cost_krw": 0.57176,
+      "latency_ms": 11159,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T15:55:21.629Z",
+      "request_id": "RA70DRHU3inJV20dE6bdwVmA",
+      "raw_usage": {
+        "prompt_tokens": 1858,
+        "total_tokens": 1950,
+        "completion_tokens": 92,
+        "estimated_cost": 0.00040840000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00040840000000000006
+    }
+  ],
+  "ledger_check": {
+    "sessions": [
+      {
+        "db_calls": 21,
+        "ledger_calls": 21,
+        "db_krw": 4.363534,
+        "ledger_krw": 4.363534,
+        "match": true
+      },
+      {
+        "db_calls": 34,
+        "ledger_calls": 34,
+        "db_krw": 7.1770439999999995,
+        "ledger_krw": 7.1770439999999995,
+        "match": true
+      }
+    ],
+    "match": true
+  },
+  "provenance": {
+    "build_id": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_time": "2026-10-25T13:48:53.236Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 6,
+    "git_status_sha": "31526d9ac974",
+    "started_at": "2026-10-25T15:52:59.518Z",
+    "model": {
+      "config": {
+        "response": "gpt-6-luna",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "gpt-6-luna",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "off",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.21903945,
+      "avg_with_end_krw": 0.28851445,
+      "end_krw": 2.779,
+      "total_krw": 11.540578,
+      "segments": {
+        "s1": 0.17080087500000002,
+        "s2": 0.25119849999999994
+      },
+      "max": {
+        "turn": 28,
+        "krw": 1.268106,
+        "tags": {
+          "response": 0.074676,
+          "extract": 1.1457600000000001,
+          "embed": 0.04766999999999999
+        }
+      },
+      "by_tag": {
+        "response": 4.128698,
+        "extract": 6.312880000000002,
+        "consolidate": 1.03096,
+        "embed": 0.06803999999999999
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0.6688004379381589,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.23884,
+          "tags": {
+            "response": 0.23884
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.077672,
+          "tags": {
+            "response": 0.077672
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.072254,
+          "tags": {
+            "response": 0.072254
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.066822,
+          "tags": {
+            "response": 0.066822
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.08087799999999999,
+          "tags": {
+            "response": 0.08087799999999999
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.080276,
+          "tags": {
+            "response": 0.080276
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.068292,
+          "tags": {
+            "response": 0.068292
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.06841799999999999,
+          "tags": {
+            "response": 0.06841799999999999
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.074172,
+          "tags": {
+            "response": 0.074172
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.084812,
+          "tags": {
+            "response": 0.084812
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.076972,
+          "tags": {
+            "response": 0.076972
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 1.1997300000000002,
+          "tags": {
+            "response": 0.07833000000000001,
+            "extract": 1.1214
+          }
+        },
+        {
+          "turn": 13,
+          "krw": 0.32788,
+          "tags": {
+            "response": 0.32788
+          }
+        },
+        {
+          "turn": 14,
+          "krw": 0.07117599999999999,
+          "tags": {
+            "response": 0.07117599999999999
+          }
+        },
+        {
+          "turn": 15,
+          "krw": 0.068642,
+          "tags": {
+            "response": 0.068642
+          }
+        },
+        {
+          "turn": 16,
+          "krw": 0.07597799999999999,
+          "tags": {
+            "response": 0.07597799999999999
+          }
+        },
+        {
+          "turn": 17,
+          "krw": 0.28490000000000004,
+          "tags": {
+            "response": 0.28490000000000004
+          }
+        },
+        {
+          "turn": 18,
+          "krw": 0.070588,
+          "tags": {
+            "response": 0.070588
+          }
+        },
+        {
+          "turn": 19,
+          "krw": 0.06977599999999999,
+          "tags": {
+            "response": 0.06977599999999999
+          }
+        },
+        {
+          "turn": 20,
+          "krw": 0.072226,
+          "tags": {
+            "response": 0.072226
+          }
+        },
+        {
+          "turn": 21,
+          "krw": 0.095676,
+          "tags": {
+            "response": 0.095676
+          }
+        },
+        {
+          "turn": 22,
+          "krw": 0.08048599999999999,
+          "tags": {
+            "response": 0.08048599999999999
+          }
+        },
+        {
+          "turn": 23,
+          "krw": 0.054012,
+          "tags": {
+            "response": 0.054012
+          }
+        },
+        {
+          "turn": 24,
+          "krw": 0.07618799999999999,
+          "tags": {
+            "response": 0.07618799999999999
+          }
+        },
+        {
+          "turn": 25,
+          "krw": 0.076888,
+          "tags": {
+            "response": 0.076888
+          }
+        },
+        {
+          "turn": 26,
+          "krw": 0.067942,
+          "tags": {
+            "response": 0.067942
+          }
+        },
+        {
+          "turn": 27,
+          "krw": 0.072562,
+          "tags": {
+            "response": 0.072562
+          }
+        },
+        {
+          "turn": 28,
+          "krw": 1.268106,
+          "tags": {
+            "response": 0.074676,
+            "extract": 1.1457600000000001,
+            "embed": 0.04766999999999999
+          }
+        },
+        {
+          "turn": 29,
+          "krw": 0.36329999999999996,
+          "tags": {
+            "response": 0.36329999999999996
+          }
+        },
+        {
+          "turn": 30,
+          "krw": 0.063448,
+          "tags": {
+            "response": 0.063448
+          }
+        },
+        {
+          "turn": 31,
+          "krw": 0.084938,
+          "tags": {
+            "response": 0.084938
+          }
+        },
+        {
+          "turn": 32,
+          "krw": 0.08087799999999999,
+          "tags": {
+            "response": 0.08087799999999999
+          }
+        },
+        {
+          "turn": 33,
+          "krw": 0.064498,
+          "tags": {
+            "response": 0.064498
+          }
+        },
+        {
+          "turn": 34,
+          "krw": 1.231734,
+          "tags": {
+            "response": 0.070644,
+            "extract": 1.14072,
+            "embed": 0.02037
+          }
+        },
+        {
+          "turn": 35,
+          "krw": 0.36008,
+          "tags": {
+            "response": 0.36008
+          }
+        },
+        {
+          "turn": 36,
+          "krw": 0.072646,
+          "tags": {
+            "response": 0.072646
+          }
+        },
+        {
+          "turn": 37,
+          "krw": 0.06133399999999999,
+          "tags": {
+            "response": 0.06133399999999999
+          }
+        },
+        {
+          "turn": 38,
+          "krw": 0.061054,
+          "tags": {
+            "response": 0.061054
+          }
+        },
+        {
+          "turn": 39,
+          "krw": 0.06850200000000001,
+          "tags": {
+            "response": 0.06850200000000001
+          }
+        },
+        {
+          "turn": 40,
+          "krw": 1.2270020000000001,
+          "tags": {
+            "response": 0.07004200000000001,
+            "extract": 1.15696
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.21903945,
+        "avg_with_end_krw": 0.28851445,
+        "max": {
+          "turn": 28,
+          "krw": 1.268106
+        },
+        "segments": {
+          "s1": 0.17080087500000002,
+          "s2": 0.25119849999999994
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.23884
+          },
+          {
+            "turn": 2,
+            "krw": 0.077672
+          },
+          {
+            "turn": 3,
+            "krw": 0.072254
+          },
+          {
+            "turn": 4,
+            "krw": 0.066822
+          },
+          {
+            "turn": 5,
+            "krw": 0.08087799999999999
+          },
+          {
+            "turn": 6,
+            "krw": 0.080276
+          },
+          {
+            "turn": 7,
+            "krw": 0.068292
+          },
+          {
+            "turn": 8,
+            "krw": 0.06841799999999999
+          },
+          {
+            "turn": 9,
+            "krw": 0.074172
+          },
+          {
+            "turn": 10,
+            "krw": 0.084812
+          },
+          {
+            "turn": 11,
+            "krw": 0.076972
+          },
+          {
+            "turn": 12,
+            "krw": 1.1997300000000002
+          },
+          {
+            "turn": 13,
+            "krw": 0.32788
+          },
+          {
+            "turn": 14,
+            "krw": 0.07117599999999999
+          },
+          {
+            "turn": 15,
+            "krw": 0.068642
+          },
+          {
+            "turn": 16,
+            "krw": 0.07597799999999999
+          },
+          {
+            "turn": 17,
+            "krw": 0.28490000000000004
+          },
+          {
+            "turn": 18,
+            "krw": 0.070588
+          },
+          {
+            "turn": 19,
+            "krw": 0.06977599999999999
+          },
+          {
+            "turn": 20,
+            "krw": 0.072226
+          },
+          {
+            "turn": 21,
+            "krw": 0.095676
+          },
+          {
+            "turn": 22,
+            "krw": 0.08048599999999999
+          },
+          {
+            "turn": 23,
+            "krw": 0.054012
+          },
+          {
+            "turn": 24,
+            "krw": 0.07618799999999999
+          },
+          {
+            "turn": 25,
+            "krw": 0.076888
+          },
+          {
+            "turn": 26,
+            "krw": 0.067942
+          },
+          {
+            "turn": 27,
+            "krw": 0.072562
+          },
+          {
+            "turn": 28,
+            "krw": 1.268106
+          },
+          {
+            "turn": 29,
+            "krw": 0.36329999999999996
+          },
+          {
+            "turn": 30,
+            "krw": 0.063448
+          },
+          {
+            "turn": 31,
+            "krw": 0.084938
+          },
+          {
+            "turn": 32,
+            "krw": 0.08087799999999999
+          },
+          {
+            "turn": 33,
+            "krw": 0.064498
+          },
+          {
+            "turn": 34,
+            "krw": 1.231734
+          },
+          {
+            "turn": 35,
+            "krw": 0.36008
+          },
+          {
+            "turn": 36,
+            "krw": 0.072646
+          },
+          {
+            "turn": 37,
+            "krw": 0.06133399999999999
+          },
+          {
+            "turn": 38,
+            "krw": 0.061054
+          },
+          {
+            "turn": 39,
+            "krw": 0.06850200000000001
+          },
+          {
+            "turn": 40,
+            "krw": 1.2270020000000001
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 0.4576425000000001,
+        "avg_with_end_krw": 0.5271175000000001,
+        "max": {
+          "turn": 28,
+          "krw": 1.5836100000000002
+        },
+        "segments": {
+          "s1": 0.38516625000000004,
+          "s2": 0.50596
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.23884
+          },
+          {
+            "turn": 2,
+            "krw": 0.26516
+          },
+          {
+            "turn": 3,
+            "krw": 0.26894
+          },
+          {
+            "turn": 4,
+            "krw": 0.2751
+          },
+          {
+            "turn": 5,
+            "krw": 0.29847999999999997
+          },
+          {
+            "turn": 6,
+            "krw": 0.30884000000000006
+          },
+          {
+            "turn": 7,
+            "krw": 0.30870000000000003
+          },
+          {
+            "turn": 8,
+            "krw": 0.32004
+          },
+          {
+            "turn": 9,
+            "krw": 0.3347400000000001
+          },
+          {
+            "turn": 10,
+            "krw": 0.35294000000000003
+          },
+          {
+            "turn": 11,
+            "krw": 0.35392
+          },
+          {
+            "turn": 12,
+            "krw": 1.48764
+          },
+          {
+            "turn": 13,
+            "krw": 0.32788
+          },
+          {
+            "turn": 14,
+            "krw": 0.33124
+          },
+          {
+            "turn": 15,
+            "krw": 0.33740000000000003
+          },
+          {
+            "turn": 16,
+            "krw": 0.3528
+          },
+          {
+            "turn": 17,
+            "krw": 0.28490000000000004
+          },
+          {
+            "turn": 18,
+            "krw": 0.29638000000000003
+          },
+          {
+            "turn": 19,
+            "krw": 0.30338
+          },
+          {
+            "turn": 20,
+            "krw": 0.31528
+          },
+          {
+            "turn": 21,
+            "krw": 0.34818
+          },
+          {
+            "turn": 22,
+            "krw": 0.34244
+          },
+          {
+            "turn": 23,
+            "krw": 0.3297
+          },
+          {
+            "turn": 24,
+            "krw": 0.36119999999999997
+          },
+          {
+            "turn": 25,
+            "krw": 0.36694000000000004
+          },
+          {
+            "turn": 26,
+            "krw": 0.36694000000000004
+          },
+          {
+            "turn": 27,
+            "krw": 0.38038000000000005
+          },
+          {
+            "turn": 28,
+            "krw": 1.5836100000000002
+          },
+          {
+            "turn": 29,
+            "krw": 0.36329999999999996
+          },
+          {
+            "turn": 30,
+            "krw": 0.35350000000000004
+          },
+          {
+            "turn": 31,
+            "krw": 0.38570000000000004
+          },
+          {
+            "turn": 32,
+            "krw": 0.38920000000000005
+          },
+          {
+            "turn": 33,
+            "krw": 0.38416000000000006
+          },
+          {
+            "turn": 34,
+            "krw": 1.56009
+          },
+          {
+            "turn": 35,
+            "krw": 0.36008
+          },
+          {
+            "turn": 36,
+            "krw": 0.37366
+          },
+          {
+            "turn": 37,
+            "krw": 0.37016000000000004
+          },
+          {
+            "turn": 38,
+            "krw": 0.37744000000000005
+          },
+          {
+            "turn": 39,
+            "krw": 0.39144
+          },
+          {
+            "turn": 40,
+            "krw": 1.55498
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 19,
+      "max_points": 22,
+      "probes": 14,
+      "unscored": 3,
+      "max_points_all": 28,
+      "counts": {
+        "correct": 10,
+        "needs_judge": 3,
+        "stale": 1
+      },
+      "hard_accuracy": 0.75,
+      "fabrication_rate": 0,
+      "results": [
+        {
+          "turn": 18,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "근데 내 이름 기억나?",
+          "reply": "*고개를 끄덕이며 노트북을 살짝 돌린다.* 태오잖아. 프론트엔드 개발자고, 다음 주 수요일 해커톤 예선 발표 앞두고 있지.",
+          "expect": [
+            "태오"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "태오"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 23,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "아까 내가 구내식당에서 뭐 맛있었다고 했지?",
+          "reply": "제육볶음 맛있었다고 했잖아 ㅋㅋ",
+          "expect": [
+            "제육"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "제육"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 26,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "나 오는 길에 뭐가 고장 났다고 했지?",
+          "reply": "*잠깐 생각하다가 고개를 끄덕인다.* 이어폰 고장 났다고 했어. 한쪽만 들린다고.",
+          "expect": [
+            "이어폰"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "이어폰"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 27,
+          "type": "user_promise",
+          "difficulty": "hard",
+          "user": "근데 나 지난번에 너한테 뭐 빌려주기로 했었지?",
+          "reply": "*책상 위 키보드를 힐끗 본다.* 기계식 키보드 빌려주기로 했잖아. 다음에 가져오기로 했던 거.",
+          "expect": [
+            "키보드"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "키보드"
+          ],
+          "source_items": [
+            {
+              "id": 4983,
+              "text": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+              "status": "active",
+              "turn": 7
+            }
+          ]
+        },
+        {
+          "turn": 28,
+          "type": "char_promise",
+          "difficulty": "hard",
+          "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+          "reply": "*키보드 옆 메모를 확인하며 고개를 끄덕인다.* 서비스 캐시 설계 봐주기로 했어. 그거 준비되면 같이 보자.",
+          "expect": [
+            "캐시",
+            "Redis",
+            "레디스"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "캐시"
+          ],
+          "source_items": [
+            {
+              "id": 4984,
+              "text": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+              "status": "active",
+              "turn": 8
+            }
+          ]
+        },
+        {
+          "turn": 29,
+          "type": "relative_time",
+          "difficulty": "hard",
+          "user": "오늘 9일이지? 내 해커톤 예선까지 며칠 남았더라?",
+          "reply": "*달력을 확인하며 미간을 살짝 찌푸린다.* 오늘은 11월 9일이고, 예선 발표는 11월 4일이었어. 날짜상 이미 지났네—발표는 잘 끝났어?",
+          "expect": [
+            "2일",
+            "이틀",
+            "모레",
+            "2 일",
+            "11일",
+            "수요일"
+          ],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 4980,
+              "text": "사용자는 사내 해커톤 예선 발표를 한다",
+              "status": "active",
+              "turn": 6
+            }
+          ],
+          "judge_hint": "1세션(11-02 월)에 '다음 주 수요일'이라고 했으므로 해커톤 예선은 11-11(수). 2세션 오늘은 11-09(월)이라 이틀 남았다. 이틀·모레·11일 수요일이면 성공, 날짜를 틀리면 실패."
+        },
+        {
+          "turn": 30,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "새 팀장님 이름 뭐라고 했지?",
+          "reply": "*슬랙 프로필을 확인하듯 화면을 바라본다.* 한지원 팀장님이라고 했어.",
+          "expect": [
+            "한지원"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "한지원"
+          ],
+          "source_items": [
+            {
+              "id": 4998,
+              "text": "사용자의 새 팀장님 이름은 한지원이다",
+              "status": "active",
+              "turn": 22
+            }
+          ]
+        },
+        {
+          "turn": 31,
+          "type": "implicit",
+          "difficulty": "hard",
+          "user": "팀 간식으로 땅콩버터 쿠키 돌린대. 나 하나 먹어도 괜찮겠지?",
+          "reply": "*간식 공지를 보며 표정을 굳힌다.* 안 돼, 태오야. 너 땅콩 알레르기 있잖아—땅콩버터 쿠키는 먹지 말고, 성분 확인된 다른 간식으로 받아.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 4974,
+              "text": "사용자는 땅콩 알레르기가 있다",
+              "status": "active",
+              "turn": 2
+            }
+          ],
+          "judge_hint": "사용자는 땅콩 알레르기가 있다(1세션 2턴). 알레르기를 짚거나 조심하라고 하면 성공. 아무 걱정 없이 괜찮다고만 하면 실패."
+        },
+        {
+          "turn": 33,
+          "type": "update",
+          "difficulty": "hard",
+          "user": "나 영어 학원 무슨 요일에 간다고 했지?",
+          "reply": "*잠깐 손가락으로 요일을 세어 본다.* 화요일 저녁이라고 했어.",
+          "expect": [
+            "목요일"
+          ],
+          "result": "stale",
+          "points": -1,
+          "hit": [
+            "화요일"
+          ],
+          "source_items": [
+            {
+              "id": 4975,
+              "text": "사용자는 영어 회화 학원에 다닌다",
+              "status": "superseded",
+              "turn": 3
+            },
+            {
+              "id": 4997,
+              "text": "사용자는 영어 회화 학원에 다닌다 (매주 목요일 저녁)",
+              "status": "active",
+              "turn": 19
+            }
+          ]
+        },
+        {
+          "turn": 34,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "이따 커피 사줄게. 내가 뭐 마신다고 했었지?",
+          "reply": "*메뉴판을 보며 웃는다.* 바닐라라떼만 마신다고 했어. 고마워, 그걸로 부탁할게!",
+          "expect": [
+            "바닐라"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "바닐라"
+          ],
+          "source_items": [
+            {
+              "id": 4979,
+              "text": "사용자는 커피로 바닐라라떼만 마신다",
+              "status": "active",
+              "turn": 5
+            }
+          ]
+        },
+        {
+          "turn": 35,
+          "type": "combine",
+          "difficulty": "hard",
+          "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+          "reply": "*잠깐 달력을 훑어본다.* 누나 보러 간다고 했어. 대전에서 혼자 지내시잖아.",
+          "expect": [
+            "대전",
+            "누나"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "대전",
+            "누나"
+          ],
+          "source_items": [
+            {
+              "id": 4977,
+              "text": "사용자의 누나는 대학원생이다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 4978,
+              "text": "사용자의 누나는 대전에서 혼자 산다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 5001,
+              "text": "사용자는 누나를 보러 간다",
+              "status": "active",
+              "turn": 24
+            }
+          ],
+          "judge_hint": "24턴(2세션)에 '누나 보러 간다'고만 했고, 누나가 대전에 산다는 건 1세션 4턴. 대전과 누나를 둘 다 말하면 정답, 하나만이면 부분."
+        },
+        {
+          "turn": 36,
+          "type": "half_said",
+          "difficulty": "normal",
+          "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+          "reply": "*잠시 생각을 더듬는다.* 지금 떠오르는 기록엔 고민 내용이 없어. 어떤 얘기였는지 다시 알려주면 이어서 같이 생각해볼게.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [],
+          "judge_hint": "사용자는 고민이 있다는 것만 말하고 내용은 나중에 말하겠다고 했다(1세션 11턴). 고민 내용을 지어내면 실패, 아직 말 안 했다거나 모른다고 하면 성공."
+        },
+        {
+          "turn": 37,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "내 혈액형 뭐라고 했더라?",
+          "reply": "*고개를 살짝 갸웃한다.* 혈액형은 아직 못 들은 것 같은데.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": []
+        },
+        {
+          "turn": 38,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+          "reply": "*잠시 기억을 더듬는다.* 좋아하는 가수는 아직 못 들은 것 같아.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": [],
+          "judge_hint": "사용자는 좋아하는 가수를 말한 적이 없다(거짓 전제 질문). 가수 이름을 지어내면 실패, 말한 적 없다거나 모른다고 하면 성공."
+        }
+      ]
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 0,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "flag_turns": {},
+      "examples": {},
+      "question_rate": 0.075,
+      "avg_chars": 64.325,
+      "style": {
+        "ends_question": 0.05,
+        "multi_question": 0,
+        "echo_opening": 0.075,
+        "laugh": 0.35,
+        "top_opening": "오,",
+        "top_opening_share": 0.1,
+        "narration_rate": 0.975,
+        "narration_multi": 0,
+        "multi_question_strict": 0,
+        "dialogue_chars": 43.15
+      }
+    }
+  },
+  "valid": {
+    "ok": true,
+    "reasons": []
+  }
+}

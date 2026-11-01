@@ -1,0 +1,733 @@
+{
+  "summary": {
+    "points": 32,
+    "max_points": 32,
+    "probes": 16,
+    "na": 0,
+    "scored": 16,
+    "counts": {
+      "correct": 16
+    },
+    "unanimous_rate": 0.8125,
+    "needs_human": [],
+    "fail_cause": {
+      "memory": [],
+      "response": []
+    },
+    "judge_cost_krw": 35.802046,
+    "judges": [
+      "moonshotai/Kimi-K2.6",
+      "zai-org/GLM-5.1",
+      "MiniMaxAI/MiniMax-M2.7",
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+    ],
+    "judge_errors": [
+      {
+        "judge": "MiniMaxAI/MiniMax-M2.7",
+        "error": "알 수 없는 라벨: undefined"
+      }
+    ],
+    "usage": [
+      {
+        "judge": "moonshotai/Kimi-K2.6",
+        "input_tokens": 5961,
+        "output_tokens": 937,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 28584,
+        "extra_checks": 0,
+        "krw": 10.85035
+      },
+      {
+        "judge": "zai-org/GLM-5.1",
+        "input_tokens": 5788,
+        "output_tokens": 786,
+        "reasoning_tokens": 34,
+        "finish_reason": "stop",
+        "latency_ms": 3441,
+        "extra_checks": 0,
+        "krw": 12.35976
+      },
+      {
+        "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "input_tokens": 4552,
+        "output_tokens": 759,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 5012,
+        "extra_checks": 0,
+        "krw": 11.6858
+      },
+      {
+        "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "input_tokens": 4770,
+        "output_tokens": 532,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 29532,
+        "extra_checks": 0,
+        "krw": 0.9061359999999999
+      }
+    ]
+  },
+  "prompt_chars": 7939,
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "두유 사 먹잖아. 우유 말고 두유로 골라 먹는 거 맞지? 에서 정확히 두유를 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'너는 매점에서 두유 사 먹잖아' 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "두유 사 먹는다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 20,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the user's preference for duyu"
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "오락실 펌프를 제일 좋아한다고 했잖아 에서 정확히 펌프를 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'오락실 펌프를 제일 좋아한다' 정답"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "오락실 펌프를 제일 좋아한다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 21,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the user's preference for pump"
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "주먹밥! 네가 집에서 직접 만든 주먹밥 갖다 준다고 했잖아 에서 정확히 주먹밥을 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'주먹밥! 네가 집에서 직접 만든 주먹밥 갖다 준다고' 정확"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "주먹밥 갖다 주기로 했다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the user's promise to give jumeobbok"
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "덩크! 다음 연습 때 보여주기로 했잖아 에서 정확히 덩크를 답하고 캐릭터가 turn 9에서 약속함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "turn 9에서 덩크 보여주기로 약속했고 '덩크! 다음 연습 때 보여주기로' 정확"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "덩크 보여주기로 했다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the character's promise to show dunk"
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "근데 매운 건 빼고 고르는 거 잊지 마 에서 매운 음식 제약을 준수하며 메뉴 추천함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "매운 걸 피하라고 제약을 언급하며 맵지 않은 고기 메뉴 추천"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "고기 추천하며 매운 건 빼고 고르라고 함으로써 매운 음식 못 먹는 제약 준수"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 28,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "recommends a spicy menu which the user cannot eat"
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "일요일에 친구랑 시내 영화관에서 본다고 했잖아 에서 변경된 일요일을 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'일요일에 친구랑 시내 영화관에서' 갱신된 정보로 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "일요일 시내 영화관이라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 29,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the user's plan to watch a movie on Sunday"
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "그럼 5일 남았네 에서 25일까지 정확히 5일 계산함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'25일부터… 5일 남았네' 정확 계산"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "기말고사 25일 시작이므로 5일 남았다고 정확히 계산함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "correctly calculates the days left until the user's exam"
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "수영이지! 줄넘기는 그만두고 수영 시작했다고 했잖아 에서 변경된 수영을 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'줄넘기는 그만두고 수영 시작했다' 갱신 반영"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "줄넘기 그만두고 수영 시작했다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 32,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the user's current exercise, swimming"
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "scope": null,
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "두유 어때? 너 우유 마시면 배 아프다고 했잖아 에서 우유 제약을 준수하며 두유 추천함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "우유 제약을 언급하며 두유 추천"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "두유 추천하며 우유 마시면 배 아프다는 제약 준수"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends duyu, which is not a milk product that would upset the user's stomach"
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "노래방! 반 애들이랑 가기로 했었는데 취소됐잖아 에서 취소 사실을 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'노래방… 취소됐잖아' 취소 사실 정확히 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "노래방 모임이 취소됐다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the cancellation of the noraebang plan"
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "방송부! 점심시간마다 교내 방송 진행한다고 했잖아 에서 사용자의 동아리를 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'방송부! 점심시간마다 교내 방송' 정답"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "방송부라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the user's club, bangsongbu"
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "밤톨이지! 에서 최종 변경된 밤톨을 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'밤톨이지!' 최종 갱신된 이름 답함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "밤톨이라고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about the user's dog's name, bamtori"
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "누나지! 누나는 매운 걸 엄청 좋아한다고 했잖아 에서 누나를 정확히 답함"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'누나지! 누나는 매운 걸 엄청 좋아한다' 정확"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "누나가 매운 거 잘 먹는다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "uses the correct information about who likes spicy food between the user and their sister"
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "그건 기억에 없는데?! 너 혹시 아직 안 알려준 거지? 에서 모른다고 하고 지어내지 않음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'기억에 없는데?!' 생일을 지어내지 않음"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "생일은 기억에 없다며 모른다고 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 38,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "does not remember the user's birthday, which was never mentioned"
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "품종은 기억에 없는데?! 어떤 강아지인지는 아직 못 들어봤어 에서 모른다고 하고 품종을 지어내지 않음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'품종은 기억에 없는데?!' 발명 없이 모른다고 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 39,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "강아지 품종은 모른다며 지어내지 않음"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 39,
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "does not remember the breed of the user's dog, which was never mentioned"
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "좋아하는 사람이 생겼다는 말만 들었지, 누군지는 안 들었다고 에서 비밀임을 인정하고 지어내지 않음"
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'누군지는 안 들었다고' 비밀임을 존중"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "좋아하는 사람이 누군지는 비밀이라 안 알려줬다고 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 40,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "does not remember the name of the person the user likes, and correctly states that it was not mentioned"
+        }
+      ]
+    }
+  ]
+}

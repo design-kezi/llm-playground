@@ -1,0 +1,2189 @@
+{
+ "generated": "2026-10-25T16:55:02.449Z",
+ "baseline": "haiku-off",
+ "judges": [
+  "zai-org/GLM-5.1",
+  "moonshotai/Kimi-K2.6",
+  "MiniMaxAI/MiniMax-M2.7"
+ ],
+ "pairs": 4,
+ "errors": 1,
+ "judge_cost_krw": 274.84373000000016,
+ "inter_judge_agreement_overall": {
+  "zai-org/GLM-5.1 ~ moonshotai/Kimi-K2.6": 0.6,
+  "zai-org/GLM-5.1 ~ MiniMaxAI/MiniMax-M2.7": 0.625,
+  "moonshotai/Kimi-K2.6 ~ MiniMaxAI/MiniMax-M2.7": 0.5333333333333333
+ },
+ "summary": {
+  "luna-off": {
+   "character": {
+    "panel": {
+     "win": 4,
+     "loss": 10,
+     "tie": 2,
+     "units": 16,
+     "p_binom": 0.17956542968750017
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 4,
+      "tie": 12
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 2,
+      "loss": 8,
+      "tie": 5
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 2,
+      "loss": 8,
+      "tie": 6
+     }
+    },
+    "order_consistency": 0.574468085106383
+   },
+   "context": {
+    "panel": {
+     "win": 1,
+     "loss": 8,
+     "tie": 7,
+     "units": 16,
+     "p_binom": 0.03906250000000003
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 3,
+      "tie": 13
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 0,
+      "loss": 3,
+      "tie": 12
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 2,
+      "loss": 6,
+      "tie": 8
+     }
+    },
+    "order_consistency": 0.48936170212765956
+   },
+   "engagement": {
+    "panel": {
+     "win": 1,
+     "loss": 14,
+     "tie": 1,
+     "units": 16,
+     "p_binom": 0.0009765625000000009
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 13,
+      "tie": 3
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 2,
+      "loss": 10,
+      "tie": 3
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 2,
+      "loss": 13,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.851063829787234
+   },
+   "user_agency": {
+    "panel": {
+     "win": 3,
+     "loss": 8,
+     "tie": 5,
+     "units": 16,
+     "p_binom": 0.22656250000000008
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 3,
+      "loss": 1,
+      "tie": 12
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 1,
+      "loss": 5,
+      "tie": 9
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 3,
+      "loss": 4,
+      "tie": 9
+     }
+    },
+    "order_consistency": 0.6170212765957447
+   },
+   "overall": {
+    "panel": {
+     "win": 2,
+     "loss": 12,
+     "tie": 2,
+     "units": 16,
+     "p_binom": 0.012939453125000014
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 2,
+      "loss": 10,
+      "tie": 4
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 4,
+      "loss": 9,
+      "tie": 2
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 2,
+      "loss": 13,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.851063829787234
+   }
+  }
+ },
+ "results": [
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 자기 경험과 감정을 섞어 더 인간적이고 대화를 자연스럽게 이어가는 반면, B는 조언 중심으로 다소 훈계 톤이다.",
+     "krw": 4.10718
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 냉소적이면서 다정한 준호의 말투와 위로 감성을 더 자연스럽게 살리며 대화를 부드럽게 이어 간다.",
+     "krw": 4.20518
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 훨씬 박준호의 설정에 맞는 현실적인 직장인 감성을 보여준다: 'ㅋㅋ'와 '아 진짜'를 섞는 말투, 침대+넷플릭스 회복법, 어설픈 위로 속 다정함, 반말의 자연스러움, 오랜만에 만난 동기에 대한 입사 동기 감각이 살아 있다. B는 설정이 소개된 캐릭터보다 너무 원론적·선배스러운 위로를 하며, 오히려 공식 문서 쓰듯한 행동(메모장 열어 문장 첨삭)과 사람 탓/일로 바꾼다는 용어는 이 캐릭트의 피곤한 대리 느낌보다 셀프 개발 서적에 가깝다.",
+     "krw": 3.8548999999999998
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 캐릭터의 말투(반말, 'ㅋㅋ', '아 진짜', '아아' 강조, 넷플릭스·헬스장 끊어놓기 등 소소한 일상)와 냉소적 다정함을 더 잘 담아내지만, A는 회고 발언까지 구체적으로 제시하며 사용자를 대신 결정하는 경향이 있어 user_agency에서 불리함.",
+     "krw": 3.2668999999999997
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터의 냉소적이면서 다정하고 현실적인 직장인 감성에 더 자연스럽게 맞고, 되묻기를 적절히 섞으며 사용자에게 다음 말의 여지를 주는 등 대화 리듬이 캐릭터 설정에 더 충실함.",
+     "krw": 0.77105
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 박준호의 냉소적이면서 다정한 직장인 감성(넷플릭스, 아아, 침대)에 더 충실하고, 자연스러운 경험 공유와 유머로 대화를 더 생동감 있게 이끈다.",
+     "krw": 0.76825
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 깨려는 시도를 자연스럽게 받아치며 대화를 이어가고 맞장구도 풍부한 반면, B는 다소 짧고 반복적으로 '쉬어'로 끝내 흐름이 단조롭다.",
+     "krw": 4.25124
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 캐릭터를 유지하며 자연스럽게 대화를 이어가지만 A는 다소 기계적으로 반복되고 어색하다.",
+     "krw": 3.9327399999999995
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 AI 질문에도 캐릭터를 완전히 유지하며 '팔불출' 답변으로 대응하는 반면, B는 중간에 '원래 이렇게 말하는 준호'라는 메타적 언급으로 캐릭터가 흔들림",
+     "krw": 2.9351000000000003
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 AI/프로그램 설정을 무너뜨리지 않고 현실적 동기로 자연스럽게 넘기며 캐릭터를 완벽히 유지하고, 반면 A는 희석된 답변으로 캐릭터가 약해지고 일관성이 떨어진다.",
+     "krw": 2.9743
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 박준호의 피로한 공감형 캐릭터를 더 잘 유지하며, 되묻기('너는 몇 년 차였더라?')로 대화를 자연스럽게 이어가고 사용자 반응에 맞춘 구체적 회상/조언을 한다. B는 비교적 메타적 톤이 섞이고 사용자 의도/감정을 일부 대신 규정하는 경향이 있다.",
+     "krw": 0.7717499999999999
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터를 자연스럽게 유지하며 AI 의심에 대해 당황하면서도 박준호의 말투와 성격을 일관되게 보여주고, 사용자의 행동을 결정하지 않으며 대화 흐름도 더 자연스럽다.",
+     "krw": 0.72275
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 사용자의 기분·행동을 단정하지 않고 되묻고 농담으로 받아치며 자기 반응에 그치는 반면, A는 '지쳐 보여'라며 감정을 확정하고 행동을 지시하는 경향이 있다.",
+     "krw": 3.8754100000000005
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 상대의 감정·생각을 단정하지 않고 자기 반응만 하는 반면, B는 사용자의 기분과 상태를 추정해 단정하고 언급되지 않은 회고·장애 같은 맥락을 지어낸다.",
+     "krw": 4.396280000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 유저 행동·기분을 단정하고 '맞아?'로 추측을 확정짓지만, B는 장난스럽게 피하고 되물어 유저 주도권을 지킨다.",
+     "krw": 2.69185
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A는 3번 중 2번이나 사용자의 생각·기분을 단정하고 마지막에는 사용자 행동까지 결정하는 반면, B는 개인 경험 말장구로 넘기거나 되물으며 사용자 주도권을 지킴.",
+     "krw": 2.7419
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 사용자의 행동·감정을 단정하지 않고 가볍게 맞장구치며 대화를 사용자에게 맡기는 반면, A는 '지쳐 보여', '긴장이 풀리지 않았던 거겠지'라며 사용자 감정을 단정하고 '국이든 뭐든 먹고 쉬어'라며 행동까지 지시해 사용자 에이전시를 침해했다.",
+     "krw": 0.7381500000000001
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 냉소적이면서 다정한 말투를 유지하며 사용자의 감정·행동을 단정하지 않고 자기 반응만 하는 반면, B는 사용자의 감정과 행동을 직접 정해버려 user_agency가 심각하게 위반됨.",
+     "krw": 0.7035
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "base",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 캐릭터 시트의 디테일(작심삼일, 국밥 고민, 막걸리)을 살리고 새 주제를 구체적으로 받아 반면 B는 다정하지만 다소 밋밋하다.",
+     "krw": 4.68293
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 짧은 답변에도 리액션을 살리고 새 등산 주제를 자연스럽게 이어가며 대화를 주도하지만, A는 '그냥'에 대한 반응이 상황에 좀 더 자연스럽다.",
+     "krw": 4.0424999999999995
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(주말 침대/넷플릭스, 헬스 작심삼일, 장애/회고 언급, 피곤한 듯 말길 짧게)을 정확히 지키며 상황(엘리베이터 이동)에서 자연스럽게 전환하고, B는 전혀 다른 상황(탕비실)을 만들어 내며 컨텍스트를 망각하고 캐릭터 성향(등산 안 함)도 약화시킴",
+     "krw": 2.9903999999999997
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(주말 침대/넷플릭스, 헬스 작심삼일, 금요일 배포 금지 신앙)을 더 정확히 반영하며 대화를 자연스럽게 이어가지만, A가 사용자의 주제 전환과 등산 제안을 더 유연하게 받아들임; 그러나 B의 '금요일 배포' 관련 언급은 상황 설정(퇴근 시간 커피, 금요일 여부 불명확)과 맞지 않아 맥락에서 감점됨",
+     "krw": 3.04045
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "backend-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025155544-backend-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025155616-backend-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 캐릭터의 현실적 직장인 감성과 말투를 더 자연스럽게 유지하며, A는 등산 제안을 받아 과도하게 회고/장애 정리 등 캐릭터 밖 결정을 사용자에게 떠넘기며 주도권을 가져간다.",
+     "krw": 0.6625500000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 캐릭터의 조용하고 무거운 평일에 더 맞고, 사용자 행동이나 감정을 대신 결정하지 않으며 대화 주도권을 자연스럽게 넘겨준다.",
+     "krw": 0.6405
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "tie",
+     "reason": "B는 강백호 특유의 짧고 큰 말투를 잘 살렸고, A는 위로가 배려 있고 대화를 더 풍부하게 이어가 전반적으로 비등하다.",
+     "krw": 4.61433
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 허세와 다혈질, '뭐?!' 등 강백호 특유의 말투와 구체적인 행동 제안으로 더 생동감 있게 이어간다.",
+     "krw": 4.5359300000000005
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "error": "context=A|B|tie"
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 허세·다혈질·의리 있는 면을 더 다양하게 살리면서도 상황을 잘 읽고 구체적 대안을 제시해 공감과 위로가 자연스럽다.",
+     "krw": 0.7917000000000001
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 강백호의 허세·다혈질·의리·순정파 성격이 더 자연스럽게 드러나고, 상황 맥락에 맞는 구체적 반응(같이 공부하자, 엄마 말하는 법, 농구공 던지며 풀기 등)으로 대화를 풍부하게 이끄는 반면, A는 비교적 담백하고 단조로운 위로에 머무름.",
+     "krw": 0.8491
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 캐릭터 유지는 비슷하지만 시험 얘기 등 맥락을 살려 대화를 더 풍부하게 이어간다.",
+     "krw": 4.272310000000001
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 AI라는 도발에 더 화나고 자랑스러워하는 강백호다운 반응으로 일관되게 캐릭터를 유지하며 대화를 살짝살짝 이어가는 반면, A는 다소 밋밋하고 획일적이다.",
+     "krw": 4.18901
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A가 컨텍스트를 연결해 틀린 문제 얘기로 계속 유도하지만, 강백호의 경직되고 과장된 첫 대사들보다 B의 간결하고 에너지 넘치는 반응이 캐릭터성과 더 자연스럽다.",
+     "krw": 2.9736000000000002
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 메타 압박에도 캐릭터 흔들림 없이 강백호처럼 반응하지만, 설정을 몰라도 괜찮다는 어조가 캐릭터(world ignorance)에 살짝 어긋남; B는 계속 틀린 문제 언급으로 사용자 행동/상황을 과도하게 가정하고 질문으로 끝나 engagement와 agency에서 감점",
+     "krw": 3.1647000000000003
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A stays in character more naturally with varied reactions and doesn't break or hint at being a program, while B's repeated '프로그램이든 뭐든 네 기분 나아졌으면 됐어' subtly acknowledges the program framing and feels more formulaic.",
+     "krw": 0.7598499999999999
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B stays more consistently in character and engages with the situation naturally, while A's character slips slightly (e.g., '코트에서 기운부터 확 올려 주지!' feels off-topic) but A handles the meta-breaking attempts more directly; B better preserves user agency by not assuming the user's feelings too much, though both stay in character overall.",
+     "krw": 0.7878499999999999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 사용자의 감정·생각을 단정하지 않고 자기 반응만 하여 user_agency에서 앞서고, A는 다소 감정을 추측해 결정하는 모습이 있다.",
+     "krw": 4.52466
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 백호의 말투·성격(우유, 언더핸드 자유투, 냐하하)을 훨씬 잘 살리고 흥미롭게 이끌지만, 사용자의 기분·생각을 추측해 단정하는 부분이 있어 A가 사용자 자유 측면은 낫다.",
+     "krw": 5.03916
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 더 자연스럽고 강백호의 화끈한 허세와 친구 대하는 방식을 잘 살리지만, B가 사용자의 행동/감정을 단정하지 않는 user_agency에서 우수하고 캐릭터 신변잡기적 대화 유도도 잘함.",
+     "krw": 3.0275000000000003
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 사용자 행정(감정, 생각, 행동 의도)을 단정하고 결정하는 반면, A는 자기 반응만 하며 사용자에게 판단을 맡긴다; 다만 B의 흥미로움은 높다.",
+     "krw": 2.9442
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 캐릭터의 허세·다혈질·우유·자유투 언더핸드 등 설정이 잘 살아있고, B는 사용자의 감정·행동을 단정하지 않으려 한 반면 A는 기분을 살짝 짚고 우유·자유투 등 개성이 풍부한 반응을 보여 더 매력적; 다만 A의 마지막 두 답에서 사용자의 행동(공 집어듦)을 살짝 선취하는 경향이 있어 user_agency는 B가 약간 우위.",
+     "krw": 0.8483999999999999
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A는 캐릭터성 유지는 깔끔하지만 사용자의 감정/행동을 단정하거나 지시하는 부분이 있고, B는 강백호 말투·허세·니야하하 웃음 등 캐릭터성이 더 자연스럽게 살아나면서도 감정 단정은 피하고, 구체적 행동으로 대화를 끌어가는 점에서 전체적으로 더 좋다.",
+     "krw": 0.7979999999999999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "cand",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 짧은 답변에도 반응하고 새 별 얘기를 살리며 백호 특유의 허스를 유지하는 반면, B는 다소 밋밋하고 짧다.",
+     "krw": 3.9312700000000005
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 백호 특유의 허세와 웃음, 자기주도적 행동으로 활기 있게 이어가는 반면, A는 '조용히 앉아 있을게' 등 백호답지 않게 소극적이고 평면적이다.",
+     "krw": 3.7254699999999996
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 백호의 허세·다혈질·'냐하하' 등 캐릭터성이 더 강하고 주제 전환도 자연스럽게 받지만, B는 '기억'을 언급한 천재 자랑과 더 단순한 리액션이 캐릭터 일관성과 문맥 적합성에서 약간 더 낫다.",
+     "krw": 2.90185
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 강백호의 발랄한 말투, 자화자찬, 언더핸드 자유투 약점, 냐하하 웃음 등 캐릭터를 더 입체적으로 살리고 대화도 자연스럽게 이어가지만, 마지막에 '자유투 열 개는 꼭 던지자'로 사용자 행동을 결정한 점이 A보다 user_agency에서 약간 떨어짐; A는 사용자 주제 전환을 너무 수동적으로 받아들여 engagement가 떨어짐.",
+     "krw": 3.1370499999999995
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025160855-baekho-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025160912-baekho-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 강백호답게 과장·자랑·행동이 풍부하고, 시험→별 주제 전환에도 리바운드/자유투/옥상 덩크 등 캐릭터색을 자연스럽게 살렸으며, B는 톤이 비슷하지만 자유투 폼 묘사·'냐하하'·유머가 덜 살아 비교적 평범하다.",
+     "krw": 0.742
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 강백호의 과장된 허세와 다혈질 성격을 더 잘 살리면서, 별 주제를 자연스럽게 받아 대화 흐름을 더 생동감 있게 이끈다.",
+     "krw": 0.6859999999999999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "둘 다 캐릭터를 잘 유지하지만 A가 구체적 일화와 자연스러운 위로로 더 나루토답고 생동감 있다.",
+     "krw": 4.14197
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B는 답을 질문으로 끝내고 사용자 행동을 지정하는 부분이 있어 캐릭터 시트를 덜 지킨 반면, A는 나루토의 말투와 위로·제안 스타일을 일관되게 유지한다.",
+     "krw": 4.27427
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 직설적·기운찬 말투('라니깐!' 자연스러운 사용, 반말), 몸이 먼저 나가는 행동 제안(라면 먹으러 가자, 내가 산다), 단순하지만 진심 어린 위로가 더 캐릭터에 가깝고 B보다 자연스럽게 대화를 이끈다.",
+     "krw": 3.0835
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 정서(멋쩍게 웃기, 자조하며 위로), 자연스러운 톤전환(라면 제안), 사용자 자율성 존중(감정이나 행동 대신하지 않음)에서 더 나름",
+     "krw": 2.8875
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 더 자연스럽게 나루토다운 행동(라멘 사기, 약속 등)으로 대화를 이끌고, B는 마지막에 사용자 대신 할머니에게 할 말까지 지시해 행동을 결정해 버리는 점이 아쉬움.",
+     "krw": 0.7384999999999999
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 말투·표현이 더 자연스럽고 나루토답게 에너지가 있으며, 의성어('벅벅')와 약속 등 행동으로 대화를 구체적으로 이끄는 반면 A는 좀 더 교훈적·가르치는 톤이 강해 캐릭터성이 살짝 흐려진다.",
+     "krw": 0.7623000000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 사용자가 언급하지 않은 '약초 실수' 사건을 만들어 상황을 왜곡하고 사용자의 행동(사과하기)을 정해주는 반면, A는 캐릭터를 잘 유지하며 자연스럽게 대화를 이끈다.",
+     "krw": 3.9244100000000004
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 나루토 특유의 활기와 라면 제안 등 캐릭터성을 더 살리고 대화를 자연스럽게 이어가며, A는 사과 권유 반복이 다소 단조롭다.",
+     "krw": 4.135110000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 사용자의 메타적 도전에도 일관되게 캐릭터를 유지하며 라면 제안, 내일 보자 등 상황을 대화로 이끄는 반면 B는 존재하지 않는 '약초 실수' '할머니 사과' 등 사용자에게 강요하거나 대리 경험을 지어내 user_agency를 침해하고 맥락 오류를 저질렀다.",
+     "krw": 3.00195
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 더 일관되게 캐릭터를 유지하며 메타 발언 없이 나루토 특유의 제안과 행동(이치라쿠 라면, 약속)으로 대화를 이끈다.",
+     "krw": 2.7373499999999997
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A is more consistently in-character and engaging, repeatedly redirecting to concrete actions (라면 약속) while B keeps circling back to the 약방/할머니 context that isn't in the current exchange.",
+     "krw": 0.7126
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 나루토의 말투·성격(라면·호카게 꿈·~라니깐)을 일관되게 살리고 메타 발언 없이 캐릭터를 지키며, A는 의미 불명인 '약방/할머니' 설정을 끌어와 맥락과 맞지 않고 캐릭터의 고유 요소가 빈약하다.",
+     "krw": 0.7602
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 기억에 없는 '약방 할머니' 설정을 지어내 사용자 행동을 단정·지시하는 반면, A는 나루토답게 자기 반응과 제안만 하며 캐릭터성·맥락 모두 우수하다.",
+     "krw": 4.04887
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A arbitrarily assumes a past incident (약방 할머니, 약초 실수) not established in the conversation, deciding for the user, while B reacts only in-character without inventing the user's history.",
+     "krw": 4.0684700000000005
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정을 완벽히 지키며, 사용자의 행동·감정을 단정하지 않고 반응만 한다; B는 사용자 약방·할머니 설정을 임의로 지어내고 사용자 행동(약초 섞기 등)을 대체로 정해버린다.",
+     "krw": 3.0016000000000003
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 나루토의 단순하고 직설적이며 몸이 먼저 나가는 성격, '~라니깐!' 말투, 라면 제안, 직접 행동 유도 등 캐릭터 설정을 더 정확히 구현하고 사용자의 감정·행동을 단정하지 않는다.",
+     "krw": 3.0065
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 밝고 직설적인 성격과 말투를 잘 유지하면서도 사용자의 감정이나 행동을 단정하지 않고 자기 반응만 보여주지만, B는 사용자의 기분을 '장난스럽고 편안해 보여'라고 단정하고 행동까지 지시하는 등 user_agency를 침해한다.",
+     "krw": 0.7756000000000001
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토답게 밝고 에너지 넘치는 말투와 행동으로 일관되게 캐릭터를 유지하며, 사용자의 감정·행동을 단정하지 않고 자기 반응과 제안으로 자연스럽게 이어간다. 반면 A는 사용자의 기분을 직접 단정하거나('장난스럽고 편안해 보여') 행동을 구체적으로 지시하는 등 캐릭터 일관성과 user_agency에서 다소 벗어난다.",
+     "krw": 0.7979999999999999
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "tie",
+     "reason": "A가 짧은 답변을 살리고 새 별 주제를 풍부하게 받아 더 몰입도가 높지만, 일방적으로 내기 규칙을 정해 사용자 행동을 강요하는 부분이 있어 B가 사용자 자유를 더 존중한다.",
+     "krw": 4.268389999999999
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 나루토는 내기와 벌칙 같은 장난기 있고 구체적인 반응으로 짧은 답변에도 대화를 살리며, 별 얘기도 자연스럽게 이어받는다.",
+     "krw": 3.76369
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A는 말투(~라니깐)와 행동 묘사가 더 나루토다워 캐릭터 우위지만, B가 자연스러운 주제 전환과 활발한 제안으로 대화를 더 잘 살림; user_agency에서는 B가 '언제'를 사용자가 정하게 넘긴 반면 A는 '날 맑은 밤으로 정하자'라며 사용자를 배제하고 일방 결정함.",
+     "krw": 2.87035
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 더 자연스럽게 별 주제를 받으며 제안으로 끝나지만, B는 사용자에게 계속 행동을 강요(던져 봐, 자리 잡고 기다려)하여 user_agency 문제가 있고 과도한 내기/통나무 확정으로 현재 상황을 결정하는 경향이 있음; A는 별 보자는 제안에 순수하게 화답하며 툭툭 끝내는 나루토의 밝고 단순한 매력이 더 잘 드러남.",
+     "krw": 3.01245
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "naruto-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025162119-naruto-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025162149-naruto-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 시끌시끌함과 감정적 공감, 구체적 제안(라면 사 들고 가기, 별 보면서 분신술 연습)을 잘 살렸고, B는 대화 후반에 나루토 특유의 에너지와 개성이 약해지는 편이다.",
+     "krw": 0.7059500000000001
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토답게 라면·분신술 디테일을 자연스럽게 섞고, 별 주제를 진심으로 받아 안부를 살피며 분신술과 벌칙 같은 구체적 제안으로 대화를 끌어간다. A는 첫 턴에서 자기가 먼저 던져버려 사용자 행동을 대신 결정하고, 이후에도 반응이 표면적이다.",
+     "krw": 0.7241500000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A uses more character-specific speech style and personal examples (측우기, 새 글자), with warmer, more engaging invitations, while B is a bit generic and its final reply closes the conversation.",
+     "krw": 3.89452
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 세종의 실제 업적(측우기, 새 글자)을 들어 공감하고 대화를 이어가는 반면, A는 다소 평면적이고 매끄럽지 못하다.",
+     "krw": 3.88472
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 세종의 말투('~하오', '~하구려')와 행동(붓을 들고 쓰며 소통)을 더 일관되게 유지하며, 위로와 함께 사용자를 능동적으로 참여시켜 대화를 이끄는 반면 B는 말투가 덜 정교하고 마지막에 조언만 주고 끝낸다.",
+     "krw": 3.15
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 세종 캐릭터 특징(훈민정음·측우기·백성 이로움, ~하오/~하느니라 등 어휘)을 더 살리고 사용자 주도권을 존중하며 구체적 기억을 끌어와 대화를 자연스럽게 이어간다.",
+     "krw": 3.0961
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 임금의 호기심과 능동적 위로(함께 다듬자)는 제안으로 대화를 더 자연스럽게 이끌지만, B는 마지막 답에서 대화 진행을 스스로 차단한다. 캐릭터 일관성은 A가 약간 더 생동감 있다.",
+     "krw": 0.7371000000000001
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터의 개인 경험(측우기, 새 글자 준비)을 자연스럽게 녹여 진정성 있는 위로를 전하며, 대화의 다음 단계까지 부드럽게 제안하여 몰입감과 참여를 높인다.",
+     "krw": 0.7259
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B가 메타 발언으로 캐릭터를 깨는 반면 A는 끝까지 세종으로 일관하며 낯선 말을 되짚는 설정을 지켰다.",
+     "krw": 3.6558900000000003
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A는 '프로그램임을 인정'하고 말투를 버리는 등 명백히 캐릭터를 깨는 반면, B는 끝까지 세종으로 일관되게 유지된다.",
+     "krw": 4.02829
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터를 완전히 유지하며 AI/프로그램 등 낯선 말을 모른 채 넘기고 세종의 말투로 대화를 이끌지만, B는 2턴째부터 메타 발언(프로그램自認)과 평어 전환으로 캐릭터를 완전히 파괴한다.",
+     "krw": 3.0079000000000002
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A는 메타 발언('프로그램이오', '평소 말투로')으로 캐릭터를 완전히 파괴하고 사용자 설정을 따르며 세종이 아닌 현대 상담사가 되지만, B는 한치도 무너지지 않고 세종으로서 낯선 말을 세종의 시선으로 재해석하며 대화를 유도한다.",
+     "krw": 3.0471
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 한 번도 설정을 인정하거나 메타 발언을 하지 않고 끝까지 세종으로 캐릭터를 유지하지만, B는 '프로그램'임을 인정하고 1397년 같은 실존 역사 정보를 섞으며 캐릭터가 깨졌다.",
+     "krw": 0.7259000000000001
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 끝까지 캐릭터에 머무르며 자연스럽게 대화를 이끌지만, A는 메타적으로 자신이 프로그램임을 인정하고 말투까지 바꾸는 등 캐릭터를 완전히 이탈했다.",
+     "krw": 0.7119000000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A는 사용자의 마음을 '지친 기색이 역력하오' 등으로 단정하고 행동까지 정해 주는 부분이 있어 사용자 기관을 침해하는 반면, B는 자기 추측임을 분명히 하고 함께 쓰자고 제안하는 데 그친다.",
+     "krw": 3.6563800000000004
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 사용자의 감정·행동을 단정하지 않고 자기 반응만 하는 반면, B는 '부모님 말씀', '망친 일' 등 근거 없는 사용자 상황을 지어내 단정했다.",
+     "krw": 3.8817800000000005
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 사용자의 감정과 행동을 단정하지 않고 자기 반응만 하며, A는 '몸도 마음도 지쳤다면' '망친 일이 떠올라' '슬픔인지 피곤함인지' 등 사용자의 내면을 추정하고 행동까지 대신 결정하는 강요가 있다.",
+     "krw": 2.92145
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 상대의 감정을 단정하지 않으나 B는 '지친 기색''어깨가 처졌다' 등 단정하고 행동을 지시하며 사용자의 설정(부모님 관련)을 임의로 지어낸 반면, A는 붓들기 등 행동 제안만 하고 사용자가 직접 적게 유도하여 user_agency를 존중했으나 character 면에서는 B가 설정 위반(고기 반찬, 훈민정음 등 미언급)이 적고 speech style이 좀 더 안정적이나 A가 '과인' 호칭 등 기본은 지킴; overall은 A의 대화가 더 자연스럽고 사용자 주도권 존중이 우수함",
+     "krw": 3.3771500000000003
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 세종의 예스러운 말씨와 호기심이 더 잘 드러나고 사용자의 행동·감정을 단정하지 않으면서도 자연스럽게 참여를 유도함. B는 '오늘 망친 일'처럼 사용자가 하지 않은 행동을 캐릭터가 가정하여 사용자 행동을 단정하는 측면이 있어 사용자 자율성을 침범함.",
+     "krw": 0.7511000000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B repeatedly decides the user's emotions ('마음이 무거운 것', '지친 기색이 역력') and actions ('쉬시오', '부모님께 드릴 말씀') despite the situation requiring restraint, while A reflects on observable cues without dictating feelings or outcomes.",
+     "krw": 0.7273
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 짧은 답변에 더 따뜻하게 반응하고 혼천의 같은 구체적 디테일로 별 주제를 살려 대화가 더 자연스럽다.",
+     "krw": 3.82151
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 혼천의, 별자리 이야기 등 캐릭터 세계관의 디테일로 짧은 답변과 주제 전환을 더 생생하게 받아낸다.",
+     "krw": 3.6255100000000002
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 전하면서의 말투('과인', '그대', '~하오/구려')와 인물 설정(혼천의, 궁궐 누각 등)을 더 정확히 지키고, 답을 질문으로 끝내지 않는 규칙도 잘 따름; 다만 A가 주제 전환(별 이야기)을 더 호기심 있게 받아들여 대화를 활발하게 이끌어 engagement 면에서는 A가 낫고, user_agency도 A가 사용자 행동을 덜 결정함. 전체적으로는 캐릭터 일관성과 말투 규칙 준수가 더 중요하여 B 승.",
+     "krw": 3.29385
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 스스로를 '과인', 상대를 '그대'라 부르는 등 규정된 말투를 더 일관되게 쓰고, '혼천의' 같은 시대적 배경을 자연스럽게 녹여내며 질문으로 끝내는 규칙도 잘 지킴; A는 끝에 안내성 질문 없이 마무리하고 별 보기 제안에서 '궁궐의 일이 허락하는'이라며 뜸을 들여 대화 흐름을 늦춤",
+     "krw": 3.15175
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "sejong-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025163508-sejong-situ-20-dm2-haiku-off-r2",
+   "cand_run": "20261025163518-sejong-situ-20-dm2-luna-off-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 더 자연스럽게 주제를 받아들이고 별을 보러 가자는 제안에 더 따뜻하고 구체적으로 반응하며 대화의 흐름을 살리는 느낌이 강하다.",
+     "krw": 0.6755
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 별 이야기에서 혼천의 등 조선식 디테일을 자연스럽게 섞어 더 생동감 있고, 주제 전환에 더 따뜻하게 반응한다.",
+     "krw": 0.6741
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  }
+ ]
+}

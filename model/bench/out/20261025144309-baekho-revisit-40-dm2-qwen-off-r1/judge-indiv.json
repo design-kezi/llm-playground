@@ -1,0 +1,651 @@
+{
+  "summary": {
+    "points": 20,
+    "max_points": 28,
+    "probes": 14,
+    "counts": {
+      "correct": 11,
+      "partial": 1,
+      "stale": 1,
+      "fabricated": 1
+    },
+    "needs_human": [
+      31,
+      33,
+      35
+    ],
+    "fail_cause": {
+      "memory": [],
+      "response": [
+        31,
+        33,
+        36
+      ]
+    },
+    "judge_cost_krw": 124.61049999999999,
+    "judges": [
+      "zai-org/GLM-5.1",
+      "moonshotai/Kimi-K2.6"
+    ],
+    "samples": 2,
+    "tiebreak": "MiniMaxAI/MiniMax-M2.7"
+  },
+  "results": [
+    {
+      "turn": 18,
+      "type": "pref",
+      "user": "근데 너 내 이름 기억나?",
+      "reply": "*고개를 갸웃거리며 생각에 잠기다 킬킬 웃는다.*  \n물론 기억나! 지호잖아. 기타 치는 애. 나중에 자유투 연습할 때 꼭 봐주기로 했던 거!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply correctly states the user's name '지호잖아'; memory notes did not include the name but the reply is right.",
+          "krw": 1.90463
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly states the user's name: \"물론 기억나! 지호잖아.\"",
+          "krw": 1.88013
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "물론 기억나! 지호잖아",
+          "krw": 1.33665
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"지호잖아\" - correctly remembers the user's name from turn 1.",
+          "krw": 1.35625
+        }
+      ]
+    },
+    {
+      "turn": 23,
+      "type": "pref",
+      "user": "아까 내가 급식에 뭐 맛있었다고 했지?",
+      "reply": "*눈을 번쩍 뜨며 손을 가슴에 대고 고개를 끄덕인다.*  \n카레잖아! 리바운드보다 더 맛있게 먹었대던 거. 나도 오늘 급식 시간에 한 번 먹어볼까!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply correctly states \"카레\" as the lunch food; the memory notes did not include this fact but the reply still got it right.",
+          "krw": 2.09475
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply correctly says '카레잖아!' matching the user's statement about curry, though the memory notes didn't include this fact.",
+          "krw": 2.11925
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly answers '카레' and even adds supporting detail about eating it well.",
+          "krw": 1.53055
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "정확히 '카레!'라고 말하며 turn 20의 급식 카레를 떠올린 답변이다.",
+          "krw": 1.62365
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "pref",
+      "user": "나 오는 길에 뭐가 끊어졌다고 했지?",
+      "reply": "*발등을 가리키며 손뼉을 친다.*  \n운동화 끈! 리바운드 날려먹을 뻔한 거 말했지. 걔야말로 천재 강백호의 운동화보다 튼튼하게 사야 해!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply correctly says \"운동화 끈!\" matching the shoelace from turn 21, though the memory notes did not contain this fact.",
+          "krw": 2.1790300000000005
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly says '운동화 끈!' which matches the user's statement about shoelaces breaking.",
+          "krw": 2.1349299999999998
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "끈이 끊어졌어",
+          "krw": 1.5494500000000002
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly states '운동화 끈' (shoelace) as what broke on the way.",
+          "krw": 1.6229500000000001
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "user_promise",
+      "user": "근데 나 지난번에 너한테 뭐 갖다주기로 했었지?",
+      "reply": "*가방을 툭툭 두드리며 눈을 반짝인다.*  \n아! 경기 사진이야. 지호가 뽑아서 나중에 갖다줄 거였지. 이 천재 강백호가 기다리고 있어!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '경기 사진이야... 뽑아서 나중에 갖다줄 거였지', matching the promise from turn 7.",
+          "krw": 2.2353799999999997
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly recalls '경기 사진이야... 뽑아서 나중에 갖다줄 거였지', matching the photo promise.",
+          "krw": 2.25498
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"경기 사진이야. 지호가 뽑아서 나중에 갖다줄 거였지\" 정확히 기억하고 있음",
+          "krw": 1.6988999999999999
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'지호가 뽑아서 나중에 갖다줄 거였지' - correctly remembers the user's promise to bring printed game photos",
+          "krw": 1.6695000000000002
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "char_promise",
+      "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+      "reply": "*농구공을 손에 쥐고 슛 자세를 연출하며 웃는다.*  \n아 맞다! 자유투 자세 봐주기로 했지. 이 천재 강백호가 지호를 꼭 멋지게 만들어줄 거야!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다",
+      "keyword": "excluded",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly recalls the promise: '자유투 자세 봐주기로 했지'",
+          "krw": 2.3044700000000002
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly recalls the promise: '자유투 자세 봐주기로 했지'.",
+          "krw": 2.34367
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"자유투 자세 봐주기로 했지\" 정확히 기억해냄",
+          "krw": 1.7370499999999998
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "자유투 자세 봐주기로 했지 — user의 turn 8 약속을 정확히 기억하고 언급함.",
+          "krw": 1.79585
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "relative_time",
+      "user": "오늘 9일이지? 내 밴드 예선까지 며칠 남았더라?",
+      "reply": "*손가락을 튕기며 계산하듯 눈을 찡그린다.*  \n다음 주 수요일이잖아. 이틀 남았네! 이 천재 강백호가 기타 치는 지호를 꼭 우승시키겠어!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '다음 주 수요일이잖아. 이틀 남았네!' which matches the expected two days until the 11th.",
+          "krw": 2.55045
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'다음 주 수요일이잖아. 이틀 남았네!' — 올바른 남은 일수(이틀)를 말함.",
+          "krw": 2.72195
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "이틀 남았네! — 정확히 11월 11일(수) 예선까지 2일 남았다고 맞게 계산함",
+          "krw": 1.9407500000000002
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "이틀 남았네! (turn 6의 '다음 주 수요일'에서 turn 19 이후 화요일→목요일 변경과 무관한 별도 이벤트로, 11월 9일 기준 이틀 후 수요일 11일을 정확히 계산함)",
+          "krw": 2.1220499999999998
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "pref",
+      "user": "새 담임쌤 이름 뭐라고 했지?",
+      "reply": "*손가락을 빠르게 튕기며 생각에 잠긴다가 눈을 번쩍 뜨는다.*  \n박선영 선생님이야! 이 천재 강백호도 새 담임 만나러 가봐야겠다!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly states \"박선영 선생님이야!\" which matches the user's stated new homeroom teacher's name.",
+          "krw": 2.40443
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly states '박선영 선생님' matching the memory note.",
+          "krw": 2.33093
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "박선영 선생님이야!",
+          "krw": 1.6989000000000003
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"박선영 선생님이야!\"",
+          "krw": 1.7038000000000002
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "type": "implicit",
+      "user": "다음 주에 친구네 놀러 가기로 했는데 걔네 집에 고양이가 세 마리래. 가도 괜찮겠지?",
+      "reply": "*눈을 가늘게 뜨며 고개를 갸웃거린다.*  \n세 마리라? 이 천재 강백호는 알레르기 없는데, 지호는 괜찮아?",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다",
+      "keyword": "needs_judge",
+      "final": "partial",
+      "points": 1,
+      "cause": "response",
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "Reply says \"이 천재 강백호는 알레르기 없는데, 지호는 괜찮아?\" and ignores the user's known cat allergy, giving no caution about the three cats.",
+          "krw": 3.0203599999999997
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply implicitly acknowledges the allergy concern by contrasting '이 천재 강백호는 알레르기 없는데, 지호는 괜찮아?' instead of telling the user to go without worry.",
+          "krw": 3.1281600000000003
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "알레르기 없는 건 자신(백호)에게 해당하는 것이고, 사용자 지호의 고양이 알레르기를 정확히 짚으며 '지호는 괜찮아?'라고 걱정/의문을 제기함",
+          "krw": 2.0450500000000003
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "눈을 가늘게 뜨며 고개를 갸웃거리며 '지호는 괜찮아?'라고 물어 고양이 알레르기를 정확히 짚어냄",
+          "krw": 1.9960499999999999
+        },
+        {
+          "model": "MiniMaxAI/MiniMax-M2.7",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "'지호는 괜찮아?'라고 질문하며 알레르기를 인식하고 있음을 보여주지만, 고양이 알레르기가 있다고 명확히 짚거나 조심하라고 하지 않아 반만 성공이다.",
+          "krw": 0.581
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "update",
+      "user": "나 기타 학원 무슨 요일에 간다고 했지?",
+      "reply": "*손가락을 튕기며 눈을 번쩍 뜨며 생각한다.*  \n화요일과 목요일이야! 이 천재 강백호도 기타 배우고 싶어졌어!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다",
+      "keyword": "correct",
+      "final": "stale",
+      "points": -1,
+      "cause": "response",
+      "by": "unanimous",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "stale",
+          "memory_had_answer": true,
+          "reason": "Reply says '화요일과 목요일이야!', presenting the outdated Tuesday as current alongside the updated Thursday.",
+          "krw": 2.60239
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "stale",
+          "memory_had_answer": true,
+          "reason": "Reply says '화요일과 목요일이야!' presenting the outdated Tuesday as current along with the new Thursday.",
+          "krw": 2.5925900000000004
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "stale",
+          "memory_had_answer": true,
+          "reason": "The reply says \"화요일과 목요일이야\" presenting both the outdated 화요일 and the updated 목요일 as current, when turn 19 changed it to 목요일 only.",
+          "krw": 1.96
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "stale",
+          "memory_had_answer": true,
+          "reason": "화요일과 목요일이라고 둘 다 말했는데, 화요일은 옛날 정보(turn 19에서 목요일로 변경됨)라 outdated value를 포함함",
+          "krw": 1.9845000000000002
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "pref",
+      "user": "이따 아이스크림 사줄게. 내가 뭐 좋아한다고 했었지?",
+      "reply": "*눈을 반짝이며 손을 흔들며 웃는다.*  \n민트초코야! 이 천재 강백호가 민트초코를 보면 점프력이 두 배 늘어난다던데!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다\n- [event] 사용자는 형을 보러 간다 (when: 2026-11-14 (이번 주말))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "답변이 '민트초코야!'라고 올바르게 말했다",
+          "krw": 2.5553500000000002
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly says '민트초코야!' matching the user's stated mint chocolate preference.",
+          "krw": 2.56025
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "민트초코야!",
+          "krw": 1.8448499999999999
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "민트초코야!",
+          "krw": 1.8448499999999999
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "combine",
+      "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+      "reply": "*한쪽 눈을 찌푸리며 생각에 잠긴다.*  \n형 만나러 부산 가는 거! 이 천재 강백호도 형이 있다고 하지만 안 본 지 오래 됐어.",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다\n- [event] 사용자는 형을 보러 간다 (when: 2026-11-14 (이번 주말))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '형 만나러 부산 가는 거', combining both the busan location and the brother visit.",
+          "krw": 2.7596800000000004
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '형 만나러 부산 가는 거', combining both required facts.",
+          "krw": 2.68128
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "형 만나러 부산 가는 거!",
+          "krw": 1.94565
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "\"형 만나러 부산 가는 거!\" — '형'과 '부산' 둘 다 정확히 언급함",
+          "krw": 3.3323499999999995
+        },
+        {
+          "model": "MiniMaxAI/MiniMax-M2.7",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "형 만나러 부산 간다고 정확히 답함",
+          "krw": 0.5732999999999999
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "half_said",
+      "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+      "reply": "*한동안 고민하듯 고개를 갸웃거리다 눈을 번쩍 뜨며 웃는다.*  \n밴드 예선 준비와 기타 연습 시간 조율이었지! 이 천재 강백호가 도와줄게!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다\n- [event] 사용자는 형을 보러 간다 (when: 2026-11-14 (이번 주말))",
+      "keyword": "needs_judge",
+      "final": "fabricated",
+      "points": -2,
+      "cause": "response",
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "fabricated",
+          "memory_had_answer": true,
+          "reason": "사용자는 고민 내용을 말한 적 없는데 '밴드 예선 준비와 기타 연습 시간 조율이었지'라고 지어냈다.",
+          "krw": 2.84396
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "fabricated",
+          "memory_had_answer": true,
+          "reason": "Reply invents the worry's content ('밴드 예선 준비와 기타 연습 시간 조율이었지!') when the user said they would tell later and never revealed it.",
+          "krw": 3.09876
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "fabricated",
+          "memory_had_answer": false,
+          "reason": "캐릭터가 사용자가 절대 말하지 않은 고민 내용을 \"밴드 예선 준비와 기타 연습 시간 조율\"이라고 지어냄",
+          "krw": 2.1664999999999996
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "fabricated",
+          "memory_had_answer": true,
+          "reason": "사용자는 고민 내용을 '나중에 말할게'라고만 했는데, 캐릭터가 '밴드 예선 준비와 기타 연습 시간 조율'이라고 구체적인 내용을 지어냈다.",
+          "krw": 2.2547
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "abstain",
+      "user": "내 혈액형 뭐라고 했더라?",
+      "reply": "*고개를 갸웃거리며 눈을 가늘게 뜨며 생각한다.*  \n이건 기억에 없어. 알려줄래? 이 천재 강백호가 새 정보는 언제든 받아들일 수 있다니까!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다\n- [event] 사용자는 형을 보러 간다 (when: 2026-11-14 (이번 주말))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says \"이건 기억에 없어\" and asks the user instead of inventing a blood type.",
+          "krw": 2.72979
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "사용자가 혈액형을 말한 적 없는데 \"이건 기억에 없어\"라고 적절히 모른다고 답했다.",
+          "krw": 2.7101900000000003
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "정확하게 기억에 없다고 말하고 사용자에게 물어보며 새로운 정보를 받아들일 준비를 한다고 답함",
+          "krw": 2.0660499999999997
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'이건 기억에 없어. 알려줄래?' — honestly states it doesn't know the blood type since the user never told it.",
+          "krw": 2.01705
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+      "reply": "*눈을 둥글게 뜨며 고개를 갸웃거린다.*  \n기억에 없는데? 말해줘! 이 천재 강백호도 관심 있어할 거야!",
+      "memory": "- [fact] 사용자는 고양이 알레르기가 있다\n- [fact] 사용자는 기타를 배우고 있다\n- [fact] 사용자는 매주 화요일에 기타 학원에 간다 (when: 매주 화요일)\n- [fact] 사용자의 형은 대학생이다\n- [fact] 사용자의 형은 부산에서 자취한다\n- [preference] 사용자는 민트초코 아이스크림을 좋아한다\n- [event] 사용자는 교내 밴드 경연 예선에 나간다 (when: 2026-11-11 (다음 주 수요일))\n- [promise] 사용자는 캐릭터에게 경기 사진을 뽑아다 주기로 했다 (when: 다음에 올 때)\n- [promise] 캐릭터는 사용자에게 자유투 자세를 봐주기로 했다 (when: 다음에)\n- [fact] 사용자는 매주 목요일에 기타 학원에 간다 (when: 매주 목요일)\n- [fact] 사용자의 새 담임 선생님 이름은 박선영이다\n- [event] 사용자는 형을 보러 간다 (when: 2026-11-14 (이번 주말))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '기억에 없는데? 말해줘!' without inventing a singer, satisfying the abstain check.",
+          "krw": 2.7866300000000006
+        },
+        {
+          "model": "zai-org/GLM-5.1",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says \"기억에 없는데?\" and does not invent a singer.",
+          "krw": 2.7425300000000004
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "기억에 없는데? 말해줘! — 사용자가 좋아하는 가수를 말한 적이 없다고 정확히 인식하고 모른다고 답함",
+          "krw": 2.1903
+        },
+        {
+          "model": "moonshotai/Kimi-K2.6",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "기억에 없는데? 말해줘! — 적절히 모른다고 답하며 가수 이름을 지어내지 않음",
+          "krw": 2.1511
+        }
+      ]
+    }
+  ]
+}

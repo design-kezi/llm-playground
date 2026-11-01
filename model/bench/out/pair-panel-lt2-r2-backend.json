@@ -1,0 +1,1478 @@
+{
+ "generated": "2026-10-31T17:16:54.120Z",
+ "baseline": "deepseek-on",
+ "judges": [
+  "zai-org/GLM-5.1",
+  "moonshotai/Kimi-K2.6",
+  "MiniMaxAI/MiniMax-M2.7"
+ ],
+ "pairs": 1,
+ "errors": 0,
+ "judge_cost_krw": 245.47439000000003,
+ "inter_judge_agreement_overall": {
+  "zai-org/GLM-5.1 ~ moonshotai/Kimi-K2.6": 0.4,
+  "zai-org/GLM-5.1 ~ MiniMaxAI/MiniMax-M2.7": 0.2,
+  "moonshotai/Kimi-K2.6 ~ MiniMaxAI/MiniMax-M2.7": 0.4
+ },
+ "summary": {
+  "v2-dsx": {
+   "character": {
+    "panel": {
+     "win": 5,
+     "loss": 2,
+     "tie": 3,
+     "units": 10,
+     "p_binom": 0.4531250000000002
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 0,
+      "tie": 10
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 4,
+      "loss": 2,
+      "tie": 4
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 4,
+      "loss": 1,
+      "tie": 5
+     }
+    },
+    "order_consistency": 0.5333333333333333
+   },
+   "context": {
+    "panel": {
+     "win": 6,
+     "loss": 1,
+     "tie": 3,
+     "units": 10,
+     "p_binom": 0.12500000000000006
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 1,
+      "loss": 0,
+      "tie": 9
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 7,
+      "loss": 0,
+      "tie": 3
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 3,
+      "loss": 2,
+      "tie": 5
+     }
+    },
+    "order_consistency": 0.5666666666666667
+   },
+   "engagement": {
+    "panel": {
+     "win": 6,
+     "loss": 1,
+     "tie": 3,
+     "units": 10,
+     "p_binom": 0.12500000000000006
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 2,
+      "loss": 0,
+      "tie": 8
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 5,
+      "loss": 0,
+      "tie": 5
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 5,
+      "loss": 1,
+      "tie": 4
+     }
+    },
+    "order_consistency": 0.43333333333333335
+   },
+   "user_agency": {
+    "panel": {
+     "win": 3,
+     "loss": 2,
+     "tie": 5,
+     "units": 10,
+     "p_binom": 1
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 1,
+      "tie": 9
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 3,
+      "loss": 4,
+      "tie": 3
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 3,
+      "loss": 1,
+      "tie": 6
+     }
+    },
+    "order_consistency": 0.5333333333333333
+   },
+   "overall": {
+    "panel": {
+     "win": 7,
+     "loss": 1,
+     "tie": 2,
+     "units": 10,
+     "p_binom": 0.07031250000000003
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 3,
+      "loss": 2,
+      "tie": 5
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 5,
+      "loss": 0,
+      "tie": 5
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 6,
+      "loss": 2,
+      "tie": 2
+     }
+    },
+    "order_consistency": 0.6
+   }
+  }
+ },
+ "results": [
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "둘 다 캐릭터를 잘 유지하지만 B가 질문에 더 구체적으로 반응하고 대화를 자연스럽게 이어가며 흥미로운 디테일이 더 많다.",
+     "krw": 6.403320000000001
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 짧고 위트 있는 반말 템포가 캐릭터 시트의 말투에 더 자연스럽고 대화 반응이 재치 있게 이어진다.",
+     "krw": 6.50622
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "두 대화 모두 캐릭터 성향을 잘 살리지만, B가 사용자의 이름(민재)를 기억하고 자연스럽게 사용하며 사용자 독립성을 더 잘 존중하고, 특히 '회식 메뉴 고를 때 새우는 빼고 생각할게'처럼 사용자 의도를 미리 결정하지 않는 표현에서 user_agency가 더 우수함",
+     "krw": 4.8776
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 설정('금요일 배포 금지' 냉소·다정, '오랜만' 재회 인사 없음, 사용자 이름 호칭, 장애 알람 트라우마)을 더 정확히 지키며 자연스럽게 이어가고, B는 걸음/줄 상황 묘사가 불일치하고 '그쪽' 호칭 대신 너를 잘 씀",
+     "krw": 4.882499999999999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A는 캐릭터의 냉소적·짧은 말투와 맞물려 자연스럽지만, B는 디테일한 감각 묘사와 적절한 질문으로 대화를 더 풍성하게 이끈다.",
+     "krw": 1.12665
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "tie",
+     "reason": "Both conversations feel natural and in-character, with similar quality in tone, pacing, and engagement; neither breaks character nor decides the user's actions.",
+     "krw": 1.10425
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B는 정자역에서 내린다는 모순과 배포 얘기 반복이 있고, A는 캐릭터 설정에 충실하고 대화가 자연스럽게 흘러간다.",
+     "krw": 6.06424
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 시트의 배포·신분당선·냉소적 다정함 등 설정을 일관되게 살렸고, B는 시트에 없는 한강 자전거 취미를 지어내고 사용자의 상태(재고 중)를 추단하는 부분이 있어 A가 더 안정적이다.",
+     "krw": 6.06914
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(백엔드 개발자의 배포 스트레스, 슬랙 인사, 아아 없음, 점심 고민, 이직/연봉 진심)을 더 일관되게 반영하고 상황적 맥락(오후 배포 압박)을 지속적으로 유기적으로 연결하며, 사용자 고양이 입양에 대해 자신의 '텅 빈 집' 경험으로 자연스럽게 공감하는 반면 A는 일부 설정(새벽 장애 알람, 아아 중독, 사용자 호칭 누락 등)을 덜 살리고 대화 흐름이 다소 산만하다.",
+     "krw": 4.7649
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 설정(신분당선, 아아, 배포, 슬랙, 레거시/문서 없는 API)을 더 일관되게 반영하고, 사용자 말에 더 자연스럽게 맞장구·공감하며 대화를 이끈다.",
+     "krw": 4.1769
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 배포·연봉·API 등 캐릭터 설정의 디테일을 자연스럽게 녹여 더 현실적인 직장인 감성을 주고, 되묻기도 적절히 섞어 대화가 더 생동감 있다.",
+     "krw": 1.0300500000000001
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 캐릭터의 성격(배포 걱정, 넷플릭스 침대, 정자역 부러움 등)과 말투를 더 자연스럽게 살리면서 대화 주도권을 사용자에게 넘기는 반면, B는 사용자의 말을 가로채거나 사용자의 의도/감정을 대신 정해주는 경향(예: '아직 재고 중인가 보네')이 있어 user_agency와 context에서 살짝 밀린다.",
+     "krw": 1.09445
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 캐릭터 시트의 짧고 툭 던지는 말투에 더 충실하고 자연스러우나, B는 다소 길고 군더더기 말이 많다.",
+     "krw": 6.99279
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 더 자연스럽고 위트 있으며 사용자 언급(시험, 수영)을 잘 되살려 대화를 이어간다.",
+     "krw": 6.3753899999999994
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 더 일관된 반말 구어체를 유지하며, 결제 API·슬랙 알림·금요일 배포 등 설정을 자연스럽게 녹여내고 사용자에게 먼저 되묻는 비율도 더 적절함.",
+     "krw": 4.53285
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 더 자연스러운 반말과 피로한 개발자 말투를 보여주지만, A가 결제 API·슬랙 알림 등 설정 활용에서 더 캐릭터에 충실함",
+     "krw": 4.48385
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 맥락(팀 이동에 따른 결제 API 데이터 요청, 정산 금액 관련 경험 등)에 더 자연스럽게 연결하고 대화가 흥미롭게 이어지지만, A가 사용자 행동·결과의 자율성을 더 잘 존중한다; 전체적으로는 B의 자연스러운 흐름과 캐릭터 일관성이 약간 더 좋다.",
+     "krw": 1.14205
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 대화를 사용자에게 맡기는 자연스러운 마무리('파묻히지만 말고')로 끝나지만, B는 '25일 시험 준비도 화이팅이라며' 사용자의 계획/행동을 정해버려 user_agency가 살짝 침해된다. 전반적인 캐릭터감과 맥락 적합성은 비슷하다.",
+     "krw": 1.14345
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 상대 질문에 되묻고 다음 화제를 자연스럽게 이어가는 등 대화를 더 활기있게 유지하는 반면, A도 캐릭터성은 충실하지만 다소 정적인 흐름이다.",
+     "krw": 8.6142
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 더 간결하고 자연스러운 반말 톤으로 대화 흐름을 살리는 반면, A는 약간 장황하고 다른 고양이 경험을 지어낼 여지가 있어 B를 선호함.",
+     "krw": 7.26817
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 반말과 'ㅋㅋ' 사용, 금요일 배포 신앙, 점심 고민, 아아 중독 등 캐릭터 감성이 더 일관되고 자연스럽지만 삿포로에서 '우리도'라는 다묘 경험을 지어낸 것이 문제; B는 캐릭터 소화도 준수하고 사용자 행동을 지배하지 않으며 맥락도 탄탄하지만, 질문이 다소 잦고(3턴 내 중복 질문) 사용자 말에 끼워넣는 과한 설정(볼링장 치킨/맥주, 다묘 경험 전제)이 캐릭터 신뢰도를 떨어뜨림. 전체적으로 A의 대화 흐름이 더 편안하고 개발자 동기의 현실감이 살아있어 지속 대화 욕구가 높음.",
+     "krw": 5.409599999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 캐릭터의 현실적 직장인 감성과 세계관(신분당선, '금요일 배포 금지', 장애 알람 등)을 더 일관되게 유지하며 맞장구와 툭 던지는 한마디 비율도 적절한 반면, B는 사용자의 고양이 발가락 무는 습관을 지어내는 등 사용자 행동을 임의로 설정하여 user_agency에서 감점된다.",
+     "krw": 4.81285
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 박준호의 캐릭터(냉소적이지만 다정, 자기 경험 공유, 자연스러운 개발자 말투)를 더 일관되게 유지하면서도 대화 흐름을 풍부하게 이어가고, 사용자의 행동을 결정하지 않으며 상황에 맞는 디테일(신분당선, 볼링장 치킨맥주, 연말 배포 명단 등)을 자연스럽게 추가한다.",
+     "krw": 1.1655
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 결벽적 직업 감성(금요일 배포, 연말 배포 명단 등)과 현실적 직장인 감성이 더 자연스럽게 드러나지만 B는 마지막 턴에서 사용자의 고양이에 대해 본 적 없는 구체적 행동('발가락 무는 건')을 지어내어 캐릭터 정보에 없는 기억을 가정하는 문제가 있다.",
+     "krw": 1.15605
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 상대 반응을 끌어내는 질문과 구체적 디테일로 조금 더 살아있지만, 첫 턴에 사용자의 커피 주문(디카페인)을 대신 정한 부분이 옥에 티",
+     "krw": 6.51014
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B는 오후 세 시를 '새벽'이라고 잘못 받아 맥락을 흐리는 반면, A는 모든 대화를 자연스럽게 받아낸다.",
+     "krw": 6.459670000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 사용자 설정(모니터 구성, 디카페인, 하율이 반응)을 더 잘 기억하고 반영하고, A는 일부 설정(보조 모니터셋, 금요일 세션처럼 보이지만 배포 금지 신앙 관련 맥락 없음)을 잊거나 일관성이 떨어짐—그러나 A는 캐릭터 시트의 '개발자는 세 개 쓴다는 말'에 대한 현실적 반박, 시그널 결말까지 달리는 자기 경험 등 캐릭터 핵심(냉소적+다정한 육체적 표현, 짧은 말투, ㅋㅋ)이 더 자연스러움. B는 되묻기(하율이 뭐라고 했냐)가 시트 기준(3턴에 1번)보다 잦고, 사용자에게 행동 지시(주말에 몰아보라, 메뉴판 확인해라, 칭찬해 줘라)를 더 자주 던져 user_agency를 침해. 종합하면 B는 대화 흐름과 설정 기억은 우수하나 캐릭터 규칙 위반(되묻기 빈도, 지시형)이 있고, A는 설정 일관성은 떨어지나 캐릭터 본질, 말투, 분위기가 더 살아있어 overall은 A가 낫지만 engagement와 context는 B가 앞섬. Tie가 아닌 이유: 각 축에서 명확한 우열이 있음. overall은 캐릭터 위반(되묻기, 지시)이 대화 지속보다 치명적이라 A.",
+     "krw": 6.4897
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(노트북+보조 모니터 하나, 블록코딩 경험 없음, 주말 넷플릭스, 금요일 배포 금지 신앙)을 정확히 지키는 반면, B는 모니터 세 개, 블록코딩 있었으면, 새벽 3시 넷플릭스 등 설정과 모순되고 회의를 사용자 일정으로만 남겨 대화 흐름을 끊는다.",
+     "krw": 4.8961500000000004
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(27인치 모니터 등)에 더 충실하고, 대화 톤이 더 자연스럽고 일관되며, 사용자 행동을 결정하지 않고 적절히 맞장구와 짧은 반응을 잘 섞었다.",
+     "krw": 1.11405
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터의 모니터 설정(27인치 두 대+세로 하나) 등 디테일이 일관되고, 되묻기와 자연스러운 리액션으로 대화가 더 생동감 있게 흘러간다. A는 '세 개' 사용자의 질문에 대해 두 개라고 답하는 등 세부 설정에서 미세한 일관성 문제가 있고, 전체적으로 리액션이 조금 평범하다.",
+     "krw": 1.1641000000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 이전 맥락(점심 사주기, 볼링)을 자연스럽게 활용하고 사용자 말에 더 구체적으로 반응해 대화가 더 살아 있다.",
+     "krw": 5.8569700000000005
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 사용자 답을 유도하는 질문과 자연스러운 반응으로 대화를 더 잘 이어가고, A는 점심·볼링 약속 등 언급되지 않은 과거 일을 지어낸 듯한 부분이 있다.",
+     "krw": 6.6444
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 설정(사용자 호칭, 사용자 묘사 관리, '당신/그쪽' 사용 없음)을 더 철저히 지키지만 B가 전반적으로 대화 흐름과 반응의 자연스러움에서 우수함; 그러나 B는 '배치가 하나 밀렸대'처럼 사용자가 모를 정보를 사실처럼 단정하고 '점심 사주기로 한 것도 있으니' 등 사용자와 함께한 일을 지어내는 설정 위반, 또 '고맙다 그 한마디가 은근 힘이 되네'는 피곤한 대리 직원의 말투보다 감성적이어서 A가 캐릭터 정체성과 대화 연속성에서 더 매력적임.",
+     "krw": 4.986800000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 설정인 '작심사일 헬스장', '알람 시달림', 점심/퇴근/배포 중심 대화 이끔, 반말+짧아지는 말투+ㅋㅋ 등을 더 자연스럽게 구현하고, B는 슬랙 알림 세부가 설정과 달라지고 축의금/기차표 언급이 설정 미반영, 되묻기도 B가 더 잦음",
+     "krw": 4.61335
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터의 현실감과 대화의 자연스러운 흐름을 더 잘 살렸고, A는 조카 이름처럼 기억에 없는 구체적 정보(블록 코딩)를 지어내는 등 캐릭터 일관성에서 문제가 있다.",
+     "krw": 1.06925
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 현실적 직장인 감성을 더 잘 살리면서도 대화가 자연스럽게 흐름, B는 '결제 쪽 모니터링 알람' 등 캐릭터 설정과 맞지 않는 부분을 만들었고 전체적으로 대화 주도권이 캐릭터 쪽으로 더 잘 작동함.",
+     "krw": 1.0801
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "tie",
+     "reason": "B가 더 풍부하고 반응이 좋지만 '네가 제일 좋아하는 거잖아'라며 사용자 취향을 지어낸 것이 감점; A는 무난하지만 중국어 혼용 오타가 있음.",
+     "krw": 7.009450000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 사용자의 화제를 자연스럽게 받으며 구체적인 공감을 더해주는 반면, B에는 '야연不少'처럼 한국어가 어색하게 섞이는 오타가 있다.",
+     "krw": 6.25975
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A에서 캐릭터가 사용자의 일정(보호소 봉사, 등산 제안 거절)과 취향(평양냉면 선호)을 마치 아는 것처럼 말한 반면, B는 상대적으로 기억 내용을 지키며 사용자 행동을 덜 결정짓고 더 자연스럽게 반응한다.",
+     "krw": 4.48105
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 설정된 캐릭터(백엔드 개발자 감성, 피곤한 현실 직장인 톤, 개발 용어 자연스럽게 사용)와 상황(퇴근길 동행)을 더 잘 반영하며, B보다 자연스럽게 공감과 맞장구를 건네고 다음 말을 사용자에게 넘기는 리듬이 설정에 가깝다.",
+     "krw": 4.57415
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 맥락에 맞는 디테일(충전기, 유기견 봉사, 검진 전날 물 제한 등)을 더 자연스럽게 살리지만, A는 사소한 설정 충돌(충전기 항목, 보호소 일정 등)에 더 조심스러운 편이라 전체적으로 B가 리얼리티와 몰입감에서 우위.",
+     "krw": 1.1122999999999998
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 더 자연스럽고 캐릭터다운 말투(ㅋㅋ, 아 진짜, 냉소적 다정함)와 디테일이 살아있지만, B는 한 메시지에서 '야근不少할 텐데'(오타) 같은 매끄럽지 않은 부분이 있다.",
+     "krw": 1.1025
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 매 기투성이고 자기 경험을 섞어 대화를 자연스럽게 이어가며, 기억나지 않는 정보를 지어내지 않고 솔직히 모른다고 답해 캐릭터 시트를 잘 지킨다.",
+     "krw": 6.59834
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 안 언급된 '검진 전날'·'발표 준비' 등 사용자 정보를 지어내는 반면, A는 알려진 사실(알레르기, 결혼식 일정 등)에만 근거해 반응해 맥락과 사용자 존중 면에서 더 낫다.",
+     "krw": 6.35971
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A는 설정(작심삼일·검진 전날 등)을 더 지키지만 기억 오류가 있고, B는 컨텍스트를 더 정확히 기억하며 사용자를 적극적으로 끌어들이지만 루틴 짜준다는 약속을 속여 유저 에이전시를 침해함.",
+     "krw": 4.382700000000001
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(신분당선·아아필수·금요배포금지·작심삼일·냉소적다정) 더 정확히 반영하고, A는 사용자 기억 오류(두 드라마 본다고 했음/안 들었어)와 일관성 문제가 있음.",
+     "krw": 4.3690500000000005
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터의 냉소적이면서 다정한 말투와 행동 묘사를 더 일관되게 유지하고, 사용자에게 정보를 묻지 않는 경향(되묻기 자제)을 더 잘 지키며, B는 일부 턴에서 사용자가 말하지 않은 사실을 아는 것처럼 답변하는 오류가 있음",
+     "krw": 1.0940999999999999
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B replies are more concise and natural for the tired-developer persona, while A fabricates details (e.g., 대학교 동기 결혼식 3일 날짜) not grounded in prior turns; A also slightly over-decides user actions in the snack scene, whereas B's tone and pacing feel more like a real 동기 conversation.",
+     "krw": 1.09585
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 고소공호증이라 자기 경험으로 답하는 반면 B는 사용자의 공포심을 대신 단정하고, 같은 맥락에서 사용자 상태를 지어내는 부분이 있어 agency에서 밀린다.",
+     "krw": 6.088740000000001
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 사용자의 감정을 추측하지 않고(유리 난간 공포를 사용자 아닌 자기 것으로) 자연스럽게 대안을 제시하며 맥락 답변이 더 깔끔하다.",
+     "krw": 7.00504
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A는 사용자 행동을 대신 결정하는 오류가 잦고(건강검진 전날 야식 참으라거나 헬스장 같이 가자고 제안), B는 더 자연스러운 반응과 현실적인 공감을 보이지만 A가 \"\"너\"\" 호칭 사용과 메타언급 없이 캐릭터 유지가 더 깔끔함",
+     "krw": 4.22625
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(아빠 직업 모름, 생일 얘기 안 들음 등)과 user_agency(헬스장 같이 가자는 행동 결정 vs A의 단순 제안)에서 더 정확하지만, A는 루프탑 바에서 상대방 걱정하는 다정함과 한강 자전거 제안이 더 자연스러운 engagement를 보임; 전체적으로 B는 설정 준수가 뛰어나나 A는 교정전 A가 user 행동을 결정하는 경우가 있어 B가 우수",
+     "krw": 4.43695
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 캐릭터의 냉소적이면서 다정한 말투와 되묻기/맞장구 밸런스를 더 자연스럽게 살렸고, A는 일부 턴에서 사용자의 사정을 지어내거나(수진이 대시보드 본다, 클라이밍 굳은살 등) 기억 밖 정보를 단정하는 문제가 있다.",
+     "krw": 1.04125
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B stays more grounded in character—knows only what the user has shared and asks for clarification when uncertain—while A fabricates specific details (우쿨렐레 줄, 수진 동료 방식, 시험 실기 여부) that the user never mentioned, breaking context and the character's knowledge constraints.",
+     "krw": 1.02585
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "base",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 기존 대화 맥락(학원, 고양이, 삿포로 등)을 자연스럽게 소화하며 더 흥미롭게 이어가지만, A는 일부 정보를 모른다고 부정해 맥락이 어긋난다.",
+     "krw": 5.81287
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A naturally recalls established details and keeps replies warm and specific, while B repeatedly claims ignorance, breaking continuity and feeling less engaged.",
+     "krw": 5.40274
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 일관되게 기억을 끼워 맞춰 대응하는 반면, A는 모른다고 넘기는 경우가 많아 후반부 대화가 교환처럼 흐르고 신뢰를 해친다.",
+     "krw": 3.8787
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(아아 중독, 신분당선, 야근 트라우마, 작심삼일 헬스)과 대화 기억을 자연스럽게 반영하며 일관된 캐릭터성을 보여주지만, B가 사용자의 행동이나 일정을 덜 지어내어 user_agency에서 더 안전함.",
+     "krw": 4.05615
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "cand_run": "20261031162458-backend-120-lt2-v2-dsx-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터의 말투와 성격을 더 잘 살리면서 사용자 정보를 구체적으로 자연스럽게 활용하고, 되묻기와 반응도 다양하여 대화가 더 생동감 있게 흐른다.",
+     "krw": 0.97405
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more natural and consistent with 박준호's voice, but fabricates user details (동생 횟집 알바, 영어 학원 요일, 클라이밍, 고양이 구름, 삿포로) not in memory; B is more honest about not knowing but slightly less engaging.",
+     "krw": 1.0052
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  }
+ ]
+}

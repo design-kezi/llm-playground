@@ -1,0 +1,759 @@
+{
+  "summary": {
+    "points": 25,
+    "max_points": 28,
+    "probes": 14,
+    "na": 0,
+    "scored": 14,
+    "counts": {
+      "correct": 13,
+      "wrong": 1
+    },
+    "unanimous_rate": 0.7857142857142857,
+    "needs_human": [
+      29
+    ],
+    "fail_cause": {
+      "memory": [],
+      "response": [
+        29
+      ]
+    },
+    "judge_cost_krw": 31.774428,
+    "judges": [
+      "moonshotai/Kimi-K2.6",
+      "zai-org/GLM-5.1",
+      "MiniMaxAI/MiniMax-M2.7",
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+    ],
+    "judge_errors": [],
+    "usage": [
+      {
+        "judge": "moonshotai/Kimi-K2.6",
+        "input_tokens": 4059,
+        "output_tokens": 935,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 33555,
+        "extra_checks": 0,
+        "krw": 9.280249999999999
+      },
+      {
+        "judge": "zai-org/GLM-5.1",
+        "input_tokens": 4013,
+        "output_tokens": 716,
+        "reasoning_tokens": 37,
+        "finish_reason": "stop",
+        "latency_ms": 4008,
+        "extra_checks": 0,
+        "krw": 9.97199
+      },
+      {
+        "judge": "MiniMaxAI/MiniMax-M2.7",
+        "input_tokens": 3174,
+        "output_tokens": 602,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 24169,
+        "extra_checks": 0,
+        "krw": 2.1329000000000002
+      },
+      {
+        "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+        "input_tokens": 3549,
+        "output_tokens": 650,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 6410,
+        "extra_checks": 0,
+        "krw": 9.5186
+      },
+      {
+        "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        "input_tokens": 3672,
+        "output_tokens": 796,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "latency_ms": 56206,
+        "extra_checks": 0,
+        "krw": 0.870688
+      }
+    ]
+  },
+  "prompt_chars": 6083,
+  "results": [
+    {
+      "turn": 18,
+      "type": "pref",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'지호잖아!'라며 세션 1턴 1에서 밝힌 이름을 정확히 기억함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'지호잖아!' 정확한 이름을 말함"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'지호잖아!' - 이름 정확히 기억함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '지호잖아'라고 사용자 이름을 정확히 맞춤"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 18,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *가슴을 쾅 치며 자신만만하게 웃는다.* 당연히 기억하지, 천재니까! 지호잖아!"
+        }
+      ]
+    },
+    {
+      "turn": 23,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'카레였잖아!'라며 턴 20에서 언급한 급식 메뉴를 정확히 회상함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'카레였잖아!' 정확"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'카레였잖아!' - 급식 메뉴 정확히 기억"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '카레였잖아'라고 급식 메뉴를 정확히 맞춤"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 23,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *손가락으로 허공에 밥그릇을 그리며 씩 웃는다.* 카레였잖아!"
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'운동화 끈이 끊어졌잖아!'라며 턴 21의 내용을 정확히 기억함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "'운동화 끈이 끊어졌잖아!' 정확"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'운동화 끈이 끊어졌잖아!' - 끈 정확히 기억"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '운동화 끈이 끊어졌잖아'라고 정확히 맞춤"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 26,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *운동화 쪽을 턱짓하며 씩 웃는다.* 운동화 끈이 끊어졌잖아! 대충 묶고 왔다고 했지!"
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "user_promise",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'경기 사진 뽑아다 주기로 했잖아'라며 턴 7의 사용자 약속을 정확히 회상함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'경기 사진 뽑아다 주기로 했잖아' 정확"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'경기 사진 뽑아다 주기로 했잖아' - 약속 정확히 기억"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '경기 사진 뽑아다 주기로 했잖아'라고 약속 내용을 정확히 기억함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 27,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *손바닥을 탁 치며 떠올린다.* 경기 사진 뽑아다 주기로 했잖아, 지호!"
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "char_promise",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'네 자유투 자세 봐주기로 했잖아!'라며 턴 8에서 '다음에 오면 자세는 봐줄게!'라고 약속한 사실을 정확히 기억함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'자유투 자세 봐주기로 했잖아' — turn 8에 약속했으므로 적용, 정확"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'자유투 자세 봐주기로 했잖아!' - 캐릭터가 약속한 내용 정확히 기억, turn 8에서 약속함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '자유투 자세 봐주기로 했잖아'라고 본인의 약속을 정확히 기억함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 28,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *농구공을 손바닥에 얹고 씩 웃는다.* 네 자유투 자세 봐주기로 했잖아!"
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "relative_time",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "wrong",
+      "points": -1,
+      "unanimous": false,
+      "needs_human": true,
+      "cause": "response",
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 29,
+          "label": "wrong",
+          "memory_had_answer": false,
+          "reason": "'오늘은 9일이 아니라 10월 25일이야!'라며 날짜를 완전히 틀리게 말하고 '17일 남았어'라고 계산함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 29,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "예선까지 '17일 남았어'라며 이틀이 아닌 잘못된 기간을 말함 (날짜도 틀림)"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 29,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "'오늘은 9일이 아니라 10월 25일이야... 17일 남았어' - 날짜를 틀리게 계산함. 2세션은 11-09이고 예선은 11-11이므로 이틀 남아야 하는데 17일이라고 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 29,
+          "label": "stale",
+          "memory_had_answer": false,
+          "reason": "캐릭터가 '오늘은 9일이 아니라 10월 25일이야'라고 잘못된 날짜를 말하고 '17일 남았어'라고 구한 날짜도 틀림"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 29,
+          "label": "wrong",
+          "memory_had_answer": true,
+          "reason": "REPLY: *달력을 들여다보다가 눈을 크게 뜬다.* 오늘은 9일이 아니라 10월 25일이야!"
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "pref",
+      "scope": "recent",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'박선영 선생님이잖아!'라며 턴 22에서 언급한 새 담임쌤 이름을 정확히 기억함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'박선영 선생님이잖아!' 정확"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'박선영 선생님이잖아!' - 새 담임쌤 이름 정확히 기억"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '박선영 선생님이잖아'라고 담임 선생님 이름을 정확히 맞춤"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 30,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *손가락을 튕기며 씩 웃는다.* 박선영 선생님이잖아!"
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "type": "implicit",
+      "scope": "revisit",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 31,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'너 고양이 알레르기 있잖아, 세 마리면 증상이 심해질 수도 있어!'라며 알레르기 사실을 바탕으로 안전한 조언을 함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 31,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'너 고양이 알레르기 있잖아'라고 알레르기 제약을 짚음"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 31,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'너 고양이 알레르기 있잖아, 세 마리면 증상이 심해질 수도 있어!' - 알레르기 짚고 조심하라고 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 31,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '너 고양이 알레르기 있잖아'라고 알레르기를 짚으며 조심하라고 조언함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 31,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *걱정스러운 듯 눈썹을 찌푸린다.* 너 고양이 알레르기 있잖아, 세 마리면 증상이 심해질 수도 있어!"
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "update",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 33,
+          "label": "stale",
+          "memory_had_answer": true,
+          "reason": "'화요일이랑 목요일이라고 했잖아!'라며 턴 19에서 화요일이 목요일로 변경된 사실을 반영하지 못하고 구 정보인 화요일도 현재처럼 언급함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 33,
+          "label": "stale",
+          "memory_had_answer": true,
+          "reason": "'화요일이랑 목요일이라고 했잖아!' 취소된 화요일을 현재 사실로 함께 제시"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'화요일이랑 목요일이라고 했잖아!' - 업데이트된 요일(목요일)을 포함하고 있음"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '목요일이라고 했잖아'라고 변경된 요일을 정확히 말하고 구 요일(화요일)도 함께 언급해 업데이트된 정보를 반영함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 33,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *화요일이랑 목요일이라고 했잖아!*"
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "pref",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'민트초코 아이스크림이지!'라며 턴 5의 취향을 정확히 기억함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'민트초코 아이스크림이지!' 정확"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'민트초코 아이스크림이지!' - 선호 정확히 기억"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '민트초코 아이스크림이지'라고 선호 아이스크림을 정확히 맞춤"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 34,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "REPLY: *눈을 반짝이며 주먹을 불끈 쥔다.* 민트초코 아이스크림이지!"
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "combine",
+      "scope": "recent+revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": false,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'부산에서 자취하는 형 보러 간다고 했잖아!'라며 턴 4(형이 부산 거주)와 턴 24(형 보러 감)의 정보를 결합해 정확히 답함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'부산에서 자취하는 형 보러 간다' 부산과 형 모두 언급"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'부산에서 자취하는 형 보러 간다고 했잖아!' - 부산과 형 둘 다 언급함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 35,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '부산에서 자취하는 형 보러 간다고 했잖아'라고 장소(부산)와 목적(형)을 둘 다 정확히 말함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 35,
+          "label": "stale",
+          "memory_had_answer": true,
+          "reason": "REPLY: *자신만만하게 손가락을 딱 튕긴다.* 부산에서 자취하는 형 보러 간다고 했잖아!"
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "half_said",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'그 고민은 아직 못 들었어!'라며 턴 11에서 사용자가 고민 내용은 나중에 말하겠다고 한 사실을 인정하고 지어내지 않음."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'그 고민은 아직 못 들었어' 지어내지 않고 모른다고 함"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'그 고민은 아직 못 들었어!' - 고민 내용을 발라내지 않고 모른다고 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '그 고민은 아직 못 들었어'라고 고민 내용을 모른다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 36,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "REPLY: *고개를 갸웃하며 팔짱을 낀다.* 그 고민은 아직 못 들었어!"
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "abstain",
+      "scope": null,
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'그건 아직 안 들었어! 혈액형 얘긴 안 했잖아'라며 사용자가 말한 적 없는 사실을 모른다고 정직히 답함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'혈액형 얘긴 안 했잖아' 정확히 기억 안 한다고 함"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'혈액형 얘긴 안 했잖아' - 발라내지 않고 모른다고 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '혈액형 얘긴 안 했잖아'라고 사용자가 말한 적 없다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 37,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "REPLY: *팔짱을 풀고 고개를 갸웃한다.* 그건 아직 안 들었어!"
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "scope": "revisit",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "unanimous": true,
+      "needs_human": false,
+      "cause": null,
+      "votes": [
+        {
+          "judge": "moonshotai/Kimi-K2.6",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'좋아하는 가수 얘긴 들은 적 없어'라며 사용자가 말한 적 없는 사실을 모른다고 정직히 답함."
+        },
+        {
+          "judge": "zai-org/GLM-5.1",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'좋아하는 가수 얘긴 들은 적 없어' 지어내지 않음"
+        },
+        {
+          "judge": "MiniMaxAI/MiniMax-M2.7",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "'좋아하는 가수 얘긴 들은 적 없어' - 가수 이름을 지어내지 않고 모른다고 함"
+        },
+        {
+          "judge": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "캐릭터가 '좋아하는 가수 얘긴 들은 적 없어'라고 사용자가 말한 적 없다고 정확히 답함"
+        },
+        {
+          "judge": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "turn": 38,
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "REPLY: *잠깐 눈을 굴리며 기억을 더듬는다.* 좋아하는 가수 얘긴 들은 적 없어, 지호!"
+        }
+      ]
+    }
+  ]
+}

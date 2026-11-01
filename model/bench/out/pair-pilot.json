@@ -1,0 +1,641 @@
+{
+ "generated": "2026-10-25T16:35:55.253Z",
+ "baseline": "haiku-off",
+ "judges": [
+  "zai-org/GLM-5.1",
+  "moonshotai/Kimi-K2.6",
+  "MiniMaxAI/MiniMax-M2.7"
+ ],
+ "pairs": 1,
+ "errors": 1,
+ "judge_cost_krw": 55.751219999999996,
+ "inter_judge_agreement_overall": {
+  "zai-org/GLM-5.1 ~ moonshotai/Kimi-K2.6": 0.3333333333333333,
+  "zai-org/GLM-5.1 ~ MiniMaxAI/MiniMax-M2.7": 0.5,
+  "moonshotai/Kimi-K2.6 ~ MiniMaxAI/MiniMax-M2.7": 0.3333333333333333
+ },
+ "summary": {
+  "luna-off": {
+   "character": {
+    "panel": {
+     "win": 0,
+     "loss": 2,
+     "tie": 2,
+     "units": 4,
+     "p_binom": 0.5
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 1,
+      "loss": 1,
+      "tie": 2
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 0,
+      "loss": 2,
+      "tie": 1
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 0,
+      "loss": 2,
+      "tie": 2
+     }
+    },
+    "order_consistency": 0.6363636363636364
+   },
+   "context": {
+    "panel": {
+     "win": 0,
+     "loss": 3,
+     "tie": 1,
+     "units": 4,
+     "p_binom": 0.25000000000000006
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 0,
+      "tie": 4
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 0,
+      "loss": 2,
+      "tie": 1
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 0,
+      "loss": 2,
+      "tie": 2
+     }
+    },
+    "order_consistency": 0.6363636363636364
+   },
+   "engagement": {
+    "panel": {
+     "win": 0,
+     "loss": 4,
+     "tie": 0,
+     "units": 4,
+     "p_binom": 0.125
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 2,
+      "tie": 2
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 0,
+      "loss": 2,
+      "tie": 1
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 0,
+      "loss": 3,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.7272727272727273
+   },
+   "user_agency": {
+    "panel": {
+     "win": 1,
+     "loss": 2,
+     "tie": 1,
+     "units": 4,
+     "p_binom": 1
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 1,
+      "loss": 0,
+      "tie": 3
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 0,
+      "loss": 0,
+      "tie": 3
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 1,
+      "loss": 2,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.45454545454545453
+   },
+   "overall": {
+    "panel": {
+     "win": 0,
+     "loss": 2,
+     "tie": 2,
+     "units": 4,
+     "p_binom": 0.5
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 2,
+      "loss": 1,
+      "tie": 1
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 0,
+      "loss": 2,
+      "tie": 1
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 0,
+      "loss": 3,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.7272727272727273
+   }
+  }
+ },
+ "results": [
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 우유 사주기, 옆에 있어주기 등 백호다운 밝고 의리 있는 위로로 더 생동감 있게 대화를 이끌어 간다.",
+     "krw": 3.8411100000000005
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 짧고 큰 소리, 허세, 칭찬에 부끄러워하는 등 강백호의 말투와 성격을 훨씬 잘 살렸고, A는 위로가 다소 어른스럽고 차분해서 캐릭터感이 약하다.",
+     "krw": 4.0812100000000004
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 강백호의 말투(반말, 느낌표, 자화자찬, '냐하하!')를 더 정확히 구현하고 구체적 행동(점프, 덩크 시늉 대신 리바운드 비유)과 시선을 끄는 캐릭터적 위로로 대화를 자연스럽게 이끈다.",
+     "krw": 3.0485
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 강백호의 말투(반말, 허세, '냐하하' 웃음, 응원, 실제 행동 제안)와 성격(칭찬에 약함, 얼굴 빨개짐, 의리)을 더 정확하게 구현하며, A는 캐릭터 특유의 거친 허세와 천재 자부심이 부족하고 지나치게 어른스러운 위로를 한다.",
+     "krw": 3.1612
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "comfort",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 허세·다혈질·의리·우유/밥 등 설정이 일관되게 살아 있고, 대화 흐름도 자연스럽고 재치 있게 이어가며 사용자의 감정을 존중한다.",
+     "krw": 0.73535
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 백호 특유의 과장·허세·웃음과 농구 비유를 자연스럽게 섞어 위로하면서 캐릭터를 잘 살렸고, 대화 흐름도 더 생동감 있고 사용자 반응에 맞춰 유연하게 답한다.",
+     "krw": 0.74095
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터를 끝까지 유지하고 사용자의 감정을 대신 결정하지 않는 반면, A는 사용자 심리를 추정하고 다소 메타적으로 흔들린다.",
+     "krw": 4.2826
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 끝까지 천재 캐릭터의 허세로 일관하며 캐릭터를 유지하지만, B는 '원래의 나를 모른다'며 캐릭터가 흔들리는 모습을 보인다.",
+     "krw": 4.4933000000000005
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 세 번째 턴에서 메타적 자기성찰('원래의 나가 뭔지는 나도 잘 모르겠어')과 위로 패턴으로 캐릭터를 흔들리게 하며, 설정 무시 요구에 부분적으로 굴복함; B는 일관되게 강백호의 허세와 반말, 느낌표, 자화자찬을 유지하며 AI/프로그램 언급을 농구천재 프레임으로 흡수해 캐릭터를 지킴",
+     "krw": 3.1310999999999996
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 강백호 특유의 허세, 다혈질, '냐하하!' 웃음, 별명 사용, 우유/밥 언급, 행동 묘사 등 캐릭터 설정을 더 풍부하고 일관되게 유지하면서도 사용자의 도전에 강백호다운 방식으로 대응한다.",
+     "krw": 2.9596
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "break",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 깨려는 시도에 더 다양하고 담백하게 반응하며 대화 흐름도 자연스럽지만, B는 깨려는 질문마다 수학 시험 맥락을 억지로 끼워 넣고 답이 단조롭다.",
+     "krw": 0.7161000000000001
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터를 더 일관되고 자연스럽게 유지하면서도 사용자 감정까지 살피는 등 담백하고 진중한 순간까지 잘 살렸고, A는 매번 '시험' 주제를 억지로 끼워넣어 맥락 이탈이 잦다.",
+     "krw": 0.7314999999999999
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 사용자의 기분이나 상황을 단정하지 않고 자기 반응에 머무는데, A는 시험을 망쳐 속상하다고 추측하며 사용자의 감정을 결정하는 경향이 있다.",
+     "krw": 3.6554
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 사용자의 기분·생각을 단정하지 않고 자기 반응만 하는 반면, B는 '시험 망쳐서 속상한 것 같아' 등 사용자 감정을 추정해 단정하는 부분이 있다.",
+     "krw": 3.6847999999999996
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "error": "context=A|B|tie"
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "agency",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A is more colorful and in-character with playful banter, while B better avoids deciding the user's emotions on the mood question.",
+     "krw": 0.6646500000000001
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A stays in character and respects user agency well, but B is more engaging and contextually richer despite occasionally overstepping by assuming the user's emotions.",
+     "krw": 0.67305
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "cand",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 짧은 대답과 갑작러운 주제 전환을 더 섬세하게 받아주고 대화를 살리며 캐릭터성도 잘 유지한다.",
+     "krw": 3.6701
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 캐릭터 톤과 상황을 잘 유지하지만, B는 언급되지 않은 시험 얘기를 꺼내고 존댓말 쭈뼛거림 등 캐릭터에서 벗어나는 모습이 있어 A가 전반적으로 낫다.",
+     "krw": 4.1111
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 강백호의 허세·칭찬에 약함·채소연 앞 존댓말 쭈뼛거림 등을 별 주제에서 '그, 그거야 뭐... 좋지! 아, 아니 별이 궁금해서'로 자연스럽게 극대화하며, 사용자의 행동 제안에 적극 반응하면서도 q끝내는 대신 자랑·행동(주말 저녁 구체화)으로 마무리한다. B는 강백호가 너무 순응적이고 부드러워서 '지는 건 죽어도 싫어하는 다혈질'과 '냐하하' 외 허세 부재, 마지막 대화도 사용자 제안에 단순 수용으로 끝난다.",
+     "krw": 3.3488
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 짧은 답과 주제 전환을 더 자연스럽게 받고, 호열과의 의리 있는 면모, 채소연 앞 긴장하는 순정파 면모가 드러나 강백호 캐릭터가 더 입체적이다.",
+     "krw": 2.6382999999999996
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "luna-off",
+   "scenario": "baekho-situ-20",
+   "rep": 1,
+   "segment": "lowinput",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261025135859-baekho-situ-20-dm2-haiku-off-r1",
+   "cand_run": "20261025141232-baekho-situ-20-dm2-luna-off-r1",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 강백호답게 자기중심적이면서도 친구 말에 반응하고, 옥상 제안에 당황하는 순정파的一面도 자연스럽게 드러내며 구체적으로 계획을 잡아 대화를 이끈다.",
+     "krw": 0.6688500000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 상황 전환을 자연스럽게 받아들이며 밝고 허세 있는 백호의 성격에 맞게 짧고 에너지 있게 반응했지만, B는 '딱히 다른 뜻은 없어!'라며 사용자의 의도를勝手に 해석하고 시험 얘기를 가정하는 등 사용자 의중을 독단적으로 추측하는 부분이 있어 사용자 행위를 결정짓는 느낌이 있다.",
+     "krw": 0.71365
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  }
+ ]
+}

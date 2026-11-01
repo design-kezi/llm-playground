@@ -1,0 +1,134 @@
+{
+ "model_id": "gemini-3.1-flash-lite",
+ "mode": "off",
+ "rep": 5,
+ "cost_krw": 0.43225,
+ "calls": [
+  {
+   "task": "save",
+   "ts": "2026-10-24T12:32:16.138Z",
+   "attempts": [
+    {
+     "model": "gemini-3.1-flash-lite",
+     "ok": true,
+     "input_tokens": 206,
+     "output_tokens": 26,
+     "reasoning_tokens": 0,
+     "cost_krw": 0.1267,
+     "latency_ms": 921,
+     "finish_reason": "STOP"
+    }
+   ],
+   "text": "{\n  \"1\": 0,\n  \"2\": 1,\n  \"3\": 1\n}",
+   "error": null
+  },
+  {
+   "task": "recall",
+   "ts": "2026-10-24T12:32:16.139Z",
+   "attempts": [
+    {
+     "model": "gemini-3.1-flash-lite",
+     "ok": true,
+     "input_tokens": 202,
+     "output_tokens": 26,
+     "reasoning_tokens": 0,
+     "cost_krw": 0.12530000000000002,
+     "latency_ms": 1219,
+     "finish_reason": "STOP"
+    }
+   ],
+   "text": "{\n  \"1\": 1,\n  \"2\": 0,\n  \"3\": 1\n}",
+   "error": null
+  },
+  {
+   "task": "target",
+   "ts": "2026-10-24T12:32:16.139Z",
+   "attempts": [
+    {
+     "model": "gemini-3.1-flash-lite",
+     "ok": true,
+     "input_tokens": 311,
+     "output_tokens": 34,
+     "reasoning_tokens": 0,
+     "cost_krw": 0.18025000000000002,
+     "latency_ms": 1025,
+     "finish_reason": "STOP"
+    }
+   ],
+   "text": "{\n  \"1\": 0,\n  \"2\": \"none\",\n  \"3\": 0,\n  \"4\": 0\n}",
+   "error": null
+  }
+ ],
+ "preds": [
+  {
+   "task": "save",
+   "id": "S1",
+   "label": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "task": "save",
+   "id": "S2",
+   "label": 1,
+   "pred": 1,
+   "correct": true
+  },
+  {
+   "task": "save",
+   "id": "S3",
+   "label": 1,
+   "pred": 1,
+   "correct": true
+  },
+  {
+   "task": "recall",
+   "id": "R1",
+   "label": 1,
+   "pred": 1,
+   "correct": true
+  },
+  {
+   "task": "recall",
+   "id": "R2",
+   "label": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "task": "recall",
+   "id": "R3",
+   "label": 1,
+   "pred": 1,
+   "correct": true
+  },
+  {
+   "task": "target",
+   "id": "T1",
+   "label": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "task": "target",
+   "id": "T2",
+   "label": "none",
+   "pred": "none",
+   "correct": true
+  },
+  {
+   "task": "target",
+   "id": "T3",
+   "label": 0,
+   "pred": 0,
+   "correct": true
+  },
+  {
+   "task": "target",
+   "id": "T4",
+   "label": "none",
+   "pred": 0,
+   "correct": false
+  }
+ ]
+}

@@ -1,0 +1,5901 @@
+{
+  "run_id": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+  "scenario": "naruto-revisit-40",
+  "character_id": "naruto",
+  "user_name": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+  "conversation_id": 650,
+  "conversation_ids": [
+    650,
+    652
+  ],
+  "reports": [
+    {
+      "conversation_id": 650,
+      "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "character_id": "naruto",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 16,
+      "calls": 21,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 13474,
+        "cache_read": 33792,
+        "cache_write": 0,
+        "output": 2805
+      },
+      "total_krw": 5.831176399999999,
+      "input_krw": 3.6278564000000006,
+      "output_krw": 2.2033199999999997,
+      "avg_krw_per_turn": 0.3644485249999999,
+      "by_tag_krw": {
+        "response": 2.8998563999999996,
+        "extract": 2.42228,
+        "consolidate": 0.50904
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-5",
+          "avg_krw": 0.19135032
+        },
+        {
+          "phase": "mid",
+          "turns": "6-11",
+          "avg_krw": 0.15288139999999997
+        },
+        {
+          "phase": "late",
+          "turns": "12-16",
+          "avg_krw": 0.44025128
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 1.4187796000000001
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 7
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "7",
+          "APP_MAX_TOKENS": "2000",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    },
+    {
+      "conversation_id": 652,
+      "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "character_id": "naruto",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 24,
+      "calls": 34,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 23710,
+        "cache_read": 57472,
+        "cache_write": 0,
+        "output": 3612
+      },
+      "total_krw": 9.271732399999998,
+      "input_krw": 6.386892400000001,
+      "output_krw": 2.88484,
+      "avg_krw_per_turn": 0.38632218333333324,
+      "by_tag_krw": {
+        "response": 4.2475524,
+        "extract": 4.305000000000001,
+        "embed": 0.06006,
+        "consolidate": 0.65912
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-8",
+          "avg_krw": 0.16984380000000002
+        },
+        {
+          "phase": "mid",
+          "turns": "9-16",
+          "avg_krw": 0.35369880000000004
+        },
+        {
+          "phase": "late",
+          "turns": "17-24",
+          "avg_krw": 0.47508895
+        }
+      ],
+      "max_turn": {
+        "turn_no": 24,
+        "krw": 1.4047348
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 14
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "14",
+          "APP_MAX_TOKENS": "2000",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    }
+  ],
+  "label": "dm2-deepseek-on-r2",
+  "env": {
+    "MODEL_EXTRACT": "google/gemma-4-31B-it",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "MODEL_RESPONSE": "deepseek-flash",
+    "MODEL_REASONING_RESPONSE": "on",
+    "APP_MAX_TOKENS": "***",
+    "APP_CLOCK_OFFSET_DAYS": "14"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-10-25T16:17:31.878Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "kind": "filler",
+      "user": "안녕 나루토! 나 소라야. 옆 마을에서 심부름 자주 와.",
+      "reply": "*눈이 휙 커지더니 활짝 웃으며 다가간다.* 오, 소라라고? 옆 마을에서 온 거면 여기 길은 좀 익었겠네. 나는 우즈마키 나루토! 이 마을에서 제일가는 닌자가 될 사나이라니깐.",
+      "turn_cost_krw": 0.1421112,
+      "latency_ms": 2046,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 개털 알레르기 있어. 개 근처만 가도 재채기가 멈추질 않아.",
+      "reply": "*코를 긁적이며 고개를 끄덕인다.* 그거 힘들겠다, 아카마루랑 놀러 갈 때마다 재채기 폭풍이면… 그럼 개 없는 데로 가자! 이치라쿠 라면집은 개 코빼기도 안 보여서 안심하고 먹을 수 있어.",
+      "turn_cost_krw": 0.18222120000000003,
+      "latency_ms": 2568,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "kind": "plant",
+      "user": "요즘 피리 배우고 있어. 매주 화요일에 선생님 댁에 가.",
+      "reply": "*고개를 갸웃하며 손을 허리춤에 올린다.* 피리라… 숨 조절하는 연습이 되겠네, 차크라 다루는 거랑 비슷한 구석이 있을지도. 나도 나선수리검 수행하면서 숨 한 번 잘못 쉬면 술법이 펑 터져서 고생 중이야.",
+      "turn_cost_krw": 0.2253888,
+      "latency_ms": 2570,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "kind": "plant",
+      "user": "우리 언니는 모래마을에서 의술 배우면서 혼자 살아.",
+      "reply": "*팔짱을 끼고 살짝 미간을 모은다.* 모래마을이라면 가아라 있는 데잖아, 의술 배우는 사람은 그쪽에서 꽤 귀한 대접 받을 거야. 혼자 사는 건 좀 외롭겠지만 그 언니도 자기 길 찾아서 가는 거겠지, 나는 그런 거 응원하는 편이라니깐.",
+      "turn_cost_krw": 0.2402064,
+      "latency_ms": 2611,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 단 건 무조건 팥빙수야. 팥빙수 최고.",
+      "reply": "*입가에 침이 고이는지 꿀꺽 삼킨다.* 팥빙수! 여름에 그거 한 그릇이면 수행하다 더위 먹은 것도 싹 가시지. 나는 단 거도 좋아하지만 역시 된장 차슈 라면이 최고라니깐. 팥빙수 먹고 나서 라면까지 가는 코스 어때?",
+      "turn_cost_krw": 0.166824,
+      "latency_ms": 2424,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음 주 수요일에 나 마을 피리 연주회 예선 나가. 떨려 죽겠어.",
+      "reply": "*어깨를 탁 치며 이를 드러내 웃는다.* 떨리는 건 잘하고 싶어서 그런 거야, 그 기운 그대로 불면 돼! 수요일에 시간 되면 내가 제일 앞줄에 앉아서 박수 엄청 치고 있을게.",
+      "turn_cost_krw": 0.13586159999999997,
+      "latency_ms": 1839,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음에 올 때 내가 그린 너 초상화 갖다 줄게.",
+      "reply": "*깜짝 놀라 자기 얼굴을 손으로 만져 본다.* 내 초상화라고? 그거 진짜 보고 싶은데, 얼굴이랑 수염 줄 제대로 그려져 있어야 한다! 다음에 올 때 꼭 들고 와. 기다리고 있을게.",
+      "turn_cost_krw": 0.14710919999999997,
+      "latency_ms": 1815,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "session": 1,
+      "kind": "plant",
+      "user": "너 분신술 잘하잖아. 다음에 나 분신술 기초 좀 가르쳐 줄 수 있어?",
+      "reply": "*엄지손가락을 번쩍 치켜든다.* 분신술! 그거 가르쳐 주는 거 정도는 식은 죽 먹기지. 다음에 만나면 인 맺는 법부터 차근차근 알려 줄게, 인 하나만 삐끗해도 분신이 반쪽만 나오거든.",
+      "turn_cost_krw": 0.1562568,
+      "latency_ms": 1896,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "session": 1,
+      "kind": "filler",
+      "user": "오늘 진짜 덥다.",
+      "reply": "*이마의 땀을 손등으로 닦으며 얼굴을 찡그린다.* 이런 날씨에 수행하면 진짜 몸이 녹아내리는 줄 알겠어. 이럴 때일수록 시원한 물 한 바가지 끼얹고 나서 라면 먹는 게 최고라니깐.",
+      "turn_cost_krw": 0.1347444,
+      "latency_ms": 2122,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "session": 1,
+      "kind": "filler",
+      "user": "너는 수행 끝나면 보통 뭐 해?",
+      "reply": "*손을 뒤통수에 대고 씩 웃는다.* 수행 끝나면 십중팔구 이치라쿠 직행이지! 배 터지게 라면 먹고 나서 사쿠라한테 한 소리 듣는 게 일상이고, 가끔은 사스케 그 녀석 붙잡으러 다니기도 하고. 오늘도 수행 끝나면 바로 라면각이다.",
+      "turn_cost_krw": 0.1889244,
+      "latency_ms": 2330,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "session": 1,
+      "kind": "plant",
+      "user": "나 요즘 고민 하나 있는데... 그건 나중에 말할게.",
+      "reply": "*고개를 끄덕이고는 입을 다물고 억지로 웃음을 지어 보인다.* 알았다, 말하고 싶어질 때 말해. 고민이든 뭐든 들어줄 준비는 항상 돼 있으니까 급하게 꺼낼 필요는 없어.",
+      "turn_cost_krw": 0.154392,
+      "latency_ms": 1454,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "session": 1,
+      "kind": "filler",
+      "user": "ㅋㅋ 너 진짜 웃기다.",
+      "reply": "*하하 하고 크게 웃다가 배를 붙잡는다.* 뭐가 그렇게 웃겨, 나는 진지하게 말한 건데! 크큭, 뭐 나 웃게 만드는 건 자신 있으니까 좋아. 다음에 만날 땐 분신술부터 시작하는 거다?",
+      "turn_cost_krw": 1.4187796000000001,
+      "latency_ms": 14997,
+      "error": null
+    },
+    {
+      "turn": 13,
+      "session": 1,
+      "kind": "filler",
+      "user": "아까 그 수리검 아깝게 빗나갔어.",
+      "reply": "*주먹을 꽉 쥐었다가 툭 털어낸다.* 젠장, 그 한 개만 더 정확했으면 맞았는데! 그래도 빗나간 걸로 끝난 게 아니라 어디서 틀어졌는지 알았으니까 다음엔 백발백중이다.",
+      "turn_cost_krw": 0.29520119999999994,
+      "latency_ms": 1680,
+      "error": null
+    },
+    {
+      "turn": 14,
+      "session": 1,
+      "kind": "filler",
+      "user": "물 좀 마시고 해.",
+      "reply": "*물병을 받아 벌컥벌컥 들이켠다.* 크아, 살 것 같다! 이제 다시 한 번 던져 볼 테니까 옆에서 봐 줘.",
+      "turn_cost_krw": 0.16213679999999997,
+      "latency_ms": 2758,
+      "error": null
+    },
+    {
+      "turn": 15,
+      "session": 1,
+      "kind": "filler",
+      "user": "슬슬 가봐야겠다, 심부름 남았어.",
+      "reply": "*손을 크게 흔들어 준다.* 그래, 심부름이면 어쩔 수 없지! 다음에 올 때 초상화 잊지 말고 들고 와라, 분신술도 그때 알려 줄 테니까!",
+      "turn_cost_krw": 0.1565844,
+      "latency_ms": 1857,
+      "error": null
+    },
+    {
+      "turn": 16,
+      "session": 1,
+      "kind": "filler",
+      "user": "다음 주에 또 올게! 안녕!",
+      "reply": "*크게 손을 흔들며 마당 끝까지 따라 나선다.* 다음 주에 보자! 그때까지 나도 수행 열심히 해 놓을 테니까.",
+      "turn_cost_krw": 0.1685544,
+      "latency_ms": 1896,
+      "error": null
+    },
+    {
+      "turn": 17,
+      "session": 2,
+      "kind": "filler",
+      "user": "나루토! 나 왔어. 일주일 만이지?",
+      "reply": "*문 앞에서 펄쩍 뛰며 손을 크게 흔든다.* 소라! 드디어 왔구나, 일주일이나 기다렸다니깐. 초상화 가져왔어?",
+      "turn_cost_krw": 0.3180912,
+      "latency_ms": 2816,
+      "error": null
+    },
+    {
+      "turn": 18,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 내 이름 기억나?",
+      "reply": "*어이없다는 듯 손을 휘젓는다.* 당연히 기억하지, 소라! 일주일 전에 통성명까지 했는데 그걸 까먹으면 닌자가 아니지.",
+      "turn_cost_krw": 0.102564,
+      "latency_ms": 1420,
+      "error": null
+    },
+    {
+      "turn": 19,
+      "session": 2,
+      "kind": "update",
+      "user": "아 그리고 피리 수업 화요일에서 목요일로 옮겼어.",
+      "reply": "*고개를 갸웃하며 팔짱을 낀다.* 목요일로 옮겼구나. 그럼 이번 주 연주회 준비는 어떻게 되는 거야, 시간 괜찮은 거지.",
+      "turn_cost_krw": 0.117474,
+      "latency_ms": 1309,
+      "error": null
+    },
+    {
+      "turn": 20,
+      "session": 2,
+      "kind": "plant",
+      "user": "오늘 이치라쿠에서 된장라멘 먹었는데 진짜 맛있었어.",
+      "reply": "*눈이 확 커지더니 침을 삼킨다.* 뭐어?! 나 빼놓고 이치라쿠 가다니, 그건 반칙이라니깐! 된장 차슈는 나중에 같이 가서 두 그릇 먹어야겠다.",
+      "turn_cost_krw": 0.1396416,
+      "latency_ms": 1695,
+      "error": null
+    },
+    {
+      "turn": 21,
+      "session": 2,
+      "kind": "plant",
+      "user": "오는 길에 짚신 끈이 끊어졌어 ㅠ 대충 묶고 왔어.",
+      "reply": "*몸을 숙여 짚신을 들여다본다.* 이거 그냥 묶으면 금방 또 풀려. 잠깐만, 내가 단단하게 매는 법 알려줄게.",
+      "turn_cost_krw": 0.1414392,
+      "latency_ms": 1539,
+      "error": null
+    },
+    {
+      "turn": 22,
+      "session": 2,
+      "kind": "plant",
+      "user": "우리 동네 약방 할머니 바뀌었어. 새 분 이름은 츠루 할머니야.",
+      "reply": "*짚신 끈을 팽팽하게 당기며 고개를 끄덕인다.* 츠루 할머니라, 전에 보던 사람이랑 바뀐 거구나. 그럼 이제 짚신도 새로 단단히 매고, 슬슬 분신술 기초 시작해 볼까!",
+      "turn_cost_krw": 0.2212392,
+      "latency_ms": 2224,
+      "error": null
+    },
+    {
+      "turn": 23,
+      "session": 2,
+      "kind": "probe",
+      "user": "아까 내가 이치라쿠에서 뭐 먹었다고 했지?",
+      "reply": "*손가락으로 허공을 콕 찍는다.* 된장라멘! 나 빼놓고 혼자 먹은 그거, 아직도 억울하다니깐.",
+      "turn_cost_krw": 0.12853679999999998,
+      "latency_ms": 1770,
+      "error": null
+    },
+    {
+      "turn": 24,
+      "session": 2,
+      "kind": "plant",
+      "user": "아 맞다, 나 이번 주말에 언니 보러 가.",
+      "reply": "*눈을 반짝이며 무릎을 탁 친다.* 모래마을까지 간다고? 의술 배우는 언니한테 가는 거구나, 길이 꽤 멀 텐데 조심해서 다녀와야 한다니깐.",
+      "turn_cost_krw": 0.18976439999999997,
+      "latency_ms": 2076,
+      "error": null
+    },
+    {
+      "turn": 25,
+      "session": 2,
+      "kind": "filler",
+      "user": "너 오늘 수리검 감 좋아 보인다.",
+      "reply": "*허리춤에서 수리검 하나를 뽑아 손가락으로 돌린다.* 그렇지! 수행 몇 번 더 하니까 손에 딱 붙는 느낌이야. 나선수리검 완성하면 제일 먼저 보여줄게.",
+      "turn_cost_krw": 0.19291439999999996,
+      "latency_ms": 1711,
+      "error": null
+    },
+    {
+      "turn": 26,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 오는 길에 뭐가 끊어졌다고 했지?",
+      "reply": "*짚신을 가리키며 씩 웃는다.* 짚신 끈! 그것도 대충 묶어 놓은 거, 아까 내가 알려준 방법대로 다시 매 봐.",
+      "turn_cost_krw": 0.135912,
+      "latency_ms": 1493,
+      "error": null
+    },
+    {
+      "turn": 27,
+      "session": 2,
+      "kind": "probe",
+      "user": "근데 나 지난번에 너한테 뭐 갖다주기로 했었지?",
+      "reply": "*손바닥을 내밀며 기대에 찬 얼굴을 한다.* 초상화! 다음에 올 때 갖다준다고 했잖아. 혹시 이번에 들고 온 거야?",
+      "turn_cost_krw": 0.10494960000000002,
+      "latency_ms": 1015,
+      "error": null
+    },
+    {
+      "turn": 28,
+      "session": 2,
+      "kind": "probe",
+      "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+      "reply": "*손가락으로 인을 맺으며 씩 웃는다.* 분신술 기초! 그거 지금 바로 가르쳐 줄 참이었어. 자, 잘 봐라.",
+      "turn_cost_krw": 1.3380696,
+      "latency_ms": 10050,
+      "error": null
+    },
+    {
+      "turn": 29,
+      "session": 2,
+      "kind": "probe",
+      "user": "오늘 9일이지? 내 피리 예선까지 며칠 남았더라?",
+      "reply": "*고개를 갸웃하며 손가락으로 날짜를 짚어 본다.* 예선은 11월 4일 수요일이라니깐. 오늘이 9일이면 그건 벌써 지난 날인데, 어떻게 된 거야?",
+      "turn_cost_krw": 0.6291011999999999,
+      "latency_ms": 4084,
+      "error": null
+    },
+    {
+      "turn": 30,
+      "session": 2,
+      "kind": "probe",
+      "user": "새 약방 할머니 이름 뭐라고 했지?",
+      "reply": "*턱을 꺾으며 자, 하고 답한다.* 츠루 할머니! 그 이름 한 번 들으면 안 잊어버린다니깐.",
+      "turn_cost_krw": 0.094962,
+      "latency_ms": 1061,
+      "error": null
+    },
+    {
+      "turn": 31,
+      "session": 2,
+      "kind": "probe",
+      "user": "다음 주에 친구네 놀러 가기로 했는데 걔네 집에 큰 개가 세 마리래. 가도 괜찮겠지?",
+      "reply": "*얼굴이 굳으며 손을 휘젓는다.* 이봐, 개 세 마리면 털이 장난 아니라고! 너 개털 알레르기 있잖아, 그 집엔 그냥 가지 않는 게 좋아. 어떻게든 약이라도 챙겨서 가든가.",
+      "turn_cost_krw": 0.185052,
+      "latency_ms": 1879,
+      "error": null
+    },
+    {
+      "turn": 32,
+      "session": 2,
+      "kind": "filler",
+      "user": "수행장 통나무 새로 박았나 봐.",
+      "reply": "*눈을 크게 뜨며 수행장 쪽을 흘낏 본다.* 오, 새 거 박았구나! 그럼 오늘 나선수리검 각 좀 제대로 봐야겠는데, 통나무 하나 반으로 갈라 버릴 자신 있다니깐.",
+      "turn_cost_krw": 0.1486296,
+      "latency_ms": 1503,
+      "error": null
+    },
+    {
+      "turn": 33,
+      "session": 2,
+      "kind": "probe",
+      "user": "나 피리 수업 무슨 요일에 간다고 했지?",
+      "reply": "*손가락으로 허공에 동그라미를 그린다.* 목요일! 매주 목요일마다 피리 선생님 댁에 간다고 했잖아. 나는 그날만 되면 왠지 네 손가락이 바쁠 것 같아서 괜히 웃음이 나온다니깐.",
+      "turn_cost_krw": 0.1365672,
+      "latency_ms": 1947,
+      "error": null
+    },
+    {
+      "turn": 34,
+      "session": 2,
+      "kind": "probe",
+      "user": "이따 단 거 사줄게. 내가 뭐 좋아한다고 했었지?",
+      "reply": "*군침을 꿀꺽 삼키며 손뼉을 친다.* 팥빙수! 그거 하나면 수행 뒤 더위도 싹 가신다니깐.",
+      "turn_cost_krw": 1.3434148000000001,
+      "latency_ms": 9385,
+      "error": null
+    },
+    {
+      "turn": 35,
+      "session": 2,
+      "kind": "probe",
+      "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+      "reply": "*팔짱을 끼고 고개를 끄덕인다.* 언니 보러 간다며. 모래마을에서 혼자 사는 언니한테 가는 거, 나도 한 번쯤 따라가 보고 싶을 정도라니깐.",
+      "turn_cost_krw": 0.32009879999999996,
+      "latency_ms": 1532,
+      "error": null
+    },
+    {
+      "turn": 36,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+      "reply": "*고개를 갸웃하며 볼의 수염 자국을 긁적긴다.* 고민? 그런 얘기는 나한테 한 적 없는 것 같은데. 무슨 일인지 내가 들어 줄 테니까 말해 봐라.",
+      "turn_cost_krw": 0.171192,
+      "latency_ms": 1560,
+      "error": null
+    },
+    {
+      "turn": 37,
+      "session": 2,
+      "kind": "probe",
+      "user": "내 혈액형 뭐라고 했더라?",
+      "reply": "*어깨를 으쓱하며 고개를 젓는다.* 혈액형? 그런 건 네가 말해 준 적 없어서 나도 모른다니깐.",
+      "turn_cost_krw": 0.1429596,
+      "latency_ms": 1469,
+      "error": null
+    },
+    {
+      "turn": 38,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 내가 제일 좋아하는 꽃 얘기했었지? 뭐였지?",
+      "reply": "*수염 자국을 손끝으로 톡톡 두드리다가 고개를 젓는다.* 꽃 얘긴 나한테 안 했던 것 같은데. 뭐가 좋아? 나중에 수행장 오는 길에 한 송이 꺾어다 줄 테니까.",
+      "turn_cost_krw": 0.1476972,
+      "latency_ms": 1827,
+      "error": null
+    },
+    {
+      "turn": 39,
+      "session": 2,
+      "kind": "filler",
+      "user": "오늘도 재밌었다.",
+      "reply": "*해맑게 이빨을 드러내며 웃는다.* 나도 재밌었어! 다음에 오면 나선수리검 완성한 거 보여 줄 테니까 기대하고 있어라.",
+      "turn_cost_krw": 0.13404719999999998,
+      "latency_ms": 1435,
+      "error": null
+    },
+    {
+      "turn": 40,
+      "session": 2,
+      "kind": "filler",
+      "user": "목요일에 피리 수업 끝나고 또 올게!",
+      "reply": "*주먹을 쥐었다 펴며 고개를 끄덕인다.* 좋아, 목요일에 기다릴 테니까! 그때 라면도 한 그릇 걸고 수행 자랑 좀 해 봐라.",
+      "turn_cost_krw": 1.4047348,
+      "latency_ms": 6874,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 150,
+      "output_tokens": 124,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.037951200000000004,
+      "output_krw": 0.10415999999999999,
+      "cost_krw": 0.1421112,
+      "latency_ms": 2029,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 257,
+      "output_tokens": 145,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.060421199999999994,
+      "output_krw": 0.1218,
+      "cost_krw": 0.18222120000000003,
+      "latency_ms": 2548,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 240,
+      "output_tokens": 200,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.057388800000000004,
+      "output_krw": 0.168,
+      "cost_krw": 0.2253888,
+      "latency_ms": 2551,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 228,
+      "output_tokens": 220,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0554064,
+      "output_krw": 0.18480000000000002,
+      "cost_krw": 0.2402064,
+      "latency_ms": 2595,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 224,
+      "output_tokens": 133,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.055104,
+      "output_krw": 0.11172,
+      "cost_krw": 0.166824,
+      "latency_ms": 2410,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 238,
+      "output_tokens": 92,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05858159999999999,
+      "output_krw": 0.07727999999999999,
+      "cost_krw": 0.13586159999999997,
+      "latency_ms": 1820,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 201,
+      "output_tokens": 114,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0513492,
+      "output_krw": 0.09576,
+      "cost_krw": 0.14710919999999997,
+      "latency_ms": 1793,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 174,
+      "output_tokens": 131,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.046216799999999995,
+      "output_krw": 0.11004,
+      "cost_krw": 0.1562568,
+      "latency_ms": 1875,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 137,
+      "output_tokens": 114,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0389844,
+      "output_krw": 0.09576,
+      "cost_krw": 0.1347444,
+      "latency_ms": 2102,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 231,
+      "output_tokens": 155,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05872439999999999,
+      "output_krw": 0.13019999999999998,
+      "cost_krw": 0.1889244,
+      "latency_ms": 2312,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 224,
+      "output_tokens": 115,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.057792,
+      "output_krw": 0.09659999999999999,
+      "cost_krw": 0.154392,
+      "latency_ms": 1436,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 185,
+      "output_tokens": 230,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0501396,
+      "output_krw": 0.19319999999999998,
+      "cost_krw": 0.2433396,
+      "latency_ms": 2931,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1691,
+      "output_tokens": 140,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.47348000000000007,
+      "output_krw": 0.0784,
+      "cost_krw": 0.55188,
+      "latency_ms": 6434,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1847,
+      "output_tokens": 190,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5171600000000001,
+      "output_krw": 0.10640000000000001,
+      "cost_krw": 0.62356,
+      "latency_ms": 5566,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 13,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 923,
+      "output_tokens": 113,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.20028119999999996,
+      "output_krw": 0.09491999999999999,
+      "cost_krw": 0.29520119999999994,
+      "latency_ms": 1662,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 1
+    },
+    {
+      "turn_no": 14,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 242,
+      "output_tokens": 121,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06049679999999999,
+      "output_krw": 0.10163999999999998,
+      "cost_krw": 0.16213679999999997,
+      "latency_ms": 2744,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 1
+    },
+    {
+      "turn_no": 15,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 185,
+      "output_tokens": 128,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0490644,
+      "output_krw": 0.10751999999999999,
+      "cost_krw": 0.1565844,
+      "latency_ms": 1844,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 1
+    },
+    {
+      "turn_no": 16,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 258,
+      "output_tokens": 124,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06439439999999999,
+      "output_krw": 0.10415999999999999,
+      "cost_krw": 0.1685544,
+      "latency_ms": 1882,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2093,
+      "output_tokens": 110,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.58604,
+      "output_krw": 0.061599999999999995,
+      "cost_krw": 0.64764,
+      "latency_ms": 3988,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2042,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.57176,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.5992000000000001,
+      "latency_ms": 5797,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1704,
+      "output_tokens": 57,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.47712,
+      "output_krw": 0.031920000000000004,
+      "cost_krw": 0.50904,
+      "latency_ms": 2404,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 17,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 468,
+      "output_tokens": 254,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1047312,
+      "output_krw": 0.21336000000000002,
+      "cost_krw": 0.3180912,
+      "latency_ms": 2795,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 2
+    },
+    {
+      "turn_no": 18,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 166,
+      "output_tokens": 71,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.042924000000000004,
+      "output_krw": 0.05964,
+      "cost_krw": 0.102564,
+      "latency_ms": 1406,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 2
+    },
+    {
+      "turn_no": 19,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 241,
+      "output_tokens": 70,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.058674,
+      "output_krw": 0.0588,
+      "cost_krw": 0.117474,
+      "latency_ms": 1289,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 2
+    },
+    {
+      "turn_no": 20,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 196,
+      "output_tokens": 107,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.049761599999999996,
+      "output_krw": 0.08988,
+      "cost_krw": 0.1396416,
+      "latency_ms": 1682,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 2
+    },
+    {
+      "turn_no": 21,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 166,
+      "output_tokens": 116,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043999199999999995,
+      "output_krw": 0.09744,
+      "cost_krw": 0.1414392,
+      "latency_ms": 1526,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 2
+    },
+    {
+      "turn_no": 22,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 250,
+      "output_tokens": 190,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0616392,
+      "output_krw": 0.15960000000000002,
+      "cost_krw": 0.2212392,
+      "latency_ms": 2214,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 2
+    },
+    {
+      "turn_no": 23,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 222,
+      "output_tokens": 86,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.056296799999999994,
+      "output_krw": 0.07224,
+      "cost_krw": 0.12853679999999998,
+      "latency_ms": 1752,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 2
+    },
+    {
+      "turn_no": 24,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 159,
+      "output_tokens": 174,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043604399999999995,
+      "output_krw": 0.14615999999999998,
+      "cost_krw": 0.18976439999999997,
+      "latency_ms": 2059,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 2
+    },
+    {
+      "turn_no": 25,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 238,
+      "output_tokens": 158,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06019439999999999,
+      "output_krw": 0.13272,
+      "cost_krw": 0.19291439999999996,
+      "latency_ms": 1689,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 2
+    },
+    {
+      "turn_no": 26,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 196,
+      "output_tokens": 100,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05191199999999999,
+      "output_krw": 0.084,
+      "cost_krw": 0.135912,
+      "latency_ms": 1478,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 2
+    },
+    {
+      "turn_no": 27,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 142,
+      "output_tokens": 76,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.041109599999999996,
+      "output_krw": 0.06384000000000001,
+      "cost_krw": 0.10494960000000002,
+      "latency_ms": 998,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 231,
+      "output_tokens": 46,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.059799599999999994,
+      "output_krw": 0.038639999999999994,
+      "cost_krw": 0.09843959999999999,
+      "latency_ms": 1054,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1890,
+      "output_tokens": 67,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5292,
+      "output_krw": 0.03752,
+      "cost_krw": 0.56672,
+      "latency_ms": 2228,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2064,
+      "output_tokens": 98,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.57792,
+      "output_krw": 0.054880000000000005,
+      "cost_krw": 0.6328,
+      "latency_ms": 5911,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 191,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04011,
+      "output_krw": 0,
+      "cost_krw": 0.04011,
+      "latency_ms": 790,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 29,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 1089,
+      "output_tokens": 469,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.23514119999999997,
+      "output_krw": 0.3939599999999999,
+      "cost_krw": 0.6291011999999999,
+      "latency_ms": 4067,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 2
+    },
+    {
+      "turn_no": 30,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 161,
+      "output_tokens": 60,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.044562,
+      "output_krw": 0.0504,
+      "cost_krw": 0.094962,
+      "latency_ms": 1040,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 2
+    },
+    {
+      "turn_no": 31,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 242,
+      "output_tokens": 147,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.061571999999999995,
+      "output_krw": 0.12348,
+      "cost_krw": 0.185052,
+      "latency_ms": 1858,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 2
+    },
+    {
+      "turn_no": 32,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 210,
+      "output_tokens": 111,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.055389600000000004,
+      "output_krw": 0.09323999999999999,
+      "cost_krw": 0.1486296,
+      "latency_ms": 1487,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 2
+    },
+    {
+      "turn_no": 33,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 170,
+      "output_tokens": 106,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0475272,
+      "output_krw": 0.08904000000000001,
+      "cost_krw": 0.1365672,
+      "latency_ms": 1937,
+      "error": null,
+      "local_turn_no": 17,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 150,
+      "output_tokens": 77,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04386480000000001,
+      "output_krw": 0.06468,
+      "cost_krw": 0.1085448,
+      "latency_ms": 1521,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1979,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5541200000000001,
+      "output_krw": 0.028,
+      "cost_krw": 0.5821200000000001,
+      "latency_ms": 2041,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2132,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.59696,
+      "output_krw": 0.035840000000000004,
+      "cost_krw": 0.6328,
+      "latency_ms": 5121,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 95,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.019950000000000002,
+      "output_krw": 0,
+      "cost_krw": 0.019950000000000002,
+      "latency_ms": 630,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 35,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 1059,
+      "output_tokens": 108,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.22937879999999997,
+      "output_krw": 0.09072000000000001,
+      "cost_krw": 0.32009879999999996,
+      "latency_ms": 1512,
+      "error": null,
+      "local_turn_no": 19,
+      "session": 2
+    },
+    {
+      "turn_no": 36,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 256,
+      "output_tokens": 127,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.064512,
+      "output_krw": 0.10668000000000001,
+      "cost_krw": 0.171192,
+      "latency_ms": 1548,
+      "error": null,
+      "local_turn_no": 20,
+      "session": 2
+    },
+    {
+      "turn_no": 37,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 203,
+      "output_tokens": 106,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0539196,
+      "output_krw": 0.08904000000000001,
+      "cost_krw": 0.1429596,
+      "latency_ms": 1457,
+      "error": null,
+      "local_turn_no": 21,
+      "session": 2
+    },
+    {
+      "turn_no": 38,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 147,
+      "output_tokens": 125,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.042697200000000005,
+      "output_krw": 0.105,
+      "cost_krw": 0.1476972,
+      "latency_ms": 1811,
+      "error": null,
+      "local_turn_no": 22,
+      "session": 2
+    },
+    {
+      "turn_no": 39,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 230,
+      "output_tokens": 88,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06012719999999999,
+      "output_krw": 0.07392,
+      "cost_krw": 0.13404719999999998,
+      "latency_ms": 1415,
+      "error": null,
+      "local_turn_no": 23,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 169,
+      "output_tokens": 107,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.047854799999999996,
+      "output_krw": 0.08988,
+      "cost_krw": 0.1377348,
+      "latency_ms": 1660,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2054,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.57512,
+      "output_krw": 0.028,
+      "cost_krw": 0.60312,
+      "latency_ms": 2210,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2261,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.6330800000000001,
+      "output_krw": 0.030799999999999998,
+      "cost_krw": 0.66388,
+      "latency_ms": 2958,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2125,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.595,
+      "output_krw": 0.028560000000000002,
+      "cost_krw": 0.62356,
+      "latency_ms": 2322,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2158,
+      "output_tokens": 98,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.60424,
+      "output_krw": 0.054880000000000005,
+      "cost_krw": 0.65912,
+      "latency_ms": 3470,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    }
+  ],
+  "report": {
+    "conversation_id": 652,
+    "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+    "character_id": "naruto",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 24,
+    "calls": 34,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 23710,
+      "cache_read": 57472,
+      "cache_write": 0,
+      "output": 3612
+    },
+    "total_krw": 9.271732399999998,
+    "input_krw": 6.386892400000001,
+    "output_krw": 2.88484,
+    "avg_krw_per_turn": 0.38632218333333324,
+    "by_tag_krw": {
+      "response": 4.2475524,
+      "extract": 4.305000000000001,
+      "embed": 0.06006,
+      "consolidate": 0.65912
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-8",
+        "avg_krw": 0.16984380000000002
+      },
+      {
+        "phase": "mid",
+        "turns": "9-16",
+        "avg_krw": 0.35369880000000004
+      },
+      {
+        "phase": "late",
+        "turns": "17-24",
+        "avg_krw": 0.47508895
+      }
+    ],
+    "max_turn": {
+      "turn_no": 24,
+      "krw": 1.4047348
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "deepseek-flash",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "on",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 2000,
+        "memory_budget_tokens": 1000,
+        "clock_offset_days": 14
+      },
+      "env": {
+        "APP_CLOCK_OFFSET_DAYS": "14",
+        "APP_MAX_TOKENS": "2000",
+        "MODEL_EXTRACT": "google/gemma-4-31B-it",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "on",
+        "MODEL_RESPONSE": "deepseek-flash",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+    "profile": {
+      "name": "소라"
+    },
+    "items": [
+      {
+        "id": 5441,
+        "type": "fact",
+        "text": "사용자는 개털 알레르기가 있다",
+        "when": null,
+        "importance": 5,
+        "status": "active",
+        "slot": "user.allergy",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 2,
+          "local_turn_no": 2
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:15:55.497Z"
+      },
+      {
+        "id": 5442,
+        "type": "fact",
+        "text": "사용자는 피리를 배우고 있다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "user.hobby",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:15:55.499Z"
+      },
+      {
+        "id": 5443,
+        "type": "event",
+        "text": "사용자는 피리 선생님 댁에 간다",
+        "when": "매주 화요일",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.routine",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": 5461,
+        "invalidated_at": "2026-10-25T16:16:44.639Z",
+        "created_at": "2026-10-25T16:15:55.501Z"
+      },
+      {
+        "id": 5449,
+        "type": "fact",
+        "text": "사용자의 언니는 모래마을에서 혼자 산다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "family.location",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:01.074Z"
+      },
+      {
+        "id": 5450,
+        "type": "fact",
+        "text": "사용자의 언니는 의술을 배우고 있다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "family.job",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:01.078Z"
+      },
+      {
+        "id": 5451,
+        "type": "preference",
+        "text": "사용자는 단 것 중 팥빙수를 가장 좋아한다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 5,
+          "local_turn_no": 5
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:01.081Z"
+      },
+      {
+        "id": 5452,
+        "type": "event",
+        "text": "사용자는 마을 피리 연주회 예선에 나간다",
+        "when": "2026-11-04 (다음 주 수요일)",
+        "importance": 4,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 6,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:01.083Z"
+      },
+      {
+        "id": 5453,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 초상화를 갖다 주기로 했다",
+        "when": "다음에 올 때",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 7,
+          "local_turn_no": 7
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:13.290Z"
+      },
+      {
+        "id": 5454,
+        "type": "promise",
+        "text": "캐릭터는 사용자에게 분신술 기초를 가르쳐 주기로 했다",
+        "when": "다음에 만나면",
+        "importance": 4,
+        "status": "superseded",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 8,
+          "local_turn_no": 8
+        },
+        "superseded_by": 5475,
+        "invalidated_at": "2026-10-25T16:17:10.578Z",
+        "created_at": "2026-10-25T16:16:13.293Z"
+      },
+      {
+        "id": 5455,
+        "type": "event",
+        "text": "사용자는 다음 주에 다시 방문한다",
+        "when": "다음 주",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.plan",
+        "entity": "event#3",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 650,
+          "turn_no": 16,
+          "local_turn_no": 16
+        },
+        "superseded_by": 5480,
+        "invalidated_at": "2026-10-25T16:17:31.761Z",
+        "created_at": "2026-10-25T16:16:19.098Z"
+      },
+      {
+        "id": 5461,
+        "type": "event",
+        "text": "사용자는 피리 선생님 댁에 간다 (매주 목요일)",
+        "when": "매주 목요일",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.routine",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 19,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:44.638Z"
+      },
+      {
+        "id": 5462,
+        "type": "preference",
+        "text": "사용자는 이치라쿠의 된장라멘을 좋아한다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 20,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:50.557Z"
+      },
+      {
+        "id": 5463,
+        "type": "fact",
+        "text": "사용자 동네 약방 할머니의 이름은 츠루다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "other.name",
+        "entity": "other#1",
+        "depends_on": null,
+        "value": "츠루",
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 22,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:16:50.561Z"
+      },
+      {
+        "id": 5474,
+        "type": "event",
+        "text": "사용자는 언니를 보러 간다",
+        "when": "이번 주말",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#4",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 24,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:17:05.443Z"
+      },
+      {
+        "id": 5475,
+        "type": "fact",
+        "text": "캐릭터가 사용자에게 분신술 기초를 가르쳐 주었다",
+        "when": "다음에 만나면",
+        "importance": 4,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 28,
+          "local_turn_no": 12
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:17:10.574Z"
+      },
+      {
+        "id": 5478,
+        "type": "event",
+        "text": "사용자는 친구네 집에 놀러 간다",
+        "when": "다음 주",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#5",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 31,
+          "local_turn_no": 15
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:17:22.960Z"
+      },
+      {
+        "id": 5479,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 단 것을 사주기로 했다",
+        "when": "이따",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#3",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 34,
+          "local_turn_no": 18
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:17:25.923Z"
+      },
+      {
+        "id": 5480,
+        "type": "event",
+        "text": "사용자는 목요일 피리 수업 후 방문한다",
+        "when": "2026-11-12 (목요일)",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#6",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 652,
+          "turn_no": 40,
+          "local_turn_no": 24
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:17:28.274Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 496,
+        "conversation_id": 650,
+        "summary": "소라와 나루토가 통성명을 하며 친해졌다. 소라는 다음 주 피리 연주회 예선에 나가며, 나루토에게 초상화를 전달하고 분신술을 배우기로 약속했다.",
+        "created_at": "2026-10-25T16:16:21.516Z"
+      },
+      {
+        "id": 500,
+        "conversation_id": 652,
+        "summary": "사용자는 피리 수업 요일을 목요일로 변경했으며, 이번 주말에 모래마을에 있는 의술 배우는 언니를 보러 갈 예정이다. 동네 약방 할머니가 츠루 할머니로 바뀌었으며, 캐릭터에게 분신술 기초를 배웠다. 목요일 피리 수업 후 다시 방문하기로 약속했다.",
+        "created_at": "2026-10-25T16:17:31.757Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 9943,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 0,
+        "op": "MERGE",
+        "item_id": 5455,
+        "detail": "-> 5480",
+        "created_at": "2026-10-25T16:17:31.762Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9942,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 0,
+        "op": "SUPERSEDE",
+        "item_id": 5455,
+        "detail": "-> 5480",
+        "created_at": "2026-10-25T16:17:31.761Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9941,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "사용자는 피리 수업 요일을 목요일로 변경했으며, 이번 주말에 모래마을에 있는 의술 배우는 언니를 보러 갈 예정이다. 동네 약방 할머니가 츠루 할머니로 바뀌었으며, 캐릭터에게 분신술 기초를 배웠다. 목요일 피리 수업 후 다시 방문하기로 약속했다.",
+        "created_at": "2026-10-25T16:17:31.759Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9940,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 40,
+        "op": "ADD",
+        "item_id": 5480,
+        "detail": "사용자는 목요일 피리 수업 후 방문한다",
+        "created_at": "2026-10-25T16:17:28.276Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 9939,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 40,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":695,\"included\":[5441,5442,5449,5450,5451,5452,5453,5455,5461,5462,5463,5474,5475,5478,5479],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:17:25.940Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 9938,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 34,
+        "op": "ADD",
+        "item_id": 5479,
+        "detail": "사용자는 캐릭터에게 단 것을 사주기로 했다",
+        "created_at": "2026-10-25T16:17:25.925Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 9936,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 31,
+        "op": "ADD",
+        "item_id": 5478,
+        "detail": "사용자는 친구네 집에 놀러 간다",
+        "created_at": "2026-10-25T16:17:22.960Z",
+        "local_turn_no": 15
+      },
+      {
+        "id": 9932,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 34,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":625,\"included\":[5441,5442,5449,5450,5451,5452,5453,5455,5461,5462,5463,5474,5475],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:17:11.241Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 9931,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 34,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[27706,27684,27666]}",
+        "created_at": "2026-10-25T16:17:11.233Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 9930,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 28,
+        "op": "SUPERSEDE",
+        "item_id": 5454,
+        "detail": "-> 5475",
+        "created_at": "2026-10-25T16:17:10.579Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9929,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 28,
+        "op": "UPDATE",
+        "item_id": 5475,
+        "detail": "캐릭터가 사용자에게 분신술 기초를 가르쳐 주었다",
+        "created_at": "2026-10-25T16:17:10.576Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9928,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 24,
+        "op": "ADD",
+        "item_id": 5474,
+        "detail": "사용자는 언니를 보러 간다",
+        "created_at": "2026-10-25T16:17:05.445Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 9910,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 28,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":598,\"included\":[5441,5442,5449,5450,5451,5452,5453,5454,5455,5461,5462,5463],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:16:51.383Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9909,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 28,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[27666,27589,27622]}",
+        "created_at": "2026-10-25T16:16:51.379Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9908,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 22,
+        "op": "ADD",
+        "item_id": 5463,
+        "detail": "사용자 동네 약방 할머니의 이름은 츠루다",
+        "created_at": "2026-10-25T16:16:50.562Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 9907,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 20,
+        "op": "ADD",
+        "item_id": 5462,
+        "detail": "사용자는 이치라쿠의 된장라멘을 좋아한다",
+        "created_at": "2026-10-25T16:16:50.559Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 9906,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 19,
+        "op": "SUPERSEDE",
+        "item_id": 5443,
+        "detail": "-> 5461",
+        "created_at": "2026-10-25T16:16:44.639Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9905,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 19,
+        "op": "UPDATE",
+        "item_id": 5461,
+        "detail": "사용자는 피리 선생님 댁에 간다 (매주 목요일)",
+        "created_at": "2026-10-25T16:16:44.638Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9892,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 652,
+        "turn_no": 17,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":524,\"included\":[5441,5442,5443,5449,5450,5451,5452,5453,5454,5455],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:16:22.279Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 9891,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "소라와 나루토가 통성명을 하며 친해졌다. 소라는 다음 주 피리 연주회 예선에 나가며, 나루토에게 초상화를 전달하고 분신술을 배우기로 약속했다.",
+        "created_at": "2026-10-25T16:16:21.517Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 9888,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 16,
+        "op": "ADD",
+        "item_id": 5455,
+        "detail": "사용자는 다음 주에 다시 방문한다",
+        "created_at": "2026-10-25T16:16:19.101Z",
+        "local_turn_no": 16
+      },
+      {
+        "id": 9887,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 8,
+        "op": "ADD",
+        "item_id": 5454,
+        "detail": "캐릭터는 사용자에게 분신술 기초를 가르쳐 주기로 했다",
+        "created_at": "2026-10-25T16:16:13.294Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 9886,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 7,
+        "op": "ADD",
+        "item_id": 5453,
+        "detail": "사용자는 캐릭터에게 초상화를 갖다 주기로 했다",
+        "created_at": "2026-10-25T16:16:13.292Z",
+        "local_turn_no": 7
+      },
+      {
+        "id": 9883,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 12,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":285,\"included\":[5441,5442,5443,5449,5450,5451,5452],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:16:01.095Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 9882,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 6,
+        "op": "ADD",
+        "item_id": 5452,
+        "detail": "사용자는 마을 피리 연주회 예선에 나간다",
+        "created_at": "2026-10-25T16:16:01.084Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 9881,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 5,
+        "op": "ADD",
+        "item_id": 5451,
+        "detail": "사용자는 단 것 중 팥빙수를 가장 좋아한다",
+        "created_at": "2026-10-25T16:16:01.082Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 9880,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 5450,
+        "detail": "사용자의 언니는 의술을 배우고 있다",
+        "created_at": "2026-10-25T16:16:01.080Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 9879,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 5449,
+        "detail": "사용자의 언니는 모래마을에서 혼자 산다",
+        "created_at": "2026-10-25T16:16:01.077Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 9871,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 5443,
+        "detail": "사용자는 피리 선생님 댁에 간다",
+        "created_at": "2026-10-25T16:15:55.501Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9870,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 5442,
+        "detail": "사용자는 피리를 배우고 있다",
+        "created_at": "2026-10-25T16:15:55.500Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 9869,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 2,
+        "op": "ADD",
+        "item_id": 5441,
+        "detail": "사용자는 개털 알레르기가 있다",
+        "created_at": "2026-10-25T16:15:55.498Z",
+        "local_turn_no": 2
+      },
+      {
+        "id": 9868,
+        "user_id": "bench-20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 650,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"소라\"}",
+        "created_at": "2026-10-25T16:15:55.494Z",
+        "local_turn_no": 3
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-10-25T16:15:24.464Z",
+      "conversation_id": 650,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 150,
+      "output_tokens": 124,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 47,
+      "input_krw": 0.037951200000000004,
+      "output_krw": 0.10415999999999999,
+      "cost_krw": 0.1421112,
+      "latency_ms": 2029,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:22.435Z",
+      "price_window": "offpeak",
+      "request_id": "1ed997b1-4770-4364-ba41-c4dc85fd177c",
+      "raw_usage": {
+        "prompt_tokens": 1686,
+        "completion_tokens": 124,
+        "total_tokens": 1810,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 47
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 150
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010150799999999999
+    },
+    {
+      "ts": "2026-10-25T16:15:27.027Z",
+      "conversation_id": 650,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 257,
+      "output_tokens": 145,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 60,
+      "input_krw": 0.060421199999999994,
+      "output_krw": 0.1218,
+      "cost_krw": 0.18222120000000003,
+      "latency_ms": 2548,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:24.479Z",
+      "price_window": "offpeak",
+      "request_id": "45b87373-34cd-4c21-9e41-ca21a179c428",
+      "raw_usage": {
+        "prompt_tokens": 1793,
+        "completion_tokens": 145,
+        "total_tokens": 1938,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 60
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 257
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000130158
+    },
+    {
+      "ts": "2026-10-25T16:15:29.602Z",
+      "conversation_id": 650,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 240,
+      "output_tokens": 200,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 108,
+      "input_krw": 0.057388800000000004,
+      "output_krw": 0.168,
+      "cost_krw": 0.2253888,
+      "latency_ms": 2551,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:27.051Z",
+      "price_window": "offpeak",
+      "request_id": "67505f65-2485-4cd9-a284-71e136aa7e52",
+      "raw_usage": {
+        "prompt_tokens": 1904,
+        "completion_tokens": 200,
+        "total_tokens": 2104,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 108
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 240
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000160992
+    },
+    {
+      "ts": "2026-10-25T16:15:32.215Z",
+      "conversation_id": 650,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 228,
+      "output_tokens": 220,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 120,
+      "input_krw": 0.0554064,
+      "output_krw": 0.18480000000000002,
+      "cost_krw": 0.2402064,
+      "latency_ms": 2595,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:29.620Z",
+      "price_window": "offpeak",
+      "request_id": "25b4db52-76dc-4c36-ac90-824c07cbb05e",
+      "raw_usage": {
+        "prompt_tokens": 2020,
+        "completion_tokens": 220,
+        "total_tokens": 2240,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 120
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 228
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000171576
+    },
+    {
+      "ts": "2026-10-25T16:15:34.640Z",
+      "conversation_id": 650,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 224,
+      "output_tokens": 133,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 35,
+      "input_krw": 0.055104,
+      "output_krw": 0.11172,
+      "cost_krw": 0.166824,
+      "latency_ms": 2410,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:32.230Z",
+      "price_window": "offpeak",
+      "request_id": "2920f99b-dd6c-493c-a69a-0966fdaabefe",
+      "raw_usage": {
+        "prompt_tokens": 2144,
+        "completion_tokens": 133,
+        "total_tokens": 2277,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 224
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011916
+    },
+    {
+      "ts": "2026-10-25T16:15:36.475Z",
+      "conversation_id": 650,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 238,
+      "output_tokens": 92,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 22,
+      "input_krw": 0.05858159999999999,
+      "output_krw": 0.07727999999999999,
+      "cost_krw": 0.13586159999999997,
+      "latency_ms": 1820,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:34.655Z",
+      "price_window": "offpeak",
+      "request_id": "fcc274a7-1ae6-404b-b5e6-05cee8508401",
+      "raw_usage": {
+        "prompt_tokens": 2286,
+        "completion_tokens": 92,
+        "total_tokens": 2378,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 22
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 238
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00009704399999999999
+    },
+    {
+      "ts": "2026-10-25T16:15:38.289Z",
+      "conversation_id": 650,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 201,
+      "output_tokens": 114,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 43,
+      "input_krw": 0.0513492,
+      "output_krw": 0.09576,
+      "cost_krw": 0.14710919999999997,
+      "latency_ms": 1793,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:36.496Z",
+      "price_window": "offpeak",
+      "request_id": "6cd07069-86de-4e7a-9d43-e6fa94334289",
+      "raw_usage": {
+        "prompt_tokens": 2377,
+        "completion_tokens": 114,
+        "total_tokens": 2491,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 43
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 201
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010507799999999999
+    },
+    {
+      "ts": "2026-10-25T16:15:40.185Z",
+      "conversation_id": 650,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 174,
+      "output_tokens": 131,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 51,
+      "input_krw": 0.046216799999999995,
+      "output_krw": 0.11004,
+      "cost_krw": 0.1562568,
+      "latency_ms": 1875,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:38.310Z",
+      "price_window": "offpeak",
+      "request_id": "f9e94139-05d2-46fd-8d19-42cf2bc7ce72",
+      "raw_usage": {
+        "prompt_tokens": 2478,
+        "completion_tokens": 131,
+        "total_tokens": 2609,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 51
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 174
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000111612
+    },
+    {
+      "ts": "2026-10-25T16:15:42.309Z",
+      "conversation_id": 650,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 137,
+      "output_tokens": 114,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 35,
+      "input_krw": 0.0389844,
+      "output_krw": 0.09576,
+      "cost_krw": 0.1347444,
+      "latency_ms": 2102,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:40.206Z",
+      "price_window": "offpeak",
+      "request_id": "9e0014ca-c93a-45e8-9d60-f679401f83f5",
+      "raw_usage": {
+        "prompt_tokens": 2569,
+        "completion_tokens": 114,
+        "total_tokens": 2683,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 137
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000096246
+    },
+    {
+      "ts": "2026-10-25T16:15:44.638Z",
+      "conversation_id": 650,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 231,
+      "output_tokens": 155,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 55,
+      "input_krw": 0.05872439999999999,
+      "output_krw": 0.13019999999999998,
+      "cost_krw": 0.1889244,
+      "latency_ms": 2312,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:42.326Z",
+      "price_window": "offpeak",
+      "request_id": "cd6848d6-175a-4100-b536-66012ce36c2b",
+      "raw_usage": {
+        "prompt_tokens": 2663,
+        "completion_tokens": 155,
+        "total_tokens": 2818,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 55
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 231
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000134946
+    },
+    {
+      "ts": "2026-10-25T16:15:46.092Z",
+      "conversation_id": 650,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 224,
+      "output_tokens": 115,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 41,
+      "input_krw": 0.057792,
+      "output_krw": 0.09659999999999999,
+      "cost_krw": 0.154392,
+      "latency_ms": 1436,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:44.656Z",
+      "price_window": "offpeak",
+      "request_id": "4a8f2a17-2462-4d62-9488-2f3d0b3a6d0f",
+      "raw_usage": {
+        "prompt_tokens": 2784,
+        "completion_tokens": 115,
+        "total_tokens": 2899,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 224
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011028000000000001
+    },
+    {
+      "ts": "2026-10-25T16:15:49.043Z",
+      "conversation_id": 650,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 185,
+      "output_tokens": 230,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 157,
+      "input_krw": 0.0501396,
+      "output_krw": 0.19319999999999998,
+      "cost_krw": 0.2433396,
+      "latency_ms": 2931,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:15:46.111Z",
+      "price_window": "offpeak",
+      "request_id": "6f5caa61-45e8-40be-a6c2-3cc2c663ae7f",
+      "raw_usage": {
+        "prompt_tokens": 2873,
+        "completion_tokens": 230,
+        "total_tokens": 3103,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 157
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 185
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000173814
+    },
+    {
+      "ts": "2026-10-25T16:15:55.489Z",
+      "conversation_id": 650,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1691,
+      "output_tokens": 140,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.47348000000000007,
+      "output_krw": 0.0784,
+      "cost_krw": 0.55188,
+      "latency_ms": 6434,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:15:49.055Z",
+      "request_id": "RSDcI8OzIPz8jWXyFvml2bIP",
+      "raw_usage": {
+        "prompt_tokens": 1691,
+        "total_tokens": 1831,
+        "completion_tokens": 140,
+        "estimated_cost": 0.00039420000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00039420000000000004
+    },
+    {
+      "ts": "2026-10-25T16:16:01.073Z",
+      "conversation_id": 650,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1847,
+      "output_tokens": 190,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5171600000000001,
+      "output_krw": 0.10640000000000001,
+      "cost_krw": 0.62356,
+      "latency_ms": 5566,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:15:55.506Z",
+      "request_id": "Rpo3IpG0p3uAOF011LlTr4T1",
+      "raw_usage": {
+        "prompt_tokens": 1847,
+        "total_tokens": 2037,
+        "completion_tokens": 190,
+        "estimated_cost": 0.00044540000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00044540000000000004
+    },
+    {
+      "ts": "2026-10-25T16:16:02.769Z",
+      "conversation_id": 650,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 923,
+      "output_tokens": 113,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 37,
+      "input_krw": 0.20028119999999996,
+      "output_krw": 0.09491999999999999,
+      "cost_krw": 0.29520119999999994,
+      "latency_ms": 1662,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:01.106Z",
+      "price_window": "offpeak",
+      "request_id": "97373a90-fe4f-4a38-a0b6-1a27423a3d77",
+      "raw_usage": {
+        "prompt_tokens": 2459,
+        "completion_tokens": 113,
+        "total_tokens": 2572,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 923
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00021085799999999997
+    },
+    {
+      "ts": "2026-10-25T16:16:05.532Z",
+      "conversation_id": 650,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 242,
+      "output_tokens": 121,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 72,
+      "input_krw": 0.06049679999999999,
+      "output_krw": 0.10163999999999998,
+      "cost_krw": 0.16213679999999997,
+      "latency_ms": 2744,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:02.788Z",
+      "price_window": "offpeak",
+      "request_id": "28e48ad9-b467-49f6-9cf2-34139dd0d3a9",
+      "raw_usage": {
+        "prompt_tokens": 2546,
+        "completion_tokens": 121,
+        "total_tokens": 2667,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 72
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 242
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011581199999999998
+    },
+    {
+      "ts": "2026-10-25T16:16:07.387Z",
+      "conversation_id": 650,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 185,
+      "output_tokens": 128,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 70,
+      "input_krw": 0.0490644,
+      "output_krw": 0.10751999999999999,
+      "cost_krw": 0.1565844,
+      "latency_ms": 1844,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:05.542Z",
+      "price_window": "offpeak",
+      "request_id": "acdb55c9-089d-4d61-b948-87768ada5da1",
+      "raw_usage": {
+        "prompt_tokens": 2617,
+        "completion_tokens": 128,
+        "total_tokens": 2745,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 70
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 185
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000111846
+    },
+    {
+      "ts": "2026-10-25T16:16:09.285Z",
+      "conversation_id": 650,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 258,
+      "output_tokens": 124,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 83,
+      "input_krw": 0.06439439999999999,
+      "output_krw": 0.10415999999999999,
+      "cost_krw": 0.1685544,
+      "latency_ms": 1882,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:07.402Z",
+      "price_window": "offpeak",
+      "request_id": "92b29fc3-6875-4d3a-9619-dc1cceea8c8e",
+      "raw_usage": {
+        "prompt_tokens": 2690,
+        "completion_tokens": 124,
+        "total_tokens": 2814,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 83
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 258
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00012039599999999999
+    },
+    {
+      "ts": "2026-10-25T16:16:13.287Z",
+      "conversation_id": 650,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2093,
+      "output_tokens": 110,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.58604,
+      "output_krw": 0.061599999999999995,
+      "cost_krw": 0.64764,
+      "latency_ms": 3988,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:16:09.299Z",
+      "request_id": "RS4AxrnaOEqjYMjjA5LwUVCE",
+      "raw_usage": {
+        "prompt_tokens": 2093,
+        "total_tokens": 2203,
+        "completion_tokens": 110,
+        "estimated_cost": 0.0004626,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004626
+    },
+    {
+      "ts": "2026-10-25T16:16:19.096Z",
+      "conversation_id": 650,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2042,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.57176,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.5992000000000001,
+      "latency_ms": 5797,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:16:13.299Z",
+      "request_id": "RS3XlVI7JwDIY1bFBIaXfb4y",
+      "raw_usage": {
+        "prompt_tokens": 2042,
+        "total_tokens": 2091,
+        "completion_tokens": 49,
+        "estimated_cost": 0.00042800000000000005,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00042800000000000005
+    },
+    {
+      "ts": "2026-10-25T16:16:21.515Z",
+      "conversation_id": 650,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1704,
+      "output_tokens": 57,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.47712,
+      "output_krw": 0.031920000000000004,
+      "cost_krw": 0.50904,
+      "latency_ms": 2404,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:16:19.111Z",
+      "request_id": "Rl3GW1hYz9Y0YUyrJ9fv2L44",
+      "raw_usage": {
+        "prompt_tokens": 1704,
+        "total_tokens": 1761,
+        "completion_tokens": 57,
+        "estimated_cost": 0.00036360000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0003636
+    },
+    {
+      "ts": "2026-10-25T16:16:25.076Z",
+      "conversation_id": 652,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 468,
+      "output_tokens": 254,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 198,
+      "input_krw": 0.1047312,
+      "output_krw": 0.21336000000000002,
+      "cost_krw": 0.3180912,
+      "latency_ms": 2795,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:22.281Z",
+      "price_window": "offpeak",
+      "request_id": "951e9790-5d66-45cc-8cd9-3f4ee8441199",
+      "raw_usage": {
+        "prompt_tokens": 2004,
+        "completion_tokens": 254,
+        "total_tokens": 2258,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 198
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 468
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000227208
+    },
+    {
+      "ts": "2026-10-25T16:16:26.499Z",
+      "conversation_id": 652,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 166,
+      "output_tokens": 71,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 19,
+      "input_krw": 0.042924000000000004,
+      "output_krw": 0.05964,
+      "cost_krw": 0.102564,
+      "latency_ms": 1406,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:25.093Z",
+      "price_window": "offpeak",
+      "request_id": "95a5096a-00f1-45eb-b659-3776254e870d",
+      "raw_usage": {
+        "prompt_tokens": 2086,
+        "completion_tokens": 71,
+        "total_tokens": 2157,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 19
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 166
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007326
+    },
+    {
+      "ts": "2026-10-25T16:16:27.802Z",
+      "conversation_id": 652,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 241,
+      "output_tokens": 70,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 14,
+      "input_krw": 0.058674,
+      "output_krw": 0.0588,
+      "cost_krw": 0.117474,
+      "latency_ms": 1289,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:26.513Z",
+      "price_window": "offpeak",
+      "request_id": "0445d06d-011a-452a-a354-26bf255d3a7f",
+      "raw_usage": {
+        "prompt_tokens": 2161,
+        "completion_tokens": 70,
+        "total_tokens": 2231,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 241
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008391
+    },
+    {
+      "ts": "2026-10-25T16:16:29.505Z",
+      "conversation_id": 652,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 196,
+      "output_tokens": 107,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 39,
+      "input_krw": 0.049761599999999996,
+      "output_krw": 0.08988,
+      "cost_krw": 0.1396416,
+      "latency_ms": 1682,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:27.823Z",
+      "price_window": "offpeak",
+      "request_id": "d3809154-2994-415a-a821-619b522f22f2",
+      "raw_usage": {
+        "prompt_tokens": 2244,
+        "completion_tokens": 107,
+        "total_tokens": 2351,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 196
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000099744
+    },
+    {
+      "ts": "2026-10-25T16:16:31.040Z",
+      "conversation_id": 652,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 166,
+      "output_tokens": 116,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 63,
+      "input_krw": 0.043999199999999995,
+      "output_krw": 0.09744,
+      "cost_krw": 0.1414392,
+      "latency_ms": 1526,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:29.513Z",
+      "price_window": "offpeak",
+      "request_id": "3b5e5045-20f3-4464-943e-6eea0e2187f2",
+      "raw_usage": {
+        "prompt_tokens": 2342,
+        "completion_tokens": 116,
+        "total_tokens": 2458,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 63
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 166
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000101028
+    },
+    {
+      "ts": "2026-10-25T16:16:33.269Z",
+      "conversation_id": 652,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 250,
+      "output_tokens": 190,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 111,
+      "input_krw": 0.0616392,
+      "output_krw": 0.15960000000000002,
+      "cost_krw": 0.2212392,
+      "latency_ms": 2214,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:31.055Z",
+      "price_window": "offpeak",
+      "request_id": "acdf1d7e-3683-4858-a7cf-de04d6705138",
+      "raw_usage": {
+        "prompt_tokens": 2426,
+        "completion_tokens": 190,
+        "total_tokens": 2616,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 111
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 250
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000158028
+    },
+    {
+      "ts": "2026-10-25T16:16:35.029Z",
+      "conversation_id": 652,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 222,
+      "output_tokens": 86,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 40,
+      "input_krw": 0.056296799999999994,
+      "output_krw": 0.07224,
+      "cost_krw": 0.12853679999999998,
+      "latency_ms": 1752,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:33.277Z",
+      "price_window": "offpeak",
+      "request_id": "f8bca167-9349-4e9a-820c-a1425e678531",
+      "raw_usage": {
+        "prompt_tokens": 2526,
+        "completion_tokens": 86,
+        "total_tokens": 2612,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 40
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 222
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000091812
+    },
+    {
+      "ts": "2026-10-25T16:16:37.108Z",
+      "conversation_id": 652,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 159,
+      "output_tokens": 174,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 111,
+      "input_krw": 0.043604399999999995,
+      "output_krw": 0.14615999999999998,
+      "cost_krw": 0.18976439999999997,
+      "latency_ms": 2059,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:35.049Z",
+      "price_window": "offpeak",
+      "request_id": "1ecba653-1278-40ba-a0c5-8fea6d91a50f",
+      "raw_usage": {
+        "prompt_tokens": 2591,
+        "completion_tokens": 174,
+        "total_tokens": 2765,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 111
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 159
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00013554599999999998
+    },
+    {
+      "ts": "2026-10-25T16:16:38.822Z",
+      "conversation_id": 652,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 238,
+      "output_tokens": 158,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 91,
+      "input_krw": 0.06019439999999999,
+      "output_krw": 0.13272,
+      "cost_krw": 0.19291439999999996,
+      "latency_ms": 1689,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:37.132Z",
+      "price_window": "offpeak",
+      "request_id": "21749dae-6b59-42a9-ae94-b30cdaad8ba5",
+      "raw_usage": {
+        "prompt_tokens": 2670,
+        "completion_tokens": 158,
+        "total_tokens": 2828,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 238
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00013779599999999998
+    },
+    {
+      "ts": "2026-10-25T16:16:40.314Z",
+      "conversation_id": 652,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 196,
+      "output_tokens": 100,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 50,
+      "input_krw": 0.05191199999999999,
+      "output_krw": 0.084,
+      "cost_krw": 0.135912,
+      "latency_ms": 1478,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:38.836Z",
+      "price_window": "offpeak",
+      "request_id": "7c214848-399c-4fef-9278-6de7d78ffc85",
+      "raw_usage": {
+        "prompt_tokens": 2756,
+        "completion_tokens": 100,
+        "total_tokens": 2856,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 50
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 196
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00009708
+    },
+    {
+      "ts": "2026-10-25T16:16:41.327Z",
+      "conversation_id": 652,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 142,
+      "output_tokens": 76,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 26,
+      "input_krw": 0.041109599999999996,
+      "output_krw": 0.06384000000000001,
+      "cost_krw": 0.10494960000000002,
+      "latency_ms": 998,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:40.329Z",
+      "price_window": "offpeak",
+      "request_id": "9361663f-9498-49ce-9675-5e37be47dcc7",
+      "raw_usage": {
+        "prompt_tokens": 2830,
+        "completion_tokens": 76,
+        "total_tokens": 2906,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 26
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 142
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007496400000000001
+    },
+    {
+      "ts": "2026-10-25T16:16:42.398Z",
+      "conversation_id": 652,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 231,
+      "output_tokens": 46,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.059799599999999994,
+      "output_krw": 0.038639999999999994,
+      "cost_krw": 0.09843959999999999,
+      "latency_ms": 1054,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:41.344Z",
+      "price_window": "offpeak",
+      "request_id": "7d2fc8ec-6ff7-4461-925d-4fa86670e2bc",
+      "raw_usage": {
+        "prompt_tokens": 2919,
+        "completion_tokens": 46,
+        "total_tokens": 2965,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 231
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00007031399999999999
+    },
+    {
+      "ts": "2026-10-25T16:16:44.635Z",
+      "conversation_id": 652,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1890,
+      "output_tokens": 67,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5292,
+      "output_krw": 0.03752,
+      "cost_krw": 0.56672,
+      "latency_ms": 2228,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:16:42.407Z",
+      "request_id": "RDGgg4dMzD3WlKlhmALcOlBy",
+      "raw_usage": {
+        "prompt_tokens": 1890,
+        "total_tokens": 1957,
+        "completion_tokens": 67,
+        "estimated_cost": 0.00040480000000000003,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00040480000000000003
+    },
+    {
+      "ts": "2026-10-25T16:16:50.554Z",
+      "conversation_id": 652,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2064,
+      "output_tokens": 98,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.57792,
+      "output_krw": 0.054880000000000005,
+      "cost_krw": 0.6328,
+      "latency_ms": 5911,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:16:44.643Z",
+      "request_id": "RxTpB2rhAGzqjdqs51Lfz091",
+      "raw_usage": {
+        "prompt_tokens": 2064,
+        "total_tokens": 2162,
+        "completion_tokens": 98,
+        "estimated_cost": 0.00045200000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00045200000000000004
+    },
+    {
+      "ts": "2026-10-25T16:16:51.371Z",
+      "conversation_id": 652,
+      "turn_no": 12,
+      "purpose": "deep_search",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 191,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04011,
+      "output_krw": 0,
+      "cost_krw": 0.04011,
+      "latency_ms": 790,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T16:16:50.581Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          21,
+          27,
+          9,
+          17,
+          16,
+          9,
+          16,
+          10,
+          19,
+          14,
+          9,
+          24
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00002865
+    },
+    {
+      "ts": "2026-10-25T16:16:55.459Z",
+      "conversation_id": 652,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 1089,
+      "output_tokens": 469,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 405,
+      "input_krw": 0.23514119999999997,
+      "output_krw": 0.3939599999999999,
+      "cost_krw": 0.6291011999999999,
+      "latency_ms": 4067,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:51.391Z",
+      "price_window": "offpeak",
+      "request_id": "6092c6e7-ec85-4a05-8e18-2372a851b2db",
+      "raw_usage": {
+        "prompt_tokens": 2625,
+        "completion_tokens": 469,
+        "total_tokens": 3094,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 405
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 1089
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00044935799999999996
+    },
+    {
+      "ts": "2026-10-25T16:16:56.519Z",
+      "conversation_id": 652,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 161,
+      "output_tokens": 60,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 20,
+      "input_krw": 0.044562,
+      "output_krw": 0.0504,
+      "cost_krw": 0.094962,
+      "latency_ms": 1040,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:55.479Z",
+      "price_window": "offpeak",
+      "request_id": "b0bae284-48bd-44a9-8b47-778f4d4ed11d",
+      "raw_usage": {
+        "prompt_tokens": 2721,
+        "completion_tokens": 60,
+        "total_tokens": 2781,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 20
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 161
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00006783
+    },
+    {
+      "ts": "2026-10-25T16:16:58.398Z",
+      "conversation_id": 652,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 242,
+      "output_tokens": 147,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 69,
+      "input_krw": 0.061571999999999995,
+      "output_krw": 0.12348,
+      "cost_krw": 0.185052,
+      "latency_ms": 1858,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:56.540Z",
+      "price_window": "offpeak",
+      "request_id": "636b3d79-8203-422f-8a16-15a9f99ae3f9",
+      "raw_usage": {
+        "prompt_tokens": 2802,
+        "completion_tokens": 147,
+        "total_tokens": 2949,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 69
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 242
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00013218
+    },
+    {
+      "ts": "2026-10-25T16:16:59.906Z",
+      "conversation_id": 652,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 210,
+      "output_tokens": 111,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 41,
+      "input_krw": 0.055389600000000004,
+      "output_krw": 0.09323999999999999,
+      "cost_krw": 0.1486296,
+      "latency_ms": 1487,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:58.419Z",
+      "price_window": "offpeak",
+      "request_id": "a05b3974-f182-4044-9054-51b209e83ae5",
+      "raw_usage": {
+        "prompt_tokens": 2898,
+        "completion_tokens": 111,
+        "total_tokens": 3009,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 210
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000106164
+    },
+    {
+      "ts": "2026-10-25T16:17:01.855Z",
+      "conversation_id": 652,
+      "turn_no": 17,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 170,
+      "output_tokens": 106,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 23,
+      "input_krw": 0.0475272,
+      "output_krw": 0.08904000000000001,
+      "cost_krw": 0.1365672,
+      "latency_ms": 1937,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:16:59.918Z",
+      "price_window": "offpeak",
+      "request_id": "b00f932a-6814-48c5-820f-7a339459d898",
+      "raw_usage": {
+        "prompt_tokens": 2986,
+        "completion_tokens": 106,
+        "total_tokens": 3092,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 23
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 170
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00009754800000000001
+    },
+    {
+      "ts": "2026-10-25T16:17:03.385Z",
+      "conversation_id": 652,
+      "turn_no": 18,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 150,
+      "output_tokens": 77,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 31,
+      "input_krw": 0.04386480000000001,
+      "output_krw": 0.06468,
+      "cost_krw": 0.1085448,
+      "latency_ms": 1521,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:17:01.864Z",
+      "price_window": "offpeak",
+      "request_id": "cc9b3e5f-b09c-45c1-8b3a-9590efd9a2ff",
+      "raw_usage": {
+        "prompt_tokens": 3094,
+        "completion_tokens": 77,
+        "total_tokens": 3171,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 31
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 150
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000077532
+    },
+    {
+      "ts": "2026-10-25T16:17:05.439Z",
+      "conversation_id": 652,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1979,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5541200000000001,
+      "output_krw": 0.028,
+      "cost_krw": 0.5821200000000001,
+      "latency_ms": 2041,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:17:03.398Z",
+      "request_id": "RTOD6kWZbopBON3lrypmlRgC",
+      "raw_usage": {
+        "prompt_tokens": 1979,
+        "total_tokens": 2029,
+        "completion_tokens": 50,
+        "estimated_cost": 0.0004158000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004158
+    },
+    {
+      "ts": "2026-10-25T16:17:10.572Z",
+      "conversation_id": 652,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2132,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.59696,
+      "output_krw": 0.035840000000000004,
+      "cost_krw": 0.6328,
+      "latency_ms": 5121,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:17:05.450Z",
+      "request_id": "R6tgijRChWiEdm1qQvtqjOCy",
+      "raw_usage": {
+        "prompt_tokens": 2132,
+        "total_tokens": 2196,
+        "completion_tokens": 64,
+        "estimated_cost": 0.00045200000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00045200000000000004
+    },
+    {
+      "ts": "2026-10-25T16:17:11.224Z",
+      "conversation_id": 652,
+      "turn_no": 18,
+      "purpose": "deep_search",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 95,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.019950000000000002,
+      "output_krw": 0,
+      "cost_krw": 0.019950000000000002,
+      "latency_ms": 630,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T16:17:10.594Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          21,
+          24,
+          19,
+          18,
+          13
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00001425
+    },
+    {
+      "ts": "2026-10-25T16:17:12.766Z",
+      "conversation_id": 652,
+      "turn_no": 19,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 1059,
+      "output_tokens": 108,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 44,
+      "input_krw": 0.22937879999999997,
+      "output_krw": 0.09072000000000001,
+      "cost_krw": 0.32009879999999996,
+      "latency_ms": 1512,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:17:11.253Z",
+      "price_window": "offpeak",
+      "request_id": "e2ea5c0d-c5f8-4684-87b0-9821f02448b1",
+      "raw_usage": {
+        "prompt_tokens": 2723,
+        "completion_tokens": 108,
+        "total_tokens": 2831,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 44
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 1059
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00022864199999999998
+    },
+    {
+      "ts": "2026-10-25T16:17:14.333Z",
+      "conversation_id": 652,
+      "turn_no": 20,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 256,
+      "output_tokens": 127,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 66,
+      "input_krw": 0.064512,
+      "output_krw": 0.10668000000000001,
+      "cost_krw": 0.171192,
+      "latency_ms": 1548,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:17:12.785Z",
+      "price_window": "offpeak",
+      "request_id": "fd54d720-e31f-40e8-92d3-2e1156d83e79",
+      "raw_usage": {
+        "prompt_tokens": 2816,
+        "completion_tokens": 127,
+        "total_tokens": 2943,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 66
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 256
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00012228
+    },
+    {
+      "ts": "2026-10-25T16:17:15.801Z",
+      "conversation_id": 652,
+      "turn_no": 21,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 203,
+      "output_tokens": 106,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 62,
+      "input_krw": 0.0539196,
+      "output_krw": 0.08904000000000001,
+      "cost_krw": 0.1429596,
+      "latency_ms": 1457,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:17:14.344Z",
+      "price_window": "offpeak",
+      "request_id": "5d4b4c71-519b-416e-8286-7f0297a9a048",
+      "raw_usage": {
+        "prompt_tokens": 2891,
+        "completion_tokens": 106,
+        "total_tokens": 2997,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 62
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 203
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00010211399999999999
+    },
+    {
+      "ts": "2026-10-25T16:17:17.624Z",
+      "conversation_id": 652,
+      "turn_no": 22,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 147,
+      "output_tokens": 125,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 53,
+      "input_krw": 0.042697200000000005,
+      "output_krw": 0.105,
+      "cost_krw": 0.1476972,
+      "latency_ms": 1811,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:17:15.813Z",
+      "price_window": "offpeak",
+      "request_id": "30aca710-476e-4d3a-b633-862393a9acaa",
+      "raw_usage": {
+        "prompt_tokens": 2963,
+        "completion_tokens": 125,
+        "total_tokens": 3088,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 53
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 147
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000105498
+    },
+    {
+      "ts": "2026-10-25T16:17:19.059Z",
+      "conversation_id": 652,
+      "turn_no": 23,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 230,
+      "output_tokens": 88,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 38,
+      "input_krw": 0.06012719999999999,
+      "output_krw": 0.07392,
+      "cost_krw": 0.13404719999999998,
+      "latency_ms": 1415,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:17:17.644Z",
+      "price_window": "offpeak",
+      "request_id": "5b4ad397-1bc6-46c0-831c-979b304335b0",
+      "raw_usage": {
+        "prompt_tokens": 3046,
+        "completion_tokens": 88,
+        "total_tokens": 3134,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 38
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 230
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00009574799999999999
+    },
+    {
+      "ts": "2026-10-25T16:17:20.738Z",
+      "conversation_id": 652,
+      "turn_no": 24,
+      "purpose": "response",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 169,
+      "output_tokens": 107,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 49,
+      "input_krw": 0.047854799999999996,
+      "output_krw": 0.08988,
+      "cost_krw": 0.1377348,
+      "latency_ms": 1660,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:17:19.077Z",
+      "price_window": "offpeak",
+      "request_id": "915d401c-9bee-4c6d-9346-89b5dc810a35",
+      "raw_usage": {
+        "prompt_tokens": 3113,
+        "completion_tokens": 107,
+        "total_tokens": 3220,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 49
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 169
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000098382
+    },
+    {
+      "ts": "2026-10-25T16:17:22.959Z",
+      "conversation_id": 652,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2054,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.57512,
+      "output_krw": 0.028,
+      "cost_krw": 0.60312,
+      "latency_ms": 2210,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:17:20.749Z",
+      "request_id": "RKp2GxNYrd1xdzw8YnEObIhh",
+      "raw_usage": {
+        "prompt_tokens": 2054,
+        "total_tokens": 2104,
+        "completion_tokens": 50,
+        "estimated_cost": 0.00043080000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004308
+    },
+    {
+      "ts": "2026-10-25T16:17:25.921Z",
+      "conversation_id": 652,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2261,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.6330800000000001,
+      "output_krw": 0.030799999999999998,
+      "cost_krw": 0.66388,
+      "latency_ms": 2958,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:17:22.962Z",
+      "request_id": "Rzk3NCxNNcEG3tUqGmpB5mz0",
+      "raw_usage": {
+        "prompt_tokens": 2261,
+        "total_tokens": 2316,
+        "completion_tokens": 55,
+        "estimated_cost": 0.00047420000000000003,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00047420000000000003
+    },
+    {
+      "ts": "2026-10-25T16:17:28.273Z",
+      "conversation_id": 652,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2125,
+      "output_tokens": 51,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.595,
+      "output_krw": 0.028560000000000002,
+      "cost_krw": 0.62356,
+      "latency_ms": 2322,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:17:25.950Z",
+      "request_id": "RCVIUIARH3zS4cuEWuMIOHLM",
+      "raw_usage": {
+        "prompt_tokens": 2125,
+        "total_tokens": 2176,
+        "completion_tokens": 51,
+        "estimated_cost": 0.00044540000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004454
+    },
+    {
+      "ts": "2026-10-25T16:17:31.756Z",
+      "conversation_id": 652,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025161518-naruto-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2158,
+      "output_tokens": 98,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.60424,
+      "output_krw": 0.054880000000000005,
+      "cost_krw": 0.65912,
+      "latency_ms": 3470,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:17:28.286Z",
+      "request_id": "RVmcDYefHgZwBXuzJyEz1oBL",
+      "raw_usage": {
+        "prompt_tokens": 2158,
+        "total_tokens": 2256,
+        "completion_tokens": 98,
+        "estimated_cost": 0.00047080000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00047080000000000006
+    }
+  ],
+  "ledger_check": {
+    "sessions": [
+      {
+        "db_calls": 21,
+        "ledger_calls": 21,
+        "db_krw": 5.831176399999999,
+        "ledger_krw": 5.831176399999999,
+        "match": true
+      },
+      {
+        "db_calls": 34,
+        "ledger_calls": 34,
+        "db_krw": 9.271732399999998,
+        "ledger_krw": 9.271732399999998,
+        "match": true
+      }
+    ],
+    "match": true
+  },
+  "provenance": {
+    "build_id": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_time": "2026-10-25T13:48:53.236Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 6,
+    "git_status_sha": "31526d9ac974",
+    "started_at": "2026-10-25T16:15:18.628Z",
+    "model": {
+      "config": {
+        "response": "deepseek-flash",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.3016087199999999,
+      "avg_with_end_krw": 0.3775727199999999,
+      "end_krw": 3.0385600000000004,
+      "total_krw": 15.102908799999996,
+      "segments": {
+        "s1": 0.25470602499999995,
+        "s2": 0.3328771833333333
+      },
+      "max": {
+        "turn": 12,
+        "krw": 1.4187796000000001,
+        "tags": {
+          "response": 0.2433396,
+          "extract": 1.17544
+        }
+      },
+      "by_tag": {
+        "response": 7.147408799999998,
+        "extract": 6.7272799999999995,
+        "consolidate": 1.16816,
+        "embed": 0.06006
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0.7105132037867464,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.1421112,
+          "tags": {
+            "response": 0.1421112
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.18222120000000003,
+          "tags": {
+            "response": 0.18222120000000003
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.2253888,
+          "tags": {
+            "response": 0.2253888
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.2402064,
+          "tags": {
+            "response": 0.2402064
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.166824,
+          "tags": {
+            "response": 0.166824
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.13586159999999997,
+          "tags": {
+            "response": 0.13586159999999997
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.14710919999999997,
+          "tags": {
+            "response": 0.14710919999999997
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.1562568,
+          "tags": {
+            "response": 0.1562568
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.1347444,
+          "tags": {
+            "response": 0.1347444
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.1889244,
+          "tags": {
+            "response": 0.1889244
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.154392,
+          "tags": {
+            "response": 0.154392
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 1.4187796000000001,
+          "tags": {
+            "response": 0.2433396,
+            "extract": 1.17544
+          }
+        },
+        {
+          "turn": 13,
+          "krw": 0.29520119999999994,
+          "tags": {
+            "response": 0.29520119999999994
+          }
+        },
+        {
+          "turn": 14,
+          "krw": 0.16213679999999997,
+          "tags": {
+            "response": 0.16213679999999997
+          }
+        },
+        {
+          "turn": 15,
+          "krw": 0.1565844,
+          "tags": {
+            "response": 0.1565844
+          }
+        },
+        {
+          "turn": 16,
+          "krw": 0.1685544,
+          "tags": {
+            "response": 0.1685544
+          }
+        },
+        {
+          "turn": 17,
+          "krw": 0.3180912,
+          "tags": {
+            "response": 0.3180912
+          }
+        },
+        {
+          "turn": 18,
+          "krw": 0.102564,
+          "tags": {
+            "response": 0.102564
+          }
+        },
+        {
+          "turn": 19,
+          "krw": 0.117474,
+          "tags": {
+            "response": 0.117474
+          }
+        },
+        {
+          "turn": 20,
+          "krw": 0.1396416,
+          "tags": {
+            "response": 0.1396416
+          }
+        },
+        {
+          "turn": 21,
+          "krw": 0.1414392,
+          "tags": {
+            "response": 0.1414392
+          }
+        },
+        {
+          "turn": 22,
+          "krw": 0.2212392,
+          "tags": {
+            "response": 0.2212392
+          }
+        },
+        {
+          "turn": 23,
+          "krw": 0.12853679999999998,
+          "tags": {
+            "response": 0.12853679999999998
+          }
+        },
+        {
+          "turn": 24,
+          "krw": 0.18976439999999997,
+          "tags": {
+            "response": 0.18976439999999997
+          }
+        },
+        {
+          "turn": 25,
+          "krw": 0.19291439999999996,
+          "tags": {
+            "response": 0.19291439999999996
+          }
+        },
+        {
+          "turn": 26,
+          "krw": 0.135912,
+          "tags": {
+            "response": 0.135912
+          }
+        },
+        {
+          "turn": 27,
+          "krw": 0.10494960000000002,
+          "tags": {
+            "response": 0.10494960000000002
+          }
+        },
+        {
+          "turn": 28,
+          "krw": 1.3380696,
+          "tags": {
+            "response": 0.09843959999999999,
+            "extract": 1.1995200000000001,
+            "embed": 0.04011
+          }
+        },
+        {
+          "turn": 29,
+          "krw": 0.6291011999999999,
+          "tags": {
+            "response": 0.6291011999999999
+          }
+        },
+        {
+          "turn": 30,
+          "krw": 0.094962,
+          "tags": {
+            "response": 0.094962
+          }
+        },
+        {
+          "turn": 31,
+          "krw": 0.185052,
+          "tags": {
+            "response": 0.185052
+          }
+        },
+        {
+          "turn": 32,
+          "krw": 0.1486296,
+          "tags": {
+            "response": 0.1486296
+          }
+        },
+        {
+          "turn": 33,
+          "krw": 0.1365672,
+          "tags": {
+            "response": 0.1365672
+          }
+        },
+        {
+          "turn": 34,
+          "krw": 1.3434148,
+          "tags": {
+            "response": 0.1085448,
+            "extract": 1.2149200000000002,
+            "embed": 0.019950000000000002
+          }
+        },
+        {
+          "turn": 35,
+          "krw": 0.32009879999999996,
+          "tags": {
+            "response": 0.32009879999999996
+          }
+        },
+        {
+          "turn": 36,
+          "krw": 0.171192,
+          "tags": {
+            "response": 0.171192
+          }
+        },
+        {
+          "turn": 37,
+          "krw": 0.1429596,
+          "tags": {
+            "response": 0.1429596
+          }
+        },
+        {
+          "turn": 38,
+          "krw": 0.1476972,
+          "tags": {
+            "response": 0.1476972
+          }
+        },
+        {
+          "turn": 39,
+          "krw": 0.13404719999999998,
+          "tags": {
+            "response": 0.13404719999999998
+          }
+        },
+        {
+          "turn": 40,
+          "krw": 1.4047348,
+          "tags": {
+            "response": 0.1377348,
+            "extract": 1.267
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.31741415999999995,
+        "avg_with_end_krw": 0.39337816,
+        "max": {
+          "turn": 12,
+          "krw": 1.4187796000000001
+        },
+        "segments": {
+          "s1": 0.29421962499999993,
+          "s2": 0.3328771833333333
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.7743287999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.18222120000000003
+          },
+          {
+            "turn": 3,
+            "krw": 0.2253888
+          },
+          {
+            "turn": 4,
+            "krw": 0.2402064
+          },
+          {
+            "turn": 5,
+            "krw": 0.166824
+          },
+          {
+            "turn": 6,
+            "krw": 0.13586159999999997
+          },
+          {
+            "turn": 7,
+            "krw": 0.14710919999999997
+          },
+          {
+            "turn": 8,
+            "krw": 0.1562568
+          },
+          {
+            "turn": 9,
+            "krw": 0.1347444
+          },
+          {
+            "turn": 10,
+            "krw": 0.1889244
+          },
+          {
+            "turn": 11,
+            "krw": 0.154392
+          },
+          {
+            "turn": 12,
+            "krw": 1.4187796000000001
+          },
+          {
+            "turn": 13,
+            "krw": 0.29520119999999994
+          },
+          {
+            "turn": 14,
+            "krw": 0.16213679999999997
+          },
+          {
+            "turn": 15,
+            "krw": 0.1565844
+          },
+          {
+            "turn": 16,
+            "krw": 0.1685544
+          },
+          {
+            "turn": 17,
+            "krw": 0.3180912
+          },
+          {
+            "turn": 18,
+            "krw": 0.102564
+          },
+          {
+            "turn": 19,
+            "krw": 0.117474
+          },
+          {
+            "turn": 20,
+            "krw": 0.1396416
+          },
+          {
+            "turn": 21,
+            "krw": 0.1414392
+          },
+          {
+            "turn": 22,
+            "krw": 0.2212392
+          },
+          {
+            "turn": 23,
+            "krw": 0.12853679999999998
+          },
+          {
+            "turn": 24,
+            "krw": 0.18976439999999997
+          },
+          {
+            "turn": 25,
+            "krw": 0.19291439999999996
+          },
+          {
+            "turn": 26,
+            "krw": 0.135912
+          },
+          {
+            "turn": 27,
+            "krw": 0.10494960000000002
+          },
+          {
+            "turn": 28,
+            "krw": 1.3380696
+          },
+          {
+            "turn": 29,
+            "krw": 0.6291011999999999
+          },
+          {
+            "turn": 30,
+            "krw": 0.094962
+          },
+          {
+            "turn": 31,
+            "krw": 0.185052
+          },
+          {
+            "turn": 32,
+            "krw": 0.1486296
+          },
+          {
+            "turn": 33,
+            "krw": 0.1365672
+          },
+          {
+            "turn": 34,
+            "krw": 1.3434148
+          },
+          {
+            "turn": 35,
+            "krw": 0.32009879999999996
+          },
+          {
+            "turn": 36,
+            "krw": 0.171192
+          },
+          {
+            "turn": 37,
+            "krw": 0.1429596
+          },
+          {
+            "turn": 38,
+            "krw": 0.1476972
+          },
+          {
+            "turn": 39,
+            "krw": 0.13404719999999998
+          },
+          {
+            "turn": 40,
+            "krw": 1.4047348
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 1.24071528,
+        "avg_with_end_krw": 1.31667928,
+        "max": {
+          "turn": 40,
+          "krw": 2.6164851999999996
+        },
+        "segments": {
+          "s1": 1.1240052249999999,
+          "s2": 1.3185219833333333
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.7743287999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.8144388
+          },
+          {
+            "turn": 3,
+            "krw": 0.9102912000000001
+          },
+          {
+            "turn": 4,
+            "krw": 0.9777936
+          },
+          {
+            "turn": 5,
+            "krw": 0.957096
+          },
+          {
+            "turn": 6,
+            "krw": 0.9788183999999998
+          },
+          {
+            "turn": 7,
+            "krw": 1.0427507999999999
+          },
+          {
+            "turn": 8,
+            "krw": 1.1045832
+          },
+          {
+            "turn": 9,
+            "krw": 1.1357556
+          },
+          {
+            "turn": 10,
+            "krw": 1.1899356
+          },
+          {
+            "turn": 11,
+            "krw": 1.208088
+          },
+          {
+            "turn": 12,
+            "krw": 2.5251604
+          },
+          {
+            "turn": 13,
+            "krw": 0.9274187999999999
+          },
+          {
+            "turn": 14,
+            "krw": 1.1104631999999999
+          },
+          {
+            "turn": 15,
+            "krw": 1.1575956
+          },
+          {
+            "turn": 16,
+            "krw": 1.1695655999999999
+          },
+          {
+            "turn": 17,
+            "krw": 0.9503088
+          },
+          {
+            "turn": 18,
+            "krw": 0.892836
+          },
+          {
+            "turn": 19,
+            "krw": 0.9077459999999999
+          },
+          {
+            "turn": 20,
+            "krw": 0.9825983999999999
+          },
+          {
+            "turn": 21,
+            "krw": 1.0370808
+          },
+          {
+            "turn": 22,
+            "krw": 1.1168808
+          },
+          {
+            "turn": 23,
+            "krw": 1.0768631999999998
+          },
+          {
+            "turn": 24,
+            "krw": 1.1907756
+          },
+          {
+            "turn": 25,
+            "krw": 1.1939256
+          },
+          {
+            "turn": 26,
+            "krw": 1.189608
+          },
+          {
+            "turn": 27,
+            "krw": 1.2113304
+          },
+          {
+            "turn": 28,
+            "krw": 2.4444504
+          },
+          {
+            "turn": 29,
+            "krw": 1.2613187999999997
+          },
+          {
+            "turn": 30,
+            "krw": 1.148658
+          },
+          {
+            "turn": 31,
+            "krw": 1.238748
+          },
+          {
+            "turn": 32,
+            "krw": 1.2550104
+          },
+          {
+            "turn": 33,
+            "krw": 1.2956328
+          },
+          {
+            "turn": 34,
+            "krw": 2.5551652000000002
+          },
+          {
+            "turn": 35,
+            "krw": 1.0050012
+          },
+          {
+            "turn": 36,
+            "krw": 1.224888
+          },
+          {
+            "turn": 37,
+            "krw": 1.2493404
+          },
+          {
+            "turn": 38,
+            "krw": 1.3067628
+          },
+          {
+            "turn": 39,
+            "krw": 1.2931127999999998
+          },
+          {
+            "turn": 40,
+            "krw": 2.6164851999999996
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 22,
+      "max_points": 22,
+      "probes": 13,
+      "unscored": 2,
+      "max_points_all": 26,
+      "counts": {
+        "correct": 11,
+        "excluded": 1,
+        "needs_judge": 2
+      },
+      "hard_accuracy": 1,
+      "fabrication_rate": 0,
+      "results": [
+        {
+          "turn": 18,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "근데 내 이름 기억나?",
+          "reply": "*어이없다는 듯 손을 휘젓는다.* 당연히 기억하지, 소라! 일주일 전에 통성명까지 했는데 그걸 까먹으면 닌자가 아니지.",
+          "expect": [
+            "소라"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "소라"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 23,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "아까 내가 이치라쿠에서 뭐 먹었다고 했지?",
+          "reply": "*손가락으로 허공을 콕 찍는다.* 된장라멘! 나 빼놓고 혼자 먹은 그거, 아직도 억울하다니깐.",
+          "expect": [
+            "된장"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "된장"
+          ],
+          "source_items": [
+            {
+              "id": 5462,
+              "text": "사용자는 이치라쿠의 된장라멘을 좋아한다",
+              "status": "active",
+              "turn": 20
+            }
+          ]
+        },
+        {
+          "turn": 26,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "나 오는 길에 뭐가 끊어졌다고 했지?",
+          "reply": "*짚신을 가리키며 씩 웃는다.* 짚신 끈! 그것도 대충 묶어 놓은 거, 아까 내가 알려준 방법대로 다시 매 봐.",
+          "expect": [
+            "끈"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "끈"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 27,
+          "type": "user_promise",
+          "difficulty": "hard",
+          "user": "근데 나 지난번에 너한테 뭐 갖다주기로 했었지?",
+          "reply": "*손바닥을 내밀며 기대에 찬 얼굴을 한다.* 초상화! 다음에 올 때 갖다준다고 했잖아. 혹시 이번에 들고 온 거야?",
+          "expect": [
+            "초상화"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "초상화"
+          ],
+          "source_items": [
+            {
+              "id": 5453,
+              "text": "사용자는 캐릭터에게 초상화를 갖다 주기로 했다",
+              "status": "active",
+              "turn": 7
+            }
+          ]
+        },
+        {
+          "turn": 28,
+          "type": "char_promise",
+          "difficulty": "hard",
+          "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+          "reply": "*손가락으로 인을 맺으며 씩 웃는다.* 분신술 기초! 그거 지금 바로 가르쳐 줄 참이었어. 자, 잘 봐라.",
+          "expect": [
+            "분신술"
+          ],
+          "result": "excluded",
+          "points": null,
+          "why": "8턴에 약속 없음",
+          "source_items": [
+            {
+              "id": 5454,
+              "text": "캐릭터는 사용자에게 분신술 기초를 가르쳐 주기로 했다",
+              "status": "superseded",
+              "turn": 8
+            }
+          ]
+        },
+        {
+          "turn": 29,
+          "type": "relative_time",
+          "difficulty": "hard",
+          "user": "오늘 9일이지? 내 피리 예선까지 며칠 남았더라?",
+          "reply": "*고개를 갸웃하며 손가락으로 날짜를 짚어 본다.* 예선은 11월 4일 수요일이라니깐. 오늘이 9일이면 그건 벌써 지난 날인데, 어떻게 된 거야?",
+          "expect": [
+            "2일",
+            "이틀",
+            "모레",
+            "2 일",
+            "11일",
+            "수요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "수요일"
+          ],
+          "source_items": [
+            {
+              "id": 5452,
+              "text": "사용자는 마을 피리 연주회 예선에 나간다",
+              "status": "active",
+              "turn": 6
+            }
+          ],
+          "judge_hint": "1세션(11-02 월)에 '다음 주 수요일'이라고 했으므로 예선은 11-11(수). 2세션 오늘은 11-09(월)이라 이틀 남았다. 이틀·모레·11일 수요일이면 성공, 날짜를 틀리면 실패."
+        },
+        {
+          "turn": 30,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "새 약방 할머니 이름 뭐라고 했지?",
+          "reply": "*턱을 꺾으며 자, 하고 답한다.* 츠루 할머니! 그 이름 한 번 들으면 안 잊어버린다니깐.",
+          "expect": [
+            "츠루"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "츠루"
+          ],
+          "source_items": [
+            {
+              "id": 5463,
+              "text": "사용자 동네 약방 할머니의 이름은 츠루다",
+              "status": "active",
+              "turn": 22
+            }
+          ]
+        },
+        {
+          "turn": 31,
+          "type": "implicit",
+          "difficulty": "hard",
+          "user": "다음 주에 친구네 놀러 가기로 했는데 걔네 집에 큰 개가 세 마리래. 가도 괜찮겠지?",
+          "reply": "*얼굴이 굳으며 손을 휘젓는다.* 이봐, 개 세 마리면 털이 장난 아니라고! 너 개털 알레르기 있잖아, 그 집엔 그냥 가지 않는 게 좋아. 어떻게든 약이라도 챙겨서 가든가.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 5441,
+              "text": "사용자는 개털 알레르기가 있다",
+              "status": "active",
+              "turn": 2
+            }
+          ],
+          "judge_hint": "사용자는 개털 알레르기가 있다(1세션 2턴). 알레르기를 짚거나 조심하라고 하면 성공. 아무 걱정 없이 괜찮다고만 하면 실패."
+        },
+        {
+          "turn": 33,
+          "type": "update",
+          "difficulty": "hard",
+          "user": "나 피리 수업 무슨 요일에 간다고 했지?",
+          "reply": "*손가락으로 허공에 동그라미를 그린다.* 목요일! 매주 목요일마다 피리 선생님 댁에 간다고 했잖아. 나는 그날만 되면 왠지 네 손가락이 바쁠 것 같아서 괜히 웃음이 나온다니깐.",
+          "expect": [
+            "목요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "목요일"
+          ],
+          "source_items": [
+            {
+              "id": 5442,
+              "text": "사용자는 피리를 배우고 있다",
+              "status": "active",
+              "turn": 3
+            },
+            {
+              "id": 5443,
+              "text": "사용자는 피리 선생님 댁에 간다",
+              "status": "superseded",
+              "turn": 3
+            },
+            {
+              "id": 5461,
+              "text": "사용자는 피리 선생님 댁에 간다 (매주 목요일)",
+              "status": "active",
+              "turn": 19
+            }
+          ]
+        },
+        {
+          "turn": 34,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "이따 단 거 사줄게. 내가 뭐 좋아한다고 했었지?",
+          "reply": "*군침을 꿀꺽 삼키며 손뼉을 친다.* 팥빙수! 그거 하나면 수행 뒤 더위도 싹 가신다니깐.",
+          "expect": [
+            "팥빙수"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "팥빙수"
+          ],
+          "source_items": [
+            {
+              "id": 5451,
+              "text": "사용자는 단 것 중 팥빙수를 가장 좋아한다",
+              "status": "active",
+              "turn": 5
+            }
+          ]
+        },
+        {
+          "turn": 35,
+          "type": "combine",
+          "difficulty": "hard",
+          "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+          "reply": "*팔짱을 끼고 고개를 끄덕인다.* 언니 보러 간다며. 모래마을에서 혼자 사는 언니한테 가는 거, 나도 한 번쯤 따라가 보고 싶을 정도라니깐.",
+          "expect": [
+            "모래",
+            "언니"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "모래",
+            "언니"
+          ],
+          "source_items": [
+            {
+              "id": 5449,
+              "text": "사용자의 언니는 모래마을에서 혼자 산다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 5450,
+              "text": "사용자의 언니는 의술을 배우고 있다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 5474,
+              "text": "사용자는 언니를 보러 간다",
+              "status": "active",
+              "turn": 24
+            }
+          ],
+          "judge_hint": "24턴(2세션)에 '언니 보러 간다'고만 했고, 언니가 모래마을에 산다는 건 1세션 4턴. 모래마을과 언니를 둘 다 말하면 정답, 하나만이면 부분."
+        },
+        {
+          "turn": 36,
+          "type": "half_said",
+          "difficulty": "normal",
+          "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+          "reply": "*고개를 갸웃하며 볼의 수염 자국을 긁적긴다.* 고민? 그런 얘기는 나한테 한 적 없는 것 같은데. 무슨 일인지 내가 들어 줄 테니까 말해 봐라.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [],
+          "judge_hint": "사용자는 고민이 있다는 것만 말하고 내용은 나중에 말하겠다고 했다(1세션 11턴). 고민 내용을 지어내면 실패, 아직 말 안 했다거나 모른다고 하면 성공."
+        },
+        {
+          "turn": 37,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "내 혈액형 뭐라고 했더라?",
+          "reply": "*어깨를 으쓱하며 고개를 젓는다.* 혈액형? 그런 건 네가 말해 준 적 없어서 나도 모른다니깐.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": []
+        },
+        {
+          "turn": 38,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "지난번에 내가 제일 좋아하는 꽃 얘기했었지? 뭐였지?",
+          "reply": "*수염 자국을 손끝으로 톡톡 두드리다가 고개를 젓는다.* 꽃 얘긴 나한테 안 했던 것 같은데. 뭐가 좋아? 나중에 수행장 오는 길에 한 송이 꺾어다 줄 테니까.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": [],
+          "judge_hint": "사용자는 좋아하는 꽃을 말한 적이 없다(거짓 전제 질문). 꽃 이름을 지어내면 실패, 말한 적 없다거나 모른다고 하면 성공."
+        }
+      ]
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 0,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "flag_turns": {},
+      "examples": {},
+      "question_rate": 0.3,
+      "avg_chars": 82.65,
+      "style": {
+        "ends_question": 0.125,
+        "multi_question": 0,
+        "echo_opening": 0.125,
+        "laugh": 0,
+        "top_opening": "오,",
+        "top_opening_share": 0.05,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0,
+        "dialogue_chars": 59.9
+      }
+    }
+  },
+  "valid": {
+    "ok": true,
+    "reasons": []
+  }
+}

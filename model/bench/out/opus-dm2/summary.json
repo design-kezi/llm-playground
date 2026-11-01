@@ -1,0 +1,1321 @@
+{
+ "generated": "2026-10-31T08:48:38.086Z",
+ "table": [
+  {
+   "cond": "deepseek-off",
+   "by_rep": {
+    "1": {
+     "pts": 222,
+     "max": 240,
+     "pct": 92.5,
+     "n": 120
+    },
+    "2": {
+     "pts": 218,
+     "max": 240,
+     "pct": 90.83333333333333,
+     "n": 120
+    }
+   },
+   "all": {
+    "pts": 440,
+    "max": 480,
+    "pct": 91.66666666666666,
+    "n": 240
+   },
+   "mem": {
+    "pts": 235,
+    "max": 256,
+    "pct": 91.796875,
+    "n": 128
+   },
+   "revisit": {
+    "pts": 205,
+    "max": 224,
+    "pct": 91.51785714285714,
+    "n": 112
+   },
+   "counts": {
+    "correct": 222,
+    "partial": 7,
+    "unknown": 1,
+    "stale": 0,
+    "wrong": 9,
+    "fabricated": 1,
+    "na": 0
+   },
+   "harmful": 10,
+   "by_type": {
+    "abstain": {
+     "pts": 64,
+     "max": 64,
+     "pct": 100,
+     "n": 32
+    },
+    "char_promise": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "combine": {
+     "pts": 31,
+     "max": 32,
+     "pct": 96.875,
+     "n": 16
+    },
+    "distractor": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "half_said": {
+     "pts": 28,
+     "max": 32,
+     "pct": 87.5,
+     "n": 16
+    },
+    "implicit": {
+     "pts": 38,
+     "max": 48,
+     "pct": 79.16666666666666,
+     "n": 24
+    },
+    "multi_update": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "partial_update": {
+     "pts": 14,
+     "max": 16,
+     "pct": 87.5,
+     "n": 8
+    },
+    "pref": {
+     "pts": 110,
+     "max": 112,
+     "pct": 98.21428571428571,
+     "n": 56
+    },
+    "relative_time": {
+     "pts": 14,
+     "max": 32,
+     "pct": 43.75,
+     "n": 16
+    },
+    "retract": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "update": {
+     "pts": 29,
+     "max": 32,
+     "pct": 90.625,
+     "n": 16
+    },
+    "user_promise": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    }
+   },
+   "vs_base": {
+    "better": 23,
+    "worse": 10,
+    "p": 0.03508203336969018
+   },
+   "kw_agree": 0.9384615384615385,
+   "kw_n": 195
+  },
+  {
+   "cond": "deepseek-on",
+   "by_rep": {
+    "1": {
+     "pts": 234,
+     "max": 240,
+     "pct": 97.5,
+     "n": 120
+    },
+    "2": {
+     "pts": 220,
+     "max": 240,
+     "pct": 91.66666666666666,
+     "n": 120
+    }
+   },
+   "all": {
+    "pts": 454,
+    "max": 480,
+    "pct": 94.58333333333333,
+    "n": 240
+   },
+   "mem": {
+    "pts": 249,
+    "max": 256,
+    "pct": 97.265625,
+    "n": 128
+   },
+   "revisit": {
+    "pts": 205,
+    "max": 224,
+    "pct": 91.51785714285714,
+    "n": 112
+   },
+   "counts": {
+    "correct": 222,
+    "partial": 14,
+    "unknown": 0,
+    "stale": 0,
+    "wrong": 4,
+    "fabricated": 0,
+    "na": 0
+   },
+   "harmful": 4,
+   "by_type": {
+    "abstain": {
+     "pts": 63,
+     "max": 64,
+     "pct": 98.4375,
+     "n": 32
+    },
+    "char_promise": {
+     "pts": 31,
+     "max": 32,
+     "pct": 96.875,
+     "n": 16
+    },
+    "combine": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "distractor": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "half_said": {
+     "pts": 31,
+     "max": 32,
+     "pct": 96.875,
+     "n": 16
+    },
+    "implicit": {
+     "pts": 48,
+     "max": 48,
+     "pct": 100,
+     "n": 24
+    },
+    "multi_update": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "partial_update": {
+     "pts": 14,
+     "max": 16,
+     "pct": 87.5,
+     "n": 8
+    },
+    "pref": {
+     "pts": 106,
+     "max": 112,
+     "pct": 94.64285714285714,
+     "n": 56
+    },
+    "relative_time": {
+     "pts": 20,
+     "max": 32,
+     "pct": 62.5,
+     "n": 16
+    },
+    "retract": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "update": {
+     "pts": 31,
+     "max": 32,
+     "pct": 96.875,
+     "n": 16
+    },
+    "user_promise": {
+     "pts": 30,
+     "max": 32,
+     "pct": 93.75,
+     "n": 16
+    }
+   },
+   "vs_base": {
+    "better": 23,
+    "worse": 10,
+    "p": 0.03508203336969018
+   },
+   "kw_agree": 0.923469387755102,
+   "kw_n": 196
+  },
+  {
+   "cond": "gemma26-off",
+   "by_rep": {
+    "1": {
+     "pts": 223,
+     "max": 240,
+     "pct": 92.91666666666667,
+     "n": 120
+    },
+    "2": {
+     "pts": 200,
+     "max": 240,
+     "pct": 83.33333333333334,
+     "n": 120
+    }
+   },
+   "all": {
+    "pts": 423,
+    "max": 480,
+    "pct": 88.125,
+    "n": 240
+   },
+   "mem": {
+    "pts": 239,
+    "max": 256,
+    "pct": 93.359375,
+    "n": 128
+   },
+   "revisit": {
+    "pts": 184,
+    "max": 224,
+    "pct": 82.14285714285714,
+    "n": 112
+   },
+   "counts": {
+    "correct": 212,
+    "partial": 15,
+    "unknown": 0,
+    "stale": 4,
+    "wrong": 6,
+    "fabricated": 3,
+    "na": 0
+   },
+   "harmful": 13,
+   "by_type": {
+    "abstain": {
+     "pts": 64,
+     "max": 64,
+     "pct": 100,
+     "n": 32
+    },
+    "char_promise": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "combine": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "distractor": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "half_said": {
+     "pts": 20,
+     "max": 32,
+     "pct": 62.5,
+     "n": 16
+    },
+    "implicit": {
+     "pts": 42,
+     "max": 48,
+     "pct": 87.5,
+     "n": 24
+    },
+    "multi_update": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "partial_update": {
+     "pts": 13,
+     "max": 16,
+     "pct": 81.25,
+     "n": 8
+    },
+    "pref": {
+     "pts": 108,
+     "max": 112,
+     "pct": 96.42857142857143,
+     "n": 56
+    },
+    "relative_time": {
+     "pts": 16,
+     "max": 32,
+     "pct": 50,
+     "n": 16
+    },
+    "retract": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "update": {
+     "pts": 18,
+     "max": 32,
+     "pct": 56.25,
+     "n": 16
+    },
+    "user_promise": {
+     "pts": 30,
+     "max": 32,
+     "pct": 93.75,
+     "n": 16
+    }
+   },
+   "vs_base": {
+    "better": 21,
+    "worse": 15,
+    "p": 0.40503224614076316
+   },
+   "kw_agree": 0.882051282051282,
+   "kw_n": 195
+  },
+  {
+   "cond": "haiku-off",
+   "by_rep": {
+    "1": {
+     "pts": 218,
+     "max": 240,
+     "pct": 90.83333333333333,
+     "n": 120
+    },
+    "2": {
+     "pts": 211,
+     "max": 240,
+     "pct": 87.91666666666667,
+     "n": 120
+    }
+   },
+   "all": {
+    "pts": 429,
+    "max": 480,
+    "pct": 89.375,
+    "n": 240
+   },
+   "mem": {
+    "pts": 234,
+    "max": 256,
+    "pct": 91.40625,
+    "n": 128
+   },
+   "revisit": {
+    "pts": 195,
+    "max": 224,
+    "pct": 87.05357142857143,
+    "n": 112
+   },
+   "counts": {
+    "correct": 209,
+    "partial": 20,
+    "unknown": 2,
+    "stale": 0,
+    "wrong": 9,
+    "fabricated": 0,
+    "na": 0
+   },
+   "harmful": 9,
+   "by_type": {
+    "abstain": {
+     "pts": 63,
+     "max": 64,
+     "pct": 98.4375,
+     "n": 32
+    },
+    "char_promise": {
+     "pts": 29,
+     "max": 32,
+     "pct": 90.625,
+     "n": 16
+    },
+    "combine": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "distractor": {
+     "pts": 13,
+     "max": 16,
+     "pct": 81.25,
+     "n": 8
+    },
+    "half_said": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "implicit": {
+     "pts": 41,
+     "max": 48,
+     "pct": 85.41666666666666,
+     "n": 24
+    },
+    "multi_update": {
+     "pts": 15,
+     "max": 16,
+     "pct": 93.75,
+     "n": 8
+    },
+    "partial_update": {
+     "pts": 10,
+     "max": 16,
+     "pct": 62.5,
+     "n": 8
+    },
+    "pref": {
+     "pts": 108,
+     "max": 112,
+     "pct": 96.42857142857143,
+     "n": 56
+    },
+    "relative_time": {
+     "pts": 11,
+     "max": 32,
+     "pct": 34.375,
+     "n": 16
+    },
+    "retract": {
+     "pts": 15,
+     "max": 16,
+     "pct": 93.75,
+     "n": 8
+    },
+    "update": {
+     "pts": 30,
+     "max": 32,
+     "pct": 93.75,
+     "n": 16
+    },
+    "user_promise": {
+     "pts": 30,
+     "max": 32,
+     "pct": 93.75,
+     "n": 16
+    }
+   },
+   "vs_base": null,
+   "kw_agree": 0.8571428571428571,
+   "kw_n": 203
+  },
+  {
+   "cond": "haiku-on",
+   "by_rep": {
+    "1": {
+     "pts": 232,
+     "max": 238,
+     "pct": 97.47899159663865,
+     "n": 119
+    },
+    "2": {
+     "pts": 215,
+     "max": 240,
+     "pct": 89.58333333333334,
+     "n": 120
+    }
+   },
+   "all": {
+    "pts": 447,
+    "max": 478,
+    "pct": 93.51464435146444,
+    "n": 239
+   },
+   "mem": {
+    "pts": 241,
+    "max": 256,
+    "pct": 94.140625,
+    "n": 128
+   },
+   "revisit": {
+    "pts": 206,
+    "max": 222,
+    "pct": 92.7927927927928,
+    "n": 111
+   },
+   "counts": {
+    "correct": 213,
+    "partial": 23,
+    "unknown": 1,
+    "stale": 0,
+    "wrong": 2,
+    "fabricated": 0,
+    "na": 1
+   },
+   "harmful": 2,
+   "by_type": {
+    "abstain": {
+     "pts": 64,
+     "max": 64,
+     "pct": 100,
+     "n": 32
+    },
+    "char_promise": {
+     "pts": 28,
+     "max": 30,
+     "pct": 93.33333333333333,
+     "n": 15
+    },
+    "combine": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "distractor": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "half_said": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "implicit": {
+     "pts": 48,
+     "max": 48,
+     "pct": 100,
+     "n": 24
+    },
+    "multi_update": {
+     "pts": 14,
+     "max": 16,
+     "pct": 87.5,
+     "n": 8
+    },
+    "partial_update": {
+     "pts": 11,
+     "max": 16,
+     "pct": 68.75,
+     "n": 8
+    },
+    "pref": {
+     "pts": 107,
+     "max": 112,
+     "pct": 95.53571428571429,
+     "n": 56
+    },
+    "relative_time": {
+     "pts": 23,
+     "max": 32,
+     "pct": 71.875,
+     "n": 16
+    },
+    "retract": {
+     "pts": 15,
+     "max": 16,
+     "pct": 93.75,
+     "n": 8
+    },
+    "update": {
+     "pts": 26,
+     "max": 32,
+     "pct": 81.25,
+     "n": 16
+    },
+    "user_promise": {
+     "pts": 31,
+     "max": 32,
+     "pct": 96.875,
+     "n": 16
+    }
+   },
+   "vs_base": {
+    "better": 20,
+    "worse": 14,
+    "p": 0.39152830513194203
+   },
+   "kw_agree": 0.8743961352657005,
+   "kw_n": 207
+  },
+  {
+   "cond": "luna-off",
+   "by_rep": {
+    "1": {
+     "pts": 229,
+     "max": 240,
+     "pct": 95.41666666666667,
+     "n": 120
+    },
+    "2": {
+     "pts": 212,
+     "max": 238,
+     "pct": 89.07563025210085,
+     "n": 119
+    }
+   },
+   "all": {
+    "pts": 441,
+    "max": 478,
+    "pct": 92.25941422594143,
+    "n": 239
+   },
+   "mem": {
+    "pts": 245,
+    "max": 256,
+    "pct": 95.703125,
+    "n": 128
+   },
+   "revisit": {
+    "pts": 196,
+    "max": 222,
+    "pct": 88.28828828828829,
+    "n": 111
+   },
+   "counts": {
+    "correct": 220,
+    "partial": 10,
+    "unknown": 0,
+    "stale": 3,
+    "wrong": 6,
+    "fabricated": 0,
+    "na": 1
+   },
+   "harmful": 9,
+   "by_type": {
+    "abstain": {
+     "pts": 64,
+     "max": 64,
+     "pct": 100,
+     "n": 32
+    },
+    "char_promise": {
+     "pts": 30,
+     "max": 30,
+     "pct": 100,
+     "n": 15
+    },
+    "combine": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "distractor": {
+     "pts": 15,
+     "max": 16,
+     "pct": 93.75,
+     "n": 8
+    },
+    "half_said": {
+     "pts": 29,
+     "max": 32,
+     "pct": 90.625,
+     "n": 16
+    },
+    "implicit": {
+     "pts": 48,
+     "max": 48,
+     "pct": 100,
+     "n": 24
+    },
+    "multi_update": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "partial_update": {
+     "pts": 11,
+     "max": 16,
+     "pct": 68.75,
+     "n": 8
+    },
+    "pref": {
+     "pts": 107,
+     "max": 112,
+     "pct": 95.53571428571429,
+     "n": 56
+    },
+    "relative_time": {
+     "pts": 19,
+     "max": 32,
+     "pct": 59.375,
+     "n": 16
+    },
+    "retract": {
+     "pts": 15,
+     "max": 16,
+     "pct": 93.75,
+     "n": 8
+    },
+    "update": {
+     "pts": 23,
+     "max": 32,
+     "pct": 71.875,
+     "n": 16
+    },
+    "user_promise": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    }
+   },
+   "vs_base": {
+    "better": 22,
+    "worse": 10,
+    "p": 0.050102459732443094
+   },
+   "kw_agree": 0.9264705882352942,
+   "kw_n": 204
+  },
+  {
+   "cond": "luna-on",
+   "by_rep": {
+    "1": {
+     "pts": 226,
+     "max": 240,
+     "pct": 94.16666666666667,
+     "n": 120
+    },
+    "2": {
+     "pts": 216,
+     "max": 240,
+     "pct": 90,
+     "n": 120
+    }
+   },
+   "all": {
+    "pts": 442,
+    "max": 480,
+    "pct": 92.08333333333333,
+    "n": 240
+   },
+   "mem": {
+    "pts": 251,
+    "max": 256,
+    "pct": 98.046875,
+    "n": 128
+   },
+   "revisit": {
+    "pts": 191,
+    "max": 224,
+    "pct": 85.26785714285714,
+    "n": 112
+   },
+   "counts": {
+    "correct": 223,
+    "partial": 6,
+    "unknown": 1,
+    "stale": 3,
+    "wrong": 7,
+    "fabricated": 0,
+    "na": 0
+   },
+   "harmful": 10,
+   "by_type": {
+    "abstain": {
+     "pts": 64,
+     "max": 64,
+     "pct": 100,
+     "n": 32
+    },
+    "char_promise": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "combine": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "distractor": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "half_said": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "implicit": {
+     "pts": 48,
+     "max": 48,
+     "pct": 100,
+     "n": 24
+    },
+    "multi_update": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "partial_update": {
+     "pts": 13,
+     "max": 16,
+     "pct": 81.25,
+     "n": 8
+    },
+    "pref": {
+     "pts": 107,
+     "max": 112,
+     "pct": 95.53571428571429,
+     "n": 56
+    },
+    "relative_time": {
+     "pts": 11,
+     "max": 32,
+     "pct": 34.375,
+     "n": 16
+    },
+    "retract": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "update": {
+     "pts": 23,
+     "max": 32,
+     "pct": 71.875,
+     "n": 16
+    },
+    "user_promise": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    }
+   },
+   "vs_base": {
+    "better": 22,
+    "worse": 8,
+    "p": 0.016124801710247993
+   },
+   "kw_agree": 0.9310344827586207,
+   "kw_n": 203
+  },
+  {
+   "cond": "qwen-off",
+   "by_rep": {
+    "1": {
+     "pts": 187,
+     "max": 238,
+     "pct": 78.57142857142857,
+     "n": 119
+    },
+    "2": {
+     "pts": 0,
+     "max": 0,
+     "pct": null,
+     "n": 0
+    }
+   },
+   "all": {
+    "pts": 187,
+    "max": 238,
+    "pct": 78.57142857142857,
+    "n": 119
+   },
+   "mem": {
+    "pts": 107,
+    "max": 126,
+    "pct": 84.92063492063492,
+    "n": 63
+   },
+   "revisit": {
+    "pts": 80,
+    "max": 112,
+    "pct": 71.42857142857143,
+    "n": 56
+   },
+   "counts": {
+    "correct": 99,
+    "partial": 7,
+    "unknown": 0,
+    "stale": 2,
+    "wrong": 6,
+    "fabricated": 5,
+    "na": 1
+   },
+   "harmful": 13,
+   "by_type": {
+    "abstain": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "char_promise": {
+     "pts": 11,
+     "max": 14,
+     "pct": 78.57142857142857,
+     "n": 7
+    },
+    "combine": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "distractor": {
+     "pts": 8,
+     "max": 8,
+     "pct": 100,
+     "n": 4
+    },
+    "half_said": {
+     "pts": -4,
+     "max": 16,
+     "pct": -25,
+     "n": 8
+    },
+    "implicit": {
+     "pts": 19,
+     "max": 24,
+     "pct": 79.16666666666666,
+     "n": 12
+    },
+    "multi_update": {
+     "pts": 8,
+     "max": 8,
+     "pct": 100,
+     "n": 4
+    },
+    "partial_update": {
+     "pts": 8,
+     "max": 8,
+     "pct": 100,
+     "n": 4
+    },
+    "pref": {
+     "pts": 53,
+     "max": 56,
+     "pct": 94.64285714285714,
+     "n": 28
+    },
+    "relative_time": {
+     "pts": 6,
+     "max": 16,
+     "pct": 37.5,
+     "n": 8
+    },
+    "retract": {
+     "pts": 8,
+     "max": 8,
+     "pct": 100,
+     "n": 4
+    },
+    "update": {
+     "pts": 10,
+     "max": 16,
+     "pct": 62.5,
+     "n": 8
+    },
+    "user_promise": {
+     "pts": 12,
+     "max": 16,
+     "pct": 75,
+     "n": 8
+    }
+   },
+   "vs_base": {
+    "better": 11,
+    "worse": 19,
+    "p": 0.20048842206597328
+   },
+   "kw_agree": 0.8723404255319149,
+   "kw_n": 94
+  },
+  {
+   "cond": "ctl-full-memoff",
+   "by_rep": {
+    "1": {
+     "pts": 181,
+     "max": 240,
+     "pct": 75.41666666666667,
+     "n": 120
+    },
+    "2": {
+     "pts": 0,
+     "max": 0,
+     "pct": null,
+     "n": 0
+    }
+   },
+   "all": {
+    "pts": 181,
+    "max": 240,
+    "pct": 75.41666666666667,
+    "n": 120
+   },
+   "mem": {
+    "pts": 121,
+    "max": 128,
+    "pct": 94.53125,
+    "n": 64
+   },
+   "revisit": {
+    "pts": 60,
+    "max": 112,
+    "pct": 53.57142857142857,
+    "n": 56
+   },
+   "counts": {
+    "correct": 85,
+    "partial": 13,
+    "unknown": 20,
+    "stale": 0,
+    "wrong": 2,
+    "fabricated": 0,
+    "na": 0
+   },
+   "harmful": 2,
+   "by_type": {
+    "abstain": {
+     "pts": 32,
+     "max": 32,
+     "pct": 100,
+     "n": 16
+    },
+    "char_promise": {
+     "pts": 7,
+     "max": 16,
+     "pct": 43.75,
+     "n": 8
+    },
+    "combine": {
+     "pts": 12,
+     "max": 16,
+     "pct": 75,
+     "n": 8
+    },
+    "distractor": {
+     "pts": 8,
+     "max": 8,
+     "pct": 100,
+     "n": 4
+    },
+    "half_said": {
+     "pts": 15,
+     "max": 16,
+     "pct": 93.75,
+     "n": 8
+    },
+    "implicit": {
+     "pts": 17,
+     "max": 24,
+     "pct": 70.83333333333334,
+     "n": 12
+    },
+    "multi_update": {
+     "pts": 8,
+     "max": 8,
+     "pct": 100,
+     "n": 4
+    },
+    "partial_update": {
+     "pts": 7,
+     "max": 8,
+     "pct": 87.5,
+     "n": 4
+    },
+    "pref": {
+     "pts": 38,
+     "max": 56,
+     "pct": 67.85714285714286,
+     "n": 28
+    },
+    "relative_time": {
+     "pts": 8,
+     "max": 16,
+     "pct": 50,
+     "n": 8
+    },
+    "retract": {
+     "pts": 7,
+     "max": 8,
+     "pct": 87.5,
+     "n": 4
+    },
+    "update": {
+     "pts": 15,
+     "max": 16,
+     "pct": 93.75,
+     "n": 8
+    },
+    "user_promise": {
+     "pts": 7,
+     "max": 16,
+     "pct": 43.75,
+     "n": 8
+    }
+   },
+   "vs_base": {
+    "better": 11,
+    "worse": 31,
+    "p": 0.002887247974285856
+   },
+   "kw_agree": 0.9191919191919192,
+   "kw_n": 99
+  },
+  {
+   "cond": "ctl-slide6-memoff",
+   "by_rep": {
+    "1": {
+     "pts": 59,
+     "max": 240,
+     "pct": 24.583333333333332,
+     "n": 120
+    },
+    "2": {
+     "pts": 0,
+     "max": 0,
+     "pct": null,
+     "n": 0
+    }
+   },
+   "all": {
+    "pts": 59,
+    "max": 240,
+    "pct": 24.583333333333332,
+    "n": 120
+   },
+   "mem": {
+    "pts": 23,
+    "max": 128,
+    "pct": 17.96875,
+    "n": 64
+   },
+   "revisit": {
+    "pts": 36,
+    "max": 112,
+    "pct": 32.142857142857146,
+    "n": 56
+   },
+   "counts": {
+    "correct": 34,
+    "partial": 3,
+    "unknown": 72,
+    "stale": 0,
+    "wrong": 10,
+    "fabricated": 1,
+    "na": 0
+   },
+   "harmful": 11,
+   "by_type": {
+    "abstain": {
+     "pts": 31,
+     "max": 32,
+     "pct": 96.875,
+     "n": 16
+    },
+    "char_promise": {
+     "pts": 0,
+     "max": 16,
+     "pct": 0,
+     "n": 8
+    },
+    "combine": {
+     "pts": 0,
+     "max": 16,
+     "pct": 0,
+     "n": 8
+    },
+    "distractor": {
+     "pts": 0,
+     "max": 8,
+     "pct": 0,
+     "n": 4
+    },
+    "half_said": {
+     "pts": 16,
+     "max": 16,
+     "pct": 100,
+     "n": 8
+    },
+    "implicit": {
+     "pts": -1,
+     "max": 24,
+     "pct": -4.166666666666666,
+     "n": 12
+    },
+    "multi_update": {
+     "pts": 0,
+     "max": 8,
+     "pct": 0,
+     "n": 4
+    },
+    "partial_update": {
+     "pts": 0,
+     "max": 8,
+     "pct": 0,
+     "n": 4
+    },
+    "pref": {
+     "pts": 13,
+     "max": 56,
+     "pct": 23.214285714285715,
+     "n": 28
+    },
+    "relative_time": {
+     "pts": 0,
+     "max": 16,
+     "pct": 0,
+     "n": 8
+    },
+    "retract": {
+     "pts": 0,
+     "max": 8,
+     "pct": 0,
+     "n": 4
+    },
+    "update": {
+     "pts": 0,
+     "max": 16,
+     "pct": 0,
+     "n": 8
+    },
+    "user_promise": {
+     "pts": 0,
+     "max": 16,
+     "pct": 0,
+     "n": 8
+    }
+   },
+   "vs_base": {
+    "better": 5,
+    "worse": 82,
+    "p": 5.077541690652894e-19
+   },
+   "kw_agree": 0.9090909090909091,
+   "kw_n": 88
+  }
+ ]
+}

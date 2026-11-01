@@ -1,0 +1,284 @@
+{
+  "as_of": "2026-10-22",
+  "fx_krw_per_usd": 1400,
+  "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+  "unit": "USD per 1M tokens",
+  "models": {
+    "gpt-5-nano": {
+      "provider": "openai",
+      "input": 0.05,
+      "cached": 0.005,
+      "output": 0.4,
+      "reasoning": {
+        "off": "minimal",
+        "minimal": "minimal",
+        "on": "low"
+      },
+      "sampling": false,
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "gpt-6-luna": {
+      "provider": "openai",
+      "input": 0.1,
+      "cached": 0.01,
+      "output": 0.5,
+      "reasoning": {
+        "off": "none",
+        "minimal": "minimal",
+        "on": "low"
+      },
+      "sampling": false,
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "gpt-4.1-nano": {
+      "provider": "openai",
+      "input": 0.1,
+      "cached": 0.025,
+      "output": 0.4,
+      "sampling": true,
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "gemini-2.5-flash-lite": {
+      "provider": "gemini",
+      "unavailable": "2026-10-22 신규 사용자 404(서비스 종료)",
+      "input": 0.1,
+      "cached": 0.01,
+      "output": 0.4,
+      "reasoning": {
+        "off": {
+          "thinkingBudget": 0
+        },
+        "minimal": {
+          "thinkingBudget": 512
+        }
+      },
+      "sampling": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    "gemini-3.1-flash-lite": {
+      "provider": "gemini",
+      "input": 0.25,
+      "cached": 0.025,
+      "output": 1.5,
+      "reasoning": {
+        "off": {
+          "thinkingLevel": "MINIMAL"
+        },
+        "minimal": {
+          "thinkingLevel": "MINIMAL"
+        },
+        "on": {
+          "thinkingLevel": "LOW"
+        }
+      },
+      "sampling": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    "gemini-3.5-flash-lite": {
+      "provider": "gemini",
+      "input": 0.3,
+      "cached": 0.03,
+      "output": 2.5,
+      "reasoning": {
+        "off": {
+          "thinkingLevel": "MINIMAL"
+        },
+        "minimal": {
+          "thinkingLevel": "MINIMAL"
+        },
+        "on": {
+          "thinkingLevel": "LOW"
+        }
+      },
+      "sampling": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    "claude-haiku-5-5": {
+      "provider": "anthropic",
+      "input": 0.1,
+      "cached": 0.01,
+      "cache_write": 0.125,
+      "output": 0.5,
+      "reasoning": {
+        "off": {
+          "thinking": "disabled",
+          "effort": "low"
+        },
+        "minimal": {
+          "effort": "low"
+        },
+        "on": {
+          "thinking": "adaptive",
+          "effort": "low"
+        }
+      },
+      "sampling": false,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    "deepseek-flash": {
+      "provider": "deepseek",
+      "input": 0.3,
+      "cached": 0.006,
+      "output": 1.2,
+      "offpeak": {
+        "input": 0.15,
+        "cached": 0.003,
+        "output": 0.6
+      },
+      "sampling": true,
+      "note": "단가는 호출 시작 시각으로 고른다: 피크(평일 01–04·06–10 UTC = KST 10–13·15–19시) / 그 밖 offpeak(절반). 중국 공휴일은 피크로 계산(실제보다 높음)",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "reasoning": {
+        "off": {
+          "thinking": "disabled"
+        },
+        "minimal": {
+          "thinking": "enabled",
+          "effort": "low"
+        },
+        "on": {
+          "thinking": "enabled",
+          "effort": "low"
+        }
+      }
+    },
+    "google/gemma-4-26B-A4B-it": {
+      "provider": "deepinfra",
+      "input": 0.07,
+      "cached": 0.07,
+      "output": 0.34,
+      "sampling": true,
+      "note": "캐시 단가 미확인 → 입력 단가로 계산",
+      "source": "https://deepinfra.com/pricing",
+      "reasoning": {
+        "on": "low"
+      }
+    },
+    "google/gemma-4-31B-it": {
+      "provider": "deepinfra",
+      "input": 0.2,
+      "cached": 0.2,
+      "output": 0.4,
+      "sampling": true,
+      "note": "2026-10-23 DeepInfra /models/list 로 정정(이전 0.09/0.34 는 -turbo 변형 가격이었음)",
+      "source": "https://deepinfra.com/pricing",
+      "reasoning": {
+        "on": "low"
+      }
+    },
+    "Qwen/Qwen3-32B": {
+      "provider": "deepinfra",
+      "input": 0.08,
+      "cached": 0.08,
+      "output": 0.28,
+      "sampling": true,
+      "note": "캐시 단가 미확인 → 입력 단가로 계산",
+      "source": "https://deepinfra.com/pricing",
+      "reasoning": {
+        "off": "none",
+        "minimal": "low",
+        "on": "low"
+      }
+    },
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+      "provider": "deepinfra",
+      "input": 0.02,
+      "cached": 0.02,
+      "output": 0.04,
+      "sampling": true,
+      "source": "https://deepinfra.com/pricing"
+    },
+    "claude-sonnet-5-5": {
+      "provider": "anthropic",
+      "input": 3,
+      "cached": 0.3,
+      "cache_write": 3.75,
+      "output": 15,
+      "sampling": false,
+      "note": "심판 전용",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "reasoning": {
+        "off": {
+          "thinking": "between_tools"
+        },
+        "minimal": {
+          "effort": "low"
+        }
+      }
+    },
+    "text-embedding-3-small": {
+      "provider": "openai",
+      "kind": "embed",
+      "input": 0.02,
+      "output": 0,
+      "dim": 512,
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "gemini-embedding-001": {
+      "provider": "gemini",
+      "kind": "embed",
+      "input": 0.15,
+      "output": 0,
+      "dim": 768,
+      "note": "응답에 토큰 수가 없어 추정 토큰으로 계산",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    "moonshotai/Kimi-K2.6": {
+      "provider": "deepinfra",
+      "input": 0.75,
+      "cached": 0.75,
+      "output": 3.5,
+      "sampling": true,
+      "note": "판정관 후보(Moonshot, 대화 모델 후보와 다른 회사). 2026-10-25 DeepInfra /models/list 조회값, 캐시 단가 없음 → 입력 단가",
+      "source": "https://api.deepinfra.com/models/list (2026-10-25)",
+      "reasoning": {
+        "off": "none",
+        "on": "low"
+      }
+    },
+    "zai-org/GLM-5.1": {
+      "provider": "deepinfra",
+      "input": 1.05,
+      "cached": 1.05,
+      "output": 3.5,
+      "sampling": true,
+      "note": "판정관 후보(Zhipu, 대화 모델 후보와 다른 회사). 2026-10-25 DeepInfra /models/list 조회값, 캐시 단가 없음 → 입력 단가. reasoning_effort none 은 생각을 본문에 써서(2026-10-25 점검) off 를 low 로 둔다",
+      "source": "https://api.deepinfra.com/models/list (2026-10-25)",
+      "reasoning": {
+        "off": "low",
+        "on": "medium"
+      }
+    },
+    "MiniMaxAI/MiniMax-M2.7": {
+      "provider": "deepinfra",
+      "input": 0.25,
+      "cached": 0.25,
+      "output": 1,
+      "sampling": true,
+      "note": "판정관 후보(MiniMax, 대화 모델 후보와 다른 회사). 2026-10-25 DeepInfra /models/list 조회값, 캐시 단가 없음 → 입력 단가",
+      "source": "https://api.deepinfra.com/models/list (2026-10-25)",
+      "reasoning": {
+        "off": "none",
+        "on": "low"
+      }
+    },
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+      "provider": "deepinfra",
+      "input": 1,
+      "cached": 1,
+      "output": 5,
+      "sampling": true,
+      "note": "판정관 후보(NVIDIA, 대화 모델 후보와 다른 회사). 2026-10-25 DeepInfra /models/list 조회값, 캐시 단가 없음 → 입력 단가",
+      "source": "https://api.deepinfra.com/models/list (2026-10-25)"
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "provider": "deepinfra",
+      "input": 0.1,
+      "cached": 0.1,
+      "output": 0.32,
+      "sampling": true,
+      "note": "판정관 후보(Meta, 대화 모델 후보와 다른 회사). 2026-10-25 DeepInfra /models/list 조회값, 캐시 단가 없음 → 입력 단가",
+      "source": "https://api.deepinfra.com/models/list (2026-10-25)"
+    }
+  }
+}

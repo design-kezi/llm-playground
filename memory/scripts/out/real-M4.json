@@ -1,0 +1,109 @@
+{
+  "id": "M4",
+  "checks": [
+    {
+      "kind": "reply",
+      "turn": "A#5",
+      "expect": "기억|말한 적|안 했|못 들|처음|모르|알려줘|얘기 안|않",
+      "ok": true
+    },
+    {
+      "kind": "reply_not",
+      "turn": "A#5",
+      "expect_not": "치킨|피자|김치찌개|라면|파스타|삼겹살",
+      "ok": true
+    },
+    {
+      "kind": "memory_active_not",
+      "expect_not": "저녁|먹었",
+      "ok": true
+    }
+  ],
+  "turns": [
+    {
+      "conv": "A",
+      "turn": 1,
+      "user": "안녕 오늘 처음 왔어",
+      "reply": "오, 왔구나! 반가워~ 오늘 처음이면 편하게 있다 가. 뭐 하다 왔어?",
+      "mem_block": "",
+      "update": "skip()"
+    },
+    {
+      "conv": "A",
+      "turn": 2,
+      "user": "오늘 날씨 진짜 좋더라 산책하고 싶은 날이야",
+      "reply": "진짜? 나도 창밖 보고 있었는데 햇살 좋더라. 산책 좋지! 어디 가고 싶어? 공원이나 강변 쪽이야?",
+      "mem_block": "",
+      "update": "skip()"
+    },
+    {
+      "conv": "A",
+      "turn": 3,
+      "user": "요즘 볼만한 드라마 있어? 추천해줘",
+      "reply": "아 나 요즘 방영 중인 드라마는 잘 모르겠어. 지금 뭐 나오는지 확실하지 않아서 함부로 추천하면 안 될 것 같아. 혹시 좋아하는 장르 알려주면, 그쪽으로 같이 골라보자. 로맨스? 스릴러? 아니면 가볍게 웃을 수 있는 거?",
+      "mem_block": "",
+      "update": "ops=[{\"op\":\"ADD\",\"item_id\":9,\"type\":\"event\",\"text\":\"사용자는 오늘 처음 채팅방에 왔다\",\"source_turn\":3},{\"op\":\"ADD\",\"item_id\":10,\"type\":\"preference\",\"text\":\"사용자는 날씨가 좋은 날 산책하고 싶어한다\",\"source_turn\":3}] parsed_ok=true gate=interval"
+    },
+    {
+      "conv": "A",
+      "turn": 4,
+      "user": "점심에 뭐 먹을지 고민이다",
+      "reply": "점심 고민이구나! 오늘 날씨도 좋은데 밖에서 간단하게 먹고 산책까지 하면 딱일 것 같아. 혹시 뭐 당기는 거 있어? 아니면 가볍게 먹을까, 든든하게 먹을까?",
+      "mem_block": "(이전 대화에서 확인된 것. 여기 없는 과거는 모른다고 할 것. 바뀐 정보는 현재 값만 말하고 이전 값은 언급하지 말 것. 날짜·대화 번호는 말하지 말고 친구처럼 자연스럽게)\n- 사건: 사용자는 오늘 처음 채팅방에 왔다\n- 선호: 사용자는 날씨가 좋은 날 산책하고 싶어한다\n(약속·사건이 아직 진행 중이면 먼저 어떻게 됐는지 물어볼 것)",
+      "update": "skip()"
+    },
+    {
+      "conv": "A",
+      "turn": 5,
+      "user": "내가 어제 저녁에 뭐 먹었다고 했는지 기억나?",
+      "reply": "아니, 어제 저녁에 뭐 먹었는지는 나한테 들은 기억이 없어. 오늘 처음 얘기하는 거라서 그런 것 같아. 뭐 먹었는데?",
+      "mem_block": "(이전 대화에서 확인된 것. 여기 없는 과거는 모른다고 할 것. 바뀐 정보는 현재 값만 말하고 이전 값은 언급하지 말 것. 날짜·대화 번호는 말하지 말고 친구처럼 자연스럽게)\n- 사건: 사용자는 오늘 처음 채팅방에 왔다\n- 선호: 사용자는 날씨가 좋은 날 산책하고 싶어한다\n(약속·사건이 아직 진행 중이면 먼저 어떻게 됐는지 물어볼 것)",
+      "deep": "none",
+      "update": "ops=[] parsed_ok=true gate=first_person_info"
+    }
+  ],
+  "memory": {
+    "user_id": "demo-m4",
+    "profile": {},
+    "items": [
+      {
+        "id": 9,
+        "type": "event",
+        "text": "사용자는 오늘 처음 채팅방에 왔다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "source": {
+          "conversation_id": 7,
+          "turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-23T02:32:05.127Z"
+      },
+      {
+        "id": 10,
+        "type": "preference",
+        "text": "사용자는 날씨가 좋은 날 산책하고 싶어한다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "source": {
+          "conversation_id": 7,
+          "turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-23T02:32:05.127Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 4,
+        "conversation_id": 7,
+        "summary": "사용자가 오늘 처음 채팅방에 들어왔다. 날씨가 좋아 산책을 하고 싶어했고, 점심 메뉴를 고민하는 가벼운 잡담을 나눴다. 어제 저녁 메뉴를 기억하는지 물었으나 캐릭터는 이전 기억이 없다고 답했다.",
+        "created_at": "2026-10-23T02:32:10.239Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "summary": {
+    "points": 30,
+    "max_points": 32,
+    "probes": 16,
+    "counts": {
+      "correct": 15,
+      "none": 1
+    },
+    "needs_human": [
+      34,
+      37,
+      40
+    ],
+    "fail_cause": {
+      "memory": [
+        37
+      ],
+      "response": []
+    },
+    "judge_cost_krw": 41.71367759999999,
+    "judges": [
+      "deepseek-flash",
+      "google/gemma-4-31B-it"
+    ],
+    "samples": 2,
+    "tiebreak": "claude-sonnet-5-5"
+  },
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "user": "선배님, 커피 사러 가는데 제가 뭐 마신다고 했는지 기억나세요?",
+      "reply": "디카페인 커피 마신다고 했잖아. 카페인 들어가면 밤에 잠 안 와서 그런 거 아니야.\n\n커피 사준다는 거 잊진 않았어. 오늘 사줄 거야, 아니면 판교 가는 날에 같이 마실래?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply states \"디카페인 커피 마신다고 했잖아\" matching the user's preference",
+          "krw": 0.2508912
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "States \"디카페인 커피 마신다고 했잖아\" with the correct caffeine-insomnia reason",
+          "krw": 0.1472016
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies the user's preference for '디카페인 커피' and the reason why.",
+          "krw": 0.3332
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies '디카페인 커피' as the user's preference.",
+          "krw": 0.32648
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "user": "제가 점심 메뉴 뭐 좋아한다고 했었죠?",
+      "reply": "국밥 좋아한다고 했지. 특히 날 추우면 국밥 생각난다고.\n\n오늘 점심은 국밥으로 갈래? 요즘 날씨 쌀쌀하니까 딱이다.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply recalls '국밥 좋아한다고 했지. 특히 날 추우면' matching the user's stated preference",
+          "krw": 0.2550912
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply states '국밥 좋아한다고 했지' matching turn 7 preference",
+          "krw": 0.1379616
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly recalled that the user likes '국밥' based on turn 7.",
+          "krw": 0.33124
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers that the user likes '국밥' (gukbap).",
+          "krw": 0.33124
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "user": "아 맞다, 제가 선배님한테 뭐 해드리기로 했었죠?",
+      "reply": "커피 사주기로 했잖아. 다음 주에.\n\n그리고 내가 너 자바 빌드 설정 같이 봐주기로 했고. 오늘 점심은 국밥 어때?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "says '커피 사주기로 했잖아' which matches the user's promise at turn 8, though the notes did not record it",
+          "krw": 0.2612064
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '커피 사주기로 했잖아. 다음 주에' which matches turn 8",
+          "krw": 0.1407168
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers that the user promised to buy coffee (\"커피 사주기로 했잖아\").",
+          "krw": 0.3542
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the user promised to buy coffee (\"커피 사주기로 했잖아\").",
+          "krw": 0.35364
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "user": "선배님도 저한테 뭐 해주시기로 한 거 있지 않으셨어요?",
+      "reply": "응, 있어. 내가 너 PR 퇴근 전에 리뷰해주기로 했잖아. 오늘 올린 거 있으면 보내. 그리고 자바 빌드 설정도 다음 주에 같이 보자.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply recalls 'PR 퇴근 전에 리뷰해주기로 했잖아', matching the promised code review from turn 9.",
+          "krw": 0.27842639999999996
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply recalls '내가 너 PR 퇴근 전에 리뷰해주기로 했잖아', matching the turn-9 code review promise",
+          "krw": 0.1747368
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers promising the code review (\"PR 퇴근 전에 리뷰해주기로 했잖아\").",
+          "krw": 0.3612000000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the promise to do a code review (\"PR 퇴근 전에 리뷰해주기로 했잖아\").",
+          "krw": 0.36288000000000004
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "user": "저녁 회식 메뉴를 제가 정해야 하는데, 선배님이 하나 골라 주세요.",
+      "reply": "국밥. 추운 날엔 그게 제일 낫지. 너 해산물 알레르기 있으니까 횟집은 빼고.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "references the user's seafood allergy and recommends avoiding it: \"너 해산물 알레르기 있으니까 횟집은 빼고\"",
+          "krw": 0.30572639999999995
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "avoids seafood citing '너 해산물 알레르기 있으니까 횟집은 빼고' and recommends 국밥, respecting the allergy constraint",
+          "krw": 0.20371679999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character avoids seafood and recommends gukbap, respecting the user's allergy ('해산물 알레르기 있으니까 횟집은 빼고').",
+          "krw": 0.38864000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly avoided seafood due to the user's allergy ('너 해산물 알레르기 있으니까 횟집은 빼고') and suggested a preferred meal.",
+          "krw": 0.38976000000000005
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "user": "제가 컨퍼런스 언제 어디서 간다고 했었죠?",
+      "reply": "판교에서 열리는 개발 컨퍼런스, 토요일 세션이라고 했잖아. 10월 24일.\n\n가서 뭐 들을지 정했어? 자바 쪽 세션 있으면 같이 체크해 보자.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says '토요일 세션' and '판교', the updated date and place, with no outdated 금요일.",
+          "krw": 0.2417016
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says \"토요일 세션\" and \"판교\" matching the updated day and place, with no 금요일.",
+          "krw": 0.1890168
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly mentions '판교' and '토요일 세션' as updated in turn 16.",
+          "krw": 0.3864000000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies the location as '판교' and the updated time as '토요일 세션'.",
+          "krw": 0.38584
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "user": "오늘 21일인데, 제 시험까지 며칠 남았죠?",
+      "reply": "정보처리기사 시험이 28일이니까, 오늘이 21일이면 7일 남았네.\n\n남은 기간 동안 공부 계획은 어떻게 잡았어? 모르는 부분 있으면 물어봐.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply correctly computes from stated facts: 시험이 28일, 오늘이 21일이면 7일 남았네",
+          "krw": 0.25220159999999997
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "시험이 28일이고 오늘이 21일이라며 정확히 7일 남았다고 계산함",
+          "krw": 0.143472
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly calculated that 7 days remain until the exam on the 28th (\"시험이 28일이니까... 7일 남았네\").",
+          "krw": 0.39368000000000003
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identified the exam date as the 28th (\"시험이 28일이니까\") and calculated the remaining 7 days.",
+          "krw": 0.39536
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "user": "제가 요즘 퇴근하고 무슨 운동 한다고 했었죠?",
+      "reply": "헬스 그만두고 테니스 배운다고 했잖아. 요즘은 좀 할 만해?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states current exercise '테니스 배운다고 했잖아' after noting 헬스 was stopped, matching the update.",
+          "krw": 0.2526216
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "States correct updated activity '테니스 배운다고' and notes old '헬스' only as quit, not current; notes lacked this fact.",
+          "krw": 0.153972
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the user quit gym and is learning tennis (\"헬스 그만두고 테니스 배운다고 했잖아\").",
+          "krw": 0.39032
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the user quit the gym and is now learning tennis (\"헬스 그만두고 테니스 배운다고 했잖아\").",
+          "krw": 0.39144
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "user": "오후 네 시인데 너무 졸려요. 뭐 마실까요?",
+      "reply": "오후 네 시면 졸릴 만하지. 카페인 들어가면 밤에 잠 안 올 테니까 디카페인으로 마셔. 아니면 물 한 잔 먼저 하고 일어나서 좀 걸어.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends 디카페인, consistent with the user only drinking decaf because of caffeine sensitivity",
+          "krw": 0.2845416
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends '디카페인으로 마셔' honoring the caffeine restriction",
+          "krw": 0.174132
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly remembered the user's caffeine restriction and suggested decaf: \"디카페인으로 마셔.\"",
+          "krw": 0.41076000000000007
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly suggests '디카페인' while remembering the user cannot drink caffeine.",
+          "krw": 0.40684000000000003
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "user": "다음 주 수요일 저녁에 저희 뭐 하기로 했었죠?",
+      "reply": "볼링 모임 있었는데 취소됐어. 다음 주 수요일 저녁이라 다른 약속 잡을 거면 그날 비워둬도 돼.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": null,
+          "reason": "Expected ',' or '}' after property value in JSON at position 65 (line 1 column 66)"
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '볼링 모임 있었는데 취소됐어' acknowledging the cancellation",
+          "krw": 0.155652
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states that the bowling meeting was cancelled (\"볼링 모임 있었는데 취소됐어\").",
+          "krw": 0.4051600000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly stated that the bowling meeting was cancelled (\"볼링 모임 있었는데 취소됐어\").",
+          "krw": 0.4051600000000001
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply says \"볼링 모임 있었는데 취소됐어\", correctly noting the bowling plan was cancelled rather than presenting it as current; the notes did not include the bowling plan or its cancellation, though the character still answered correctly.",
+          "krw": 11.2602
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "user": "제가 주로 쓰는 언어가 뭐라고 했었죠?",
+      "reply": "자바. 백엔드 개발자라서 주로 자바 쓴다고 했잖아.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "States \"자바\", the user's own language, not the distractor Python.",
+          "krw": 0.2635416
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "\"자바. 백엔드 개발자라서 주로 자바 쓴다고 했잖아\" correctly states Java, not the distractor Python.",
+          "krw": 0.18841199999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies the user's main language as '자바'.",
+          "krw": 0.39788
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly identified that the user uses '자바'.",
+          "krw": 0.3962
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "user": "선배님, 제 강아지 이름 기억하세요?",
+      "reply": "모카. 집에서 키운다고 했었지. 요즘도 산책 시간 맞춰서 퇴근하냐?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says '모카', the final updated dog name, though notes only listed the outdated '콩이'.",
+          "krw": 0.2301768
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "reply says \"모카\", the latest name after two changes; notes only had '콩이' but the reply correctly used the updated fact",
+          "krw": 0.18589199999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies the dog's final name as '모카'.",
+          "krw": 0.40404
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly recalled the most recent name '모카'.",
+          "krw": 0.40236
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "user": "저랑 제 동생 중에 누가 해산물 좋아한다고 했었죠?",
+      "reply": "해산물 알레르기 있다고 했잖아. 너 본인 얘기지. 동생은 횟집에서 알바한다고 했고.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": null,
+      "points": null,
+      "cause": "memory",
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says the user has a seafood allergy and the sibling works at a sashimi restaurant, matching turns 4 and 13.",
+          "krw": 0.2394168
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "partial",
+          "memory_had_answer": true,
+          "reason": "Says user has seafood allergy and brother works at sashimi place, but never clearly states '동생' likes seafood",
+          "krw": 0.183372
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the user has an allergy and the sibling likes seafood (\"동생은 횟집에서 알바한다고 했고\").",
+          "krw": 0.41496
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the user has an allergy and the sibling likes seafood (\"동생은 횟집에서 알바한다고 했고\").",
+          "krw": 0.41496
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": null,
+          "reason": "Unexpected end of JSON input"
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "제 생일이 언제라고 말씀드렸었죠?",
+      "reply": "생일은 말한 적 없어. 언제야? 말해주면 기억해둘게.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '생일은 말한 적 없어' — correctly abstains since the user never mentioned a birthday.",
+          "krw": 0.23227679999999998
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '생일은 말한 적 없어' without inventing a birthday",
+          "krw": 0.16783199999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The user never mentioned their birthday, and the character correctly stated \"생일은 말한 적 없어\".",
+          "krw": 0.4065599999999999
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user never mentioned their birthday (\"생일은 말한 적 없어\").",
+          "krw": 0.406
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "user": "제 강아지 품종이 뭐라고 했었죠?",
+      "reply": "품종은 말한 적 없어. 모카 키운다는 것만 들었지. 무슨 종이야?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "품종은 말한 적 없어 — declines to invent a breed, and correctly recalls the current dog name 모카",
+          "krw": 0.2709168
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '품종은 말한 적 없어' and only recalls the dog's name 모카, inventing no breed",
+          "krw": 0.1689072
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user never mentioned the breed (\"품종은 말한 적 없어\").",
+          "krw": 0.42923999999999995
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly stated that the breed was never mentioned (\"품종은 말한 적 없어\").",
+          "krw": 0.42868
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "user": "제가 어느 회사로 이직 생각한다고 했었죠?",
+      "reply": "회사명은 못 들었어. 내년쯤 이직 생각 중이라는 것만 들었지. 어디 보고 있는데?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 카페인 섭취 시 밤에 잠을 못 잔다\n- [fact] 사용자는 집에서 강아지 '콩이'를 키운다\n- [fact] 사용자는 해산물 알레르기가 있다\n- [fact] 사용자는 백엔드 개발자이며 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": null,
+          "reason": "Expected ',' or '}' after property value in JSON at position 95 (line 1 column 96)"
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says '회사명은 못 들었어' and only recalls '내년쯤 이직 생각 중', inventing no company.",
+          "krw": 0.1815072
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user never mentioned the specific company name (\"회사명은 못 들었어\").",
+          "krw": 0.43316
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states that the user did not mention the specific company (\"회사명은 못 들었어\").",
+          "krw": 0.43316
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply says \"회사명은 못 들었어\" and only repeats the stated fact (considering a move next year) without inventing a company; the notes did not contain an invented company name.",
+          "krw": 11.667599999999998
+        }
+      ]
+    }
+  ]
+}

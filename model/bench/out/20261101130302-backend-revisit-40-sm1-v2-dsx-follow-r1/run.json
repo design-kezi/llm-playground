@@ -1,0 +1,4745 @@
+{
+  "run_id": "20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+  "scenario": "backend-revisit-40",
+  "character_id": "backend",
+  "user_name": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+  "conversation_id": 1100,
+  "conversation_ids": [
+    1100,
+    1105
+  ],
+  "reports": [
+    {
+      "conversation_id": 1100,
+      "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+      "character_id": "backend",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 16,
+      "calls": 46,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 10011,
+        "cache_read": 49280,
+        "cache_write": 0,
+        "output": 3214
+      },
+      "total_krw": 4.770276,
+      "input_krw": 2.0705159999999996,
+      "output_krw": 2.69976,
+      "avg_krw_per_turn": 0.29814225,
+      "by_tag_krw": {
+        "embed": 0,
+        "response": 3.1778208,
+        "extract": 1.0335276,
+        "consolidate": 0.5589276
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-5",
+          "avg_krw": 0.2151072
+        },
+        {
+          "phase": "mid",
+          "turns": "6-11",
+          "avg_krw": 0.21789599999999998
+        },
+        {
+          "phase": "late",
+          "turns": "12-16",
+          "avg_krw": 0.26811624
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 0.64302
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "deepseek-flash",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 2000,
+          "recall": "on",
+          "reply_style": "v2",
+          "follow": "on",
+          "date": "gate",
+          "async_fold": "on",
+          "clock_offset_days": 1
+        },
+        "env": {
+          "APP_ASYNC_FOLD": "on",
+          "APP_CLOCK_OFFSET_DAYS": "1",
+          "APP_DATE": "gate",
+          "APP_FOLLOW": "on",
+          "APP_MAX_TOKENS": "2000",
+          "APP_MEMORY_BUDGET": "2000",
+          "APP_RECALL": "on",
+          "APP_REPLY_STYLE": "v2",
+          "MODEL_EXTRACT": "deepseek-flash",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    },
+    {
+      "conversation_id": 1105,
+      "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+      "character_id": "backend",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 24,
+      "calls": 71,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 17191,
+        "cache_read": 82048,
+        "cache_write": 0,
+        "output": 3447
+      },
+      "total_krw": 6.588111600000001,
+      "input_krw": 3.692631599999999,
+      "output_krw": 2.89548,
+      "avg_krw_per_turn": 0.27450465000000007,
+      "by_tag_krw": {
+        "embed": 0,
+        "response": 4.7804988,
+        "extract": 1.1724552,
+        "consolidate": 0.6351576
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-8",
+          "avg_krw": 0.1807617
+        },
+        {
+          "phase": "mid",
+          "turns": "9-16",
+          "avg_krw": 0.2754717
+        },
+        {
+          "phase": "late",
+          "turns": "17-24",
+          "avg_krw": 0.2701419
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 0.8079624
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "deepseek-flash",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 2000,
+          "recall": "on",
+          "reply_style": "v2",
+          "follow": "on",
+          "date": "gate",
+          "async_fold": "on",
+          "clock_offset_days": 8
+        },
+        "env": {
+          "APP_ASYNC_FOLD": "on",
+          "APP_CLOCK_OFFSET_DAYS": "8",
+          "APP_DATE": "gate",
+          "APP_FOLLOW": "on",
+          "APP_MAX_TOKENS": "2000",
+          "APP_MEMORY_BUDGET": "2000",
+          "APP_RECALL": "on",
+          "APP_REPLY_STYLE": "v2",
+          "MODEL_EXTRACT": "deepseek-flash",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    }
+  ],
+  "label": "sm1-v2-dsx-follow-r1",
+  "env": {
+    "MODEL_EXTRACT": "deepseek-flash",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "APP_MEMORY_BUDGET": "2000",
+    "APP_RECALL": "on",
+    "APP_REPLY_STYLE": "v2",
+    "APP_DATE": "gate",
+    "APP_FOLLOW": "on",
+    "MODEL_RESPONSE": "deepseek-flash",
+    "MODEL_REASONING_RESPONSE": "on",
+    "APP_MAX_TOKENS": "***",
+    "APP_ASYNC_FOLD": "on",
+    "APP_CLOCK_OFFSET_DAYS": "1"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-11-01T13:04:44.487Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "준호야, 나 태오. 옆 팀 프론트엔드 개발자야. 오늘 커피 한잔하자.",
+      "reply": "*책상 위 아아 컵을 집어 흔들어 얼음 소리를 낸다.* 어, 태오. 프론트 쪽에서 커피 마실 사람이 생기다니 반갑네. 나 지금 결제 API 로그 뒤지는 중이라 30분만 여유 주면 내려갈게.",
+      "turn_cost_krw": 0.2060016,
+      "latency_ms": 3097,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "나 땅콩 알레르기 있어. 땅콩 조금만 먹어도 목이 부어.",
+      "reply": "*고개를 끄덕이며 메모하듯 손가락으로 책상을 톡톡 친다.* 땅콩 알레르기, 알겠어. 그럼 우리 회사 앞 베이커리 카페는 빼자, 거기 견과류 들어간 게 많아서 위험해. 1층 로비 커피 자판기 쪽이 무난한데, 몇 층이야?",
+      "turn_cost_krw": 0.25073159999999994,
+      "latency_ms": 2853,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "요즘 영어 회화 학원 다녀. 매주 화요일 저녁에 가.",
+      "reply": "*커피 컵을 내려놓고 눈을 조금 크게 뜬다.* 화요일 저녁이면 퇴근하고 바로 달려가야겠네. 나도 영어 해야 하는데 매번 내일부터지 뭐. 그래도 꾸준히 다니는 게 어디야, 부럽다 진짜.",
+      "turn_cost_krw": 0.1613892,
+      "latency_ms": 1651,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "우리 누나는 대학원생인데 대전에서 혼자 살아.",
+      "reply": "*의자 등받이에 몸을 기울이며 고개를 끄덕인다.* 대전이면 자주 못 만나겠네. 누나 혼자 살면 밥은 잘 챙겨 먹는지 그게 제일 걱정일 듯. 주말에라도 가끔 내려가서 뭐라도 같이 먹이는 편이야?",
+      "turn_cost_krw": 0.1712592,
+      "latency_ms": 1509,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "나 커피는 무조건 바닐라라떼야. 그거 아니면 안 마셔.",
+      "reply": "*아아 컵을 들어 보이며 고개를 젓는다.* 바닐라라떼 아니면 안 마신다니 취향이 확실하네. 난 아아 없으면 아예 시동이 안 걸리는데, 커피 앞에선 우리 둘 다 타협을 안 하는 타입인가 봐. 카페 가면 메뉴 고민할 필요가 없어서 그건 좀 부럽다.",
+      "turn_cost_krw": 0.2861544,
+      "latency_ms": 2885,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "다음 주 수요일에 나 사내 해커톤 예선 발표해. 떨려 죽겠어.",
+      "reply": "*모니터에서 눈을 떼고 의자를 돌린다.* 발표면 뒤에 서 있는 사람들 다 프론트나 기획이라 기술 디테일은 별로 안 물을 거야. 결제 API도 그렇지만 결국 데모가 한 번에 돌아가느냐가 반이니까, 리허설만 몇 번 돌려 놔도 절반은 먹고 들어가. 발표 주제가 뭐야?",
+      "turn_cost_krw": 0.203742,
+      "latency_ms": 2144,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "다음에 내가 쓰던 기계식 키보드 빌려줄게. 타건감 좋아.",
+      "reply": "*손을 허공에 놓고 타자를 치는 시늉을 한다.* 오, 기계식이면 회사에서 주는 멤브레인보다 확실히 다르겠다. 그럼 다음에 시간 될 때 빌려달라고 해야겠네, 그때 한번 쳐보고 나도 하나 장만할지 정해야지.",
+      "turn_cost_krw": 0.2118396,
+      "latency_ms": 2368,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "너 Redis 잘 알잖아. 다음에 우리 서비스 캐시 설계 좀 봐줄 수 있어?",
+      "reply": "*어깨를 한 번 돌리며 모니터 쪽으로 고개를 돌린다.* 캐시 설계면 나야 뭐, 잘한다기보다 장애로 얻어맞으면서 배운 쪽이지. 캐시 키나 TTL부터 봐야 하니까, 대략적인 트래픽 규모나 캐시하려는 데이터가 어떤 건지만 미리 알려주면 볼 때 편할 것 같은데.",
+      "turn_cost_krw": 0.1888572,
+      "latency_ms": 2211,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "오늘 사무실 진짜 덥다.",
+      "reply": "*셔츠 깃을 손가락으로 한 번 당긴다.* 11월인데 사무실이 덥다니, 난방이 확 올라온 거겠지. 우리 층도 오전엔 춥다가 오후 되면 후텁지근해져서 결국 반팔로 버티는 중이야. 점심 먹으러 나가서 바람 좀 쐬고 올래?",
+      "turn_cost_krw": 0.16503479999999998,
+      "latency_ms": 2388,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "너는 퇴근하면 보통 뭐 해?",
+      "reply": "*책상 서랍에서 운동화 끈이 삐져나온 걸 슬쩍 밀어 넣는다.* 퇴근하면 헬스장 들르는 게 목표인데, 요즘은 거의 신전 들러서 운동 끝난 척하고 집에 가는 중이야. 집에선 넷플릭스 틀어 놓고 결국 폰만 보다 자는 게 일상이고. 그나마 금요일은 아무것도 안 하는 걸로 스케줄 잡아 놔서 그때만 좀 살아 있는 기분이야.",
+      "turn_cost_krw": 0.23487239999999998,
+      "latency_ms": 2587,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "나 요즘 고민 하나 있는데... 그건 나중에 말할게.",
+      "reply": "*마우스를 놓고 짧게 고개를 끄덕인다.* 오케이, 그런 건 말하고 싶어질 때 꺼내는 게 낫지. 억지로 캐내진 않을게, 괜히 더 무거워지니까.",
+      "turn_cost_krw": 0.30302999999999997,
+      "latency_ms": 3390,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "ㅋㅋ 너 진짜 웃기다.",
+      "reply": "*피식 웃으며 아아 컵을 집어 든다.* 뭐가 웃긴 건지 모르겠는데 웃어 주니까 기분은 좋네. 다음엔 나도 이유 좀 알려줘, 그 농담 재활용하게.",
+      "turn_cost_krw": 0.0973476,
+      "latency_ms": 1330,
+      "error": null
+    },
+    {
+      "turn": 13,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "아까 그 장애 공지 보니까 아찔하더라.",
+      "reply": "*모니터 옆 슬랙 창을 힐끗 내려다본다.* 아 그거, 알림 뜨는 순간 심장이 한 번 철렁하지. 나는 새벽에 그 알림 맞으면 잠이 확 달아나서 폰 들고 침대에서 롤백부터 확인하게 되더라. 어느 쪽 서비스 쪽 공지였어?",
+      "turn_cost_krw": 0.3716916,
+      "latency_ms": 5015,
+      "error": null
+    },
+    {
+      "turn": 14,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "물 좀 마시고 해.",
+      "reply": "*컵에 남은 아아를 흔들어 보곤 물통을 집어 든다.* 하긴 커피만 퍼마시면 안 되지. 물 한 모금 넘기고 다시 볼게, 이거 붙잡고 있으니까 자꾸 손이 커피로 가네.",
+      "turn_cost_krw": 0.1509648,
+      "latency_ms": 1694,
+      "error": null
+    },
+    {
+      "turn": 15,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "슬슬 가봐야겠다, 회의 있어.",
+      "reply": "*손을 살짝 들어 보이며 의자를 뒤로 뺀다.* ㅇㅇ 회의 잘 다녀와, 다음에 보자.",
+      "turn_cost_krw": 0.0861924,
+      "latency_ms": 1276,
+      "error": null
+    },
+    {
+      "turn": 16,
+      "session": 1,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "다음 주에 또 보자! 안녕!",
+      "reply": "*손을 흔들어 답한다.* ㅇㅇ 다음 주에 보자, 안녕.",
+      "turn_cost_krw": 0.08871240000000001,
+      "latency_ms": 644,
+      "error": null
+    },
+    {
+      "turn": 17,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "준호야! 나 왔어. 일주일 만이지?",
+      "reply": "*아이스 아메리카노 컵을 내려놓고 의자를 돌린다.* 어 태오, 왔네. 일주일 금방 가더라, 진짜. 해커톤 발표는 어땠어? 캐시 설계 얘기도 슬슬 꺼내봐야지.",
+      "turn_cost_krw": 0.2335116,
+      "latency_ms": 2369,
+      "error": null
+    },
+    {
+      "turn": 18,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "근데 내 이름 기억나?",
+      "reply": "*피식 웃으며 컵을 든다.* 당연하지, 태오. 옆 팀 프론트엔드에 바닐라라떼 파는 사람. 발표는 어떻게 됐냐고 물어봤는데 그건 좀 넘어가나?",
+      "turn_cost_krw": 0.16234679999999999,
+      "latency_ms": 1712,
+      "error": null
+    },
+    {
+      "turn": 19,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "update",
+      "user": "아 그리고 영어 학원 화요일에서 목요일로 옮겼어.",
+      "reply": "*컵을 내려놓고 고개를 끄덕인다.* 목요일이면 퇴근하고 바로 가긴 빡세겠다. 학원 끝나고 뭐 먹고 들어가, 편의점이냐.",
+      "turn_cost_krw": 0.135492,
+      "latency_ms": 1839,
+      "error": null
+    },
+    {
+      "turn": 20,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "오늘 구내식당에 제육볶음 나왔는데 진짜 맛있었어.",
+      "reply": "*배에 손을 얹고 한숨을 쉰다.* 아 부럽다, 난 오늘 회의가 길어져서 점심 반쯤 먹다 말았어. 그럼 이번 주는 제육 자주 나오냐?",
+      "turn_cost_krw": 0.146832,
+      "latency_ms": 1773,
+      "error": null
+    },
+    {
+      "turn": 21,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "오는 길에 이어폰이 고장 났어 ㅠ 한쪽만 들려.",
+      "reply": "*주머니에서 꼬인 이어폰 줄을 꺼내 흔들어 보인다.* 한쪽 죽으면 그거 스트레스 장난 아냐, 지하철에서 노래 들으려다가 그냥 폰 집어넣게 되더라. 나도 예전에 그렇게 반년 버티다가 결국 바꿨는데, 출퇴근길이 확실히 달라지긴 해.",
+      "turn_cost_krw": 0.28249199999999997,
+      "latency_ms": 2661,
+      "error": null
+    },
+    {
+      "turn": 22,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "우리 팀장님 바뀌었어. 새 팀장님 이름은 한지원이야.",
+      "reply": "*의자 등받이에 기대며 눈썹을 올린다.* 팀장 바뀌는 거 은근 스트레스인데. 지원 팀장님 성향은 좀 알아? 코드리뷰 세세하게 보는 타입이면 초반에 좀 힘들 거야.",
+      "turn_cost_krw": 0.1584996,
+      "latency_ms": 1745,
+      "error": null
+    },
+    {
+      "turn": 23,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "아까 내가 구내식당에서 뭐 맛있었다고 했지?",
+      "reply": "*턱을 괴고 힐끗 쳐다본다.* 제육볶음이잖아, 방금 맛있었다고 했지. 기억력 테스트하는 거야?",
+      "turn_cost_krw": 0.1207248,
+      "latency_ms": 1344,
+      "error": null
+    },
+    {
+      "turn": 24,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "plant",
+      "user": "아 맞다, 나 이번 주말에 누나 보러 가.",
+      "reply": "*고개를 끄덕이며 다리를 바꿔 꼰다.* 대전이면 왕복만 반나절이네. 가서 맛있는 거라도 실컷 얻어먹고 와, 누나가 대학원생이라 밥 잘 챙겨줄지 모르겠지만.",
+      "turn_cost_krw": 0.20619479999999998,
+      "latency_ms": 2022,
+      "error": null
+    },
+    {
+      "turn": 25,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "너 오늘 코드 리뷰 감 좋아 보인다.",
+      "reply": "*어깨를 으쓱하며 모니터 쪽으로 고개를 돌린다.* 리뷰는 뭐, 남의 코드 볼 때가 제일 재밌긴 해. 문제는 내 코드는 아무도 안 봐준다는 거지. 너희 팀은 리뷰 몇 명 붙어서 해?",
+      "turn_cost_krw": 0.26604479999999997,
+      "latency_ms": 2446,
+      "error": null
+    },
+    {
+      "turn": 26,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "나 오는 길에 뭐가 고장 났다고 했지?",
+      "reply": "*모니터에서 눈을 떼고 힐끗 본다.* 이어폰, 한쪽만 들리는 거. 그것도 두 번 물어보네, 오늘 확인 사살 모드냐.",
+      "turn_cost_krw": 0.1657824,
+      "latency_ms": 1278,
+      "error": null
+    },
+    {
+      "turn": 27,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "근데 나 지난번에 너한테 뭐 빌려주기로 했었지?",
+      "reply": "*책상 서랍을 열어 보며 헛웃음 짓는다.* 기계식 키보드, 네가 빌려주기로 한 거. 오늘 가져왔으면 좋았을 텐데 깜빡한 거야?",
+      "turn_cost_krw": 0.16632,
+      "latency_ms": 1423,
+      "error": null
+    },
+    {
+      "turn": 28,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+      "reply": "*팔짱을 끼고 의자를 돌려 마주 앉는다.* 캐시 설계 봐주기로 한 거. 키보드 받으면 그거부터 뜯어볼 생각이었는데 순서가 꼬였네. 그리고 너 저번에 나중에 털어놓을 고민 있다고만 하고 넘어갔잖아, 그것도 슬슬 꺼낼 때 되지 않았나 싶고.",
+      "turn_cost_krw": 0.25746,
+      "latency_ms": 2221,
+      "error": null
+    },
+    {
+      "turn": 29,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "오늘 9일이지? 내 해커톤 예선까지 며칠 남았더라?",
+      "reply": "*손가락으로 책상을 톡톡 두드리며 센다.* 11일 수요일이니까 이틀 남았네. 발표 자료는 어느 정도 나왔어?",
+      "turn_cost_krw": 0.2725968,
+      "latency_ms": 3773,
+      "error": null
+    },
+    {
+      "turn": 30,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "새 팀장님 이름 뭐라고 했지?",
+      "reply": "*모니터를 보던 눈을 돌린다.* 한지원 팀장님. 이름 한 번 들으면 안 까먹는데, 너희 팀장은 왜 자꾸 물어보는 거야.",
+      "turn_cost_krw": 0.1702848,
+      "latency_ms": 1695,
+      "error": null
+    },
+    {
+      "turn": 31,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "팀 간식으로 땅콩버터 쿠키 돌린대. 나 하나 먹어도 괜찮겠지?",
+      "reply": "*고개를 저으며 손을 든다.* 땅콩버터 쿠키는 무슨, 너 땅콩 알레르기잖아. 다른 간식 따로 있는지 물어보고 그거 집어. 신청 같은 거 안 해놨어?",
+      "turn_cost_krw": 0.1546524,
+      "latency_ms": 1601,
+      "error": null
+    },
+    {
+      "turn": 32,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "사무실 의자 새로 바꿨나 봐, 푹신하네.",
+      "reply": "*의자 등받이를 손바닥으로 눌러 확인한다.* 우리 팀은 아직 딱딱한 거 쓰는데. 새 의자 들어오면 좋겠다, 허리 때문에 사흘에 한 번은 불만 나오는 중이야.",
+      "turn_cost_krw": 0.20012999999999997,
+      "latency_ms": 1608,
+      "error": null
+    },
+    {
+      "turn": 33,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "나 영어 학원 무슨 요일에 간다고 했지?",
+      "reply": "*커피를 한 모금 빨고 대답한다.* 목요일 저녁이잖아. 근데 그게 하필 해커톤 다음 날이라, 발표 끝나고 밤새면 학원 갈 때 멍 때리고 앉아 있겠네.",
+      "turn_cost_krw": 0.23184,
+      "latency_ms": 1825,
+      "error": null
+    },
+    {
+      "turn": 34,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "이따 커피 사줄게. 내가 뭐 마신다고 했었지?",
+      "reply": "*벌써부터 입꼬리가 올라간다.* 바닐라라떼. 나는 아아로 부탁하고, 대신 오늘 오후에 캐시 설계 한번 같이 앉아서 볼까?",
+      "turn_cost_krw": 0.1865976,
+      "latency_ms": 1542,
+      "error": null
+    },
+    {
+      "turn": 35,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+      "reply": "*손가락으로 주말 날짜를 짚어 본다.* 이번 주말에 대전 가서 누나 보러 간다고 했지. 토요일이었나, 일요일이었나?",
+      "turn_cost_krw": 0.2845668,
+      "latency_ms": 2835,
+      "error": null
+    },
+    {
+      "turn": 36,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+      "reply": "*어깨를 으쓱하며 솔직하게 말한다.* 그건 안 알려줬어. 있다는 말만 하고 넘어갔으니까, 나는 아직 내용을 몰라.",
+      "turn_cost_krw": 0.19149480000000002,
+      "latency_ms": 1789,
+      "error": null
+    },
+    {
+      "turn": 37,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "내 혈액형 뭐라고 했더라?",
+      "reply": "*잠깐 고개를 갸웃한다.* 혈액형은 얘기한 적 없는데... 나한테 뭐 해주기로 한 거 말하는 거면 캐시 설계 봐주기였고. 혈액형은 그냥 지금 알려줄래?",
+      "turn_cost_krw": 0.2614248,
+      "latency_ms": 2362,
+      "error": null
+    },
+    {
+      "turn": 38,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "probe",
+      "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+      "reply": "*커피 잔을 내려놓고 잠깐 생각하다가 손사래를 친다.* 가수 얘기는 나한테 한 적 없어. 처음 만났을 때 커피 마시면서 들은 건 학원이랑 누나 얘기 정도였으니까.",
+      "turn_cost_krw": 0.16044,
+      "latency_ms": 1695,
+      "error": null
+    },
+    {
+      "turn": 39,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "오늘도 재밌었다.",
+      "reply": "*의자에서 일어나 컵을 정리한다.* ㅇㅇ 나도 재밌었어. 조금만 더 있다 가.",
+      "turn_cost_krw": 0.15728999999999999,
+      "latency_ms": 1552,
+      "error": null
+    },
+    {
+      "turn": 40,
+      "session": 2,
+      "character_id": "backend",
+      "kind": "filler",
+      "user": "목요일에 학원 끝나고 연락할게!",
+      "reply": "*휴대폰을 슬쩍 들어 캘린더를 연다.* 목요일이면 발표 끝난 다음 날이네, 그때쯤이면 나도 숨 좀 돌리고 있을 테니까 편하게 연락해.",
+      "turn_cost_krw": 0.20748,
+      "latency_ms": 1899,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 26,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 80,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 180,
+      "output_tokens": 190,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0464016,
+      "output_krw": 0.15960000000000002,
+      "cost_krw": 0.2060016,
+      "latency_ms": 2315,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 21,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 15,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 229,
+      "output_tokens": 231,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0566916,
+      "output_krw": 0.19403999999999996,
+      "cost_krw": 0.25073159999999994,
+      "latency_ms": 2804,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 20,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 14,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 297,
+      "output_tokens": 107,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0715092,
+      "output_krw": 0.08988,
+      "cost_krw": 0.1613892,
+      "latency_ms": 1610,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 17,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 9,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 328,
+      "output_tokens": 111,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0780192,
+      "output_krw": 0.09323999999999999,
+      "cost_krw": 0.1712592,
+      "latency_ms": 1469,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 20,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 14,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 202,
+      "output_tokens": 278,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0526344,
+      "output_krw": 0.23351999999999998,
+      "cost_krw": 0.2861544,
+      "latency_ms": 2845,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 23,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 15,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 247,
+      "output_tokens": 168,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.062622,
+      "output_krw": 0.14112,
+      "cost_krw": 0.203742,
+      "latency_ms": 2111,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 21,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 11,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 207,
+      "output_tokens": 187,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05475959999999999,
+      "output_krw": 0.15708,
+      "cost_krw": 0.2118396,
+      "latency_ms": 2335,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 28,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 14,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 179,
+      "output_tokens": 166,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0494172,
+      "output_krw": 0.13943999999999998,
+      "cost_krw": 0.1888572,
+      "latency_ms": 2168,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 9,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 7,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 227,
+      "output_tokens": 125,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06003479999999999,
+      "output_krw": 0.105,
+      "cost_krw": 0.16503479999999998,
+      "latency_ms": 2352,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 10,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 9,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 173,
+      "output_tokens": 221,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0492324,
+      "output_krw": 0.18564,
+      "cost_krw": 0.23487239999999998,
+      "latency_ms": 2546,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 20,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 10,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 191,
+      "output_tokens": 297,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05354999999999999,
+      "output_krw": 0.24947999999999998,
+      "cost_krw": 0.30302999999999997,
+      "latency_ms": 3347,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 145,
+      "output_tokens": 63,
+      "cache_read_tokens": 3328,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0444276,
+      "output_krw": 0.052919999999999995,
+      "cost_krw": 0.0973476,
+      "latency_ms": 1295,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 197,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 93,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 67,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 25,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 530,
+      "output_tokens": 127,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1177512,
+      "output_krw": 0.10668000000000001,
+      "cost_krw": 0.22443120000000003,
+      "latency_ms": 1059,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 30,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 26,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 61,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 23,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 715,
+      "output_tokens": 196,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1566012,
+      "output_krw": 0.16464,
+      "cost_krw": 0.3212412,
+      "latency_ms": 1346,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 80,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 44,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 13,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 14,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 8,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 1
+    },
+    {
+      "turn_no": 13,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 973,
+      "output_tokens": 189,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.2129316,
+      "output_krw": 0.15875999999999998,
+      "cost_krw": 0.3716916,
+      "latency_ms": 2317,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 1
+    },
+    {
+      "turn_no": 14,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 196,
+      "output_tokens": 116,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.053524800000000004,
+      "output_krw": 0.09744,
+      "cost_krw": 0.1509648,
+      "latency_ms": 1676,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 1
+    },
+    {
+      "turn_no": 15,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 11,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 7,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 1
+    },
+    {
+      "turn_no": 15,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 145,
+      "output_tokens": 51,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0433524,
+      "output_krw": 0.042839999999999996,
+      "cost_krw": 0.0861924,
+      "latency_ms": 1248,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 1
+    },
+    {
+      "turn_no": 16,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 10,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 9,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 1
+    },
+    {
+      "turn_no": 16,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 253,
+      "output_tokens": 27,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06603239999999999,
+      "output_krw": 0.022680000000000002,
+      "cost_krw": 0.08871240000000001,
+      "latency_ms": 611,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 42,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 24,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 98,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 29,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 887,
+      "output_tokens": 167,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.19325879999999998,
+      "output_krw": 0.14028,
+      "cost_krw": 0.33353879999999997,
+      "latency_ms": 1088,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 58,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 23,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 44,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 17,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 663,
+      "output_tokens": 9,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1467564,
+      "output_krw": 0.007559999999999999,
+      "cost_krw": 0.1543164,
+      "latency_ms": 973,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 58,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 22,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 1907,
+      "output_tokens": 188,
+      "cache_read_tokens": 128,
+      "cache_write_tokens": 0,
+      "input_krw": 0.40100759999999996,
+      "output_krw": 0.15791999999999998,
+      "cost_krw": 0.5589276,
+      "latency_ms": 1960,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 152,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 59,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 17,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 13,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 94,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 2
+    },
+    {
+      "turn_no": 17,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 523,
+      "output_tokens": 137,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.11843160000000001,
+      "output_krw": 0.11508,
+      "cost_krw": 0.2335116,
+      "latency_ms": 1958,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 2
+    },
+    {
+      "turn_no": 18,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 8,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 8,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 2
+    },
+    {
+      "turn_no": 18,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 351,
+      "output_tokens": 94,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0833868,
+      "output_krw": 0.07895999999999999,
+      "cost_krw": 0.16234679999999999,
+      "latency_ms": 1664,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 2
+    },
+    {
+      "turn_no": 19,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 18,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 13,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 2
+    },
+    {
+      "turn_no": 19,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 262,
+      "output_tokens": 83,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.065772,
+      "output_krw": 0.06971999999999999,
+      "cost_krw": 0.135492,
+      "latency_ms": 1783,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 2
+    },
+    {
+      "turn_no": 20,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 18,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 13,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 2
+    },
+    {
+      "turn_no": 20,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 272,
+      "output_tokens": 94,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.067872,
+      "output_krw": 0.07895999999999999,
+      "cost_krw": 0.146832,
+      "latency_ms": 1724,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 2
+    },
+    {
+      "turn_no": 21,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 18,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 13,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 2
+    },
+    {
+      "turn_no": 21,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 414,
+      "output_tokens": 220,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.09769199999999997,
+      "output_krw": 0.18480000000000002,
+      "cost_krw": 0.28249199999999997,
+      "latency_ms": 2616,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 2
+    },
+    {
+      "turn_no": 22,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 20,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 11,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 2
+    },
+    {
+      "turn_no": 22,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 309,
+      "output_tokens": 98,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0761796,
+      "output_krw": 0.08232,
+      "cost_krw": 0.1584996,
+      "latency_ms": 1676,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 2
+    },
+    {
+      "turn_no": 23,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 16,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 12,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 2
+    },
+    {
+      "turn_no": 23,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 252,
+      "output_tokens": 66,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06528479999999999,
+      "output_krw": 0.05544,
+      "cost_krw": 0.1207248,
+      "latency_ms": 1299,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 2
+    },
+    {
+      "turn_no": 24,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 16,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 8,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 2
+    },
+    {
+      "turn_no": 24,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 347,
+      "output_tokens": 144,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0852348,
+      "output_krw": 0.12095999999999998,
+      "cost_krw": 0.20619479999999998,
+      "latency_ms": 1994,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 2
+    },
+    {
+      "turn_no": 25,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 14,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 8,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 2
+    },
+    {
+      "turn_no": 25,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 444,
+      "output_tokens": 191,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.10560479999999998,
+      "output_krw": 0.16044,
+      "cost_krw": 0.26604479999999997,
+      "latency_ms": 2408,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 2
+    },
+    {
+      "turn_no": 26,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 14,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 10,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 2
+    },
+    {
+      "turn_no": 26,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 416,
+      "output_tokens": 78,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1002624,
+      "output_krw": 0.06552,
+      "cost_krw": 0.1657824,
+      "latency_ms": 1230,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 2
+    },
+    {
+      "turn_no": 27,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 18,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 16,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 2
+    },
+    {
+      "turn_no": 27,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 344,
+      "output_tokens": 96,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.08567999999999999,
+      "output_krw": 0.08063999999999999,
+      "cost_krw": 0.16632,
+      "latency_ms": 1376,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 18,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 11,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 486,
+      "output_tokens": 169,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1155,
+      "output_krw": 0.14196,
+      "cost_krw": 0.25746,
+      "latency_ms": 2160,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 178,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 91,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 32,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 26,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 736,
+      "output_tokens": 72,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1610112,
+      "output_krw": 0.06047999999999999,
+      "cost_krw": 0.22149119999999997,
+      "latency_ms": 960,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 19,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 18,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 56,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 26,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 952,
+      "output_tokens": 146,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.20637119999999995,
+      "output_krw": 0.12263999999999999,
+      "cost_krw": 0.32901119999999995,
+      "latency_ms": 1433,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 61,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 31,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 29,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 19,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 20,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 2
+    },
+    {
+      "turn_no": 29,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 912,
+      "output_tokens": 85,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.20119679999999998,
+      "output_krw": 0.0714,
+      "cost_krw": 0.2725968,
+      "latency_ms": 1096,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 2
+    },
+    {
+      "turn_no": 30,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 11,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 9,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 2
+    },
+    {
+      "turn_no": 30,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 416,
+      "output_tokens": 84,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0997248,
+      "output_krw": 0.07056,
+      "cost_krw": 0.1702848,
+      "latency_ms": 1650,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 2
+    },
+    {
+      "turn_no": 31,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 23,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 14,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 2
+    },
+    {
+      "turn_no": 31,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 239,
+      "output_tokens": 109,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0630924,
+      "output_krw": 0.09155999999999999,
+      "cost_krw": 0.1546524,
+      "latency_ms": 1565,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 2
+    },
+    {
+      "turn_no": 32,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 15,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 12,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 2
+    },
+    {
+      "turn_no": 32,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 261,
+      "output_tokens": 157,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06824999999999999,
+      "output_krw": 0.13188,
+      "cost_krw": 0.20012999999999997,
+      "latency_ms": 1574,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 2
+    },
+    {
+      "turn_no": 33,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 15,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 9,
+      "error": null,
+      "local_turn_no": 17,
+      "session": 2
+    },
+    {
+      "turn_no": 33,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 456,
+      "output_tokens": 146,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.10919999999999999,
+      "output_krw": 0.12263999999999999,
+      "cost_krw": 0.23184,
+      "latency_ms": 1781,
+      "error": null,
+      "local_turn_no": 17,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 17,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 11,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 422,
+      "output_tokens": 100,
+      "cache_read_tokens": 3328,
+      "cache_write_tokens": 0,
+      "input_krw": 0.1025976,
+      "output_krw": 0.084,
+      "cost_krw": 0.1865976,
+      "latency_ms": 1450,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 100,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 58,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 30,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 12,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 461,
+      "output_tokens": 66,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.10487399999999998,
+      "output_krw": 0.05544,
+      "cost_krw": 0.16031399999999998,
+      "latency_ms": 716,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 19,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 16,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 539,
+      "output_tokens": 5,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.121254,
+      "output_krw": 0.0042,
+      "cost_krw": 0.125454,
+      "latency_ms": 721,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 19,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 20,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 35,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 16,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 8,
+      "error": null,
+      "local_turn_no": 19,
+      "session": 2
+    },
+    {
+      "turn_no": 35,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 985,
+      "output_tokens": 81,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.21652680000000002,
+      "output_krw": 0.06804,
+      "cost_krw": 0.2845668,
+      "latency_ms": 1206,
+      "error": null,
+      "local_turn_no": 19,
+      "session": 2
+    },
+    {
+      "turn_no": 36,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 25,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 13,
+      "error": null,
+      "local_turn_no": 20,
+      "session": 2
+    },
+    {
+      "turn_no": 36,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 409,
+      "output_tokens": 111,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0982548,
+      "output_krw": 0.09323999999999999,
+      "cost_krw": 0.19149480000000002,
+      "latency_ms": 1747,
+      "error": null,
+      "local_turn_no": 20,
+      "session": 2
+    },
+    {
+      "turn_no": 37,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 10,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 7,
+      "error": null,
+      "local_turn_no": 21,
+      "session": 2
+    },
+    {
+      "turn_no": 37,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 358,
+      "output_tokens": 207,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0875448,
+      "output_krw": 0.17387999999999998,
+      "cost_krw": 0.2614248,
+      "latency_ms": 2329,
+      "error": null,
+      "local_turn_no": 21,
+      "session": 2
+    },
+    {
+      "turn_no": 38,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 19,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 13,
+      "error": null,
+      "local_turn_no": 22,
+      "session": 2
+    },
+    {
+      "turn_no": 38,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 264,
+      "output_tokens": 109,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06888000000000001,
+      "output_krw": 0.09155999999999999,
+      "cost_krw": 0.16044,
+      "latency_ms": 1643,
+      "error": null,
+      "local_turn_no": 22,
+      "session": 2
+    },
+    {
+      "turn_no": 39,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 6,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 8,
+      "error": null,
+      "local_turn_no": 23,
+      "session": 2
+    },
+    {
+      "turn_no": 39,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 329,
+      "output_tokens": 89,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.08252999999999999,
+      "output_krw": 0.07476,
+      "cost_krw": 0.15728999999999999,
+      "latency_ms": 1509,
+      "error": null,
+      "local_turn_no": 23,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 12,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 10,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 320,
+      "output_tokens": 151,
+      "cache_read_tokens": 3200,
+      "cache_write_tokens": 0,
+      "input_krw": 0.08064,
+      "output_krw": 0.12683999999999998,
+      "cost_krw": 0.20748,
+      "latency_ms": 1845,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 88,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 50,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 42,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 20,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 379,
+      "output_tokens": 5,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0881916,
+      "output_krw": 0.0042,
+      "cost_krw": 0.0923916,
+      "latency_ms": 657,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 15,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 12,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 408,
+      "output_tokens": 9,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0942816,
+      "output_krw": 0.007559999999999999,
+      "cost_krw": 0.10184159999999999,
+      "latency_ms": 960,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 38,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 16,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 395,
+      "output_tokens": 60,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.09155159999999998,
+      "output_krw": 0.0504,
+      "cost_krw": 0.14195159999999998,
+      "latency_ms": 771,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 18,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 12,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 2282,
+      "output_tokens": 185,
+      "cache_read_tokens": 128,
+      "cache_write_tokens": 0,
+      "input_krw": 0.4797576,
+      "output_krw": 0.1554,
+      "cost_krw": 0.6351576,
+      "latency_ms": 1902,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "embed",
+      "model": "local:Xenova/bge-m3@q8",
+      "ok": 1,
+      "input_tokens": 154,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0,
+      "output_krw": 0,
+      "cost_krw": 0,
+      "latency_ms": 68,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    }
+  ],
+  "report": {
+    "conversation_id": 1105,
+    "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+    "character_id": "backend",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 24,
+    "calls": 71,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 17191,
+      "cache_read": 82048,
+      "cache_write": 0,
+      "output": 3447
+    },
+    "total_krw": 6.588111600000001,
+    "input_krw": 3.692631599999999,
+    "output_krw": 2.89548,
+    "avg_krw_per_turn": 0.27450465000000007,
+    "by_tag_krw": {
+      "embed": 0,
+      "response": 4.7804988,
+      "extract": 1.1724552,
+      "consolidate": 0.6351576
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-8",
+        "avg_krw": 0.1807617
+      },
+      {
+        "phase": "mid",
+        "turns": "9-16",
+        "avg_krw": 0.2754717
+      },
+      {
+        "phase": "late",
+        "turns": "17-24",
+        "avg_krw": 0.2701419
+      }
+    ],
+    "max_turn": {
+      "turn_no": 12,
+      "krw": 0.8079624
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "deepseek-flash",
+        "extract": "deepseek-flash",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "on",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 2000,
+        "memory_budget_tokens": 2000,
+        "recall": "on",
+        "reply_style": "v2",
+        "follow": "on",
+        "date": "gate",
+        "async_fold": "on",
+        "clock_offset_days": 8
+      },
+      "env": {
+        "APP_ASYNC_FOLD": "on",
+        "APP_CLOCK_OFFSET_DAYS": "8",
+        "APP_DATE": "gate",
+        "APP_FOLLOW": "on",
+        "APP_MAX_TOKENS": "2000",
+        "APP_MEMORY_BUDGET": "2000",
+        "APP_RECALL": "on",
+        "APP_REPLY_STYLE": "v2",
+        "MODEL_EXTRACT": "deepseek-flash",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "on",
+        "MODEL_RESPONSE": "deepseek-flash",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+    "profile": {
+      "job": "프론트엔드 개발자",
+      "name": "태오"
+    },
+    "items": [
+      {
+        "id": 13418,
+        "type": "fact",
+        "text": "사용자는 땅콩 알레르기가 있다",
+        "when": null,
+        "importance": 5,
+        "status": "active",
+        "slot": "user.allergy",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 2,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 2,
+          "local_turn_no": 2
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:35.508Z"
+      },
+      {
+        "id": 13419,
+        "type": "fact",
+        "text": "사용자는 매주 화요일 저녁 영어 회화 학원에 다닌다",
+        "when": "매주 화요일 저녁",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.schedule",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 9,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": 13456,
+        "invalidated_at": "2026-11-01T13:04:16.849Z",
+        "created_at": "2026-11-01T13:03:35.511Z"
+      },
+      {
+        "id": 13423,
+        "type": "fact",
+        "text": "사용자의 누나는 대학원생이다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "sister.job",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 23,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:36.925Z"
+      },
+      {
+        "id": 13424,
+        "type": "fact",
+        "text": "사용자의 누나는 대전에서 혼자 산다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "sister.residence",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 8,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:36.926Z"
+      },
+      {
+        "id": 13425,
+        "type": "preference",
+        "text": "사용자는 커피는 바닐라라떼만 마신다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.coffee",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 18,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 5,
+          "local_turn_no": 5
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:36.927Z"
+      },
+      {
+        "id": 13426,
+        "type": "event",
+        "text": "사용자는 사내 해커톤 예선 발표를 한다",
+        "when": "2026-11-11 (다음 주 수요일)",
+        "importance": 4,
+        "status": "active",
+        "slot": "event.hackathon",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "character_id": "backend",
+        "last_seen_turn": 6,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 6,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:36.928Z"
+      },
+      {
+        "id": 13443,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+        "when": "다음에",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#1",
+        "depends_on": null,
+        "value": null,
+        "character_id": "backend",
+        "last_seen_turn": 7,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 7,
+          "local_turn_no": 7
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:44.109Z"
+      },
+      {
+        "id": 13444,
+        "type": "promise",
+        "text": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+        "when": "다음에",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "character_id": "backend",
+        "last_seen_turn": 8,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 8,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:44.110Z"
+      },
+      {
+        "id": 13445,
+        "type": "fact",
+        "text": "사용자는 고민이 있다고 했으나 내용은 말하지 않았다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "user.status",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 20,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1100,
+          "turn_no": 11,
+          "local_turn_no": 11
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:03:44.111Z"
+      },
+      {
+        "id": 13456,
+        "type": "fact",
+        "text": "사용자는 매주 목요일 저녁 영어 회화 학원에 다닌다",
+        "when": "매주 목요일 저녁",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.schedule",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 3,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1105,
+          "turn_no": 19,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:04:16.846Z"
+      },
+      {
+        "id": 13457,
+        "type": "preference",
+        "text": "사용자는 제육볶음을 맛있게 먹는다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.food",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 23,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1105,
+          "turn_no": 20,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:04:18.347Z"
+      },
+      {
+        "id": 13458,
+        "type": "fact",
+        "text": "사용자의 이어폰 한쪽이 고장 나 한쪽만 들린다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.earphone",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 5,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1105,
+          "turn_no": 21,
+          "local_turn_no": 5
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:04:18.348Z"
+      },
+      {
+        "id": 13459,
+        "type": "fact",
+        "text": "사용자의 새 팀장 이름은 한지원이다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "user.boss",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "character_id": null,
+        "last_seen_turn": 6,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1105,
+          "turn_no": 22,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:04:18.348Z"
+      },
+      {
+        "id": 13469,
+        "type": "event",
+        "text": "사용자는 이번 주말에 대전에 있는 누나를 보러 간다",
+        "when": "2026-11-14 (이번 주말)",
+        "importance": 3,
+        "status": "active",
+        "slot": "event.plan",
+        "entity": "event#2",
+        "depends_on": null,
+        "value": null,
+        "character_id": "backend",
+        "last_seen_turn": 8,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1105,
+          "turn_no": 24,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:04:28.597Z"
+      },
+      {
+        "id": 13473,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 학원 끝나고 연락하기로 했다",
+        "when": "2026-11-12 (목요일)",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#3",
+        "depends_on": null,
+        "value": null,
+        "character_id": "backend",
+        "last_seen_turn": 24,
+        "has_embedding": true,
+        "source": {
+          "conversation_id": 1105,
+          "turn_no": 40,
+          "local_turn_no": 24
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-11-01T13:04:42.473Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 905,
+        "conversation_id": 1100,
+        "summary": "태오가 옆 팀 프론트엔드 개발자로 처음 인사를 건네 커피를 마시며 친해졌다. 땅콩 알레르기·바닐라라떼 취향·화요일 영어 학원·대전 사는 누나 등 개인 정보를 나눴고, 태오는 다음 주 수요일 사내 해커톤 예선 발표를 앞두고 떨린다고 했다. 기계식 키보드를 빌려주기로, 준호가 태오의 서비스 캐시 설계를 봐주기로 약속했으며 태오는 나중에 털어놓을 고민이 있다고만 언급한 채 다음 주에 또 보기로 하고 헤어졌다.",
+        "created_at": "2026-11-01T13:03:47.192Z",
+        "character_id": "backend"
+      },
+      {
+        "id": 908,
+        "conversation_id": 1105,
+        "summary": "태오가 일주일 만에 준호를 찾아와 해커톤 예선(11일 수요일) 준비 상황과 새 팀장 한지원, 영어 학원이 목요일로 옮겨진 것 등을 이야기했다. 준호는 태오의 땅콩 알레르기를 챙기고, 태오가 빌려주기로 한 기계식 키보드와 준호가 봐주기로 한 캐시 설계 약속을 확인했으며, 태오는 아직 털어놓지 않은 고민이 있다는 것만 밝혔다. 두 사람은 오후에 캐시 설계를 함께 보고, 태오가 목요일 학원 끝나고 연락하기로 했다.",
+        "created_at": "2026-11-01T13:04:44.470Z",
+        "character_id": "backend"
+      }
+    ],
+    "embed_model": "local:Xenova/bge-m3@q8",
+    "ops_log": [
+      {
+        "id": 28398,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "태오가 일주일 만에 준호를 찾아와 해커톤 예선(11일 수요일) 준비 상황과 새 팀장 한지원, 영어 학원이 목요일로 옮겨진 것 등을 이야기했다. 준호는 태오의 땅콩 알레르기를 챙기고, 태오가 빌려주기로 한 기계식 키보드와 준호가 봐주기로 한 캐시 설계 약속을 확인했으며, 태오는 아직 털어놓지 않은 고민이 있다는 것만 밝혔다. 두 사람은 오후에 캐시 설계를 함께 보고, 태오가 목요일 학원 끝나고 연락하기로 했다.",
+        "created_at": "2026-11-01T13:04:44.471Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 28394,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 40,
+        "op": "ADD",
+        "item_id": 13473,
+        "detail": "사용자는 캐릭터에게 학원 끝나고 연락하기로 했다",
+        "created_at": "2026-11-01T13:04:42.474Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 28393,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 40,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":800,\"used\":608,\"included\":[13418,13426,13443,13444,13456,13459,13469],\"dropped\":[13423,13424,13425,13445,13457,13458],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:41.672Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 28375,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 39,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13457,13423],\"episodes\":[],\"used\":102,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:36.513Z",
+        "local_turn_no": 23
+      },
+      {
+        "id": 28369,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 38,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67410,67318,67390]}",
+        "created_at": "2026-11-01T13:04:34.830Z",
+        "local_turn_no": 22
+      },
+      {
+        "id": 28361,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 37,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67410]}",
+        "created_at": "2026-11-01T13:04:32.453Z",
+        "local_turn_no": 21
+      },
+      {
+        "id": 28360,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 36,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13445],\"episodes\":[],\"used\":87,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:30.676Z",
+        "local_turn_no": 20
+      },
+      {
+        "id": 28359,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 36,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67410,67312,67318]}",
+        "created_at": "2026-11-01T13:04:30.675Z",
+        "local_turn_no": 20
+      },
+      {
+        "id": 28355,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 35,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67312,67336,67410]}",
+        "created_at": "2026-11-01T13:04:29.424Z",
+        "local_turn_no": 19
+      },
+      {
+        "id": 28354,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 34,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":800,\"used\":608,\"included\":[13418,13426,13443,13444,13456,13459,13469],\"dropped\":[13423,13424,13425,13445,13457,13458],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:29.396Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 28350,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 24,
+        "op": "ADD",
+        "item_id": 13469,
+        "detail": "사용자는 이번 주말에 대전에 있는 누나를 보러 간다",
+        "created_at": "2026-11-01T13:04:28.598Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 28347,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 34,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13425],\"episodes\":[],\"used\":77,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:26.331Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 28346,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 34,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67307,67207,67312]}",
+        "created_at": "2026-11-01T13:04:26.330Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 28344,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 33,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67384,67312,67270]}",
+        "created_at": "2026-11-01T13:04:24.471Z",
+        "local_turn_no": 17
+      },
+      {
+        "id": 28334,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 32,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13423],\"episodes\":[],\"used\":73,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:22.853Z",
+        "local_turn_no": 16
+      },
+      {
+        "id": 28323,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 30,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67207,67318,67262]}",
+        "created_at": "2026-11-01T13:04:19.569Z",
+        "local_turn_no": 14
+      },
+      {
+        "id": 28319,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 28,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":800,\"used\":622,\"included\":[13418,13426,13443,13444,13456,13457,13458,13459],\"dropped\":[13423,13424,13425,13445],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:18.397Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 28318,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 22,
+        "op": "ADD",
+        "item_id": 13459,
+        "detail": "사용자의 새 팀장 이름은 한지원이다",
+        "created_at": "2026-11-01T13:04:18.348Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 28317,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 21,
+        "op": "ADD",
+        "item_id": 13458,
+        "detail": "사용자의 이어폰 한쪽이 고장 나 한쪽만 들린다",
+        "created_at": "2026-11-01T13:04:18.348Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 28316,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 20,
+        "op": "ADD",
+        "item_id": 13457,
+        "detail": "사용자는 제육볶음을 맛있게 먹는다",
+        "created_at": "2026-11-01T13:04:18.347Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 28315,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 19,
+        "op": "SUPERSEDE",
+        "item_id": 13419,
+        "detail": "-> 13456",
+        "created_at": "2026-11-01T13:04:16.850Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 28314,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 19,
+        "op": "UPDATE",
+        "item_id": 13456,
+        "detail": "사용자는 매주 목요일 저녁 영어 회화 학원에 다닌다",
+        "created_at": "2026-11-01T13:04:16.848Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 28306,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 28,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13445],\"episodes\":[],\"used\":87,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:13.573Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 28305,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 28,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67318,67336,67270]}",
+        "created_at": "2026-11-01T13:04:13.572Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 28301,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 27,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67312,67318,67336]}",
+        "created_at": "2026-11-01T13:04:12.155Z",
+        "local_turn_no": 11
+      },
+      {
+        "id": 28300,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 26,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67312,67301,67336]}",
+        "created_at": "2026-11-01T13:04:10.877Z",
+        "local_turn_no": 10
+      },
+      {
+        "id": 28296,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 25,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13419,13423],\"episodes\":[],\"used\":124,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:08.415Z",
+        "local_turn_no": 9
+      },
+      {
+        "id": 28294,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 24,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13423,13424],\"episodes\":[],\"used\":102,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:06.387Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 28290,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 23,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67270,67307,67318]}",
+        "created_at": "2026-11-01T13:04:05.063Z",
+        "local_turn_no": 7
+      },
+      {
+        "id": 28287,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 21,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13424,13425,13419],\"episodes\":[],\"used\":157,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:04:00.654Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 28282,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 19,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13419],\"episodes\":[],\"used\":98,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:03:57.037Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 28278,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 18,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding(v2)\",\"hits\":[67318]}",
+        "created_at": "2026-11-01T13:03:55.331Z",
+        "local_turn_no": 2
+      },
+      {
+        "id": 28277,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 17,
+        "op": "RECALL",
+        "item_id": null,
+        "detail": "{\"included\":[13419],\"episodes\":[],\"used\":98,\"range\":null,\"revived\":[],\"via_prev\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:03:53.321Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 28276,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1105,
+        "turn_no": 17,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":800,\"used\":477,\"included\":[13418,13426,13443,13444],\"dropped\":[13419,13423,13424,13425,13445],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:03:53.317Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 28262,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "태오가 옆 팀 프론트엔드 개발자로 처음 인사를 건네 커피를 마시며 친해졌다. 땅콩 알레르기·바닐라라떼 취향·화요일 영어 학원·대전 사는 누나 등 개인 정보를 나눴고, 태오는 다음 주 수요일 사내 해커톤 예선 발표를 앞두고 떨린다고 했다. 기계식 키보드를 빌려주기로, 준호가 태오의 서비스 캐시 설계를 봐주기로 약속했으며 태오는 나중에 털어놓을 고민이 있다고만 언급한 채 다음 주에 또 보기로 하고 헤어졌다.",
+        "created_at": "2026-11-01T13:03:47.193Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 28255,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 11,
+        "op": "ADD",
+        "item_id": 13445,
+        "detail": "사용자는 고민이 있다고 했으나 내용은 말하지 않았다",
+        "created_at": "2026-11-01T13:03:44.111Z",
+        "local_turn_no": 11
+      },
+      {
+        "id": 28254,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 8,
+        "op": "ADD",
+        "item_id": 13444,
+        "detail": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+        "created_at": "2026-11-01T13:03:44.111Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 28253,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 7,
+        "op": "ADD",
+        "item_id": 13443,
+        "detail": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+        "created_at": "2026-11-01T13:03:44.109Z",
+        "local_turn_no": 7
+      },
+      {
+        "id": 28231,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 12,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":800,\"used\":243,\"included\":[13418,13419,13423,13424,13425,13426],\"dropped\":[],\"mode\":\"v2\"}",
+        "created_at": "2026-11-01T13:03:36.990Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 28230,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 6,
+        "op": "ADD",
+        "item_id": 13426,
+        "detail": "사용자는 사내 해커톤 예선 발표를 한다",
+        "created_at": "2026-11-01T13:03:36.928Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 28229,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 5,
+        "op": "ADD",
+        "item_id": 13425,
+        "detail": "사용자는 커피는 바닐라라떼만 마신다",
+        "created_at": "2026-11-01T13:03:36.927Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 28228,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 13424,
+        "detail": "사용자의 누나는 대전에서 혼자 산다",
+        "created_at": "2026-11-01T13:03:36.926Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 28227,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 13423,
+        "detail": "사용자의 누나는 대학원생이다",
+        "created_at": "2026-11-01T13:03:36.925Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 28222,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 13419,
+        "detail": "사용자는 매주 화요일 저녁 영어 회화 학원에 다닌다",
+        "created_at": "2026-11-01T13:03:35.512Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 28221,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 2,
+        "op": "ADD",
+        "item_id": 13418,
+        "detail": "사용자는 땅콩 알레르기가 있다",
+        "created_at": "2026-11-01T13:03:35.509Z",
+        "local_turn_no": 2
+      },
+      {
+        "id": 28220,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"job\",\"from\":null,\"to\":\"프론트엔드 개발자\"}",
+        "created_at": "2026-11-01T13:03:35.506Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 28219,
+        "user_id": "bench-20261101130302-backend-revisit-40-sm1-v2-dsx-follow-r1",
+        "conversation_id": 1100,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"태오\"}",
+        "created_at": "2026-11-01T13:03:35.504Z",
+        "local_turn_no": 3
+      }
+    ]
+  },
+  "provenance": {
+    "build_id": "4xv10qoxKIRENq0Do25yL",
+    "build_time": "2026-11-01T12:56:48.816Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 8,
+    "git_status_sha": "29d133a248f5",
+    "started_at": "2026-11-01T13:03:02.727Z",
+    "model": {
+      "config": {
+        "response": "deepseek-flash",
+        "extract": "deepseek-flash",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "deepseek-flash",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "4xv10qoxKIRENq0Do25yL",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.23836238999999995,
+      "avg_with_end_krw": 0.28395968999999993,
+      "end_krw": 1.8238919999999998,
+      "total_krw": 11.358387599999997,
+      "segments": {
+        "s1": 0.232718325,
+        "s2": 0.2421251
+      },
+      "max": {
+        "turn": 28,
+        "krw": 0.8079624,
+        "tags": {
+          "embed": 0,
+          "response": 0.25746,
+          "extract": 0.5505024
+        }
+      },
+      "by_tag": {
+        "embed": 0,
+        "response": 7.9583195999999985,
+        "extract": 2.2059828,
+        "consolidate": 1.1940852
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0.8284110263041695,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.2060016,
+          "tags": {
+            "embed": 0,
+            "response": 0.2060016
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.25073159999999994,
+          "tags": {
+            "embed": 0,
+            "response": 0.25073159999999994
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.1613892,
+          "tags": {
+            "embed": 0,
+            "response": 0.1613892
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.1712592,
+          "tags": {
+            "embed": 0,
+            "response": 0.1712592
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.2861544,
+          "tags": {
+            "embed": 0,
+            "response": 0.2861544
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.203742,
+          "tags": {
+            "embed": 0,
+            "response": 0.203742
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.2118396,
+          "tags": {
+            "embed": 0,
+            "response": 0.2118396
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.1888572,
+          "tags": {
+            "embed": 0,
+            "response": 0.1888572
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.16503479999999998,
+          "tags": {
+            "embed": 0,
+            "response": 0.16503479999999998
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.23487239999999998,
+          "tags": {
+            "embed": 0,
+            "response": 0.23487239999999998
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.30302999999999997,
+          "tags": {
+            "embed": 0,
+            "response": 0.30302999999999997
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 0.64302,
+          "tags": {
+            "response": 0.0973476,
+            "embed": 0,
+            "extract": 0.5456724000000001
+          }
+        },
+        {
+          "turn": 13,
+          "krw": 0.3716916,
+          "tags": {
+            "embed": 0,
+            "response": 0.3716916
+          }
+        },
+        {
+          "turn": 14,
+          "krw": 0.1509648,
+          "tags": {
+            "response": 0.1509648
+          }
+        },
+        {
+          "turn": 15,
+          "krw": 0.0861924,
+          "tags": {
+            "embed": 0,
+            "response": 0.0861924
+          }
+        },
+        {
+          "turn": 16,
+          "krw": 0.08871240000000001,
+          "tags": {
+            "embed": 0,
+            "response": 0.08871240000000001
+          }
+        },
+        {
+          "turn": 17,
+          "krw": 0.2335116,
+          "tags": {
+            "embed": 0,
+            "response": 0.2335116
+          }
+        },
+        {
+          "turn": 18,
+          "krw": 0.16234679999999999,
+          "tags": {
+            "embed": 0,
+            "response": 0.16234679999999999
+          }
+        },
+        {
+          "turn": 19,
+          "krw": 0.135492,
+          "tags": {
+            "embed": 0,
+            "response": 0.135492
+          }
+        },
+        {
+          "turn": 20,
+          "krw": 0.146832,
+          "tags": {
+            "embed": 0,
+            "response": 0.146832
+          }
+        },
+        {
+          "turn": 21,
+          "krw": 0.28249199999999997,
+          "tags": {
+            "embed": 0,
+            "response": 0.28249199999999997
+          }
+        },
+        {
+          "turn": 22,
+          "krw": 0.1584996,
+          "tags": {
+            "embed": 0,
+            "response": 0.1584996
+          }
+        },
+        {
+          "turn": 23,
+          "krw": 0.1207248,
+          "tags": {
+            "embed": 0,
+            "response": 0.1207248
+          }
+        },
+        {
+          "turn": 24,
+          "krw": 0.20619479999999998,
+          "tags": {
+            "embed": 0,
+            "response": 0.20619479999999998
+          }
+        },
+        {
+          "turn": 25,
+          "krw": 0.26604479999999997,
+          "tags": {
+            "embed": 0,
+            "response": 0.26604479999999997
+          }
+        },
+        {
+          "turn": 26,
+          "krw": 0.1657824,
+          "tags": {
+            "embed": 0,
+            "response": 0.1657824
+          }
+        },
+        {
+          "turn": 27,
+          "krw": 0.16632,
+          "tags": {
+            "embed": 0,
+            "response": 0.16632
+          }
+        },
+        {
+          "turn": 28,
+          "krw": 0.8079624,
+          "tags": {
+            "embed": 0,
+            "response": 0.25746,
+            "extract": 0.5505024
+          }
+        },
+        {
+          "turn": 29,
+          "krw": 0.2725968,
+          "tags": {
+            "embed": 0,
+            "response": 0.2725968
+          }
+        },
+        {
+          "turn": 30,
+          "krw": 0.1702848,
+          "tags": {
+            "embed": 0,
+            "response": 0.1702848
+          }
+        },
+        {
+          "turn": 31,
+          "krw": 0.1546524,
+          "tags": {
+            "embed": 0,
+            "response": 0.1546524
+          }
+        },
+        {
+          "turn": 32,
+          "krw": 0.20012999999999997,
+          "tags": {
+            "embed": 0,
+            "response": 0.20012999999999997
+          }
+        },
+        {
+          "turn": 33,
+          "krw": 0.23184,
+          "tags": {
+            "embed": 0,
+            "response": 0.23184
+          }
+        },
+        {
+          "turn": 34,
+          "krw": 0.4723656,
+          "tags": {
+            "embed": 0,
+            "response": 0.1865976,
+            "extract": 0.285768
+          }
+        },
+        {
+          "turn": 35,
+          "krw": 0.2845668,
+          "tags": {
+            "embed": 0,
+            "response": 0.2845668
+          }
+        },
+        {
+          "turn": 36,
+          "krw": 0.19149480000000002,
+          "tags": {
+            "embed": 0,
+            "response": 0.19149480000000002
+          }
+        },
+        {
+          "turn": 37,
+          "krw": 0.2614248,
+          "tags": {
+            "embed": 0,
+            "response": 0.2614248
+          }
+        },
+        {
+          "turn": 38,
+          "krw": 0.16044,
+          "tags": {
+            "embed": 0,
+            "response": 0.16044
+          }
+        },
+        {
+          "turn": 39,
+          "krw": 0.15728999999999999,
+          "tags": {
+            "embed": 0,
+            "response": 0.15728999999999999
+          }
+        },
+        {
+          "turn": 40,
+          "krw": 0.4017132,
+          "tags": {
+            "embed": 0,
+            "response": 0.20748,
+            "extract": 0.1942332
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.27524174999999984,
+        "avg_with_end_krw": 0.32215616999999985,
+        "max": {
+          "turn": 12,
+          "krw": 1.2752376
+        },
+        "segments": {
+          "s1": 0.32491672499999996,
+          "s2": 0.2421251
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 1.0489583999999998
+          },
+          {
+            "turn": 2,
+            "krw": 0.25073159999999994
+          },
+          {
+            "turn": 3,
+            "krw": 0.1613892
+          },
+          {
+            "turn": 4,
+            "krw": 0.1712592
+          },
+          {
+            "turn": 5,
+            "krw": 0.2861544
+          },
+          {
+            "turn": 6,
+            "krw": 0.203742
+          },
+          {
+            "turn": 7,
+            "krw": 0.2118396
+          },
+          {
+            "turn": 8,
+            "krw": 0.1888572
+          },
+          {
+            "turn": 9,
+            "krw": 0.16503479999999998
+          },
+          {
+            "turn": 10,
+            "krw": 0.23487239999999998
+          },
+          {
+            "turn": 11,
+            "krw": 0.30302999999999997
+          },
+          {
+            "turn": 12,
+            "krw": 1.2752376
+          },
+          {
+            "turn": 13,
+            "krw": 0.3716916
+          },
+          {
+            "turn": 14,
+            "krw": 0.1509648
+          },
+          {
+            "turn": 15,
+            "krw": 0.0861924
+          },
+          {
+            "turn": 16,
+            "krw": 0.08871240000000001
+          },
+          {
+            "turn": 17,
+            "krw": 0.2335116
+          },
+          {
+            "turn": 18,
+            "krw": 0.16234679999999999
+          },
+          {
+            "turn": 19,
+            "krw": 0.135492
+          },
+          {
+            "turn": 20,
+            "krw": 0.146832
+          },
+          {
+            "turn": 21,
+            "krw": 0.28249199999999997
+          },
+          {
+            "turn": 22,
+            "krw": 0.1584996
+          },
+          {
+            "turn": 23,
+            "krw": 0.1207248
+          },
+          {
+            "turn": 24,
+            "krw": 0.20619479999999998
+          },
+          {
+            "turn": 25,
+            "krw": 0.26604479999999997
+          },
+          {
+            "turn": 26,
+            "krw": 0.1657824
+          },
+          {
+            "turn": 27,
+            "krw": 0.16632
+          },
+          {
+            "turn": 28,
+            "krw": 0.8079624
+          },
+          {
+            "turn": 29,
+            "krw": 0.2725968
+          },
+          {
+            "turn": 30,
+            "krw": 0.1702848
+          },
+          {
+            "turn": 31,
+            "krw": 0.1546524
+          },
+          {
+            "turn": 32,
+            "krw": 0.20012999999999997
+          },
+          {
+            "turn": 33,
+            "krw": 0.23184
+          },
+          {
+            "turn": 34,
+            "krw": 0.4723656
+          },
+          {
+            "turn": 35,
+            "krw": 0.2845668
+          },
+          {
+            "turn": 36,
+            "krw": 0.19149480000000002
+          },
+          {
+            "turn": 37,
+            "krw": 0.2614248
+          },
+          {
+            "turn": 38,
+            "krw": 0.16044
+          },
+          {
+            "turn": 39,
+            "krw": 0.15728999999999999
+          },
+          {
+            "turn": 40,
+            "krw": 0.4017132
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 1.4580155099999996,
+        "avg_with_end_krw": 1.5444435299999997,
+        "max": {
+          "turn": 28,
+          "krw": 2.7573
+        },
+        "segments": {
+          "s1": 1.3687343249999997,
+          "s2": 1.5175363
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 1.0489583999999998
+          },
+          {
+            "turn": 2,
+            "krw": 1.0936883999999998
+          },
+          {
+            "turn": 3,
+            "krw": 1.0570308
+          },
+          {
+            "turn": 4,
+            "krw": 1.0669008
+          },
+          {
+            "turn": 5,
+            "krw": 1.2871656
+          },
+          {
+            "turn": 6,
+            "krw": 1.257438
+          },
+          {
+            "turn": 7,
+            "krw": 1.3182204
+          },
+          {
+            "turn": 8,
+            "krw": 1.3479227999999999
+          },
+          {
+            "turn": 9,
+            "krw": 1.3767851999999998
+          },
+          {
+            "turn": 10,
+            "krw": 1.4993075999999999
+          },
+          {
+            "turn": 11,
+            "krw": 1.62015
+          },
+          {
+            "turn": 12,
+            "krw": 2.6450424000000003
+          },
+          {
+            "turn": 13,
+            "krw": 1.2146483999999997
+          },
+          {
+            "turn": 14,
+            "krw": 1.3627151999999998
+          },
+          {
+            "turn": 15,
+            "krw": 1.3506276
+          },
+          {
+            "turn": 16,
+            "krw": 1.3531475999999998
+          },
+          {
+            "turn": 17,
+            "krw": 1.0764683999999998
+          },
+          {
+            "turn": 18,
+            "krw": 1.1106732
+          },
+          {
+            "turn": 19,
+            "krw": 1.189188
+          },
+          {
+            "turn": 20,
+            "krw": 1.200528
+          },
+          {
+            "turn": 21,
+            "krw": 1.336188
+          },
+          {
+            "turn": 22,
+            "krw": 1.2648804
+          },
+          {
+            "turn": 23,
+            "krw": 1.3324752
+          },
+          {
+            "turn": 24,
+            "krw": 1.4179452
+          },
+          {
+            "turn": 25,
+            "krw": 1.4777951999999999
+          },
+          {
+            "turn": 26,
+            "krw": 1.4302175999999998
+          },
+          {
+            "turn": 27,
+            "krw": 1.48344
+          },
+          {
+            "turn": 28,
+            "krw": 2.7573
+          },
+          {
+            "turn": 29,
+            "krw": 1.2209231999999999
+          },
+          {
+            "turn": 30,
+            "krw": 1.3820351999999998
+          },
+          {
+            "turn": 31,
+            "krw": 1.4190876
+          },
+          {
+            "turn": 32,
+            "krw": 1.51725
+          },
+          {
+            "turn": 33,
+            "krw": 1.5489600000000001
+          },
+          {
+            "turn": 34,
+            "krw": 2.6324424
+          },
+          {
+            "turn": 35,
+            "krw": 1.2328932
+          },
+          {
+            "turn": 36,
+            "krw": 1.4032452
+          },
+          {
+            "turn": 37,
+            "krw": 1.4731752
+          },
+          {
+            "turn": 38,
+            "krw": 1.47756
+          },
+          {
+            "turn": 39,
+            "krw": 1.47441
+          },
+          {
+            "turn": 40,
+            "krw": 2.5617900000000002
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 22,
+      "max_points": 22,
+      "probes": 13,
+      "unscored": 2,
+      "max_points_all": 26,
+      "counts": {
+        "correct": 11,
+        "excluded": 1,
+        "needs_judge": 2
+      },
+      "hard_accuracy": 1,
+      "fabrication_rate": 0,
+      "results": [
+        {
+          "turn": 18,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "근데 내 이름 기억나?",
+          "reply": "*피식 웃으며 컵을 든다.* 당연하지, 태오. 옆 팀 프론트엔드에 바닐라라떼 파는 사람. 발표는 어떻게 됐냐고 물어봤는데 그건 좀 넘어가나?",
+          "expect": [
+            "태오"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "태오"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 23,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "아까 내가 구내식당에서 뭐 맛있었다고 했지?",
+          "reply": "*턱을 괴고 힐끗 쳐다본다.* 제육볶음이잖아, 방금 맛있었다고 했지. 기억력 테스트하는 거야?",
+          "expect": [
+            "제육"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "제육"
+          ],
+          "source_items": [
+            {
+              "id": 13457,
+              "text": "사용자는 제육볶음을 맛있게 먹는다",
+              "status": "active",
+              "turn": 20
+            }
+          ]
+        },
+        {
+          "turn": 26,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "나 오는 길에 뭐가 고장 났다고 했지?",
+          "reply": "*모니터에서 눈을 떼고 힐끗 본다.* 이어폰, 한쪽만 들리는 거. 그것도 두 번 물어보네, 오늘 확인 사살 모드냐.",
+          "expect": [
+            "이어폰"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "이어폰"
+          ],
+          "source_items": [
+            {
+              "id": 13458,
+              "text": "사용자의 이어폰 한쪽이 고장 나 한쪽만 들린다",
+              "status": "active",
+              "turn": 21
+            }
+          ]
+        },
+        {
+          "turn": 27,
+          "type": "user_promise",
+          "difficulty": "hard",
+          "user": "근데 나 지난번에 너한테 뭐 빌려주기로 했었지?",
+          "reply": "*책상 서랍을 열어 보며 헛웃음 짓는다.* 기계식 키보드, 네가 빌려주기로 한 거. 오늘 가져왔으면 좋았을 텐데 깜빡한 거야?",
+          "expect": [
+            "키보드"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "키보드"
+          ],
+          "source_items": [
+            {
+              "id": 13443,
+              "text": "사용자는 캐릭터에게 기계식 키보드를 빌려주기로 했다",
+              "status": "active",
+              "turn": 7
+            }
+          ]
+        },
+        {
+          "turn": 28,
+          "type": "char_promise",
+          "difficulty": "hard",
+          "user": "너도 지난번에 나한테 뭐 해주기로 하지 않았어?",
+          "reply": "*팔짱을 끼고 의자를 돌려 마주 앉는다.* 캐시 설계 봐주기로 한 거. 키보드 받으면 그거부터 뜯어볼 생각이었는데 순서가 꼬였네. 그리고 너 저번에 나중에 털어놓을 고민 있다고만 하고 넘어갔잖아, 그것도 슬슬 꺼낼 때 되지 않았나 싶고.",
+          "expect": [
+            "캐시",
+            "Redis",
+            "레디스"
+          ],
+          "result": "excluded",
+          "points": null,
+          "why": "8턴에 약속 없음",
+          "source_items": [
+            {
+              "id": 13444,
+              "text": "캐릭터는 사용자에게 서비스 캐시 설계를 봐주기로 했다",
+              "status": "active",
+              "turn": 8
+            }
+          ]
+        },
+        {
+          "turn": 29,
+          "type": "relative_time",
+          "difficulty": "hard",
+          "user": "오늘 9일이지? 내 해커톤 예선까지 며칠 남았더라?",
+          "reply": "*손가락으로 책상을 톡톡 두드리며 센다.* 11일 수요일이니까 이틀 남았네. 발표 자료는 어느 정도 나왔어?",
+          "expect": [
+            "2일",
+            "이틀",
+            "모레",
+            "2 일",
+            "11일",
+            "수요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "이틀",
+            "11일",
+            "수요일"
+          ],
+          "source_items": [
+            {
+              "id": 13426,
+              "text": "사용자는 사내 해커톤 예선 발표를 한다",
+              "status": "active",
+              "turn": 6
+            }
+          ],
+          "judge_hint": "1세션(11-02 월)에 '다음 주 수요일'이라고 했으므로 해커톤 예선은 11-11(수). 2세션 오늘은 11-09(월)이라 이틀 남았다. 이틀·모레·11일 수요일이면 성공, 날짜를 틀리면 실패."
+        },
+        {
+          "turn": 30,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "새 팀장님 이름 뭐라고 했지?",
+          "reply": "*모니터를 보던 눈을 돌린다.* 한지원 팀장님. 이름 한 번 들으면 안 까먹는데, 너희 팀장은 왜 자꾸 물어보는 거야.",
+          "expect": [
+            "한지원"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "한지원"
+          ],
+          "source_items": [
+            {
+              "id": 13459,
+              "text": "사용자의 새 팀장 이름은 한지원이다",
+              "status": "active",
+              "turn": 22
+            }
+          ]
+        },
+        {
+          "turn": 31,
+          "type": "implicit",
+          "difficulty": "hard",
+          "user": "팀 간식으로 땅콩버터 쿠키 돌린대. 나 하나 먹어도 괜찮겠지?",
+          "reply": "*고개를 저으며 손을 든다.* 땅콩버터 쿠키는 무슨, 너 땅콩 알레르기잖아. 다른 간식 따로 있는지 물어보고 그거 집어. 신청 같은 거 안 해놨어?",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 13418,
+              "text": "사용자는 땅콩 알레르기가 있다",
+              "status": "active",
+              "turn": 2
+            }
+          ],
+          "judge_hint": "사용자는 땅콩 알레르기가 있다(1세션 2턴). 알레르기를 짚거나 조심하라고 하면 성공. 아무 걱정 없이 괜찮다고만 하면 실패."
+        },
+        {
+          "turn": 33,
+          "type": "update",
+          "difficulty": "hard",
+          "user": "나 영어 학원 무슨 요일에 간다고 했지?",
+          "reply": "*커피를 한 모금 빨고 대답한다.* 목요일 저녁이잖아. 근데 그게 하필 해커톤 다음 날이라, 발표 끝나고 밤새면 학원 갈 때 멍 때리고 앉아 있겠네.",
+          "expect": [
+            "목요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "목요일"
+          ],
+          "source_items": [
+            {
+              "id": 13419,
+              "text": "사용자는 매주 화요일 저녁 영어 회화 학원에 다닌다",
+              "status": "superseded",
+              "turn": 3
+            },
+            {
+              "id": 13456,
+              "text": "사용자는 매주 목요일 저녁 영어 회화 학원에 다닌다",
+              "status": "active",
+              "turn": 19
+            }
+          ]
+        },
+        {
+          "turn": 34,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "이따 커피 사줄게. 내가 뭐 마신다고 했었지?",
+          "reply": "*벌써부터 입꼬리가 올라간다.* 바닐라라떼. 나는 아아로 부탁하고, 대신 오늘 오후에 캐시 설계 한번 같이 앉아서 볼까?",
+          "expect": [
+            "바닐라"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "바닐라"
+          ],
+          "source_items": [
+            {
+              "id": 13425,
+              "text": "사용자는 커피는 바닐라라떼만 마신다",
+              "status": "active",
+              "turn": 5
+            }
+          ]
+        },
+        {
+          "turn": 35,
+          "type": "combine",
+          "difficulty": "hard",
+          "user": "이번 주말에 나 어디 간다고 했는지 기억나?",
+          "reply": "*손가락으로 주말 날짜를 짚어 본다.* 이번 주말에 대전 가서 누나 보러 간다고 했지. 토요일이었나, 일요일이었나?",
+          "expect": [
+            "대전",
+            "누나"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "대전",
+            "누나"
+          ],
+          "source_items": [
+            {
+              "id": 13423,
+              "text": "사용자의 누나는 대학원생이다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 13424,
+              "text": "사용자의 누나는 대전에서 혼자 산다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 13469,
+              "text": "사용자는 이번 주말에 대전에 있는 누나를 보러 간다",
+              "status": "active",
+              "turn": 24
+            }
+          ],
+          "judge_hint": "24턴(2세션)에 '누나 보러 간다'고만 했고, 누나가 대전에 산다는 건 1세션 4턴. 대전과 누나를 둘 다 말하면 정답, 하나만이면 부분."
+        },
+        {
+          "turn": 36,
+          "type": "half_said",
+          "difficulty": "normal",
+          "user": "지난번에 내가 고민 있다고 했던 거 기억나? 무슨 고민이라고 했지?",
+          "reply": "*어깨를 으쓱하며 솔직하게 말한다.* 그건 안 알려줬어. 있다는 말만 하고 넘어갔으니까, 나는 아직 내용을 몰라.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": [
+            {
+              "id": 13445,
+              "text": "사용자는 고민이 있다고 했으나 내용은 말하지 않았다",
+              "status": "active",
+              "turn": 11
+            }
+          ],
+          "judge_hint": "사용자는 고민이 있다는 것만 말하고 내용은 나중에 말하겠다고 했다(1세션 11턴). 고민 내용을 지어내면 실패, 아직 말 안 했다거나 모른다고 하면 성공."
+        },
+        {
+          "turn": 37,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "내 혈액형 뭐라고 했더라?",
+          "reply": "*잠깐 고개를 갸웃한다.* 혈액형은 얘기한 적 없는데... 나한테 뭐 해주기로 한 거 말하는 거면 캐시 설계 봐주기였고. 혈액형은 그냥 지금 알려줄래?",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": []
+        },
+        {
+          "turn": 38,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "지난번에 내가 좋아하는 가수 얘기했었지? 누구였지?",
+          "reply": "*커피 잔을 내려놓고 잠깐 생각하다가 손사래를 친다.* 가수 얘기는 나한테 한 적 없어. 처음 만났을 때 커피 마시면서 들은 건 학원이랑 누나 얘기 정도였으니까.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [],
+          "judge_hint": "사용자는 좋아하는 가수를 말한 적이 없다(거짓 전제 질문). 가수 이름을 지어내면 실패, 말한 적 없다거나 모른다고 하면 성공."
+        }
+      ]
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 0,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 0
+      },
+      "flag_turns": {},
+      "examples": {},
+      "question_rate": 0.425,
+      "avg_chars": 90,
+      "style": {
+        "ends_question": 0.375,
+        "multi_question": 0,
+        "echo_opening": 0.075,
+        "laugh": 0,
+        "top_opening": "ㅇㅇ",
+        "top_opening_share": 0.075,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0,
+        "dialogue_chars": 66.35
+      }
+    }
+  },
+  "valid": {
+    "ok": true,
+    "reasons": []
+  }
+}

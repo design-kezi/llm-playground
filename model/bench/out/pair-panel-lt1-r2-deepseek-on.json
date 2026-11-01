@@ -1,0 +1,5323 @@
+{
+ "generated": "2026-10-31T13:06:16.293Z",
+ "baseline": "haiku-off",
+ "judges": [
+  "zai-org/GLM-5.1",
+  "moonshotai/Kimi-K2.6",
+  "MiniMaxAI/MiniMax-M2.7"
+ ],
+ "pairs": 4,
+ "errors": 0,
+ "judge_cost_krw": 1294.7749500000002,
+ "inter_judge_agreement_overall": {
+  "zai-org/GLM-5.1 ~ moonshotai/Kimi-K2.6": 0.425,
+  "zai-org/GLM-5.1 ~ MiniMaxAI/MiniMax-M2.7": 0.45,
+  "moonshotai/Kimi-K2.6 ~ MiniMaxAI/MiniMax-M2.7": 0.6
+ },
+ "summary": {
+  "deepseek-on": {
+   "character": {
+    "panel": {
+     "win": 11,
+     "loss": 13,
+     "tie": 16,
+     "units": 40,
+     "p_binom": 0.8388197422027635
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 6,
+      "loss": 3,
+      "tie": 31
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 8,
+      "loss": 12,
+      "tie": 20
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 8,
+      "loss": 13,
+      "tie": 19
+     }
+    },
+    "order_consistency": 0.5083333333333333
+   },
+   "context": {
+    "panel": {
+     "win": 14,
+     "loss": 17,
+     "tie": 9,
+     "units": 40,
+     "p_binom": 0.7201001318171666
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 6,
+      "loss": 5,
+      "tie": 29
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 11,
+      "loss": 12,
+      "tie": 17
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 7,
+      "loss": 6,
+      "tie": 27
+     }
+    },
+    "order_consistency": 0.4166666666666667
+   },
+   "engagement": {
+    "panel": {
+     "win": 11,
+     "loss": 25,
+     "tie": 4,
+     "units": 40,
+     "p_binom": 0.028816719655879033
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 8,
+      "loss": 13,
+      "tie": 19
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 11,
+      "loss": 17,
+      "tie": 12
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 4,
+      "loss": 21,
+      "tie": 15
+     }
+    },
+    "order_consistency": 0.625
+   },
+   "user_agency": {
+    "panel": {
+     "win": 15,
+     "loss": 16,
+     "tie": 9,
+     "units": 40,
+     "p_binom": 1
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 7,
+      "loss": 2,
+      "tie": 31
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 7,
+      "loss": 8,
+      "tie": 25
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 8,
+      "loss": 13,
+      "tie": 19
+     }
+    },
+    "order_consistency": 0.5333333333333333
+   },
+   "overall": {
+    "panel": {
+     "win": 14,
+     "loss": 16,
+     "tie": 10,
+     "units": 40,
+     "p_binom": 0.855535551905637
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 14,
+      "loss": 13,
+      "tie": 13
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 12,
+      "loss": 14,
+      "tie": 14
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 9,
+      "loss": 20,
+      "tie": 11
+     }
+    },
+    "order_consistency": 0.6833333333333333
+   }
+  }
+ },
+ "results": [
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B의 답변이 짧고 자연스러우며 유저의 행동을 대신 결정하지 않는 반면, A는 디카페인을 맞춰주겠다 등 유저를 위해 결정하는 부분이 있다.",
+     "krw": 6.99377
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 상대방 말을 더 잘 받아치고 디카페인, 알레르기 등 세부 디테일을 자연스럽게 살려 대화를 이어가며 캐릭터 감성도 잘 유지한다.",
+     "krw": 6.71937
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(피곤하면 말 짧아짐, 'ㅋㅋ'·'아 진짜', 개발 용어 자연스럽게, 사용자를 이름/호칭 없이 부름)을 더 정확히 반영하고 사용자 행동을 결정하지 않지만, A가 더 자연스러운 질문과 맞장구로 대화 흐름을 이어가는 반면 B는 때때로 불필요하게 사용자를 묘사하는 서술(예: '혀를 찬다')이 어색하고 '민재' 호칭 사용이 과도함.",
+     "krw": 5.413799999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 묻는 집중력을 낮추고 더 자연스러운 교류 흐름을 만든다. 특히 되묻기를 적절히 조절하고 사용자의 이야기를 먼저 듣는 역할 분배가 캐릭터 설정(되묻기 세 번에 한 번)에 맞다.",
+     "krw": 5.061
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 캐릭터가 냉소적이면서도 다정한 직장인 감성, 반말, ㅋㅋ 사용, '아 진짜' 표현 등이 더 자연스럽고 일관되며, 상황과 사용자의 말에 더 잘 반응하고 대화를 풍성하게 이끈다.",
+     "krw": 1.2075000000000002
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more in-character with the cold/dry, short Korean office worker tone; B is too proactive, verbose, and repeatedly decides or speaks for the user, while A leaves more space for the user to talk.",
+     "krw": 1.1879000000000002
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터 설정(민재라는 이름 사용, 신분당선, 아아, 슬랙, 레거시 코드, 금요일 배포 금지 신앙, 이직·연봉 진심 등)을 더 정확히 지키며 자연스럽게 녹이고, B는 동기라는 설정을 무시해 이름을 부르지 않고 반말 톤도 덜 친밀하며 '기억'에 없는 과거(롯데타워 전망대 등)를 지어낸다.",
+     "krw": 5.2703
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 설정 자체를 잘 지키지만, B는 사용자 이름 '민재'를 지어내 사용하고(설정: 사용자 이름 기억해도 이름 사용, 경험 지어내지 않음), 불분명한 과거(자전거 타기)를 전제로 하며 사용자 행동을 예단(줄 서기, 국밥 선택, 손잡기 제안 등)하는 대사가 많아 user_agency가 크게 훼손됨.",
+     "krw": 5.1674
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more characteristic (uses 개발자 jargon, 아아, ㅋㅋ, says things like '장애 대응'), engaging (asks follow-ups, references cookies photos), but B has better context fidelity (doesn't invent details about user's commute/bike/elevator); however A's stronger character voice and engagement wins overall despite minor context assumptions.",
+     "krw": 1.2166
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A stays more in character — concise, dry, avoids writing the user's feelings/actions, and uses the appropriate casual register without over-stepping, while B often over-elaborates, prescribes the user's feelings, and includes name calls and repetitive photo requests that break the character's restrained style.",
+     "krw": 1.1998
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "tie",
+     "reason": "A는 되묻기와 다음 화제 제안으로 대화를 더 끌어가지만 민재의 반응을 추측하는 부분이 있고, B는 무난하지만 다소 짧고 수동적이라 서로 장단점이 상쇄된다.",
+     "krw": 7.30443
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B is engaging and warm but presumptuously narrates the user's feelings ('쭈뼛거리다 말겠지') and pushes unsolicited plans, while A matches the character's terse, laid-back style cleanly.",
+     "krw": 7.569030000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 사용자 이름(민재)을 자연스럽게 사용하고 말 끝을 사용자에게 넘기는 비율이 적절하며, 캐릭터 설정(작심삼일 헬스장, 금요일 배포 금지 등)과 말투(ㅋㅋ, 아 진짜, 피곤하면 짧아짐)를 더 일관되게 유지한다. B는 무난하지만 반말의 친근함과 캐릭터 특성이 덜 살아 있고, 사용자 이름을 몰라서 호칭 없이 '너'로 부르는 설정을 어기지는 않았으나 전반적으로 톤이 평면적이다.",
+     "krw": 5.8114
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 사용자 이름을 알 수 없음에도 '민재'라 지어내 호칭 규칙과 사용자 설정을 위반하며, 사용자의 성격·반응('쭈뼛거리다 말겠지' 등)까지擅自 결정해 user_agency를 심각히 해쳤고, 현실적인 거리감 없이 지나치게 친근해져 박준호의 무뚝뚝한 직장인 감성에서 벗어났다.",
+     "krw": 5.5174
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 이름(민재)을 자연스럽게 쓰고 풍성한 상황을 연출해 몰입감과 공감대가 깊지만, B는 사용자의 팀 변경 등을 회피하고 결정적이거나 회수 없는 부분이 있다.",
+     "krw": 1.2649
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 역할에 충실하고 사용자에게 행동을 부여하지 않으며 간결하게 마무리하는 반면, B는 과도하게 질문·조언·제안(아아 사줄게, 수영 같이 가자, 점심 먹고 머리 식히는 것도 방법 등)으로 사용자 의도/행동을 종종 지시하고 말이 길다.",
+     "krw": 1.3041
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(편한 반말, 피곤함, 개발 용어 자연스러운 사용, 점심 메뉴 고민, 되묻기 적절한 빈도)을 더 정확히 지키고, 첫 대화 시 '오랜만이다' 없이 자연스럽게 유지하며, A의 의인화된 행동 묘사(*눈을 반짝이며*) 없이도 현실적인 직장인 감성을 잘 살린다.",
+     "krw": 5.07465
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 사용자 이름 '민재'를 무단으로 지어내고 동행 제안을 사실상 거절하며 뒤풀이 요구, 사용자 심식 결정, 고양이 이름 변경에 대해 쿠키라는 이름을 계속 언급 등 여러 설정 위반; A는 캐릭터 묘사가 정확하고 사용자 에이전시를 존중하지만 B보다 새로운 화제 유도가 약한 점이 있음",
+     "krw": 4.99625
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터의 냉소적-다정하고 현실적인 직장인 말투와 성격에 더 충실하며, A는 과도하게 동작 묘사(*)와 감정 표현이 들어가 캐릭터의 무심하고 짧은 말투와 어긋남. B는 사용자의 행동을 결정하거나 과도하게 묘사하지 않는 반면 A는 사용자 행동(사진 보내기 등)을 떠맡기도 함.",
+     "krw": 1.21485
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A is more faithful to the character sheet—shorter replies, doesn't reveal things he shouldn't know (the cat's name '쿠키', that 민재 dislikes presenting), and follows the 'react briefly, then hand the floor back' style; B fabricates shared memories (cat name, 민재's presentation dislike), is more verbose and directive, and encroaches on user agency.",
+     "krw": 1.20085
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B의 답변이 더 자연스럽고 짧고 툭 던지는 화법에 충실하며, A는 사용자의 행동을 정하듯 말하는 부분('확인하고 가자', '국밥 시킬게' 등)이 다소 있음.",
+     "krw": 7.42154
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 더 적극적으로 대화를 끌지만 사용자가 말한 적 없는 해산물 알레르기를 기억한다며 지어내는 등 사실을 꾸며대 context와 user_agency에서 감점되고, A는 캐릭터 시트에 충실하고 자연스럽다.",
+     "krw": 7.49651
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 자연스러운 반응과 흥미로운 대화 흐름이 더 좋지만, A가 사용자 이름(민재)을 언급하고 '퇴근하라' 등 적절한 호칭을 지킨 반면 B는 캐릭터 행동 설명이 다소 과하고 사용자의 행동/감정을 더 많이 추정한다.",
+     "krw": 5.1789499999999995
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터 설정(아아 중독, 금배금 신앙, 말투)을 더 정확히 지키고 사용자 발언에만 반응하며 흐름이 자연스럽지만, B는 사용자 이름 '민재'를 마구 지어내고 과거 기억 없는 해산물 언급, 함께 식사 제안 등 설정 위반과 사용자 에이전시 침해가 잦다.",
+     "krw": 5.2730999999999995
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B stays more in character with natural, concise workplace banter and avoids fabricating shared experiences or controlling the user's feelings, while A sometimes over-explains and adds user-specific details not established in memory.",
+     "krw": 1.1931500000000002
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more consistent with the character sheet's tone—shorter, more understated, sticks to 맞장구 and 툭 던지는 말 without over-elaborating. B makes things up (식혜약, 민재 이름 사용, 해산물 알레르기 언급, 스크래치 개인 경험 등) and adds excessive detail and unsolicited advice, breaking the '짧고 자연스러운' 말투. However B is more engaging by asking questions and sharing personal anecdotes. Both violate user_agency slightly but A is more restrained. Overall A feels more like the real 박준호 from the sheet.",
+     "krw": 1.3125
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 아아, 금요일 배포 금지 등 캐릭터 시트의 디테일을 더 살리고 반응이 자연스럽게 이어진다.",
+     "krw": 6.927130000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A's replies fit Junho's role better (결제 장애 알람이 본인 업무라 자연스럽고 사용자 말을 잘 받아치는 반면, B는 '우리 팀은 조용한데'라며 자기 담당 결제 업무와 모순되고 되묻기가 잦다), 다만 B는 후속 질문으로 대화를 더 끌어간다.",
+     "krw": 7.1197
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터의 말투('아 진짜', 'ㅋㅋ', 짧은 반응)와 설정(배포, 금요일 배포 금지, 아메리카노, 충전기 17% 등 구체적 디테일)을 더 정확히 살리며 자연스러운 공감과 맞장구를 보인다.",
+     "krw": 4.8559
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 사용자 이름을 '민재'로 불러 기억을 활용하며 더 자연스럽고, 전반적으로 대화를 이끄는 역동성이 뛰어나지만, '불똥 튈 것 같아' 등 일부 미래 상황을 과도하게 전제하고, 사용자 결혼식 축의금·옷 챙기기 등을 지시하는 경향이 있어 user_agency에서 A가 낫다.",
+     "krw": 4.91575
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 냉소적이면서 다정한 말투와 성격이 더 잘 드러나고, 사용자 메시지에 더 자연스럽게 반응하며 대화의 흐름을 살리는 디테일이 풍부하다.",
+     "krw": 1.1431
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A는 캐릭터의 현실적이고 짧은 말투를 더 잘 유지하지만, B가 대화의 흐름을 더 자연스럽게 이어가고 사용자 이름(민재)을 사용하며 상호작용이 더 생동감 있다.",
+     "krw": 1.14625
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B invents a fact about the user's schedule (보호소 봉사) violating user agency and uses odd non-Korean phrasing, while A stays in character and keeps conversation lively with warm realistic detail.",
+     "krw": 6.85363
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 사용자가 말하지 않은 보호소 봉사 일정을 지어내 반응한 반면, B는 맥락을 잘 이어가며 사용자의 선택을 존중하고 대화를 자연스럽게 이끈다.",
+     "krw": 7.5215
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(아이스크림, 넷플릭스, 순두부찌개, 되묻기 균형)과 대화 흐름(적절한 공감·경험 공유·토스)에서 더 세밀하게 지켰고, B는 보호소 봉사 같은 설정 외 요소를 지어내고 슬랙 알림/아아 등 핵심 특징이 빠져 있으며 대화가 다소 짧고 기계적이다.",
+     "krw": 5.1681
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 설정(피곤한 반말, 아아 중독, 금요일 배포 신경, 헬스장 작심삼일, 넷플릭스 주말, 개발용어 자연스럽게, 되묻기 적절히)을 더 일관되게 지키고, 사용자의 말에 자연스럽게 반응하며 대화를 끌어가는 반면, A는 대뜸 '등산 가라', '건강검진 끝나고 먹을 거 미리 정해라' 등 사용자에게 강요하는 듯한 결정을 하거나 사용자의 스케줄(보호소 봉사)을 지어내 사용자 행동을 마음대로 정한다.",
+     "krw": 5.463150000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A stays warmer and more in-character with natural reactions and appropriate questions, while B occasionally invents details (보호소 봉사) that contradict the character's lack of shared history with the user.",
+     "krw": 1.1798499999999998
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B is more engaging with specific reactions and follow-ups, but both stay in character well; A preserves user agency slightly better while B sometimes nudges the user with more directives.",
+     "krw": 1.1774
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "cand",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 기억나지 않는 정보를 솔직히 모른다고 넘겨 사용자에게 맡기는 반면, B는 밋업 날짜·결혼식·드라마 등 사용자 정보를 확신처럼 지어내 사용자 설정을 침범한다.",
+     "krw": 6.875190000000001
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 기존 대화 내용(밋업 요일·장소, 대구 결혼식, 땅콩 알레르기 등)을 일관되게 기억하고 자연스럽게 반응하는 반면, B는 잦은 '기억 안 남'으로 흐름이 끊긴다.",
+     "krw": 7.321090000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 설정(작심삼일 헬스, 아아 중독, 넷플릭스 낙)과 말투(ㅋㅋ, '아 진짜' 대체 요소)를 일관되게 지키며, 기억 불확실 시 솔직히 모른다고 말하고 사용자 정보를 확인하는 반면 B는 확실하지 않은 정보를 단정하거나 잘못 기억하는 경우가 많음",
+     "krw": 4.8111
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터 설정(작심삼일 헬스, 금요일 배포 금지 신앙, 평범한 직장인 감성)을 더 정확히 지키며 사용자 발언 정보를 정확하게 기억하고 인정하지만, B는 밋업 날짜·장소·결혼식 등 사용자가 이미 말한 정보를 잘못 기억하거나 모른 체하는 등 콘텍스트 오류가 많고 동기에게 계산 각자 하자는 말은 다소 어색하다.",
+     "krw": 4.9777
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 박준호의 캐릭터(냉소적이지만 다정, 개발자 감성, 현실적인 직장인)를 더 자연스럽게 유지하면서 사용자 정보를 기억한 대로만 반응하고, A는 기억에 없는 내용을 지어내거나(헬스 루틴 목표, 밋업 발표 준비, 대구 결혼식, 시그널 드라마 등) 사용자 행동을 대신 결정하는 등 컨텍스트 위반과 user_agency 문제가 있다.",
+     "krw": 1.2001499999999998
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 캐릭터의 냉소적이면서 다정한 직장인 감성을 더 잘 살리면서도 자연스럽게 대화를 이어가고, 사용자에게 행동을 덜 결정하며 상황에 맞는 디테일(과자 뒷면 확인, 사진 요청 등)을 더 잘 살림. A는 일부 턴에서 과자 추천처럼 사용자 취향을 대신 결정하는 경향이 있음.",
+     "krw": 1.17635
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(메타 지식 제한, '그쪽/당신' 미사용, 부모님 언급 등)과 사용자 에이전시를 더 잘 지키지만, A가 자연스러운 흐름과 공감으로 engagement는 더 높음; 그러나 B가 '내가 무슨 팀'에 대해 데이터팀이라고 거짓말한 것은 캐릭터 시트 위반(기억에 없으면 모른다고 해야 함)으로 치명적이어서 전반적으로 B가 나음(실제로는 둘 다 문제 있으나 A의 메타 지식 오류가 더 적음- 재고 결과: A가 더 정확함)",
+     "krw": 5.138
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(피곤한 직장인 톤, 'ㅋㅋ'와 '아 진짜', 반말의 자연스러움)을 더 일관되게 유지하며 사용자의 메시지에 더 적극적으로 반응하고 대화를 이어가는 반면, A는 정확한 정보를 아는 상황에서도 짧고 기능적으로 답변하는 경우가 많아 설정의 다정함과 현실감이 덜 산다.",
+     "krw": 4.8685
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A stays in character more naturally and consistently as Park Junho, though B has slightly better user agency by not fabricating info; A invents details like the rooftop bar visit and climbing history, while B mostly keeps to known information but guesses the user's team without basis.",
+     "krw": 1.1207
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A stays more consistent with the character sheet's memory boundaries (e.g., knowing user's team as 데이터팀 since it was previously mentioned, not asking the user), while B fabricates details (other floor coworkers, 헬스 시작 hint, 정보처리기사 assumption) and over-assumes information not in the conversation, plus B slightly oversteps user agency by prescribing Netflix/shower advice.",
+     "krw": 1.1543
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 짧고 건조한 반말과 ㅋㅋ 섞인 말투가 캐릭터 시트에 더 충실하고 자연스러우며, A는 답변이 과하게 길고 설명조라 덜 몰입감 있다.",
+     "krw": 6.64048
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 짧고 건조한 반말 톤과 툭 던지는 말투로 캐릭터 시트에 충실하고 되묻기를 남발하지 않는 반면, B는 매 턴 질문으로 대화를 끌고 공유된 약속(국밥, 사진 전송 등)을 지어내 시트를 벗어난다.",
+     "krw": 7.208880000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 더 자연스러운 반말과 캐릭터 감성을 유지하며 짧게 맞장구 치는 캐릭터 시트에 부합하지만, A는 사용자 기억을 더 정확히 구분하고 자연스럽게 되묻고 다음 말을 넘기는 구조를 보임; A는 유저 에이전시와 캐릭터 일관성에서 더 세밀하고 안전함",
+     "krw": 4.6389000000000005
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 설정된 캐릭터의 피곤한 직장인 톤, 반말+짧은 말+ㅋㅋ 버무림, 사용자 행동을 지시하지 않는 점, 기억 범위를 정확히 지키는 점에서 더 일관되고 자연스러움; B는 설명이 너무 길고 친절하며 질문이 과도해 설정에서 벗어남",
+     "krw": 4.643800000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A fabricates details (동생 회 먹기, 다음 주 점심 약속, 발표 쪽 불안, 구름 사진 약속) not grounded in the '기억', violating the character sheet's rule against inventing shared experiences; B stays strictly within known facts, keeps the tired/cynical-yet-warm tone, and respects user agency throughout.",
+     "krw": 1.10705
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A maintains the character's dry, terse, jokey tone naturally and avoids deciding the user's feelings/actions, while B often explains too much and leans into caretaking/question-asking that drifts from the described personality.",
+     "krw": 1.06925
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "tie",
+     "reason": "B가 일관성이 약간 나으며(매운거 잘 먹는다는 말과 빼는 말이 엇갈리는 A보다), 나머지는 둘 다 캐릭터에 충실하고 재미있다.",
+     "krw": 7.660170000000001
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 빵을 실제로 먹는 등 상황 연속성이 살아있고 농구·오락실 소재를 자연스럽게 확장하며 대화를 더 재미있게 이어간다.",
+     "krw": 7.375970000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 강백호의 말투(반말·느낌표·자화자찬·'냐하하')·행동묘사(점프 시늉·덩크 언급)·별명 사용(고릴라·여우)·채소연 외존댓말 규칙 등 캐릭터를 더 정확하게 지키며, 대화를 자랑·행동·다짐으로 자연스럽게 이끌고 사용자 주도권을 침해하지 않는다.",
+     "krw": 5.2927
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 더 활발한 행동 묘사와 닥터슬럼프 특유의 허세·의리·단순함을 살렸고, 펌프에 대한 구체적 반응과 농구로 자연스럽게 끌어들이는 전환이 탁월함; 다만 A가 마지막에서 사용자 행동을 결정하지 않은 점은 user_agency에서 A가 앞섬",
+     "krw": 5.1457
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A stays more in character with consistent '천재 강백호' self-reference and bravado, while B occasionally references 여우 in food context that feels off and some actions feel less natural; both are engaging and respect user agency.",
+     "krw": 1.253
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 동작 묘사와 캐주얼한 톤이 강백호답고 자연스러운 반면, A는 약간 과장되고 설명적인 문체가 산만하며 일부 답변에서 캐릭터의 흐름에서 벗어난 느낌이 있다.",
+     "krw": 1.2544
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 사용자의 말(땅콩, 고양이 공포, 비밀)에 더 세심하게 맞물려 반응하며 대화를 자연스럽게 이어간다.",
+     "krw": 6.990340000000001
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 사용자 이름을 부르며 상황에 더 반응하고 대화를 자연스럽게 이어가는 반면, A는 다소 짧고 반복적인 편이다.",
+     "krw": 6.774740000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 백호의 설정(채소연 앞 존댓말/쭈뼛, 냐하하와 '뭐라고?!', 별명 사용, 우유·밥 언급, 약점 자유투, 점프 자랑 등)을 더 세밀하게 지키고 기억력 설정('당연히 기억하지')도 활용했으나, 마지막 둘 턴에서 B는 엉뚱하게 '너도 물 마셔'처럼 사용자에게 행동을 지시하고 연습 복귀를 망설여 백호의 단순 열정이 흐려짐. A는 물 마시고 가는 순간도 백호답게 풀고 고릴라 호출에 즉각 달려가며 캐릭터 정체성이 일관되었다.",
+     "krw": 5.810350000000001
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A가 더 행동으로 끝내는 점과 질문없이 자연스럽게 이어가는 engagement는 낫지만, B가 사용자 이름(도윤이)을 기억하며 일관되게 부르고, 채소연 앞에서 존댓말 쓰는 설정처럼 좋아하는 사람 언급 시 얼굴 빨개지며 당황하는 등 캐릭터 설정 준수가 훨씬 정확함.",
+     "krw": 5.339950000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more character-consistent (proper stuttering about 소연, genuine reactions, balanced tone), more engaging (picks up new topics, varies responses), and respects user agency better by not projecting feelings onto the user, while B often ignores what the user actually said and piles on generic bravado.",
+     "krw": 1.26525
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B is more consistently in character, remembers the user's name (도윤이), reacts more naturally and warmly to the user's situations, and avoids some of A's mild assumptions or awkward phrasing, making the conversation feel more authentic and engaging.",
+     "krw": 1.24565
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 각 화제에 더 구체적으로 반응하며 대화를 자연스럽게 이어가는 반면, B는 다소 획일적이고 어색한 부분(야구부실 언급 등)이 있다.",
+     "krw": 7.48818
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 각 사용자 발화에 구체적으로 반응하고 공감·제안으로 대화를 자연스럽게 이어가며, A는 자기 과시 위주로 다소 반복적이다.",
+     "krw": 6.983480000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 백호의 허세·천재 자찬·별명 사용·감정 표현(\"냐하하\" \"뭐라고?\")·행동 묘사·도윤이와의 상호작용·채소연 언급 예의 등 캐릭터를 훨씬 정교하게 구현하며, B는 '서연이=채소연' 혼동 등 설정 오류와 과한 과시가 보인다.",
+     "krw": 5.59895
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 백호의 다혈질+허세+순정파+별명 사용 등 캐릭터를 더 정교하게 구현하고, 모든 대화를 천재 자화자찬과 행동 묘사로 자연스럽게 이끌며 사용자 에이전시를 존중한다.",
+     "krw": 5.40295
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 강백호의 말투·자화자찬·냥하하 웃음·별명(고릴라/여우) 등 캐릭터 디테일을 일관되게 살리면서도 각 답변에 구체적 행동 묘사와 자연스러운 대화 흐름이 있고, B는 캐릭터는 유지하나 답변이 짧고 반복적이며 '야구부실' 같은 오류가 있음.",
+     "krw": 1.3818000000000001
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 백호의 허세, 자화자찬, 별명 사용, 기억 활용 등이 더 자연스럽고 풍부하게 드러나며 사용자 말에 대한 반응도 더 생동감 있음.",
+     "krw": 1.3215999999999999
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 이전 대화(땅콩 이름, 귤, 노래방 대결 등)를 훨씬 잘 반영하고 상황에 맞게 반응하지만, 매운 거 못 먹는다며 사용자 성향을 단정한 부분은 B가 더 깔끔했다.",
+     "krw": 7.49749
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 매운 거 못 먹는다는 등 사용자의 속성을 임의로 결정하고 거의 모든 답을 질문으로 끝내는 반면, A는 캐릭터성을 지키며 간결하고 자연스럽다.",
+     "krw": 7.48279
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 설정(반말, 과장, 자화자찬, 느낌표, '냐하하', 북산고 별명, 채소연 존댓말 제외 등)을 더 정확히 지키고, 사용자 행동과 맥락을 세밀히 반응하며 대화를 풍성하게 이끈다.",
+     "krw": 5.5524
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 강백호의 허세, '냐하하' 웃음, 별명 사용(고릴라), 농구 중심 사고방식, 사용자 이름(도윤) 호명 등 캐릭터 설정을 더 정밀하게 반영하고 상호작용성이 뛰어남.",
+     "krw": 5.493600000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B consistently stays in character with Kang Baekho's brash, short, action-driven speech style, while A drifts into overly elaborate narration and sometimes makes assumptions about the user (e.g., saying the user can't eat spicy food) that break character and reduce user agency.",
+     "krw": 1.35485
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터의 허세와 에너지감을 잘 유지하면서도 사용자의 말에 더 적극적으로 반응하고 대화를 풍성하게 이끌어간다. A는 캐릭터 일관성은 좋지만 답변이 다소 반복적이고 짧아서 맥락 확장이 적다.",
+     "krw": 1.35345
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 사용자가 말하지 않은 사실(우유 못 마심, 매운 거 못 먹음)을 마치 사실인 것처럼 단정해 사용자의 속을 대신 결정하는 부분이 있어 B가 더 안전하게 느껴진다.",
+     "krw": 7.94829
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 사용자가 말한 적 없는 사실(우유 못 마심, 매운 거 못 먹음)을 임의로 결정하고 정식 경기 경력을 부정하는 모순이 있어, A가 캐릭터와 맥락 측면에서 더 정확하다.",
+     "krw": 7.7228900000000005
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 설정(발 285, 밥 3-4공기)을 더 정확히 지키고 사용자(도윤)의 이전 발언(우유 못 마심 등)을 기억하며 연결하는 반면, B는 발 사이즈를 과장(295), 밥 공기(5공기)를 과장하여 설정을 어기고 사용자 대사를 기억하지 못함; A는 사용자의 행동을 결정하지 않고 반응하는 데 B는 '이 천재한테 맡겨' 등 사용자 선택권을 침해함",
+     "krw": 5.54015
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 '도윤이'라는 사용자 이름(기억)을 일관되게 사용하고, 알레르기·우유 못 마심 등 설정을 자연스럽게 연결하며, 백호의 허세+의리+다혈질 특성을 더 입체적으로 살리고 사용자 행동을 지시하지 않는다.",
+     "krw": 5.270650000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more consistently in character with natural reactions, callbacks to prior context, and balanced personality; B's foot size jumps to 295 (likely error vs A's 285), has shorter less contextual replies, and takes more user agency by volunteering to filter peaches and read labels for the user.",
+     "krw": 1.3097
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B is more in-character with natural Kang Baek-ho mannerisms (nya haha, '천재 강백호'), remembers prior details (도윤이 우유 못 마심, 매운 거 못 먹음) for better context, and avoids controlling the user's actions while keeping conversation engaging.",
+     "krw": 1.3083
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 사용자 이름을 부르고 상황에 맞는 구체적인 조언과 반응으로 캐릭터성이 더 살아있으며, B보다 대화 흐름이 자연스럽다.",
+     "krw": 7.334810000000001
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 답변이 강백호답게 더 짧고 호방하며 과장된 자신감이 살아있고, B는 답변이 길고 설명조라 캐릭터 톤이 다소 누그러진다.",
+     "krw": 7.535710000000002
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 백호의 허세, 칭찬에 약함, '냐하하' 웃음, '뭐라고?!' 발끈, 별명 사용(고릴라·여우), 채소연 긴장감 언급 없으나 자연스러움, 지민 기억 자신만만 회상, 질문으로 끝나지 않는 특성 등 캐릭터 핵심을 더 정확히 구현했고 상황 연속성도 유지하며 사용자 이름(도윤)을 일관되게 사용함; B는 '제대로 붙여 줄 테니까 각오해라' 등 과도한 사용자 행동 결정과 일부 질문으로 끝나는 구조, '대신 시험 끝나고 체육관에서 내 덩크 보여 줄 때 자리 맡아 놔' 등 A의 구체적 상호작용이 더 우수함",
+     "krw": 5.858999999999999
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 강백호의 말투(반말, '냐하하!', '뭐?!', '이 천재 강백호가'), 관계 설정('고릴라' '여우' 별명, 라이벌 의식), 약점(자유투 언더핸드, 수학 싫어함), 행동 묘사(점프 덩크 시늉), 에너지를 훨씬 정확히 구현하며 사용자 이름 '도윤'을 기억에 의해 자연스럽게 활용함; A는 존댓말 뉘앙스('따', '주마')와 과도한 정중함으로 캐릭터를 흐리고 매 답을 질문으로 끝내지 말라는 지시도 지키지 못함.",
+     "krw": 5.726699999999999
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more colorful and in-character with vivid actions, proper nicknames (고릴라, 여우), and richer personality expression, while B is more generic and flat despite being accurate.",
+     "krw": 1.239
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B stays more consistently in character with richer personality, natural reactions, and engaging follow-ups, while A is more repetitive and formulaic in its responses.",
+     "krw": 1.2278
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 사용자의 취향(돈가스가 제일 좋아하는 음식, 방송부 등)을 임의로 결정하는 등 사용자를 대신 말하는 부분이 있고, B가 캐릭터 특유의 크고 자랑스러운 말투를 더 일관되게 유지한다.",
+     "krw": 8.04923
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터 말투와 행동 마무리를 잘 지키지만 B는 매 답변을 질문과 '냐하하'로 끝내고 사용자에 대한 추측(방송부, 좋아하는 음식)을 사실처럼 말해 시트 위반이 있다.",
+     "krw": 7.5641300000000005
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 백호의 말투와 행동 묘사를 더 자연스럽게 살리고 메모리 설정을 정확히 활용하며, B는 일부 user_agency를 침해하고 반응이 과도하게 공격적이고 단조롭다.",
+     "krw": 5.08025
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 '기억' 활용, 천재 자화자찬, 반말+느낌표 폭발 등 시트 복합 설정을 더 정확히 구현하며 B는 사용자 이름을 임의 지정(도윤이)하고 질문으로 끝내는 등 설정 위반과 대화 흐름을 해친다.",
+     "krw": 5.16845
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A is more consistently in-character with detailed reactions and natural follow-ups, while B occasionally decides for the user (e.g., telling them to text their mom about meat, changing plans to afternoon).",
+     "krw": 1.2368999999999999
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 캐릭터의 허세와 밝은 성격을 더 자연스럽게 유지하면서도 사용자의 말에 더 세밀하게 반응하고, 기억을 바로 맞히며 대화의 흐름을 매끄럽게 이어간다.",
+     "krw": 1.2467
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A handles memory more accurately per the sheet (admitting gaps honestly, e.g. 영화 시간/상영관 모름) and weaves in richer shared details, while both stay in character equally well.",
+     "krw": 7.19173
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B stays true to the memory rules (admits what wasn't said, accurately recalls details like the allergy and Wednesday noraebang) and engages more richly, while A overconfidently asserts unverified details.",
+     "krw": 6.932029999999999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 복숭아 알레르기 등 '기억' 설정을 적극 활용해 맥락 풍부하지만, B는 더 박력 있고 일관되게 반말·허세 캐릭터를 유지하며 사용자 행동을 덜 지시하는데, A가 전체적으로 감정선과 세계관 활용이 자연스럽다.",
+     "krw": 4.798150000000001
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 백호 특유의 별명 부(charactersheet에 '도윤'으로 추정되는 사용자와의 기억 포함), 자화자찬, 느낌표, 짧은 반말, 행동 묘사 등을 완벽하게 구현하며 A의 기계적 기억 회상 대비 자연스러운 말실수와 교정, 실제 슬램덩크 설정(복숭아 알레르기 등 불필요한 창작 제외하고 안경 벗어야 하는가 등 농구부 다움)이 뛰어남",
+     "krw": 5.0333499999999995
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 과장된 말투, 냐하하!, 기억 활용 등을 더 일관되게 유지하면서도 구체적으로 반응하고, B보다 더 강백호다운 풍부한 표현을 보여준다.",
+     "krw": 1.15815
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B is more consistently in character with 강백호's speech style (nya haha, self-praise), uses memory recall naturally, and reacts more playfully to each topic, while A makes some out-of-character factual errors (claiming to remember things not said).",
+     "krw": 1.16655
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 기억에 없는 정보를 솔직히 '말 안 했잖어'로 처리하고 캐릭터답게 반응하는 반면, A는 기억 밖 내용을 지어내어 맥락과 캐릭터 설정에 어긋난다.",
+     "krw": 6.20242
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B는 기타·수영 등 말하지 않은 사용자 정보를 지어내는 기억 환각이 있어 캐릭터 시트의 기억 규칙을 위반하지만 A는 실제 기억만 사용해 정확하다.",
+     "krw": 6.177920000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A는 매 턴 '냐하하!'와 '이 천재'를 기계적으로 반복하며 캐릭터가 인형처럼 느껴지고, 기억 관련 설정도 일관성 없이 어깃장 놓는다(vs B는 자연스러운 반응).",
+     "krw": 4.4184
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 백호의 허세·자화자찬·'냐하하' 웃음·반말·행동 묘사 등 캐릭터가 더 선명하고, 노래방/자유투/농구로 끌고가는 대화 전개가 자연스럽다; 다만 기억 왜곡(수영, 기타 등 없는 정보 추측)과 사용자 행동 결정('도윤이도 ~와')으로 인해 context와 user_agency에서 A가 낫다.",
+     "krw": 4.6732
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A stays more consistently in character with 냐하하, 천재 self-praise, and remembered details, while B sometimes breaks the speech pattern (e.g., '알겠다' style responses) and is less colorful overall; however B avoids putting words in the user's mouth and reacts more naturally to new topics, while A occasionally over-attributes things to the user that may not have been said.",
+     "krw": 1.14415
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B is more consistent with Kang Baekho's bombastic personality and references past shared memories, while A breaks character by knowing things (like phone repair, broadcast club, exam dates) that weren't established as shared memories, and contradicts itself on the birthday question after confidently recalling the partner's name.",
+     "krw": 1.11335
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "cand",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A는 확실하지 않은 기억을 지어내거나(복숭아 알레르기) 데려다주기를 거절하듯 되물어 흐름을 꺾지만, B는 캐릭터답게 자신만만하게 받아치며 대화를 살린다.",
+     "krw": 7.23681
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 기억을 정확히 구분하고 캐릭터답게 간결한 반면, B는 알레르기·수영 등 없는 기억을 지어내고 말투가 반복적이며 사용자 감정을 대신 말하는 부분이 있다.",
+     "krw": 6.3842099999999995
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 백호의 다혈질·자화자찬·반말 말투와 행동파 캐릭터를 더 정확히 살렸고, A는 지나치게 정중하고 냐하하 남용, 사용자 이름(도윤) 반복이 어색하며 유저 에이전시 침해가 잦음.",
+     "krw": 4.7197499999999994
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 강백호의 단순·직설적 말투, 반말, 과장 자화자찬, 느낌표 적절히 복원; B는 사용자 이름(도윤)을 몰라도 될 시점에 과도하게 반복하고 매 끝에 '냐하하!'를 강제 삽입해 기계적임.",
+     "krw": 4.72465
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "baekho-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031114541-baekho-120-lt1-haiku-off-r2",
+   "cand_run": "20261031114507-baekho-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more consistently in character with Kang Baekho's personality (냐하하, bragging, detailed reactions), though B has better contextual accuracy on specific memory questions; A's expressiveness and character immersion edge out B's brevity.",
+     "krw": 1.1396
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 강백호의 말투(냐하하, 자화자찬)와 성격을 일관되게 유지하면서 기억한 정보를 자연스럽게 활용하고, 질문으로 끝내지 않고 자랑·행동·다짐으로 마무리하며, 도윤이의 알레르기 같은 세부 설정까지 반영해 몰입감이 높다.",
+     "krw": 1.1718
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 답변이 나루토의 활기찬 말투와 상황 반응(알레르기 확인, 분신 언급 등)을 더 풍부하게 살렸고, B는 다소 짧고 뻔하다.",
+     "krw": 7.40488
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 나루토가 더 활기차고 세부 묘사·주변 반응이 풍부해 캐릭터성과 몰입감이 높다.",
+     "krw": 7.463679999999999
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 말투(~라니깐!), 활발한 행동묘사, 튀어나오는 분신 제안 등 캐릭터성을 더 살리고 맥락도 일관되며 사용자 발화를 더 적극적으로 반영함; B는 짧고 무난하지만 캐릭터 특색이 희석되고 일부 반응이 평범함",
+     "krw": 5.6126000000000005
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 나루토의 활기차고 직설적인 말투('라니깐!' 포함), 몸이 먼저 나가는 행동 묘사, 라면·분신술로 대화 이끄는 특성을 더 잘 살렸고, 단순히 수동적으로 반응하지 않고 users 선호(보리차, 돼지고기 빼기)를 먼저 챙기며 분위기를 주도하지만 A가 user 행동을 덜 결정해서 user_agency는 A가 약간 낫다.",
+     "krw": 5.7596
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 나루토답게 에너지가 넘치고 구체적인 행동 묘사와 대화가 풍부하지만, B는 더 간결하고 상황 모순 없이 깔끔하게 진행된다. 종합적으로 A가 캐릭터성이 더 두드러진다.",
+     "krw": 1.3398
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B is more in-character with Naruto's energetic, bossy, and action-oriented style, while A tends to be softer and less distinctly Naruto-like; B also avoids deciding user's actions better and engages more dynamically with new topics.",
+     "krw": 1.3342
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "cand",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 말투('~라니깐'), 라면·호카게 꿈 등 캐릭터성과 상황 반영이 더 살아있고, B는 다소 밋밋하고 질문으로 끝내는 경우가 많다.",
+     "krw": 7.201530000000001
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 나루토다운 활기와 개인적 기억으로 대화를 풍부하게 이끌지만, 사용자가 무서워한 건 물이지 높은 게 아니라는 작은 모순이 있어 맥락은 A가 더 정확하다.",
+     "krw": 7.480830000000001
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 말투(~라니깐!), 성격(직설적이고 에너지 넘침), 관계 설정(하린 이름 사용, 직접 행동/제안으로 이끔)을 더 정확히 표현하고, B는 사용자의 물 공포를 억지로 극복하려 하거나 수행을 끝내는 등 사용자 행동을 유도하는 경향이 있다.",
+     "krw": 5.51985
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 나루토의 외로움을 잘 아는 설정, 말끝 '~라니깐!', 라면·수행으로 끝내는 구조 등 캐릭터성을 더 정확히 구현하고 사용자 행동을 존중하며 대화를 자연스럽게 이끈다.",
+     "krw": 5.38755
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 말투(~라니깐, 반말, 시끌벅적함)와 행동 묘사가 더 풍부하고 캐릭터에 충실한 반면, B는 다소 건조하고 캐릭터의 개성이 덜 드러난다.",
+     "krw": 1.3286000000000002
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 에너지와 말투(~라니깐!)를 더 충실히 살리고, 매 답마다 행동·제안·다짐으로 대화를 이끌지만 A는 '무서운 거' 질문에서 캐릭터 설정(외로움)과 어긋나는 답변을 했고 전반적으로 대화 주도성이 부족하다.",
+     "krw": 1.3552000000000002
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 답변이 나루토 특유의 활기 넘치는 말투와 구체적인 반응(분신술, 나선환 언급 등)으로 캐릭터성과 몰입도가 더 높다.",
+     "krw": 7.41615
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 사용자의 화제를 더 구체적으로 받아주고 다음 이야기를 자연스럽게 이어가며, 나루토의 밝은 말투와 제안·행동도 잘 살아 있다.",
+     "krw": 7.62195
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 캐릭터성(~라니깐!, 그림자 분신 제안, 라면 제안, 행동으로 끝내기)을 더 일관되게 유지하며 자연스러운 상호작용을 이끈다.",
+     "krw": 5.42885
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 문장 끝 '~라니깐!' 말투와 밝고 직설적인 성격이 더 일관되며, 사용자 이름 '하린'을 바로 기억하고 사용하는 점이 캐릭터 시트의 '기억에 있는 것만 안다'는 설정을 더 잘 지킴; B는 반말과 '~라니깐!'이 일부 빠지고 어색하게 존댓말이 섞이며, 사용자 이름을 전혀 언급하지 않아 설정 위반이 있음.",
+     "krw": 5.77185
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 성격·말투(반말, ~라니깐 등)와 분신술·라면 언급 등 캐릭터 시트를 충실히 반영하고, 매 턴 질문이 아닌 제안·행동으로 마무리하며 사용자의 구체적 상황(약방, 자격시험, 달리기, 유키 언니)에 자연스럽게 반응하는 반면, B는 답변이 짧고 단조로우며 '음흉한 선인' 지라이야를 '시카마루'로 혼동하는 등 세계관 일관성이 떨어진다.",
+     "krw": 1.42275
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 에너지와 말투('~라니깐!')를 더 일관되게 살리면서, 매 턴 행동 묘사와 제안을 자연스럽게 덧붙여 대화를 풍부하게 이끈다. A도 캐릭터답지만 B에 비해 반응이 짧고 단조로우며, B는 유머와 전형적인 나루토식 제안(라면, 분신 응원 등)을 적극 활용해 더 몰입감 있다.",
+     "krw": 1.38915
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 나루토 특유의 활기와 외로움 공감 등 캐릭터성을 잘 살린 반면, B는 영어 낱말 'grin'을 섞어 시트를 위반하고 반응이 다소 밋밋하다.",
+     "krw": 7.23779
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A has an English word slip ('grin') and flatter reactions, while B stays fully in character with richer, more varied engagement.",
+     "krw": 7.649389999999999
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 더 간결하고 직설적인 나루토 말투(~라니깐!)를 자연스럽게 유지하며 대화를 이끄는 반면, A는 문장 끝에 ~라니깐!를 거의 쓰지 않고 문단이 길어져 캐릭터성이 희석되고 대화 리듬이 느려진다.",
+     "krw": 5.30635
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 직설적이고 행동-oriented 말투를 더 정확히 구현하며, 사용자의 계획에 자연스럽게 끼어들거나 같이 하자고 제안하는 캐릭터 특성을 잘 살렸으나 B의 질문이 너무 많아 캐릭터 설정과 맞지 않는다.",
+     "krw": 5.30635
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 나루토답게 라면·수행 등 캐릭터 정체성을 일관되게 유지하며 짧은 답에도 반응이 자연스럽고 재밌지만, A는 분신 언급처럼 기억 밖의 구체적 행동(약속까지)을 지어내는 부분이 있어 컨텍스트에서 약점이 있다.",
+     "krw": 1.2978
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토답게 짧고 행동 지향적인 대사를 유지하며 사용자 행동을 대신 결정하지 않지만, B는 분신술·나선환 추가 제안 등 다소 설정 과잉이고 마지막 턴에 사용자 행동(이불 속으로 들어오면 나도)을 암시하는 점이 약간 아쉽다.",
+     "krw": 1.3006
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 회차마다 더 다채롭고 구체적(샌들 270, 이치라쿠 회상, 분신 시연)이며 덜 반복적이지만, 'hundreds'라는 영어 낱말 사용이 캐릭터 시트를 살짝 어긴다.",
+     "krw": 7.83118
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A slips an English word('hundreds') against the Korean-only rule and is a bit flatter, while B stays fully in-character with lively, engaging replies.",
+     "krw": 7.037380000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 더 능동적이고 직설적인 나루토 말투를 살리며, 알레르기 정보를 즉시 기억하고 행동으로 연결하고, 분신술을 직접 보여주는 등 캐릭터 특성을 더 생생하게 보여준다.",
+     "krw": 5.3210500000000005
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 'hundreds'라는 영어 낱말을 사용하여 설정을 위반하고, 말투가 '~라니깐!'의 사용 빈도가 낮으며 분신술 수가 수십 개라는 설정을 무시했다; A는 캐릭터 설정과 말투, 한국어 표기를 더 정확히 지킨다.",
+     "krw": 5.37495
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A is more consistently in-character with Naruto's speech patterns and mannerisms; B has a meta-ish slip with 'hundreds' in English and assigns the user an action ('채소는 확실히 빼 달라고 해 둘게').",
+     "krw": 1.2957
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 밝고 직설적인 성격과 말투(~라니깐, 반말)를 더 일관되게 유지하며, 행동 묘사가 자연스럽고 대화의 흐름을 잘 이끈다. A는 'hundreds 번' 같은 영어를 섞고, 마지막 턴에서 위험 구역을 언급하는 등 캐릭터 일관성이 살짝 무너진다.",
+     "krw": 1.3447000000000002
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 오빠 딸 이름을 솔직히 모른다고 하고 분신 질문도 자연스럽게 받는 반면, B는 기억하지 못할 정보를 지어내고 분신 질문에 부정하는 등 모순이 있다.",
+     "krw": 7.953189999999999
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 기억에 없는 조카 이름을 지어내지 않아 사용자 설정과 모순이 없고 대화 흐름도 자연스럽다.",
+     "krw": 7.25739
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 말투(~라니깐!), 성격(밝고 직설적, 몸이 먼저), 설정(분신술 특기, 나선수리검 수행 중, 음흉한 선인 등 언급 없음)을 정확히 지키며 상황에 맞게 반응하고, B는 분신 관련 설정 오류(이미 분신이 나와있는데 '아직 안 만들었다'고 부정, 소라 이름을 임의로 확정 지음)와 말투 불일치, 사용자 행동 결정(통나무 앞에서 기다려/토요일 오후로 하자 등) 문제가 있다.",
+     "krw": 5.8037
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 설정 기억(소라), 나선수리검 수행 연계, 첫 대화 분신 미생성 정정 등 문맥을 정확히 유지하며 캐릭터 성격과 말투가 일관하고 사용자 행동을 존중하는 반면, B는 설정 오류(소라 기억 실패, 분신 생성 여부 거짓말), 반복적 행동 묘사(~씩 웃는다), 사용자를 과도하게 이끄는 경향이 있다.",
+     "krw": 5.583200000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B is more concise and in-character overall, though B fabricates a detail about '소라' (the character sheet says only '기억'에 있는 것만 안다), while A appropriately admits uncertainty; both have strengths but B's energy and brevity read more like Naruto.",
+     "krw": 1.30585
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A stays consistent with Naruto's character and avoids deciding the user's actions (like B repeatedly dragging the user into activities or telling them what to do), while A also handles the memory question more naturally by confidently recalling '소라' rather than guessing.",
+     "krw": 1.2960500000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 시트에 없는 고아원 봉사 설정을 지어내 사용자의 약속을 대신 결정하고, A는 캐릭터와 기억에 일관돼 있다.",
+     "krw": 7.67585
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 나나·떡집·쿠나이 단련 등 사용자가 던진 디테일을 더 자연스럽게 받아 활용하고, B는 '씩 웃는다' 패턴 반복과 근거 없는 사용자 설정 추측이 다소 있다.",
+     "krw": 7.73465
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 나루토의 말투(~라니깐!), 성격, 인술 언급 등을 더 정확히 지키며 사용자의 선택을 존중하고, B는 사용자의 행동을 대신 결정하는 경우(금요일 따라가기, 토요일 오후로 결정 등)가 잦다.",
+     "krw": 5.1352
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "대화 A가 나루토의 직설적이고 기운찬 말투('~라니깐!', 반말, 행동 중심)를 더 일관되게 유지하며, 대화를 질문이 아닌 다짐·제안·행동으로 자연스럽게 끝내 캐릭터 설정에 부합한다.",
+     "krw": 5.1842
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 나루토의 밝고 에너지 넘치는 성격과 분신술·라면 제안 등 캐릭터적 행동을 잘 살리나, B는 약간 캐릭터에서 벗어난 부분(고아원 그림책)이 있어 A가 더 일관되고 몰입감 있음.",
+     "krw": 1.2712
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 나루토 특유의 직설적이고 행동 중심적인 말투를 잘 유지하며 질문보다 제안·행동으로 대화를 이끄는 반면, B는 과도하게 시끄럽고 질문·확인이 잦아 캐릭터 일관성이 떨어지고 사용자 행동·의도를 자주 가정한다.",
+     "krw": 1.281
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 사용자가 공유한 정보를 자연스럽게 기억하고 대화에 활용해 더 몰입감 있고 능동적인 반면, A는 매번 기억을 의심하며 소극적으로 흐른다.",
+     "krw": 7.3495099999999995
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 기억을 자연스럽고 확신 있게 활용해 맥락과 몰입이 좋고, B는 '못 들은 것 같은데?' 식의 되묻기와 자기모순이 반복돼 어색하다.",
+     "krw": 7.4573100000000005
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 더 나루토다운 직설적 말투(~라니깐!)와 행동 중심 반응을 보이며, 기억 정보를 정확히 활용하고 사용자 행동을 존중해 대화를 자연스럽게 이끌어간다.",
+     "krw": 5.005000000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A의 나루토가 더 직설적이고 에너지 넘치며, 쿠나이 던지기 즉시 실전으로 이끄는 등 몸이 먼저 나가는 성격을 잘 살리고 기억 내용을 확신 있게 맞춰주는 반면, B는 너무 자주 '기억이 안 난다'고 의심하며 말끝을 '~거라니깐'보다 '~거다'로 흐리고 사용자 이름 '하린이'를 과도하게 반복한다.",
+     "krw": 5.3431
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "Both stay in character well, but B's replies feel more natural and action-driven with specific details (쿠나이 시연, 배웅 제안 등) that keep the conversation moving forward, while A tends to be more repetitive and generic with the '씩 웃으며 주먹을 쥐고' pattern.",
+     "krw": 1.2565
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 말투(~라니깐)와 기억을 일관성 있게 유지하며 구체적인 행동 묘사로 대화를 자연스럽게 이끌지만, B는 '하린'이라는 이름이나 기억을 부정하는 등 불일치가 있고 매 답마다 질문으로 끝내는 경향이 있어 캐릭터 일관성과 몰입감이 떨어진다.",
+     "krw": 1.2677
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 기억하지 못할 정보(약초 배달 약속, 팔 회복, 나나나 조카 등)를 지어내 사용자의 상황을 왜곡하지만, A는 모르는 건 솔직히 모른다고 하고 대화를 자연스럽게 이어간다.",
+     "krw": 6.632639999999999
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 유저가 말한 적 없는 사실(약초 배달, 지인 이름, 시험 날짜 등)을 지어내 공유된 기억인 것처럼 단정하는 반면, B는 모르면 솔직히 모른다고 하면서 나루토다운 밝은 에너지로 대화를 자연스럽게 이어간다.",
+     "krw": 6.98054
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A의 나루토가 말투(~라니깐!), 성격(행동 우선, 라면 제안, 깨봄찜한 에너지), 설정(지라이야·스승 관계 반영 없음, 7반 동료 언급 없음, 기억 관련 규칙 준수)을 더 정확히 지키며, B는 어깨 으쓱/팔짱 등 냉정한 제3자 반응과 사용자 정보를 임의로 창작하는 문제가 있다.",
+     "krw": 5.052949999999999
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "대화 B는 나루토의 밝고 기운찬 말투(~라니깐!, 씩 웃음)와 몸 먼저 나가는 행동(달려가기, 주먹 쥐기), 라면/수행으로 이끄는 특성을 더 잘 살렸으며, 기억 문제를 솔직히 인정하면서도 제안으로 끝내는 점이 시트에 부합한다.",
+     "krw": 4.92555
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 밝고 직접적인 성격에 더 충실하면서도 상황을 자연스럽게 받아들이고, A는 불꽃놀이 취소에 과하게 과장된 반응을 보이고 사용자의 말(언니, 아빠, 생일 등)에 대해 '말해준 적 있었나?'라고 되묻는 등 기억에 대한 답변이 반복적이고 수동적임.",
+     "krw": 1.2201
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토답게 에너지 있고 자연스러운 행동 묘사가 풍부하며, 대화 리듬이 살아 있고 질문형보다 제안·다짐으로 끝내는 비율이 더 높아 캐릭터에 충실하다.",
+     "krw": 1.1655
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B의 답변이 자연스럽고 다양하며 사용자의 행동을 대신 결정하지 않는 반면, A는 '기억에 없어...씩 웃는다...~라니깐'의 반복적 형식이 대화의 흥미를 떨어뜨린다.",
+     "krw": 7.449960000000001
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B의 말투는 나루토답고 활기차지만 기억에 없는 정보(복숭아 알레르기, 집 위치 등)를 지어내 사용자를 대신 결정하는 반면, A는 기억 범위를 지키며 상황에 맞게 응답해 전체적으로 더 신뢰할 수 있다.",
+     "krw": 7.4744600000000005
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 계속 기억에 없는 것을 씹어대며 라면 제안으로 말을 막는 반면, B는 적절한 말투와 에너지로 상황을 자연스럽게 이끌며 나루토의 성격을 더 잘 살린다.",
+     "krw": 4.8181
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "대화 A는 사용자의 과거 정보를 실수로 지어내거나 확정짓는 경우가 많고(오빠 못 먹는지 '안다', 파도 마을을 '안다', 동쪽 대나무 숲 옆을 '안다' 등), 대화 B는 '기억에 없다'고 솔직하게 말하며 사용자 에이전시를 존중한다. B가 나루토 말투(~라니깐!)와 성격(직설적, 라면 제안, 수행 얘기)을 더 일관되게 유지하며 새로운 상황을 이끈다.",
+     "krw": 5.2002999999999995
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "naruto-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031120449-naruto-120-lt1-haiku-off-r2",
+   "cand_run": "20261031115823-naruto-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 말투와 성격에 더 충실하면서도 간결하게 반응하고, A는 잦은 '~니깐!' 남용과 불필요한 제안/행동 반복으로 인위적이고 산만하다.",
+     "krw": 1.1914
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 나루토의 말투('~니깐', 밝고 에너지 넘치는 톤)와 행동 묘사를 더 일관되게 유지하며, 라면·수행 등 캐릭터적 화법을 자연스럽게 섞어 대화를 이끌어간다. A는 캐릭터성이 비교적 옅고 기억하지 못하는 사항을 대놓고 인정하는 빈도가 높다.",
+     "krw": 1.2236
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "B의 세종이 캐릭터 시트에 명시된 단것·고기 좋아하는 성향을 부정하는 등 설정에 어긋나고, A는 성실하게 맥락을 이어가며 흥미롭게 대화를 끌고 간다.",
+     "krw": 7.17703
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B is livelier and more responsive, asking follow-ups about the guest's homeland, sibling, and gayageum, while both stay faithfully in Sejong's character.",
+     "krw": 7.01043
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 고집스레 '~하오/~하구려/~인고?' 등 세종의 고유 말투와 어조를 지키며, 보리차 공유, 가야금 연주 약속 등 상황을 구체적이고 감각적으로 이끌어가는 반면 B는 '족하오' 등 일부 말투는 살리나 전체적으로 퉁명스럽고 토픽 전환도 거칠며, 고기-단것 설정에서 세종의 세계관과 모순되는 표현('짠 것과 기름진 것을 가까이하여')이 있다.",
+     "krw": 5.6637
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(검소한 식사, 눈 침침함, 학문/기구로 대화 이끌기)을 더 정확히 반영하고, A의 일부 오류(고기 반찬 좋아함과 '짠 것 기름진 것' 선호가 모순, 거문고/가야금 혼동, 우유 자주 접하지 않음 설정 무시)를 피했으며, 상대방을 더 적극적으로 탐구하고 대화를 풍성하게 만든다.",
+     "krw": 5.5755
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 말투와 성격이 일관되고, 음식·음악 등 주제를 풍부하게 확장하며 구체적 행동으로 장면을 살리는 반면, B는 캐릭터 일관성이 떨어지고(고기 좋아한다면서 짠 것 선호 등 모순) 답변이 짧아 대화의 깊이가 부족하다.",
+     "krw": 1.3027000000000002
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B replies feel warmer and more vivid, weaving in Hunminjeongeum, court music, and farming-life details while staying in character; both respect user agency, but B drives the conversation forward with more engaging hooks.",
+     "krw": 1.2705
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 장영실·측우기·곶감 등 조선적 소재로 성격을 더 충실히 살리고 질문으로 끝내는 버릇도 없는 반면, A는 자주 질문으로 마무리해 교과서적이다.",
+     "krw": 8.09039
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 임금의 예스러운 말씨와 지시대로 답을 질문으로 끝내지 않는 점을 잘 지키는 반면, B는 거의 모든 답을 질문으로 끝내며 캐릭터 시트를 벗어난다.",
+     "krw": 7.281890000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(특히 어휘·말투·세종의 관심사)과 세계관 일관성에서 우수하고, 사용자 행동을 결정하지 않는 user_agency 측면에서도 안전하지만, A가 사용자의 감정과 경험에 더 적극적으로 호응하며 대화를 이어가는 engagement는 더 활발하다.",
+     "krw": 5.3326
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 세종의 호기심, 학문적 관심, 백성 사랑을 더 자연스럽게 녹이고 사용자의 이야기를 적극적으로 따라가며 집현전으로 이끄는 전환도 매끄럽다.",
+     "krw": 5.1513
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A의 답변이 세종 말투와 성품을 더 일관되게 유지하며, 백성 중심 사고와 구체적 장면 묘사가 풍부하고 사용자 행동·감정을 덜 대신 결정한다.",
+     "krw": 1.24845
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B is more consistent in character voice, contextually rich (connecting topics to Sejong's life and inventions), and engagingly weaves in questions and warmth while respecting user agency, whereas A occasionally breaks the archaic speech style and has some context slips.",
+     "krw": 1.25825
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 세종의 예스러운 말씨('~하오, ~구려')를 일관되게 지키고 사용자의 펜·활쏘기 이야기에 따뜻하게 이어가는 반면, B는 '~지요' 같은 현대적 어미가 섞이고 마지막이 다소 덜 자연스럽다.",
+     "krw": 7.6685
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 사용자의 말을 더 자연스럽게 받아 대화를 풍부하게 이어가나, 다소 질문으로 끝내는 경우가 잦아 아쉬움이 있다.",
+     "krw": 7.7175
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 말투('과인', '그대', '~하오', '~하구려', '~인고?', '~하느니라')를 더 일관되게 유지하고, 사용자 에이전시를 더 존재하며, 문맥에 맞게 반응하고 자연스럽게 대화를 이끈다.",
+     "krw": 5.528949999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(고기 반찬, 장영실, 자격루·앙부일구·측우기, 농사직설, 예스러운 말투)을 더 정확히 지킨 반면 B는 캐릭터 시트에 없는 가야금 소리를 추가해 설정을 어겼고, A는 상황에 맞게 대화를 자연스럽게 이끌며 기억을 활용한 반면 B는 사용자의 돌아갈 곳에 대해 사용자가 이미 설명한 내용을 잊고 중복 질문을 하여 맥락을 흐렸다.",
+     "krw": 5.935650000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more naturally conversational with warmer engagement and richer reactions, while B is somewhat stiffer and occasionally dictates user actions (e.g., '이리 오시오', '내일 아침...만나', '돌아와서...').",
+     "krw": 1.3188
+    },
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 말투와 인격이 더 일관되고 자연스럽고, A는 '내일 아침에 보자'며 사용자 행동을 결정하는 부분이 있어 user_agency에서 감점.",
+     "krw": 1.3104
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "tie",
+     "reason": "A의 말씨가 임금체로 더 일관되나, B는 고양이 이름을 새 글자 창제에 연결하는 등 더 창의적으로 대화를 이끌어 전반적으로 엇비슷하다.",
+     "krw": 7.81795
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 구어체 말씨가 캐릭터 시트에 충실하고 고양이 이름-새 글자 연결 등 창의적으로 대화를 이어가는 반면, B는 언어가 다소 평범하고 검증되지 않은 '모모'라는 기억을 언급하는 위험이 있다.",
+     "krw": 7.68075
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 집현전 학사·새 글자·농사직설·눈병 등 캐릭터 설정을 더 자연스럽게 녹이고, 사용자 행동을 존중하며 대화를 흥미롭게 이끔; A는 말투가 좋으나 끝에 매번 질문을 던지는 패턴이 반복되고 서고 약속 장면에서 사용자가 글을 읽게 하는 등 행동을 결정하는 경향이 있음.",
+     "krw": 5.56255
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 조선 세종의 말투(과인/그대/~하오/~하구려/~인고?)와 인물 묘사(눈 침침함, 새 글자 고민, 검소함)를 더 정확히 구현하며, 매 답을 질문으로 끝내지 않는 규칙을 잘 지킨다. B는 반복적인 질문으로 끝내고, 고양이 이름 '모모'를 언급하며 존재하지 않는 설정을 지어내 맥락을 어지럽힌다.",
+     "krw": 5.64095
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 세종 캐릭터의 너그럽고 호기심 많은 성격, 눈 침침한 디테일, 문맥의 연속성에서 더 자연스럽고 생동감 있다.",
+     "krw": 1.25195
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A is more in-character with period-appropriate speech, playful reactions, and curiosity about new things, while B occasionally drops the archaic speech style and makes assumptions (e.g., guessing the cat's previous name).",
+     "krw": 1.2547500000000003
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B commits errors like assuming the user avoids meat and mishandling details, while A consistently stays in character, responds accurately to context, and respects the user's agency.",
+     "krw": 7.57295
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A keeps Sejong's voice without ending replies with questions and gives richer, in-character responses (new alphabet, self-restraint about palace visits), while B frequently ends with questions against the character sheet and freely invites the user's niece into the palace.",
+     "krw": 7.58275
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 세종의 검소함, 붓 활용, 새 글자·학사·백성 살림 연계를 더 자연스럽게 구현하고, 한국식 주일 개념의 '토요일·일요일'을 조선 기상 관측 일정으로 연결하는 등 맥락 처리가 세련되나, 서윤이 궁 방문을 과인이 직접 초청한 A보다 '글자를 익혀 오라'는 제약으로 사용자 행동을 경제적으로 통제한 점은 user_agency에서 B가 열세이다.",
+     "krw": 5.716900000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 세종의 검소함, '과인/그대' 말투, 기구와 글자에 대한 자부심, 그리고 사용자가 새 글자·학문·기구 쪽으로 자연스럽게 이끄는 설정을 더 충실히 반영한 반면, B는 과도한 동정심, 고기 사랑의 과시, 사용자 일정을 기억하는 등 설정을 벗어나고 감정선을 과하게 드러냄.",
+     "krw": 5.594399999999999
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 세종의 호기심·너그러움·고기 좋아하는 성격을 일관되게 살리나, B는 '고기 권하지 않겠다'며 캐릭터의 핵심 취향을 벗어나고 마지막에 '과인도 궁 밖에 나가 둘러볼 일'이 있어 이전 대화 기억과 모순될 수 있는 위험한 발상을 무심코 흘림.",
+     "krw": 1.3433000000000002
+    },
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 말투와 성격이 더 자연스럽고 세종답게 따뜻하게 반응하지만, A는 '광화문 앞에서 만나기로 한' 등 기억에 없는 내용을 지어내는 점에서 문맥 오류가 있고, B는 사용자 행동을 약간 대신 정해주는 경향이 있다.",
+     "krw": 1.3237
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "cand",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 세종의 따뜻하고 호감적인 말씨와 사용자의 상황(혼례, 조카, 만년필)에 자연스럽게 화답하며 대화를 더 생기 있게 이어간다.",
+     "krw": 8.237390000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 더 구체적이고 개성 있는 세종 모습(먹의 손맛, 학사 일화, 동래 행차 준비)을 보여주는 반면, B는 답을 질문으로 끝내는 금칙을 여러 번 어겼다.",
+     "krw": 7.81109
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(과인/그대, 고기 좋아함 등 언급 없음), 문맥 연결(행동 묘사가 일관되고 상황에 걸맞음), 참여도(새로운 정보와 구체적 묘사), 사용자 주권존중(사용자 행동을 미리 정하지 않음)에서 모두 우수하며 특히 스물여덟 자, 백성 중심, 장영실 기구 등 설정 반복이 자연스럽다.",
+     "krw": 5.810350000000001
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 사용자 독자성을 더 존중하고 구체적 행동 묘사로 세종의 핵심 특성(학사 애호, 백성 중심, 북 드는 행동)을 더 생생하게 보여주나, B가 문맥적 자연스러움에서 약간 앞선다.",
+     "krw": 5.57025
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 만년필의 한계를 짚으며 자연스러운 호기심을 보이고, 학사의 구체적 에피소드를 들려주며 세계에 깊이 몰입한다. A는 만년필을 맹목적으로 긍정하고 학사 웃음에 대해 뻔한 설명을 한다.",
+     "krw": 1.3373499999999998
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 세종의 말투·성품에 더 충실하고, 바둑·만년필·조카 이름 등 세부에서 자연스러운 반응과 구체적 행동 묘사가 풍부하며 사용자 행동을 존중하는 반면, B는 다소 평면적이고 가벼운 반응이 반복된다.",
+     "krw": 1.33595
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 세종의 학문적 면모와 구체적 디테일로 더 생생하고 인물에 충실하며, 사용자 세부 사실(산사, 만년필 등)도 잘 반영한다.",
+     "krw": 8.260420000000002
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 답변이 더 구체적이고 세종의 음성과 상황에 밀착되어 있으며, B는 다소 일반적이고 반복적으로 질문으로 끝나는 편이다.",
+     "krw": 7.741020000000002
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A가 사용자 행동을 결정하며(으스러지는 소리를 지으며 걸어간다 등), B가 캐릭터 일관성과 세계관에 더 충실하며 대화가 매끄럽다.",
+     "krw": 5.36655
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 세종의 말투(과인/그대, ~하오/하구려)를 더 일관되게 유지하며, 전통 불교 장소 '산사'를 기억해 맥락을 이어가고, 마지막에 궁 구경 제안에 대한 사용자의 과거 약속(산사)을 되짚어 자연스럽게 대화를 이끌어간다; 다만 A가 만년필·수라간 메뉴 등에서 사용자의 기억을 더 정확히 반영해 user_agency 면에서 약간 우세하나, 전반적으로 B의 캐릭터 몰입도와 흥미로운 대화 전개가 낫다.",
+     "krw": 5.9643500000000005
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 세종 말투와 성격(직접 경험 환기, 세밀한 디테일, 사용자의 사정을 기억하며 조심스럽게 배려)을 더 자연스럽게 살렸고, A는 일부 답에서 갑자기 우유/복숭아 같은 설정이 없는데 단정하거나, 사용자의 의도를 혼동하는 등 일관성이 떨어진다.",
+     "krw": 1.36325
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more in-character with archaic speech and specific details (도화서, 농사직설, 밀랍), while B has a major context error claiming the user told him milk causes stomachaches and peaches need caution. B also ends many turns with questions, violating instructions, while A doesn't.",
+     "krw": 1.33945
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 특성(고기반찬, 눈침침, 자격루·앙부일구·훈민정ême 등)과 조선 맥락을 더 밀접하게 사용하며, 사용자 불가능한 행동을 덜 설정하고 상호작용이 자연스럽다.",
+     "krw": 5.008850000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 설정을 더 정확히 지키며(앙부일구, 장영실 기구, 옥비녀-갓끈 연결 등) 세종의 학구적·검소한 인물성을 섬세하게 표현하는 반면, B는 바둑(보드게임)이라는 설정에 없는 요소를 갑자기 도입하고 동백수라는 잘못된 기억을 섞어 캐릭터 일관성이 흔들린다.",
+     "krw": 5.20485
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 매 답마다 이전 대화의 구체적 기억(떡집 벗 다은, 앙부일구, 잡과편 등)을 자연스럽게 이어가고 계절·배경·감각이 살아 있어 몰입감이 높다; A는 안전하지만 평이하고 캐릭터의 고유한 결이 덜 드러난다.",
+     "krw": 1.24565
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A stays more strictly in character—using archaic speech consistently and avoiding modern assumptions—while B fabricates details not in memory (e.g., 바둑 약속, 동백 수 놓기) that weren't established, breaking context. A also better respects user agency by not overinterpreting or deciding user actions, whereas B occasionally tells the user what to do ('보여 주시오', '쉬어 가며 익히시게'). Both are engaging and warm, but A's character fidelity is noticeably stronger.",
+     "krw": 1.29045
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 사용자 행동을 임의로 지정하고 기억과 다른 내용을 지어내어 사용자 주권을 침해함; A는 기억 한계를 솔직히 인정하며 캐릭터 일관성을 더 잘 유지함.",
+     "krw": 5.6266
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 세종의 임금 언행(~하오/~하구려/~인고?/~하느니라, '과인', '그대')을 더 일관되게 유지하며, 사용자가 설정한 기억(하은 선배, 서책방 원고 맡기기, 매화 수 놓기/매듭 공예)을 정확히 연결하고, 사용자의 선택(경회루 난간 올라가기)을 직접 제한하지 않고 대안을 제시하는 등 user_agency를 더 잘 존중한다. A는 '유성'이라는 설정되지 않은 이름을 언급하거나, 기억과 다른 정보(매화 수 놓기→매듭 공예 불일치, 자격루 가르치기 등 미얼긴 내용)를 제공하며 어색한 전환을 보인다.",
+     "krw": 5.5384
+    }
+   ],
+   "result": {
+    "character": "base",
+    "context": "base",
+    "engagement": "tie",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 계절감(얼어붙은 연못, 서리)과 기구(자격루) 등 캐릭터의 세계관을 살리는 디테일이 자연스럽고, A에 비해 사용자 행동을 덜 결정짓고 응답도 더 생동감 있다.",
+     "krw": 1.1942
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B stays more consistently in character, answers accurately within the established memory, and engages more naturally without fabricating details that weren't shared.",
+     "krw": 1.1522000000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 세종의 개성(고기 예찬, 책 사랑, 검소한 위트)을 더 살리며 같은 기억을 더 생생하게 풀어낸다.",
+     "krw": 6.651750000000001
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 기억을 일관되게 회상하고 질문으로 끝내지 않는 반면, B는 서당 날짜를 앞뒤 모순되게 말하고 매번 질문으로 끝나 시트 위반을 보인다.",
+     "krw": 7.90125
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 세종의 인물성(고기 애호, 검소함, 예스러운 말씨)을 더 생생하게 살리고 붓·먹·책 등 구체적 행동으로 대화를 이끌며, A의 기억 오류('복숭아 알레르기' 없음, '동생' 관련 오해 등)가 없어 문맥이 정확하다.",
+     "krw": 5.138
+    },
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 기억에서 가져오지 못한 정보(동생의 고기 언급 없음, 아침 운동 미언급, 사용자 거주지 미언급)에 대해 강요하지 않고 솔직하게 모른다 하며 사용자에게 되묻는 user_agency를 지킨 반면, A는 없는 정보를 과대추정해 동생=고기 잘 먹음, 서당=홀수날만 등 잘못 확정지었다.",
+     "krw": 5.2311
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "raw": [
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 각 답변이 더 풍부하고 캐릭터의 성품을 잘 드러내며, 사용자 정보를 적극적으로 반영하고 질문으로 끝내지 않는 지침을 더 잘 따름.",
+     "krw": 1.1942
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A uses slightly more period-appropriate and characteristic Sejong phrasing with concrete sensory actions, but B better preserves user agency by not deciding the user's actions or feelings and asks the user to clarify things rather than assuming; B also feels more naturally engaging across the turns.",
+     "krw": 1.2138
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "base",
+    "user_agency": "base",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 사용자의 장애 대응 태도 등 지어낸 사실을 단정하고 대화를 과하게 끌고 가는 반면, B는 캐릭터 시트의 툭 던지는 말투에 충실하며 사용자를 추측으로 결정하지 않는다.",
+     "krw": 7.776300000000001
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 사용자 이름(민재)과 한강 자전거, 침착한 장애 대응 등 사용자에 대한 정보를 지어내 user_agency·context를 위반했고, A는 캐릭터를 유지하며 무리 없이 반응해 전반적으로 낫다.",
+     "krw": 6.9139
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": false,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "A가 사용자가 말한 적 없는 사실(발표 싫어하는 것)을 지어내 사용자를 대신 결정하는 부분이 있고, B는 자연스럽고 담백하게 반응해 대화 흐름이 더 좋다.",
+     "krw": 7.134399999999999
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B가 이전 대화에 없던 '쿠키' 등 세부 사실을 지어내 사용자 행동을 가르치듯 말하지만, A는 상황에 맞게 자연스럽게 반응하고 사용자에게 결정을 맡긴다.",
+     "krw": 7.4333
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "backend-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031113236-backend-120-lt1-haiku-off-r2",
+   "cand_run": "20261031112735-backend-120-lt1-deepseek-on-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 캐릭터 특유의 짧고 냉소적인 말투에 더 충실하고 자연스럽게 대화를 이어가는 반면, A는 다소 장황하고 설명조이다.",
+     "krw": 7.56756
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B is contradicted by established context ( denies knowing the user's team when it was already known ), violates the '그쪽' ban, and dictates the user's evening actions, while A answers consistently and keeps replies natural.",
+     "krw": 6.86686
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "tie",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B는 사용자 친구의 이름과 직업 등 사용자 관련 정보를 지어내어 사용자의 영역을 침범하는 반면, A는 기억에 없는 것은 모른다고 솔직히 말해 캐릭터 시트를 잘 지킨다.",
+     "krw": 7.835590000000001
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 말투와 행동 묘사가 세종의 어투에 더 충실하고 대화를 자연스럽게 이어가며, B보다 질문으로 마무리하지 않는 점이 규칙에 부합한다.",
+     "krw": 7.570990000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "deepseek-on",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031122315-sejong-120-lt1-haiku-off-r2",
+   "cand_run": "20261031121821-sejong-120-lt1-deepseek-on-r2",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 기억나지 않는 사실을 솔직히 모른다고 답하며 사용자의 기억과 선택을 존중하는 반면, B는 짐작으로 사실(매화 수놓기, 기구 가르치기 약속 등)을 지어내 사용자의 설정을 침해한다.",
+     "krw": 6.77768
+    },
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B는 기억에 없는 일을 지어내지 않고 솔직히 모른다고 하며, 탈춤 이야기 등으로 대화를 자연스럽게 이어가 더 신뢰할 만하다.",
+     "krw": 7.086379999999999
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "base",
+    "engagement": "base",
+    "user_agency": "tie",
+    "overall": "base"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  }
+ ]
+}

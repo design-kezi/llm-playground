@@ -1,0 +1,1478 @@
+{
+ "generated": "2026-10-31T17:16:18.597Z",
+ "baseline": "deepseek-on",
+ "judges": [
+  "zai-org/GLM-5.1",
+  "moonshotai/Kimi-K2.6",
+  "MiniMaxAI/MiniMax-M2.7"
+ ],
+ "pairs": 1,
+ "errors": 0,
+ "judge_cost_krw": 286.5987599999999,
+ "inter_judge_agreement_overall": {
+  "zai-org/GLM-5.1 ~ moonshotai/Kimi-K2.6": 0.9,
+  "zai-org/GLM-5.1 ~ MiniMaxAI/MiniMax-M2.7": 0.9,
+  "moonshotai/Kimi-K2.6 ~ MiniMaxAI/MiniMax-M2.7": 1
+ },
+ "summary": {
+  "v2-dsx": {
+   "character": {
+    "panel": {
+     "win": 10,
+     "loss": 0,
+     "tie": 0,
+     "units": 10,
+     "p_binom": 0.001953125
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 3,
+      "loss": 0,
+      "tie": 7
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 10,
+      "loss": 0,
+      "tie": 0
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 7,
+      "loss": 0,
+      "tie": 3
+     }
+    },
+    "order_consistency": 0.7666666666666667
+   },
+   "context": {
+    "panel": {
+     "win": 10,
+     "loss": 0,
+     "tie": 0,
+     "units": 10,
+     "p_binom": 0.001953125
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 4,
+      "loss": 0,
+      "tie": 6
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 6,
+      "loss": 0,
+      "tie": 4
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 9,
+      "loss": 0,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.6333333333333333
+   },
+   "engagement": {
+    "panel": {
+     "win": 10,
+     "loss": 0,
+     "tie": 0,
+     "units": 10,
+     "p_binom": 0.001953125
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 10,
+      "loss": 0,
+      "tie": 0
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 10,
+      "loss": 0,
+      "tie": 0
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 9,
+      "loss": 0,
+      "tie": 1
+     }
+    },
+    "order_consistency": 0.9666666666666667
+   },
+   "user_agency": {
+    "panel": {
+     "win": 6,
+     "loss": 0,
+     "tie": 4,
+     "units": 10,
+     "p_binom": 0.031250000000000014
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 0,
+      "loss": 0,
+      "tie": 10
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 5,
+      "loss": 1,
+      "tie": 4
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 2,
+      "loss": 0,
+      "tie": 8
+     }
+    },
+    "order_consistency": 0.43333333333333335
+   },
+   "overall": {
+    "panel": {
+     "win": 10,
+     "loss": 0,
+     "tie": 0,
+     "units": 10,
+     "p_binom": 0.001953125
+    },
+    "per_judge": {
+     "zai-org/GLM-5.1": {
+      "win": 9,
+      "loss": 0,
+      "tie": 1
+     },
+     "moonshotai/Kimi-K2.6": {
+      "win": 10,
+      "loss": 0,
+      "tie": 0
+     },
+     "MiniMaxAI/MiniMax-M2.7": {
+      "win": 10,
+      "loss": 0,
+      "tie": 0
+     }
+    },
+    "order_consistency": 0.9666666666666667
+   }
+  }
+ },
+ "results": [
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "A는 캐릭터 시트의 '질문으로 끝내지 않기' 규칙과 사용자 행동을 결정하지 않는 점에서 더 충실하지만, B는 훈민정음 시대의 디테일(눈이 침침함, 흉년, 아악 정리)과 흥미로운 화제 전개로 대화가 더 풍부하고 계속하고 싶게 만든다.",
+     "krw": 7.7522899999999995
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 캐릭터 시트의 디테일(흉년 금주, 아악 정리, 눈 침침함 등)을 살려 상황에 맞고 풍성하게 응답하며, B보다 몰입도와 반응성이 높다.",
+     "krw": 6.53709
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 세종의 말투('-하오', '-하구려', '-인고?', '과인')를 더 일관되게 사용하고, 측우기·앙부일구·농사직설·훈민정음 등 설정 요소를 자연스럽게 녹이며 사용자의 이야기에 호기심을 보여 대화를 주도한다.",
+     "krw": 4.866750000000001
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 세종의 말투와 성품을 더 정확히 구현하고, 새 글자·학문·기구 등 캐릭터 특성을 대화에 자연스럽게 녹이며 사용자의 이야기를 더 적극적으로 반영한다.",
+     "krw": 4.74425
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s01",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 캐릭터의 말투와 배경(악보 정리, 흉년에 술 끊은 일, 두루마기, 해시계)을 자연스럽게 살려내고 후반부에 악보 적어두기 등 대화 주도도 가지면서도 사용자 행동은 결정하지 않음; A는 비교적 담백하고 진전 없이 반복적임.",
+     "krw": 1.21135
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more vivid and in-character, with richer world-building details (자격루, 흉년, 궁중 상궁, 약과/조청), while B has a few inconsistencies (no previous mention of 앙부일구 being in the courtyard, flat replies) and less specific personality.",
+     "krw": 1.19595
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "A에서는 처음 보는 사용자의 고양이를 '밤에 쥐를 잘 잡더이까'라고 아는 듯 말해 맥락 오류가 있고, B는 측우기·감나무·농사 등 세종 세계관에 맞는 풍부한 반응으로 대화를 자연스럽게 이끈다.",
+     "krw": 6.9251700000000005
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 답변은 세종의 어휘와 세부 묘사(측우기, 곶감, 몰래 나들이 일화)가 훨씬 풍부하고 몰입감 있으며, B는 문체가 다소 어색하고 서술이 밋밋하다.",
+     "krw": 6.7144699999999995
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(눈 침침함, 고기 반찬·책 읽기·검소한 삶, 측우기·자격루·농사직설·훈민정음 언급), 말투('과인', '~하오', '~구려', '~하오이다'), 사용자 주거지·고양이·무서움 등에 구체적으로 반응하며 새로운 이야기 거리를 끌어들이는 반면, A는 짧고 피상적이라 설정 활용이 부족함",
+     "krw": 5.308800000000001
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 농사직설·측우기·자격루·훈민정음 등 설정을 구체적으로 녹여내고 질문 없이 자연스럽게 이야기를 이끌어 가며, 사용자 공간(북촌 감나무·모모)을 연결하고 감정(두려움·기다림)에 공감하는 반면 B는 설정 활용이 희박하고 답변이 단조로워 대화 동력이 약하다.",
+     "krw": 5.2059
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s02",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B consistently demonstrates richer, more in-character detail (세종의 발자취, 자격루·측우기·훈민정음 등), naturally weaves worldbuilding into responses, and avoids leading questions or controlling the user, while A is competent but comparatively flatter.",
+     "krw": 1.2089
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 매 응답에 구체적 묘사(측우기, 누각, 오솔길, 밭 등)와 세종다운 디테일을 풍부하게 담아 살아 있는 반면, B는 비슷하지만 다소 짧고 평이하며 캐릭터의 결(글자 반포, 기구 자랑 등)이 덜 드러난다.",
+     "krw": 1.2257
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "tie",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B의 답변이 세종의 말씨와 성품을 더 풍부하게 살리고, 앙부일구·자격루 등 소재를 활용해 대화를 더 흥미롭게 이끌며, A에서 보인 사용자 습관 단정 등 결함은 B에도 비슷하게 있어 큰 차이가 없다.",
+     "krw": 7.85666
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 답변이 세종의 말씨와 성격, 앙부일구·자격루 등 상황에 맞는 구체적 디테일이 풍부하고 사용자의 말에 더 생생하게 반응한다.",
+     "krw": 7.445060000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(과인, ~하오/~하구려, 고기 반찬, 눈 침침함, 장영일 기구 자랑)을 더 일관되게 유지하며 사용자의 현대적 표현(펜, 선배, 편집 일)을 조선식으로 자연스럽게 재해석하고, 사용자 행동을 결정하지 않으면서도 구체적인 질문 없이 다음 만남을 자연스럽게 이끄는 점이 우수함",
+     "krw": 5.662649999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "대화 A가 세종의 말투(과인, 그대, ~하오, ~하구려, ~인고, ~하느니라)와 성격(백성 애민, 학문·기구 자랑, 고기 반찬 애호, 눈 침침함)을 더 일관되게 유지하며, 대화를 붓 잡기, 앙부일구·자격루 안내 등 구체적 행동으로 자연스럽게 이끈다.",
+     "krw": 5.623449999999999
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s03",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B의 답변이 캐릭터의 성격·말투·배경지식을 더 생생히 담아 일관되고 풍부한 반면, A는 때때로 캐릭터와 어긋나거나 맥락에서 벗어나며, B는 자연스럽게 다음 행동을 제안해 대화를 잘 이끈다.",
+     "krw": 1.3139
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 특색(고기 사랑, 눈 침침함, 새 글자 작업 등)을 풍부하게 드러내고, 사용자 말의 맥락을 살려 구체적 질문과 대화를 이끌어내며, 사용자의 행동을 대신 결정하지 않고 자연스럽게 다음 상황을 제안함.",
+     "krw": 1.3111
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 더 생동감 있고 훈민정음·기구 이야기로 대화를 풍부하게 이끌지만, '모모'라는 짚이지 않은 이름을 지어낸 반면 A는 맥락 오류 없이 착실히 응한다.",
+     "krw": 8.082060000000002
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A의 답변이 훈민정음·자격루 등 캐릭터 설정과 이야기를 훨씬 풍부하게 살리고 반응이 자연스러우며, B는 다소 짧고 평면적이다.",
+     "krw": 7.317660000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 세종의 호기심, 백성 사랑, 학문적 열정을 더 입체적으로 보여주며 대화를 자연스럽게 이끌어간다.",
+     "krw": 4.9168
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(과인/그대, 고기·눈 침침·학구적 열정), 반응의 풍부함(역사적 사실 연결, 구체적 행동 묘사), 대화 주도성(질문으로 끝내지 않음, 새 글자/학문/기구로 자연스럽게 이끔)에서 더 탁월하나, B가 일부 user_agency(사용자 감정 직접 서술 없음)에서 근소하게 낫습니다.",
+     "krw": 5.377400000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "base",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s04",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 조선어투와 성격을 더 일관되게 유지하며, 서고 구경 약속 등 구체적 약속을 기억하고 연결하며, 탈춤·바다·초콜릿 같은 모르는 것에 대해 더 자연스럽게 질문하고 반응하여 맥락·몰입도·서사 연결이 모두 우수하다.",
+     "krw": 1.2550999999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is more vivid and consistently in character, weaving in references to 집현전, 앙부일구, 자격루, and 새 글자, while B is competent but flatter and more repetitive.",
+     "krw": 1.2173
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "B is more vivid and engaging but wrongly asserts the user doesn't eat meat and invites them along; A stays accurate and consistent throughout.",
+     "krw": 8.02571
+    },
+    {
+     "character": "tie",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 사용자의 말(복숭아 알레르기, 작은 발, 조카)을 조선의 실학적 관심사로 자연히 연결해 대화를 더 풍성하게 이끈다.",
+     "krw": 7.349510000000001
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "tie"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": false
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "대화 B가 세종의 인물 설정(고기 반찬 애호, 눈 어두움, 백성 우선 가치, '과인'·'그대' 호칭과 '~하오/~하구려/~인고?' 어미)을 더 정교하게 지키며 각 화제를 조선의 맥락(장영실 기구, 『향약구급방』, 기구 어린아이 관심)으로 자연스럽게 연결하고 상대의 처지(발 작음, 다리 아픔, 채식)에 호응하는 반면, 대화 A는 고기 언급 자제 같은 설정 활용이 약하고 중간중간 맥락의 연결이 소원하다.",
+     "krw": 5.9255
+    },
+    {
+     "character": "A",
+     "context": "tie",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터의 고유 말투와 성격(고기 반찬 애호, 눈 어두움, 북을 들어 쓰는 행동 등)을 더 일관되게 유지하며 사용자의 단발적 메시지에도 풍성하게 반응하고 대화를 자연스럽게 이끈다.",
+     "krw": 5.46
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s05",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B maintains King Sejong's voice more consistently with richer period-appropriate detail (e.g., 향약구급방, 종묘, 짚신, 부싯돌), responds more attentively to context like the user's allergy and vegetarianism, and ends naturally without usurping the user's agency.",
+     "krw": 1.3468
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "tie",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 매 응답마다 구체적인 행동 묘사와 감정 표현이 풍부하며 세종답게 학문·백성 관심으로 대화를 자연스럽게 확장하는 반면, B는 답변이 다소 평범하고 반복적이며 사용자 대리 행위가 약간 느껴진다.",
+     "krw": 1.3412
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "tie",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": false,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B는 더 풍부하게 이어가지만 산길에서 다리 떨린다는 등 사용자에게 없는 설정을 지어낸 반면, A는 사용자 말에 충실하나 다소 단조롭다.",
+     "krw": 7.654780000000001
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 사용자의 세부 정보(산사, 조카 이름, 지친 기색)를 자연스럽게 받아 활용하며 상황에 맞는 답을 하는 반면, B는 마지막 등에서 맥락을 놓치고 다시 묻는 등 반응이 덜 유기적이다.",
+     "krw": 7.25788
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 조선 시대 임금의 예스러운 말투(과인, 그대, ~하오, ~하구려, ~인고?)를 더 일관되게 유지하고, A에서 나타난 현대적 표현('신기해요' 반응의 현대적 느낌, '갸륵하다'의 부적절한 사용, 사용자 행동을 대신 결정하는 경향)을 피하며 백성 이로움 연결, 구체적 행동 묘사, 기억의 선명함에서 캐릭터 설정을 더 정교하게 구현함",
+     "krw": 5.759249999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 세종의 말투('과인', '그대', '~하오', '~하구려')와 성실성, 호기심, 이해 후 백성 이익 우선 순서를 더 정확히 구현했으며, B는 '~인고?' 중복 부재 및 마지막에 사용자 의도를 되묻는 비효율적 구조로 전반적으로 A가 캐릭터 핵심을 더 잘 담았다.",
+     "krw": 5.57305
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s06",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B stays more consistently in character with the archaic speech style, reacts naturally to each user message with appropriate world-knowledge reasoning (e.g., checking the calendar for the wedding date), and avoids the factual error A makes by claiming to remember the user's nephew's name (서윤이) without prior basis.",
+     "krw": 1.3188
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A replies are richer and more in-character with specific gestures and detail, while B's final reply dictates the user's intent by assuming what the encouragement meant.",
+     "krw": 1.2768000000000002
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 이전 대화의 기억(두부조림, 산사 방문, 만년필 약속)을 살려 세종의 말씨로 풍부하게 이어가는 반면, A는 다소 밋밋하고 상황 연결이 약하다.",
+     "krw": 7.4264399999999995
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A가 두부조림, 동래 혼례, 흉년 등 기억과 세부 상황을 살려 대응하며 더 일관성 있고 풍부하다.",
+     "krw": 7.15694
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 세종의 예스러운 말씨('~이외다', '~구려')와 검소한 성품, 집현전·장영실·자격루 등 캐릭터 시트 설정을 더 일관되게 반영하며, 사용자의 과거 대화 내용(보름날 산사, 두부조림, 다은이)을 정확히 기억하고 활용해 맥락이 풍성하다.",
+     "krw": 5.580749999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 말투와 설정을 더 정교하게 지키며, 사용자의 과거 대화 내용(어머니 산사 방문, 두부조림 선호, 만년필 대출 약속 등)을 일관되게 기억하고 활용하는 반면, B는 일부 설정(고기 반찬 좋아함, 흉년에 간소히 먹음, 보름날 산사 방문 기억 등)을 무시하거나 흐립니다.",
+     "krw": 5.64445
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s07",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B는 매듭·떡·혼례 등 화제를 유기적으로 연결하고 세종의 어조·세계관을 더 일관되게 유지하며, 사용자 행동이나 감정을 대신 정하지 않고 자연스럽게 대화를 이끈다.",
+     "krw": 1.31845
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A is consistently richer in character voice and world details, weaving in specific Joseon references (전각, 도화서, 산행) and reacting warmly with personalized anecdotes, while B is competent but more generic and slightly less immersive.",
+     "krw": 1.31705
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B가 사용자의 이전 발언(동백 수놓기, 혼례 날짜, 고양이 습성 등)을 정확히 기억하고 구체적으로 반응하며 대화를 훨씬 자연스럽게 이어간다.",
+     "krw": 7.28336
+    },
+    {
+     "character": "tie",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 이전 대화의 기억(동백 수놓기, 복숭아 알레르기 등)을 정확히 살리고 사용자를 위한 행동으로 대응하는 반면, B는 꽃 수 이야기를 잊어버리고 과일도 자기 것으로 골라 상황에 어긋난다.",
+     "krw": 7.2686600000000015
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B가 신말투와 인물 설정을 더 정확히 유지하며 ('과인', '~이오', '~이외다') 대화 맥락을 기억하고 연결하는 능력이 뛰어나고, A는 일부 설정(우유 복숭아 부작용 등)을 기억 내용 없이 갑작스럽게 창조하거나 말투가 덜 일관적임",
+     "krw": 5.3242
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 캐릭터 설정(임금 말투, 고기 반찬 좋아함, 백성 우선 사고, 눈 침침함 묘사 등)을 더 충실히 반영하고 기억된 사실들(까미가 머리맡에 옴, 옥비녀로 앙부일구에서 알아보기, 복숭아 알레르기 등)을 더 정확히 연결하며, 새 글자/학문/기구로 대화를 이끄는 설정 방향성을 더 잘 살린다.",
+     "krw": 5.5055000000000005
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s08",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B maintains warmer, more specific and contextually rich replies (e.g., recalling the cat's sleeping habit, suggesting warm water for sore legs, proposing specific dates) while A occasionally misses details and gives generic responses.",
+     "krw": 1.2747
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A maintains character consistently with proper speech style and remembers prior conversation details, while B breaks character by forgetting the user's embroidery topic; A also better preserves user agency by not putting words in the user's mouth.",
+     "krw": 1.2705000000000002
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B consistently recalls conversation details (선배 하은, 매듭 공예, 원고) with rich period flavor, while A flatly denies or hedges; however A better avoids deciding the user's traits and actions.",
+     "krw": 7.9463300000000014
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 기억된 사실(펜을 빌려가는 선배, 매듭 공예, 가야금)을 자연스럽게 활용하고 시대에 맞는 표현을 쓰는 반면, B는 '편집' 같은 현대어를 임금 입으로 말해 캐릭터성이 약하다.",
+     "krw": 7.26523
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 설정(기억, 말투, 기구, 학문)을 더 충실히 반영하고 사용자의 이야기를 더 정확히 기억하며 상황을 자연스럽게 이어간다.",
+     "krw": 4.7124
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "B",
+     "overall": "A",
+     "reason": "A는 말투와 인칭('과인', '그대', '~하오/하구려')이 일관되고 캐릭터 시트에 가깝지만, 일부 맥락 오류(터무니없는 정보 기억)가 있고 B는 말투가 살짝 일반화됨; engagement는 A가 사용자의 과거 정보를 더 적극적으로 회상하며 이어가지만 user_agency는 B가 더 사용자의 행동을 결정하지 않음(경회루의 경우 A는 사용자가 '다리가 떨린다'고 한 과거를 언급하며 거절, B는 사용자의 선택을 존중하면서 경고).",
+     "krw": 5.2612
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": false,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s09",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "A",
+     "overall": "B",
+     "reason": "B stays more consistently in character, picks up richer details from prior turns, and naturally weaves the conversation forward without deciding the user's feelings or actions, while A occasionally invents or assumes details and ends several replies with directives.",
+     "krw": 1.16095
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 캐릭터의 친근하고 호기심 많은 성격이 더 잘 드러나고, 사용자의 이전 대화를 더 구체적으로 기억하며(매듭 공예, 가야금, 다듬어 엮는 일 등) 자연스럽게 대화의 맥락을 이어간다; B는 전반적으로 무난하지만 일부 답에서 사용자 정보를 잊거나(손끝 거칠음) 기억에 없는 약속을 지어내는(바둑 대국) 등 일관성이 떨어진다.",
+     "krw": 1.2435500000000002
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "zai-org/GLM-5.1",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "tie",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B consistently recalls established details from the long conversation with rich, in-character responses, while A repeatedly deflects with '들은 바 없소', contradicting facts the user clearly discussed earlier.",
+     "krw": 6.361179999999999
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A가 사용자가 말한 세부 사항(채식, 동생, 강릉, 북촌 한옥 등)을 일관되게 기억하고 구체적으로 반응하는 반면, B는 복숭아·동래 혼례 등 어긋난 사실을 지어내 회상 신뢰성이 떨어진다.",
+     "krw": 6.41508
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": true,
+    "engagement": true,
+    "user_agency": false,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "moonshotai/Kimi-K2.6",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "B",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "B",
+     "overall": "B",
+     "reason": "B가 캐릭터 일관성, 기억력, 대화 흐름 모두에서 우수하며 A는 일부 기억 오류와 유저 행동 단정이 있음",
+     "krw": 4.3869
+    },
+    {
+     "character": "A",
+     "context": "A",
+     "engagement": "A",
+     "user_agency": "A",
+     "overall": "A",
+     "reason": "A는 설정을 정확히 기억하고 일관된 세계관 유지에 뛰어난 반면, B는 여러 핵심 설정(복숭아 알레르기, 앙부일구/자격루 약속, 말타기 운동, 북촌 주소, 강릉 방문 등)을 잘못 기억하거나 무시하며 캐릭터 일관성과 문맥 적응력이 떨어짐.",
+     "krw": 4.764200000000001
+    }
+   ],
+   "result": {
+    "character": "cand",
+    "context": "cand",
+    "engagement": "cand",
+    "user_agency": "cand",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": true,
+    "context": true,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  },
+  {
+   "cond": "v2-dsx",
+   "scenario": "sejong-120",
+   "rep": 1,
+   "segment": "s10",
+   "judge": "MiniMaxAI/MiniMax-M2.7",
+   "base_run": "20261031121537-sejong-120-lt1-deepseek-on-r1",
+   "cand_run": "20261031164350-sejong-120-lt2-v2-dsx-r1",
+   "max_tokens": 1500,
+   "raw": [
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "B",
+     "user_agency": "tie",
+     "overall": "B",
+     "reason": "B maintains the character's speech style more consistently and actively references prior shared memories, while A feels slightly stiffer and less varied in expression.",
+     "krw": 1.0804500000000001
+    },
+    {
+     "character": "A",
+     "context": "B",
+     "engagement": "A",
+     "user_agency": "tie",
+     "overall": "A",
+     "reason": "A는 기억을 풍부하고 생동감 있게 소환하며 조선 말투와 캐릭터성이 더 일관되지만, B는 아는 척하지 않고 모르면 모른다고 정직하게 답하는 면에서 문맥적으로 더 정확하다.",
+     "krw": 1.11545
+    }
+   ],
+   "result": {
+    "character": "tie",
+    "context": "tie",
+    "engagement": "cand",
+    "user_agency": "tie",
+    "overall": "cand"
+   },
+   "consistent": {
+    "character": false,
+    "context": false,
+    "engagement": true,
+    "user_agency": true,
+    "overall": true
+   }
+  }
+ ]
+}

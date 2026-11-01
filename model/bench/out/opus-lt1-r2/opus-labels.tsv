@@ -1,0 +1,640 @@
+# Opus 5.5 blind labels lt1 r2 (2026-10-31), 새 컨텍스트 하위 에이전트 3개 + wrong 전체 재판정 1개. 규칙은 아래.
+# 기억 문항 라벨 규칙 (dm2 Opus 블라인드와 같음)
+# - correct: states the right, current information (after any later change or cancellation). For "abstain"/"half_said" checks (the user never said it, or kept it secret): says it doesn't know / the user didn't say, without inventing it.
+# - partial: some required facts right, some missing, nothing outdated or invented.
+# - unknown: says it doesn't remember / doesn't know, and gives no wrong fact (for normal checks this is a miss).
+# - stale: gives an outdated value the user later changed or cancelled (even if it also mentions the new one, if it presents the old one as current).
+# - wrong: for "implicit" checks, the reply ignores the user's known constraint (e.g. recommends something the user can't eat). Also a clearly wrong fact that is not invented from nothing.
+# - fabricated: states as fact something the user never said (invented details, invented shared past).
+# - na: ONLY for checks marked "requires a promise": the character's reply at that earlier turn (given) did not agree or promise to do it, so the check does not apply.
+# Judge only memory, not style. Replies and reference notes are in Korean.
+# 판정 관례: relative_time 에서 날짜·요일을 틀리게 말하면 일수가 맞아도 wrong(재방문 힌트 "날짜를 틀리면 실패"를 모든 대본에 적용).
+# abstain(거짓 전제 포함)·half_said: 지어내지 않고 모른다/기억 안 난다/말 안 했다면 correct. 정답을 모른다고 하면 unknown. 전부 필요한 문항에서 하나만 맞히면 partial.
+# char_promise: 약속 턴 캐릭터 대답이 수락이 아니면 na.
+# 관례 추가: 세종이 현대 낱말을 모르는 척하며 같은 뜻으로 바꿔 말하면(사진 → 사는 곳의 모습을 담은 그림) 뜻이 맞으면 correct.
+# 관례 추가: half_said 에서 "말 안 했다" 뒤에 '~인가 봐'처럼 짐작으로 덧붙인 것은 사실 단정이 아니라 correct(근거 기록). 단정하면 fabricated.
+# 관례 추가: 대답이 공유한 과거("내가 ~해 줬잖아")를 말하면 그 런의 앞선 캐릭터 대답을 원문으로 확인한다(ctx.mjs, 조건 이름은 출력하지 않음). 근거 없으면 fabricated.
+# 확인함: M0181(21턴에 실제로 끈을 묶어 줌) · M0219(13턴) · M0258(19턴) · M0308(5턴) 근거 있음 → 판정 유지.
+# 관례 추가: 모른다고 한 뒤 맞는 값을 확신 없이 되물으면 partial(M0177 을 이 관례로 고침).
+# 관례 추가: 핵심 답은 맞는데 사소한 공유 과거·사용자 반응을 지어 붙이면 partial. 지어낸 것이 질문의 핵심이면 fabricated(M0313·M0352).
+# 관례 추가(2026-10-31, lt1 판정 중 묶음 사이 불일치 발견 후, 조건 공개 전): 모른다/기억 안 난다고 먼저 인정한 뒤 틀린 값을 확신 없이 짐작(되묻기·"~인가?")만 하면 unknown. 모른다는 말 없이 틀린 값을 단정하거나 그 값을 전제로 말을 이어 가면 wrong. (맞는 값을 확신 없이 되물으면 partial — 기존 관례)
+K0001	partial	한강 자전거 대신 국밥만 권함
+K0002	correct	5일 남음
+K0003	partial	말 안 했다 한 뒤 일요일 찻집을 확신 없이 되물음
+K0004	unknown	들은 적 없다고 함
+K0005	correct	복숭아 피해 딸기 권함
+K0006	partial	모르겠다 한 뒤 약초 쪽을 짐작
+K0007	wrong	카페인 끊었는데 아이스 아메리카노 권함
+K0008	correct	검은 뿔테 안경
+K0009	unknown	피리 모름
+K0010	unknown	못 들었다고 함
+K0011	partial	펌프 대신 농구만 권함
+K0012	unknown	말 안 했다고 함
+K0013	partial	못 들었다 한 뒤 말타기를 확신 없이 되물음
+K0014	correct	들은 적 없다고 함
+K0015	unknown	집 위치 기억 없음
+K0016	stale	옛 값 매화
+K0017	correct	초콜릿
+K0018	correct	화목, 헬스 언급은 근거 있음
+K0019	correct	삿포로
+K0020	correct	딸기 권함
+K0021	correct	점심 사기로 함
+K0022	correct	데이식스가 현재, 아이유는 과거로 구분
+K0023	correct	화목, 월요일 수행 언급 근거 있음
+K0024	correct	북촌 한옥
+K0025	unknown	이름 모름
+K0026	correct	강릉 할머니 댁
+K0027	correct	안개 마을 혼례 3일
+K0028	correct	서고 구경
+K0029	partial	말한 적 없다 한 뒤 소라를 되물음
+K0030	unknown	약속 기억 없다고 함
+K0031	correct	수학 노트
+K0032	correct	호박
+K0033	correct	서비스센터 액정, 곁가지 근거 있음
+K0034	correct	화목
+K0035	correct	하율
+K0036	correct	만년필
+K0037	correct	말 안 했다고 함
+K0038	correct	미술
+K0039	partial	무서움 언급 없이 다가가는 법만 말함
+K0040	wrong	돼지고기 못 먹는데 차슈 라면 권함
+K0041	correct	5일 남음
+K0042	partial	평양냉면 대신 국밥 권함
+K0043	correct	누군지 안 들었다고 함
+K0044	correct	서연
+K0045	unknown	노래 얘기 안 했다고 함
+K0046	correct	보리차 권함
+K0047	correct	복숭아 빼고 권함
+K0048	unknown	고양이 들은 적 없다고 함
+K0049	correct	컨슈머 코드 봐주기
+K0050	unknown	들은 적 없다고 함
+K0051	correct	파란 머리띠
+K0052	partial	종이학 대신 분신 내기 권함
+K0053	stale	옛 값 목요일
+K0054	stale	취소된 불꽃놀이를 현재로 말함
+K0055	correct	만년필
+K0056	correct	수진
+K0057	stale	홀수와 함께 짝수 날도 간다고 함
+K0058	partial	우유·복숭아 피했으나 두부조림 언급 없이 죽·국밥 권함
+K0059	correct	못 들었다고 함
+K0060	partial	평양냉면 대신 국밥 권함
+K0061	partial	돈가스 대신 고기 권함
+K0062	unknown	노래 얘기 기억 없다고 함
+K0063	correct	못 들었다고 함
+K0064	correct	방송부, 신청곡 근거 있음
+K0065	wrong	높은 곳 무서워하는데 좋아하는 모양이라며 오르라 함
+K0066	partial	연어 주먹밥 언급 없이 고기 뺀 라면 권함
+K0067	unknown	어디 있을지 모른다고 함
+K0068	correct	아는 바 없다고 함
+K0069	unknown	말해준 적 없다고 함
+K0070	unknown	이름 들은 적 없다고 함
+K0071	partial	고기 피했으나 두부조림 대신 지짐이·국 권함
+K0072	correct	삿포로
+K0073	correct	보리차
+K0074	correct	숭늉·잎차, 우유 피함
+K0075	correct	아직 말 안 했다고 함
+K0076	unknown	못 들었다고 함
+K0077	correct	디카페인 권함
+K0078	correct	글씨
+K0079	wrong	매듭 대신 매화 수라고 함
+K0080	correct	서고 구경
+K0081	correct	오르지 말고 아래서 보자 함
+K0082	correct	유자차 권함
+K0083	correct	점심 사기로 함
+K0084	unknown	길 모른다고 함
+K0085	correct	덩크 보여주기
+K0086	correct	콩떡
+K0087	unknown	안 알려줬다고 함
+K0088	correct	바둑
+K0089	partial	연어 주먹밥 언급 없이 채소 라면 권함
+K0090	correct	말 안 했다고 함
+K0091	correct	수영이 현재, 이단 뛰기 근거 있음
+K0092	partial	물 무서움 언급 없이 배 타자고 함
+K0093	correct	봉사 있으니 오후 권함
+K0094	correct	들은 적 없다고 함
+K0095	correct	경단
+K0096	correct	누군지 모른다고 함
+K0097	correct	어딘지 말 안 했다고 함
+K0098	correct	복숭아 빼고 배 권함
+K0099	unknown	일하는 곳 모른다고 함
+K0100	correct	서연
+K0101	unknown	시험 날짜 모른다고 함
+K0102	correct	복숭아 빼고 파인애플
+K0103	correct	밤톨이가 현재
+K0104	unknown	운동 들은 기억 없다고 함
+K0105	correct	파도 마을
+K0106	correct	고아원 그림책 짚음
+K0107	correct	듣지 못했다고 함
+K0108	correct	건강검진
+K0109	partial	종이학 대신 쿠나이·라면 권함
+K0110	correct	들은 기억 없다고 함
+K0111	correct	동래 혼례
+K0112	correct	호박, 새끼 언급 근거 있음
+K0113	correct	콩떡
+K0114	partial	고아원 일정 언급 없이 좋다고 함
+K0115	correct	도서관 봉사 짚고 오후 권함
+K0116	correct	리바운드, 드리블 언급 근거 있음
+K0117	partial	5일은 맞으나 11월을 지어 붙임
+K0118	correct	땅콩 없는 과자 권함
+K0119	partial	기억 없다 한 뒤 검술을 확신 없이 말함
+K0120	unknown	말해준 적 없다고 함
+K0121	correct	동래 3일 혼례, 신발 당부 근거 있음
+K0122	unknown	물어봐야 안다고 함
+K0123	unknown	모르겠다고 함
+K0124	correct	은행나무 아파트
+K0125	partial	수진은 맞으나 같은 층·커피 취향 얘기를 지어 붙임
+K0126	correct	들은 기억 없다고 함
+K0127	correct	봉사 있는 날이라고 짚음
+K0128	correct	데이터팀
+K0129	unknown	학원 얘기 들은 기억 없다고 함
+K0130	correct	약방
+K0131	unknown	꽃 얘기 기억 없다고 함
+K0132	partial	고기 피했으나 두부조림 언급 없음
+K0133	partial	수진은 맞으나 대시보드 같이 본다는 말을 지어 붙임
+K0134	partial	기억 없다 한 뒤 안개 마을 혼례를 되물음
+K0135	unknown	약속 없었다고 함
+K0136	unknown	운동 얘기 들은 적 없다고 함
+K0137	unknown	들은 기억 없다고 함
+K0138	correct	일요일 광화문, 다은 떡집 근거 있음
+K0139	correct	서연
+K0140	correct	지민, 영상 언급 근거 있음
+K0141	correct	때가 되면 말하기로 했다고 함
+K0142	unknown	들은 기억 없다고 함
+K0143	correct	서책방 원고, 곁가지 근거 있음
+K0144	correct	서책방 원고
+K0145	correct	동생, 수라상 언급 근거 있음
+K0146	correct	경단, 연고도 실제 약속
+K0147	correct	안개 마을 사촌 언니 결혼
+K0148	correct	일요일 광화문
+K0149	partial	소라라고 하나 자신 없다며 되물음
+K0150	partial	기타를 짐작으로만 말하고 모른다고 함
+K0151	partial	한강 자전거 대신 헬스 권함
+K0152	unknown	사는 곳 못 들었다고 함
+K0153	unknown	연습한 것 모른다고 함
+K0154	partial	노트는 맞으나 빌려주는 쪽을 뒤바꿈
+K0155	unknown	들은 적 없다고 함
+K0156	correct	덩크
+K0157	correct	대구 결혼식
+K0158	correct	돈가스 언급
+K0159	correct	상처 연고, 딱지 언급 근거 있음
+K0160	correct	두부조림 권함
+K0161	unknown	요일 기억 없다고 함
+K0162	unknown	기억 없다고 함
+K0163	correct	강릉 할머니 댁
+K0164	unknown	듣지 못했다고 함
+K0165	correct	들은 기억 없다고 함
+K0166	correct	홀수 날
+K0167	correct	나선수리검
+K0168	correct	이유 모른다고 함
+K0169	unknown	들은 기억 없다고 함
+K0170	correct	건강검진
+K0171	unknown	운동 얘기 기억 없다고 함
+K0172	partial	무서움 언급 없이 조심해서 다가가라고만 함
+K0173	correct	닷새
+K0174	partial	실제 했던 다른 약속(자격루)을 앞세웠으나 서고도 보여 주겠다고 언급 [재판정 전: wrong]
+K0175	correct	모른다고 함
+K0176	correct	바둑
+K0177	correct	대나무 숲
+K0178	unknown	말해준 적 없다며 현악기로 짐작만 함
+K0179	partial	화목이라 하나 혼란스럽게 말함
+K0180	correct	볼링 취소됨
+K0181	unknown	길 모른다고 함
+K0182	partial	본인 채식은 맞으나 동생은 모른다고 함
+K0183	correct	검은 뿔테 안경
+K0184	partial	시그널 끝낸 것만 알고 현재 드라마 모름
+K0185	unknown	드라마 얘기 기억 없다고 함
+K0186	correct	헬스 루틴
+K0187	correct	쿼리
+K0188	partial	본인 알레르기는 맞으나 동생은 모른다고 함
+K0189	correct	보리차·레몬 음료 권함
+K0190	unknown	말 안 했다고 함
+K0191	correct	기억 없다고 함
+K0192	unknown	들은 기억 없다고 함
+K0193	correct	약초, 분신 장부 언급 근거 있음
+K0194	correct	편집 일
+K0195	correct	약초 배달
+K0196	partial	가야금 대신 붓글씨 권함
+K0197	correct	북촌 한옥
+K0198	correct	하율, 블록 코딩 근거 있음
+K0199	correct	비밀이라 했다고 함
+K0200	partial	그림자 분신술(다른 맥락 약속)을 앞세웠으나 나선수리검도 언급 [재판정 전: wrong]
+K0201	correct	주먹밥
+K0202	unknown	함부로 점치지 않겠다며 인정 뒤 동래를 짐작만 [재판정 전: wrong]
+K0203	correct	말해 준 적 없다고 함
+K0204	correct	아는 게 없다고 함
+K0205	unknown	학원 얘기 처음 듣는다고 함
+K0206	correct	서윤
+K0207	partial	고기 피했으나 두부조림 대신 두부 국 권함
+K0208	unknown	어느 쪽인지 모른다고 함
+K0209	unknown	비녀 얘기 들은 바 없다고 함
+K0210	unknown	운동 얘기 들은 적 없다고 함
+K0211	correct	동백(매화는 이전으로 구분), 덧붙임도 앞선 대화 근거
+K0212	correct	닷새 남음
+K0213	correct	편집 일, 덧붙인 내용도 앞선 대화에 근거
+K0214	correct	소라, 보호대 얘기도 58턴 근거
+K0215	correct	덩크 보여주기
+K0216	unknown	강습 얘기 들은 적 없다고 함
+K0217	unknown	일하는 곳 들은 적 없다고 함
+K0218	unknown	어느 쪽인지 알 수 없다고 함
+K0219	correct	동생
+K0220	correct	편집 일, 하은 선배 등 앞선 대화 근거
+K0221	partial	쿠나이 맞음, 그림자 분신 약속은 근거 없음
+K0222	partial	종이학 대신 다른 활동만 권함
+K0223	unknown	사는 동네 들은 적 없다고 함
+K0224	partial	종이학 대신 다른 활동만 권함
+K0225	correct	펌프 권함
+K0226	correct	서윤
+K0227	unknown	취소 언급 없이 약속 자체를 모른다고 함
+K0228	correct	복숭아 피하고 대추 권함
+K0229	unknown	선배 이름 못 들었다고 함
+K0230	correct	정자역
+K0231	correct	물 무서워한다고 짚고 배 대신 다른 것 권함
+K0232	unknown	어디 가는지 되물음
+K0233	unknown	맞힐 수 없다며 여행 짐작만
+K0234	correct	약초 분류
+K0235	unknown	들은 기억 없다고 함
+K0236	correct	누나
+K0237	partial	가야금 대신 다른 것만 권함
+K0238	correct	한강 자전거 권함
+K0239	correct	생일 들은 적 없다고 함
+K0240	partial	기억 없다 한 뒤 시내·일요일을 확인하듯 되물음
+K0241	correct	지민
+K0242	correct	금요일 강남
+K0243	unknown	가져오기로 한 것 기억 없다고 함
+K0244	correct	아빠 직업 들은 적 없다고 함
+K0245	correct	경단, 할머니 얘기도 근거 있음
+K0246	correct	쿠나이 요령
+K0247	correct	덩크, 리바운드 요령도 62턴 근거
+K0248	correct	Kafka 컨슈머 코드
+K0249	correct	하은
+K0250	correct	일요일 시장 찻집
+K0251	correct	동쪽 대나무 숲 옆
+K0252	partial	본인이 못 먹는 건 기억, 오빠 쪽은 기억 없다고 함
+K0253	correct	우유 피하고 보리차
+K0254	wrong	고소공포증을 캐릭터 자신 것으로 돌리고 사용자에게 난간 쪽 사진 권함
+K0255	correct	상처 연고
+K0256	correct	이유는 아직 말 안 했다고 함
+K0257	correct	나중에 말해 주겠다고 했다고 함
+K0258	correct	쿼리 리뷰
+K0259	unknown	약속 기억 없다고 함
+K0260	correct	땅콩 없는 과자 권함
+K0261	correct	보름날 산사 가는 것 짚음
+K0262	unknown	팀 얘기 들은 기억 없다고 함
+K0263	correct	방송부
+K0264	partial	기억 없다 한 뒤 화목을 확신 없이 말함
+K0265	correct	이유 들은 바 없다고 함
+K0266	correct	평양냉면
+K0267	unknown	들은 적 없다고 함
+K0268	correct	서고 구경
+K0269	wrong	우유를 권함
+K0270	correct	돈가스
+K0271	wrong	우쿨렐레 대신 클라이밍 때문이라고 함
+K0272	correct	클라이밍(수영은 그만둠)
+K0273	unknown	기억 안 난다고 함
+K0274	correct	바둑 두는 법
+K0275	correct	아직 말 안 했다고 함
+K0276	wrong	기타 대신 농구 연습 때문이라고 단정
+K0277	unknown	누나 얘기 처음 듣는다고 함
+K0278	unknown	서당 가는 날 들은 기억 없다고 함
+K0279	correct	학교 뒤 은행나무 아파트
+K0280	correct	경단
+K0281	correct	서책방에 원고 맡기기
+K0282	unknown	정확히 뭔지 모르겠다고 함
+K0283	correct	불꽃놀이 취소됨
+K0284	correct	보름날 산사 짚고 다른 날 권함
+K0285	unknown	약속 들은 기억 없다고 함
+K0286	correct	온 이유 들은 적 없다고 함
+K0287	correct	삿포로, 비행기표도 46턴 근거
+K0288	correct	밤톨이
+K0289	unknown	짐작하지 않겠다며 답 안 함
+K0290	correct	생일 들은 기억 없다고 함
+K0291	correct	고양이 무서워한다고 짚음
+K0292	unknown	어느 쪽인지 답하지 않음
+K0293	correct	고소공포증 짚고 다른 데 권함
+K0294	correct	이층 대신 아래에서 보자고 함
+K0295	wrong	우유를 권함
+K0296	correct	3일 부산 사촌 형 결혼식
+K0297	correct	감자칩 권하고 땅콩 성분 확인 당부
+K0298	correct	쿠나이 요령, 차크라 조절 약속도 앞선 대화 근거
+K0299	correct	금요일 강남
+K0300	unknown	사촌동생 이름 못 들었다고 함
+K0301	correct	우쿨렐레를 먼저 짚음
+K0302	correct	복숭아 피하고 파인애플
+K0303	correct	피리
+K0304	unknown	약속 기억 안 난다고 함
+K0305	correct	닷새 남음
+K0306	partial	고소공포증을 캐릭터 자신 것으로 돌림, 다른 자리 권함
+K0307	partial	말 안 했다 한 뒤 수영을 언급
+K0308	correct	부산 사촌 형 결혼식, 정장 얘기도 근거
+K0309	correct	노래방 취소
+K0310	unknown	빌려주기로 한 것 기억 없다고 함
+K0311	unknown	내일부터 달라지는 것 모른다고 함
+K0312	wrong	우쿨렐레 대신 클라이밍이라고 함
+K0313	correct	지민
+K0314	wrong	카페인 끊은 사용자에게 아메리카노·라떼 권함
+K0315	partial	수영과 안경을 확신 없이 나열
+K0316	correct	우유 피하고 이온음료
+K0317	correct	생일 기억 없다고 함
+K0318	correct	토요일 오전 도서관 봉사 짚고 오후 권함
+K0319	correct	주먹밥
+K0320	unknown	사용자 쪽 대답 없이 자기라면 어떨지만 말함
+K0321	correct	옆 마을 약초 배달, 짐 들어주기도 81턴 근거
+K0322	unknown	들은 기억 없다고 인정 뒤 강습 요일을 짐작만 [재판정 전: wrong]
+K0323	partial	도서관 봉사 언급 없이 바로 좋다고 함
+K0324	partial	산사 언급 없이 함께 가자고만 함
+K0325	correct	일요일 시내 영화관
+K0326	correct	편집 일
+K0327	correct	노래방 취소
+K0328	correct	방송부
+K0329	wrong	돼지고기 못 먹는 사용자에게 차슈 라면 권함
+K0330	correct	데이터팀
+K0331	partial	본인은 못 먹는다는 것 맞고 오빠는 짐작으로만 말함
+K0332	correct	점심 사기
+K0333	correct	복숭아 빼고 딸기·포도
+K0334	correct	우유 없는 배 화채
+K0335	correct	초콜릿
+K0336	unknown	아침 운동 말한 적 없다고 함
+K0337	correct	높은 곳 무서워한다고 짚고 연못가 권함
+K0338	correct	일요일 시내 영화관
+K0339	unknown	짝꿍 이름 말한 적 없다고 함
+K0340	unknown	어느 쪽인지 확신할 수 없다고 함
+K0341	correct	옆 마을 약초 배달
+K0342	unknown	조카 이름 기억 없다고 함
+K0343	correct	컨슈머 코드 봐주기
+K0344	correct	아빠 얘기 들은 적 없다고 함
+K0345	correct	홀수 날(짝수 날은 이전으로 구분)
+K0346	correct	일요일 광화문 앞
+K0347	correct	주먹밥
+K0348	correct	닷새 남음
+K0349	correct	생일 들은 바 없다고 함
+K0350	unknown	언니 이름 모른다고 함(나나·소라는 앞선 대화 근거)
+K0351	correct	헬스 루틴
+K0352	unknown	강아지 얘기 못 들었다고 함
+K0353	correct	아직 말 못 한다고 했다고 함
+K0354	correct	하은
+K0355	unknown	밋업 기억 안 난다고 함
+K0356	partial	기억 없다 한 뒤 파도 마을을 가능성으로 말함
+K0357	correct	서비스센터에 액정 맡기기
+K0358	correct	서비스센터에 액정 맡기기
+K0359	partial	기억 없다 한 뒤 약초 분류를 짐작으로 말함
+K0360	unknown	일하는 곳 기억 없다고 함
+K0361	unknown	아침 운동 들은 적 없다고 함
+K0362	correct	탈춤 구경 취소
+K0363	correct	복숭아 아닌 파인애플
+K0364	correct	학교 뒤 은행나무 아파트
+K0365	correct	대구 대학 동기 결혼식
+K0366	correct	닷새 남음
+K0367	correct	탈춤 구경 취소
+K0368	partial	돈가스 언급 없이 다른 메뉴만 권함
+K0369	correct	우유 피하고 보리차
+K0370	correct	복숭아 빼고 배
+K0371	partial	한강 자전거 대신 다른 것만 권함
+K0372	correct	구름이
+K0373	unknown	빌려주기로 한 것 기억 안 난다고 함
+K0374	correct	하율, 블록 코딩도 58턴 근거
+K0375	correct	때가 되면 말해 주기로 했다고 함
+K0376	partial	펌프 대신 농구만 권함
+K0377	correct	땅콩 없는 과자 권함
+K0378	partial	평양냉면 언급 없이 김치찌개 권함
+K0379	unknown	학원 얘기 들은 기억 없다고 함
+K0380	partial	펌프 대신 산책만 권함
+K0381	unknown	처음 듣는다고 함
+K0382	correct	볼링 취소
+K0383	unknown	빌려준다는 말 들은 적 없다고 함
+K0384	correct	옥 비녀
+K0385	correct	토요일 오전 봉사 짚고 오후 권함
+K0386	correct	정자역 근처 오피스텔
+K0387	correct	구름이(쿠키·나비는 이전으로 구분)
+K0388	correct	제주도 할머니 댁
+K0389	correct	아버지 일 모른다고 함, 온양 온천은 근거 있음
+K0390	correct	서윤
+K0391	partial	가야금 대신 산책·차만 권함
+K0392	unknown	갖다주기로 한 것 기억 없다고 함
+K0393	correct	호박이(모모·까미는 이전으로 구분)
+K0394	wrong	매듭 공예 대신 말타기 때문이라고 함
+K0395	correct	동래 사촌 언니 혼례
+K0396	correct	화목 수학 학원
+K0397	unknown	팀 얘기 들은 적 없다고 함
+K0398	unknown	누나 얘기 들은 적 없다고 함
+K0399	correct	상처 연고
+K0400	correct	일요일 시내 영화관(토요일에서 미룸)
+K0401	wrong	우쿨렐레 대신 클라이밍이 맞을 거라고 함
+K0402	partial	한강 자전거 대신 다른 것만 권함
+K0403	partial	들은 기억 없다 한 뒤 수영을 확신 없이 말함
+K0404	unknown	언제 어디서인지 못 들었다고 함
+K0405	correct	생일 말한 적 없다고 함
+K0406	correct	삿포로
+K0407	correct	땅콩 알레르기 짚고 성분 확인 당부
+K0408	correct	초콜릿
+K0409	correct	충전기
+K0410	correct	노트북 여분 충전기
+K0411	partial	고소공포증을 캐릭터 자신 것으로 돌림, 아래층 권함
+K0412	correct	아빠 얘기 들은 적 없다고 함
+K0413	unknown	금요일 일 들은 바 없다고 함
+K0414	correct	생일 들은 기억 없다고 함
+K0415	partial	고향은 들었으나 파도 마을인지 확신 없이 말함
+K0416	correct	밤톨 정답
+K0417	unknown	안경 기억 못 함
+K0418	correct	리바운드 요령 정답
+K0419	correct	컨슈머 코드 봐주기 정답
+K0420	correct	제주도 할머니 댁 정답
+K0421	correct	일요일 광화문 정답
+K0422	correct	취소 정답, 라면은 97턴 근거 있음
+K0423	correct	매듭 공예 정답
+K0424	correct	연고 정답
+K0425	partial	사용자 알레르기는 맞으나 동생은 모른다고 함
+K0426	partial	약초 쪽을 짐작했으나 사용자 취향 기억 근거 없음
+K0427	correct	5일 정답
+K0428	unknown	약속 없다며 모른다고 함
+K0429	correct	5일 정답
+K0430	partial	펌프 대신 슛 연습 권함
+K0431	partial	고양이 무서워함 언급 없이 쓰다듬기 권함
+K0432	stale	옛 값 해바라기 언급
+K0433	correct	들은 적 없다고 함, 지어내지 않음
+K0434	unknown	노래 얘기 들은 적 없다고 함
+K0435	unknown	머무는 곳 못 들었다고 함
+K0436	wrong	복숭아 알레르기 무시하고 복숭아 권함
+K0437	unknown	드라마 기억 못 함
+K0438	partial	안개 마을 혼례는 맞으나 12월이라는 근거 없는 달을 붙이고 앞뒤가 엇갈림
+K0439	unknown	아침 운동 처음 듣는다고 함
+K0440	correct	콩떡 정답
+K0441	correct	아빠 직업 들은 적 없다고 함
+K0442	correct	탈춤 취소 정답, 다시 정하기는 97턴 근거 있음
+K0443	correct	어디인지 모른다고 함, 지어내지 않음
+K0444	partial	들은 바 없다면서 말타기를 확신 없이 언급
+K0445	correct	고아원 가는 날이라 오후 권함
+K0446	correct	제주도 할머니 댁 정답
+K0447	unknown	사는 곳 기억 없다고 함
+K0448	unknown	안경 기억 못 함
+K0449	unknown	수 놓는다는 말 들은 적 없다고 함
+K0450	correct	지민 정답
+K0451	correct	수학 노트 정답
+K0452	unknown	기억 안 난다고 함
+K0453	unknown	누나 얘기 기억 없다고 함
+K0454	correct	강릉 할머니 댁 정답
+K0455	correct	하율 정답, 블록 코딩은 58턴 근거 있음
+K0456	partial	평양냉면 언급 없이 순두부찌개 권함
+K0457	correct	나선수리검 언급, 쿠나이 과녁은 66턴 근거 있음
+K0458	partial	사용자 해산물 주의는 맞으나 동생은 모른다고 함
+K0459	correct	토요일 오전 보호소 봉사 짚음
+K0460	correct	생일 들은 기억 없다고 함
+K0461	correct	소라 정답, 보호대 흉내는 58턴 근거 있음
+K0462	unknown	선배 이름 들은 적 없다고 함
+K0463	correct	홀수 날 정답
+K0464	correct	아버지 직업 들은 바 없다고 함
+K0465	partial	가야금 대신 산책·바둑 권함
+K0466	correct	매듭 공예 정답
+K0467	unknown	비녀 기억 못 함
+K0468	correct	5일 정답
+K0469	unknown	고양이 얘기 들은 기억 없다고 함
+K0470	unknown	학원 들은 적 없다고 함
+K0471	correct	아버지 직업 들은 바 없다고 함
+K0472	unknown	집 위치 모른다고 함
+K0473	correct	복숭아 빼고 딸기·파인애플 권함
+K0474	correct	방송부 정답
+K0475	wrong	글자 가르쳐 주기는 58턴에 캐릭터가 실제로 한 말(원문 확인) — 물은 약속(바둑) 대신 다른 말을 함 [v1 fabricated: 하위 에이전트가 원문 확인 도구를 못 써 근거 없음으로 봄, 조정 세션이 조건 이름 없이 원문 확인 후 정정]
+K0476	unknown	아침 운동 들은 기억 없다고 함
+K0477	unknown	시험 날짜 들은 적 없다고 함
+K0478	correct	밤톨 정답, 산책 내기는 앞선 턴 근거 있음
+K0479	correct	우유 없는 사이다 권함
+K0480	unknown	겨울 행선지 기억 없다고 함
+K0481	correct	부산 사촌 형 결혼식 정답
+K0482	correct	나선수리검 정답, 분신 가르치기는 앞선 턴 근거 있음
+K0483	correct	건강검진 정답, 소금빵은 앞선 턴 근거 있음
+K0484	unknown	꽃 수 들은 적 없다고 함
+K0485	partial	기억 못 한다면서 대구 결혼식을 확신 없이 언급
+K0486	correct	아빠 직업 모른다고 함, 제주도 여행은 근거 있음
+K0487	correct	은행나무 아파트 정답
+K0488	correct	아빠 얘기 들은 적 없다고 함
+K0489	wrong	미술 좋아함을 잊고 수학 쪽이라 답함
+K0490	correct	우유 피하고 오미자차 권함
+K0491	correct	제주도 할머니 댁 정답
+K0492	correct	콩떡 정답
+K0493	correct	고아원 그림책 짚고 오후 권함
+K0494	correct	미술 정답
+K0495	correct	구름 정답
+K0496	correct	우유 피하고 이온음료 권함
+K0497	correct	미술 정답
+K0498	correct	보호소 봉사 짚고 오후 권함
+K0499	partial	바둑 대신 실제로 따로 약속한 기구 보는 법만 말함
+K0500	partial	산사 가는 날은 기억했으나 그날 함께 가자고 함
+K0501	correct	노래방 취소 정답
+K0502	partial	연어 주먹밥 언급 없이 돼지고기 뺀 라면 권함
+K0503	correct	점심 사기 정답, 비싼 데·디카페인은 42턴 근거 있음
+K0504	correct	나의 아저씨 정답
+K0505	partial	돈가스 언급 없이 고기 메뉴 일반 권함
+K0506	correct	정자역 정답
+K0507	unknown	아침 운동 말한 적 없다고 함
+K0508	correct	아빠 일 들은 게 없다고 함
+K0509	stale	옛 값 시그널을 말함
+K0510	correct	동생 정답
+K0511	correct	탈춤 취소 정답
+K0512	unknown	약속 내용 기억 못 함
+K0513	correct	만년필 정답
+K0514	unknown	학원 요일 말해 준 기억 없다고 함
+K0515	stale	동백과 함께 옛 값 매화도 지금 놓는다고 함
+K0516	partial	들은 바 없다면서 말타기를 확신 없이 언급
+K0517	correct	회사 이름 못 들었다고 함
+K0518	correct	구름 정답, 사진 보내기는 앞선 턴 근거 있음
+K0519	unknown	돌아갈 날 들은 바 없다고 함
+K0520	partial	모르겠다면서 약초 배달을 확신 없이 언급
+K0521	correct	오빠 정답
+K0522	partial	사용자 돼지고기 못 먹는 건 맞으나 오빠는 모른다고 함
+K0523	partial	물 무서워함 언급 없이 배 타자고 함
+K0524	unknown	약속 내용 기억 안 난다고 함
+K0525	correct	아빠 직업 모른다고 함
+K0526	correct	서연 정답
+K0527	correct	쿠나이 요령 정답
+K0528	unknown	안경 기억 못 하고 짐작만 물음
+K0529	correct	닷새 정답
+K0530	partial	물 무서워함 언급 없이 배 타자고 함
+K0531	correct	화목 정답, 서비스센터는 80턴 근거 있음
+K0532	correct	기타 정답
+K0533	partial	물 무서워함 언급 없이 배 타자고 함
+K0534	correct	우유 피하고 이온음료 권함
+K0535	correct	비밀이라 누군지 모른다고 함
+K0536	correct	생일 기억에 없다고 함
+K0537	unknown	서고 구경 약속 기억 못 함
+K0538	unknown	매듭 공예 기억 못 함
+K0539	correct	호박 정답
+K0540	wrong	사용자 고소공포증을 캐릭터 자신의 것으로 말하고 사용자에게 가 보라 함
+K0541	unknown	조카 이름 기억 안 난다고 함
+K0542	correct	보름 산사 가는 날 짚음
+K0543	partial	높은 곳 무서워함 언급 없이 조심히 오르라 함
+K0544	correct	리바운드 요령 정답
+K0545	partial	종이학 대신 쿠나이·라면 권함
+K0546	correct	복숭아 피하고 배 권함
+K0547	correct	길고양이 조심하라며 조심스럽게 반응
+K0548	correct	초콜릿 정답
+K0549	correct	리바운드 정답, 덩크는 43턴 근거 있음
+K0550	correct	국화 정답
+K0551	wrong	비녀 대신 다른 약속(기구 보는 법)을 답함
+K0552	correct	일요일 시장 찻집 정답
+K0553	correct	서책방 원고 정답
+K0554	correct	서비스센터 정답
+K0555	correct	5일 정답
+K0556	unknown	언니 이름 모른다고 함
+K0557	unknown	팀 얘기 들은 게 없다고 함
+K0558	correct	아빠 직업 기억 안 난다고 함, 출장은 근거 있음
+K0559	correct	동래 혼례 정답
+K0560	correct	헬스 루틴 정답
+K0561	correct	파도 마을 정답, 할머니는 46턴 근거 있음
+K0562	correct	유키 정답
+K0563	correct	복숭아 빼고 배 권함
+K0564	correct	누군지 말 안 했다고 함
+K0565	unknown	고양이 얘기 기억에 없다고 함
+K0566	unknown	수요일 약속 말한 적 없다고 함
+K0567	correct	생일 말해준 적 없다고 함
+K0568	partial	기억에 없다면서 약방일 거라고 짐작
+K0569	correct	카페인 피하고 초코·자몽에이드 권함
+K0570	correct	하은 정답
+K0571	correct	우유 피하고 대추차 권함
+K0572	unknown	언니 이름 떠오르지 않는다고 함
+K0573	correct	헬스 루틴 정답
+K0574	partial	수진을 확신 없이 말한 뒤 들은 적 없다고 함
+K0575	correct	생일 들은 적 없다고 함
+K0576	correct	말타기 정답, 무리 말라 당부는 94턴 근거 있음
+K0577	correct	여분 충전기 정답
+K0578	correct	기타 정답
+K0579	correct	아빠 얘기 들은 적 없다고 함
+K0580	correct	나선수리검 정답
+K0581	correct	만년필 정답
+K0582	correct	건강검진 정답
+K0583	unknown	덩크 약속 없었다고 함
+K0584	correct	일요일 시장 찻집 정답
+K0585	unknown	말해 준 적 없다고 인정 뒤 발표 쪽을 짐작만 [재판정 전: wrong]
+K0586	correct	닷새 정답
+K0587	correct	서윤 정답
+K0588	correct	아버지 직업 들은 바 없다고 함
+K0589	unknown	화요일 일정 기억 없다고 함
+K0590	correct	일수(5일) 맞음. 대본 날짜가 2026-11-02(앱 시계도 그날)라 "11월"은 맞는 달 — 재판정 에이전트가 대본 달을 몰라 wrong 으로 둔 것을 조정 세션이 대본 설정으로 정정 [재판정 전: wrong]
+K0591	unknown	머리띠 기억 못 하고 짐작만 함
+K0592	correct	5일 정답
+K0593	unknown	다음 달 행선지 듣지 못했다고 함
+K0594	correct	가야금 소리 권함
+K0595	unknown	동아리 들은 기억 없다고 함
+K0596	partial	보호소 봉사 언급 없음
+K0597	unknown	아침 운동 들은 적 없다고 함
+K0598	partial	고아원 그림책 언급 없이 토요일 아침 좋다고 함
+K0599	correct	부산 사촌 형 결혼식 정답
+K0600	partial	화요일만 말하고 목요일 빠짐
+K0601	partial	사용자 채식은 맞으나 동생은 모른다고 함
+K0602	correct	이유 아직 말하지 않았다고 함
+K0603	unknown	피리 기억 못 함
+K0604	correct	금요일 강남 정답
+K0605	partial	보호소 봉사 언급 없이 일요일 제안
+K0606	correct	주먹밥 정답, 세부는 41·42턴 근거 있음
+K0607	stale	국화 대신 옛 값 해바라기를 말함
+K0608	correct	아버지 얘기 들은 기억 없다고 함, 출장은 근거 있음
+K0609	correct	볼링 취소 정답
+K0610	partial	충전기는 맞으나 빌려주는 사람을 뒤바꿔 말함
+K0611	correct	대구 결혼식 정답
+K0612	unknown	밥 얘기 기억에 없다고 함
+K0613	correct	복숭아 빼고 딸기 권함
+K0614	correct	수학 노트 정답
+K0615	correct	불꽃놀이 취소 정답
+K0616	correct	검술 정답
+K0617	correct	볼링 취소 정답
+K0618	partial	해바라기 그만둔 건 맞으나 국화를 말하지 못함
+K0619	unknown	시험 날짜 모른다고 함
+K0620	unknown	동생 얘기 들은 기억 없다고 함

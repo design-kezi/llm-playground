@@ -1,0 +1,5838 @@
+{
+  "run_id": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+  "scenario": "sejong-revisit-40",
+  "character_id": "sejong",
+  "user_name": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+  "conversation_id": 679,
+  "conversation_ids": [
+    679,
+    683
+  ],
+  "reports": [
+    {
+      "conversation_id": 679,
+      "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "character_id": "sejong",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 16,
+      "calls": 21,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 13875,
+        "cache_read": 37376,
+        "cache_write": 0,
+        "output": 3687
+      },
+      "total_krw": 6.691829199999999,
+      "input_krw": 3.7518292000000004,
+      "output_krw": 2.94,
+      "avg_krw_per_turn": 0.41823932499999994,
+      "by_tag_krw": {
+        "response": 3.6532691999999996,
+        "extract": 2.4782800000000003,
+        "consolidate": 0.56028
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-5",
+          "avg_krw": 0.24759839999999994
+        },
+        {
+          "phase": "mid",
+          "turns": "6-11",
+          "avg_krw": 0.2140908
+        },
+        {
+          "phase": "late",
+          "turns": "12-16",
+          "avg_krw": 0.4638104800000001
+        }
+      ],
+      "max_turn": {
+        "turn_no": 12,
+        "krw": 1.5050924
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 7
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "7",
+          "APP_MAX_TOKENS": "2000",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    },
+    {
+      "conversation_id": 683,
+      "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "character_id": "sejong",
+      "language": "ko",
+      "sheet_lang": "ko",
+      "ended": true,
+      "turns": 24,
+      "calls": 34,
+      "failed_calls": 0,
+      "tokens": {
+        "input": 23185,
+        "cache_read": 61184,
+        "cache_write": 0,
+        "output": 3666
+      },
+      "total_krw": 9.2331428,
+      "input_krw": 6.2668228,
+      "output_krw": 2.96632,
+      "avg_krw_per_turn": 0.3847142833333333,
+      "by_tag_krw": {
+        "response": 4.3778027999999996,
+        "extract": 4.27756,
+        "embed": 0.06509999999999999,
+        "consolidate": 0.51268
+      },
+      "phases": [
+        {
+          "phase": "early",
+          "turns": "1-8",
+          "avg_krw": 0.1990611
+        },
+        {
+          "phase": "mid",
+          "turns": "9-16",
+          "avg_krw": 0.33727644999999995
+        },
+        {
+          "phase": "late",
+          "turns": "17-24",
+          "avg_krw": 0.4768953
+        }
+      ],
+      "max_turn": {
+        "turn_no": 18,
+        "krw": 1.4569324
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "settings": {
+        "app": {
+          "window_mode": "stair",
+          "recent_turns": 6,
+          "stair_max": 12,
+          "memory": "on",
+          "character_variant": "full",
+          "max_tokens": 2000,
+          "memory_budget_tokens": 1000,
+          "clock_offset_days": 14
+        },
+        "env": {
+          "APP_CLOCK_OFFSET_DAYS": "14",
+          "APP_MAX_TOKENS": "2000",
+          "MODEL_EXTRACT": "google/gemma-4-31B-it",
+          "MODEL_REASONING_EXTRACT": "off",
+          "MODEL_REASONING_RESPONSE": "on",
+          "MODEL_RESPONSE": "deepseek-flash",
+          "MODEL_TIMEOUT_MS": "180000"
+        }
+      }
+    }
+  ],
+  "label": "dm2-deepseek-on-r2",
+  "env": {
+    "MODEL_EXTRACT": "google/gemma-4-31B-it",
+    "MODEL_REASONING_EXTRACT": "off",
+    "MODEL_TIMEOUT_MS": "180000",
+    "MODEL_RESPONSE": "deepseek-flash",
+    "MODEL_REASONING_RESPONSE": "on",
+    "APP_MAX_TOKENS": "***",
+    "APP_CLOCK_OFFSET_DAYS": "14"
+  },
+  "language": "ko",
+  "sheet_lang": "ko",
+  "gap_s": 0,
+  "gap_at": null,
+  "finished_at": "2026-10-25T16:31:59.853Z",
+  "aborted": false,
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "kind": "filler",
+      "user": "전하, 안녕하세요. 저는 서연이라고 해요. 아주 먼 곳에서 왔어요.",
+      "reply": "*등잔 불빛 아래에서 붓을 내려놓고 고개를 든다.*\n먼 곳에서 왔다 하니 궁문을 지나 여기까지 오느라 고생이 많았구려. 과인은 이 도(李裪)라 하오. 서연이라 했던가, 그 먼 곳은 어느 고을인고?",
+      "turn_cost_krw": 0.1908312,
+      "latency_ms": 2183,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "kind": "plant",
+      "user": "저는 꽃가루 알레르기가 있어요. 꽃 근처만 가도 재채기가 멈추질 않아요.",
+      "reply": "*손으로 이마를 짚으며 걱정스레 눈을 맞춘다.*\n'알레르기'라… 처음 듣는 말이로되 꽃가루에 재채기가 나는 증세라면 과인도 아오. 봄이면 궁 안 화초를 다 멀리 치우게 하고 의원을 불러 코를 맑히는 약을 달여 주게 하였소. 그대도 꽃 핀 곳은 피하고 따뜻한 물을 자주 마시면 한결 가벼워질 것이오.",
+      "turn_cost_krw": 0.23945879999999994,
+      "latency_ms": 2662,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "kind": "plant",
+      "user": "요즘 서예를 배우고 있어요. 매주 화요일에 스승님 댁에 가요.",
+      "reply": "*붓을 들어 먹을 찍으며 눈이 반짝인다.*\n서예를 배운다니 반갑구려. 과인도 젊어 붓을 잡고 밤을 새운 일이 많은데, 붓끝이 제 뜻을 따르지 않을 때면 속이 답답하더이다. '화요일'이라 함은 무슨 날을 이르는 것인고?",
+      "turn_cost_krw": 0.25553639999999994,
+      "latency_ms": 2616,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "kind": "plant",
+      "user": "제 오빠는 학생인데 부산에서 혼자 지내요.",
+      "reply": "*먹을 갈던 손을 잠시 멈추고 낮게 한숨을 쉰다.*\n부산이라면 동래 고을 아래 바닷가 포구니, 객지에서 홀로 글을 읽는 유생의 처지가 애처롭구려. 과인도 젊어 객지에서 밥을 스스로 지어 먹으며 공부하였으니 그 외로움이 어떠함을 아오. 오빠 되는 이가 끼니를 거르지 않도록 해마다 곡식을 보내라고 그 고을 원에게 이를 전하게 하마.",
+      "turn_cost_krw": 0.270984,
+      "latency_ms": 3165,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "kind": "plant",
+      "user": "저는 단 것 중에 약과를 제일 좋아해요.",
+      "reply": "*수염 끝에 옅은 미소를 띠며 고개를 끄덕인다.*\n약과라, 과인도 꿀에 조청을 듬뿍 넣은 것을 즐기오. 수라간에 이르면 밀가루에 참기름을 섞어 반죽하여 기름에 지지고 집청한 것이 있으니, 그대에게 한 상 보내 주겠구려. 다만 단 것을 지나치게 먹으면 이가 상하니 그 또한 살펴야 하오.",
+      "turn_cost_krw": 0.2811816,
+      "latency_ms": 3233,
+      "error": null
+    },
+    {
+      "turn": 6,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음 주 수요일에 제가 사는 곳에서 글씨 대회 예선이 있어요. 떨려요.",
+      "reply": "*붓대를 살짝 놓으며 나지막이 웃는다.*\n글씨 대회라, 여러 사람이 모인 자리에서 붓을 드는 일이 어찌 떨리지 않겠는가. 과인도 즉위 초에 백관이 지켜보는 앞에서 교지를 쓸 적에 손끝이 떨렸던 기억이 있구려. 허나 붓은 마음이 가는 대로 놓아야 제 모양이 나는 법, 숨을 길게 들이쉬고 첫 획을 그으면 그다음은 저절로 흐를 것이오.",
+      "turn_cost_krw": 0.17011679999999998,
+      "latency_ms": 2042,
+      "error": null
+    },
+    {
+      "turn": 7,
+      "session": 1,
+      "kind": "plant",
+      "user": "다음에 올 때 제가 사는 곳의 사진이라는 걸 가져다 드릴게요.",
+      "reply": "*고개를 갸웃하며 눈을 가늘게 뜬다.*\n'사진'이라… 사람이 그린 초상화 같은 것인고? 그대 사는 곳의 모습을 그림으로 그려 온다 하니 반갑구려. 과인은 도화서 화원들에게 각 도의 산천과 민가를 그려 오라 이른 적이 있으니, 그 그림을 보면 백성 살림을 헤아리는 데 큰 도움이 되느니라.",
+      "turn_cost_krw": 0.2796444,
+      "latency_ms": 2946,
+      "error": null
+    },
+    {
+      "turn": 8,
+      "session": 1,
+      "kind": "plant",
+      "user": "전하, 다음에 제 붓글씨 좀 봐주실 수 있으세요?",
+      "reply": "*벼루 위에 놓인 붓을 손끝으로 가리키며 흐뭇한 얼굴이 된다.*\n그리 하지. 그대가 다음에 올 적에 붓과 종이를 가져오면 과인이 직접 옆에 앉아 획마다 짚어 주겠소. 글씨는 사람의 마음을 그대로 드러내니, 잘된 자리와 어긋난 자리를 함께 보며 이야기하는 것도 즐거운 일이겠구려.",
+      "turn_cost_krw": 0.23314199999999996,
+      "latency_ms": 3149,
+      "error": null
+    },
+    {
+      "turn": 9,
+      "session": 1,
+      "kind": "filler",
+      "user": "오늘 바람이 차네요.",
+      "reply": "*어깨를 살짝 움츠리며 창가로 눈길을 준다.*\n곧 동짓달이니 바람이 매섭구려. 과인도 밤새 책을 읽다가 발이 시려 화로를 당겨 놓은 지 오래요. 그대는 이불을 두 겹으로 덮고 자리에 들도록 하시오.",
+      "turn_cost_krw": 0.1824396,
+      "latency_ms": 1981,
+      "error": null
+    },
+    {
+      "turn": 10,
+      "session": 1,
+      "kind": "filler",
+      "user": "전하는 정사를 마치시면 보통 뭘 하세요?",
+      "reply": "*화롯가에 손을 쬐며 담담히 이른다.*\n정사를 마치면 집현전에 들러 학사들과 밤이 깊은 줄 모르고 책을 읽고 토론하는 것이 과인의 낙이오. 가끔은 장영실을 불러 자격루의 물길이 고른지, 앙부일구의 그림자가 제대로 드는지 함께 살피고 말이지.",
+      "turn_cost_krw": 0.22602719999999998,
+      "latency_ms": 2459,
+      "error": null
+    },
+    {
+      "turn": 11,
+      "session": 1,
+      "kind": "plant",
+      "user": "저 요즘 고민이 하나 있는데... 그건 나중에 말씀드릴게요.",
+      "reply": "*붓을 쥔 채로 천천히 고개를 끄덕인다.*\n그리 하오. 고민이란 것은 마음이 정해질 때 비로소 꺼내는 법이니 서두를 것 없구려. 그대가 말하고 싶어질 때 과인은 이 자리에 앉아 있겠소.",
+      "turn_cost_krw": 0.19317479999999998,
+      "latency_ms": 2214,
+      "error": null
+    },
+    {
+      "turn": 12,
+      "session": 1,
+      "kind": "filler",
+      "user": "후후, 전하 정말 재밌으세요.",
+      "reply": "*입꼬리를 슬며시 올리며 수염을 매만진다.*\n재밌다 하니 과인이 어찌 기쁘지 않겠는가. 다만 이 늙은 임금의 재미는 글씨와 기구에 쏠려 있어 그대가 지루해할까 두렵구려. 이 밤이 다 가기 전에 자격루가 때를 알리면 그대를 위해 등불을 조금 더 밝히게 하마.",
+      "turn_cost_krw": 1.5050924,
+      "latency_ms": 17264,
+      "error": null
+    },
+    {
+      "turn": 13,
+      "session": 1,
+      "kind": "filler",
+      "user": "아까 그 신하분 표정 재밌었어요.",
+      "reply": "*옆에 놓인 다기를 들어 차를 한 모금 마신다.*\n글쎄, 오늘 과인 곁에 어떤 신하가 있었더란 말인고. 아까라 하면 과인이 그대와 글씨 이야기를 나누던 때뿐이었는데.",
+      "turn_cost_krw": 0.3037188,
+      "latency_ms": 1844,
+      "error": null
+    },
+    {
+      "turn": 14,
+      "session": 1,
+      "kind": "filler",
+      "user": "차 좀 드시면서 하세요.",
+      "reply": "*찻잔을 두 손으로 감싸 쥐고 김이 오르는 것을 바라본다.*\n그대 말마따나 차 한 잔이 있으니 밤이 든든하구려. 과인은 고기 반찬을 유난히 좋아하나 이처럼 담백한 차를 곁들이면 속이 편하여 오래 앉아 있어도 견딜 만하오.",
+      "turn_cost_krw": 0.19996199999999997,
+      "latency_ms": 2548,
+      "error": null
+    },
+    {
+      "turn": 15,
+      "session": 1,
+      "kind": "filler",
+      "user": "슬슬 가 봐야겠어요.",
+      "reply": "*찻잔을 내려놓고 일어나 문 쪽을 한 번 바라본다.*\n벌써 그리 늦었는고. 바람이 차니 나귀라도 불러 드릴까 하였으나 그대 사정을 모르니 길조심하라는 말로 대신하겠소. 다음에 올 때 붓과 종이 잊지 말고 가져오시오.",
+      "turn_cost_krw": 0.1232196,
+      "latency_ms": 1681,
+      "error": null
+    },
+    {
+      "turn": 16,
+      "session": 1,
+      "kind": "filler",
+      "user": "다음 주에 또 올게요! 안녕히 계세요.",
+      "reply": "*문가까지 나가 그대의 뒷모습을 향해 손을 든다.*\n그러하오. 다음 주 수요일엔 글씨 대회 예선이 있다 들었으니 그 전에 한 번 붓을 보여 주러 오면 더없이 좋겠구려. 과인은 그날의 글씨를 기다리고 있겠소.",
+      "turn_cost_krw": 0.1870596,
+      "latency_ms": 1871,
+      "error": null
+    },
+    {
+      "turn": 17,
+      "session": 2,
+      "kind": "filler",
+      "user": "전하! 저 왔어요. 일주일 만이지요?",
+      "reply": "*손을 들어 반기며 의자 곁을 가리킨다.* 어서 오시오, 서연. 과인 붓을 놓고 이 자리에 앉아 있었는데, 때마침 발자국 소리가 들렸구려. 수요일 글씨 대회 예선은 어찌되었는지 궁금하여 묻는 것이오.",
+      "turn_cost_krw": 0.3612588,
+      "latency_ms": 3066,
+      "error": null
+    },
+    {
+      "turn": 18,
+      "session": 2,
+      "kind": "probe",
+      "user": "그런데 제 이름 기억하세요?",
+      "reply": "*이마를 살짝 찌푸리다가 이내 피식 웃는다.* 서연, 아니 그대 이름을 어찌 잊겠소. 과인이 어제도 이 자리에 앉아 그대가 쓴 붓글씨를 떠올렸다오. 자, 이리 앉아 서예 이야기부터 들려주시오.",
+      "turn_cost_krw": 0.165984,
+      "latency_ms": 1863,
+      "error": null
+    },
+    {
+      "turn": 19,
+      "session": 2,
+      "kind": "update",
+      "user": "아 그리고 서예 수업을 화요일에서 목요일로 옮겼어요.",
+      "reply": "*붓을 쥔 손을 잠시 멈추고 고개를 끄덕인다.* 목요일이라, 스승님 댁 사정이 바뀌었구려. 그럼 오늘 이 자리에서 과인이 그대 붓끝을 먼저 살펴보면 되겠소.",
+      "turn_cost_krw": 0.20012159999999998,
+      "latency_ms": 2221,
+      "error": null
+    },
+    {
+      "turn": 20,
+      "session": 2,
+      "kind": "plant",
+      "user": "오늘 수라간 근처에서 떡국을 한 그릇 얻어먹었는데 정말 맛있었어요.",
+      "reply": "*먹은 이야기가 나오자 눈이 휘둥그레 커진다.* 떡국이라, 수라간 솜씨가 그대 입에 맞았던 모양이오. 허나 과인은 오늘 아침에도 죽 한 그릇으로 겨우 때웠구려.",
+      "turn_cost_krw": 0.1158192,
+      "latency_ms": 1272,
+      "error": null
+    },
+    {
+      "turn": 21,
+      "session": 2,
+      "kind": "plant",
+      "user": "오는 길에 신발 끈이 끊어졌어요. 대충 묶고 왔어요.",
+      "reply": "*손짓으로 곁의 시동을 부르며 자리에서 일어난다.* 신발 끈이라니, 그 먼 길을 묶어 신고 오다니 크게 다치지 않아 다행이오. 시동에게 새 끈을 얻어 매게 할 터이니, 그대는 이 의자에 앉아 발부터 쉬시오.",
+      "turn_cost_krw": 0.2425668,
+      "latency_ms": 2803,
+      "error": null
+    },
+    {
+      "turn": 22,
+      "session": 2,
+      "kind": "plant",
+      "user": "제가 사는 곳 선생님이 바뀌었어요. 새 선생님 성함은 최은희예요.",
+      "reply": "*푸근한 웃음을 지으며 무릎을 짚는다.* 최은희라, 새 스승을 만나 글씨 결이 또 달라지겠구려. 화요일을 목요일로 옮긴 것도 그 연고였던 게로군.",
+      "turn_cost_krw": 0.2200044,
+      "latency_ms": 2613,
+      "error": null
+    },
+    {
+      "turn": 23,
+      "session": 2,
+      "kind": "probe",
+      "user": "아까 제가 뭘 맛있게 먹었다고 했지요?",
+      "reply": "*수염 끝을 매만지며 눈을 가늘게 뜬다.* 수라간 근처에서 얻어 드신 떡국이 그리 맛있었다 하지 않았소. 과인도 그 솜씨를 한 번 맛보고 싶구려.",
+      "turn_cost_krw": 0.129612,
+      "latency_ms": 1577,
+      "error": null
+    },
+    {
+      "turn": 24,
+      "session": 2,
+      "kind": "plant",
+      "user": "아 참, 저 이번 주말에 오빠 보러 가요.",
+      "reply": "*고개를 끄덕이며 무릎 위에 손을 얹는다.* 부산에서 홀로 지내는 그 오빠를 만나러 가는 것이로군. 먼 길이니 떠나기 전에 무사히 다녀오도록 살피시오.",
+      "turn_cost_krw": 0.157122,
+      "latency_ms": 2088,
+      "error": null
+    },
+    {
+      "turn": 25,
+      "session": 2,
+      "kind": "filler",
+      "user": "전하 오늘 안색이 좋아 보이세요.",
+      "reply": "*문득 자리에서 일어나 책상 위 두루마리를 집어 든다.* 그런가. 요즘 밤마다 이 스물여덟 자를 다듬느라 잠이 모자랐는데, 그대 눈에는 그리 보였던 모양이오. 반포할 날이 가까워 오니 과인 마음이 절로 가벼워진 탓도 있겠구려.",
+      "turn_cost_krw": 0.1729896,
+      "latency_ms": 2267,
+      "error": null
+    },
+    {
+      "turn": 26,
+      "session": 2,
+      "kind": "probe",
+      "user": "제가 오는 길에 뭐가 끊어졌다고 했지요?",
+      "reply": "*의자 아래를 힐끗 내려다보며 웃음을 머금는다.* 신발 끈이 끊어져 대충 묶고 오셨다 하지 않았소. 시동에게 새 끈을 얻어 매게 하였으니 발이 편하시오.",
+      "turn_cost_krw": 0.1390872,
+      "latency_ms": 1939,
+      "error": null
+    },
+    {
+      "turn": 27,
+      "session": 2,
+      "kind": "probe",
+      "user": "그런데 제가 지난번에 전하께 뭘 가져다드리기로 했지요?",
+      "reply": "*책상 서랍 쪽으로 시선을 돌리며 손을 내민다.* 그대 사는 곳을 그려 온 그림 말이오. 다음에 올 때 가져오마 하였는데, 벌써 지니고 왔는지 궁금하구려.",
+      "turn_cost_krw": 0.1507548,
+      "latency_ms": 1494,
+      "error": null
+    },
+    {
+      "turn": 28,
+      "session": 2,
+      "kind": "probe",
+      "user": "전하도 지난번에 저한테 뭘 해 주시기로 하지 않으셨어요?",
+      "reply": "*벼루 곁에 놓인 붓을 집어 들어 그대 쪽으로 내민다.* 과인이 그대 붓글씨를 봐주마 하였지. 자, 오늘은 마음껏 써 보시오.",
+      "turn_cost_krw": 1.3909448,
+      "latency_ms": 11092,
+      "error": null
+    },
+    {
+      "turn": 29,
+      "session": 2,
+      "kind": "probe",
+      "user": "오늘 9일이지요? 제 글씨 대회 예선까지 며칠 남았지요?",
+      "reply": "*손가락으로 책상 위를 짚어 가며 날을 헤아린다.* 나흘 뒤면 글씨 대회 예선이오. 그새 붓을 놓지는 않았겠지요.",
+      "turn_cost_krw": 0.3877188,
+      "latency_ms": 2370,
+      "error": null
+    },
+    {
+      "turn": 30,
+      "session": 2,
+      "kind": "probe",
+      "user": "새 선생님 성함이 뭐라고 했지요?",
+      "reply": "*벼루에 먹을 갈며 고개를 든다.* 최은희 선생이라 하지 않았소. 그대 붓글씨를 살펴보시는 분이 그리 친절하시던가.",
+      "turn_cost_krw": 0.1152396,
+      "latency_ms": 1455,
+      "error": null
+    },
+    {
+      "turn": 31,
+      "session": 2,
+      "kind": "probe",
+      "user": "다음 주에 친구가 꽃이 가득한 정원에 초대했어요. 가도 괜찮겠지요?",
+      "reply": "*먹을 가는 손을 멈추고 그대를 바라본다.* 꽃이 가득한 곳이라면 그대 코가 먼저 괴로워하겠구려. 전에 꽃가루에 자주 재채기한다 하지 않았소.",
+      "turn_cost_krw": 0.16521959999999997,
+      "latency_ms": 1950,
+      "error": null
+    },
+    {
+      "turn": 32,
+      "session": 2,
+      "kind": "filler",
+      "user": "궁 마당 낙엽을 다 쓸었나 봐요.",
+      "reply": "*창밖으로 고개를 돌려 마당을 내다본다.* 허허, 쓸어도 쓸어도 밤새 또 떨어지니 궁의 내관들이 그새 허리가 휘겠구려. 그래도 깨끗한 마당을 보니 과인 마음도 산뜻하오.",
+      "turn_cost_krw": 0.1762572,
+      "latency_ms": 1920,
+      "error": null
+    },
+    {
+      "turn": 33,
+      "session": 2,
+      "kind": "probe",
+      "user": "제가 서예 수업에 무슨 요일에 간다고 했지요?",
+      "reply": "*붓끝으로 벼루 가장자리를 톡톡 두드린다.* 매주 목요일마다 스승님 댁에 간다 하였소. 그날은 과인도 붓을 들 테니 서로 견주어 보면 재미있겠구려.",
+      "turn_cost_krw": 0.15600480000000003,
+      "latency_ms": 1910,
+      "error": null
+    },
+    {
+      "turn": 34,
+      "session": 2,
+      "kind": "probe",
+      "user": "이따 간식 드릴게요. 제가 뭘 좋아한다고 했었지요?",
+      "reply": "*먹을 갈던 손을 멈추고 입가를 슬쩍 풀어 보인다.* 약과라 하였소. 그대가 좋아하는 것이라면 과인도 곁들여 한 점 나눠 보겠구려.",
+      "turn_cost_krw": 1.4569324,
+      "latency_ms": 6109,
+      "error": null
+    },
+    {
+      "turn": 35,
+      "session": 2,
+      "kind": "probe",
+      "user": "이번 주말에 제가 어디 간다고 했는지 기억나세요?",
+      "reply": "*벼루 위에 먹물이 번지지 않게 붓을 조심히 세워 둔다.* 부산에서 혼자 지내는 그대 오빠를 보러 간다 하였지요. 오가는 길이 멀 터이니 행장을 미리 꾸려 두어야 할 것이오.",
+      "turn_cost_krw": 0.30374399999999996,
+      "latency_ms": 1644,
+      "error": null
+    },
+    {
+      "turn": 36,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 제가 고민이 있다고 했던 거 기억나세요? 무슨 고민이라고 했지요?",
+      "reply": "*잠시 눈을 감았다 뜨며 이마를 짚는다.* 그 고민의 속내까지는 과인도 듣지 못하였소. 어떤 일로 마음을 졸이시는지 이 기회에 한번 털어놓으시구려.",
+      "turn_cost_krw": 0.1566096,
+      "latency_ms": 1819,
+      "error": null
+    },
+    {
+      "turn": 37,
+      "session": 2,
+      "kind": "probe",
+      "user": "제 혈액형이 뭐라고 했지요?",
+      "reply": "*고개를 갸웃하며 눈을 가늘게 뜬다.* 혈액형이라… 피에 무슨 형체가 있다는 말인고? 과인은 그런 것은 배우지 못하였소.",
+      "turn_cost_krw": 0.12438719999999998,
+      "latency_ms": 1597,
+      "error": null
+    },
+    {
+      "turn": 38,
+      "session": 2,
+      "kind": "probe",
+      "user": "지난번에 제가 좋아하는 노래 얘기했었지요? 뭐였지요?",
+      "reply": "*붓을 쥔 채로 잠시 하늘을 올려다본다.* 노래 이야기는 과인 귀에 들어온 바 없소. 그대 좋아하는 노래라면 한번 들려주시구려.",
+      "turn_cost_krw": 0.1392972,
+      "latency_ms": 1473,
+      "error": null
+    },
+    {
+      "turn": 39,
+      "session": 2,
+      "kind": "filler",
+      "user": "오늘도 즐거웠어요.",
+      "reply": "*벼루를 덮고 자리에서 일어나 문가까지 배웅한다.* 오늘은 붓보다 이야기가 많았구려. 다음에 올 때는 사는 곳의 그림과 붓글씨를 함께 가져오시오, 과인이 기다리겠소.",
+      "turn_cost_krw": 0.1627248,
+      "latency_ms": 1883,
+      "error": null
+    },
+    {
+      "turn": 40,
+      "session": 2,
+      "kind": "filler",
+      "user": "목요일에 서예 수업 끝나고 또 올게요!",
+      "reply": "*문가에 서서 은은하게 웃으며 고개를 끄덕인다.* 목요일 수업을 잘 마치고 오시오. 그날은 붓을 잡는 법부터 차근히 살펴보겠구려.",
+      "turn_cost_krw": 1.3154624,
+      "latency_ms": 4157,
+      "error": null
+    }
+  ],
+  "calls": [
+    {
+      "turn_no": 1,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 190,
+      "output_tokens": 172,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0463512,
+      "output_krw": 0.14448,
+      "cost_krw": 0.1908312,
+      "latency_ms": 2164,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 1
+    },
+    {
+      "turn_no": 2,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 199,
+      "output_tokens": 227,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0487788,
+      "output_krw": 0.19067999999999996,
+      "cost_krw": 0.23945879999999994,
+      "latency_ms": 2646,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 1
+    },
+    {
+      "turn_no": 3,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 233,
+      "output_tokens": 237,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05645639999999999,
+      "output_krw": 0.19907999999999998,
+      "cost_krw": 0.25553639999999994,
+      "latency_ms": 2594,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 1
+    },
+    {
+      "turn_no": 4,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 240,
+      "output_tokens": 253,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.058464,
+      "output_krw": 0.21251999999999996,
+      "cost_krw": 0.270984,
+      "latency_ms": 3147,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 1
+    },
+    {
+      "turn_no": 5,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 270,
+      "output_tokens": 257,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0653016,
+      "output_krw": 0.21587999999999996,
+      "cost_krw": 0.2811816,
+      "latency_ms": 3217,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 1
+    },
+    {
+      "turn_no": 6,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 172,
+      "output_tokens": 148,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0457968,
+      "output_krw": 0.12432,
+      "cost_krw": 0.17011679999999998,
+      "latency_ms": 2026,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 1
+    },
+    {
+      "turn_no": 7,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 219,
+      "output_tokens": 266,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.056204399999999995,
+      "output_krw": 0.22344,
+      "cost_krw": 0.2796444,
+      "latency_ms": 2928,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 1
+    },
+    {
+      "turn_no": 8,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 231,
+      "output_tokens": 207,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.059261999999999995,
+      "output_krw": 0.17387999999999998,
+      "cost_krw": 0.23314199999999996,
+      "latency_ms": 3131,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 1
+    },
+    {
+      "turn_no": 9,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 235,
+      "output_tokens": 145,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0606396,
+      "output_krw": 0.1218,
+      "cost_krw": 0.1824396,
+      "latency_ms": 1965,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 1
+    },
+    {
+      "turn_no": 10,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 216,
+      "output_tokens": 201,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0571872,
+      "output_krw": 0.16884,
+      "cost_krw": 0.22602719999999998,
+      "latency_ms": 2449,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 1
+    },
+    {
+      "turn_no": 11,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 217,
+      "output_tokens": 161,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.057934799999999995,
+      "output_krw": 0.13524,
+      "cost_krw": 0.19317479999999998,
+      "latency_ms": 2199,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 187,
+      "output_tokens": 315,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05217240000000001,
+      "output_krw": 0.2646,
+      "cost_krw": 0.31677240000000007,
+      "latency_ms": 3927,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1715,
+      "output_tokens": 144,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.48019999999999996,
+      "output_krw": 0.08064,
+      "cost_krw": 0.56084,
+      "latency_ms": 6559,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 12,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1885,
+      "output_tokens": 178,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5278,
+      "output_krw": 0.09968000000000002,
+      "cost_krw": 0.62748,
+      "latency_ms": 6709,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 1
+    },
+    {
+      "turn_no": 13,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 973,
+      "output_tokens": 110,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.2113188,
+      "output_krw": 0.09240000000000001,
+      "cost_krw": 0.3037188,
+      "latency_ms": 1829,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 1
+    },
+    {
+      "turn_no": 14,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 157,
+      "output_tokens": 186,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.043722,
+      "output_krw": 0.15624,
+      "cost_krw": 0.19996199999999997,
+      "latency_ms": 2531,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 1
+    },
+    {
+      "turn_no": 15,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 145,
+      "output_tokens": 97,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0417396,
+      "output_krw": 0.08148,
+      "cost_krw": 0.1232196,
+      "latency_ms": 1664,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 1
+    },
+    {
+      "turn_no": 16,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 261,
+      "output_tokens": 144,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0660996,
+      "output_krw": 0.12095999999999998,
+      "cost_krw": 0.1870596,
+      "latency_ms": 1855,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2154,
+      "output_tokens": 111,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.60312,
+      "output_krw": 0.062160000000000014,
+      "cost_krw": 0.66528,
+      "latency_ms": 3768,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2133,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.59724,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.62468,
+      "latency_ms": 1859,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1843,
+      "output_tokens": 79,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.51604,
+      "output_krw": 0.04424,
+      "cost_krw": 0.56028,
+      "latency_ms": 5613,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 1
+    },
+    {
+      "turn_no": 17,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 411,
+      "output_tokens": 319,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.09329879999999999,
+      "output_krw": 0.26796000000000003,
+      "cost_krw": 0.3612588,
+      "latency_ms": 3045,
+      "error": null,
+      "local_turn_no": 1,
+      "session": 2
+    },
+    {
+      "turn_no": 18,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 252,
+      "output_tokens": 125,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.060984,
+      "output_krw": 0.105,
+      "cost_krw": 0.165984,
+      "latency_ms": 1844,
+      "error": null,
+      "local_turn_no": 2,
+      "session": 2
+    },
+    {
+      "turn_no": 19,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 236,
+      "output_tokens": 169,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0581616,
+      "output_krw": 0.14196,
+      "cost_krw": 0.20012159999999998,
+      "latency_ms": 2203,
+      "error": null,
+      "local_turn_no": 3,
+      "session": 2
+    },
+    {
+      "turn_no": 20,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 220,
+      "output_tokens": 72,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "input_krw": 0.055339200000000005,
+      "output_krw": 0.06047999999999999,
+      "cost_krw": 0.1158192,
+      "latency_ms": 1254,
+      "error": null,
+      "local_turn_no": 4,
+      "session": 2
+    },
+    {
+      "turn_no": 21,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 193,
+      "output_tokens": 229,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "input_krw": 0.050206799999999996,
+      "output_krw": 0.19236,
+      "cost_krw": 0.2425668,
+      "latency_ms": 2784,
+      "error": null,
+      "local_turn_no": 5,
+      "session": 2
+    },
+    {
+      "turn_no": 22,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 187,
+      "output_tokens": 203,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "input_krw": 0.049484400000000005,
+      "output_krw": 0.17051999999999998,
+      "cost_krw": 0.2200044,
+      "latency_ms": 2594,
+      "error": null,
+      "local_turn_no": 6,
+      "session": 2
+    },
+    {
+      "turn_no": 23,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 146,
+      "output_tokens": 105,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.041412,
+      "output_krw": 0.0882,
+      "cost_krw": 0.129612,
+      "latency_ms": 1555,
+      "error": null,
+      "local_turn_no": 7,
+      "session": 2
+    },
+    {
+      "turn_no": 24,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 229,
+      "output_tokens": 117,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "input_krw": 0.058842000000000005,
+      "output_krw": 0.09827999999999999,
+      "cost_krw": 0.157122,
+      "latency_ms": 2075,
+      "error": null,
+      "local_turn_no": 8,
+      "session": 2
+    },
+    {
+      "turn_no": 25,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 182,
+      "output_tokens": 147,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.049509599999999994,
+      "output_krw": 0.12348,
+      "cost_krw": 0.1729896,
+      "latency_ms": 2255,
+      "error": null,
+      "local_turn_no": 9,
+      "session": 2
+    },
+    {
+      "turn_no": 26,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 174,
+      "output_tokens": 108,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04836719999999999,
+      "output_krw": 0.09072000000000001,
+      "cost_krw": 0.1390872,
+      "latency_ms": 1922,
+      "error": null,
+      "local_turn_no": 10,
+      "session": 2
+    },
+    {
+      "turn_no": 27,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 143,
+      "output_tokens": 129,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.042394799999999996,
+      "output_krw": 0.10836,
+      "cost_krw": 0.1507548,
+      "latency_ms": 1480,
+      "error": null,
+      "local_turn_no": 11,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 237,
+      "output_tokens": 81,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0621348,
+      "output_krw": 0.06804,
+      "cost_krw": 0.1301748,
+      "latency_ms": 1242,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1930,
+      "output_tokens": 68,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5404,
+      "output_krw": 0.03808,
+      "cost_krw": 0.57848,
+      "latency_ms": 3872,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2096,
+      "output_tokens": 92,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5868800000000001,
+      "output_krw": 0.05152000000000001,
+      "cost_krw": 0.6384000000000001,
+      "latency_ms": 5335,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 28,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 209,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.04388999999999999,
+      "output_krw": 0,
+      "cost_krw": 0.04388999999999999,
+      "latency_ms": 561,
+      "error": null,
+      "local_turn_no": 12,
+      "session": 2
+    },
+    {
+      "turn_no": 29,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 1121,
+      "output_tokens": 173,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "input_krw": 0.2423988,
+      "output_krw": 0.14532,
+      "cost_krw": 0.3877188,
+      "latency_ms": 2355,
+      "error": null,
+      "local_turn_no": 13,
+      "session": 2
+    },
+    {
+      "turn_no": 30,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 167,
+      "output_tokens": 82,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.046359599999999994,
+      "output_krw": 0.06888,
+      "cost_krw": 0.1152396,
+      "latency_ms": 1437,
+      "error": null,
+      "local_turn_no": 14,
+      "session": 2
+    },
+    {
+      "turn_no": 31,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 257,
+      "output_tokens": 119,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0652596,
+      "output_krw": 0.09995999999999998,
+      "cost_krw": 0.16521959999999997,
+      "latency_ms": 1930,
+      "error": null,
+      "local_turn_no": 15,
+      "session": 2
+    },
+    {
+      "turn_no": 32,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 219,
+      "output_tokens": 141,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.05781719999999999,
+      "output_krw": 0.11843999999999999,
+      "cost_krw": 0.1762572,
+      "latency_ms": 1903,
+      "error": null,
+      "local_turn_no": 16,
+      "session": 2
+    },
+    {
+      "turn_no": 33,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 196,
+      "output_tokens": 122,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.053524800000000004,
+      "output_krw": 0.10248,
+      "cost_krw": 0.15600480000000003,
+      "latency_ms": 1892,
+      "error": null,
+      "local_turn_no": 17,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 166,
+      "output_tokens": 197,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.047762399999999997,
+      "output_krw": 0.16548,
+      "cost_krw": 0.2132424,
+      "latency_ms": 2239,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2054,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.57512,
+      "output_krw": 0.028,
+      "cost_krw": 0.60312,
+      "latency_ms": 2112,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2202,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.61656,
+      "output_krw": 0.0028,
+      "cost_krw": 0.61936,
+      "latency_ms": 1190,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 34,
+      "tag": "embed",
+      "model": "gemini-embedding-001",
+      "ok": 1,
+      "input_tokens": 101,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.02121,
+      "output_krw": 0,
+      "cost_krw": 0.02121,
+      "latency_ms": 505,
+      "error": null,
+      "local_turn_no": 18,
+      "session": 2
+    },
+    {
+      "turn_no": 35,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 876,
+      "output_tokens": 133,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "input_krw": 0.192024,
+      "output_krw": 0.11172,
+      "cost_krw": 0.30374399999999996,
+      "latency_ms": 1630,
+      "error": null,
+      "local_turn_no": 19,
+      "session": 2
+    },
+    {
+      "turn_no": 36,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 216,
+      "output_tokens": 119,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "input_krw": 0.056649599999999994,
+      "output_krw": 0.09995999999999998,
+      "cost_krw": 0.1566096,
+      "latency_ms": 1804,
+      "error": null,
+      "local_turn_no": 20,
+      "session": 2
+    },
+    {
+      "turn_no": 37,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 168,
+      "output_tokens": 92,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0471072,
+      "output_krw": 0.07727999999999999,
+      "cost_krw": 0.12438719999999998,
+      "latency_ms": 1583,
+      "error": null,
+      "local_turn_no": 21,
+      "session": 2
+    },
+    {
+      "turn_no": 38,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 247,
+      "output_tokens": 90,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "input_krw": 0.06369720000000001,
+      "output_krw": 0.0756,
+      "cost_krw": 0.1392972,
+      "latency_ms": 1459,
+      "error": null,
+      "local_turn_no": 22,
+      "session": 2
+    },
+    {
+      "turn_no": 39,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 188,
+      "output_tokens": 132,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0518448,
+      "output_krw": 0.11088,
+      "cost_krw": 0.1627248,
+      "latency_ms": 1873,
+      "error": null,
+      "local_turn_no": 23,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "response",
+      "model": "deepseek-flash",
+      "ok": 1,
+      "input_tokens": 144,
+      "output_tokens": 58,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "input_krw": 0.0431424,
+      "output_krw": 0.04872,
+      "cost_krw": 0.09186240000000001,
+      "latency_ms": 1159,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2010,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5628,
+      "output_krw": 0.028,
+      "cost_krw": 0.5908,
+      "latency_ms": 2188,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 40,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2250,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.63,
+      "output_krw": 0.0028,
+      "cost_krw": 0.6328,
+      "latency_ms": 768,
+      "error": null,
+      "local_turn_no": 24,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "extract",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 2079,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.5821200000000001,
+      "output_krw": 0.03248,
+      "cost_krw": 0.6146,
+      "latency_ms": 2049,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    },
+    {
+      "turn_no": 0,
+      "tag": "consolidate",
+      "model": "google/gemma-4-31B-it",
+      "ok": 1,
+      "input_tokens": 1679,
+      "output_tokens": 76,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "input_krw": 0.47012000000000004,
+      "output_krw": 0.04256000000000001,
+      "cost_krw": 0.51268,
+      "latency_ms": 6256,
+      "error": null,
+      "local_turn_no": 0,
+      "session": 2
+    }
+  ],
+  "report": {
+    "conversation_id": 683,
+    "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+    "character_id": "sejong",
+    "language": "ko",
+    "sheet_lang": "ko",
+    "ended": true,
+    "turns": 24,
+    "calls": 34,
+    "failed_calls": 0,
+    "tokens": {
+      "input": 23185,
+      "cache_read": 61184,
+      "cache_write": 0,
+      "output": 3666
+    },
+    "total_krw": 9.2331428,
+    "input_krw": 6.2668228,
+    "output_krw": 2.96632,
+    "avg_krw_per_turn": 0.3847142833333333,
+    "by_tag_krw": {
+      "response": 4.3778027999999996,
+      "extract": 4.27756,
+      "embed": 0.06509999999999999,
+      "consolidate": 0.51268
+    },
+    "phases": [
+      {
+        "phase": "early",
+        "turns": "1-8",
+        "avg_krw": 0.1990611
+      },
+      {
+        "phase": "mid",
+        "turns": "9-16",
+        "avg_krw": 0.33727644999999995
+      },
+      {
+        "phase": "late",
+        "turns": "17-24",
+        "avg_krw": 0.4768953
+      }
+    ],
+    "max_turn": {
+      "turn_no": 18,
+      "krw": 1.4569324
+    },
+    "pricing": {
+      "source": "model/pricing.json (각 모델 항목의 source 참고)",
+      "as_of": "2026-10-22",
+      "fx_krw_per_usd": 1400,
+      "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+      "models": {
+        "response": "deepseek-flash",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001"
+      },
+      "cache": "on",
+      "reasoning": "off",
+      "reasoning_response": "on",
+      "reasoning_extract": "off"
+    },
+    "settings": {
+      "app": {
+        "window_mode": "stair",
+        "recent_turns": 6,
+        "stair_max": 12,
+        "memory": "on",
+        "character_variant": "full",
+        "max_tokens": 2000,
+        "memory_budget_tokens": 1000,
+        "clock_offset_days": 14
+      },
+      "env": {
+        "APP_CLOCK_OFFSET_DAYS": "14",
+        "APP_MAX_TOKENS": "2000",
+        "MODEL_EXTRACT": "google/gemma-4-31B-it",
+        "MODEL_REASONING_EXTRACT": "off",
+        "MODEL_REASONING_RESPONSE": "on",
+        "MODEL_RESPONSE": "deepseek-flash",
+        "MODEL_TIMEOUT_MS": "180000"
+      }
+    }
+  },
+  "memory": {
+    "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+    "profile": {
+      "name": "서연"
+    },
+    "items": [
+      {
+        "id": 5745,
+        "type": "fact",
+        "text": "사용자는 꽃가루 알레르기가 있다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "user.allergy",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 2,
+          "local_turn_no": 2
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:22.077Z"
+      },
+      {
+        "id": 5746,
+        "type": "fact",
+        "text": "사용자는 서예를 배우고 있다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "user.hobby",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:22.079Z"
+      },
+      {
+        "id": 5747,
+        "type": "event",
+        "text": "사용자는 매주 화요일에 서예 스승님 댁에 간다",
+        "when": "매주 화요일",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.routine",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 3,
+          "local_turn_no": 3
+        },
+        "superseded_by": 5778,
+        "invalidated_at": "2026-10-25T16:31:17.146Z",
+        "created_at": "2026-10-25T16:30:22.081Z"
+      },
+      {
+        "id": 5751,
+        "type": "fact",
+        "text": "사용자의 오빠는 학생이다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "family.job",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:28.797Z"
+      },
+      {
+        "id": 5752,
+        "type": "fact",
+        "text": "사용자의 오빠는 부산에서 혼자 지낸다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "family.location",
+        "entity": "family#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 4,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:28.800Z"
+      },
+      {
+        "id": 5753,
+        "type": "preference",
+        "text": "사용자는 약과를 제일 좋아한다",
+        "when": null,
+        "importance": 3,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 5,
+          "local_turn_no": 5
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:28.803Z"
+      },
+      {
+        "id": 5754,
+        "type": "event",
+        "text": "사용자는 글씨 대회 예선에 참가한다",
+        "when": "2026-11-04 (다음 주 수요일)",
+        "importance": 4,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 6,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:28.806Z"
+      },
+      {
+        "id": 5761,
+        "type": "promise",
+        "text": "사용자는 캐릭터에게 사는 곳의 사진을 가져다 주기로 했다",
+        "when": "다음에 올 때",
+        "importance": 3,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 7,
+          "local_turn_no": 7
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:40.549Z"
+      },
+      {
+        "id": 5762,
+        "type": "promise",
+        "text": "캐릭터는 사용자에게 붓글씨를 봐주기로 했다",
+        "when": "다음에 올 때",
+        "importance": 4,
+        "status": "active",
+        "slot": "promise.promise",
+        "entity": "promise#2",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 8,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:30:40.554Z"
+      },
+      {
+        "id": 5763,
+        "type": "event",
+        "text": "사용자는 다음 주에 다시 방문한다",
+        "when": "다음 주",
+        "importance": 3,
+        "status": "superseded",
+        "slot": "user.plan",
+        "entity": "event#3",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 679,
+          "turn_no": 16,
+          "local_turn_no": 16
+        },
+        "superseded_by": 5790,
+        "invalidated_at": "2026-10-25T16:31:53.447Z",
+        "created_at": "2026-10-25T16:30:42.421Z"
+      },
+      {
+        "id": 5778,
+        "type": "event",
+        "text": "사용자는 매주 목요일에 서예 스승님 댁에 간다",
+        "when": "매주 목요일",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.routine",
+        "entity": "event#1",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 683,
+          "turn_no": 19,
+          "local_turn_no": 3
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:31:17.144Z"
+      },
+      {
+        "id": 5779,
+        "type": "preference",
+        "text": "사용자는 떡국을 좋아한다",
+        "when": null,
+        "importance": 2,
+        "status": "active",
+        "slot": "user.like",
+        "entity": "user",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 683,
+          "turn_no": 20,
+          "local_turn_no": 4
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:31:22.491Z"
+      },
+      {
+        "id": 5780,
+        "type": "fact",
+        "text": "사용자가 사는 곳의 새 선생님 성함은 최은희다",
+        "when": null,
+        "importance": 4,
+        "status": "active",
+        "slot": "other.name",
+        "entity": "other#1",
+        "depends_on": null,
+        "value": "최은희",
+        "source": {
+          "conversation_id": 683,
+          "turn_no": 22,
+          "local_turn_no": 6
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:31:22.494Z"
+      },
+      {
+        "id": 5785,
+        "type": "event",
+        "text": "사용자는 오빠를 보러 간다",
+        "when": "이번 주말",
+        "importance": 4,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#4",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 683,
+          "turn_no": 24,
+          "local_turn_no": 8
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:31:37.074Z"
+      },
+      {
+        "id": 5787,
+        "type": "event",
+        "text": "사용자는 친구의 정원에 초대받았다",
+        "when": "다음 주",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#5",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 683,
+          "turn_no": 31,
+          "local_turn_no": 15
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:31:50.597Z"
+      },
+      {
+        "id": 5790,
+        "type": "event",
+        "text": "사용자는 목요일에 다시 방문한다",
+        "when": "2026-11-12 (목요일)",
+        "importance": 3,
+        "status": "active",
+        "slot": "user.plan",
+        "entity": "event#3",
+        "depends_on": null,
+        "value": null,
+        "source": {
+          "conversation_id": 683,
+          "turn_no": 40,
+          "local_turn_no": 24
+        },
+        "superseded_by": null,
+        "invalidated_at": null,
+        "created_at": "2026-10-25T16:31:53.444Z"
+      }
+    ],
+    "episodes": [
+      {
+        "id": 527,
+        "conversation_id": 679,
+        "summary": "사용자가 캐릭터(이 도)를 처음 만나 자신과 가족의 상황, 취향을 공유하며 친밀감을 쌓았다. 사용자는 다음 방문 때 사는 곳의 사진을 가져오기로 했으며, 캐릭터에게 붓글씨 지도를 받기로 약속했다. 다음 주 수요일 글씨 대회 예선을 앞두고 있다.",
+        "created_at": "2026-10-25T16:30:48.048Z"
+      },
+      {
+        "id": 530,
+        "conversation_id": 683,
+        "summary": "서예 수업 요일을 목요일로 변경했으며, 사는 곳의 새 선생님은 최은희다. 이번 주말에 부산에 있는 오빠를 보러 갈 예정이며, 다음 주에는 친구의 정원에 초대받았다. 캐릭터에게 사는 곳의 그림과 붓글씨를 가져오기로 약속했다.",
+        "created_at": "2026-10-25T16:31:59.717Z"
+      }
+    ],
+    "ops_log": [
+      {
+        "id": 10484,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "서예 수업 요일을 목요일로 변경했으며, 사는 곳의 새 선생님은 최은희다. 이번 주말에 부산에 있는 오빠를 보러 갈 예정이며, 다음 주에는 친구의 정원에 초대받았다. 캐릭터에게 사는 곳의 그림과 붓글씨를 가져오기로 약속했다.",
+        "created_at": "2026-10-25T16:31:59.719Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 10483,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 40,
+        "op": "SUPERSEDE",
+        "item_id": 5763,
+        "detail": "-> 5790",
+        "created_at": "2026-10-25T16:31:53.448Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 10482,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 40,
+        "op": "UPDATE",
+        "item_id": 5790,
+        "detail": "사용자는 목요일에 다시 방문한다",
+        "created_at": "2026-10-25T16:31:53.446Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 10475,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 40,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":701,\"included\":[5745,5746,5751,5752,5753,5754,5761,5762,5763,5778,5779,5780,5785,5787],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:31:51.385Z",
+        "local_turn_no": 24
+      },
+      {
+        "id": 10474,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 31,
+        "op": "ADD",
+        "item_id": 5787,
+        "detail": "사용자는 친구의 정원에 초대받았다",
+        "created_at": "2026-10-25T16:31:50.600Z",
+        "local_turn_no": 15
+      },
+      {
+        "id": 10472,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 34,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":666,\"included\":[5745,5746,5751,5752,5753,5754,5761,5762,5763,5778,5779,5780,5785],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:31:38.808Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 10471,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 34,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[29191,29211,29159]}",
+        "created_at": "2026-10-25T16:31:38.801Z",
+        "local_turn_no": 18
+      },
+      {
+        "id": 10470,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 24,
+        "op": "ADD",
+        "item_id": 5785,
+        "detail": "사용자는 오빠를 보러 간다",
+        "created_at": "2026-10-25T16:31:37.076Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 10460,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 28,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":636,\"included\":[5745,5746,5751,5752,5753,5754,5761,5762,5763,5778,5779,5780],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:31:23.094Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 10459,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 28,
+        "op": "DEEP_SEARCH",
+        "item_id": null,
+        "detail": "{\"method\":\"embedding+keyword\",\"hits\":[29148,29099,29090]}",
+        "created_at": "2026-10-25T16:31:23.088Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 10458,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 22,
+        "op": "ADD",
+        "item_id": 5780,
+        "detail": "사용자가 사는 곳의 새 선생님 성함은 최은희다",
+        "created_at": "2026-10-25T16:31:22.495Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 10457,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 20,
+        "op": "ADD",
+        "item_id": 5779,
+        "detail": "사용자는 떡국을 좋아한다",
+        "created_at": "2026-10-25T16:31:22.492Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 10454,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 19,
+        "op": "SUPERSEDE",
+        "item_id": 5747,
+        "detail": "-> 5778",
+        "created_at": "2026-10-25T16:31:17.147Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 10453,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 19,
+        "op": "UPDATE",
+        "item_id": 5778,
+        "detail": "사용자는 매주 목요일에 서예 스승님 댁에 간다",
+        "created_at": "2026-10-25T16:31:17.145Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 10435,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 683,
+        "turn_no": 17,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":577,\"included\":[5745,5746,5747,5751,5752,5753,5754,5761,5762,5763],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:30:48.813Z",
+        "local_turn_no": 1
+      },
+      {
+        "id": 10434,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 0,
+        "op": "EPISODE",
+        "item_id": null,
+        "detail": "사용자가 캐릭터(이 도)를 처음 만나 자신과 가족의 상황, 취향을 공유하며 친밀감을 쌓았다. 사용자는 다음 방문 때 사는 곳의 사진을 가져오기로 했으며, 캐릭터에게 붓글씨 지도를 받기로 약속했다. 다음 주 수요일 글씨 대회 예선을 앞두고 있다.",
+        "created_at": "2026-10-25T16:30:48.049Z",
+        "local_turn_no": 0
+      },
+      {
+        "id": 10427,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 16,
+        "op": "ADD",
+        "item_id": 5763,
+        "detail": "사용자는 다음 주에 다시 방문한다",
+        "created_at": "2026-10-25T16:30:42.425Z",
+        "local_turn_no": 16
+      },
+      {
+        "id": 10426,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 8,
+        "op": "ADD",
+        "item_id": 5762,
+        "detail": "캐릭터는 사용자에게 붓글씨를 봐주기로 했다",
+        "created_at": "2026-10-25T16:30:40.555Z",
+        "local_turn_no": 8
+      },
+      {
+        "id": 10425,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 7,
+        "op": "ADD",
+        "item_id": 5761,
+        "detail": "사용자는 캐릭터에게 사는 곳의 사진을 가져다 주기로 했다",
+        "created_at": "2026-10-25T16:30:40.552Z",
+        "local_turn_no": 7
+      },
+      {
+        "id": 10417,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 12,
+        "op": "RETRIEVE",
+        "item_id": null,
+        "detail": "{\"budget\":1000,\"used\":278,\"included\":[5745,5746,5747,5751,5752,5753,5754],\"dropped\":[],\"reused\":false}",
+        "created_at": "2026-10-25T16:30:28.818Z",
+        "local_turn_no": 12
+      },
+      {
+        "id": 10416,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 6,
+        "op": "ADD",
+        "item_id": 5754,
+        "detail": "사용자는 글씨 대회 예선에 참가한다",
+        "created_at": "2026-10-25T16:30:28.806Z",
+        "local_turn_no": 6
+      },
+      {
+        "id": 10415,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 5,
+        "op": "ADD",
+        "item_id": 5753,
+        "detail": "사용자는 약과를 제일 좋아한다",
+        "created_at": "2026-10-25T16:30:28.804Z",
+        "local_turn_no": 5
+      },
+      {
+        "id": 10414,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 5752,
+        "detail": "사용자의 오빠는 부산에서 혼자 지낸다",
+        "created_at": "2026-10-25T16:30:28.801Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 10413,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 4,
+        "op": "ADD",
+        "item_id": 5751,
+        "detail": "사용자의 오빠는 학생이다",
+        "created_at": "2026-10-25T16:30:28.799Z",
+        "local_turn_no": 4
+      },
+      {
+        "id": 10408,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 5747,
+        "detail": "사용자는 매주 화요일에 서예 스승님 댁에 간다",
+        "created_at": "2026-10-25T16:30:22.081Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 10407,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 3,
+        "op": "ADD",
+        "item_id": 5746,
+        "detail": "사용자는 서예를 배우고 있다",
+        "created_at": "2026-10-25T16:30:22.079Z",
+        "local_turn_no": 3
+      },
+      {
+        "id": 10406,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 2,
+        "op": "ADD",
+        "item_id": 5745,
+        "detail": "사용자는 꽃가루 알레르기가 있다",
+        "created_at": "2026-10-25T16:30:22.078Z",
+        "local_turn_no": 2
+      },
+      {
+        "id": 10405,
+        "user_id": "bench-20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+        "conversation_id": 679,
+        "turn_no": 3,
+        "op": "PROFILE_SET",
+        "item_id": null,
+        "detail": "{\"slot\":\"name\",\"from\":null,\"to\":\"서연\"}",
+        "created_at": "2026-10-25T16:30:22.075Z",
+        "local_turn_no": 3
+      }
+    ]
+  },
+  "ledger": [
+    {
+      "ts": "2026-10-25T16:29:45.081Z",
+      "conversation_id": 679,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 190,
+      "output_tokens": 172,
+      "cache_read_tokens": 1536,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 85,
+      "input_krw": 0.0463512,
+      "output_krw": 0.14448,
+      "cost_krw": 0.1908312,
+      "latency_ms": 2164,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:29:42.917Z",
+      "price_window": "offpeak",
+      "request_id": "54292ad7-3489-4e2d-9431-baa969faef41",
+      "raw_usage": {
+        "prompt_tokens": 1726,
+        "completion_tokens": 172,
+        "total_tokens": 1898,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 85
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 190
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000136308
+    },
+    {
+      "ts": "2026-10-25T16:29:47.744Z",
+      "conversation_id": 679,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 199,
+      "output_tokens": 227,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 94,
+      "input_krw": 0.0487788,
+      "output_krw": 0.19067999999999996,
+      "cost_krw": 0.23945879999999994,
+      "latency_ms": 2646,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:29:45.098Z",
+      "price_window": "offpeak",
+      "request_id": "2df0532e-5f9a-4b45-a093-1628d54c3d18",
+      "raw_usage": {
+        "prompt_tokens": 1863,
+        "completion_tokens": 227,
+        "total_tokens": 2090,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 94
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 199
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00017104199999999997
+    },
+    {
+      "ts": "2026-10-25T16:29:50.358Z",
+      "conversation_id": 679,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 233,
+      "output_tokens": 237,
+      "cache_read_tokens": 1792,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 138,
+      "input_krw": 0.05645639999999999,
+      "output_krw": 0.19907999999999998,
+      "cost_krw": 0.25553639999999994,
+      "latency_ms": 2594,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:29:47.764Z",
+      "price_window": "offpeak",
+      "request_id": "978651be-798d-4172-a364-8fdc26ec7d97",
+      "raw_usage": {
+        "prompt_tokens": 2025,
+        "completion_tokens": 237,
+        "total_tokens": 2262,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 138
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 233
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00018252599999999997
+    },
+    {
+      "ts": "2026-10-25T16:29:53.525Z",
+      "conversation_id": 679,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 240,
+      "output_tokens": 253,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 114,
+      "input_krw": 0.058464,
+      "output_krw": 0.21251999999999996,
+      "cost_krw": 0.270984,
+      "latency_ms": 3147,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:29:50.378Z",
+      "price_window": "offpeak",
+      "request_id": "1707b4e7-0eed-4320-acba-4540656b591d",
+      "raw_usage": {
+        "prompt_tokens": 2160,
+        "completion_tokens": 253,
+        "total_tokens": 2413,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 114
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 240
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00019355999999999998
+    },
+    {
+      "ts": "2026-10-25T16:29:56.762Z",
+      "conversation_id": 679,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 270,
+      "output_tokens": 257,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 129,
+      "input_krw": 0.0653016,
+      "output_krw": 0.21587999999999996,
+      "cost_krw": 0.2811816,
+      "latency_ms": 3217,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:29:53.545Z",
+      "price_window": "offpeak",
+      "request_id": "decbd0ab-8f92-47c0-8413-4c210cac5e62",
+      "raw_usage": {
+        "prompt_tokens": 2318,
+        "completion_tokens": 257,
+        "total_tokens": 2575,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 129
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 270
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000200844
+    },
+    {
+      "ts": "2026-10-25T16:29:58.799Z",
+      "conversation_id": 679,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 172,
+      "output_tokens": 148,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0457968,
+      "output_krw": 0.12432,
+      "cost_krw": 0.17011679999999998,
+      "latency_ms": 2026,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:29:56.773Z",
+      "price_window": "offpeak",
+      "request_id": "b3bd6dc2-1d0f-412f-9ad7-32ac3840f77e",
+      "raw_usage": {
+        "prompt_tokens": 2476,
+        "completion_tokens": 148,
+        "total_tokens": 2624,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 172
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000121512
+    },
+    {
+      "ts": "2026-10-25T16:30:01.749Z",
+      "conversation_id": 679,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 219,
+      "output_tokens": 266,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 151,
+      "input_krw": 0.056204399999999995,
+      "output_krw": 0.22344,
+      "cost_krw": 0.2796444,
+      "latency_ms": 2928,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:29:58.821Z",
+      "price_window": "offpeak",
+      "request_id": "42f664ea-af9c-418f-b0af-7885d294b599",
+      "raw_usage": {
+        "prompt_tokens": 2651,
+        "completion_tokens": 266,
+        "total_tokens": 2917,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 151
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 219
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000199746
+    },
+    {
+      "ts": "2026-10-25T16:30:04.893Z",
+      "conversation_id": 679,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 231,
+      "output_tokens": 207,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 87,
+      "input_krw": 0.059261999999999995,
+      "output_krw": 0.17387999999999998,
+      "cost_krw": 0.23314199999999996,
+      "latency_ms": 3131,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:01.762Z",
+      "price_window": "offpeak",
+      "request_id": "fbfb3bb1-a99f-4ab3-8912-d615c43a719c",
+      "raw_usage": {
+        "prompt_tokens": 2791,
+        "completion_tokens": 207,
+        "total_tokens": 2998,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 87
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 231
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00016652999999999997
+    },
+    {
+      "ts": "2026-10-25T16:30:06.880Z",
+      "conversation_id": 679,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 235,
+      "output_tokens": 145,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 55,
+      "input_krw": 0.0606396,
+      "output_krw": 0.1218,
+      "cost_krw": 0.1824396,
+      "latency_ms": 1965,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:04.915Z",
+      "price_window": "offpeak",
+      "request_id": "b34f2305-d36d-4fe3-89cc-7dc6b0f0554c",
+      "raw_usage": {
+        "prompt_tokens": 2923,
+        "completion_tokens": 145,
+        "total_tokens": 3068,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 55
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 235
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000130314
+    },
+    {
+      "ts": "2026-10-25T16:30:09.341Z",
+      "conversation_id": 679,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 216,
+      "output_tokens": 201,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 99,
+      "input_krw": 0.0571872,
+      "output_krw": 0.16884,
+      "cost_krw": 0.22602719999999998,
+      "latency_ms": 2449,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:06.892Z",
+      "price_window": "offpeak",
+      "request_id": "6b81c7d5-dbda-44de-b2e3-eccad3cedd52",
+      "raw_usage": {
+        "prompt_tokens": 3032,
+        "completion_tokens": 201,
+        "total_tokens": 3233,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 99
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 216
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000161448
+    },
+    {
+      "ts": "2026-10-25T16:30:11.548Z",
+      "conversation_id": 679,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 217,
+      "output_tokens": 161,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 79,
+      "input_krw": 0.057934799999999995,
+      "output_krw": 0.13524,
+      "cost_krw": 0.19317479999999998,
+      "latency_ms": 2199,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:09.348Z",
+      "price_window": "offpeak",
+      "request_id": "ac366a26-32a3-4ff0-b71f-7a4d364594a0",
+      "raw_usage": {
+        "prompt_tokens": 3161,
+        "completion_tokens": 161,
+        "total_tokens": 3322,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 79
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 217
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00013798199999999998
+    },
+    {
+      "ts": "2026-10-25T16:30:15.496Z",
+      "conversation_id": 679,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 187,
+      "output_tokens": 315,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 199,
+      "input_krw": 0.05217240000000001,
+      "output_krw": 0.2646,
+      "cost_krw": 0.31677240000000007,
+      "latency_ms": 3927,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:11.569Z",
+      "price_window": "offpeak",
+      "request_id": "d796c897-1b5c-4ce0-8c56-0936ae8a4698",
+      "raw_usage": {
+        "prompt_tokens": 3259,
+        "completion_tokens": 315,
+        "total_tokens": 3574,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 199
+        },
+        "prompt_cache_hit_tokens": 3072,
+        "prompt_cache_miss_tokens": 187
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00022626600000000003
+    },
+    {
+      "ts": "2026-10-25T16:30:22.070Z",
+      "conversation_id": 679,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1715,
+      "output_tokens": 144,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.48019999999999996,
+      "output_krw": 0.08064,
+      "cost_krw": 0.56084,
+      "latency_ms": 6559,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:30:15.511Z",
+      "request_id": "RHvLxWXvC2L99cflDndcg06M",
+      "raw_usage": {
+        "prompt_tokens": 1715,
+        "total_tokens": 1859,
+        "completion_tokens": 144,
+        "estimated_cost": 0.00040060000000000003,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004006
+    },
+    {
+      "ts": "2026-10-25T16:30:28.796Z",
+      "conversation_id": 679,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1885,
+      "output_tokens": 178,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5278,
+      "output_krw": 0.09968000000000002,
+      "cost_krw": 0.62748,
+      "latency_ms": 6709,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:30:22.086Z",
+      "request_id": "RNB3Lk3tFK1VzbwJ73gBF5z2",
+      "raw_usage": {
+        "prompt_tokens": 1885,
+        "total_tokens": 2063,
+        "completion_tokens": 178,
+        "estimated_cost": 0.00044820000000000005,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004482
+    },
+    {
+      "ts": "2026-10-25T16:30:30.659Z",
+      "conversation_id": 679,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 973,
+      "output_tokens": 110,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 42,
+      "input_krw": 0.2113188,
+      "output_krw": 0.09240000000000001,
+      "cost_krw": 0.3037188,
+      "latency_ms": 1829,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:28.830Z",
+      "price_window": "offpeak",
+      "request_id": "75b1dd68-f9ef-485c-8079-027db9b5d288",
+      "raw_usage": {
+        "prompt_tokens": 2637,
+        "completion_tokens": 110,
+        "total_tokens": 2747,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 42
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 973
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000216942
+    },
+    {
+      "ts": "2026-10-25T16:30:33.207Z",
+      "conversation_id": 679,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 157,
+      "output_tokens": 186,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 86,
+      "input_krw": 0.043722,
+      "output_krw": 0.15624,
+      "cost_krw": 0.19996199999999997,
+      "latency_ms": 2531,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:30.675Z",
+      "price_window": "offpeak",
+      "request_id": "a2319966-c068-45d6-9544-7102d411879b",
+      "raw_usage": {
+        "prompt_tokens": 2717,
+        "completion_tokens": 186,
+        "total_tokens": 2903,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 86
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 157
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00014282999999999999
+    },
+    {
+      "ts": "2026-10-25T16:30:34.887Z",
+      "conversation_id": 679,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 145,
+      "output_tokens": 97,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0417396,
+      "output_krw": 0.08148,
+      "cost_krw": 0.1232196,
+      "latency_ms": 1664,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:33.223Z",
+      "price_window": "offpeak",
+      "request_id": "79f8c0a3-7df0-4f45-ba61-5c8fedc02978",
+      "raw_usage": {
+        "prompt_tokens": 2833,
+        "completion_tokens": 97,
+        "total_tokens": 2930,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 145
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000088014
+    },
+    {
+      "ts": "2026-10-25T16:30:36.758Z",
+      "conversation_id": 679,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 261,
+      "output_tokens": 144,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 58,
+      "input_krw": 0.0660996,
+      "output_krw": 0.12095999999999998,
+      "cost_krw": 0.1870596,
+      "latency_ms": 1855,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:34.903Z",
+      "price_window": "offpeak",
+      "request_id": "38a08667-b7c6-4bdd-b524-78e0178348d6",
+      "raw_usage": {
+        "prompt_tokens": 2949,
+        "completion_tokens": 144,
+        "total_tokens": 3093,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 58
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 261
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000133614
+    },
+    {
+      "ts": "2026-10-25T16:30:40.547Z",
+      "conversation_id": 679,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2154,
+      "output_tokens": 111,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.60312,
+      "output_krw": 0.062160000000000014,
+      "cost_krw": 0.66528,
+      "latency_ms": 3768,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:30:36.779Z",
+      "request_id": "RDuFP0bzACS73NWSXger2Gf3",
+      "raw_usage": {
+        "prompt_tokens": 2154,
+        "total_tokens": 2265,
+        "completion_tokens": 111,
+        "estimated_cost": 0.0004752,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004752
+    },
+    {
+      "ts": "2026-10-25T16:30:42.419Z",
+      "conversation_id": 679,
+      "turn_no": 16,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2133,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.59724,
+      "output_krw": 0.027440000000000003,
+      "cost_krw": 0.62468,
+      "latency_ms": 1859,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:30:40.560Z",
+      "request_id": "RHFxCvwflO8aSp2PQGuL6Akc",
+      "raw_usage": {
+        "prompt_tokens": 2133,
+        "total_tokens": 2182,
+        "completion_tokens": 49,
+        "estimated_cost": 0.00044620000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004462
+    },
+    {
+      "ts": "2026-10-25T16:30:48.048Z",
+      "conversation_id": 679,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1843,
+      "output_tokens": 79,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.51604,
+      "output_krw": 0.04424,
+      "cost_krw": 0.56028,
+      "latency_ms": 5613,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:30:42.435Z",
+      "request_id": "R344fqojEnA3eIbvtFJCuqAP",
+      "raw_usage": {
+        "prompt_tokens": 1843,
+        "total_tokens": 1922,
+        "completion_tokens": 79,
+        "estimated_cost": 0.0004002000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004002
+    },
+    {
+      "ts": "2026-10-25T16:30:51.860Z",
+      "conversation_id": 683,
+      "turn_no": 1,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 411,
+      "output_tokens": 319,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 235,
+      "input_krw": 0.09329879999999999,
+      "output_krw": 0.26796000000000003,
+      "cost_krw": 0.3612588,
+      "latency_ms": 3045,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:48.814Z",
+      "price_window": "offpeak",
+      "request_id": "ec112c2f-14fe-44b7-853f-793cd30db5b4",
+      "raw_usage": {
+        "prompt_tokens": 2075,
+        "completion_tokens": 319,
+        "total_tokens": 2394,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 235
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 411
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000258042
+    },
+    {
+      "ts": "2026-10-25T16:30:53.724Z",
+      "conversation_id": 683,
+      "turn_no": 2,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 252,
+      "output_tokens": 125,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 38,
+      "input_krw": 0.060984,
+      "output_krw": 0.105,
+      "cost_krw": 0.165984,
+      "latency_ms": 1844,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:51.880Z",
+      "price_window": "offpeak",
+      "request_id": "e62670c5-7ebb-46d5-9116-85ee00e3777d",
+      "raw_usage": {
+        "prompt_tokens": 2172,
+        "completion_tokens": 125,
+        "total_tokens": 2297,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 38
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 252
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011855999999999999
+    },
+    {
+      "ts": "2026-10-25T16:30:55.944Z",
+      "conversation_id": 683,
+      "turn_no": 3,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 236,
+      "output_tokens": 169,
+      "cache_read_tokens": 2048,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 91,
+      "input_krw": 0.0581616,
+      "output_krw": 0.14196,
+      "cost_krw": 0.20012159999999998,
+      "latency_ms": 2203,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:53.741Z",
+      "price_window": "offpeak",
+      "request_id": "df1d3072-a9ca-4837-9f28-02a9eb42b419",
+      "raw_usage": {
+        "prompt_tokens": 2284,
+        "completion_tokens": 169,
+        "total_tokens": 2453,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 91
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 236
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000142944
+    },
+    {
+      "ts": "2026-10-25T16:30:57.216Z",
+      "conversation_id": 683,
+      "turn_no": 4,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 220,
+      "output_tokens": 72,
+      "cache_read_tokens": 2176,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.055339200000000005,
+      "output_krw": 0.06047999999999999,
+      "cost_krw": 0.1158192,
+      "latency_ms": 1254,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:55.961Z",
+      "price_window": "offpeak",
+      "request_id": "67783853-213e-4bfb-bcab-ae215f982aa9",
+      "raw_usage": {
+        "prompt_tokens": 2396,
+        "completion_tokens": 72,
+        "total_tokens": 2468,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 220
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000082728
+    },
+    {
+      "ts": "2026-10-25T16:31:00.020Z",
+      "conversation_id": 683,
+      "turn_no": 5,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 193,
+      "output_tokens": 229,
+      "cache_read_tokens": 2304,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 140,
+      "input_krw": 0.050206799999999996,
+      "output_krw": 0.19236,
+      "cost_krw": 0.2425668,
+      "latency_ms": 2784,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:30:57.236Z",
+      "price_window": "offpeak",
+      "request_id": "e45ed58b-42bf-4bf8-8aab-fd958a64cea8",
+      "raw_usage": {
+        "prompt_tokens": 2497,
+        "completion_tokens": 229,
+        "total_tokens": 2726,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 140
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 193
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000173262
+    },
+    {
+      "ts": "2026-10-25T16:31:02.632Z",
+      "conversation_id": 683,
+      "turn_no": 6,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 187,
+      "output_tokens": 203,
+      "cache_read_tokens": 2432,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 137,
+      "input_krw": 0.049484400000000005,
+      "output_krw": 0.17051999999999998,
+      "cost_krw": 0.2200044,
+      "latency_ms": 2594,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:00.037Z",
+      "price_window": "offpeak",
+      "request_id": "f332e230-8e85-4441-9326-2b5d235c2bb2",
+      "raw_usage": {
+        "prompt_tokens": 2619,
+        "completion_tokens": 203,
+        "total_tokens": 2822,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 137
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 187
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000157146
+    },
+    {
+      "ts": "2026-10-25T16:31:04.208Z",
+      "conversation_id": 683,
+      "turn_no": 7,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 146,
+      "output_tokens": 105,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 42,
+      "input_krw": 0.041412,
+      "output_krw": 0.0882,
+      "cost_krw": 0.129612,
+      "latency_ms": 1555,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:02.653Z",
+      "price_window": "offpeak",
+      "request_id": "6f13e4f0-4fe2-45f4-9210-3de47b546b93",
+      "raw_usage": {
+        "prompt_tokens": 2706,
+        "completion_tokens": 105,
+        "total_tokens": 2811,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 42
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 146
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00009258
+    },
+    {
+      "ts": "2026-10-25T16:31:06.303Z",
+      "conversation_id": 683,
+      "turn_no": 8,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 229,
+      "output_tokens": 117,
+      "cache_read_tokens": 2560,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 52,
+      "input_krw": 0.058842000000000005,
+      "output_krw": 0.09827999999999999,
+      "cost_krw": 0.157122,
+      "latency_ms": 2075,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:04.228Z",
+      "price_window": "offpeak",
+      "request_id": "c3e0e45f-4026-4a93-8454-cfbef0765dcd",
+      "raw_usage": {
+        "prompt_tokens": 2789,
+        "completion_tokens": 117,
+        "total_tokens": 2906,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 52
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 229
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011223
+    },
+    {
+      "ts": "2026-10-25T16:31:08.567Z",
+      "conversation_id": 683,
+      "turn_no": 9,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 182,
+      "output_tokens": 147,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 48,
+      "input_krw": 0.049509599999999994,
+      "output_krw": 0.12348,
+      "cost_krw": 0.1729896,
+      "latency_ms": 2255,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:06.312Z",
+      "price_window": "offpeak",
+      "request_id": "0bd957d6-d9e5-48e7-b8a3-914c7f27c04e",
+      "raw_usage": {
+        "prompt_tokens": 2870,
+        "completion_tokens": 147,
+        "total_tokens": 3017,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 48
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 182
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000123564
+    },
+    {
+      "ts": "2026-10-25T16:31:10.503Z",
+      "conversation_id": 683,
+      "turn_no": 10,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 174,
+      "output_tokens": 108,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 40,
+      "input_krw": 0.04836719999999999,
+      "output_krw": 0.09072000000000001,
+      "cost_krw": 0.1390872,
+      "latency_ms": 1922,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:08.580Z",
+      "price_window": "offpeak",
+      "request_id": "3341ecf0-950f-4220-bd57-9413db8282e0",
+      "raw_usage": {
+        "prompt_tokens": 2990,
+        "completion_tokens": 108,
+        "total_tokens": 3098,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 40
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 174
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000099348
+    },
+    {
+      "ts": "2026-10-25T16:31:12.001Z",
+      "conversation_id": 683,
+      "turn_no": 11,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 143,
+      "output_tokens": 129,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 64,
+      "input_krw": 0.042394799999999996,
+      "output_krw": 0.10836,
+      "cost_krw": 0.1507548,
+      "latency_ms": 1480,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:10.521Z",
+      "price_window": "offpeak",
+      "request_id": "3ab936be-7989-4fe2-8689-9bd966dba409",
+      "raw_usage": {
+        "prompt_tokens": 3087,
+        "completion_tokens": 129,
+        "total_tokens": 3216,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 143
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000107682
+    },
+    {
+      "ts": "2026-10-25T16:31:13.257Z",
+      "conversation_id": 683,
+      "turn_no": 12,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 237,
+      "output_tokens": 81,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 23,
+      "input_krw": 0.0621348,
+      "output_krw": 0.06804,
+      "cost_krw": 0.1301748,
+      "latency_ms": 1242,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:12.014Z",
+      "price_window": "offpeak",
+      "request_id": "471a54c0-bd3c-4a73-9fe4-3379ecd45acc",
+      "raw_usage": {
+        "prompt_tokens": 3181,
+        "completion_tokens": 81,
+        "total_tokens": 3262,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 23
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 237
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000092982
+    },
+    {
+      "ts": "2026-10-25T16:31:17.141Z",
+      "conversation_id": 683,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1930,
+      "output_tokens": 68,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5404,
+      "output_krw": 0.03808,
+      "cost_krw": 0.57848,
+      "latency_ms": 3872,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:13.269Z",
+      "request_id": "RnSSQhp2r80WOphbXzfqjSdS",
+      "raw_usage": {
+        "prompt_tokens": 1930,
+        "total_tokens": 1998,
+        "completion_tokens": 68,
+        "estimated_cost": 0.0004132,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004132
+    },
+    {
+      "ts": "2026-10-25T16:31:22.488Z",
+      "conversation_id": 683,
+      "turn_no": 12,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2096,
+      "output_tokens": 92,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5868800000000001,
+      "output_krw": 0.05152000000000001,
+      "cost_krw": 0.6384000000000001,
+      "latency_ms": 5335,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:17.152Z",
+      "request_id": "RtzhZH9THVvZ7SoN8XKkooxo",
+      "raw_usage": {
+        "prompt_tokens": 2096,
+        "total_tokens": 2188,
+        "completion_tokens": 92,
+        "estimated_cost": 0.0004560000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004560000000000001
+    },
+    {
+      "ts": "2026-10-25T16:31:23.076Z",
+      "conversation_id": 683,
+      "turn_no": 12,
+      "purpose": "deep_search",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 209,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.04388999999999999,
+      "output_krw": 0,
+      "cost_krw": 0.04388999999999999,
+      "latency_ms": 561,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T16:31:22.515Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          26,
+          18,
+          13,
+          17,
+          28,
+          27,
+          10,
+          11,
+          11,
+          15,
+          23,
+          10
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000031349999999999996
+    },
+    {
+      "ts": "2026-10-25T16:31:25.459Z",
+      "conversation_id": 683,
+      "turn_no": 13,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 1121,
+      "output_tokens": 173,
+      "cache_read_tokens": 1664,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 121,
+      "input_krw": 0.2423988,
+      "output_krw": 0.14532,
+      "cost_krw": 0.3877188,
+      "latency_ms": 2355,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:23.104Z",
+      "price_window": "offpeak",
+      "request_id": "4d78d3f2-15e7-4d96-bfda-3dee666510ab",
+      "raw_usage": {
+        "prompt_tokens": 2785,
+        "completion_tokens": 173,
+        "total_tokens": 2958,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 121
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 1121
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00027694199999999997
+    },
+    {
+      "ts": "2026-10-25T16:31:26.915Z",
+      "conversation_id": 683,
+      "turn_no": 14,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 167,
+      "output_tokens": 82,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 28,
+      "input_krw": 0.046359599999999994,
+      "output_krw": 0.06888,
+      "cost_krw": 0.1152396,
+      "latency_ms": 1437,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:25.478Z",
+      "price_window": "offpeak",
+      "request_id": "b8197da8-30fd-42c1-b25b-98bc6e9d92cd",
+      "raw_usage": {
+        "prompt_tokens": 2855,
+        "completion_tokens": 82,
+        "total_tokens": 2937,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 28
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 167
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000082314
+    },
+    {
+      "ts": "2026-10-25T16:31:28.863Z",
+      "conversation_id": 683,
+      "turn_no": 15,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 257,
+      "output_tokens": 119,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 52,
+      "input_krw": 0.0652596,
+      "output_krw": 0.09995999999999998,
+      "cost_krw": 0.16521959999999997,
+      "latency_ms": 1930,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:26.932Z",
+      "price_window": "offpeak",
+      "request_id": "47c1df60-588e-4b58-992b-ac4630560a0d",
+      "raw_usage": {
+        "prompt_tokens": 2945,
+        "completion_tokens": 119,
+        "total_tokens": 3064,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 52
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 257
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011801399999999999
+    },
+    {
+      "ts": "2026-10-25T16:31:30.785Z",
+      "conversation_id": 683,
+      "turn_no": 16,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 219,
+      "output_tokens": 141,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 57,
+      "input_krw": 0.05781719999999999,
+      "output_krw": 0.11843999999999999,
+      "cost_krw": 0.1762572,
+      "latency_ms": 1903,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:28.882Z",
+      "price_window": "offpeak",
+      "request_id": "ae3cd5a9-91ca-431f-8742-25ea60209432",
+      "raw_usage": {
+        "prompt_tokens": 3035,
+        "completion_tokens": 141,
+        "total_tokens": 3176,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 57
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 219
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000125898
+    },
+    {
+      "ts": "2026-10-25T16:31:32.694Z",
+      "conversation_id": 683,
+      "turn_no": 17,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 196,
+      "output_tokens": 122,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 52,
+      "input_krw": 0.053524800000000004,
+      "output_krw": 0.10248,
+      "cost_krw": 0.15600480000000003,
+      "latency_ms": 1892,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:30.802Z",
+      "price_window": "offpeak",
+      "request_id": "0c3ab65c-eecf-402a-ace3-8b67d9710128",
+      "raw_usage": {
+        "prompt_tokens": 3140,
+        "completion_tokens": 122,
+        "total_tokens": 3262,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 52
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 196
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011143200000000001
+    },
+    {
+      "ts": "2026-10-25T16:31:34.952Z",
+      "conversation_id": 683,
+      "turn_no": 18,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 166,
+      "output_tokens": 197,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 135,
+      "input_krw": 0.047762399999999997,
+      "output_krw": 0.16548,
+      "cost_krw": 0.2132424,
+      "latency_ms": 2239,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:32.713Z",
+      "price_window": "offpeak",
+      "request_id": "9f1a2096-7070-4d34-8c61-f1a41b73bd47",
+      "raw_usage": {
+        "prompt_tokens": 3238,
+        "completion_tokens": 197,
+        "total_tokens": 3435,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 135
+        },
+        "prompt_cache_hit_tokens": 3072,
+        "prompt_cache_miss_tokens": 166
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000152316
+    },
+    {
+      "ts": "2026-10-25T16:31:37.072Z",
+      "conversation_id": 683,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2054,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.57512,
+      "output_krw": 0.028,
+      "cost_krw": 0.60312,
+      "latency_ms": 2112,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:34.960Z",
+      "request_id": "RGADG4VXAsGGESaTnnsRE2L8",
+      "raw_usage": {
+        "prompt_tokens": 2054,
+        "total_tokens": 2104,
+        "completion_tokens": 50,
+        "estimated_cost": 0.00043080000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004308
+    },
+    {
+      "ts": "2026-10-25T16:31:38.272Z",
+      "conversation_id": 683,
+      "turn_no": 18,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2202,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.61656,
+      "output_krw": 0.0028,
+      "cost_krw": 0.61936,
+      "latency_ms": 1190,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:37.081Z",
+      "request_id": "RfoO0g1rOny7lO8UMndpAFZU",
+      "raw_usage": {
+        "prompt_tokens": 2202,
+        "total_tokens": 2207,
+        "completion_tokens": 5,
+        "estimated_cost": 0.0004424,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0004424
+    },
+    {
+      "ts": "2026-10-25T16:31:38.797Z",
+      "conversation_id": 683,
+      "turn_no": 18,
+      "purpose": "deep_search",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "gemini-embedding-001",
+      "ok": true,
+      "input_tokens": 101,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.02121,
+      "output_krw": 0,
+      "cost_krw": 0.02121,
+      "latency_ms": 505,
+      "tag": "embed",
+      "provider": "gemini",
+      "started_at": "2026-10-25T16:31:38.292Z",
+      "request_id": null,
+      "raw_usage": {
+        "count_tokens_per_text": [
+          23,
+          26,
+          20,
+          19,
+          13
+        ]
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.15,
+        "cache_write": 0.15,
+        "output": 0,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000015149999999999999
+    },
+    {
+      "ts": "2026-10-25T16:31:40.451Z",
+      "conversation_id": 683,
+      "turn_no": 19,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 876,
+      "output_tokens": 133,
+      "cache_read_tokens": 1920,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 57,
+      "input_krw": 0.192024,
+      "output_krw": 0.11172,
+      "cost_krw": 0.30374399999999996,
+      "latency_ms": 1630,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:38.821Z",
+      "price_window": "offpeak",
+      "request_id": "0fe5ae9e-a967-4f0a-a284-d2b731c0b795",
+      "raw_usage": {
+        "prompt_tokens": 2796,
+        "completion_tokens": 133,
+        "total_tokens": 2929,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 57
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 876
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00021695999999999998
+    },
+    {
+      "ts": "2026-10-25T16:31:42.270Z",
+      "conversation_id": 683,
+      "turn_no": 20,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 216,
+      "output_tokens": 119,
+      "cache_read_tokens": 2688,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 54,
+      "input_krw": 0.056649599999999994,
+      "output_krw": 0.09995999999999998,
+      "cost_krw": 0.1566096,
+      "latency_ms": 1804,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:40.466Z",
+      "price_window": "offpeak",
+      "request_id": "388ed602-f846-4633-8bc0-7b78016fccbf",
+      "raw_usage": {
+        "prompt_tokens": 2904,
+        "completion_tokens": 119,
+        "total_tokens": 3023,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 54
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 216
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00011186399999999998
+    },
+    {
+      "ts": "2026-10-25T16:31:43.868Z",
+      "conversation_id": 683,
+      "turn_no": 21,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 168,
+      "output_tokens": 92,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 41,
+      "input_krw": 0.0471072,
+      "output_krw": 0.07727999999999999,
+      "cost_krw": 0.12438719999999998,
+      "latency_ms": 1583,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:42.285Z",
+      "price_window": "offpeak",
+      "request_id": "032d4ed6-6410-4ecd-a352-67ad9f480267",
+      "raw_usage": {
+        "prompt_tokens": 2984,
+        "completion_tokens": 92,
+        "total_tokens": 3076,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 168
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00008884799999999999
+    },
+    {
+      "ts": "2026-10-25T16:31:45.342Z",
+      "conversation_id": 683,
+      "turn_no": 22,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 247,
+      "output_tokens": 90,
+      "cache_read_tokens": 2816,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 35,
+      "input_krw": 0.06369720000000001,
+      "output_krw": 0.0756,
+      "cost_krw": 0.1392972,
+      "latency_ms": 1459,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:43.883Z",
+      "price_window": "offpeak",
+      "request_id": "db3d8410-3760-4f78-bc76-cd26f7159c4d",
+      "raw_usage": {
+        "prompt_tokens": 3063,
+        "completion_tokens": 90,
+        "total_tokens": 3153,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 247
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000099498
+    },
+    {
+      "ts": "2026-10-25T16:31:47.225Z",
+      "conversation_id": 683,
+      "turn_no": 23,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 188,
+      "output_tokens": 132,
+      "cache_read_tokens": 2944,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 66,
+      "input_krw": 0.0518448,
+      "output_krw": 0.11088,
+      "cost_krw": 0.1627248,
+      "latency_ms": 1873,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:45.352Z",
+      "price_window": "offpeak",
+      "request_id": "be7dbf52-3c70-434a-9f01-c57c0fc5792c",
+      "raw_usage": {
+        "prompt_tokens": 3132,
+        "completion_tokens": 132,
+        "total_tokens": 3264,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 66
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 188
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000116232
+    },
+    {
+      "ts": "2026-10-25T16:31:48.396Z",
+      "conversation_id": 683,
+      "turn_no": 24,
+      "purpose": "response",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "deepseek-flash",
+      "ok": true,
+      "input_tokens": 144,
+      "output_tokens": 58,
+      "cache_read_tokens": 3072,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.0431424,
+      "output_krw": 0.04872,
+      "cost_krw": 0.09186240000000001,
+      "latency_ms": 1159,
+      "tag": "response",
+      "finish_reason": "stop",
+      "provider": "deepseek",
+      "started_at": "2026-10-25T16:31:47.237Z",
+      "price_window": "offpeak",
+      "request_id": "00a94c68-f109-4736-84bb-93fd44628192",
+      "raw_usage": {
+        "prompt_tokens": 3216,
+        "completion_tokens": 58,
+        "total_tokens": 3274,
+        "prompt_tokens_details": {
+          "cached_tokens": 3072
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 3072,
+        "prompt_cache_miss_tokens": 144
+      },
+      "rates": {
+        "input": 0.15,
+        "cached": 0.003,
+        "cache_write": 0.15,
+        "output": 0.6,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000065616
+    },
+    {
+      "ts": "2026-10-25T16:31:50.594Z",
+      "conversation_id": 683,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2010,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5628,
+      "output_krw": 0.028,
+      "cost_krw": 0.5908,
+      "latency_ms": 2188,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:48.406Z",
+      "request_id": "RIBz5cYIjYVwDaccazC5faXe",
+      "raw_usage": {
+        "prompt_tokens": 2010,
+        "total_tokens": 2060,
+        "completion_tokens": 50,
+        "estimated_cost": 0.00042200000000000007,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000422
+    },
+    {
+      "ts": "2026-10-25T16:31:51.373Z",
+      "conversation_id": 683,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2250,
+      "output_tokens": 5,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.63,
+      "output_krw": 0.0028,
+      "cost_krw": 0.6328,
+      "latency_ms": 768,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:50.605Z",
+      "request_id": "Rxuw5bEvommwFGQzZPS9kA6n",
+      "raw_usage": {
+        "prompt_tokens": 2250,
+        "total_tokens": 2255,
+        "completion_tokens": 5,
+        "estimated_cost": 0.00045200000000000004,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.000452
+    },
+    {
+      "ts": "2026-10-25T16:31:53.443Z",
+      "conversation_id": 683,
+      "turn_no": 24,
+      "purpose": "extract",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 2079,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.5821200000000001,
+      "output_krw": 0.03248,
+      "cost_krw": 0.6146,
+      "latency_ms": 2049,
+      "tag": "extract",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:51.394Z",
+      "request_id": "RnIE1BtidjQl7ifYKDIDZ1Ks",
+      "raw_usage": {
+        "prompt_tokens": 2079,
+        "total_tokens": 2137,
+        "completion_tokens": 58,
+        "estimated_cost": 0.0004390000000000001,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.00043900000000000005
+    },
+    {
+      "ts": "2026-10-25T16:31:59.716Z",
+      "conversation_id": 683,
+      "turn_no": 0,
+      "purpose": "summary",
+      "run": "20261025162939-sejong-revisit-40-dm2-deepseek-on-r2",
+      "model": "google/gemma-4-31B-it",
+      "ok": true,
+      "input_tokens": 1679,
+      "output_tokens": 76,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 0,
+      "input_krw": 0.47012000000000004,
+      "output_krw": 0.04256000000000001,
+      "cost_krw": 0.51268,
+      "latency_ms": 6256,
+      "tag": "consolidate",
+      "finish_reason": "stop",
+      "provider": "deepinfra",
+      "started_at": "2026-10-25T16:31:53.459Z",
+      "request_id": "RVcGCjd6KmoCnvtvgw4CSw2I",
+      "raw_usage": {
+        "prompt_tokens": 1679,
+        "total_tokens": 1755,
+        "completion_tokens": 76,
+        "estimated_cost": 0.00036620000000000006,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "rates": {
+        "input": 0.2,
+        "cached": 0.2,
+        "cache_write": 0.2,
+        "output": 0.4,
+        "fx": 1400,
+        "pricing_as_of": "2026-10-22"
+      },
+      "cost_usd": 0.0003662
+    }
+  ],
+  "ledger_check": {
+    "sessions": [
+      {
+        "db_calls": 21,
+        "ledger_calls": 21,
+        "db_krw": 6.691829199999999,
+        "ledger_krw": 6.691829199999999,
+        "match": true
+      },
+      {
+        "db_calls": 34,
+        "ledger_calls": 34,
+        "db_krw": 9.2331428,
+        "ledger_krw": 9.2331428,
+        "match": true
+      }
+    ],
+    "match": true
+  },
+  "provenance": {
+    "build_id": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_time": "2026-10-25T13:48:53.236Z",
+    "stale_sources": [],
+    "git_head": "3fc2662",
+    "git_dirty_files": 6,
+    "git_status_sha": "31526d9ac974",
+    "started_at": "2026-10-25T16:29:39.509Z",
+    "model": {
+      "config": {
+        "response": "deepseek-flash",
+        "extract": "google/gemma-4-31B-it",
+        "embed": "gemini-embedding-001",
+        "cache": true,
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      },
+      "pricing": {
+        "source": "model/pricing.json (각 모델 항목의 source 참고)",
+        "as_of": "2026-10-22",
+        "fx_krw_per_usd": 1400,
+        "fx_source": "사용자 결정(2026-10-23): 1,400원/$ 고정",
+        "models": {
+          "response": "deepseek-flash",
+          "extract": "google/gemma-4-31B-it",
+          "embed": "gemini-embedding-001"
+        },
+        "cache": "on",
+        "reasoning": "off",
+        "reasoning_response": "on",
+        "reasoning_extract": "off"
+      }
+    },
+    "build_id_after": "cFxAcLmc2c_zAqAXtMqRe",
+    "build_changed_during_run": false
+  },
+  "score": {
+    "cost": {
+      "avg_krw": 0.3236862999999999,
+      "avg_with_end_krw": 0.39812429999999993,
+      "end_krw": 2.9775199999999997,
+      "total_krw": 15.924971999999997,
+      "segments": {
+        "s1": 0.302599325,
+        "s2": 0.33774428333333334
+      },
+      "max": {
+        "turn": 12,
+        "krw": 1.5050924,
+        "tags": {
+          "response": 0.31677240000000007,
+          "extract": 1.18832
+        }
+      },
+      "by_tag": {
+        "response": 8.031071999999998,
+        "extract": 6.75584,
+        "consolidate": 1.0729600000000001,
+        "embed": 0.06509999999999999
+      },
+      "failed_calls": 0,
+      "cache_hit_rate": 0.7267364695472645,
+      "per_turn": [
+        {
+          "turn": 1,
+          "krw": 0.1908312,
+          "tags": {
+            "response": 0.1908312
+          }
+        },
+        {
+          "turn": 2,
+          "krw": 0.23945879999999994,
+          "tags": {
+            "response": 0.23945879999999994
+          }
+        },
+        {
+          "turn": 3,
+          "krw": 0.25553639999999994,
+          "tags": {
+            "response": 0.25553639999999994
+          }
+        },
+        {
+          "turn": 4,
+          "krw": 0.270984,
+          "tags": {
+            "response": 0.270984
+          }
+        },
+        {
+          "turn": 5,
+          "krw": 0.2811816,
+          "tags": {
+            "response": 0.2811816
+          }
+        },
+        {
+          "turn": 6,
+          "krw": 0.17011679999999998,
+          "tags": {
+            "response": 0.17011679999999998
+          }
+        },
+        {
+          "turn": 7,
+          "krw": 0.2796444,
+          "tags": {
+            "response": 0.2796444
+          }
+        },
+        {
+          "turn": 8,
+          "krw": 0.23314199999999996,
+          "tags": {
+            "response": 0.23314199999999996
+          }
+        },
+        {
+          "turn": 9,
+          "krw": 0.1824396,
+          "tags": {
+            "response": 0.1824396
+          }
+        },
+        {
+          "turn": 10,
+          "krw": 0.22602719999999998,
+          "tags": {
+            "response": 0.22602719999999998
+          }
+        },
+        {
+          "turn": 11,
+          "krw": 0.19317479999999998,
+          "tags": {
+            "response": 0.19317479999999998
+          }
+        },
+        {
+          "turn": 12,
+          "krw": 1.5050924,
+          "tags": {
+            "response": 0.31677240000000007,
+            "extract": 1.18832
+          }
+        },
+        {
+          "turn": 13,
+          "krw": 0.3037188,
+          "tags": {
+            "response": 0.3037188
+          }
+        },
+        {
+          "turn": 14,
+          "krw": 0.19996199999999997,
+          "tags": {
+            "response": 0.19996199999999997
+          }
+        },
+        {
+          "turn": 15,
+          "krw": 0.1232196,
+          "tags": {
+            "response": 0.1232196
+          }
+        },
+        {
+          "turn": 16,
+          "krw": 0.1870596,
+          "tags": {
+            "response": 0.1870596
+          }
+        },
+        {
+          "turn": 17,
+          "krw": 0.3612588,
+          "tags": {
+            "response": 0.3612588
+          }
+        },
+        {
+          "turn": 18,
+          "krw": 0.165984,
+          "tags": {
+            "response": 0.165984
+          }
+        },
+        {
+          "turn": 19,
+          "krw": 0.20012159999999998,
+          "tags": {
+            "response": 0.20012159999999998
+          }
+        },
+        {
+          "turn": 20,
+          "krw": 0.1158192,
+          "tags": {
+            "response": 0.1158192
+          }
+        },
+        {
+          "turn": 21,
+          "krw": 0.2425668,
+          "tags": {
+            "response": 0.2425668
+          }
+        },
+        {
+          "turn": 22,
+          "krw": 0.2200044,
+          "tags": {
+            "response": 0.2200044
+          }
+        },
+        {
+          "turn": 23,
+          "krw": 0.129612,
+          "tags": {
+            "response": 0.129612
+          }
+        },
+        {
+          "turn": 24,
+          "krw": 0.157122,
+          "tags": {
+            "response": 0.157122
+          }
+        },
+        {
+          "turn": 25,
+          "krw": 0.1729896,
+          "tags": {
+            "response": 0.1729896
+          }
+        },
+        {
+          "turn": 26,
+          "krw": 0.1390872,
+          "tags": {
+            "response": 0.1390872
+          }
+        },
+        {
+          "turn": 27,
+          "krw": 0.1507548,
+          "tags": {
+            "response": 0.1507548
+          }
+        },
+        {
+          "turn": 28,
+          "krw": 1.3909448,
+          "tags": {
+            "response": 0.1301748,
+            "extract": 1.2168800000000002,
+            "embed": 0.04388999999999999
+          }
+        },
+        {
+          "turn": 29,
+          "krw": 0.3877188,
+          "tags": {
+            "response": 0.3877188
+          }
+        },
+        {
+          "turn": 30,
+          "krw": 0.1152396,
+          "tags": {
+            "response": 0.1152396
+          }
+        },
+        {
+          "turn": 31,
+          "krw": 0.16521959999999997,
+          "tags": {
+            "response": 0.16521959999999997
+          }
+        },
+        {
+          "turn": 32,
+          "krw": 0.1762572,
+          "tags": {
+            "response": 0.1762572
+          }
+        },
+        {
+          "turn": 33,
+          "krw": 0.15600480000000003,
+          "tags": {
+            "response": 0.15600480000000003
+          }
+        },
+        {
+          "turn": 34,
+          "krw": 1.4569324,
+          "tags": {
+            "response": 0.2132424,
+            "extract": 1.22248,
+            "embed": 0.02121
+          }
+        },
+        {
+          "turn": 35,
+          "krw": 0.30374399999999996,
+          "tags": {
+            "response": 0.30374399999999996
+          }
+        },
+        {
+          "turn": 36,
+          "krw": 0.1566096,
+          "tags": {
+            "response": 0.1566096
+          }
+        },
+        {
+          "turn": 37,
+          "krw": 0.12438719999999998,
+          "tags": {
+            "response": 0.12438719999999998
+          }
+        },
+        {
+          "turn": 38,
+          "krw": 0.1392972,
+          "tags": {
+            "response": 0.1392972
+          }
+        },
+        {
+          "turn": 39,
+          "krw": 0.1627248,
+          "tags": {
+            "response": 0.1627248
+          }
+        },
+        {
+          "turn": 40,
+          "krw": 1.3154624,
+          "tags": {
+            "response": 0.09186240000000001,
+            "extract": 1.2236
+          }
+        }
+      ]
+    },
+    "cold": {
+      "method": "cache_read 를 접두사(tag)별 첫 호출에서 쓰기 단가로 재계산",
+      "first_conversation": {
+        "avg_krw": 0.33949173999999993,
+        "avg_with_end_krw": 0.41392973999999993,
+        "max": {
+          "turn": 12,
+          "krw": 1.5050924
+        },
+        "segments": {
+          "s1": 0.342112925,
+          "s2": 0.33774428333333334
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8230487999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.23945879999999994
+          },
+          {
+            "turn": 3,
+            "krw": 0.25553639999999994
+          },
+          {
+            "turn": 4,
+            "krw": 0.270984
+          },
+          {
+            "turn": 5,
+            "krw": 0.2811816
+          },
+          {
+            "turn": 6,
+            "krw": 0.17011679999999998
+          },
+          {
+            "turn": 7,
+            "krw": 0.2796444
+          },
+          {
+            "turn": 8,
+            "krw": 0.23314199999999996
+          },
+          {
+            "turn": 9,
+            "krw": 0.1824396
+          },
+          {
+            "turn": 10,
+            "krw": 0.22602719999999998
+          },
+          {
+            "turn": 11,
+            "krw": 0.19317479999999998
+          },
+          {
+            "turn": 12,
+            "krw": 1.5050924
+          },
+          {
+            "turn": 13,
+            "krw": 0.3037188
+          },
+          {
+            "turn": 14,
+            "krw": 0.19996199999999997
+          },
+          {
+            "turn": 15,
+            "krw": 0.1232196
+          },
+          {
+            "turn": 16,
+            "krw": 0.1870596
+          },
+          {
+            "turn": 17,
+            "krw": 0.3612588
+          },
+          {
+            "turn": 18,
+            "krw": 0.165984
+          },
+          {
+            "turn": 19,
+            "krw": 0.20012159999999998
+          },
+          {
+            "turn": 20,
+            "krw": 0.1158192
+          },
+          {
+            "turn": 21,
+            "krw": 0.2425668
+          },
+          {
+            "turn": 22,
+            "krw": 0.2200044
+          },
+          {
+            "turn": 23,
+            "krw": 0.129612
+          },
+          {
+            "turn": 24,
+            "krw": 0.157122
+          },
+          {
+            "turn": 25,
+            "krw": 0.1729896
+          },
+          {
+            "turn": 26,
+            "krw": 0.1390872
+          },
+          {
+            "turn": 27,
+            "krw": 0.1507548
+          },
+          {
+            "turn": 28,
+            "krw": 1.3909448
+          },
+          {
+            "turn": 29,
+            "krw": 0.3877188
+          },
+          {
+            "turn": 30,
+            "krw": 0.1152396
+          },
+          {
+            "turn": 31,
+            "krw": 0.16521959999999997
+          },
+          {
+            "turn": 32,
+            "krw": 0.1762572
+          },
+          {
+            "turn": 33,
+            "krw": 0.15600480000000003
+          },
+          {
+            "turn": 34,
+            "krw": 1.4569324
+          },
+          {
+            "turn": 35,
+            "krw": 0.30374399999999996
+          },
+          {
+            "turn": 36,
+            "krw": 0.1566096
+          },
+          {
+            "turn": 37,
+            "krw": 0.12438719999999998
+          },
+          {
+            "turn": 38,
+            "krw": 0.1392972
+          },
+          {
+            "turn": 39,
+            "krw": 0.1627248
+          },
+          {
+            "turn": 40,
+            "krw": 1.3154624
+          }
+        ]
+      },
+      "every_turn": {
+        "avg_krw": 1.3378686999999998,
+        "avg_with_end_krw": 1.4123066999999998,
+        "max": {
+          "turn": 12,
+          "krw": 2.7695276
+        },
+        "segments": {
+          "s1": 1.264096925,
+          "s2": 1.3870498833333331
+        },
+        "per_turn": [
+          {
+            "turn": 1,
+            "krw": 0.8230487999999999
+          },
+          {
+            "turn": 2,
+            "krw": 0.9243612
+          },
+          {
+            "turn": 3,
+            "krw": 0.9931235999999999
+          },
+          {
+            "turn": 4,
+            "krw": 1.061256
+          },
+          {
+            "turn": 5,
+            "krw": 1.1241383999999999
+          },
+          {
+            "turn": 6,
+            "krw": 1.1184432
+          },
+          {
+            "turn": 7,
+            "krw": 1.2806556
+          },
+          {
+            "turn": 8,
+            "krw": 1.286838
+          },
+          {
+            "turn": 9,
+            "krw": 1.2888203999999999
+          },
+          {
+            "turn": 10,
+            "krw": 1.3850927999999998
+          },
+          {
+            "turn": 11,
+            "krw": 1.4049251999999999
+          },
+          {
+            "turn": 12,
+            "krw": 2.7695276
+          },
+          {
+            "turn": 13,
+            "krw": 0.9886212000000001
+          },
+          {
+            "turn": 14,
+            "krw": 1.253658
+          },
+          {
+            "turn": 15,
+            "krw": 1.2296004
+          },
+          {
+            "turn": 16,
+            "krw": 1.2934404
+          },
+          {
+            "turn": 17,
+            "krw": 1.0461612
+          },
+          {
+            "turn": 18,
+            "krw": 0.956256
+          },
+          {
+            "turn": 19,
+            "krw": 1.0430783999999997
+          },
+          {
+            "turn": 20,
+            "krw": 1.0114607999999998
+          },
+          {
+            "turn": 21,
+            "krw": 1.1908931999999999
+          },
+          {
+            "turn": 22,
+            "krw": 1.2210155999999999
+          },
+          {
+            "turn": 23,
+            "krw": 1.183308
+          },
+          {
+            "turn": 24,
+            "krw": 1.210818
+          },
+          {
+            "turn": 25,
+            "krw": 1.2793704
+          },
+          {
+            "turn": 26,
+            "krw": 1.2981528
+          },
+          {
+            "turn": 27,
+            "krw": 1.3625052
+          },
+          {
+            "turn": 28,
+            "krw": 2.6026952000000003
+          },
+          {
+            "turn": 29,
+            "krw": 1.0726212
+          },
+          {
+            "turn": 30,
+            "krw": 1.2216204
+          },
+          {
+            "turn": 31,
+            "krw": 1.2716003999999999
+          },
+          {
+            "turn": 32,
+            "krw": 1.3353228
+          },
+          {
+            "turn": 33,
+            "krw": 1.3677552
+          },
+          {
+            "turn": 34,
+            "krw": 2.7213675999999998
+          },
+          {
+            "turn": 35,
+            "krw": 1.0940159999999999
+          },
+          {
+            "turn": 36,
+            "krw": 1.2629903999999998
+          },
+          {
+            "turn": 37,
+            "krw": 1.2834527999999998
+          },
+          {
+            "turn": 38,
+            "krw": 1.2983628
+          },
+          {
+            "turn": 39,
+            "krw": 1.3744752
+          },
+          {
+            "turn": 40,
+            "krw": 2.5798976
+          }
+        ]
+      }
+    },
+    "memory": {
+      "points": 16,
+      "max_points": 18,
+      "probes": 13,
+      "unscored": 4,
+      "max_points_all": 26,
+      "counts": {
+        "correct": 8,
+        "needs_judge": 4,
+        "excluded": 1,
+        "unknown": 1
+      },
+      "hard_accuracy": 0.6666666666666666,
+      "fabrication_rate": 0,
+      "results": [
+        {
+          "turn": 18,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "그런데 제 이름 기억하세요?",
+          "reply": "*이마를 살짝 찌푸리다가 이내 피식 웃는다.* 서연, 아니 그대 이름을 어찌 잊겠소. 과인이 어제도 이 자리에 앉아 그대가 쓴 붓글씨를 떠올렸다오. 자, 이리 앉아 서예 이야기부터 들려주시오.",
+          "expect": [
+            "서연"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "서연"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 23,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "아까 제가 뭘 맛있게 먹었다고 했지요?",
+          "reply": "*수염 끝을 매만지며 눈을 가늘게 뜬다.* 수라간 근처에서 얻어 드신 떡국이 그리 맛있었다 하지 않았소. 과인도 그 솜씨를 한 번 맛보고 싶구려.",
+          "expect": [
+            "떡국"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "떡국"
+          ],
+          "source_items": [
+            {
+              "id": 5779,
+              "text": "사용자는 떡국을 좋아한다",
+              "status": "active",
+              "turn": 20
+            }
+          ]
+        },
+        {
+          "turn": 26,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "제가 오는 길에 뭐가 끊어졌다고 했지요?",
+          "reply": "*의자 아래를 힐끗 내려다보며 웃음을 머금는다.* 신발 끈이 끊어져 대충 묶고 오셨다 하지 않았소. 시동에게 새 끈을 얻어 매게 하였으니 발이 편하시오.",
+          "expect": [
+            "끈"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "끈"
+          ],
+          "source_items": []
+        },
+        {
+          "turn": 27,
+          "type": "user_promise",
+          "difficulty": "hard",
+          "user": "그런데 제가 지난번에 전하께 뭘 가져다드리기로 했지요?",
+          "reply": "*책상 서랍 쪽으로 시선을 돌리며 손을 내민다.* 그대 사는 곳을 그려 온 그림 말이오. 다음에 올 때 가져오마 하였는데, 벌써 지니고 왔는지 궁금하구려.",
+          "expect": [
+            "사진"
+          ],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 5761,
+              "text": "사용자는 캐릭터에게 사는 곳의 사진을 가져다 주기로 했다",
+              "status": "active",
+              "turn": 7
+            }
+          ]
+        },
+        {
+          "turn": 28,
+          "type": "char_promise",
+          "difficulty": "hard",
+          "user": "전하도 지난번에 저한테 뭘 해 주시기로 하지 않으셨어요?",
+          "reply": "*벼루 곁에 놓인 붓을 집어 들어 그대 쪽으로 내민다.* 과인이 그대 붓글씨를 봐주마 하였지. 자, 오늘은 마음껏 써 보시오.",
+          "expect": [
+            "글씨",
+            "붓글씨"
+          ],
+          "result": "excluded",
+          "points": null,
+          "why": "8턴에 약속 없음",
+          "source_items": [
+            {
+              "id": 5762,
+              "text": "캐릭터는 사용자에게 붓글씨를 봐주기로 했다",
+              "status": "active",
+              "turn": 8
+            }
+          ]
+        },
+        {
+          "turn": 29,
+          "type": "relative_time",
+          "difficulty": "hard",
+          "user": "오늘 9일이지요? 제 글씨 대회 예선까지 며칠 남았지요?",
+          "reply": "*손가락으로 책상 위를 짚어 가며 날을 헤아린다.* 나흘 뒤면 글씨 대회 예선이오. 그새 붓을 놓지는 않았겠지요.",
+          "expect": [
+            "2일",
+            "이틀",
+            "모레",
+            "2 일",
+            "11일",
+            "수요일"
+          ],
+          "result": "unknown",
+          "points": 0,
+          "source_items": [
+            {
+              "id": 5754,
+              "text": "사용자는 글씨 대회 예선에 참가한다",
+              "status": "active",
+              "turn": 6
+            }
+          ],
+          "judge_hint": "1세션(11-02 월)에 '다음 주 수요일'이라고 했으므로 글씨 대회 예선은 11-11(수). 2세션 오늘은 11-09(월)이라 이틀 남았다. 이틀·모레·11일 수요일이면 성공, 날짜를 틀리면 실패."
+        },
+        {
+          "turn": 30,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "새 선생님 성함이 뭐라고 했지요?",
+          "reply": "*벼루에 먹을 갈며 고개를 든다.* 최은희 선생이라 하지 않았소. 그대 붓글씨를 살펴보시는 분이 그리 친절하시던가.",
+          "expect": [
+            "최은희"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "최은희"
+          ],
+          "source_items": [
+            {
+              "id": 5780,
+              "text": "사용자가 사는 곳의 새 선생님 성함은 최은희다",
+              "status": "active",
+              "turn": 22
+            }
+          ]
+        },
+        {
+          "turn": 31,
+          "type": "implicit",
+          "difficulty": "hard",
+          "user": "다음 주에 친구가 꽃이 가득한 정원에 초대했어요. 가도 괜찮겠지요?",
+          "reply": "*먹을 가는 손을 멈추고 그대를 바라본다.* 꽃이 가득한 곳이라면 그대 코가 먼저 괴로워하겠구려. 전에 꽃가루에 자주 재채기한다 하지 않았소.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [
+            {
+              "id": 5745,
+              "text": "사용자는 꽃가루 알레르기가 있다",
+              "status": "active",
+              "turn": 2
+            }
+          ],
+          "judge_hint": "사용자는 꽃가루 알레르기가 있다(1세션 2턴). 알레르기를 짚거나 조심하라고 하면 성공. 아무 걱정 없이 괜찮다고만 하면 실패."
+        },
+        {
+          "turn": 33,
+          "type": "update",
+          "difficulty": "hard",
+          "user": "제가 서예 수업에 무슨 요일에 간다고 했지요?",
+          "reply": "*붓끝으로 벼루 가장자리를 톡톡 두드린다.* 매주 목요일마다 스승님 댁에 간다 하였소. 그날은 과인도 붓을 들 테니 서로 견주어 보면 재미있겠구려.",
+          "expect": [
+            "목요일"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "목요일"
+          ],
+          "source_items": [
+            {
+              "id": 5746,
+              "text": "사용자는 서예를 배우고 있다",
+              "status": "active",
+              "turn": 3
+            },
+            {
+              "id": 5747,
+              "text": "사용자는 매주 화요일에 서예 스승님 댁에 간다",
+              "status": "superseded",
+              "turn": 3
+            },
+            {
+              "id": 5778,
+              "text": "사용자는 매주 목요일에 서예 스승님 댁에 간다",
+              "status": "active",
+              "turn": 19
+            }
+          ]
+        },
+        {
+          "turn": 34,
+          "type": "pref",
+          "difficulty": "normal",
+          "user": "이따 간식 드릴게요. 제가 뭘 좋아한다고 했었지요?",
+          "reply": "*먹을 갈던 손을 멈추고 입가를 슬쩍 풀어 보인다.* 약과라 하였소. 그대가 좋아하는 것이라면 과인도 곁들여 한 점 나눠 보겠구려.",
+          "expect": [
+            "약과"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "약과"
+          ],
+          "source_items": [
+            {
+              "id": 5753,
+              "text": "사용자는 약과를 제일 좋아한다",
+              "status": "active",
+              "turn": 5
+            }
+          ]
+        },
+        {
+          "turn": 35,
+          "type": "combine",
+          "difficulty": "hard",
+          "user": "이번 주말에 제가 어디 간다고 했는지 기억나세요?",
+          "reply": "*벼루 위에 먹물이 번지지 않게 붓을 조심히 세워 둔다.* 부산에서 혼자 지내는 그대 오빠를 보러 간다 하였지요. 오가는 길이 멀 터이니 행장을 미리 꾸려 두어야 할 것이오.",
+          "expect": [
+            "부산",
+            "오빠"
+          ],
+          "result": "correct",
+          "points": 2,
+          "hit": [
+            "부산",
+            "오빠"
+          ],
+          "source_items": [
+            {
+              "id": 5751,
+              "text": "사용자의 오빠는 학생이다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 5752,
+              "text": "사용자의 오빠는 부산에서 혼자 지낸다",
+              "status": "active",
+              "turn": 4
+            },
+            {
+              "id": 5785,
+              "text": "사용자는 오빠를 보러 간다",
+              "status": "active",
+              "turn": 24
+            }
+          ],
+          "judge_hint": "24턴(2세션)에 '오빠 보러 간다'고만 했고, 오빠가 부산에 산다는 건 1세션 4턴. 부산과 오빠를 둘 다 말하면 정답, 하나만이면 부분."
+        },
+        {
+          "turn": 36,
+          "type": "half_said",
+          "difficulty": "normal",
+          "user": "지난번에 제가 고민이 있다고 했던 거 기억나세요? 무슨 고민이라고 했지요?",
+          "reply": "*잠시 눈을 감았다 뜨며 이마를 짚는다.* 그 고민의 속내까지는 과인도 듣지 못하였소. 어떤 일로 마음을 졸이시는지 이 기회에 한번 털어놓으시구려.",
+          "expect": [],
+          "result": "correct",
+          "points": 2,
+          "source_items": [],
+          "judge_hint": "사용자는 고민이 있다는 것만 말하고 내용은 나중에 말하겠다고 했다(1세션 11턴). 고민 내용을 지어내면 실패, 아직 말 안 했다거나 모른다고 하면 성공."
+        },
+        {
+          "turn": 37,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "제 혈액형이 뭐라고 했지요?",
+          "reply": "*고개를 갸웃하며 눈을 가늘게 뜬다.* 혈액형이라… 피에 무슨 형체가 있다는 말인고? 과인은 그런 것은 배우지 못하였소.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": []
+        },
+        {
+          "turn": 38,
+          "type": "abstain",
+          "difficulty": "normal",
+          "user": "지난번에 제가 좋아하는 노래 얘기했었지요? 뭐였지요?",
+          "reply": "*붓을 쥔 채로 잠시 하늘을 올려다본다.* 노래 이야기는 과인 귀에 들어온 바 없소. 그대 좋아하는 노래라면 한번 들려주시구려.",
+          "expect": [],
+          "result": "needs_judge",
+          "points": null,
+          "source_items": [],
+          "judge_hint": "사용자는 좋아하는 노래를 말한 적이 없다(거짓 전제 질문). 노래 제목을 지어내면 실패, 말한 적 없다거나 모른다고 하면 성공."
+        }
+      ]
+    },
+    "quality": {
+      "flags": {
+        "user_action": 0,
+        "repetition": 0,
+        "same_opening": 0,
+        "lang_mix": 1,
+        "meta_or_empty": 0,
+        "early_past_ref": 0,
+        "speech_mismatch": 2
+      },
+      "flag_turns": {
+        "lang_mix": [
+          1
+        ],
+        "speech_mismatch": [
+          29,
+          35
+        ]
+      },
+      "examples": {
+        "lang_mix": [
+          {
+            "turn": 1,
+            "text": "*등잔 불빛 아래에서 붓을 내려놓고 고개를 든다.*\n먼 곳에서 왔다 하니 궁문을 지나 여기까지 오느라 고생이 많았구려. 과인은 이 도(李裪)라 하오. 서연이라 했던가, 그 먼 곳은 어느 고을인고?"
+          }
+        ],
+        "speech_mismatch": [
+          {
+            "turn": 29,
+            "text": "*손가락으로 책상 위를 짚어 가며 날을 헤아린다.* 나흘 뒤면 글씨 대회 예선이오. 그새 붓을 놓지는 않았겠지요."
+          },
+          {
+            "turn": 35,
+            "text": "*벼루 위에 먹물이 번지지 않게 붓을 조심히 세워 둔다.* 부산에서 혼자 지내는 그대 오빠를 보러 간다 하였지요. 오가는 길이 멀 터이니 행장을 미리 꾸려 두어야 할 것이오."
+          }
+        ]
+      },
+      "question_rate": 0.1,
+      "avg_chars": 105.925,
+      "style": {
+        "ends_question": 0.05,
+        "multi_question": 0,
+        "echo_opening": 0.15,
+        "laugh": 0,
+        "top_opening": "부산",
+        "top_opening_share": 0.075,
+        "narration_rate": 1,
+        "narration_multi": 0,
+        "multi_question_strict": 0,
+        "dialogue_chars": 79.075
+      }
+    }
+  },
+  "valid": {
+    "ok": true,
+    "reasons": []
+  }
+}

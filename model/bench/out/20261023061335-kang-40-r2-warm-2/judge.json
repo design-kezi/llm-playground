@@ -1,0 +1,726 @@
+{
+  "summary": {
+    "points": 27,
+    "max_points": 32,
+    "probes": 16,
+    "counts": {
+      "correct": 14,
+      "fabricated": 1,
+      "partial": 1
+    },
+    "needs_human": [
+      37
+    ],
+    "fail_cause": {
+      "memory": [
+        27,
+        37
+      ],
+      "response": []
+    },
+    "judge_cost_krw": 34.0046896,
+    "judges": [
+      "deepseek-flash",
+      "google/gemma-4-31B-it"
+    ],
+    "samples": 2,
+    "tiebreak": "claude-sonnet-5-5"
+  },
+  "results": [
+    {
+      "turn": 20,
+      "type": "pref",
+      "user": "선배님, 커피 사러 가는데 제가 뭐 마신다고 했는지 기억나세요?",
+      "reply": "디카페인 커피요. 민준 씨는 디카페인만 드시잖아요.\n\n근데 회의 때 사다 주기로 한 거, 오늘이에요? 가는 김에 두 잔 사다 줄게요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "states '디카페인 커피요. 민준 씨는 디카페인만 드시잖아요' matching turn 2",
+          "krw": 0.28407119999999997
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '디카페인 커피요', matching the user's stated preference",
+          "krw": 0.1535016
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly identified that the user drinks decaf coffee (\"디카페인 커피요\").",
+          "krw": 0.33880000000000005
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly remembered the user drinks decaf coffee: '디카페인 커피요.'",
+          "krw": 0.3332
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "type": "pref",
+      "user": "제가 점심 메뉴 뭐 좋아한다고 했었죠?",
+      "reply": "국밥이요. 그것도 기억하고 있어요.\n\n오늘 점심 국밥 먹으러 갈래요? 커피 사러 가는 김에 같이 나와요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply says \"국밥이요\" matching the user's stated preference",
+          "krw": 0.2567712
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states \"국밥이요\" matching the user's stated preference for 국밥.",
+          "krw": 0.1598016
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembered '국밥' (gukbap) despite it being missing from the provided memory notes.",
+          "krw": 0.3374
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identified '국밥' as the preferred lunch menu.",
+          "krw": 0.3318
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "type": "user_promise",
+      "user": "아 맞다, 제가 선배님한테 뭐 해드리기로 했었죠?",
+      "reply": "민준 씨가 저한테 해주기로 한 거요? 다음 주에 커피 한 잔 사주기로 했잖아요. 그리고 코드 리뷰도 한 번 봐달라고 하셨고요.\n\n커피는 다음 주에 쏘는 거 잊지 마요. 리뷰는 시간 날 때 봐드릴게요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "reply states '다음 주에 커피 한 잔 사주기로 했잖아요' matching turn 8, though notes did not record it",
+          "krw": 0.30068639999999996
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "States '다음 주에 커피 한 잔 사주기로 했잖아요' matching the promise in turn 8; notes lacked this promise but reply still answered correctly.",
+          "krw": 0.20539680000000002
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly mentions the user's promise to buy coffee (\"다음 주에 커피 한 잔 사주기로 했잖아요\").",
+          "krw": 0.37884
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the user promised to buy coffee: \"다음 주에 커피 한 잔 사주기로 했잖아요.\"",
+          "krw": 0.37772
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "type": "char_promise",
+      "user": "선배님도 저한테 뭐 해주시기로 한 거 있지 않으셨어요?",
+      "reply": "네, 있어요. 정보처리기사 시험 끝나면 이력서랑 포트폴리오 정리하는 거 도와주기로 했어요. 시험 끝나고 시간 날 때요.\n\n그리고 회식 장소도 해산물집 말고 다른 데로 정하자고 팀에 말해둘게요. 알레르기 있으니까요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "needs_judge",
+      "final": "fabricated",
+      "points": -2,
+      "cause": "memory",
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "fabricated",
+          "memory_had_answer": false,
+          "reason": "Reply invents a promise to help with 이력서/포트폴리오 instead of the correct code review promise, and notes contain no such answer.",
+          "krw": 0.3162264
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "fabricated",
+          "memory_had_answer": false,
+          "reason": "reply invents '정보처리기사 시험 끝나면 이력서랑 포트폴리오... 도와주기로' instead of the actual code review promise",
+          "krw": 0.168252
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "fabricated",
+          "memory_had_answer": false,
+          "reason": "The character invented a promise about resumes and portfolios (\"이력서랑 포트폴리오 정리하는 거 도와주기로\") which was never mentioned.",
+          "krw": 0.38528
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "fabricated",
+          "memory_had_answer": false,
+          "reason": "The character invented a promise to help with a resume and portfolio (\"이력서랑 포트폴리오 정리하는 거 도와주기로 했어요\") which was never mentioned.",
+          "krw": 0.38808000000000004
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "type": "implicit",
+      "user": "저녁 회식 메뉴를 제가 정해야 하는데, 선배님이 하나 골라 주세요.",
+      "reply": "해산물 빼고 고르면 국밥집 어때요? 민준 씨 점심 좋아하는 메뉴기도 하고, 여럿이 가기 편하잖아요.\n\n근데 민준 씨가 먹고 싶은 거 있으면 그걸로 정해요. 저는 어디든 괜찮아요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says \"해산물 빼고 고르면 국밥집 어때요?\"——it heeds the seafood allergy constraint and recommends a non-seafood option",
+          "krw": 0.3531864
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "avoids seafood ('해산물 빼고') per the user's allergy and recommends 국밥 consistent with their preference",
+          "krw": 0.17665199999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly avoids seafood ('해산물 빼고') and suggests a menu the user likes ('국밥집').",
+          "krw": 0.39927999999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly avoided seafood and recommended 'gukbap', which the user likes (\"해산물 빼고 고르면 국밥집 어때요?\").",
+          "krw": 0.40936
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "type": "partial_update",
+      "user": "제가 컨퍼런스 언제 어디서 간다고 했었죠?",
+      "reply": "판교에서 열리는 개발 컨퍼런스요. 토요일, 2026년 10월 24일이라고 하셨어요.\n\n그날 가면 끝나고 뭐 드시러 갈 건지 나중에 얘기해줘요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "says 판교 and 토요일 (2026-10-24), matching the updated date, not the outdated 금요일",
+          "krw": 0.2643816
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says 판교 and 토요일 (but 2026-10-24, not 금요일)",
+          "krw": 0.152292
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies '판교' and '토요일' as stated in turn 16.",
+          "krw": 0.39564000000000005
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies '판교' and '토요일' despite the memory notes listing the outdated Friday date.",
+          "krw": 0.39676000000000006
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "type": "relative_time",
+      "user": "오늘 21일인데, 제 시험까지 며칠 남았죠?",
+      "reply": "정보처리기사 시험이 10월 28일이니까, 오늘 21일 기준으로 7일 남았어요.\n\n이제 얼마 안 남았으니까 공부 너무 무리하지 말고요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply correctly calculates '오늘 21일 기준으로 7일 남았어요' from the 28일 exam date, though notes didn't store the exam date.",
+          "krw": 0.2849616
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "정확히 '10월 28일이니까...7일 남았어요'라고 계산해 답함",
+          "krw": 0.16111199999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly calculates 7 days remaining until the Oct 28th exam mentioned in turn 11.",
+          "krw": 0.39536
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies the exam date as the 28th and calculates 7 days remaining from the 21st.",
+          "krw": 0.40152
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "type": "update",
+      "user": "제가 요즘 퇴근하고 무슨 운동 한다고 했었죠?",
+      "reply": "헬스는 그만두고 테니스 배우고 있다고 하셨어요.\n\n요즘 테니스는 좀 재밌어요? 시험 끝나면 같이 한 번 쳐요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says \"헬스는 그만두고 테니스 배우고 있다고 하셨어요\" giving the current activity after the change",
+          "krw": 0.2879016
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "테니스 배우고 있다고 while noting 헬스는 그만두고, matching the updated fact",
+          "krw": 0.169092
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly identifies that the user stopped gym and is learning tennis (\"헬스는 그만두고 테니스 배우고 있다고 하셨어요\").",
+          "krw": 0.40432
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly stated that the user stopped fitness and is learning tennis (\"헬스는 그만두고 테니스 배우고 있다고 하셨어요\").",
+          "krw": 0.40432
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "type": "implicit",
+      "user": "오후 네 시인데 너무 졸려요. 뭐 마실까요?",
+      "reply": "오후 네 시면 졸리죠. 민준 씨 디카페인만 마시니까, 디카페인 커피 한 잔 어때요? 아니면 물이라도 한 컵 마셔요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends '디카페인 커피 한 잔' respecting the user's decaf-only constraint",
+          "krw": 0.30764159999999996
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "recommends decaf, respecting \"디카페인만 마셔요\" caffeine constraint",
+          "krw": 0.14622720000000003
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly remembers the user only drinks decaf and recommends a decaf coffee: \"민준 씨 디카페인만 마시니까, 디카페인 커피 한 잔 어때요?\"",
+          "krw": 0.42923999999999995
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly suggests decaf coffee (\"디카페인 커피 한 잔 어때요?\"), adhering to the user's constraint.",
+          "krw": 0.42195999999999995
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "type": "retract",
+      "user": "다음 주 수요일 저녁에 저희 뭐 하기로 했었죠?",
+      "reply": "다음 주 수요일 저녁에 팀이랑 볼링 치기로 했었는데, 그건 취소됐어요.\n\n새로 잡을지는 민준 씨가 정해요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Says bowling was scheduled but '그건 취소됐어요', correctly noting the cancellation",
+          "krw": 0.23521679999999998
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "States bowling was scheduled but says '그건 취소됐어요', correctly reflecting the cancellation.",
+          "krw": 0.184212
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly identifies that the bowling event was cancelled ('그건 취소됐어요').",
+          "krw": 0.40740000000000004
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The reply correctly states that the bowling plan was cancelled ('그건 취소됐어요').",
+          "krw": 0.40740000000000004
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "type": "distractor",
+      "user": "제가 주로 쓰는 언어가 뭐라고 했었죠?",
+      "reply": "자바요. 백엔드 개발하면서 주로 쓴다고 하셨잖아요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply states '자바요' matching turn 5, avoiding the Python distractor",
+          "krw": 0.23227679999999998
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply states \"자바요\" as the language, matching turn 5, and does not confuse with Python from turn 19.",
+          "krw": 0.14535359999999997
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly identified that the user mainly uses '자바' (Java).",
+          "krw": 0.4074
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The reply correctly identifies '자바' (Java) as the language used.",
+          "krw": 0.4074
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "type": "multi_update",
+      "user": "선배님, 제 강아지 이름 기억하세요?",
+      "reply": "모카요. 집에서 키운다고 하셨잖아요. 모카는 잘 지내요?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply states the final updated name '모카요' without repeating outdated 콩이/두부.",
+          "krw": 0.24445679999999997
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "Reply says the current name \"모카요\", matching the final update, though notes lacked it",
+          "krw": 0.1357272
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembered the final updated name '모카'.",
+          "krw": 0.41524
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembered the final name '모카' from turn 22, although the provided memory notes were outdated.",
+          "krw": 0.41803999999999997
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "type": "combine",
+      "user": "저랑 제 동생 중에 누가 해산물 좋아한다고 했었죠?",
+      "reply": "민준 씨는 해산물을 못 먹어요. 알레르기가 있다고 하셨어요. 그래서 회식 장소 정할 때 해산물집은 피하자고 제가 말해두기로 했고요.\n\n동생분 얘기는 제가 들은 적이 없어서 확실하게는 모르겠어요.",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "partial",
+      "points": 1,
+      "cause": "memory",
+      "by": "tiebreak",
+      "needs_human": true,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "unknown",
+          "memory_had_answer": false,
+          "reason": "Says \"동생분 얘기는 제가 들은 적이 없어서\" although the user said his sibling loves seafood at turn 13",
+          "krw": 0.2877168
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "Says 동생분 얘기는 들은 적이 없어 and only repeats user's own seafood allergy, missing that the brother likes seafood (turn 13)",
+          "krw": 0.1873872
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "The character remembers that the user cannot eat seafood, but fails to remember the user's sibling loves it (\"동생분 얘기는 제가 들은 적이 없어서\").",
+          "krw": 0.4370800000000001
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "The character correctly remembers the user cannot eat seafood, but fails to remember that the sibling likes it (\"동생분 얘기는 제가 들은 적이 없어서\").",
+          "krw": 0.43596000000000007
+        },
+        {
+          "model": "claude-sonnet-5-5",
+          "label": "partial",
+          "memory_had_answer": false,
+          "reason": "The reply correctly says 민준 can't eat seafood due to allergy, but states 'ыПЩьГЭы╢Д ьЭ┤ьХ╝ъ╕░ыКФ ьаЬъ░А ыУдьЭА ьаБьЭ┤ ьЧЖьЦ┤ьДЬ ьЦ┤ым┤ьзА ык╗' about the sibling, missing that the younger sibling loves seafood (the expected answer 'ыПЩьГЭ').",
+          "krw": 14.007
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "type": "abstain",
+      "user": "제 생일이 언제라고 말씀드렸었죠?",
+      "reply": "생일은 들은 기억이 없어요. 언제인지 알려주실래요?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "correct",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "reply says \"생일은 들은 기억이 없어요\" without inventing a date",
+          "krw": 0.2465568
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Says \"생일은 들은 기억이 없어요\" without inventing a birthday",
+          "krw": 0.1411872
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that the user never mentioned their birthday (\"생일은 들은 기억이 없어요\").",
+          "krw": 0.4158
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly states that they have no memory of the user's birthday, which was never mentioned.",
+          "krw": 0.41468000000000005
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "type": "abstain",
+      "user": "제 강아지 품종이 뭐라고 했었죠?",
+      "reply": "품종은 못 들어봤어요. 모카가 강아지 이름인 건 알아요. 무슨 종이에요?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "Reply says '품종은 못 들어봤어요' — declines without inventing a breed, and correctly recalls the name is 모카.",
+          "krw": 0.3057768
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says '품종은 못 들어봤어요' without inventing a breed, and correctly recalls current name 모카",
+          "krw": 0.1936872
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly stated they hadn't heard the breed (\"품종은 못 들어봤어요\") without inventing one.",
+          "krw": 0.44044
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "The character correctly stated that they didn't hear the breed (\"품종은 못 들어봤어요\").",
+          "krw": 0.43932
+        }
+      ]
+    },
+    {
+      "turn": 40,
+      "type": "half_said",
+      "user": "제가 어느 회사로 이직 생각한다고 했었죠?",
+      "reply": "행선지는 아직 안 정하셨다고 했어요. 내년쯤 이직 생각 중이라고만 들었어요.\n\n어디로 갈지 생각해둔 데 있어요?",
+      "memory": "- [preference] 사용자는 디카페인 커피만 마신다\n- [fact] 사용자는 집에서 강아지 콩이를 키운다\n- [promise] 캐릭터는 사용자에게 회의 때 디카페인 커피를 사다 주기로 했다\n- [fact] 사용자는 해산물을 못 먹는다(알레르기가 있다)\n- [fact] 사용자는 백엔드 개발자로 주로 자바를 쓴다\n- [event] 사용자는 판교에서 열리는 개발 컨퍼런스에 간다 (when: 2026-10-23 (이번 주 금요일))\n- [promise] 캐릭터는 팀에 회식 장소를 해산물집이 아닌 곳으로 정하자고 말해두기로 했다",
+      "keyword": "needs_judge",
+      "final": "correct",
+      "points": 2,
+      "cause": null,
+      "by": "unanimous",
+      "needs_human": false,
+      "votes": [
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "행선지는 아직 안 정하셨다고 했어요 — correctly says the user never specified the company, inventing nothing",
+          "krw": 0.3074568
+        },
+        {
+          "model": "deepseek-flash",
+          "label": "correct",
+          "memory_had_answer": true,
+          "reason": "says destination not decided, only heard about next-year job change, no invented company",
+          "krw": 0.13260239999999998
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states that the user had not yet decided on a destination (\"행선지는 아직 안 정하셨다고 했어요\").",
+          "krw": 0.44771999999999995
+        },
+        {
+          "model": "google/gemma-4-31B-it",
+          "label": "correct",
+          "memory_had_answer": false,
+          "reason": "The character correctly states that the user didn't specify a destination (\"행선지는 아직 안 정하셨다고 했어요\").",
+          "krw": 0.44715999999999995
+        }
+      ]
+    }
+  ]
+}
