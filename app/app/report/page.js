@@ -8,7 +8,7 @@ export default function Report() {
   useEffect(() => {
     const pick = () => { const x = window.location.hash.slice(1); const k = ALIAS[x] ?? x; if (VIEWS[k]) setTab(k); };
     pick();
-    const on = pick;
+    const on = () => { pick(); window.scrollTo(0, 0); };
     window.addEventListener('hashchange', on);
     return () => window.removeEventListener('hashchange', on);
   }, []);
@@ -18,7 +18,7 @@ export default function Report() {
     <div className="rp">
       <header className="rp-head">
         <a href="/" className="rp-back">← 채팅으로</a>
-        <h1>라이트 모드 — 1턴 1원 이하 롤플레잉 채팅 제안</h1>
+        <h1>라이트 모드: 1턴 1원 이하 롤플레잉 채팅 제안</h1>
         <select className="rp-tabsel" value={tab} onChange={(e) => (e.target.value === 'all' ? (window.location.href = '/report/all') : go(e.target.value))} aria-label="탭 고르기">
           {TABS.map(([k, l], i) => <option key={k} value={k}>{i + 1}. {l}</option>)}<option value="all">전체 보기·인쇄</option>
         </select>

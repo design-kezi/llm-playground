@@ -24,11 +24,23 @@ L = rd(f'{O}/opus-{FINAL}-r1/labels-unblinded.json')
 out['lt120'] = {'memory': {c: mem([x for x in L if x['cond'] == c]) for c in ('v2-dsx', 'v2-dsx-follow')},
                 'memory_excl_implicit': {c: mem([x for x in L if x['cond'] == c and x['type'] != 'implicit']) for c in ('v2-dsx', 'v2-dsx-follow')},
                 'cost': {'v2-dsx': cost('lt2'), 'v2-dsx-follow': cost(FINAL)}}
+# 턴별 비용 곡선(최종 120턴 8런): 그 턴 번호에 기록된 모든 호출 합(응답·추출·임베딩), 대화 종료 정리(turn_no 0)는 따로
+per = collections.defaultdict(list); end = []
+for f in sorted(glob.glob(f'{O}/*-120-{FINAL}-v2-dsx-follow-r*/run.json')):
+    r = rd(f)
+    if r.get('valid', {}).get('ok') is False: continue
+    t = collections.Counter()
+    for c in r['calls']: t[c['turn_no']] += c.get('cost_krw') or 0
+    for n in range(1, 121): per[n].append(t.get(n, 0.0))
+    end.append(t.get(0, 0.0))
+out['lt120']['turn_cost'] = [{'turn': n, 'mean': round(st.mean(v), 4), 'max': round(max(v), 4)} for n, v in sorted(per.items())]
+out['lt120']['consolidate_per_run'] = {'mean': round(st.mean(end), 4), 'max': round(max(end), 4), 'runs': len(end)} if end else None
 q = collections.defaultdict(lambda: collections.defaultdict(list)); AX = ['character', 'context', 'engagement', 'user_agency', 'overall']
-qd = f'{O}/opus-q{FINAL}-r1'
-if os.path.exists(f'{qd}/labels.tsv') or os.path.exists(f'{O}/opus-q{FINAL}-r2/labels.tsv'):
+QP = FINAL if os.path.exists(f'{O}/opus-q{FINAL}-r1/labels.tsv') else 'lt7'  # lt8 은 품질 판정 생략(대화 코드 같음) → lt7 회차 값
+qd = f'{O}/opus-q{QP}-r1'
+if os.path.exists(f'{qd}/labels.tsv') or os.path.exists(f'{O}/opus-q{QP}-r2/labels.tsv'):
     for r in (1, 2):
-        d = f'{O}/opus-q{FINAL}-r{r}'
+        d = f'{O}/opus-q{QP}-r{r}'
         if not os.path.exists(f'{d}/labels.tsv'): continue
         key = {g['id']: g for g in rd(f'{d}/groups-KEY.json')}
         for l in open(f'{d}/labels.tsv'):
@@ -36,6 +48,7 @@ if os.path.exists(f'{qd}/labels.tsv') or os.path.exists(f'{O}/opus-q{FINAL}-r2/l
             if len(p) < 7: continue
             c = [v['cond'] for v in key[p[0]]['versions'] if v['v'] == p[1]][0]
             for a, s in zip(AX, p[2:7]): q[c][a].append(int(s))
+    out['lt120']['quality_round'] = QP
     out['lt120']['quality'] = {c: {a: round(st.mean(v), 2) for a, v in d.items()} | {'n': len(d['overall'])} for c, d in q.items()}
 # 300턴 기억 v1 → v2 → 수정(같은 대본·같은 대화 설정)
 mb = rd(f'{O}/opus-mb-r1/labels-unblinded.json'); mb2 = rd(f'{O}/opus-mb2-r1/labels-unblinded.json')
