@@ -6,8 +6,8 @@ import { Containers, Sequence, PromptStack, MemoryPaths, Pipeline } from './diag
 import { Kpis, Verdict, Bars, Stack, Dots, Line } from './charts.js';
 import { won, pc, Tag, Src, Table, Head, Sec, More, Note, Legend, tagText } from './ui.js';
 
-export const TABS = [['overview', '요약'], ['arch', '설계 구조'], ['cost', '비용'], ['memory', '장기 기억'], ['test', '테스트 및 검증'], ['next', '한계/다음']];
-export const ALIAS = { design: 'cost', select: 'arch', qa: 'next', cases: 'memory', repro: 'test', api: 'arch' };
+export const TABS = [['overview', '요약'], ['arch', '설계 구조'], ['cost', '비용'], ['memory', '장기 기억'], ['test', '테스트 및 검증'], ['next', '한계/다음'], ['run', '직접 실행']];
+export const ALIAS = { design: 'cost', select: 'arch', qa: 'next', cases: 'memory', repro: 'test', api: 'run' };
 
 // ---- 데이터 ----
 const lt = Object.fromEntries(D.lt.map((r) => [r.cond, r]));
@@ -56,6 +56,7 @@ function Overview() {
     ['memory', '장기 기억', `300턴 시험에서 기억 정답률 ${pc(m0.correct_pct)} → ${pc(m2.correct_pct)}. 오래된 정보와 바뀐 정보에서 가장 크게 나아졌다. 다른 캐릭터와의 약속 누출은 기준 0건에 못 미쳤다(2/16).`, `100턴 이상 지난 정보 ${pc(m2.far_pct)} · 정정 문항 ${pc(m2.update_pct)}`],
     ['test', '테스트 및 검증', `롤플레잉 품질은 캐릭터 유지 ${Q[FC].character.toFixed(2)}, 이어 가기 ${Q[FC].engagement.toFixed(2)}(1~5). 대화 따르기는 미리 정한 기준 6개를 모두 넘었다. 판정은 Opus 블라인드, 사람 판정은 없다.`, '같은 대본 · 블라인드 판정 · 측정 6가지'],
     ['next', '한계/다음', '사용자가 계속 대화하고 싶어 하는지는 아직 모른다. 다음은 사람 판정과 소규모 A/B다.', '확인한 것과 하지 않은 것 표'],
+    ['run', '직접 실행', 'API 키 없이 curl만으로 여러 턴 대화와 장기 기억을 확인할 수 있다. 실제 요청과 응답 예시가 있다.', '화면 사용법 · curl 6단계 · API 목록'],
   ];
   return <>
     <Head t={`1턴 평균 ${won(COST.measured)}, 300턴 시험에서 기억 정답률 ${pc(m2.correct_pct, 0)}`}>
@@ -146,39 +147,91 @@ function Arch({ print }) {
       ]} />
     </Sec>
 
-    <Sec t="직접 실행하기" sub="화면에서는 왼쪽 메뉴 ‘새 채팅’으로 대화한다. 아래는 같은 일을 curl로 하는 방법이다.">
-      <Api />
-    </Sec>
-
-    {D.prompts?.characters && <Sec t="실제 프롬프트" sub="앱이 대화 호출마다 맨 앞에 보내는 고정 부분 전체(캐릭터 시트 + 공통 규칙 + 말투 예시).">
-      {Object.entries(D.prompts.characters).map(([k, t], i) => <More key={k} open={i === 0 && !print} t={`${CHAR[k] ?? k} · ${t.length.toLocaleString()}자`}><pre className="rp-code">{t}</pre></More>)}
-    </Sec>}
+    {D.prompts?.characters && <Prompts print={print} />}
   </>;
 }
 
-function Api() {
+// 실제 프롬프트: 네 캐릭터가 같은 공통 규칙을 쓰므로 공통 규칙은 한 번만, 캐릭터마다 다른 시트·말투 예시는 접어서
+function Prompts({ print }) {
+  const ps = Object.entries(D.prompts.characters);
+  const rules = ps.map(([, t]) => t.slice(t.indexOf('규칙:')));
+  let n = 0; while (rules.every((r) => r[n] === rules[0][n]) && n < rules[0].length) n++;
+  n = rules[0].lastIndexOf('\n', n);
+  const common = rules[0].slice(0, n);
+  return <Sec t="실제 프롬프트" sub="대화 호출마다 맨 앞에 보내는 고정 부분이다. 캐릭터 시트 → 공통 규칙 → 말투 예시 순서이고, 공통 규칙은 네 캐릭터가 같다.">
+    {ps.map(([k, t], i) => { const r = t.indexOf('규칙:'); return <More key={k} open={i === 0 && !print} t={`${CHAR[k] ?? k} 시트와 말투 예시`}><pre className="rp-code">{t.slice(0, r).trim()}{'\n\n(공통 규칙)\n\n'}{t.slice(r + n).trim()}</pre></More>; })}
+    <More t={`공통 규칙 · ${common.length.toLocaleString()}자`}><pre className="rp-code">{common}</pre></More>
+  </Sec>;
+}
+
+// ================= 직접 실행 =================
+function Run() {
   const base = typeof window === 'undefined' ? 'https://<데모 주소>' : window.location.origin;
   const code = `BASE=${base}
-# 1) 대화 시작 (user_name 이 같으면 이전 대화의 기억을 이어 받는다)
-curl -s -X POST $BASE/api/conversations -H 'content-type: application/json' \\
+AUTH='아이디:비밀번호'   # 데모 주소 접속 계정(제출 메시지로 따로 전달). 로컬 실행이면 -u 옵션을 빼도 된다
+
+# 1) 대화 시작. user_name 이 같으면 이전 대화의 기억을 이어 받는다
+curl -s -u $AUTH -X POST $BASE/api/conversations -H 'content-type: application/json' \\
   -d '{"user_name":"tester","character_id":"baekho"}'
 # → {"conversation_id":123, ...}   캐릭터: baekho · naruto · backend · sejong
 
 # 2) 메시지 보내기 (턴마다 반복)
-curl -s -X POST $BASE/api/conversations/123/messages -H 'content-type: application/json' \\
+curl -s -u $AUTH -X POST $BASE/api/conversations/123/messages -H 'content-type: application/json' \\
   -d '{"text":"나 우유 마시면 배 아파서 두유만 마셔."}'
 
-# 3) 저장된 기억 (출처 턴·대체 이력 포함, 약속·사건은 캐릭터별)
-curl -s "$BASE/api/memory?user=tester&character=baekho&include_superseded=1&include_log=1"
+# 3) 대화 끝내기 (남은 대화를 기억으로 정리하고 대화 요약을 만든다)
+curl -s -u $AUTH -X POST $BASE/api/conversations/123/end
 
-# 4) 대화 비용 (평균·구간·최대 턴)
-curl -s $BASE/api/conversations/123/report
+# 4) 저장된 기억 보기 (출처 턴·대체 이력 포함)
+curl -s -u $AUTH "$BASE/api/memory?user=tester&character=baekho&include_superseded=1"
 
-# 5) 대화 종료 (기억 정리 + 대화 요약)
-curl -s -X POST $BASE/api/conversations/123/end`;
+# 5) 새 대화를 시작해 기억을 묻는다 (1번처럼 시작 → 새 conversation_id)
+curl -s -u $AUTH -X POST $BASE/api/conversations/124/messages -H 'content-type: application/json' \\
+  -d '{"text":"내가 뭐 못 마신다고 했지?"}'
+
+# 6) 대화 비용 (턴당 평균·구간·가장 비싼 턴)
+curl -s -u $AUTH $BASE/api/conversations/123/report`;
   return <>
-    <pre className="rp-code">{code}</pre>
-    <Note>기억 확인 예: 정보를 하나 말하고 다른 얘기를 13턴 이상 한 뒤 “내가 뭐 못 마신다고 했지?”라고 묻는다. 정보를 바꿔 말하고 다시 묻거나, 말한 적 없는 것을 물어 지어내지 않는지 본다. API 키는 저장소에 올리지 않는 .env에만 있고, 키 이름만 적은 .env.example을 둔다.</Note>
+    <Head t="API 키 없이 curl만으로 대화와 장기 기억을 확인할 수 있다">
+      모델 API 키는 서버에만 있고 요청에는 넣지 않는다. 데모 주소에는 접속 계정만 걸려 있다. 2026-11-01 데모 서버에서 아래 순서를 키 없이 그대로 실행해 확인했다.
+    </Head>
+
+    <Sec t="화면으로 쓰기">
+      <ol>
+        <li>데모 주소에 접속해 왼쪽 메뉴의 <b>새 채팅</b>을 누른다.</li>
+        <li>이름을 넣고 캐릭터를 고른다. 같은 이름으로 다시 들어오면 이전 대화의 기억을 이어 받는다.</li>
+        <li>대화한다. 대화 메뉴의 <b>리포트</b>에서 턴별 비용을 본다.</li>
+      </ol>
+    </Sec>
+
+    <Sec t="curl로 쓰기" sub="1~6을 순서대로 실행한다. 대화 번호(123, 124)는 1번 응답의 conversation_id로 바꾼다.">
+      <pre className="rp-code">{code}</pre>
+      <Note>답을 글자 단위로 받으려면 메시지 주소 끝에 <code>?stream=1</code>을 붙인다(SSE). 기억은 대화 중 6턴마다, 그리고 대화를 끝낼 때 정리되므로 짧게 확인할 때는 3번(끝내기)을 꼭 실행한다.</Note>
+    </Sec>
+
+    <Sec t="실제 요청과 응답" sub="2026-11-01 데모 서버에서 위 순서로 실행한 결과. 응답은 길어서 앞부분만 옮겼다.">
+      <Table head={['단계', '요청', '응답']} rows={[
+        ['1 대화 시작', <code key="1">POST /api/conversations</code>, <code key="1r">{'{"conversation_id":1211,"character_id":"baekho","language":"ko"}'}</code>],
+        ['2 메시지', '“나 우유 마시면 배 아파서 두유만 마셔.”', '*우유병을 들다가 눈이 휘둥그레진다.* 뭐어?! 우유를 못 마셔?! 이 천재 강백호는 하루에 우유만 세 통씩 마신다고! 그거 키 크는 데 딱인데... 두유는 맛이 어떠냐? (이 턴 0.218원)'],
+        ['3 끝내기', <code key="3">POST …/1211/end</code>, '대화 1턴, 호출 4회, 합계 0.339원(응답 + 기억 추출 + 요약)'],
+        ['4 기억 보기', <code key="4">GET /api/memory</code>, '“사용자는 우유를 마시면 배가 아파 두유만 마신다” · 선호 · 출처 대화 1211의 1턴'],
+        ['5 새 대화에서 묻기', '“내가 뭐 못 마신다고 했지?”', '*팔짱을 끼고 고개를 끄덕인다.* 당연히 알지, 천재니까! 우유 마시면 배 아프다며, 그래서 두유만 마신다고 했잖아. 그거 맞지?'],
+      ]} />
+    </Sec>
+
+    <Sec t="API 목록">
+      <Table head={['요청', '하는 일']} rows={[
+        [<code key="a">GET /api/characters</code>, '캐릭터 목록'],
+        [<code key="b">POST /api/conversations</code>, '대화 시작(user_name, character_id, 선택: language)'],
+        [<code key="c">GET /api/conversations?user=이름</code>, '그 사용자의 대화 목록'],
+        [<code key="d">POST /api/conversations/:id/messages</code>, '메시지 보내기(text). ?stream=1 이면 글자 단위'],
+        [<code key="e">GET /api/conversations/:id/messages</code>, '대화 기록'],
+        [<code key="f">POST /api/conversations/:id/end</code>, '대화 끝내기(기억 정리 + 요약)'],
+        [<code key="g">GET /api/conversations/:id/report</code>, '대화 비용(턴당 평균·구간·가장 비싼 턴·호출 종류별)'],
+        [<code key="h">GET /api/memory?user=이름&character=캐릭터</code>, '저장된 기억. include_superseded=1 이면 대체된 옛 값까지'],
+      ]} />
+      <Note>API 키 등 비밀값은 저장소에 올리지 않는 .env 파일에만 있고, 키 이름만 적은 .env.example을 둔다. 실행 기록과 대본으로 평가를 다시 돌리는 방법은 테스트 및 검증 탭의 ‘직접 재현하려면’에 있다.</Note>
+    </Sec>
   </>;
 }
 
@@ -521,4 +574,4 @@ function Next() {
   </>;
 }
 
-export const VIEWS = { overview: Overview, arch: Arch, cost: Cost, memory: Memory, test: Test, next: Next };
+export const VIEWS = { overview: Overview, arch: Arch, cost: Cost, memory: Memory, test: Test, next: Next, run: Run };
