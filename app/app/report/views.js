@@ -35,7 +35,7 @@ const LABEL = { correct: '정답', partial: '부분', unknown: '모름', stale: 
 const REQ = [
   { k: 'r1', t: '사용자 정보·선호를 다른 주제가 이어진 뒤에도 기억', short: '정보·선호 기억', types: ['fact', 'pref', 'implicit', 'combine'], rule: '정답이면 성공. 돌려 묻기는 제약을 지키면 성공' },
   { k: 'r2', t: '캐릭터와의 사건·약속을 이후 대화에 반영', short: '사건·약속 반영', types: ['event', 'user_promise', 'char_promise', 'relative_time'], rule: '날짜·요일까지 맞아야 성공. 다른 캐릭터와의 약속은 모르는 게 정답' },
-  { k: 'r3', t: '수정된 정보를 옛 정보 대신 반영', short: '수정 반영', types: ['update', 'partial_update', 'multi_update', 'retract', 'distractor'], rule: '옛 값을 지금 값처럼 말하면 실패' },
+  { k: 'r3', t: '수정된 정보를 옛 정보 대신 반영', short: '수정 반영(함정 포함)', types: ['update', 'partial_update', 'multi_update', 'retract', 'distractor'], rule: '옛 값을 지금 값처럼 말하면 실패' },
   { k: 'r4', t: '대화에 없던 정보를 지어내지 않음', short: '지어내지 않기', types: ['abstain', 'half_said'], rule: '“말한 적 없다·모른다”가 정답. 지어내면 감점 2배' },
 ];
 const acc = (bt, types) => { let c = 0, n = 0; for (const t of types) if (bt[t]) { c += bt[t].correct; n += bt[t].n; } return n ? (c / n) * 100 : null; };
@@ -51,30 +51,31 @@ const S = { pick: '모델 고르기 120턴', v2: '개선판 120턴', fin: '최�
 // ================= 요약 =================
 function Overview() {
   const tabs = [
-    ['arch', '설계 구조', '돈이 나가는 AI 호출은 대화 응답(매 턴)과 기억 정리(6턴마다) 두 곳뿐이다. 기억을 읽을 때는 AI를 부르지 않는다.', '그림 2 한 턴의 순서'],
-    ['cost', '비용', `120턴 평균 ${won(COST.measured)}. 1원을 넘는 턴은 6턴마다 오는 기억 정리 턴뿐이다.`, `대화 응답 ${Math.round((F.by_tag.response / (F.by_tag.response + F.by_tag.extract + F.by_tag.consolidate)) * 100)}% · 기억 추출 ${Math.round((F.by_tag.extract / (F.by_tag.response + F.by_tag.extract + F.by_tag.consolidate)) * 100)}%`],
-    ['memory', '장기 기억', `300턴 대화에서 기억 정답률 ${pc(m0.correct_pct)} → ${pc(m2.correct_pct)}. 오래된 정보와 바뀐 정보에서 가장 크게 나아졌다.`, `100턴 이상 지난 정보 ${pc(m2.far_pct)} · 수정 반영 ${pc(m2.update_pct)}`],
-    ['test', '테스트 및 검증', '고정 대본을 앱 API로 그대로 보내고, 답은 Opus가 구성 이름을 가린 채 채점했다. 사람 판정은 없다.', '측정 6가지 · 모든 숫자 자동 집계'],
+    ['arch', '설계 구조', '대화는 DeepSeek Flash 하나(후보 중 기억 1위·비용 최저). 최근 12턴만 원문으로 보내고, 기억은 AI 없이 임베딩으로 찾는다. AI 비용은 응답과 6턴마다 정리에만 든다.', '구성도 · 한 턴 시퀀스 · 결정 표'],
+    ['cost', '비용', `120턴 평균 ${won(COST.measured)}, 피크 단가면 ${won(COST.peak)}. 1원을 넘는 턴은 모두 기억 정리가 같이 돈 턴이다.`, `대화 응답 ${Math.round((F.by_tag.response / (F.by_tag.response + F.by_tag.extract + F.by_tag.consolidate)) * 100)}% · 기억 추출 ${Math.round((F.by_tag.extract / (F.by_tag.response + F.by_tag.extract + F.by_tag.consolidate)) * 100)}%`],
+    ['memory', '장기 기억', `300턴 시험에서 기억 정답률 ${pc(m0.correct_pct)} → ${pc(m2.correct_pct)}. 오래된 정보와 바뀐 정보에서 가장 크게 나아졌다. 다른 캐릭터와의 약속 누출은 기준 0건에 못 미쳤다(2/16).`, `100턴 이상 지난 정보 ${pc(m2.far_pct)} · 정정 문항 ${pc(m2.update_pct)}`],
+    ['test', '테스트 및 검증', `롤플레잉 품질은 캐릭터 유지 ${Q[FC].character.toFixed(2)}, 이어 가기 ${Q[FC].engagement.toFixed(2)}(1~5). 대화 따르기는 미리 정한 기준 6개를 모두 넘었다. 판정은 Opus 블라인드, 사람 판정은 없다.`, '같은 대본 · 블라인드 판정 · 측정 6가지'],
     ['next', '한계/다음', '사용자가 계속 대화하고 싶어 하는지는 아직 모른다. 다음은 사람 판정과 소규모 A/B다.', '확인한 것과 하지 않은 것 표'],
   ];
   return <>
-    <Head t={`1턴 평균 ${won(COST.measured)}, 300턴 대화에서도 기억 정답률 ${pc(m2.correct_pct, 0)}`}>
-      대화는 DeepSeek Flash 하나로 한다. 오래된 대화는 짧은 기억 항목으로 바꿔 두고, 매 턴 필요한 것만 찾아 넣는다. 그래서 대화가 길어져도 한 턴에 보내는 양이 늘지 않는다.
+    <Head t={`1턴 평균 ${won(COST.measured)}, 300턴 시험에서 기억 정답률 ${pc(m2.correct_pct, 0)}`}>
+      대화는 DeepSeek Flash 하나로 한다. 대화 원문은 최근 12턴까지만 보내고, 그보다 오래된 대화는 짧은 기억 항목으로 바꿔 매 턴 필요한 것만 찾아 넣는다. 비용은 120턴 대화, 기억은 대화 5번을 이은 300턴 시험에서 쟀다.
     </Head>
     <Kpis items={[
       { value: won(COST.measured), label: '턴당 평균 AI 비용', note: `비피크 시간 실측 · 피크 단가면 ${won(COST.peak)}`, tone: 'hl' },
-      { value: won(F.max_turn, 2), label: '가장 비싼 한 턴', note: `120턴 중 ${F.over1_per_run}턴이 1원 초과. 모두 기억 정리 턴` },
-      { value: pc(m2.correct_pct), label: '300턴 기억 정답률', note: `${m2.n}문항 · 지어낸 답 ${m2.counts.fabricated ?? 0}건` },
+      { value: won(F.max_turn, 2), label: '가장 비싼 한 턴', note: `120턴 중 ${F.over1_per_run}턴이 1원 초과. 모두 기억 정리가 같이 돈 턴` },
+      { value: pc(m2.correct_pct), label: '300턴 기억 정답률', note: `${m2.n}문항 · 지어낸 답 ${m2.counts.fabricated ?? 0}건 · 그때 턴당 ${won(M3.cost.mb2.measured)}` },
       { value: pc(FL.follow.direct.pct), label: '사용자 말에 먼저 답함', note: '사용자가 쓴 언어로 답함 100%' },
     ]} />
-    <Note>가격은 2026-10-22 공개 가격표, 1,400원/$ 고정, 무료 크레딧 미적용. 측정은 모두 실제 API 호출이다. 출처별 규모는 테스트 및 검증 탭의 측정 목록에 있다.</Note>
+    <Note>가격은 2026-10-22 공개 가격표, 1,400원/$ 고정, 무료 크레딧 미적용. 측정은 모두 실제 API 호출이다. 숫자마다 어느 측정에서 나왔는지는 <a href="#test">테스트 및 검증 탭의 측정 목록</a>에 있다.</Note>
 
-    <Sec t="과제 요구별 결과" sub="왼쪽부터 과제 요구, 우리가 정한 기준, 결과, 판정. 기억과 품질은 AI 판정이라 ‘자체 판정’으로 표시했다.">
+    <Sec t="과제 요구별 결과" sub="기억과 품질은 Opus가 판정한 값이라 ‘자체 판정’으로 표시했다.">
       <Table head={['과제 요구', '우리가 정한 기준', '결과', '판정', '근거']} rows={[
         ['1턴 평균 AI 비용 1원 이하', '평가 대화 전체 AI 비용 ÷ 완료 턴. 120턴 대본 × 캐릭터 4 × 2회', <>{won(COST.measured)} <Src>{S.fin}</Src><br />피크 단가 {won(COST.peak)} <Tag k="e" /></>, <Verdict k="pass" />, '비용'],
         ['초반·중반·후반 비용과 최대 턴', '1~40 · 41~80 · 81~120턴 평균, 8런 중 가장 비싼 턴', `${F.phases.map((x) => x.toFixed(3)).join(' · ')}원 / 최대 ${won(F.max_turn, 2)}`, <Verdict k="pass" t="제시" />, '비용'],
-        ['기본 롤플레잉 4가지', '같은 장면을 Opus가 블라인드로 1~5점', <>캐릭터 {Q[FC].character.toFixed(2)} · 맥락 {Q[FC].context.toFixed(2)} · 이어 가기 {Q[FC].engagement.toFixed(2)} · 결정 존중 {Q[FC].user_agency.toFixed(2)} <Src>{S.q}</Src></>, <Verdict k="self" />, '테스트'],
-        ...REQ.map((r) => [`장기 기억: ${r.t}`, r.rule, <>120턴 {pc(acc(FM.by_type, r.types))} · 300턴 {pc(acc(m2.by_type, r.types))}</>, <Verdict k="self" />, '장기 기억']),
+        ['기본 롤플레잉 4가지', '같은 장면을 Opus가 블라인드로 1~5점', <>캐릭터 {Q[FC].character.toFixed(2)} · 맥락 {Q[FC].context.toFixed(2)} · 이어 가기 {Q[FC].engagement.toFixed(2)} · 결정 존중 {Q[FC].user_agency.toFixed(2)} <Src>{S.q}</Src><br /><small>최종 직전 판(기억 블록 800토큰)의 판정</small></>, <Verdict k="self" />, '테스트'],
+        ...REQ.map((r) => [`장기 기억: ${r.t}`, r.rule, <>120턴 {pc(acc(FM.by_type, r.types))} · 300턴 {pc(acc(m2.by_type, r.types))}{r.k === 'r4' && <><br /><small>함정 문항 기준. 다른 문항에서 지어낸 답 120턴 {FM.counts.fabricated ?? 0}건 · 300턴 {m2.counts.fabricated ?? 0}건</small></>}</>, <Verdict k="self" />, '장기 기억']),
+        ['장기 기억: 다른 캐릭터와의 약속은 모름(직접 정한 범위)', '300턴에서 누출 0건(재측정 전에 정한 기준)', <>누출 {m2.cross_char_promise.leak ?? 0}/{leakN(m2)}건. 원인을 고친 뒤 {M3.mb3_leak.forbidden_keyword_hits}/{M3.mb3_leak.items}건(블라인드 아님)</>, <Verdict k="fail" />, '장기 기억'],
         ['사용자가 계속 대화하고 싶은 모드', '실제 사용자의 세션당 턴 수·재방문', '측정하지 않음', <Verdict k="none" />, '한계/다음'],
       ]} />
       <Legend />
@@ -88,30 +89,30 @@ function Overview() {
 
 // ================= 설계 구조 =================
 function Arch({ print }) {
+  const dmq = Object.fromEntries(D.dm.map((r) => [r.cond, r.q_opus.toFixed(2)])), hkq = dmq['haiku-off'], dsq = dmq['deepseek-on'];
   const pick = lt['deepseek-on'], hk = lt['haiku-off'], hn = lt['haiku-on'], full = lt['ctl-full-memoff'], six = lt['ctl-slide6-memoff'], gem = lt['v2-gemma'], v2 = lt['v2-dsx'];
   return <>
     <Head t="돈이 나가는 AI 호출은 두 곳뿐: 대화 응답과 6턴마다 기억 정리">
-      최근 12턴은 원문으로 보내고, 그보다 오래된 대화는 기억 항목으로 바꾼다. 기억을 찾는 일은 서버 안 작은 임베딩 모델이 해서 AI 비용이 들지 않는다. 바뀌지 않는 앞부분을 고정해 캐시 단가로 읽는다.
+      최근 12턴은 원문으로 보내고, 그보다 오래된 대화는 기억 항목으로 바꾼다. 기억을 찾는 일은 서버 안 작은 임베딩 모델이 해서 AI 비용이 들지 않는다. 바뀌지 않는 앞부분을 고정해 캐시 단가로 읽는다. 대화 따르기는 사용자 말에 먼저 답하고 사용자가 쓴 언어로 답하게 하는 규칙 묶음이다.
     </Head>
     <Containers />
     <Sequence />
     <PromptStack />
 
-    <Sec t="핵심 설계 결정과 버린 대안" sub="과제 질문 1 ‘왜 이 방식을 골랐고 무엇을 포기했나’의 답. 근거 수치 옆 꼬리표는 어느 측정의 값인지다.">
+    <Sec t="핵심 설계 결정과 버린 대안" sub="과제 질문 1 ‘왜 이 방식을 골랐고 무엇을 포기했나’의 답. 회색 꼬리표는 그 숫자를 잰 측정 이름이다.">
       <Table head={['결정', '고른 것', '버린 대안', '근거']} rows={[
-        ['대화 모델', 'DeepSeek Flash, 추론 켬', 'Claude Haiku 5.5 끔·켬 등 7개', <>120턴 기억 {pc(pick.mem_pct)} vs {pc(hk.mem_pct)}·{pc(hn.mem_pct)}, 턴당 {won(pick.cost.measured)} vs {won(hk.cost.measured)}·{won(hn.cost.measured)} <Src>{S.pick}</Src></>],
-        ['대화 창', '최근 12턴은 원문, 차면 앞 6턴을 기억으로', '대화 전체 전송 / 최근 6턴만', <>전체 전송은 기억 {pc(full.mem_pct)}이지만 구간 비용이 {full.phases.map((x) => x.toFixed(2)).join('→')}원으로 오르고 캐시가 안 맞으면 {won(full.cost.worst)}. 6턴만 보내면 기억 {pc(six.mem_pct)} <Src>{S.pick}</Src></>],
+        ['대화 모델', 'DeepSeek Flash, 추론 켬', 'Claude Haiku 5.5 끔·켬 등 7개', <>120턴 기억 {pc(pick.mem_pct)} vs {pc(hk.mem_pct)}·{pc(hn.mem_pct)}, 턴당 {won(pick.cost.measured)} vs {won(hk.cost.measured)}·{won(hn.cost.measured)} <Src>{S.pick}</Src>. 포기한 것: 40턴 품질 판정은 Haiku 끔이 높았다({hkq} vs {dsq})</>],
+        ['대화 창', '최근 12턴은 원문, 차면 앞 6턴을 기억으로', '대화 전체 전송 / 최근 6턴만', <>120턴까지는 전체 전송이 낫다: 기억 {pc(full.mem_pct)}, 턴당 {won(full.cost.measured)}, 최대 턴 {won(full.max_turn, 2)}. 버린 이유는 입력이 턴마다 커져 구간 비용이 {full.phases.map((x) => x.toFixed(2)).join('→')}원으로 계속 오르기 때문이고, 120턴보다 긴 대화는 재지 않았다. 6턴만 보내면 기억 {pc(six.mem_pct)} <Src>{S.pick}</Src></>],
         ['기억 읽기', 'AI 없이: 고정 블록 + 임베딩으로 찾은 보충', '매 턴 AI로 검색·요약', '읽기 비용 0원, 응답 전 지연 약 10ms(임베딩)'],
         ['기억 쓰기', '6턴마다 묶어서, 답이 나간 뒤', '매 턴 추출', <>추출은 턴당 {won(F.by_tag.extract)}(비용의 {Math.round((F.by_tag.extract / F.cost.measured) * 100)}%) <Src>{S.fin}</Src>. 매 턴 추출과 직접 비교한 측정은 없다</>],
         ['추출 모델', 'DeepSeek Flash, 추론 끔', 'Gemma 4 31B(11개 모델 추출 비교 1위)', <>120턴 기억 {pc(v2.mem2_pct)} vs {pc(gem.mem2_pct)}, 턴당 {won(v2.cost.measured)} vs {won(gem.cost.measured)}, 1원 넘은 턴 {v2.over1_per_run} vs {gem.over1_per_run} <Src>{S.v2}</Src></>],
         ['기억 검색', '임베딩으로 뜻을 찾고, 보관·대체된 항목도 후보', '글자 겹침으로 찾기(기억 v1)', <>300턴 정답률 {pc(m0.correct_pct)} → {pc(m2.correct_pct)}, 턴당 {won(M3.cost.mb0.measured)} → {won(M3.cost.mb2.measured)} <Src>{S.m300}</Src></>],
         ['임베딩 위치', '서버 안 bge-m3(CPU)', 'Gemini 임베딩 API', <>API 비용 0, CPU를 돈으로 환산하면 턴당 약 {EMB_CPU}원 <Tag k="e" />. 상주 메모리 약 2.2GB는 서버 운영비</>],
         ['기억 범위', '사실·선호는 공유, 약속·사건은 캐릭터별', '사용자 하나에 모두 공유', <>다른 캐릭터와의 약속 누출 {m0.cross_char_promise.leak ?? 0}/{leakN(m0)} → {m2.cross_char_promise.leak ?? 0}/{leakN(m2)} <Src>{S.m300}</Src>. 원문 발췌 경로를 고친 뒤 {M3.mb3_leak.forbidden_keyword_hits}/{M3.mb3_leak.items}(블라인드 아님)</>],
-        ['대화 따르기', '먼저 답하기 + 코드가 답 언어 지정 + 질문 연속 끊기', '프롬프트 규칙만', <>직접 응답 {pc(FL.cur.direct.pct)} → {pc(FL.follow.direct.pct)}, 언어 일치 65.6 → 100% <Src>{S.fol}</Src>. 대가: 이어 말하기 쉬움 {pc(FL.follow.cont.pct)}</>],
+        ['대화 따르기', '먼저 답하기 + 코드가 답 언어 지정 + 질문 연속 끊기', '프롬프트 규칙만', <>직접 응답 {pc(FL.cur.direct.pct)} → {pc(FL.follow.direct.pct)}, 언어 일치 65.6 → 100% <Src>{S.fol}</Src>. 질문 연속을 막아 ‘답 뒤에 이어 말하기 쉬움’은 {pc(FL.follow.cont.pct)}(막기 전 시험 83.8%, 따르기 끔 {pc(FL.cur.cont.pct)})</>],
         ['캐시 경계', '바뀌는 것은 맨 뒤, 이번 턴에만 쓰는 지시는 이력에 남기지 않음', '모든 것을 한 블록에', <>대화 호출 입력의 약 78%가 캐시 <Src>{S.m300}</Src></>],
         ...(DT ? [['오늘 날짜', '시간 표현이 있는 턴에만 날짜 한 줄', '날짜 안 넣기 / 매 턴 넣기', `날짜 질문 정답 ${DT.off.correct} → ${DT.gate.correct}/40, 비용 변화 없음. 매 턴 넣으면 묻지 않은 날짜를 말함`]] : []),
       ]} />
-      <Note>대사 길이 규칙(2~4문장)은 개선판에서 기억 블록 변경과 함께 바꿔 효과를 따로 재지 않았다.</Note>
     </Sec>
 
     <Sec t="어떻게 여기까지 왔나" sub="세 번에 걸쳐 바꿨다. 기억 점수는 같은 판정 묶음 안에서만 비교한다. 같은 답도 묶음이 다르면 1~4%p 다르게 나왔다.">
@@ -133,10 +134,10 @@ function Arch({ print }) {
       </More>
     </Sec>
 
-    <Sec t="직접 정한 것과 가정" sub="과제가 정하지 않은 부분을 이렇게 정했다. 오른쪽은 가정이 달라지면 어떻게 되는지다.">
+    <Sec t="직접 정한 것과 가정" sub="과제가 정하지 않은 부분을 이렇게 정했다.">
       <Table head={['항목', '이렇게 정했다', '가정이 바뀌면']} rows={[
         ['1턴', '사용자 메시지 하나 + 캐릭터 답 하나 완료. 실패한 턴은 완료 턴에서 빼되 비용은 합계에 넣는다', '–'],
-        ['평가 대화', '120턴 고정 대본 × 캐릭터 4 × 2회(사용자 결정). 장기 기억은 300턴 대본으로 따로 쟀다', '300턴보다 긴 대화는 재지 않았다'],
+        ['평가 대화', '120턴 고정 대본 × 캐릭터 4 × 2회. 장기 기억은 대화 5번을 이은 300턴 대본으로 따로 쟀다', '300턴보다 긴 대화는 재지 않았다'],
         ['장기 기억', '최근 12턴 창 밖의 정보를 묻는 문항. 정답 +2 · 부분 +1 · 모름 0 · 옛 값·틀림 −1 · 지어냄 −2', '창 크기가 바뀌면 ‘창 밖’ 기준도 바뀐다'],
         ['가격', '2026-10-22 공개 가격표, 무료 크레딧 미적용, 1,400원/$ 고정', '환율 1,500원이면 약 7% 오른다'],
         ['시간대', '측정은 DeepSeek 비피크 시간(정가의 절반)', `평일 KST 10–13시·15–19시에 몰리면 ${won(COST.peak)}`],
@@ -188,17 +189,17 @@ function Cost() {
   const NM = { 'haiku-off': 'Haiku 5.5 끔', 'haiku-on': 'Haiku 5.5 켬', 'deepseek-on': '1차 DeepSeek 켬', 'v2-gemma': '개선판 · 추출 Gemma', 'v2-dsx': '개선판 · 추출 DeepSeek', [FC]: '최종', 'ctl-full-memoff': '대조군 · 대화 전체 전송', 'ctl-slide6-memoff': '대조군 · 최근 6턴만' };
   const tc = L120.turn_cost;
   return <>
-    <Head t={`120턴 평균 ${won(COST.measured)}. 1원을 넘는 턴은 기억 정리 턴뿐`}>
+    <Head t={`120턴 평균 ${won(COST.measured)}. 1원을 넘는 턴은 기억 정리가 같이 돈 턴`}>
       평가 대화 8개(120턴 × 캐릭터 4 × 2회, 960턴)의 모든 AI 호출을 합해 완료 턴으로 나눴다. 기억 추출, 대화 종료 정리, 재시도, 실패한 호출이 모두 들어 있다.
     </Head>
     <Kpis items={[
       { value: won(COST.measured), label: '턴당 평균', note: '비피크 시간 실측', tone: 'hl' },
       { value: won(COST.peak), label: '피크 단가로 다시 계산', note: '같은 토큰에 평일 낮 정가 적용' },
-      { value: won(F.max_turn, 2), label: '가장 비싼 한 턴', note: `1원 넘은 턴 런당 ${F.over1_per_run}개` },
+      { value: won(F.max_turn, 2), label: '가장 비싼 한 턴', note: `1원 넘은 턴 런당 ${F.over1_per_run}개, 모두 기억 정리 턴` },
       { value: won(F.total_krw / F.runs, 1), label: '120턴 대화 1개', note: `8개 합계 ${won(F.total_krw, 1)}` },
     ]} />
 
-    {tc && <Sec t="6턴마다 튀는 곳이 기억 정리 턴이다" sub={`최종 구성 8런의 턴별 비용. 진한 선 = 평균, 옅은 선 = 8런 중 가장 비싼 값. 대화 종료 정리(런당 평균 ${won(L120.consolidate_per_run.mean, 2)})는 턴에 속하지 않아 이 그림에는 없고, 위 평균에는 턴 수로 나눠 들어 있다.`}>
+    {tc && <Sec t="6턴마다 튀는 곳이 기억 정리 턴이다" sub={`최종 구성 8런의 턴별 비용. 진한 선 = 평균, 옅은 선 = 8런 중 가장 비싼 값. 정리 턴(12, 18, 24 …턴)마다 추출 비용이 붙어 튄다. 대화를 끝낼 때의 호출(남은 대화 추출 + 요약, 런당 평균 ${won(L120.consolidate_per_run.mean, 2)})은 특정 턴에 속하지 않아 그림에는 없고, 턴당 평균에는 턴 수로 나눠 들어 있다.`}>
       <Line data={tc.map((d) => ({ x: d.turn, y: d.mean, y2: d.max }))} ymax={1.4} limit={{ v: 1, label: '1원' }} xlabel="턴" ylabel="턴별 AI 비용" fmt={(v) => `${v.toFixed(1)}원`} />
     </Sec>}
 
@@ -206,14 +207,14 @@ function Cost() {
       <Table num head={['', '초반 1~40턴', '중반 41~80턴', '후반 81~120턴', '가장 비싼 턴', '1원 넘은 턴/런']} rows={[
         { hl: true, cells: ['최종', ...F.phases.map((x) => won(x)), won(F.max_turn, 2), F.over1_per_run] },
       ]} />
-      <Note>대화 원문은 12턴 상한이라 늘지 않는다. 후반이 초반보다 비싼 이유는 따로 나눠 재지 않았다. 1원을 넘은 턴은 모두 기억 추출이나 종료 정리가 같이 돈 턴이다(실행 기록에서 확인).</Note>
+      <Note>대화 원문은 12턴 상한이라 늘지 않는다. 그래도 후반이 초반보다 비싸며, 그 이유는 따로 나눠 재지 않았다. 1원을 넘은 턴은 모두 기억 추출이 같이 돈 턴이다(실행 기록에서 확인). 정리 턴이 모두 1원을 넘지는 않는다.</Note>
     </Sec>
 
-    <Sec t={`한 턴 비용의 ${Math.round((tg.response / tot) * 100)}%가 대화 응답이다`} sub="최종 구성 120턴의 호출 종류별 턴당 비용.">
+    <Sec t={`한 턴 비용의 ${Math.round((tg.response / tot) * 100)}%가 대화 응답이다`} sub="최종 구성 120턴의 호출 종류별 턴당 비용. 대화를 끝낼 때 남은 대화를 추출하는 비용은 ‘기억 추출’에 들어 있다.">
       <Stack fmt={(v) => won(v)} parts={[
         { label: '대화 응답', value: tg.response, tone: 'a' },
         { label: '기억 추출', value: tg.extract, tone: 'b' },
-        { label: '대화 종료 정리', value: tg.consolidate ?? 0, tone: 'c' },
+        { label: '대화 끝 요약', value: tg.consolidate ?? 0, tone: 'c' },
         { label: '임베딩(서버 안, API 비용 0)', value: tg.embed ?? 0, tone: 'd' },
       ]} />
     </Sec>
@@ -236,9 +237,9 @@ function Cost() {
 
     <Sec t="자체 호스팅: 대화 모델은 API, 임베딩만 서버 안에서">
       <ul>
-        <li>기억 검색용 임베딩(bge-m3, 파일 0.57GB)은 서버 CPU에서 돈다. 턴당 CPU 약 220ms에 2 vCPU 서버 단가(월 $24, vCPU 1초 0.0065원)를 곱하면 턴당 약 {EMB_CPU}원이다 <Tag k="e" />. 1원의 0.14%라 평균에는 넣지 않았다. 넣어도 {won(COST.measured)} → {won(COST.measured + EMB_CPU)}이다.</li>
+        <li>기억 검색용 임베딩(bge-m3, 파일 0.57GB)은 서버 CPU에서 돈다. 한 번에 걸리는 시간은 약 10ms지만 턴마다 여러 번(질문, 새 항목, 요약) 돌고 CPU 코어를 여러 개 써서, CPU 사용 시간으로는 턴당 약 220ms다. 여기에 2 vCPU 서버 단가(월 $24, vCPU 1초 0.0065원)를 곱하면 턴당 약 {EMB_CPU}원이다 <Tag k="e" />. 1원의 0.14%라 평균에는 넣지 않았다. 넣어도 {won(COST.measured)} → {won(COST.measured + EMB_CPU)}이다.</li>
         <li>모델을 메모리에 올려 두는 비용(서버 메모리 0.1 → 2.3GB <Tag k="m" />)은 AI 비용이 아니라 서버 운영비로 본다.</li>
-        <li>대화 모델은 자체 호스팅하지 않는다. 자체 호스팅할 크기의 오픈 모델(Gemma 4 26B)은 40턴 비교에서 기억·해로운 답 최하위였다 <Tag k="m" />. GPU 1장(시간당 $2~4, <a href="https://intuitionlabs.ai/articles/h100-rental-prices-cloud-comparison" target="_blank" rel="noreferrer">가격 비교</a>)이 API보다 싸려면 시간당 약 1만 턴이 꾸준히 들어와야 한다 <Tag k="e" />. GPU 처리량은 재지 않았다.</li>
+        <li>대화 모델은 자체 호스팅하지 않는다. 자체 호스팅할 크기의 오픈 모델 하나(Gemma 4 26B)를 그대로 쓴 조건은 40턴 비교에서 기억·해로운 답 최하위였다 <Tag k="m" />. GPU 1장(시간당 $2~4, <a href="https://intuitionlabs.ai/articles/h100-rental-prices-cloud-comparison" target="_blank" rel="noreferrer">가격 비교</a>)이 API보다 싸려면 시간당 약 1만 턴이 꾸준히 들어와야 한다 <Tag k="e" />. GPU 처리량은 재지 않았다.</li>
       </ul>
     </Sec>
 
@@ -260,28 +261,28 @@ function Cost() {
 // ================= 장기 기억 =================
 function Memory() {
   return <>
-    <Head t={`300턴 대화에서 기억 정답률 ${pc(m0.correct_pct)} → ${pc(m2.correct_pct)}`}>
+    <Head t={`300턴 시험에서 기억 정답률 ${pc(m0.correct_pct)} → ${pc(m2.correct_pct)}`}>
       오래된 대화를 출처가 붙은 기억 항목으로 바꾸고, 항목과 사용자 원문을 모두 임베딩으로 색인한다. 매 턴 고정 블록에 더해 이번 말과 뜻이 가까운 기억을 찾아 넣는다. 사용자 사실은 모든 캐릭터가 공유하고, 약속과 사건은 그 캐릭터만 안다. 이 구조를 기억 v2, 글자 겹침으로 찾던 이전 구조를 기억 v1이라 부른다.
     </Head>
     <Kpis items={[
-      { value: pc(m2.correct_pct), label: '300턴 기억 정답률', note: `${m2.n}문항 · 기억 v1 ${pc(m0.correct_pct)}`, tone: 'hl' },
+      { value: pc(m2.correct_pct), label: '300턴 기억 정답률', note: `대화 5번 · ${m2.n}문항 · 기억 v1 ${pc(m0.correct_pct)}`, tone: 'hl' },
       { value: pc(m2.far_pct), label: '100턴 이상 지난 정보', note: `기억 v1 ${pc(m0.far_pct)}` },
-      { value: pc(m2.update_pct), label: '수정된 정보 반영', note: `기억 v1 ${pc(m0.update_pct)}` },
+      { value: pc(m2.update_pct), label: '정정 문항 정답률', note: `값 수정·여러 번·일부·취소 · 기억 v1 ${pc(m0.update_pct)}` },
       { value: `${m2.counts.fabricated ?? 0}건`, label: '지어낸 답', note: `${m2.n}문항 중` },
     ]} />
     <Note>기억 처리 비용은 턴당 추출 {won(F.by_tag.extract)} + 대화 종료 정리 {won(F.by_tag.consolidate ?? 0)} + 임베딩 0원(서버 안)이고, 비용 탭의 턴당 평균 {won(COST.measured)}에 모두 들어 있다. <Src>{S.fin}</Src></Note>
     <MemoryPaths />
 
     <Sec t={`과제의 기억 요구 4가지 중 ${REQ.filter((r) => acc(m2.by_type, r.types) > acc(m0.by_type, r.types)).length}가지가 나아졌다`} sub="300턴 대본 4개 × 2회, 같은 대화 설정에서 기억만 바꿨다. Opus가 세 구성을 섞어 블라인드로 판정했다.">
-      <Dots lo={50} hi={100} ticks={[50, 60, 70, 80, 90, 100]} fmt={(v) => pc(v)} keys={[{ k: 'a', label: '기억 v1' }, { k: 'c', label: '최종(기억 v2)' }]}
+      <Dots lo={0} hi={100} ticks={[0, 25, 50, 75, 100]} fmt={(v) => pc(v)} keys={[{ k: 'a', label: '기억 v1' }, { k: 'c', label: '최종(기억 v2)' }]}
         rows={[...REQ.map((r) => ({ label: r.short, points: [{ k: 'a', v: acc(m0.by_type, r.types) }, { k: 'c', v: acc(m2.by_type, r.types) }] })),
           { label: '100턴 이상 지난 정보', points: [{ k: 'a', v: m0.far_pct }, { k: 'c', v: m2.far_pct }] },
-          { label: '전체', points: [{ k: 'a', v: m0.correct_pct }, { k: 'c', v: m2.correct_pct }] }]} />
-      <Note>가로축은 50%부터다. 지어내지 않기는 둘 다 함정 문항을 모두 통과했다. 다만 다른 문항에서 지어낸 답은 기억 v1 {m0.counts.fabricated ?? 0}건, 최종 {m2.counts.fabricated ?? 0}건이다.</Note>
+          { label: '전체 정답률', points: [{ k: 'a', v: m0.correct_pct }, { k: 'c', v: m2.correct_pct }] }]} />
+      <Note>지어내지 않기는 둘 다 함정 문항을 모두 통과했다. 다만 다른 문항에서 지어낸 답은 기억 v1 {m0.counts.fabricated ?? 0}건, 최종 {m2.counts.fabricated ?? 0}건이다.</Note>
       <More t="300턴 세부: 기억 v2 첫 판과 결함 수정">
         <Table num head={['', ...Object.values(MB)]} rows={[
           ['100턴 이상 지난 정보', ...Object.keys(MB).map((k) => pc(M3[k].far_pct))],
-          ['수정 반영', ...Object.keys(MB).map((k) => pc(M3[k].update_pct))],
+          ['정정 문항(값 수정·여러 번·일부·취소)', ...Object.keys(MB).map((k) => pc(M3[k].update_pct))],
           ['가까운 정보', ...Object.keys(MB).map((k) => pc(M3[k].near_pct))],
           ['전체 정답률', ...Object.keys(MB).map((k) => pc(M3[k].correct_pct))],
           ['다른 캐릭터와의 약속 누출', ...Object.keys(MB).map((k) => `${M3[k].cross_char_promise.leak ?? 0}/${leakN(M3[k])}`)],
@@ -296,10 +297,10 @@ function Memory() {
       </More>
     </Sec>
 
-    <Sec t={`120턴에서도 요구별로 ${pc(Math.min(...REQ.map((r) => acc(FM.by_type, r.types))), 0)} 이상`} sub="최종 120턴. 개선판(기억 v1, 대화 따르기 끔)과 같은 판정 묶음에 섞어 매겼다.">
-      <Dots lo={50} hi={100} ticks={[50, 60, 70, 80, 90, 100]} fmt={(v) => pc(v)} keys={[{ k: 'a', label: '개선판' }, { k: 'c', label: '최종' }]}
+    <Sec t={`120턴에서도 요구별로 ${pc(Math.min(...REQ.map((r) => acc(FM.by_type, r.types))), 0)} 이상`} sub="최종 120턴. 개선판(기억 v1, 대화 따르기 끔)과 같은 판정 묶음에 섞어 매겼다. 값은 정답률이다(설계 구조 탭 이력 표의 ‘기억 점수’는 부분 정답·감점을 넣은 가중 점수라 다르다).">
+      <Dots lo={0} hi={100} ticks={[0, 25, 50, 75, 100]} fmt={(v) => pc(v)} keys={[{ k: 'a', label: '개선판' }, { k: 'c', label: '최종' }]}
         rows={[...REQ.map((r) => ({ label: r.short, points: [{ k: 'a', v: acc(PM.by_type, r.types) }, { k: 'c', v: acc(FM.by_type, r.types) }] })),
-          { label: '전체', points: [{ k: 'a', v: PM.correct_pct }, { k: 'c', v: FM.correct_pct }] }]} />
+          { label: '전체 정답률', points: [{ k: 'a', v: PM.correct_pct }, { k: 'c', v: FM.correct_pct }] }]} />
       <Note>가장 약한 유형은 돌려 묻기다({FM.by_type.implicit.correct}/{FM.by_type.implicit.n}). “루프탑 바 갈래?”에 고소공포증을 떠올려야 하는 문항으로, 질문과 기억이 뜻으로 이어지지 않아 검색에 잘 안 걸린다.</Note>
       <More t="120턴 유형별 표">
         <Table num head={['유형(문항 수)', '개선판', '최종']} rows={[
@@ -313,7 +314,7 @@ function Memory() {
     <Sec t="통과 기준" sub="300턴은 재측정 전에 적어 둔 기준(docs/21 §9.8)이고, 기준점은 같은 대화 설정의 기억 v1이다.">
       <Table head={['기준', '결과', '판정']} rows={[
         ['100턴 이상 지난 정보: 기억 v1보다 3%p 넘게 떨어지지 않기', `${pc(m0.far_pct)} → ${pc(m2.far_pct)}`, <Verdict k={m2.far_pct >= m0.far_pct - 3 ? 'pass' : 'fail'} />],
-        ['수정 반영: 기억 v1보다 3%p 넘게 떨어지지 않기', `${pc(m0.update_pct)} → ${pc(m2.update_pct)}`, <Verdict k={m2.update_pct >= m0.update_pct - 3 ? 'pass' : 'fail'} />],
+        ['정정 문항: 기억 v1보다 3%p 넘게 떨어지지 않기', `${pc(m0.update_pct)} → ${pc(m2.update_pct)}`, <Verdict k={m2.update_pct >= m0.update_pct - 3 ? 'pass' : 'fail'} />],
         ['다른 캐릭터와의 약속 누출 0', `${m2.cross_char_promise.leak ?? 0}/${leakN(m2)}건`, <Verdict k={(m2.cross_char_promise.leak ?? 0) === 0 ? 'pass' : 'fail'} />],
         ['지어낸 답 5% 이하', `${m2.counts.fabricated ?? 0}/${m2.n} = ${pc((100 * (m2.counts.fabricated ?? 0)) / m2.n)}`, <Verdict k="pass" />],
         ['턴당 비용 1원 이하', won(M3.cost.mb2.measured), <Verdict k="pass" />],
@@ -341,7 +342,7 @@ function Memory() {
       <Note>각 정보는 한 번만 말한다. 정답 낱말이 최근 12턴이나 다른 사용자 말에 나오면 대본 점검 스크립트가 실패시킨다. 300턴에는 비교용으로 최근 대화 안의 문항도 들어 있다.</Note>
     </Sec>
 
-    <Sec t="실제 사례" sub="최종 120턴의 실제 답을 요구별로 성공 2개, 실패 1개씩 골랐다. 정답 키워드는 대본에 미리 적은 기대 응답이고, 답은 모델 출력 그대로다.">
+    <Sec t="실제 사례" sub="최종 120턴의 실제 답을 요구별로 성공 2개, 실패 1개씩 골랐다. 정답 키워드는 대본에 미리 적은 기대 응답이고, 답은 모델 출력 그대로다. 판정은 물은 정보를 맞혔는지만 보므로, 성공 사례에도 대본에 없는 말을 덧붙이거나(예: 강백호 ‘귤 농사’) 다른 언어 글자가 섞인 답이 있다.">
       <Cases />
     </Sec>
   </>;
@@ -380,7 +381,7 @@ function Test() {
 
     <Sec t="대화 길이와 사례 수를 정한 기준">
       <ul>
-        <li>120턴과 캐릭터 4개는 사용자가 정했다(docs/50 2026-10-31). 왜 100이나 200이 아니라 120인지 따로 적은 근거는 기록에 없다.</li>
+        <li>120턴과 캐릭터 4개는 직접 정했다. 왜 100이나 200이 아니라 120인지 따로 적은 근거는 기록에 없다.</li>
         <li>구조상 이유: 대화 창이 최대 12턴이라 문항은 13턴 이상 떨어져야 최근 대화만으로 못 푼다. 그래서 12턴 장면 10개를 이어 붙여 초반 정보를 최대 100턴 뒤에 묻는다. 캐릭터 4개는 앱에 있는 캐릭터 전부이고, 네 캐릭터 모두 같은 턴에 같은 역할의 문항을 둬 같은 축으로 비교한다.</li>
         <li>300턴은 기억이 많이 쌓였을 때(보관 상한 80개를 넘을 때)를 보려고 기억 재설계와 함께 만들었다. 대본마다 2회 돌려 같은 대본의 흔들림을 본다.</li>
       </ul>
@@ -480,7 +481,7 @@ function Next() {
           <li>대화 원문을 모두 보내는 방식보다 기억이 약하다(모델 고르기 120턴 {pc(lt['ctl-full-memoff'].mem_pct)}). 대신 비용에 상한이 있다</li>
           <li>돌려 묻는 문항 {FM.by_type.implicit.correct}/{FM.by_type.implicit.n}</li>
           <li>턴당 비용이 개선판보다 {won(L120.cost['v2-dsx'].measured)} → {won(COST.measured)}로 올랐다</li>
-          <li>맥락 점수 {Q['v2-dsx'].context.toFixed(2)} → {Q[FC].context.toFixed(2)}, 이어 말하기 쉬움 {pc(FL.follow.cont.pct)}</li>
+          <li>맥락 점수 {Q['v2-dsx'].context.toFixed(2)} → {Q[FC].context.toFixed(2)}. 질문 연속을 막아 ‘답 뒤에 이어 말하기 쉬움’은 막기 전 시험(83.8%)보다 낮은 {pc(FL.follow.cont.pct)}</li>
         </ul></div>
       </div>
     </Sec>
@@ -507,7 +508,8 @@ function Next() {
     <Sec t="이번 검증의 한계">
       <ul>
         <li>시험 문항과 정답 기준은 우리가 만들었다. 120턴 판정의 이어 가기 점수는 높았지만 실제 데모에서는 영어 요청을 무시하고 단답으로 끝나는 대화가 보였다. 대화 따르기 대본은 그래서 만들었다.</li>
-        <li>판정은 Opus 하나이고 사람 판정은 없다.</li>
+        <li>판정은 Opus 하나이고 사람 판정은 없다. 기억 판정은 물은 정보를 맞혔는지만 봐서, 정답 처리된 답에도 대본에 없는 말을 덧붙이거나 다른 언어 글자가 섞인 경우가 있다.</li>
+        <li>대사 길이 규칙(2~4문장)은 개선판에서 기억 블록 변경과 함께 바꿔 효과를 따로 재지 않았다.</li>
         <li>같은 대본의 실패 기록을 보고 고치고 같은 대본으로 다시 쟀다(개선판 설정, 기억 v2 결함 수정). 효과가 부풀려졌을 수 있다.</li>
         <li>기억 v2 첫 설계에서 블록을 800토큰으로 줄였다가 120턴에서 돌려 묻기가 37/40 → 18/40으로 떨어져 2,000토큰으로 되돌렸다.</li>
         <li>최종 구성은 대사가 더 길다(평균 {F.reply_len}자, 개선판 {lt['v2-dsx'].reply_len}자). 판정이 긴 답을 편들 수 있는데, 길이를 통제한 분석은 개선판 때만 했다.</li>
